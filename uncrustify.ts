@@ -16,7 +16,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8280"/>
         <source>Default: auto. </source>
-        <translation>По-умолчанию: auto. </translation>
+        <translation>По умолчанию: auto. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="22"/>
@@ -31,7 +31,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8758"/>
         <source>Default: 8. </source>
-        <translation>По-умолчанию: 8. </translation>
+        <translation>По умолчанию: 8. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="33"/>
@@ -56,7 +56,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8286"/>
         <source>Default: 92. </source>
-        <translation>По-умолчанию: 92. </translation>
+        <translation>По умолчанию: 92. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="57"/>
@@ -291,7 +291,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8326"/>
         <source>}&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>}&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="258"/>
@@ -326,17 +326,17 @@
     <message>
         <location filename="uncrustify_ui.py" line="8328"/>
         <source>){ ... </source>
-        <translation type="unfinished"></translation>
+        <translation>){ ... </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8328"/>
         <source>} &lt;here&gt; ( ... </source>
-        <translation type="unfinished"></translation>
+        <translation>} &lt;here&gt; ( ... </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8328"/>
         <source>)&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>)&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="291"/>
@@ -511,7 +511,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8358"/>
         <source>&apos;) )&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;) )&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="456"/>
@@ -526,7 +526,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8360"/>
         <source>&apos;) (&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;) (&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="467"/>
@@ -871,7 +871,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8422"/>
         <source>(C++11) Permit removal of the space between &apos;&gt;&gt;&apos; in &apos;foo&lt;bar&lt;int&gt; &gt;&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C++11) Разрешить удаление пробела между &apos;&gt;&gt;&apos; в &apos;foo&lt;bar&lt;int&gt; &gt;&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8422"/>
@@ -1126,7 +1126,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8468"/>
         <source>&apos;a, b&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1061"/>
@@ -1146,7 +1146,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8472"/>
         <source>(C#) Add or remove space between &apos;,&apos; and &apos;]&apos; in multidimensional array type like &apos;int[,,]&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Добавить или удалить пробел между &apos;,&apos; и &apos;]&apos; в многомерных массивах типа &apos;int[,,]&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1083"/>
@@ -1156,7 +1156,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8474"/>
         <source>(C#) Add or remove space between &apos;[&apos; and &apos;,&apos; in multidimensional array type like &apos;int[,,]&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пробел между &apos;[&apos; и &apos;,&apos; в многомерных массивах типа &apos;int[,,]&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1094"/>
@@ -1166,7 +1166,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8476"/>
         <source>(C#) Add or remove space between &apos;,&apos; in multidimensional array type like &apos;int[,,]&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Добавить или удалить пробел между &apos;,&apos; в многомерных массивах типа &apos;int[,,]&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1105"/>
@@ -1181,7 +1181,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8478"/>
         <source>&apos;( ,&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;( ,&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1116"/>
@@ -1336,12 +1336,12 @@
     <message>
         <location filename="uncrustify_ui.py" line="8508"/>
         <source>&apos;cast(int) a&apos; or &apos;(int)a&apos; vs. </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8508"/>
         <source>&apos;(int) a&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;(int) a&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1281"/>
@@ -1366,7 +1366,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8512"/>
         <source>&apos;int (exp)&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1303"/>
@@ -1736,7 +1736,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8580"/>
         <source>&apos;( (&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;( (&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1677"/>
@@ -2211,7 +2211,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8668"/>
         <source>&apos;-(int) f: (int) x;&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;-(int) f: (int) x;&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2161"/>
@@ -2226,7 +2226,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8670"/>
         <source>&apos;-(int) f : (int) x;&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;-(int) f : (int) x;&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2172"/>
@@ -2261,7 +2261,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8676"/>
         <source>&apos;[object setValue: 1];&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;[object setValue: 1];&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2205"/>
@@ -2276,7 +2276,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8678"/>
         <source>&apos;[object setValue :1];&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;[object setValue :1];&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2216"/>
@@ -2291,7 +2291,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8680"/>
         <source>&apos;-(int)f: (int)x;&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;-(int)f: (int)x;&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2227"/>
@@ -2306,7 +2306,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8682"/>
         <source>&apos;-(int)f:(int)x;&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;-(int)f:(int)x;&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2238"/>
@@ -2321,7 +2321,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8684"/>
         <source>&apos;@selector (msgName)&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;@selector (msgName)&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8688"/>
@@ -2341,7 +2341,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8686"/>
         <source>&apos;@selector(foo)a:&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;@selector(foo)a:&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2260"/>
@@ -2356,7 +2356,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8688"/>
         <source>&apos;@selector( foo )&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;@selector( foo )&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2271"/>
@@ -2371,7 +2371,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8690"/>
         <source>&apos; ^int (int arg){...}&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos; ^int (int arg){...}&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2282"/>
@@ -2386,7 +2386,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8692"/>
         <source>&apos;^ int (int arg){...}&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2293"/>
@@ -2421,7 +2421,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8698"/>
         <source>&apos;@synchronized (foo)&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;@synchronized (foo)&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2326"/>
@@ -2576,7 +2576,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8724"/>
         <source>&apos;//A&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>&apos;//A&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2469"/>
@@ -2972,7 +2972,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8790"/>
         <source>(C#) Whether to indent the brace of a C# delegate by another level. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Следует ли отступать от скобки блока &apos;delegate&apos; на следующий уровень. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2843"/>
@@ -2982,7 +2982,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8792"/>
         <source>(C#) Whether to indent a C# delegate (to handle delegates with no brace) by another level. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Следует ли отступать от блока &apos;delegate&apos;, если не используются скобки. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2854"/>
@@ -3037,7 +3037,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="8800"/>
         <source>0 means no limit. </source>
-        <translation type="unfinished"></translation>
+        <translation>0 означает, что нет предела. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2899"/>
@@ -3153,7 +3153,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="8818"/>
         <source>&lt;0: Relative &gt;=0: Absolute. </source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;0: относительное значение &gt;=0: абсолютное. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="3001"/>
@@ -3308,7 +3308,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="8846"/>
         <source>} while (0)` blocks bracketing them. </source>
-        <translation type="unfinished"></translation>
+        <translation>} while (0)` blocks bracketing them. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8846"/>
@@ -3873,7 +3873,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="8938"/>
         <source>(C#) Whether to indent a &apos;using&apos; block if no braces are used. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Следует ли отступать от блока &apos;use&apos;, если не используются скобки. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="3677"/>
@@ -4008,7 +4008,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="8962"/>
         <source>(C#) Don&apos;t split one-line property get or set functions. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Не разбивать однострочный функции свойств get и set. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="3813"/>
@@ -4553,7 +4553,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9066"/>
         <source>(C#) Add or remove newline between &apos;using&apos; and &apos;{&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Добавить или удалить конец строки между &apos;using&apos; и &apos;{&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="4387"/>
@@ -5623,7 +5623,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9250"/>
         <source>Add or remove blank line before &apos;if&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку перед &apos;if&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5399"/>
@@ -5633,7 +5633,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9252"/>
         <source>Add or remove blank line after &apos;if&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;if&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="9252"/>
@@ -5648,7 +5648,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9254"/>
         <source>Add or remove blank line before &apos;for&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку перед &apos;for&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5421"/>
@@ -5658,7 +5658,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9256"/>
         <source>Add or remove blank line after &apos;for&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;for&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5432"/>
@@ -5668,7 +5668,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9258"/>
         <source>Add or remove blank line before &apos;while&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку перед &apos;while&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5443"/>
@@ -5678,7 +5678,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9260"/>
         <source>Add or remove blank line after &apos;while&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;while&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5454"/>
@@ -5688,7 +5688,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9262"/>
         <source>Add or remove blank line before &apos;switch&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку перед &apos;switch&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5465"/>
@@ -5698,7 +5698,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9264"/>
         <source>Add or remove blank line after &apos;switch&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;switch&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5476"/>
@@ -5708,7 +5708,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9266"/>
         <source>Add or remove blank line before &apos;synchronized&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку перед &apos;synchronized&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5487"/>
@@ -5718,7 +5718,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9268"/>
         <source>Add or remove blank line after &apos;synchronized&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;synchronized&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5498"/>
@@ -5728,7 +5728,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9270"/>
         <source>Add or remove blank line before &apos;do&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку перед &apos;do&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5509"/>
@@ -5738,7 +5738,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9272"/>
         <source>Add or remove blank line after &apos;do/while&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;do/while&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5520"/>
@@ -5803,7 +5803,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9284"/>
         <source>(Lower priority than eat_blanks_before_close_brace.). </source>
-        <translation type="unfinished"></translation>
+        <translation>(Приоритет ниже, чем eat_blanks_before_close_brace.). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5586"/>
@@ -6107,7 +6107,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9402"/>
         <source>0: No change (default). </source>
-        <translation type="unfinished"></translation>
+        <translation>0: не изменять (по умолчанию). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5888"/>
@@ -6378,7 +6378,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9380"/>
         <source>(C#) The number of newlines before and after a property, indexer or event declaration. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Количество новых строк до и после объявления свойства, индексатора или события. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="6150"/>
@@ -6388,7 +6388,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9382"/>
         <source>(C#) The number of newlines between the get/set/add/remove handlers. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Количество новых строк между обработчиками get/set/add/remove. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="6162"/>
@@ -6398,7 +6398,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9384"/>
         <source>(C#) Add or remove newline between property and the &apos;{&apos;. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Добавить или удалить конец строки между свойством (property) и &apos;{&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="6174"/>
@@ -6713,7 +6713,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9436"/>
         <source>Whether to use tabs for aligning. </source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать табуляцию для выравнивания. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="6475"/>
@@ -6768,7 +6768,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9544"/>
         <source>0: Don&apos;t align (default). </source>
-        <translation type="unfinished"></translation>
+        <translation>0: не выравнивать (по умолчанию). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="6530"/>
@@ -6788,7 +6788,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9530"/>
         <source>0: No limit (default). </source>
-        <translation type="unfinished"></translation>
+        <translation>0: без ограничений (по умолчанию). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="6542"/>
@@ -7033,7 +7033,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9492"/>
         <source>0: no limit (default). </source>
-        <translation type="unfinished"></translation>
+        <translation>0: без ограничений (по умолчанию). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="6802"/>
@@ -7233,7 +7233,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9526"/>
         <source>0: Ignore (default). </source>
-        <translation type="unfinished"></translation>
+        <translation>0: игнорировать (по умолчанию). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7004"/>
@@ -7378,7 +7378,9 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9550"/>
         <source>=0: Don&apos;t align (default) &gt;0: Number of lines (including comments) between blocks. </source>
-        <translation type="unfinished"></translation>
+        <translation>
+=0: Не выравнивать (по умолчанию) &gt;0:
+Количество строк (включая комментарии) между блоками. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7142"/>
@@ -7423,7 +7425,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9558"/>
         <source>0: Don&apos;t align. </source>
-        <translation type="unfinished"></translation>
+        <translation>0: не выравнивать. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7188"/>
@@ -7768,7 +7770,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9614"/>
         <source>Add or remove braces on a single-line &apos;do&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;do&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7503"/>
@@ -7778,7 +7780,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9616"/>
         <source>Add or remove braces on a single-line &apos;for&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;for&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7514"/>
@@ -7798,7 +7800,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9620"/>
         <source>Add or remove braces on a single-line &apos;if&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;if&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="9620"/>
@@ -7848,7 +7850,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9626"/>
         <source>Add or remove braces on single-line &apos;while&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;while&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7569"/>
@@ -7858,7 +7860,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9628"/>
         <source>Add or remove braces on single-line &apos;using ()&apos; statement. </source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;using ()&apos;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7580"/>
@@ -8023,7 +8025,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9658"/>
         <source>(C#) Whether to sort consecutive single-line &apos;using&apos; statements. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Следует ли сортировать последовательные однострочные выражения &quot;using&quot;. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7752"/>
@@ -8103,7 +8105,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9672"/>
         <source>} break;&apos; =&gt; &apos;case X: { ... </source>
-        <translation type="unfinished"></translation>
+        <translation>} break;&apos; =&gt; &apos;case X: { ... </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="9672"/>
@@ -8578,7 +8580,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9744"/>
         <source>(C#) Warning is given if doing tab-to-	 replacement and we have found one in a C# verbatim string literal. </source>
-        <translation type="unfinished"></translation>
+        <translation>(C#) Выдавать предупреждение при замене tab на \t, найденых в строковом литерале на C#. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8245"/>
@@ -8598,7 +8600,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes. </source>
     <message>
         <location filename="uncrustify_ui.py" line="9746"/>
         <source>0: no limit. </source>
-        <translation type="unfinished"></translation>
+        <translation>0: без ограничений. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8257"/>
