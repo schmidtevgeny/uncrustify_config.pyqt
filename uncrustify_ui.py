@@ -2,12 +2,12 @@ from PyQt5 import QtWidgets, QtGui
 import textwrap
 
 def wrap(s):
-   my_wrap = textwrap.TextWrapper(width = 80)
-   wrap_list = my_wrap.wrap(text=s)
-   s = ""
-   for line in wrap_list:
-      s += "\n# "+line
-   return s
+    my_wrap = textwrap.TextWrapper(width = 80)
+    wrap_list = my_wrap.wrap(text=s)
+    s = ""
+    for line in wrap_list:
+        s += "\n# "+line
+    return s
 class Widget(QtWidgets.QToolBox):
 
     def __init__(self):
@@ -19,7 +19,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The type of line endings. ")+self.tr("Default: auto. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 0, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_newlines")), 1, 0, 1, 5)
+        if self.tr("code_newlines")!="code_newlines":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_newlines")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("newlines")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 2, 0)
@@ -30,7 +31,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The original size of tabs in the input. ")+self.tr("Default: 8. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 3, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_input_tab_size")), 4, 0, 1, 5)
+        if self.tr("code_input_tab_size")!="code_input_tab_size":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_input_tab_size")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("input_tab_size")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 5, 0)
@@ -42,7 +44,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The size of tabs in the output (only used if align_with_tabs=true). ")+self.tr("Default: 8. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 6, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_output_tab_size")), 7, 0, 1, 5)
+        if self.tr("code_output_tab_size")!="code_output_tab_size":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_output_tab_size")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("output_tab_size")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 8, 0)
@@ -54,7 +57,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The ASCII value of the string escape char, usually 92 (\) or (Pawn) 94 (^). ")+self.tr("Default: 92. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 9, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_string_escape_char")), 10, 0, 1, 5)
+        if self.tr("code_string_escape_char")!="code_string_escape_char":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_string_escape_char")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("string_escape_char")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 11, 0)
@@ -66,7 +70,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Alternate string escape char (usually only used for Pawn). ")+self.tr("Only works right before the quote char. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 12, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_string_escape_char2")), 13, 0, 1, 5)
+        if self.tr("code_string_escape_char2")!="code_string_escape_char2":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_string_escape_char2")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("string_escape_char2")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 14, 0)
@@ -78,7 +83,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Replace tab characters found in string literals with the escape sequence \t instead. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 15, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_string_replace_tab_chars")), 16, 0, 1, 5)
+        if self.tr("code_string_replace_tab_chars")!="code_string_replace_tab_chars":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_string_replace_tab_chars")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("string_replace_tab_chars")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 17, 0)
@@ -89,7 +95,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Allow interpreting '>=' and '>>=' as part of a template in code like 'void f(list<list<B>>=val);'. ")+self.tr("If true, 'assert(x<0 && y>=3)' will be broken. ")+self.tr("Improvements to template detection may make this option obsolete. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 18, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_tok_split_gte")), 19, 0, 1, 5)
+        if self.tr("code_tok_split_gte")!="code_tok_split_gte":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_tok_split_gte")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("tok_split_gte")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 20, 0)
@@ -100,7 +107,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Disable formatting of NL_CONT ('\\n') ended lines (e.g. ")+self.tr("multiline macros). "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 21, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_disable_processing_nl_cont")), 22, 0, 1, 5)
+        if self.tr("code_disable_processing_nl_cont")!="code_disable_processing_nl_cont":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_disable_processing_nl_cont")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("disable_processing_nl_cont")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 23, 0)
@@ -111,7 +119,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Specify the marker used in comments to disable processing of part of the file. ")+self.tr("The comment should be used alone in one line. ")+self.tr("Default:  *INDENT-OFF*. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 24, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_disable_processing_cmt")), 25, 0, 1, 5)
+        if self.tr("code_disable_processing_cmt")!="code_disable_processing_cmt":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_disable_processing_cmt")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("disable_processing_cmt")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 26, 0)
@@ -121,7 +130,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Specify the marker used in comments to (re)enable processing in a file. ")+self.tr("The comment should be used alone in one line. ")+self.tr("Default:  *INDENT-ON*. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 27, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_enable_processing_cmt")), 28, 0, 1, 5)
+        if self.tr("code_enable_processing_cmt")!="code_enable_processing_cmt":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_enable_processing_cmt")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("enable_processing_cmt")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 29, 0)
@@ -131,7 +141,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Enable parsing of digraphs. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 30, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_enable_digraphs")), 31, 0, 1, 5)
+        if self.tr("code_enable_digraphs")!="code_enable_digraphs":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_enable_digraphs")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("enable_digraphs")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 32, 0)
@@ -142,7 +153,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove the UTF-8 BOM (recommend 'remove'). "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 33, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_utf8_bom")), 34, 0, 1, 5)
+        if self.tr("code_utf8_bom")!="code_utf8_bom":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_utf8_bom")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("utf8_bom")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 35, 0)
@@ -153,7 +165,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If the file contains bytes with values between 128 and 255, but is not UTF-8, then output as UTF-8. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 36, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_utf8_byte")), 37, 0, 1, 5)
+        if self.tr("code_utf8_byte")!="code_utf8_byte":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_utf8_byte")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("utf8_byte")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 38, 0)
@@ -164,7 +177,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Force the output encoding to UTF-8. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 39, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_utf8_force")), 40, 0, 1, 5)
+        if self.tr("code_utf8_force")!="code_utf8_force":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_utf8_force")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("utf8_force")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 41, 0)
@@ -175,7 +189,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'do' and '{'. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 42, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_sp_do_brace_open")), 43, 0, 1, 5)
+        if self.tr("code_sp_do_brace_open")!="code_sp_do_brace_open":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_sp_do_brace_open")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("sp_do_brace_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 44, 0)
@@ -186,7 +201,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '}' and 'while'. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 45, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_close_while")), 46, 0, 1, 5)
+        if self.tr("code_sp_brace_close_while")!="code_sp_brace_close_while":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_close_while")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("sp_brace_close_while")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 47, 0)
@@ -197,7 +213,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'while' and '('. "))
         label.setWordWrap(True)
         self.lt1.addWidget(label, 48, 0, 1, 5)
-        self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_sp_while_paren_open")), 49, 0, 1, 5)
+        if self.tr("code_sp_while_paren_open")!="code_sp_while_paren_open":
+            self.lt1.addWidget(QtWidgets.QLabel(self.tr("code_sp_while_paren_open")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("sp_while_paren_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt1.addWidget(label, 50, 0)
@@ -211,7 +228,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around non-assignment symbolic operators ('+', '/', '%', '<<', and so forth). "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 0, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_arith")), 1, 0, 1, 5)
+        if self.tr("code_sp_arith")!="code_sp_arith":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_arith")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("sp_arith")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 2, 0)
@@ -222,7 +240,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around arithmetic operators '+' and '-'. ")+self.tr("Overrides sp_arith. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 3, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_arith_additive")), 4, 0, 1, 5)
+        if self.tr("code_sp_arith_additive")!="code_sp_arith_additive":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_arith_additive")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("sp_arith_additive")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 5, 0)
@@ -233,7 +252,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around assignment operator '=', '+=', etc. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 6, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_assign")), 7, 0, 1, 5)
+        if self.tr("code_sp_assign")!="code_sp_assign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_assign")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("sp_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 8, 0)
@@ -244,7 +264,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around '=' in C++11 lambda capture specifications. ")+self.tr("Overrides sp_assign. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 9, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_assign")), 10, 0, 1, 5)
+        if self.tr("code_sp_cpp_lambda_assign")!="code_sp_cpp_lambda_assign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_assign")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cpp_lambda_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 11, 0)
@@ -255,7 +276,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the capture specification of a C++11 lambda when an argument list is present, as in '[] <here> (int x){ ... ")+self.tr("}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 12, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_square_paren")), 13, 0, 1, 5)
+        if self.tr("code_sp_cpp_lambda_square_paren")!="code_sp_cpp_lambda_square_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_square_paren")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cpp_lambda_square_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 14, 0)
@@ -266,7 +288,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the capture specification of a C++11 lambda with no argument list is present, as in '[] <here> { ... ")+self.tr("}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 15, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_square_brace")), 16, 0, 1, 5)
+        if self.tr("code_sp_cpp_lambda_square_brace")!="code_sp_cpp_lambda_square_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_square_brace")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cpp_lambda_square_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 17, 0)
@@ -277,7 +300,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the argument list of a C++11 lambda, as in '[](int x) <here> { ... ")+self.tr("}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 18, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_paren_brace")), 19, 0, 1, 5)
+        if self.tr("code_sp_cpp_lambda_paren_brace")!="code_sp_cpp_lambda_paren_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_paren_brace")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cpp_lambda_paren_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 20, 0)
@@ -288,7 +312,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a lambda body and its call operator of an immediately invoked lambda, as in '[]( ... ")+self.tr("){ ... ")+self.tr("} <here> ( ... ")+self.tr(")'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 21, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_fparen")), 22, 0, 1, 5)
+        if self.tr("code_sp_cpp_lambda_fparen")!="code_sp_cpp_lambda_fparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_fparen")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cpp_lambda_fparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 23, 0)
@@ -299,7 +324,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around assignment operator '=' in a prototype. ")+self.tr("If set to ignore, use sp_assign. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 24, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_assign_default")), 25, 0, 1, 5)
+        if self.tr("code_sp_assign_default")!="code_sp_assign_default":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_assign_default")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("sp_assign_default")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 26, 0)
@@ -310,7 +336,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before assignment operator '=', '+=', etc. ")+self.tr("Overrides sp_assign. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 27, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_assign")), 28, 0, 1, 5)
+        if self.tr("code_sp_before_assign")!="code_sp_before_assign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_assign")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 29, 0)
@@ -321,7 +348,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after assignment operator '=', '+=', etc. ")+self.tr("Overrides sp_assign. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 30, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_assign")), 31, 0, 1, 5)
+        if self.tr("code_sp_after_assign")!="code_sp_after_assign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_assign")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 32, 0)
@@ -332,7 +360,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space in 'NS_ENUM ('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 33, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_paren")), 34, 0, 1, 5)
+        if self.tr("code_sp_enum_paren")!="code_sp_enum_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_paren")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("sp_enum_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 35, 0)
@@ -343,7 +372,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around assignment '=' in enum. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 36, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_assign")), 37, 0, 1, 5)
+        if self.tr("code_sp_enum_assign")!="code_sp_enum_assign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_assign")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("sp_enum_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 38, 0)
@@ -354,7 +384,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before assignment '=' in enum. ")+self.tr("Overrides sp_enum_assign. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 39, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_before_assign")), 40, 0, 1, 5)
+        if self.tr("code_sp_enum_before_assign")!="code_sp_enum_before_assign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_before_assign")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("sp_enum_before_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 41, 0)
@@ -365,7 +396,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after assignment '=' in enum. ")+self.tr("Overrides sp_enum_assign. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 42, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_after_assign")), 43, 0, 1, 5)
+        if self.tr("code_sp_enum_after_assign")!="code_sp_enum_after_assign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_after_assign")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("sp_enum_after_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 44, 0)
@@ -376,7 +408,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around assignment ':' in enum. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 45, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_colon")), 46, 0, 1, 5)
+        if self.tr("code_sp_enum_colon")!="code_sp_enum_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_enum_colon")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("sp_enum_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 47, 0)
@@ -387,7 +420,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around preprocessor '##' concatenation operator. ")+self.tr("Default: add. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 48, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_pp_concat")), 49, 0, 1, 5)
+        if self.tr("code_sp_pp_concat")!="code_sp_pp_concat":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_pp_concat")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("sp_pp_concat")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 50, 0)
@@ -398,7 +432,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after preprocessor '#' stringify operator. ")+self.tr("Also affects the '#@' charizing operator. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 51, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_pp_stringify")), 52, 0, 1, 5)
+        if self.tr("code_sp_pp_stringify")!="code_sp_pp_stringify":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_pp_stringify")), 52, 0, 1, 5)
         label = QtWidgets.QLabel("sp_pp_stringify")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 53, 0)
@@ -409,7 +444,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before preprocessor '#' stringify operator as in '#define x(y) L#y'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 54, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_pp_stringify")), 55, 0, 1, 5)
+        if self.tr("code_sp_before_pp_stringify")!="code_sp_before_pp_stringify":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_pp_stringify")), 55, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_pp_stringify")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 56, 0)
@@ -420,7 +456,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around boolean operators '&&' and '||'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 57, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_bool")), 58, 0, 1, 5)
+        if self.tr("code_sp_bool")!="code_sp_bool":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_bool")), 58, 0, 1, 5)
         label = QtWidgets.QLabel("sp_bool")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 59, 0)
@@ -431,7 +468,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around compare operator '<', '>', '==', etc. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 60, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_compare")), 61, 0, 1, 5)
+        if self.tr("code_sp_compare")!="code_sp_compare":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_compare")), 61, 0, 1, 5)
         label = QtWidgets.QLabel("sp_compare")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 62, 0)
@@ -442,7 +480,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside '(' and ')'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 63, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_paren")), 64, 0, 1, 5)
+        if self.tr("code_sp_inside_paren")!="code_sp_inside_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_paren")), 64, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 65, 0)
@@ -453,7 +492,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between nested parentheses, ie '((' vs. ")+self.tr("') )'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 66, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_paren")), 67, 0, 1, 5)
+        if self.tr("code_sp_paren_paren")!="code_sp_paren_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_paren")), 67, 0, 1, 5)
         label = QtWidgets.QLabel("sp_paren_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 68, 0)
@@ -464,7 +504,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between back-to-back parentheses, ie ')(' vs. ")+self.tr("') ('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 69, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cparen_oparen")), 70, 0, 1, 5)
+        if self.tr("code_sp_cparen_oparen")!="code_sp_cparen_oparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cparen_oparen")), 70, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cparen_oparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 71, 0)
@@ -475,7 +516,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to balance spaces inside nested parentheses. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 72, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_balance_nested_parens")), 73, 0, 1, 5)
+        if self.tr("code_sp_balance_nested_parens")!="code_sp_balance_nested_parens":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_balance_nested_parens")), 73, 0, 1, 5)
         label = QtWidgets.QLabel("sp_balance_nested_parens")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 74, 0)
@@ -486,7 +528,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and '{'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 75, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_brace")), 76, 0, 1, 5)
+        if self.tr("code_sp_paren_brace")!="code_sp_paren_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_brace")), 76, 0, 1, 5)
         label = QtWidgets.QLabel("sp_paren_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 77, 0)
@@ -497,7 +540,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between nested braces, ie '{{' vs '{ {'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 78, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_brace")), 79, 0, 1, 5)
+        if self.tr("code_sp_brace_brace")!="code_sp_brace_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_brace")), 79, 0, 1, 5)
         label = QtWidgets.QLabel("sp_brace_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 80, 0)
@@ -508,7 +552,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before pointer star '*'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 81, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_ptr_star")), 82, 0, 1, 5)
+        if self.tr("code_sp_before_ptr_star")!="code_sp_before_ptr_star":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_ptr_star")), 82, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_ptr_star")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 83, 0)
@@ -519,7 +564,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before pointer star '*' that isn't followed by a variable name. ")+self.tr("If set to ignore, sp_before_ptr_star is used instead. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 84, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_unnamed_ptr_star")), 85, 0, 1, 5)
+        if self.tr("code_sp_before_unnamed_ptr_star")!="code_sp_before_unnamed_ptr_star":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_unnamed_ptr_star")), 85, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_unnamed_ptr_star")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 86, 0)
@@ -530,7 +576,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between pointer stars '*'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 87, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_between_ptr_star")), 88, 0, 1, 5)
+        if self.tr("code_sp_between_ptr_star")!="code_sp_between_ptr_star":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_between_ptr_star")), 88, 0, 1, 5)
         label = QtWidgets.QLabel("sp_between_ptr_star")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 89, 0)
@@ -541,7 +588,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after pointer star '*', if followed by a word. ")+self.tr("Overrides sp_type_func. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 90, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_star")), 91, 0, 1, 5)
+        if self.tr("code_sp_after_ptr_star")!="code_sp_after_ptr_star":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_star")), 91, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_ptr_star")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 92, 0)
@@ -552,7 +600,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after pointer caret '^', if followed by a word. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 93, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_block_caret")), 94, 0, 1, 5)
+        if self.tr("code_sp_after_ptr_block_caret")!="code_sp_after_ptr_block_caret":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_block_caret")), 94, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_ptr_block_caret")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 95, 0)
@@ -563,7 +612,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after pointer star '*', if followed by a qualifier. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 96, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_star_qualifier")), 97, 0, 1, 5)
+        if self.tr("code_sp_after_ptr_star_qualifier")!="code_sp_after_ptr_star_qualifier":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_star_qualifier")), 97, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_ptr_star_qualifier")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 98, 0)
@@ -574,7 +624,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after a pointer star '*', if followed by a function prototype or function definition. ")+self.tr("Overrides sp_after_ptr_star and sp_type_func. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 99, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_star_func")), 100, 0, 1, 5)
+        if self.tr("code_sp_after_ptr_star_func")!="code_sp_after_ptr_star_func":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_ptr_star_func")), 100, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_ptr_star_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 101, 0)
@@ -585,7 +636,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after a pointer star '*', if followed by an open parenthesis, as in 'void* (*)(). "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 102, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_ptr_star_paren")), 103, 0, 1, 5)
+        if self.tr("code_sp_ptr_star_paren")!="code_sp_ptr_star_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_ptr_star_paren")), 103, 0, 1, 5)
         label = QtWidgets.QLabel("sp_ptr_star_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 104, 0)
@@ -596,7 +648,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before a pointer star '*', if followed by a function prototype or function definition. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 105, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_ptr_star_func")), 106, 0, 1, 5)
+        if self.tr("code_sp_before_ptr_star_func")!="code_sp_before_ptr_star_func":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_ptr_star_func")), 106, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_ptr_star_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 107, 0)
@@ -607,7 +660,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before a reference sign '&'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 108, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_byref")), 109, 0, 1, 5)
+        if self.tr("code_sp_before_byref")!="code_sp_before_byref":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_byref")), 109, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_byref")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 110, 0)
@@ -618,7 +672,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before a reference sign '&' that isn't followed by a variable name. ")+self.tr("If set to ignore, sp_before_byref is used instead. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 111, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_unnamed_byref")), 112, 0, 1, 5)
+        if self.tr("code_sp_before_unnamed_byref")!="code_sp_before_unnamed_byref":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_unnamed_byref")), 112, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_unnamed_byref")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 113, 0)
@@ -629,7 +684,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after reference sign '&', if followed by a word. ")+self.tr("Overrides sp_type_func. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 114, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_byref")), 115, 0, 1, 5)
+        if self.tr("code_sp_after_byref")!="code_sp_after_byref":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_byref")), 115, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_byref")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 116, 0)
@@ -640,7 +696,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after a reference sign '&', if followed by a function prototype or function definition. ")+self.tr("Overrides sp_after_byref and sp_type_func. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 117, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_byref_func")), 118, 0, 1, 5)
+        if self.tr("code_sp_after_byref_func")!="code_sp_after_byref_func":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_byref_func")), 118, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_byref_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 119, 0)
@@ -651,7 +708,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before a reference sign '&', if followed by a function prototype or function definition. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 120, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_byref_func")), 121, 0, 1, 5)
+        if self.tr("code_sp_before_byref_func")!="code_sp_before_byref_func":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_byref_func")), 121, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_byref_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 122, 0)
@@ -662,7 +720,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between type and word. ")+self.tr("Default: force. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 123, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_type")), 124, 0, 1, 5)
+        if self.tr("code_sp_after_type")!="code_sp_after_type":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_type")), 124, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_type")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 125, 0)
@@ -673,7 +732,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'decltype(...)' and word. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 126, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_decltype")), 127, 0, 1, 5)
+        if self.tr("code_sp_after_decltype")!="code_sp_after_decltype":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_decltype")), 127, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_decltype")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 128, 0)
@@ -684,7 +744,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space before the parenthesis in the D constructs 'template Foo(' and 'class Foo('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 129, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_template_paren")), 130, 0, 1, 5)
+        if self.tr("code_sp_before_template_paren")!="code_sp_before_template_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_template_paren")), 130, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_template_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 131, 0)
@@ -695,7 +756,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'template' and '<'. ")+self.tr("If set to ignore, sp_before_angle is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 132, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_template_angle")), 133, 0, 1, 5)
+        if self.tr("code_sp_template_angle")!="code_sp_template_angle":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_template_angle")), 133, 0, 1, 5)
         label = QtWidgets.QLabel("sp_template_angle")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 134, 0)
@@ -706,7 +768,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before '<'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 135, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_angle")), 136, 0, 1, 5)
+        if self.tr("code_sp_before_angle")!="code_sp_before_angle":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_angle")), 136, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_angle")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 137, 0)
@@ -717,7 +780,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside '<' and '>'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 138, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_angle")), 139, 0, 1, 5)
+        if self.tr("code_sp_inside_angle")!="code_sp_inside_angle":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_angle")), 139, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_angle")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 140, 0)
@@ -728,7 +792,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside '<>'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 141, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_angle_empty")), 142, 0, 1, 5)
+        if self.tr("code_sp_inside_angle_empty")!="code_sp_inside_angle_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_angle_empty")), 142, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_angle_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 143, 0)
@@ -739,7 +804,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '>' and ':'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 144, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_colon")), 145, 0, 1, 5)
+        if self.tr("code_sp_angle_colon")!="code_sp_angle_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_colon")), 145, 0, 1, 5)
         label = QtWidgets.QLabel("sp_angle_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 146, 0)
@@ -750,7 +816,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after '>'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 147, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_angle")), 148, 0, 1, 5)
+        if self.tr("code_sp_after_angle")!="code_sp_after_angle":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_angle")), 148, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_angle")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 149, 0)
@@ -761,7 +828,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '>' and '(' as found in 'new List<byte>(foo);'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 150, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_paren")), 151, 0, 1, 5)
+        if self.tr("code_sp_angle_paren")!="code_sp_angle_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_paren")), 151, 0, 1, 5)
         label = QtWidgets.QLabel("sp_angle_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 152, 0)
@@ -772,7 +840,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '>' and '()' as found in 'new List<byte>();'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 153, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_paren_empty")), 154, 0, 1, 5)
+        if self.tr("code_sp_angle_paren_empty")!="code_sp_angle_paren_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_paren_empty")), 154, 0, 1, 5)
         label = QtWidgets.QLabel("sp_angle_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 155, 0)
@@ -783,7 +852,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '>' and a word as in 'List<byte> m;' or 'template <typename T> static ...'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 156, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_word")), 157, 0, 1, 5)
+        if self.tr("code_sp_angle_word")!="code_sp_angle_word":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_word")), 157, 0, 1, 5)
         label = QtWidgets.QLabel("sp_angle_word")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 158, 0)
@@ -794,7 +864,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '>' and '>' in '>>' (template stuff). ")+self.tr("Default: add. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 159, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_shift")), 160, 0, 1, 5)
+        if self.tr("code_sp_angle_shift")!="code_sp_angle_shift":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_angle_shift")), 160, 0, 1, 5)
         label = QtWidgets.QLabel("sp_angle_shift")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 161, 0)
@@ -805,7 +876,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C++11) Permit removal of the space between '>>' in 'foo<bar<int> >'. ")+self.tr("Note that sp_angle_shift cannot remove the space without this option. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 162, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_permit_cpp11_shift")), 163, 0, 1, 5)
+        if self.tr("code_sp_permit_cpp11_shift")!="code_sp_permit_cpp11_shift":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_permit_cpp11_shift")), 163, 0, 1, 5)
         label = QtWidgets.QLabel("sp_permit_cpp11_shift")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 164, 0)
@@ -816,7 +888,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before '(' of control statements ('if', 'for', 'switch', 'while', etc.). "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 165, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_sparen")), 166, 0, 1, 5)
+        if self.tr("code_sp_before_sparen")!="code_sp_before_sparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_sparen")), 166, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_sparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 167, 0)
@@ -827,7 +900,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside '(' and ')' of control statements. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 168, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_sparen")), 169, 0, 1, 5)
+        if self.tr("code_sp_inside_sparen")!="code_sp_inside_sparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_sparen")), 169, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_sparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 170, 0)
@@ -838,7 +912,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after '(' of control statements. ")+self.tr("Overrides sp_inside_sparen. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 171, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_sparen_open")), 172, 0, 1, 5)
+        if self.tr("code_sp_inside_sparen_open")!="code_sp_inside_sparen_open":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_sparen_open")), 172, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_sparen_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 173, 0)
@@ -849,7 +924,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before ')' of control statements. ")+self.tr("Overrides sp_inside_sparen. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 174, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_sparen_close")), 175, 0, 1, 5)
+        if self.tr("code_sp_inside_sparen_close")!="code_sp_inside_sparen_close":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_sparen_close")), 175, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_sparen_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 176, 0)
@@ -860,7 +936,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after ')' of control statements. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 177, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_sparen")), 178, 0, 1, 5)
+        if self.tr("code_sp_after_sparen")!="code_sp_after_sparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_sparen")), 178, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_sparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 179, 0)
@@ -871,7 +948,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and '{' of of control statements. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 180, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sparen_brace")), 181, 0, 1, 5)
+        if self.tr("code_sp_sparen_brace")!="code_sp_sparen_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sparen_brace")), 181, 0, 1, 5)
         label = QtWidgets.QLabel("sp_sparen_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 182, 0)
@@ -882,7 +960,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space between 'invariant' and '('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 183, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_invariant_paren")), 184, 0, 1, 5)
+        if self.tr("code_sp_invariant_paren")!="code_sp_invariant_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_invariant_paren")), 184, 0, 1, 5)
         label = QtWidgets.QLabel("sp_invariant_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 185, 0)
@@ -893,7 +972,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space after the ')' in 'invariant (C) c'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 186, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_invariant_paren")), 187, 0, 1, 5)
+        if self.tr("code_sp_after_invariant_paren")!="code_sp_after_invariant_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_invariant_paren")), 187, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_invariant_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 188, 0)
@@ -904,7 +984,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before empty statement ';' on 'if', 'for' and 'while'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 189, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_special_semi")), 190, 0, 1, 5)
+        if self.tr("code_sp_special_semi")!="code_sp_special_semi":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_special_semi")), 190, 0, 1, 5)
         label = QtWidgets.QLabel("sp_special_semi")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 191, 0)
@@ -915,7 +996,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before ';'. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 192, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_semi")), 193, 0, 1, 5)
+        if self.tr("code_sp_before_semi")!="code_sp_before_semi":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_semi")), 193, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_semi")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 194, 0)
@@ -926,7 +1008,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before ';' in non-empty 'for' statements. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 195, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_semi_for")), 196, 0, 1, 5)
+        if self.tr("code_sp_before_semi_for")!="code_sp_before_semi_for":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_semi_for")), 196, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_semi_for")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 197, 0)
@@ -937,7 +1020,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before a semicolon of an empty part of a for statement. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 198, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_semi_for_empty")), 199, 0, 1, 5)
+        if self.tr("code_sp_before_semi_for_empty")!="code_sp_before_semi_for_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_semi_for_empty")), 199, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_semi_for_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 200, 0)
@@ -948,7 +1032,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after ';', except when followed by a comment. ")+self.tr("Default: add. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 201, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_semi")), 202, 0, 1, 5)
+        if self.tr("code_sp_after_semi")!="code_sp_after_semi":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_semi")), 202, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_semi")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 203, 0)
@@ -959,7 +1044,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after ';' in non-empty 'for' statements. ")+self.tr("Default: force. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 204, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_semi_for")), 205, 0, 1, 5)
+        if self.tr("code_sp_after_semi_for")!="code_sp_after_semi_for":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_semi_for")), 205, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_semi_for")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 206, 0)
@@ -970,7 +1056,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the final semicolon of an empty part of a for statement, as in 'for ( ; ; <here> )'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 207, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_semi_for_empty")), 208, 0, 1, 5)
+        if self.tr("code_sp_after_semi_for_empty")!="code_sp_after_semi_for_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_semi_for_empty")), 208, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_semi_for_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 209, 0)
@@ -981,7 +1068,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before '[' (except '[]'). "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 210, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_square")), 211, 0, 1, 5)
+        if self.tr("code_sp_before_square")!="code_sp_before_square":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_square")), 211, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_square")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 212, 0)
@@ -992,7 +1080,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before '[' for a variable definition. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 213, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_vardef_square")), 214, 0, 1, 5)
+        if self.tr("code_sp_before_vardef_square")!="code_sp_before_vardef_square":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_vardef_square")), 214, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_vardef_square")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 215, 0)
@@ -1003,7 +1092,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before '[' for asm block. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 216, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_square_asm_block")), 217, 0, 1, 5)
+        if self.tr("code_sp_before_square_asm_block")!="code_sp_before_square_asm_block":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_square_asm_block")), 217, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_square_asm_block")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 218, 0)
@@ -1014,7 +1104,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before '[]'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 219, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_squares")), 220, 0, 1, 5)
+        if self.tr("code_sp_before_squares")!="code_sp_before_squares":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_squares")), 220, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_squares")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 221, 0)
@@ -1025,7 +1116,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before C++17 structured bindings. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 222, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_before_struct_binding")), 223, 0, 1, 5)
+        if self.tr("code_sp_cpp_before_struct_binding")!="code_sp_cpp_before_struct_binding":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_before_struct_binding")), 223, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cpp_before_struct_binding")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 224, 0)
@@ -1036,7 +1128,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside a non-empty '[' and ']'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 225, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_square")), 226, 0, 1, 5)
+        if self.tr("code_sp_inside_square")!="code_sp_inside_square":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_square")), 226, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_square")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 227, 0)
@@ -1047,7 +1140,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space inside a non-empty Objective-C boxed array '@[' and ']'. ")+self.tr("If set to ignore, sp_inside_square is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 228, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_square_oc_array")), 229, 0, 1, 5)
+        if self.tr("code_sp_inside_square_oc_array")!="code_sp_inside_square_oc_array":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_square_oc_array")), 229, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_square_oc_array")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 230, 0)
@@ -1058,7 +1152,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after ',', ie 'a,b' vs. ")+self.tr("'a, b'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 231, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_comma")), 232, 0, 1, 5)
+        if self.tr("code_sp_after_comma")!="code_sp_after_comma":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_comma")), 232, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 233, 0)
@@ -1069,7 +1164,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before ','. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 234, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_comma")), 235, 0, 1, 5)
+        if self.tr("code_sp_before_comma")!="code_sp_before_comma":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_comma")), 235, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 236, 0)
@@ -1080,7 +1176,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Add or remove space between ',' and ']' in multidimensional array type like 'int[,,]'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 237, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_mdatype_commas")), 238, 0, 1, 5)
+        if self.tr("code_sp_after_mdatype_commas")!="code_sp_after_mdatype_commas":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_mdatype_commas")), 238, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_mdatype_commas")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 239, 0)
@@ -1091,7 +1188,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Add or remove space between '[' and ',' in multidimensional array type like 'int[,,]'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 240, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_mdatype_commas")), 241, 0, 1, 5)
+        if self.tr("code_sp_before_mdatype_commas")!="code_sp_before_mdatype_commas":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_mdatype_commas")), 241, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_mdatype_commas")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 242, 0)
@@ -1102,7 +1200,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Add or remove space between ',' in multidimensional array type like 'int[,,]'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 243, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_between_mdatype_commas")), 244, 0, 1, 5)
+        if self.tr("code_sp_between_mdatype_commas")!="code_sp_between_mdatype_commas":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_between_mdatype_commas")), 244, 0, 1, 5)
         label = QtWidgets.QLabel("sp_between_mdatype_commas")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 245, 0)
@@ -1113,7 +1212,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between an open parenthesis and comma, ie '(,' vs. ")+self.tr("'( ,'. ")+self.tr("Default: force. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 246, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_comma")), 247, 0, 1, 5)
+        if self.tr("code_sp_paren_comma")!="code_sp_paren_comma":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_comma")), 247, 0, 1, 5)
         label = QtWidgets.QLabel("sp_paren_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 248, 0)
@@ -1124,7 +1224,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before the variadic '...' when preceded by a non-punctuator. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 249, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_ellipsis")), 250, 0, 1, 5)
+        if self.tr("code_sp_before_ellipsis")!="code_sp_before_ellipsis":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_ellipsis")), 250, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_ellipsis")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 251, 0)
@@ -1135,7 +1236,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a type and '...'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 252, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_ellipsis")), 253, 0, 1, 5)
+        if self.tr("code_sp_type_ellipsis")!="code_sp_type_ellipsis":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_ellipsis")), 253, 0, 1, 5)
         label = QtWidgets.QLabel("sp_type_ellipsis")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 254, 0)
@@ -1146,7 +1248,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space between a type and '?'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 255, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_question")), 256, 0, 1, 5)
+        if self.tr("code_sp_type_question")!="code_sp_type_question":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_question")), 256, 0, 1, 5)
         label = QtWidgets.QLabel("sp_type_question")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 257, 0)
@@ -1157,7 +1260,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and '...'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 258, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_ellipsis")), 259, 0, 1, 5)
+        if self.tr("code_sp_paren_ellipsis")!="code_sp_paren_ellipsis":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_ellipsis")), 259, 0, 1, 5)
         label = QtWidgets.QLabel("sp_paren_ellipsis")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 260, 0)
@@ -1168,7 +1272,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and a qualifier such as 'const'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 261, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_qualifier")), 262, 0, 1, 5)
+        if self.tr("code_sp_paren_qualifier")!="code_sp_paren_qualifier":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_qualifier")), 262, 0, 1, 5)
         label = QtWidgets.QLabel("sp_paren_qualifier")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 263, 0)
@@ -1179,7 +1284,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and 'noexcept'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 264, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_noexcept")), 265, 0, 1, 5)
+        if self.tr("code_sp_paren_noexcept")!="code_sp_paren_noexcept":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_paren_noexcept")), 265, 0, 1, 5)
         label = QtWidgets.QLabel("sp_paren_noexcept")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 266, 0)
@@ -1190,7 +1296,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after class ':'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 267, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_class_colon")), 268, 0, 1, 5)
+        if self.tr("code_sp_after_class_colon")!="code_sp_after_class_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_class_colon")), 268, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_class_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 269, 0)
@@ -1201,7 +1308,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before class ':'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 270, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_class_colon")), 271, 0, 1, 5)
+        if self.tr("code_sp_before_class_colon")!="code_sp_before_class_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_class_colon")), 271, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_class_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 272, 0)
@@ -1212,7 +1320,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after class constructor ':'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 273, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_constr_colon")), 274, 0, 1, 5)
+        if self.tr("code_sp_after_constr_colon")!="code_sp_after_constr_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_constr_colon")), 274, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_constr_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 275, 0)
@@ -1223,7 +1332,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before class constructor ':'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 276, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_constr_colon")), 277, 0, 1, 5)
+        if self.tr("code_sp_before_constr_colon")!="code_sp_before_constr_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_constr_colon")), 277, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_constr_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 278, 0)
@@ -1234,7 +1344,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before case ':'. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 279, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_case_colon")), 280, 0, 1, 5)
+        if self.tr("code_sp_before_case_colon")!="code_sp_before_case_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_case_colon")), 280, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_case_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 281, 0)
@@ -1245,7 +1356,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'operator' and operator sign. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 282, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_operator")), 283, 0, 1, 5)
+        if self.tr("code_sp_after_operator")!="code_sp_after_operator":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_operator")), 283, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_operator")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 284, 0)
@@ -1256,7 +1368,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between the operator symbol and the open parenthesis, as in 'operator ++('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 285, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_operator_sym")), 286, 0, 1, 5)
+        if self.tr("code_sp_after_operator_sym")!="code_sp_after_operator_sym":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_operator_sym")), 286, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_operator_sym")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 287, 0)
@@ -1267,7 +1380,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides sp_after_operator_sym when the operator has no arguments, as in 'operator *()'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 288, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_operator_sym_empty")), 289, 0, 1, 5)
+        if self.tr("code_sp_after_operator_sym_empty")!="code_sp_after_operator_sym_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_operator_sym_empty")), 289, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_operator_sym_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 290, 0)
@@ -1278,7 +1392,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after C/D cast, ie 'cast(int)a' vs. ")+self.tr("'cast(int) a' or '(int)a' vs. ")+self.tr("'(int) a'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 291, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_cast")), 292, 0, 1, 5)
+        if self.tr("code_sp_after_cast")!="code_sp_after_cast":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_cast")), 292, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_cast")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 293, 0)
@@ -1289,7 +1404,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove spaces inside cast parentheses. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 294, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_paren_cast")), 295, 0, 1, 5)
+        if self.tr("code_sp_inside_paren_cast")!="code_sp_inside_paren_cast":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_paren_cast")), 295, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_paren_cast")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 296, 0)
@@ -1300,7 +1416,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between the type and open parenthesis in a C++ cast, ie 'int(exp)' vs. ")+self.tr("'int (exp)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 297, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_cast_paren")), 298, 0, 1, 5)
+        if self.tr("code_sp_cpp_cast_paren")!="code_sp_cpp_cast_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cpp_cast_paren")), 298, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cpp_cast_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 299, 0)
@@ -1311,7 +1428,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'sizeof' and '('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 300, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sizeof_paren")), 301, 0, 1, 5)
+        if self.tr("code_sp_sizeof_paren")!="code_sp_sizeof_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sizeof_paren")), 301, 0, 1, 5)
         label = QtWidgets.QLabel("sp_sizeof_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 302, 0)
@@ -1322,7 +1440,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'sizeof' and '...'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 303, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sizeof_ellipsis")), 304, 0, 1, 5)
+        if self.tr("code_sp_sizeof_ellipsis")!="code_sp_sizeof_ellipsis":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sizeof_ellipsis")), 304, 0, 1, 5)
         label = QtWidgets.QLabel("sp_sizeof_ellipsis")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 305, 0)
@@ -1333,7 +1452,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'sizeof...' and '('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 306, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sizeof_ellipsis_paren")), 307, 0, 1, 5)
+        if self.tr("code_sp_sizeof_ellipsis_paren")!="code_sp_sizeof_ellipsis_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sizeof_ellipsis_paren")), 307, 0, 1, 5)
         label = QtWidgets.QLabel("sp_sizeof_ellipsis_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 308, 0)
@@ -1344,7 +1464,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'decltype' and '('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 309, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_decltype_paren")), 310, 0, 1, 5)
+        if self.tr("code_sp_decltype_paren")!="code_sp_decltype_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_decltype_paren")), 310, 0, 1, 5)
         label = QtWidgets.QLabel("sp_decltype_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 311, 0)
@@ -1355,7 +1476,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Pawn) Add or remove space after the tag keyword. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 312, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_tag")), 313, 0, 1, 5)
+        if self.tr("code_sp_after_tag")!="code_sp_after_tag":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_tag")), 313, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_tag")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 314, 0)
@@ -1366,7 +1488,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside enum '{' and '}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 315, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_enum")), 316, 0, 1, 5)
+        if self.tr("code_sp_inside_braces_enum")!="code_sp_inside_braces_enum":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_enum")), 316, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_braces_enum")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 317, 0)
@@ -1377,7 +1500,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside struct/union '{' and '}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 318, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_struct")), 319, 0, 1, 5)
+        if self.tr("code_sp_inside_braces_struct")!="code_sp_inside_braces_struct":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_struct")), 319, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_braces_struct")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 320, 0)
@@ -1388,7 +1512,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space inside Objective-C boxed dictionary '{' and '}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 321, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_oc_dict")), 322, 0, 1, 5)
+        if self.tr("code_sp_inside_braces_oc_dict")!="code_sp_inside_braces_oc_dict":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_oc_dict")), 322, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_braces_oc_dict")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 323, 0)
@@ -1399,7 +1524,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after open brace in an unnamed temporary direct-list-initialization. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 324, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_type_brace_init_lst_open")), 325, 0, 1, 5)
+        if self.tr("code_sp_after_type_brace_init_lst_open")!="code_sp_after_type_brace_init_lst_open":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_type_brace_init_lst_open")), 325, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_type_brace_init_lst_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 326, 0)
@@ -1410,7 +1536,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before close brace in an unnamed temporary direct-list-initialization. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 327, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_type_brace_init_lst_close")), 328, 0, 1, 5)
+        if self.tr("code_sp_before_type_brace_init_lst_close")!="code_sp_before_type_brace_init_lst_close":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_type_brace_init_lst_close")), 328, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_type_brace_init_lst_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 329, 0)
@@ -1421,7 +1548,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside an unnamed temporary direct-list-initialization. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 330, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_type_brace_init_lst")), 331, 0, 1, 5)
+        if self.tr("code_sp_inside_type_brace_init_lst")!="code_sp_inside_type_brace_init_lst":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_type_brace_init_lst")), 331, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_type_brace_init_lst")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 332, 0)
@@ -1432,7 +1560,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside '{' and '}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 333, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces")), 334, 0, 1, 5)
+        if self.tr("code_sp_inside_braces")!="code_sp_inside_braces":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces")), 334, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_braces")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 335, 0)
@@ -1443,7 +1572,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside '{}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 336, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_empty")), 337, 0, 1, 5)
+        if self.tr("code_sp_inside_braces_empty")!="code_sp_inside_braces_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_braces_empty")), 337, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_braces_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 338, 0)
@@ -1454,7 +1584,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around trailing return operator '->'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 339, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_trailing_return")), 340, 0, 1, 5)
+        if self.tr("code_sp_trailing_return")!="code_sp_trailing_return":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_trailing_return")), 340, 0, 1, 5)
         label = QtWidgets.QLabel("sp_trailing_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 341, 0)
@@ -1465,7 +1596,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between return type and function name. ")+self.tr("A minimum of 1 is forced except for pointer return types. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 342, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_func")), 343, 0, 1, 5)
+        if self.tr("code_sp_type_func")!="code_sp_type_func":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_func")), 343, 0, 1, 5)
         label = QtWidgets.QLabel("sp_type_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 344, 0)
@@ -1476,7 +1608,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between type and open brace of an unnamed temporary direct-list-initialization. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 345, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_brace_init_lst")), 346, 0, 1, 5)
+        if self.tr("code_sp_type_brace_init_lst")!="code_sp_type_brace_init_lst":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_type_brace_init_lst")), 346, 0, 1, 5)
         label = QtWidgets.QLabel("sp_type_brace_init_lst")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 347, 0)
@@ -1487,7 +1620,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between function name and '(' on function declaration. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 348, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_proto_paren")), 349, 0, 1, 5)
+        if self.tr("code_sp_func_proto_paren")!="code_sp_func_proto_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_proto_paren")), 349, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_proto_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 350, 0)
@@ -1498,7 +1632,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between function name and '()' on function declaration without parameters. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 351, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_proto_paren_empty")), 352, 0, 1, 5)
+        if self.tr("code_sp_func_proto_paren_empty")!="code_sp_func_proto_paren_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_proto_paren_empty")), 352, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_proto_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 353, 0)
@@ -1509,7 +1644,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between function name and '(' with a typedef specifier. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 354, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_type_paren")), 355, 0, 1, 5)
+        if self.tr("code_sp_func_type_paren")!="code_sp_func_type_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_type_paren")), 355, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_type_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 356, 0)
@@ -1520,7 +1656,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between alias name and '(' of a non-pointer function type typedef. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 357, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_def_paren")), 358, 0, 1, 5)
+        if self.tr("code_sp_func_def_paren")!="code_sp_func_def_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_def_paren")), 358, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_def_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 359, 0)
@@ -1531,7 +1668,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between function name and '()' on function definition without parameters. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 360, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_def_paren_empty")), 361, 0, 1, 5)
+        if self.tr("code_sp_func_def_paren_empty")!="code_sp_func_def_paren_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_def_paren_empty")), 361, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_def_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 362, 0)
@@ -1542,7 +1680,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside empty function '()'. ")+self.tr("Overrides sp_after_angle unless use_sp_after_angle_always is set to true. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 363, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_fparens")), 364, 0, 1, 5)
+        if self.tr("code_sp_inside_fparens")!="code_sp_inside_fparens":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_fparens")), 364, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_fparens")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 365, 0)
@@ -1553,7 +1692,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside function '(' and ')'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 366, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_fparen")), 367, 0, 1, 5)
+        if self.tr("code_sp_inside_fparen")!="code_sp_inside_fparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_fparen")), 367, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_fparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 368, 0)
@@ -1564,7 +1704,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside the first parentheses in a function type, as in 'void (*x)(...)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 369, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_tparen")), 370, 0, 1, 5)
+        if self.tr("code_sp_inside_tparen")!="code_sp_inside_tparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_tparen")), 370, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_tparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 371, 0)
@@ -1575,7 +1716,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between the ')' and '(' in a function type, as in 'void (*x)(...)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 372, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_tparen_close")), 373, 0, 1, 5)
+        if self.tr("code_sp_after_tparen_close")!="code_sp_after_tparen_close":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_tparen_close")), 373, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_tparen_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 374, 0)
@@ -1586,7 +1728,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ']' and '(' when part of a function call. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 375, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_square_fparen")), 376, 0, 1, 5)
+        if self.tr("code_sp_square_fparen")!="code_sp_square_fparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_square_fparen")), 376, 0, 1, 5)
         label = QtWidgets.QLabel("sp_square_fparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 377, 0)
@@ -1597,7 +1740,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and '{' of function. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 378, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_fparen_brace")), 379, 0, 1, 5)
+        if self.tr("code_sp_fparen_brace")!="code_sp_fparen_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_fparen_brace")), 379, 0, 1, 5)
         label = QtWidgets.QLabel("sp_fparen_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 380, 0)
@@ -1608,7 +1752,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and '{' of s function call in object initialization. ")+self.tr("Overrides sp_fparen_brace. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 381, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_fparen_brace_initializer")), 382, 0, 1, 5)
+        if self.tr("code_sp_fparen_brace_initializer")!="code_sp_fparen_brace_initializer":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_fparen_brace_initializer")), 382, 0, 1, 5)
         label = QtWidgets.QLabel("sp_fparen_brace_initializer")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 383, 0)
@@ -1619,7 +1764,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Java) Add or remove space between ')' and '{{' of double brace initializer. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 384, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_fparen_dbrace")), 385, 0, 1, 5)
+        if self.tr("code_sp_fparen_dbrace")!="code_sp_fparen_dbrace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_fparen_dbrace")), 385, 0, 1, 5)
         label = QtWidgets.QLabel("sp_fparen_dbrace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 386, 0)
@@ -1630,7 +1776,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between function name and '(' on function calls. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 387, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_paren")), 388, 0, 1, 5)
+        if self.tr("code_sp_func_call_paren")!="code_sp_func_call_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_paren")), 388, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_call_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 389, 0)
@@ -1641,7 +1788,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between function name and '()' on function calls without parameters. ")+self.tr("If set to ignore (the default), sp_func_call_paren is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 390, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_paren_empty")), 391, 0, 1, 5)
+        if self.tr("code_sp_func_call_paren_empty")!="code_sp_func_call_paren_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_paren_empty")), 391, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_call_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 392, 0)
@@ -1652,7 +1800,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between the user function name and '(' on function calls. ")+self.tr("You need to set a keyword to be a user function in the config file, like:   set func_call_user tr _ i18n. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 393, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_user_paren")), 394, 0, 1, 5)
+        if self.tr("code_sp_func_call_user_paren")!="code_sp_func_call_user_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_user_paren")), 394, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_call_user_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 395, 0)
@@ -1663,7 +1812,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside user function '(' and ')'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 396, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_user_inside_fparen")), 397, 0, 1, 5)
+        if self.tr("code_sp_func_call_user_inside_fparen")!="code_sp_func_call_user_inside_fparen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_user_inside_fparen")), 397, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_call_user_inside_fparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 398, 0)
@@ -1674,7 +1824,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between nested parentheses with user functions, ie '((' vs. ")+self.tr("'( ('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 399, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_user_paren_paren")), 400, 0, 1, 5)
+        if self.tr("code_sp_func_call_user_paren_paren")!="code_sp_func_call_user_paren_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_call_user_paren_paren")), 400, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_call_user_paren_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 401, 0)
@@ -1685,7 +1836,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a constructor/destructor and the open parenthesis. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 402, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_class_paren")), 403, 0, 1, 5)
+        if self.tr("code_sp_func_class_paren")!="code_sp_func_class_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_class_paren")), 403, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_class_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 404, 0)
@@ -1696,7 +1848,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a constructor without parameters or destructor and '()'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 405, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_class_paren_empty")), 406, 0, 1, 5)
+        if self.tr("code_sp_func_class_paren_empty")!="code_sp_func_class_paren_empty":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_func_class_paren_empty")), 406, 0, 1, 5)
         label = QtWidgets.QLabel("sp_func_class_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 407, 0)
@@ -1707,7 +1860,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'return' and '('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 408, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_return_paren")), 409, 0, 1, 5)
+        if self.tr("code_sp_return_paren")!="code_sp_return_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_return_paren")), 409, 0, 1, 5)
         label = QtWidgets.QLabel("sp_return_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 410, 0)
@@ -1718,7 +1872,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'return' and '{'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 411, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_return_brace")), 412, 0, 1, 5)
+        if self.tr("code_sp_return_brace")!="code_sp_return_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_return_brace")), 412, 0, 1, 5)
         label = QtWidgets.QLabel("sp_return_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 413, 0)
@@ -1729,7 +1884,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '__attribute__' and '('. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 414, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_attribute_paren")), 415, 0, 1, 5)
+        if self.tr("code_sp_attribute_paren")!="code_sp_attribute_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_attribute_paren")), 415, 0, 1, 5)
         label = QtWidgets.QLabel("sp_attribute_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 416, 0)
@@ -1740,7 +1896,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'defined' and '(' in '#if defined (FOO)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 417, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_defined_paren")), 418, 0, 1, 5)
+        if self.tr("code_sp_defined_paren")!="code_sp_defined_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_defined_paren")), 418, 0, 1, 5)
         label = QtWidgets.QLabel("sp_defined_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 419, 0)
@@ -1751,7 +1908,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'throw' and '(' in 'throw (something)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 420, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_throw_paren")), 421, 0, 1, 5)
+        if self.tr("code_sp_throw_paren")!="code_sp_throw_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_throw_paren")), 421, 0, 1, 5)
         label = QtWidgets.QLabel("sp_throw_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 422, 0)
@@ -1762,7 +1920,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'throw' and anything other than '(' as in '@throw [...];'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 423, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_throw")), 424, 0, 1, 5)
+        if self.tr("code_sp_after_throw")!="code_sp_after_throw":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_throw")), 424, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_throw")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 425, 0)
@@ -1773,7 +1932,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'catch' and '(' in 'catch (something) { }'. ")+self.tr("If set to ignore, sp_before_sparen is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 426, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_catch_paren")), 427, 0, 1, 5)
+        if self.tr("code_sp_catch_paren")!="code_sp_catch_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_catch_paren")), 427, 0, 1, 5)
         label = QtWidgets.QLabel("sp_catch_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 428, 0)
@@ -1784,7 +1944,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space between '@catch' and '(' in '@catch (something) { }'. ")+self.tr("If set to ignore, sp_catch_paren is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 429, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_catch_paren")), 430, 0, 1, 5)
+        if self.tr("code_sp_oc_catch_paren")!="code_sp_oc_catch_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_catch_paren")), 430, 0, 1, 5)
         label = QtWidgets.QLabel("sp_oc_catch_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 431, 0)
@@ -1795,7 +1956,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space before Objective-C protocol list as in '@protocol Protocol<here><Protocol_A>' or '@interface MyClass : NSObject<here><MyProtocol>'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 432, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_proto_list")), 433, 0, 1, 5)
+        if self.tr("code_sp_before_oc_proto_list")!="code_sp_before_oc_proto_list":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_proto_list")), 433, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_oc_proto_list")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 434, 0)
@@ -1806,7 +1968,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space between class name and '(' in '@interface className(categoryName)<ProtocolName>:BaseClass'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 435, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_classname_paren")), 436, 0, 1, 5)
+        if self.tr("code_sp_oc_classname_paren")!="code_sp_oc_classname_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_classname_paren")), 436, 0, 1, 5)
         label = QtWidgets.QLabel("sp_oc_classname_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 437, 0)
@@ -1817,7 +1980,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space between 'version' and '(' in 'version (something) { }'. ")+self.tr("If set to ignore, sp_before_sparen is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 438, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_version_paren")), 439, 0, 1, 5)
+        if self.tr("code_sp_version_paren")!="code_sp_version_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_version_paren")), 439, 0, 1, 5)
         label = QtWidgets.QLabel("sp_version_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 440, 0)
@@ -1828,7 +1992,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space between 'scope' and '(' in 'scope (something) { }'. ")+self.tr("If set to ignore, sp_before_sparen is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 441, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_scope_paren")), 442, 0, 1, 5)
+        if self.tr("code_sp_scope_paren")!="code_sp_scope_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_scope_paren")), 442, 0, 1, 5)
         label = QtWidgets.QLabel("sp_scope_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 443, 0)
@@ -1839,7 +2004,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'super' and '(' in 'super (something)'. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 444, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_super_paren")), 445, 0, 1, 5)
+        if self.tr("code_sp_super_paren")!="code_sp_super_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_super_paren")), 445, 0, 1, 5)
         label = QtWidgets.QLabel("sp_super_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 446, 0)
@@ -1850,7 +2016,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'this' and '(' in 'this (something)'. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 447, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_this_paren")), 448, 0, 1, 5)
+        if self.tr("code_sp_this_paren")!="code_sp_this_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_this_paren")), 448, 0, 1, 5)
         label = QtWidgets.QLabel("sp_this_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 449, 0)
@@ -1861,7 +2028,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a macro name and its definition. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 450, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_macro")), 451, 0, 1, 5)
+        if self.tr("code_sp_macro")!="code_sp_macro":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_macro")), 451, 0, 1, 5)
         label = QtWidgets.QLabel("sp_macro")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 452, 0)
@@ -1872,7 +2040,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a macro function ')' and its definition. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 453, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_macro_func")), 454, 0, 1, 5)
+        if self.tr("code_sp_macro_func")!="code_sp_macro_func":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_macro_func")), 454, 0, 1, 5)
         label = QtWidgets.QLabel("sp_macro_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 455, 0)
@@ -1883,7 +2052,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'else' and '{' if on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 456, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_else_brace")), 457, 0, 1, 5)
+        if self.tr("code_sp_else_brace")!="code_sp_else_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_else_brace")), 457, 0, 1, 5)
         label = QtWidgets.QLabel("sp_else_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 458, 0)
@@ -1894,7 +2064,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '}' and 'else' if on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 459, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_else")), 460, 0, 1, 5)
+        if self.tr("code_sp_brace_else")!="code_sp_brace_else":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_else")), 460, 0, 1, 5)
         label = QtWidgets.QLabel("sp_brace_else")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 461, 0)
@@ -1905,7 +2076,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '}' and the name of a typedef on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 462, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_typedef")), 463, 0, 1, 5)
+        if self.tr("code_sp_brace_typedef")!="code_sp_brace_typedef":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_typedef")), 463, 0, 1, 5)
         label = QtWidgets.QLabel("sp_brace_typedef")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 464, 0)
@@ -1916,7 +2088,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before the '{' of a 'catch' statement, if the '{' and 'catch' are on the same line, as in 'catch (decl) <here> {'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 465, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_catch_brace")), 466, 0, 1, 5)
+        if self.tr("code_sp_catch_brace")!="code_sp_catch_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_catch_brace")), 466, 0, 1, 5)
         label = QtWidgets.QLabel("sp_catch_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 467, 0)
@@ -1927,7 +2100,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space before the '{' of a '@catch' statement, if the '{' and '@catch' are on the same line, as in '@catch (decl) <here> {'. ")+self.tr("If set to ignore, sp_catch_brace is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 468, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_catch_brace")), 469, 0, 1, 5)
+        if self.tr("code_sp_oc_catch_brace")!="code_sp_oc_catch_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_catch_brace")), 469, 0, 1, 5)
         label = QtWidgets.QLabel("sp_oc_catch_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 470, 0)
@@ -1938,7 +2112,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '}' and 'catch' if on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 471, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_catch")), 472, 0, 1, 5)
+        if self.tr("code_sp_brace_catch")!="code_sp_brace_catch":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_catch")), 472, 0, 1, 5)
         label = QtWidgets.QLabel("sp_brace_catch")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 473, 0)
@@ -1949,7 +2124,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space between '}' and '@catch' if on the same line. ")+self.tr("If set to ignore, sp_brace_catch is used. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 474, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_brace_catch")), 475, 0, 1, 5)
+        if self.tr("code_sp_oc_brace_catch")!="code_sp_oc_brace_catch":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_oc_brace_catch")), 475, 0, 1, 5)
         label = QtWidgets.QLabel("sp_oc_brace_catch")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 476, 0)
@@ -1960,7 +2136,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'finally' and '{' if on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 477, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_finally_brace")), 478, 0, 1, 5)
+        if self.tr("code_sp_finally_brace")!="code_sp_finally_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_finally_brace")), 478, 0, 1, 5)
         label = QtWidgets.QLabel("sp_finally_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 479, 0)
@@ -1971,7 +2148,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '}' and 'finally' if on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 480, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_finally")), 481, 0, 1, 5)
+        if self.tr("code_sp_brace_finally")!="code_sp_brace_finally":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_brace_finally")), 481, 0, 1, 5)
         label = QtWidgets.QLabel("sp_brace_finally")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 482, 0)
@@ -1982,7 +2160,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'try' and '{' if on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 483, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_try_brace")), 484, 0, 1, 5)
+        if self.tr("code_sp_try_brace")!="code_sp_try_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_try_brace")), 484, 0, 1, 5)
         label = QtWidgets.QLabel("sp_try_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 485, 0)
@@ -1993,7 +2172,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between get/set and '{' if on the same line. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 486, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_getset_brace")), 487, 0, 1, 5)
+        if self.tr("code_sp_getset_brace")!="code_sp_getset_brace":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_getset_brace")), 487, 0, 1, 5)
         label = QtWidgets.QLabel("sp_getset_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 488, 0)
@@ -2004,7 +2184,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a variable and '{' for C++ uniform initialization. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 489, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_word_brace_init_lst")), 490, 0, 1, 5)
+        if self.tr("code_sp_word_brace_init_lst")!="code_sp_word_brace_init_lst":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_word_brace_init_lst")), 490, 0, 1, 5)
         label = QtWidgets.QLabel("sp_word_brace_init_lst")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 491, 0)
@@ -2015,7 +2196,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between a variable and '{' for a namespace. ")+self.tr("Default: add. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 492, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_word_brace_ns")), 493, 0, 1, 5)
+        if self.tr("code_sp_word_brace_ns")!="code_sp_word_brace_ns":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_word_brace_ns")), 493, 0, 1, 5)
         label = QtWidgets.QLabel("sp_word_brace_ns")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 494, 0)
@@ -2026,7 +2208,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before the '::' operator. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 495, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_dc")), 496, 0, 1, 5)
+        if self.tr("code_sp_before_dc")!="code_sp_before_dc":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_dc")), 496, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_dc")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 497, 0)
@@ -2037,7 +2220,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the '::' operator. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 498, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_dc")), 499, 0, 1, 5)
+        if self.tr("code_sp_after_dc")!="code_sp_after_dc":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_dc")), 499, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_dc")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 500, 0)
@@ -2048,7 +2232,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove around the D named array initializer ':' operator. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 501, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_d_array_colon")), 502, 0, 1, 5)
+        if self.tr("code_sp_d_array_colon")!="code_sp_d_array_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_d_array_colon")), 502, 0, 1, 5)
         label = QtWidgets.QLabel("sp_d_array_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 503, 0)
@@ -2059,7 +2244,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the '!' (not) unary operator. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 504, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_not")), 505, 0, 1, 5)
+        if self.tr("code_sp_not")!="code_sp_not":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_not")), 505, 0, 1, 5)
         label = QtWidgets.QLabel("sp_not")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 506, 0)
@@ -2070,7 +2256,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the '~' (invert) unary operator. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 507, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inv")), 508, 0, 1, 5)
+        if self.tr("code_sp_inv")!="code_sp_inv":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inv")), 508, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inv")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 509, 0)
@@ -2081,7 +2268,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the '&' (address-of) unary operator. ")+self.tr("This does not affect the spacing after a '&' that is part of a type. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 510, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_addr")), 511, 0, 1, 5)
+        if self.tr("code_sp_addr")!="code_sp_addr":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_addr")), 511, 0, 1, 5)
         label = QtWidgets.QLabel("sp_addr")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 512, 0)
@@ -2092,7 +2280,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around the '.' or '->' operators. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 513, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_member")), 514, 0, 1, 5)
+        if self.tr("code_sp_member")!="code_sp_member":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_member")), 514, 0, 1, 5)
         label = QtWidgets.QLabel("sp_member")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 515, 0)
@@ -2103,7 +2292,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the '*' (dereference) unary operator. ")+self.tr("This does not affect the spacing after a '*' that is part of a type. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 516, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_deref")), 517, 0, 1, 5)
+        if self.tr("code_sp_deref")!="code_sp_deref":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_deref")), 517, 0, 1, 5)
         label = QtWidgets.QLabel("sp_deref")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 518, 0)
@@ -2114,7 +2304,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after '+' or '-', as in 'x = -5' or 'y = +7'. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 519, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sign")), 520, 0, 1, 5)
+        if self.tr("code_sp_sign")!="code_sp_sign":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_sign")), 520, 0, 1, 5)
         label = QtWidgets.QLabel("sp_sign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 521, 0)
@@ -2125,7 +2316,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between '++' and '--' the word to which it is being applied, as in '(--x)' or 'y++;'. ")+self.tr("Default: remove. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 522, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_incdec")), 523, 0, 1, 5)
+        if self.tr("code_sp_incdec")!="code_sp_incdec":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_incdec")), 523, 0, 1, 5)
         label = QtWidgets.QLabel("sp_incdec")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 524, 0)
@@ -2136,7 +2328,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before a backslash-newline at the end of a line. ")+self.tr("Default: add. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 525, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_nl_cont")), 526, 0, 1, 5)
+        if self.tr("code_sp_before_nl_cont")!="code_sp_before_nl_cont":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_nl_cont")), 526, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_nl_cont")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 527, 0)
@@ -2147,7 +2340,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after the scope '+' or '-', as in '-(void) foo;' or '+(int) bar;'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 528, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_scope")), 529, 0, 1, 5)
+        if self.tr("code_sp_after_oc_scope")!="code_sp_after_oc_scope":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_scope")), 529, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_scope")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 530, 0)
@@ -2158,7 +2352,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after the colon in message specs, ie '-(int) f:(int) x;' vs. ")+self.tr("'-(int) f: (int) x;'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 531, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_colon")), 532, 0, 1, 5)
+        if self.tr("code_sp_after_oc_colon")!="code_sp_after_oc_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_colon")), 532, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 533, 0)
@@ -2169,7 +2364,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space before the colon in message specs, ie '-(int) f: (int) x;' vs. ")+self.tr("'-(int) f : (int) x;'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 534, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_colon")), 535, 0, 1, 5)
+        if self.tr("code_sp_before_oc_colon")!="code_sp_before_oc_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_colon")), 535, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_oc_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 536, 0)
@@ -2180,7 +2376,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after the colon in immutable dictionary expression 'NSDictionary *test = @{@\"foo\" :@\"bar\"};'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 537, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_dict_colon")), 538, 0, 1, 5)
+        if self.tr("code_sp_after_oc_dict_colon")!="code_sp_after_oc_dict_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_dict_colon")), 538, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_dict_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 539, 0)
@@ -2191,7 +2388,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space before the colon in immutable dictionary expression 'NSDictionary *test = @{@\"foo\" :@\"bar\"};'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 540, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_dict_colon")), 541, 0, 1, 5)
+        if self.tr("code_sp_before_oc_dict_colon")!="code_sp_before_oc_dict_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_dict_colon")), 541, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_oc_dict_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 542, 0)
@@ -2202,7 +2400,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after the colon in message specs, ie '[object setValue:1];' vs. ")+self.tr("'[object setValue: 1];'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 543, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_send_oc_colon")), 544, 0, 1, 5)
+        if self.tr("code_sp_after_send_oc_colon")!="code_sp_after_send_oc_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_send_oc_colon")), 544, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_send_oc_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 545, 0)
@@ -2213,7 +2412,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space before the colon in message specs, ie '[object setValue:1];' vs. ")+self.tr("'[object setValue :1];'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 546, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_send_oc_colon")), 547, 0, 1, 5)
+        if self.tr("code_sp_before_send_oc_colon")!="code_sp_before_send_oc_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_send_oc_colon")), 547, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_send_oc_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 548, 0)
@@ -2224,7 +2424,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after the (type) in message specs, ie '-(int)f: (int) x;' vs. ")+self.tr("'-(int)f: (int)x;'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 549, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_type")), 550, 0, 1, 5)
+        if self.tr("code_sp_after_oc_type")!="code_sp_after_oc_type":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_type")), 550, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_type")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 551, 0)
@@ -2235,7 +2436,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after the first (type) in message specs, ie '-(int) f:(int)x;' vs. ")+self.tr("'-(int)f:(int)x;'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 552, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_return_type")), 553, 0, 1, 5)
+        if self.tr("code_sp_after_oc_return_type")!="code_sp_after_oc_return_type":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_return_type")), 553, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_return_type")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 554, 0)
@@ -2246,7 +2448,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space between '@selector' and '(', ie '@selector(msgName)' vs. ")+self.tr("'@selector (msgName)'. ")+self.tr("Also applies to '@protocol()' constructs. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 555, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_at_sel")), 556, 0, 1, 5)
+        if self.tr("code_sp_after_oc_at_sel")!="code_sp_after_oc_at_sel":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_at_sel")), 556, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_at_sel")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 557, 0)
@@ -2257,7 +2460,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space between '@selector(x)' and the following word, ie '@selector(foo) a:' vs. ")+self.tr("'@selector(foo)a:'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 558, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_at_sel_parens")), 559, 0, 1, 5)
+        if self.tr("code_sp_after_oc_at_sel_parens")!="code_sp_after_oc_at_sel_parens":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_at_sel_parens")), 559, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_at_sel_parens")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 560, 0)
@@ -2268,7 +2472,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space inside '@selector' parentheses, ie '@selector(foo)' vs. ")+self.tr("'@selector( foo )'. ")+self.tr("Also applies to '@protocol()' constructs. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 561, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_oc_at_sel_parens")), 562, 0, 1, 5)
+        if self.tr("code_sp_inside_oc_at_sel_parens")!="code_sp_inside_oc_at_sel_parens":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_oc_at_sel_parens")), 562, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_oc_at_sel_parens")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 563, 0)
@@ -2279,7 +2484,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space before a block pointer caret, ie '^int (int arg){...}' vs. ")+self.tr("' ^int (int arg){...}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 564, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_block_caret")), 565, 0, 1, 5)
+        if self.tr("code_sp_before_oc_block_caret")!="code_sp_before_oc_block_caret":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_oc_block_caret")), 565, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_oc_block_caret")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 566, 0)
@@ -2290,7 +2496,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after a block pointer caret, ie '^int (int arg){...}' vs. ")+self.tr("'^ int (int arg){...}'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 567, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_block_caret")), 568, 0, 1, 5)
+        if self.tr("code_sp_after_oc_block_caret")!="code_sp_after_oc_block_caret":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_block_caret")), 568, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_block_caret")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 569, 0)
@@ -2301,7 +2508,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space between the receiver and selector in a message, as in '[receiver selector ...]'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 570, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_msg_receiver")), 571, 0, 1, 5)
+        if self.tr("code_sp_after_oc_msg_receiver")!="code_sp_after_oc_msg_receiver":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_msg_receiver")), 571, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_msg_receiver")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 572, 0)
@@ -2312,7 +2520,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space after '@property'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 573, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_property")), 574, 0, 1, 5)
+        if self.tr("code_sp_after_oc_property")!="code_sp_after_oc_property":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_property")), 574, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_property")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 575, 0)
@@ -2323,7 +2532,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove space between '@synchronized' and the open parenthesis, ie '@synchronized(foo)' vs. ")+self.tr("'@synchronized (foo)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 576, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_synchronized")), 577, 0, 1, 5)
+        if self.tr("code_sp_after_oc_synchronized")!="code_sp_after_oc_synchronized":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_oc_synchronized")), 577, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_oc_synchronized")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 578, 0)
@@ -2334,7 +2544,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around the ':' in 'b ? t : f'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 579, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_colon")), 580, 0, 1, 5)
+        if self.tr("code_sp_cond_colon")!="code_sp_cond_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_colon")), 580, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cond_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 581, 0)
@@ -2345,7 +2556,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before the ':' in 'b ? t : f'. ")+self.tr("Overrides sp_cond_colon. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 582, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_colon_before")), 583, 0, 1, 5)
+        if self.tr("code_sp_cond_colon_before")!="code_sp_cond_colon_before":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_colon_before")), 583, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cond_colon_before")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 584, 0)
@@ -2356,7 +2568,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the ':' in 'b ? t : f'. ")+self.tr("Overrides sp_cond_colon. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 585, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_colon_after")), 586, 0, 1, 5)
+        if self.tr("code_sp_cond_colon_after")!="code_sp_cond_colon_after":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_colon_after")), 586, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cond_colon_after")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 587, 0)
@@ -2367,7 +2580,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space around the '?' in 'b ? t : f'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 588, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_question")), 589, 0, 1, 5)
+        if self.tr("code_sp_cond_question")!="code_sp_cond_question":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_question")), 589, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cond_question")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 590, 0)
@@ -2378,7 +2592,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before the '?' in 'b ? t : f'. ")+self.tr("Overrides sp_cond_question. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 591, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_question_before")), 592, 0, 1, 5)
+        if self.tr("code_sp_cond_question_before")!="code_sp_cond_question_before":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_question_before")), 592, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cond_question_before")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 593, 0)
@@ -2389,7 +2604,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the '?' in 'b ? t : f'. ")+self.tr("Overrides sp_cond_question. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 594, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_question_after")), 595, 0, 1, 5)
+        if self.tr("code_sp_cond_question_after")!="code_sp_cond_question_after":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_question_after")), 595, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cond_question_after")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 596, 0)
@@ -2400,7 +2616,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("In the abbreviated ternary form '(a ?: b)', add or remove space between '?' and ':'. ")+self.tr("Overrides all other sp_cond_* options. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 597, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_ternary_short")), 598, 0, 1, 5)
+        if self.tr("code_sp_cond_ternary_short")!="code_sp_cond_ternary_short":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cond_ternary_short")), 598, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cond_ternary_short")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 599, 0)
@@ -2411,7 +2628,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Fix the spacing between 'case' and the label. ")+self.tr("Only 'ignore' and 'force' make sense here. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 600, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_case_label")), 601, 0, 1, 5)
+        if self.tr("code_sp_case_label")!="code_sp_case_label":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_case_label")), 601, 0, 1, 5)
         label = QtWidgets.QLabel("sp_case_label")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 602, 0)
@@ -2422,7 +2640,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space around the D '..' operator. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 603, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_range")), 604, 0, 1, 5)
+        if self.tr("code_sp_range")!="code_sp_range":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_range")), 604, 0, 1, 5)
         label = QtWidgets.QLabel("sp_range")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 605, 0)
@@ -2433,7 +2652,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after ':' in a Java/C++11 range-based 'for', as in 'for (Type var : expr)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 606, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_for_colon")), 607, 0, 1, 5)
+        if self.tr("code_sp_after_for_colon")!="code_sp_after_for_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_for_colon")), 607, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_for_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 608, 0)
@@ -2444,7 +2664,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before ':' in a Java/C++11 range-based 'for', as in 'for (Type var : expr)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 609, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_for_colon")), 610, 0, 1, 5)
+        if self.tr("code_sp_before_for_colon")!="code_sp_before_for_colon":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_for_colon")), 610, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_for_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 611, 0)
@@ -2455,7 +2676,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove space between 'extern' and '(' as in 'extern (C)'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 612, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_extern_paren")), 613, 0, 1, 5)
+        if self.tr("code_sp_extern_paren")!="code_sp_extern_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_extern_paren")), 613, 0, 1, 5)
         label = QtWidgets.QLabel("sp_extern_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 614, 0)
@@ -2466,7 +2688,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the opening of a C++ comment, ie '// A' vs. ")+self.tr("'//A'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 615, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_start")), 616, 0, 1, 5)
+        if self.tr("code_sp_cmt_cpp_start")!="code_sp_cmt_cpp_start":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_start")), 616, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cmt_cpp_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 617, 0)
@@ -2477,7 +2700,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, space is added with sp_cmt_cpp_start will be added after doxygen sequences like '///', '///<', '//!' and '//!<'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 618, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_doxygen")), 619, 0, 1, 5)
+        if self.tr("code_sp_cmt_cpp_doxygen")!="code_sp_cmt_cpp_doxygen":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_doxygen")), 619, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cmt_cpp_doxygen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 620, 0)
@@ -2488,7 +2712,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, space is added with sp_cmt_cpp_start will be added after Qt translator or meta-data comments like '//:', '//=', and '//~'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 621, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_qttr")), 622, 0, 1, 5)
+        if self.tr("code_sp_cmt_cpp_qttr")!="code_sp_cmt_cpp_qttr":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_qttr")), 622, 0, 1, 5)
         label = QtWidgets.QLabel("sp_cmt_cpp_qttr")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 623, 0)
@@ -2499,7 +2724,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between #else or #endif and a trailing comment. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 624, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_endif_cmt")), 625, 0, 1, 5)
+        if self.tr("code_sp_endif_cmt")!="code_sp_endif_cmt":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_endif_cmt")), 625, 0, 1, 5)
         label = QtWidgets.QLabel("sp_endif_cmt")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 626, 0)
@@ -2510,7 +2736,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after 'new', 'delete' and 'delete[]'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 627, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_new")), 628, 0, 1, 5)
+        if self.tr("code_sp_after_new")!="code_sp_after_new":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_new")), 628, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_new")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 629, 0)
@@ -2521,7 +2748,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between 'new' and '(' in 'new()'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 630, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_between_new_paren")), 631, 0, 1, 5)
+        if self.tr("code_sp_between_new_paren")!="code_sp_between_new_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_between_new_paren")), 631, 0, 1, 5)
         label = QtWidgets.QLabel("sp_between_new_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 632, 0)
@@ -2532,7 +2760,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space between ')' and type in 'new(foo) BAR'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 633, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_newop_paren")), 634, 0, 1, 5)
+        if self.tr("code_sp_after_newop_paren")!="code_sp_after_newop_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_newop_paren")), 634, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_newop_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 635, 0)
@@ -2543,7 +2772,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space inside parenthesis of the new operator as in 'new(foo) BAR'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 636, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren")), 637, 0, 1, 5)
+        if self.tr("code_sp_inside_newop_paren")!="code_sp_inside_newop_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren")), 637, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_newop_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 638, 0)
@@ -2554,7 +2784,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after the open parenthesis of the new operator, as in 'new(foo) BAR'. ")+self.tr("Overrides sp_inside_newop_paren. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 639, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren_open")), 640, 0, 1, 5)
+        if self.tr("code_sp_inside_newop_paren_open")!="code_sp_inside_newop_paren_open":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren_open")), 640, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_newop_paren_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 641, 0)
@@ -2565,7 +2796,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before the close parenthesis of the new operator, as in 'new(foo) BAR'. ")+self.tr("Overrides sp_inside_newop_paren. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 642, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren_close")), 643, 0, 1, 5)
+        if self.tr("code_sp_inside_newop_paren_close")!="code_sp_inside_newop_paren_close":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren_close")), 643, 0, 1, 5)
         label = QtWidgets.QLabel("sp_inside_newop_paren_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 644, 0)
@@ -2576,7 +2808,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space before a trailing or embedded comment. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 645, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_tr_emb_cmt")), 646, 0, 1, 5)
+        if self.tr("code_sp_before_tr_emb_cmt")!="code_sp_before_tr_emb_cmt":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_before_tr_emb_cmt")), 646, 0, 1, 5)
         label = QtWidgets.QLabel("sp_before_tr_emb_cmt")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 647, 0)
@@ -2587,7 +2820,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Number of spaces before a trailing or embedded comment. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 648, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_num_before_tr_emb_cmt")), 649, 0, 1, 5)
+        if self.tr("code_sp_num_before_tr_emb_cmt")!="code_sp_num_before_tr_emb_cmt":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_num_before_tr_emb_cmt")), 649, 0, 1, 5)
         label = QtWidgets.QLabel("sp_num_before_tr_emb_cmt")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 650, 0)
@@ -2599,7 +2833,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Java) Add or remove space between an annotation and the open parenthesis. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 651, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_annotation_paren")), 652, 0, 1, 5)
+        if self.tr("code_sp_annotation_paren")!="code_sp_annotation_paren":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_annotation_paren")), 652, 0, 1, 5)
         label = QtWidgets.QLabel("sp_annotation_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 653, 0)
@@ -2610,7 +2845,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, vbrace tokens are dropped to the previous token and skipped. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 654, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_skip_vbrace_tokens")), 655, 0, 1, 5)
+        if self.tr("code_sp_skip_vbrace_tokens")!="code_sp_skip_vbrace_tokens":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_skip_vbrace_tokens")), 655, 0, 1, 5)
         label = QtWidgets.QLabel("sp_skip_vbrace_tokens")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 656, 0)
@@ -2621,7 +2857,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after 'noexcept'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 657, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_noexcept")), 658, 0, 1, 5)
+        if self.tr("code_sp_after_noexcept")!="code_sp_after_noexcept":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_after_noexcept")), 658, 0, 1, 5)
         label = QtWidgets.QLabel("sp_after_noexcept")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 659, 0)
@@ -2632,7 +2869,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after '_'. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 660, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_vala_after_translation")), 661, 0, 1, 5)
+        if self.tr("code_sp_vala_after_translation")!="code_sp_vala_after_translation":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_sp_vala_after_translation")), 661, 0, 1, 5)
         label = QtWidgets.QLabel("sp_vala_after_translation")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 662, 0)
@@ -2643,7 +2881,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, a <TAB> is inserted after #define. "))
         label.setWordWrap(True)
         self.lt2.addWidget(label, 663, 0, 1, 5)
-        self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_force_tab_after_define")), 664, 0, 1, 5)
+        if self.tr("code_force_tab_after_define")!="code_force_tab_after_define":
+            self.lt2.addWidget(QtWidgets.QLabel(self.tr("code_force_tab_after_define")), 664, 0, 1, 5)
         label = QtWidgets.QLabel("force_tab_after_define")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt2.addWidget(label, 665, 0)
@@ -2657,7 +2896,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of columns to indent per level. ")+self.tr("Usually 2, 3, 4, or 8. ")+self.tr("Default: 8. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 0, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_columns")), 1, 0, 1, 5)
+        if self.tr("code_indent_columns")!="code_indent_columns":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_columns")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("indent_columns")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 2, 0)
@@ -2669,7 +2909,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The continuation indent. ")+self.tr("If non-zero, this overrides the indent of '(', '[' and '=' continuation indents. ")+self.tr("Negative values are OK; negative value is absolute and not increased for each '(' or '[' level. ")+self.tr("For FreeBSD, this is set to 4. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 3, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_continue")), 4, 0, 1, 5)
+        if self.tr("code_indent_continue")!="code_indent_continue":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_continue")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("indent_continue")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 5, 0)
@@ -2681,7 +2922,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The continuation indent, only for class header line(s). ")+self.tr("If non-zero, this overrides the indent of 'class' continuation indents. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 6, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_continue_class_head")), 7, 0, 1, 5)
+        if self.tr("code_indent_continue_class_head")!="code_indent_continue_class_head":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_continue_class_head")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("indent_continue_class_head")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 8, 0)
@@ -2693,7 +2935,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent empty lines (ie lines which contain only spaces before the newline character). "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 9, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_single_newlines")), 10, 0, 1, 5)
+        if self.tr("code_indent_single_newlines")!="code_indent_single_newlines":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_single_newlines")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("indent_single_newlines")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 11, 0)
@@ -2704,7 +2947,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The continuation indent for func_*_param if they are true. ")+self.tr("If non-zero, this overrides the indent. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 12, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_param")), 13, 0, 1, 5)
+        if self.tr("code_indent_param")!="code_indent_param":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_param")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("indent_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 14, 0)
@@ -2716,7 +2960,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to use tabs when indenting code. ")+self.tr("0: Spaces only 1: Indent with tabs to brace level, align with spaces (default) 2: Indent and align with tabs, using spaces when not on a tabstop. ")+self.tr("Default: 1. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 15, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_with_tabs")), 16, 0, 1, 5)
+        if self.tr("code_indent_with_tabs")!="code_indent_with_tabs":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_with_tabs")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("indent_with_tabs")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 17, 0)
@@ -2728,7 +2973,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent comments that are not at a brace level with tabs on a tabstop. ")+self.tr("Requires indent_with_tabs=2. ")+self.tr("If false, will use spaces. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 18, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cmt_with_tabs")), 19, 0, 1, 5)
+        if self.tr("code_indent_cmt_with_tabs")!="code_indent_cmt_with_tabs":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cmt_with_tabs")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("indent_cmt_with_tabs")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 20, 0)
@@ -2739,7 +2985,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent strings broken by '\' so that they line up. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 21, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_align_string")), 22, 0, 1, 5)
+        if self.tr("code_indent_align_string")!="code_indent_align_string":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_align_string")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("indent_align_string")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 23, 0)
@@ -2750,7 +2997,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of spaces to indent multi-line XML strings. ")+self.tr("Requires indent_align_string=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 24, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_xml_string")), 25, 0, 1, 5)
+        if self.tr("code_indent_xml_string")!="code_indent_xml_string":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_xml_string")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("indent_xml_string")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 26, 0)
@@ -2762,7 +3010,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Spaces to indent '{' from level. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 27, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_brace")), 28, 0, 1, 5)
+        if self.tr("code_indent_brace")!="code_indent_brace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_brace")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("indent_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 29, 0)
@@ -2774,7 +3023,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether braces are indented to the body level. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 30, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces")), 31, 0, 1, 5)
+        if self.tr("code_indent_braces")!="code_indent_braces":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("indent_braces")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 32, 0)
@@ -2785,7 +3035,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to disable indenting function braces if indent_braces=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 33, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces_no_func")), 34, 0, 1, 5)
+        if self.tr("code_indent_braces_no_func")!="code_indent_braces_no_func":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces_no_func")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("indent_braces_no_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 35, 0)
@@ -2796,7 +3047,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to disable indenting class braces if indent_braces=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 36, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces_no_class")), 37, 0, 1, 5)
+        if self.tr("code_indent_braces_no_class")!="code_indent_braces_no_class":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces_no_class")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("indent_braces_no_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 38, 0)
@@ -2807,7 +3059,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to disable indenting struct braces if indent_braces=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 39, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces_no_struct")), 40, 0, 1, 5)
+        if self.tr("code_indent_braces_no_struct")!="code_indent_braces_no_struct":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_braces_no_struct")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("indent_braces_no_struct")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 41, 0)
@@ -2818,7 +3071,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent based on the size of the brace parent, ie 'if' => 3 spaces, 'for' => 4 spaces, etc. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 42, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_brace_parent")), 43, 0, 1, 5)
+        if self.tr("code_indent_brace_parent")!="code_indent_brace_parent":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_brace_parent")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("indent_brace_parent")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 44, 0)
@@ -2829,7 +3083,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent based on the open parenthesis instead of the open brace in '({\n'. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 45, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_open_brace")), 46, 0, 1, 5)
+        if self.tr("code_indent_paren_open_brace")!="code_indent_paren_open_brace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_open_brace")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("indent_paren_open_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 47, 0)
@@ -2840,7 +3095,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Whether to indent the brace of a C# delegate by another level. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 48, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cs_delegate_brace")), 49, 0, 1, 5)
+        if self.tr("code_indent_cs_delegate_brace")!="code_indent_cs_delegate_brace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cs_delegate_brace")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("indent_cs_delegate_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 50, 0)
@@ -2851,7 +3107,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Whether to indent a C# delegate (to handle delegates with no brace) by another level. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 51, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cs_delegate_body")), 52, 0, 1, 5)
+        if self.tr("code_indent_cs_delegate_body")!="code_indent_cs_delegate_body":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cs_delegate_body")), 52, 0, 1, 5)
         label = QtWidgets.QLabel("indent_cs_delegate_body")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 53, 0)
@@ -2862,7 +3119,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the body of a 'namespace'. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 54, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace")), 55, 0, 1, 5)
+        if self.tr("code_indent_namespace")!="code_indent_namespace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace")), 55, 0, 1, 5)
         label = QtWidgets.QLabel("indent_namespace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 56, 0)
@@ -2873,7 +3131,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent only the first namespace, and not any nested namespaces. ")+self.tr("Requires indent_namespace=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 57, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace_single_indent")), 58, 0, 1, 5)
+        if self.tr("code_indent_namespace_single_indent")!="code_indent_namespace_single_indent":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace_single_indent")), 58, 0, 1, 5)
         label = QtWidgets.QLabel("indent_namespace_single_indent")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 59, 0)
@@ -2884,7 +3143,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of spaces to indent a namespace block. ")+self.tr("If set to zero, use the value indent_columns. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 60, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace_level")), 61, 0, 1, 5)
+        if self.tr("code_indent_namespace_level")!="code_indent_namespace_level":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace_level")), 61, 0, 1, 5)
         label = QtWidgets.QLabel("indent_namespace_level")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 62, 0)
@@ -2896,7 +3156,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If the body of the namespace is longer than this number, it won't be indented. ")+self.tr("Requires indent_namespace=true. ")+self.tr("0 means no limit. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 63, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace_limit")), 64, 0, 1, 5)
+        if self.tr("code_indent_namespace_limit")!="code_indent_namespace_limit":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_namespace_limit")), 64, 0, 1, 5)
         label = QtWidgets.QLabel("indent_namespace_limit")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 65, 0)
@@ -2908,7 +3169,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether the 'extern \"C\"' body is indented. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 66, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_extern")), 67, 0, 1, 5)
+        if self.tr("code_indent_extern")!="code_indent_extern":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_extern")), 67, 0, 1, 5)
         label = QtWidgets.QLabel("indent_extern")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 68, 0)
@@ -2919,7 +3181,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether the 'class' body is indented. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 69, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_class")), 70, 0, 1, 5)
+        if self.tr("code_indent_class")!="code_indent_class":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_class")), 70, 0, 1, 5)
         label = QtWidgets.QLabel("indent_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 71, 0)
@@ -2930,7 +3193,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the stuff after a leading base class colon. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 72, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_class_colon")), 73, 0, 1, 5)
+        if self.tr("code_indent_class_colon")!="code_indent_class_colon":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_class_colon")), 73, 0, 1, 5)
         label = QtWidgets.QLabel("indent_class_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 74, 0)
@@ -2941,7 +3205,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent based on a class colon instead of the stuff after the colon. ")+self.tr("Requires indent_class_colon=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 75, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_class_on_colon")), 76, 0, 1, 5)
+        if self.tr("code_indent_class_on_colon")!="code_indent_class_on_colon":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_class_on_colon")), 76, 0, 1, 5)
         label = QtWidgets.QLabel("indent_class_on_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 77, 0)
@@ -2952,7 +3217,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the stuff after a leading class initializer colon. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 78, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_constr_colon")), 79, 0, 1, 5)
+        if self.tr("code_indent_constr_colon")!="code_indent_constr_colon":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_constr_colon")), 79, 0, 1, 5)
         label = QtWidgets.QLabel("indent_constr_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 80, 0)
@@ -2963,7 +3229,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Virtual indent from the ':' for member initializers. ")+self.tr("Default: 2. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 81, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ctor_init_leading")), 82, 0, 1, 5)
+        if self.tr("code_indent_ctor_init_leading")!="code_indent_ctor_init_leading":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ctor_init_leading")), 82, 0, 1, 5)
         label = QtWidgets.QLabel("indent_ctor_init_leading")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 83, 0)
@@ -2975,7 +3242,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Additional indent for constructor initializer list. ")+self.tr("Negative values decrease indent down to the first column. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 84, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ctor_init")), 85, 0, 1, 5)
+        if self.tr("code_indent_ctor_init")!="code_indent_ctor_init":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ctor_init")), 85, 0, 1, 5)
         label = QtWidgets.QLabel("indent_ctor_init")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 86, 0)
@@ -2987,7 +3255,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent 'if' following 'else' as a new block under the 'else'. ")+self.tr("If false, 'else\nif' is treated as 'else if' for indenting purposes. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 87, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_else_if")), 88, 0, 1, 5)
+        if self.tr("code_indent_else_if")!="code_indent_else_if":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_else_if")), 88, 0, 1, 5)
         label = QtWidgets.QLabel("indent_else_if")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 89, 0)
@@ -2998,7 +3267,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Amount to indent variable declarations after a open brace. ")+self.tr("<0: Relative >=0: Absolute. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 90, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_var_def_blk")), 91, 0, 1, 5)
+        if self.tr("code_indent_var_def_blk")!="code_indent_var_def_blk":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_var_def_blk")), 91, 0, 1, 5)
         label = QtWidgets.QLabel("indent_var_def_blk")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 92, 0)
@@ -3010,7 +3280,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued variable declarations instead of aligning. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 93, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_var_def_cont")), 94, 0, 1, 5)
+        if self.tr("code_indent_var_def_cont")!="code_indent_var_def_cont":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_var_def_cont")), 94, 0, 1, 5)
         label = QtWidgets.QLabel("indent_var_def_cont")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 95, 0)
@@ -3021,7 +3292,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued shift expressions ('<<' and '>>') instead of aligning. ")+self.tr("Set align_left_shift=false when enabling this. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 96, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_shift")), 97, 0, 1, 5)
+        if self.tr("code_indent_shift")!="code_indent_shift":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_shift")), 97, 0, 1, 5)
         label = QtWidgets.QLabel("indent_shift")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 98, 0)
@@ -3032,7 +3304,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to force indentation of function definitions to start in column 1. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 99, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_def_force_col1")), 100, 0, 1, 5)
+        if self.tr("code_indent_func_def_force_col1")!="code_indent_func_def_force_col1":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_def_force_col1")), 100, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_def_force_col1")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 101, 0)
@@ -3043,7 +3316,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued function call parameters one indent level, rather than aligning parameters under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 102, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_call_param")), 103, 0, 1, 5)
+        if self.tr("code_indent_func_call_param")!="code_indent_func_call_param":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_call_param")), 103, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_call_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 104, 0)
@@ -3054,7 +3328,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued function definition parameters one indent level, rather than aligning parameters under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 105, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_def_param")), 106, 0, 1, 5)
+        if self.tr("code_indent_func_def_param")!="code_indent_func_def_param":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_def_param")), 106, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_def_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 107, 0)
@@ -3065,7 +3340,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("for function definitions, only if indent_func_def_param is false Allows to align params when appropriate and indent them when not behave as if it was true if paren position is more than this value if paren position is more than the option value. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 108, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_def_param_paren_pos_threshold")), 109, 0, 1, 5)
+        if self.tr("code_indent_func_def_param_paren_pos_threshold")!="code_indent_func_def_param_paren_pos_threshold":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_def_param_paren_pos_threshold")), 109, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_def_param_paren_pos_threshold")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 110, 0)
@@ -3077,7 +3353,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued function call prototype one indent level, rather than aligning parameters under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 111, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_proto_param")), 112, 0, 1, 5)
+        if self.tr("code_indent_func_proto_param")!="code_indent_func_proto_param":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_proto_param")), 112, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_proto_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 113, 0)
@@ -3088,7 +3365,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued function call declaration one indent level, rather than aligning parameters under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 114, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_class_param")), 115, 0, 1, 5)
+        if self.tr("code_indent_func_class_param")!="code_indent_func_class_param":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_class_param")), 115, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_class_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 116, 0)
@@ -3099,7 +3377,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued class variable constructors one indent level, rather than aligning parameters under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 117, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_ctor_var_param")), 118, 0, 1, 5)
+        if self.tr("code_indent_func_ctor_var_param")!="code_indent_func_ctor_var_param":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_ctor_var_param")), 118, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_ctor_var_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 119, 0)
@@ -3110,7 +3389,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent continued template parameter list one indent level, rather than aligning parameters under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 120, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_template_param")), 121, 0, 1, 5)
+        if self.tr("code_indent_template_param")!="code_indent_template_param":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_template_param")), 121, 0, 1, 5)
         label = QtWidgets.QLabel("indent_template_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 122, 0)
@@ -3121,7 +3401,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Double the indent for indent_func_xxx_param options. ")+self.tr("Use both values of the options indent_columns and indent_param. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 123, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_param_double")), 124, 0, 1, 5)
+        if self.tr("code_indent_func_param_double")!="code_indent_func_param_double":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_param_double")), 124, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_param_double")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 125, 0)
@@ -3132,7 +3413,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Indentation column for standalone 'const' qualifier on a function prototype. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 126, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_const")), 127, 0, 1, 5)
+        if self.tr("code_indent_func_const")!="code_indent_func_const":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_const")), 127, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_const")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 128, 0)
@@ -3144,7 +3426,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Indentation column for standalone 'throw' qualifier on a function prototype. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 129, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_throw")), 130, 0, 1, 5)
+        if self.tr("code_indent_func_throw")!="code_indent_func_throw":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_func_throw")), 130, 0, 1, 5)
         label = QtWidgets.QLabel("indent_func_throw")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 131, 0)
@@ -3156,7 +3439,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to indent within a macro followed by a brace on the same line This allows reducing the indent in macros that have (for example) `do { ... ")+self.tr("} while (0)` blocks bracketing them. ")+self.tr("true:  add an indent for the brace on the same line as the macro false: do not add an indent for the brace on the same line as the macro. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 132, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_macro_brace")), 133, 0, 1, 5)
+        if self.tr("code_indent_macro_brace")!="code_indent_macro_brace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_macro_brace")), 133, 0, 1, 5)
         label = QtWidgets.QLabel("indent_macro_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 134, 0)
@@ -3167,7 +3451,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of spaces to indent a continued '->' or '.'. ")+self.tr("Usually set to 0, 1, or indent_columns. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 135, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_member")), 136, 0, 1, 5)
+        if self.tr("code_indent_member")!="code_indent_member":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_member")), 136, 0, 1, 5)
         label = QtWidgets.QLabel("indent_member")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 137, 0)
@@ -3179,7 +3464,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether lines broken at '.' or '->' should be indented by a single indent. ")+self.tr("The indent_member option will not be effective if this is set to true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 138, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_member_single")), 139, 0, 1, 5)
+        if self.tr("code_indent_member_single")!="code_indent_member_single":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_member_single")), 139, 0, 1, 5)
         label = QtWidgets.QLabel("indent_member_single")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 140, 0)
@@ -3190,7 +3476,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Spaces to indent single line ('//') comments on lines before code. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 141, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_sing_line_comments")), 142, 0, 1, 5)
+        if self.tr("code_indent_sing_line_comments")!="code_indent_sing_line_comments":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_sing_line_comments")), 142, 0, 1, 5)
         label = QtWidgets.QLabel("indent_sing_line_comments")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 143, 0)
@@ -3202,7 +3489,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("When opening a paren for a control statement (if, for, while, etc), increase the indent level by this value. ")+self.tr("Negative values decrease the indent level. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 144, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_sparen_extra")), 145, 0, 1, 5)
+        if self.tr("code_indent_sparen_extra")!="code_indent_sparen_extra":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_sparen_extra")), 145, 0, 1, 5)
         label = QtWidgets.QLabel("indent_sparen_extra")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 146, 0)
@@ -3214,7 +3502,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent trailing single line ('//') comments relative to the code instead of trying to keep the same absolute column. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 147, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_relative_single_line_comments")), 148, 0, 1, 5)
+        if self.tr("code_indent_relative_single_line_comments")!="code_indent_relative_single_line_comments":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_relative_single_line_comments")), 148, 0, 1, 5)
         label = QtWidgets.QLabel("indent_relative_single_line_comments")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 149, 0)
@@ -3225,7 +3514,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Spaces to indent 'case' from 'switch'. ")+self.tr("Usually 0 or indent_columns. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 150, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_switch_case")), 151, 0, 1, 5)
+        if self.tr("code_indent_switch_case")!="code_indent_switch_case":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_switch_case")), 151, 0, 1, 5)
         label = QtWidgets.QLabel("indent_switch_case")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 152, 0)
@@ -3237,7 +3527,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("indent 'break' with 'case' from 'switch'. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 153, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_switch_break_with_case")), 154, 0, 1, 5)
+        if self.tr("code_indent_switch_break_with_case")!="code_indent_switch_break_with_case":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_switch_break_with_case")), 154, 0, 1, 5)
         label = QtWidgets.QLabel("indent_switch_break_with_case")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 155, 0)
@@ -3248,7 +3539,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent preprocessor statements inside of switch statements. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 156, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_switch_pp")), 157, 0, 1, 5)
+        if self.tr("code_indent_switch_pp")!="code_indent_switch_pp":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_switch_pp")), 157, 0, 1, 5)
         label = QtWidgets.QLabel("indent_switch_pp")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 158, 0)
@@ -3259,7 +3551,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Spaces to shift the 'case' line, without affecting any other lines. ")+self.tr("Usually 0. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 159, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_case_shift")), 160, 0, 1, 5)
+        if self.tr("code_indent_case_shift")!="code_indent_case_shift":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_case_shift")), 160, 0, 1, 5)
         label = QtWidgets.QLabel("indent_case_shift")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 161, 0)
@@ -3271,7 +3564,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Spaces to indent '{' from 'case'. ")+self.tr("By default, the brace will appear under the 'c' in case. ")+self.tr("Usually set to 0 or indent_columns. ")+self.tr("Negative values are OK. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 162, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_case_brace")), 163, 0, 1, 5)
+        if self.tr("code_indent_case_brace")!="code_indent_case_brace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_case_brace")), 163, 0, 1, 5)
         label = QtWidgets.QLabel("indent_case_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 164, 0)
@@ -3283,7 +3577,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent comments found in first column. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 165, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_col1_comment")), 166, 0, 1, 5)
+        if self.tr("code_indent_col1_comment")!="code_indent_col1_comment":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_col1_comment")), 166, 0, 1, 5)
         label = QtWidgets.QLabel("indent_col1_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 167, 0)
@@ -3294,7 +3589,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent multi string literal in first column. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 168, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_col1_multi_string_literal")), 169, 0, 1, 5)
+        if self.tr("code_indent_col1_multi_string_literal")!="code_indent_col1_multi_string_literal":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_col1_multi_string_literal")), 169, 0, 1, 5)
         label = QtWidgets.QLabel("indent_col1_multi_string_literal")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 170, 0)
@@ -3305,7 +3601,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to indent goto labels. ")+self.tr(">0: Absolute column where 1 is the leftmost column <=0: Subtract from brace indent. ")+self.tr("Default: 1. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 171, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_label")), 172, 0, 1, 5)
+        if self.tr("code_indent_label")!="code_indent_label":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_label")), 172, 0, 1, 5)
         label = QtWidgets.QLabel("indent_label")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 173, 0)
@@ -3317,7 +3614,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to indent access specifiers that are followed by a colon. ")+self.tr(">0: Absolute column where 1 is the leftmost column <=0: Subtract from brace indent. ")+self.tr("Default: 1. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 174, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_access_spec")), 175, 0, 1, 5)
+        if self.tr("code_indent_access_spec")!="code_indent_access_spec":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_access_spec")), 175, 0, 1, 5)
         label = QtWidgets.QLabel("indent_access_spec")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 176, 0)
@@ -3329,7 +3627,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the code after an access specifier by one level. ")+self.tr("If true, this option forces 'indent_access_spec=0'. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 177, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_access_spec_body")), 178, 0, 1, 5)
+        if self.tr("code_indent_access_spec_body")!="code_indent_access_spec_body":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_access_spec_body")), 178, 0, 1, 5)
         label = QtWidgets.QLabel("indent_access_spec_body")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 179, 0)
@@ -3340,7 +3639,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If an open parenthesis is followed by a newline, whether to indent the next line so that it lines up after the open parenthesis (not recommended). "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 180, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_nl")), 181, 0, 1, 5)
+        if self.tr("code_indent_paren_nl")!="code_indent_paren_nl":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_nl")), 181, 0, 1, 5)
         label = QtWidgets.QLabel("indent_paren_nl")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 182, 0)
@@ -3351,7 +3651,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to indent a close parenthesis after a newline. ")+self.tr("0: Indent to body level (default) 1: Align under the open parenthesis 2: Indent to the brace level. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 183, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_close")), 184, 0, 1, 5)
+        if self.tr("code_indent_paren_close")!="code_indent_paren_close":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_close")), 184, 0, 1, 5)
         label = QtWidgets.QLabel("indent_paren_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 185, 0)
@@ -3363,7 +3664,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the open parenthesis of a function definition, if the parenthesis is on its own line. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 186, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_after_func_def")), 187, 0, 1, 5)
+        if self.tr("code_indent_paren_after_func_def")!="code_indent_paren_after_func_def":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_after_func_def")), 187, 0, 1, 5)
         label = QtWidgets.QLabel("indent_paren_after_func_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 188, 0)
@@ -3374,7 +3676,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the open parenthesis of a function declaration, if the parenthesis is on its own line. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 189, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_after_func_decl")), 190, 0, 1, 5)
+        if self.tr("code_indent_paren_after_func_decl")!="code_indent_paren_after_func_decl":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_after_func_decl")), 190, 0, 1, 5)
         label = QtWidgets.QLabel("indent_paren_after_func_decl")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 191, 0)
@@ -3385,7 +3688,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the open parenthesis of a function call, if the parenthesis is on its own line. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 192, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_after_func_call")), 193, 0, 1, 5)
+        if self.tr("code_indent_paren_after_func_call")!="code_indent_paren_after_func_call":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_paren_after_func_call")), 193, 0, 1, 5)
         label = QtWidgets.QLabel("indent_paren_after_func_call")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 194, 0)
@@ -3396,7 +3700,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent a comma when inside a parenthesis. ")+self.tr("If true, aligns under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 195, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_comma_paren")), 196, 0, 1, 5)
+        if self.tr("code_indent_comma_paren")!="code_indent_comma_paren":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_comma_paren")), 196, 0, 1, 5)
         label = QtWidgets.QLabel("indent_comma_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 197, 0)
@@ -3407,7 +3712,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent a Boolean operator when inside a parenthesis. ")+self.tr("If true, aligns under the open parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 198, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_bool_paren")), 199, 0, 1, 5)
+        if self.tr("code_indent_bool_paren")!="code_indent_bool_paren":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_bool_paren")), 199, 0, 1, 5)
         label = QtWidgets.QLabel("indent_bool_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 200, 0)
@@ -3418,7 +3724,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent a semicolon when inside a for parenthesis. ")+self.tr("If true, aligns under the open for parenthesis. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 201, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_semicolon_for_paren")), 202, 0, 1, 5)
+        if self.tr("code_indent_semicolon_for_paren")!="code_indent_semicolon_for_paren":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_semicolon_for_paren")), 202, 0, 1, 5)
         label = QtWidgets.QLabel("indent_semicolon_for_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 203, 0)
@@ -3429,7 +3736,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align the first expression to following ones if indent_bool_paren=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 204, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_first_bool_expr")), 205, 0, 1, 5)
+        if self.tr("code_indent_first_bool_expr")!="code_indent_first_bool_expr":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_first_bool_expr")), 205, 0, 1, 5)
         label = QtWidgets.QLabel("indent_first_bool_expr")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 206, 0)
@@ -3440,7 +3748,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align the first expression to following ones if indent_semicolon_for_paren=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 207, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_first_for_expr")), 208, 0, 1, 5)
+        if self.tr("code_indent_first_for_expr")!="code_indent_first_for_expr":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_first_for_expr")), 208, 0, 1, 5)
         label = QtWidgets.QLabel("indent_first_for_expr")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 209, 0)
@@ -3451,7 +3760,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If an open square is followed by a newline, whether to indent the next line so that it lines up after the open square (not recommended). "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 210, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_square_nl")), 211, 0, 1, 5)
+        if self.tr("code_indent_square_nl")!="code_indent_square_nl":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_square_nl")), 211, 0, 1, 5)
         label = QtWidgets.QLabel("indent_square_nl")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 212, 0)
@@ -3462,7 +3772,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(ESQL/C) Whether to preserve the relative indent of 'EXEC SQL' bodies. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 213, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_preserve_sql")), 214, 0, 1, 5)
+        if self.tr("code_indent_preserve_sql")!="code_indent_preserve_sql":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_preserve_sql")), 214, 0, 1, 5)
         label = QtWidgets.QLabel("indent_preserve_sql")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 215, 0)
@@ -3473,7 +3784,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align continued statements at the '='. ")+self.tr("If false or if the '=' is followed by a newline, the next line is indent one tab. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 216, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_align_assign")), 217, 0, 1, 5)
+        if self.tr("code_indent_align_assign")!="code_indent_align_assign":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_align_assign")), 217, 0, 1, 5)
         label = QtWidgets.QLabel("indent_align_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 218, 0)
@@ -3484,7 +3796,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, the indentation of the chunks after a '=' sequence will be set at LHS token indentation column before '='. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 219, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_off_after_assign")), 220, 0, 1, 5)
+        if self.tr("code_indent_off_after_assign")!="code_indent_off_after_assign":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_off_after_assign")), 220, 0, 1, 5)
         label = QtWidgets.QLabel("indent_off_after_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 221, 0)
@@ -3495,7 +3808,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align continued statements at the '('. ")+self.tr("If false or the '(' is followed by a newline, the next line indent is one tab. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 222, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_align_paren")), 223, 0, 1, 5)
+        if self.tr("code_indent_align_paren")!="code_indent_align_paren":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_align_paren")), 223, 0, 1, 5)
         label = QtWidgets.QLabel("indent_align_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 224, 0)
@@ -3506,7 +3820,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to indent Objective-C code inside message selectors. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 225, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_inside_msg_sel")), 226, 0, 1, 5)
+        if self.tr("code_indent_oc_inside_msg_sel")!="code_indent_oc_inside_msg_sel":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_inside_msg_sel")), 226, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_inside_msg_sel")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 227, 0)
@@ -3517,7 +3832,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to indent Objective-C blocks at brace level instead of usual rules. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 228, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block")), 229, 0, 1, 5)
+        if self.tr("code_indent_oc_block")!="code_indent_oc_block":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block")), 229, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_block")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 230, 0)
@@ -3528,7 +3844,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Indent for Objective-C blocks in a message relative to the parameter name. ")+self.tr("=0: Use indent_oc_block rules >0: Use specified number of spaces to indent. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 231, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg")), 232, 0, 1, 5)
+        if self.tr("code_indent_oc_block_msg")!="code_indent_oc_block_msg":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg")), 232, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_block_msg")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 233, 0)
@@ -3540,7 +3857,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Minimum indent for subsequent parameters. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 234, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_msg_colon")), 235, 0, 1, 5)
+        if self.tr("code_indent_oc_msg_colon")!="code_indent_oc_msg_colon":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_msg_colon")), 235, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_msg_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 236, 0)
@@ -3552,7 +3870,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to prioritize aligning with initial colon (and stripping spaces from lines, if necessary). ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 237, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_msg_prioritize_first_colon")), 238, 0, 1, 5)
+        if self.tr("code_indent_oc_msg_prioritize_first_colon")!="code_indent_oc_msg_prioritize_first_colon":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_msg_prioritize_first_colon")), 238, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_msg_prioritize_first_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 239, 0)
@@ -3563,7 +3882,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to indent blocks the way that Xcode does by default (from the keyword if the parameter is on its own line; otherwise, from the previous indentation level). ")+self.tr("Requires indent_oc_block_msg=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 240, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_xcode_style")), 241, 0, 1, 5)
+        if self.tr("code_indent_oc_block_msg_xcode_style")!="code_indent_oc_block_msg_xcode_style":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_xcode_style")), 241, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_block_msg_xcode_style")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 242, 0)
@@ -3574,7 +3894,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to indent blocks from where the brace is, relative to a message keyword. ")+self.tr("Requires indent_oc_block_msg=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 243, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_keyword")), 244, 0, 1, 5)
+        if self.tr("code_indent_oc_block_msg_from_keyword")!="code_indent_oc_block_msg_from_keyword":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_keyword")), 244, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_block_msg_from_keyword")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 245, 0)
@@ -3585,7 +3906,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to indent blocks from where the brace is, relative to a message colon. ")+self.tr("Requires indent_oc_block_msg=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 246, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_colon")), 247, 0, 1, 5)
+        if self.tr("code_indent_oc_block_msg_from_colon")!="code_indent_oc_block_msg_from_colon":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_colon")), 247, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_block_msg_from_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 248, 0)
@@ -3596,7 +3918,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to indent blocks from where the block caret is. ")+self.tr("Requires indent_oc_block_msg=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 249, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_caret")), 250, 0, 1, 5)
+        if self.tr("code_indent_oc_block_msg_from_caret")!="code_indent_oc_block_msg_from_caret":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_caret")), 250, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_block_msg_from_caret")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 251, 0)
@@ -3607,7 +3930,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to indent blocks from where the brace caret is. ")+self.tr("Requires indent_oc_block_msg=true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 252, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_brace")), 253, 0, 1, 5)
+        if self.tr("code_indent_oc_block_msg_from_brace")!="code_indent_oc_block_msg_from_brace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_brace")), 253, 0, 1, 5)
         label = QtWidgets.QLabel("indent_oc_block_msg_from_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 254, 0)
@@ -3618,7 +3942,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("When indenting after virtual brace open and newline add further spaces to reach this minimum indent. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 255, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_min_vbrace_open")), 256, 0, 1, 5)
+        if self.tr("code_indent_min_vbrace_open")!="code_indent_min_vbrace_open":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_min_vbrace_open")), 256, 0, 1, 5)
         label = QtWidgets.QLabel("indent_min_vbrace_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 257, 0)
@@ -3630,7 +3955,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add further spaces after regular indent to reach next tabstop when identing after virtual brace open and newline. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 258, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_vbrace_open_on_tabstop")), 259, 0, 1, 5)
+        if self.tr("code_indent_vbrace_open_on_tabstop")!="code_indent_vbrace_open_on_tabstop":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_vbrace_open_on_tabstop")), 259, 0, 1, 5)
         label = QtWidgets.QLabel("indent_vbrace_open_on_tabstop")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 260, 0)
@@ -3641,7 +3967,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to indent after a brace followed by another token (not a newline). ")+self.tr("true:  indent all contained lines to match the token false: indent all contained lines to match the brace. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 261, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_token_after_brace")), 262, 0, 1, 5)
+        if self.tr("code_indent_token_after_brace")!="code_indent_token_after_brace":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_token_after_brace")), 262, 0, 1, 5)
         label = QtWidgets.QLabel("indent_token_after_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 263, 0)
@@ -3652,7 +3979,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the body of a C++11 lambda. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 264, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cpp_lambda_body")), 265, 0, 1, 5)
+        if self.tr("code_indent_cpp_lambda_body")!="code_indent_cpp_lambda_body":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_cpp_lambda_body")), 265, 0, 1, 5)
         label = QtWidgets.QLabel("indent_cpp_lambda_body")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 266, 0)
@@ -3663,7 +3991,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to indent compound literals that are being returned. ")+self.tr("true: add both the indent from return & the compound literal open brace (ie:       2 indent levels) false: only indent 1 level, don't add the indent for the open brace, only add        the indent for the return. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 267, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_compound_literal_return")), 268, 0, 1, 5)
+        if self.tr("code_indent_compound_literal_return")!="code_indent_compound_literal_return":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_compound_literal_return")), 268, 0, 1, 5)
         label = QtWidgets.QLabel("indent_compound_literal_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 269, 0)
@@ -3674,7 +4003,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Whether to indent a 'using' block if no braces are used. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 270, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_using_block")), 271, 0, 1, 5)
+        if self.tr("code_indent_using_block")!="code_indent_using_block":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_using_block")), 271, 0, 1, 5)
         label = QtWidgets.QLabel("indent_using_block")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 272, 0)
@@ -3685,7 +4015,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to indent the continuation of ternary operator. ")+self.tr("0: Off (default) 1: When the `if_false` is a continuation, indent it under `if_false` 2: When the `:` is a continuation, indent it under `?`. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 273, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ternary_operator")), 274, 0, 1, 5)
+        if self.tr("code_indent_ternary_operator")!="code_indent_ternary_operator":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ternary_operator")), 274, 0, 1, 5)
         label = QtWidgets.QLabel("indent_ternary_operator")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 275, 0)
@@ -3697,7 +4028,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the statments inside ternary operator. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 276, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_inside_ternary_operator")), 277, 0, 1, 5)
+        if self.tr("code_indent_inside_ternary_operator")!="code_indent_inside_ternary_operator":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_inside_ternary_operator")), 277, 0, 1, 5)
         label = QtWidgets.QLabel("indent_inside_ternary_operator")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 278, 0)
@@ -3708,7 +4040,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, the indentation of the chunks after a `return` sequence will be set at return indentation column. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 279, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_off_after_return")), 280, 0, 1, 5)
+        if self.tr("code_indent_off_after_return")!="code_indent_off_after_return":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_off_after_return")), 280, 0, 1, 5)
         label = QtWidgets.QLabel("indent_off_after_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 281, 0)
@@ -3719,7 +4052,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, the indentation of the chunks after a `return new` sequence will be set at return indentation column. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 282, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_off_after_return_new")), 283, 0, 1, 5)
+        if self.tr("code_indent_off_after_return_new")!="code_indent_off_after_return_new":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_off_after_return_new")), 283, 0, 1, 5)
         label = QtWidgets.QLabel("indent_off_after_return_new")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 284, 0)
@@ -3730,7 +4064,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true, the tokens after return are indented with regular single indentation. ")+self.tr("By default (false) the indentation is after the return token. "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 285, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_single_after_return")), 286, 0, 1, 5)
+        if self.tr("code_indent_single_after_return")!="code_indent_single_after_return":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_single_after_return")), 286, 0, 1, 5)
         label = QtWidgets.QLabel("indent_single_after_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 287, 0)
@@ -3741,7 +4076,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to ignore indent and alignment for 'asm' blocks (ie assume they have their own indentation). "))
         label.setWordWrap(True)
         self.lt3.addWidget(label, 288, 0, 1, 5)
-        self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ignore_asm_block")), 289, 0, 1, 5)
+        if self.tr("code_indent_ignore_asm_block")!="code_indent_ignore_asm_block":
+            self.lt3.addWidget(QtWidgets.QLabel(self.tr("code_indent_ignore_asm_block")), 289, 0, 1, 5)
         label = QtWidgets.QLabel("indent_ignore_asm_block")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt3.addWidget(label, 290, 0)
@@ -3755,7 +4091,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to collapse empty blocks between '{' and '}'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 0, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_collapse_empty_body")), 1, 0, 1, 5)
+        if self.tr("code_nl_collapse_empty_body")!="code_nl_collapse_empty_body":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_collapse_empty_body")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("nl_collapse_empty_body")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 2, 0)
@@ -3766,7 +4103,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line braced assignments, as in 'foo_t f = { 1, 2 };'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 3, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_assign_leave_one_liners")), 4, 0, 1, 5)
+        if self.tr("code_nl_assign_leave_one_liners")!="code_nl_assign_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_assign_leave_one_liners")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("nl_assign_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 5, 0)
@@ -3777,7 +4115,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line braced statements inside a 'class xx { }' body. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 6, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_leave_one_liners")), 7, 0, 1, 5)
+        if self.tr("code_nl_class_leave_one_liners")!="code_nl_class_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_leave_one_liners")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("nl_class_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 8, 0)
@@ -3788,7 +4127,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line enums, as in 'enum foo { BAR = 15 };'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 9, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_leave_one_liners")), 10, 0, 1, 5)
+        if self.tr("code_nl_enum_leave_one_liners")!="code_nl_enum_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_leave_one_liners")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("nl_enum_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 11, 0)
@@ -3799,7 +4139,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line get or set functions. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 12, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_getset_leave_one_liners")), 13, 0, 1, 5)
+        if self.tr("code_nl_getset_leave_one_liners")!="code_nl_getset_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_getset_leave_one_liners")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("nl_getset_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 14, 0)
@@ -3810,7 +4151,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Don't split one-line property get or set functions. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 15, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_cs_property_leave_one_liners")), 16, 0, 1, 5)
+        if self.tr("code_nl_cs_property_leave_one_liners")!="code_nl_cs_property_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_cs_property_leave_one_liners")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("nl_cs_property_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 17, 0)
@@ -3821,7 +4163,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line function definitions, as in 'int foo() { return 0; }'. ")+self.tr("might modify nl_func_type_name. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 18, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_leave_one_liners")), 19, 0, 1, 5)
+        if self.tr("code_nl_func_leave_one_liners")!="code_nl_func_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_leave_one_liners")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 20, 0)
@@ -3832,7 +4175,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line C++11 lambdas, as in '[]() { return 0; }'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 21, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_cpp_lambda_leave_one_liners")), 22, 0, 1, 5)
+        if self.tr("code_nl_cpp_lambda_leave_one_liners")!="code_nl_cpp_lambda_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_cpp_lambda_leave_one_liners")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("nl_cpp_lambda_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 23, 0)
@@ -3843,7 +4187,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line if/else statements, as in 'if(...) b++;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 24, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_if_leave_one_liners")), 25, 0, 1, 5)
+        if self.tr("code_nl_if_leave_one_liners")!="code_nl_if_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_if_leave_one_liners")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("nl_if_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 26, 0)
@@ -3854,7 +4199,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line while statements, as in 'while(...) b++;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 27, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_while_leave_one_liners")), 28, 0, 1, 5)
+        if self.tr("code_nl_while_leave_one_liners")!="code_nl_while_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_while_leave_one_liners")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("nl_while_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 29, 0)
@@ -3865,7 +4211,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't split one-line for statements, as in 'for(...) b++;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 30, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_for_leave_one_liners")), 31, 0, 1, 5)
+        if self.tr("code_nl_for_leave_one_liners")!="code_nl_for_leave_one_liners":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_for_leave_one_liners")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("nl_for_leave_one_liners")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 32, 0)
@@ -3876,7 +4223,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Don't split one-line Objective-C messages. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 33, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_msg_leave_one_liner")), 34, 0, 1, 5)
+        if self.tr("code_nl_oc_msg_leave_one_liner")!="code_nl_oc_msg_leave_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_msg_leave_one_liner")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_msg_leave_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 35, 0)
@@ -3887,7 +4235,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove newline between method declaration and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 36, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_mdef_brace")), 37, 0, 1, 5)
+        if self.tr("code_nl_oc_mdef_brace")!="code_nl_oc_mdef_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_mdef_brace")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_mdef_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 38, 0)
@@ -3898,7 +4247,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove newline between Objective-C block signature and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 39, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_block_brace")), 40, 0, 1, 5)
+        if self.tr("code_nl_oc_block_brace")!="code_nl_oc_block_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_block_brace")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_block_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 41, 0)
@@ -3909,7 +4259,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove blank line before '@interface' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 42, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_before_interface")), 43, 0, 1, 5)
+        if self.tr("code_nl_oc_before_interface")!="code_nl_oc_before_interface":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_before_interface")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_before_interface")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 44, 0)
@@ -3920,7 +4271,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove blank line before '@implementation' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 45, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_before_implementation")), 46, 0, 1, 5)
+        if self.tr("code_nl_oc_before_implementation")!="code_nl_oc_before_implementation":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_before_implementation")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_before_implementation")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 47, 0)
@@ -3931,7 +4283,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove blank line before '@end' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 48, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_before_end")), 49, 0, 1, 5)
+        if self.tr("code_nl_oc_before_end")!="code_nl_oc_before_end":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_before_end")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_before_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 50, 0)
@@ -3942,7 +4295,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove newline between '@interface' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 51, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_interface_brace")), 52, 0, 1, 5)
+        if self.tr("code_nl_oc_interface_brace")!="code_nl_oc_interface_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_interface_brace")), 52, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_interface_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 53, 0)
@@ -3953,7 +4307,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove newline between '@implementation' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 54, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_implementation_brace")), 55, 0, 1, 5)
+        if self.tr("code_nl_oc_implementation_brace")!="code_nl_oc_implementation_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_implementation_brace")), 55, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_implementation_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 56, 0)
@@ -3964,7 +4319,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newlines at the start of the file. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 57, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_start_of_file")), 58, 0, 1, 5)
+        if self.tr("code_nl_start_of_file")!="code_nl_start_of_file":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_start_of_file")), 58, 0, 1, 5)
         label = QtWidgets.QLabel("nl_start_of_file")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 59, 0)
@@ -3975,7 +4331,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The minimum number of newlines at the start of the file (only used if nl_start_of_file is 'add' or 'force'). "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 60, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_start_of_file_min")), 61, 0, 1, 5)
+        if self.tr("code_nl_start_of_file_min")!="code_nl_start_of_file_min":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_start_of_file_min")), 61, 0, 1, 5)
         label = QtWidgets.QLabel("nl_start_of_file_min")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 62, 0)
@@ -3987,7 +4344,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline at the end of the file. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 63, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_end_of_file")), 64, 0, 1, 5)
+        if self.tr("code_nl_end_of_file")!="code_nl_end_of_file":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_end_of_file")), 64, 0, 1, 5)
         label = QtWidgets.QLabel("nl_end_of_file")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 65, 0)
@@ -3998,7 +4356,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The minimum number of newlines at the end of the file (only used if nl_end_of_file is 'add' or 'force'). "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 66, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_end_of_file_min")), 67, 0, 1, 5)
+        if self.tr("code_nl_end_of_file_min")!="code_nl_end_of_file_min":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_end_of_file_min")), 67, 0, 1, 5)
         label = QtWidgets.QLabel("nl_end_of_file_min")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 68, 0)
@@ -4010,7 +4369,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '=' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 69, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_assign_brace")), 70, 0, 1, 5)
+        if self.tr("code_nl_assign_brace")!="code_nl_assign_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_assign_brace")), 70, 0, 1, 5)
         label = QtWidgets.QLabel("nl_assign_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 71, 0)
@@ -4021,7 +4381,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove newline between '=' and '['. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 72, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_assign_square")), 73, 0, 1, 5)
+        if self.tr("code_nl_assign_square")!="code_nl_assign_square":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_assign_square")), 73, 0, 1, 5)
         label = QtWidgets.QLabel("nl_assign_square")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 74, 0)
@@ -4032,7 +4393,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '[]' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 75, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_tsquare_brace")), 76, 0, 1, 5)
+        if self.tr("code_nl_tsquare_brace")!="code_nl_tsquare_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_tsquare_brace")), 76, 0, 1, 5)
         label = QtWidgets.QLabel("nl_tsquare_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 77, 0)
@@ -4043,7 +4405,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove newline after '= ['. ")+self.tr("Will also affect the newline before the ']'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 78, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_square_assign")), 79, 0, 1, 5)
+        if self.tr("code_nl_after_square_assign")!="code_nl_after_square_assign":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_square_assign")), 79, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_square_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 80, 0)
@@ -4054,7 +4417,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between a function call's ')' and '{', as in 'list_for_each(item, &list) { }'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 81, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_fcall_brace")), 82, 0, 1, 5)
+        if self.tr("code_nl_fcall_brace")!="code_nl_fcall_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_fcall_brace")), 82, 0, 1, 5)
         label = QtWidgets.QLabel("nl_fcall_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 83, 0)
@@ -4065,7 +4429,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'enum' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 84, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_brace")), 85, 0, 1, 5)
+        if self.tr("code_nl_enum_brace")!="code_nl_enum_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_brace")), 85, 0, 1, 5)
         label = QtWidgets.QLabel("nl_enum_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 86, 0)
@@ -4076,7 +4441,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'enum' and 'class'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 87, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_class")), 88, 0, 1, 5)
+        if self.tr("code_nl_enum_class")!="code_nl_enum_class":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_class")), 88, 0, 1, 5)
         label = QtWidgets.QLabel("nl_enum_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 89, 0)
@@ -4087,7 +4453,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'enum class' and the identifier. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 90, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_class_identifier")), 91, 0, 1, 5)
+        if self.tr("code_nl_enum_class_identifier")!="code_nl_enum_class_identifier":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_class_identifier")), 91, 0, 1, 5)
         label = QtWidgets.QLabel("nl_enum_class_identifier")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 92, 0)
@@ -4098,7 +4465,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'enum class' type and ':'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 93, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_identifier_colon")), 94, 0, 1, 5)
+        if self.tr("code_nl_enum_identifier_colon")!="code_nl_enum_identifier_colon":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_identifier_colon")), 94, 0, 1, 5)
         label = QtWidgets.QLabel("nl_enum_identifier_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 95, 0)
@@ -4109,7 +4477,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'enum class identifier :' and type. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 96, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_colon_type")), 97, 0, 1, 5)
+        if self.tr("code_nl_enum_colon_type")!="code_nl_enum_colon_type":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_colon_type")), 97, 0, 1, 5)
         label = QtWidgets.QLabel("nl_enum_colon_type")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 98, 0)
@@ -4120,7 +4489,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'struct and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 99, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_struct_brace")), 100, 0, 1, 5)
+        if self.tr("code_nl_struct_brace")!="code_nl_struct_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_struct_brace")), 100, 0, 1, 5)
         label = QtWidgets.QLabel("nl_struct_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 101, 0)
@@ -4131,7 +4501,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'union' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 102, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_union_brace")), 103, 0, 1, 5)
+        if self.tr("code_nl_union_brace")!="code_nl_union_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_union_brace")), 103, 0, 1, 5)
         label = QtWidgets.QLabel("nl_union_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 104, 0)
@@ -4142,7 +4513,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'if' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 105, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_if_brace")), 106, 0, 1, 5)
+        if self.tr("code_nl_if_brace")!="code_nl_if_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_if_brace")), 106, 0, 1, 5)
         label = QtWidgets.QLabel("nl_if_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 107, 0)
@@ -4153,7 +4525,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '}' and 'else'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 108, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_else")), 109, 0, 1, 5)
+        if self.tr("code_nl_brace_else")!="code_nl_brace_else":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_else")), 109, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_else")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 110, 0)
@@ -4164,7 +4537,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'else if' and '{'. ")+self.tr("If set to ignore, nl_if_brace is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 111, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_elseif_brace")), 112, 0, 1, 5)
+        if self.tr("code_nl_elseif_brace")!="code_nl_elseif_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_elseif_brace")), 112, 0, 1, 5)
         label = QtWidgets.QLabel("nl_elseif_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 113, 0)
@@ -4175,7 +4549,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'else' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 114, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_else_brace")), 115, 0, 1, 5)
+        if self.tr("code_nl_else_brace")!="code_nl_else_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_else_brace")), 115, 0, 1, 5)
         label = QtWidgets.QLabel("nl_else_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 116, 0)
@@ -4186,7 +4561,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'else' and 'if'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 117, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_else_if")), 118, 0, 1, 5)
+        if self.tr("code_nl_else_if")!="code_nl_else_if":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_else_if")), 118, 0, 1, 5)
         label = QtWidgets.QLabel("nl_else_if")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 119, 0)
@@ -4197,7 +4573,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before '{' opening brace. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 120, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_opening_brace_func_class_def")), 121, 0, 1, 5)
+        if self.tr("code_nl_before_opening_brace_func_class_def")!="code_nl_before_opening_brace_func_class_def":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_opening_brace_func_class_def")), 121, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_opening_brace_func_class_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 122, 0)
@@ -4208,7 +4585,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before 'if'/'else if' closing parenthesis. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 123, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_if_closing_paren")), 124, 0, 1, 5)
+        if self.tr("code_nl_before_if_closing_paren")!="code_nl_before_if_closing_paren":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_if_closing_paren")), 124, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_if_closing_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 125, 0)
@@ -4219,7 +4597,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '}' and 'finally'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 126, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_finally")), 127, 0, 1, 5)
+        if self.tr("code_nl_brace_finally")!="code_nl_brace_finally":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_finally")), 127, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_finally")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 128, 0)
@@ -4230,7 +4609,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'finally' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 129, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_finally_brace")), 130, 0, 1, 5)
+        if self.tr("code_nl_finally_brace")!="code_nl_finally_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_finally_brace")), 130, 0, 1, 5)
         label = QtWidgets.QLabel("nl_finally_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 131, 0)
@@ -4241,7 +4621,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'try' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 132, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_try_brace")), 133, 0, 1, 5)
+        if self.tr("code_nl_try_brace")!="code_nl_try_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_try_brace")), 133, 0, 1, 5)
         label = QtWidgets.QLabel("nl_try_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 134, 0)
@@ -4252,7 +4633,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between get/set and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 135, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_getset_brace")), 136, 0, 1, 5)
+        if self.tr("code_nl_getset_brace")!="code_nl_getset_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_getset_brace")), 136, 0, 1, 5)
         label = QtWidgets.QLabel("nl_getset_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 137, 0)
@@ -4263,7 +4645,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'for' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 138, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_for_brace")), 139, 0, 1, 5)
+        if self.tr("code_nl_for_brace")!="code_nl_for_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_for_brace")), 139, 0, 1, 5)
         label = QtWidgets.QLabel("nl_for_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 140, 0)
@@ -4274,7 +4657,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before the '{' of a 'catch' statement, as in 'catch (decl) <here> {'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 141, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_catch_brace")), 142, 0, 1, 5)
+        if self.tr("code_nl_catch_brace")!="code_nl_catch_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_catch_brace")), 142, 0, 1, 5)
         label = QtWidgets.QLabel("nl_catch_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 143, 0)
@@ -4285,7 +4669,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove newline before the '{' of a '@catch' statement, as in '@catch (decl) <here> {'. ")+self.tr("If set to ignore, nl_catch_brace is used. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 144, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_catch_brace")), 145, 0, 1, 5)
+        if self.tr("code_nl_oc_catch_brace")!="code_nl_oc_catch_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_catch_brace")), 145, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_catch_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 146, 0)
@@ -4296,7 +4681,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '}' and 'catch'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 147, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_catch")), 148, 0, 1, 5)
+        if self.tr("code_nl_brace_catch")!="code_nl_brace_catch":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_catch")), 148, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_catch")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 149, 0)
@@ -4307,7 +4693,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Add or remove newline between '}' and '@catch'. ")+self.tr("If set to ignore, nl_brace_catch is used. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 150, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_brace_catch")), 151, 0, 1, 5)
+        if self.tr("code_nl_oc_brace_catch")!="code_nl_oc_brace_catch":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_brace_catch")), 151, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_brace_catch")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 152, 0)
@@ -4318,7 +4705,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '}' and ']'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 153, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_square")), 154, 0, 1, 5)
+        if self.tr("code_nl_brace_square")!="code_nl_brace_square":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_square")), 154, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_square")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 155, 0)
@@ -4329,7 +4717,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '}' and ')' in a function invocation. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 156, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_fparen")), 157, 0, 1, 5)
+        if self.tr("code_nl_brace_fparen")!="code_nl_brace_fparen":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_fparen")), 157, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_fparen")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 158, 0)
@@ -4340,7 +4729,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'while' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 159, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_while_brace")), 160, 0, 1, 5)
+        if self.tr("code_nl_while_brace")!="code_nl_while_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_while_brace")), 160, 0, 1, 5)
         label = QtWidgets.QLabel("nl_while_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 161, 0)
@@ -4351,7 +4741,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove newline between 'scope (x)' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 162, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_scope_brace")), 163, 0, 1, 5)
+        if self.tr("code_nl_scope_brace")!="code_nl_scope_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_scope_brace")), 163, 0, 1, 5)
         label = QtWidgets.QLabel("nl_scope_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 164, 0)
@@ -4362,7 +4753,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove newline between 'unittest' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 165, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_unittest_brace")), 166, 0, 1, 5)
+        if self.tr("code_nl_unittest_brace")!="code_nl_unittest_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_unittest_brace")), 166, 0, 1, 5)
         label = QtWidgets.QLabel("nl_unittest_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 167, 0)
@@ -4373,7 +4765,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(D) Add or remove newline between 'version (x)' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 168, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_version_brace")), 169, 0, 1, 5)
+        if self.tr("code_nl_version_brace")!="code_nl_version_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_version_brace")), 169, 0, 1, 5)
         label = QtWidgets.QLabel("nl_version_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 170, 0)
@@ -4384,7 +4777,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Add or remove newline between 'using' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 171, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_using_brace")), 172, 0, 1, 5)
+        if self.tr("code_nl_using_brace")!="code_nl_using_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_using_brace")), 172, 0, 1, 5)
         label = QtWidgets.QLabel("nl_using_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 173, 0)
@@ -4395,7 +4789,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between two open or close braces. ")+self.tr("Due to general newline/brace handling, REMOVE may not work. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 174, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_brace")), 175, 0, 1, 5)
+        if self.tr("code_nl_brace_brace")!="code_nl_brace_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_brace")), 175, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 176, 0)
@@ -4406,7 +4801,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'do' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 177, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_do_brace")), 178, 0, 1, 5)
+        if self.tr("code_nl_do_brace")!="code_nl_do_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_do_brace")), 178, 0, 1, 5)
         label = QtWidgets.QLabel("nl_do_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 179, 0)
@@ -4417,7 +4813,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '}' and 'while' of 'do' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 180, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_while")), 181, 0, 1, 5)
+        if self.tr("code_nl_brace_while")!="code_nl_brace_while":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_while")), 181, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_while")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 182, 0)
@@ -4428,7 +4825,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'switch' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 183, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_switch_brace")), 184, 0, 1, 5)
+        if self.tr("code_nl_switch_brace")!="code_nl_switch_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_switch_brace")), 184, 0, 1, 5)
         label = QtWidgets.QLabel("nl_switch_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 185, 0)
@@ -4439,7 +4837,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'synchronized' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 186, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_synchronized_brace")), 187, 0, 1, 5)
+        if self.tr("code_nl_synchronized_brace")!="code_nl_synchronized_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_synchronized_brace")), 187, 0, 1, 5)
         label = QtWidgets.QLabel("nl_synchronized_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 188, 0)
@@ -4450,7 +4849,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add a newline between ')' and '{' if the ')' is on a different line than the if/for/etc. ")+self.tr("Overrides nl_for_brace, nl_if_brace, nl_switch_brace, nl_while_switch and nl_catch_brace. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 189, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_cond")), 190, 0, 1, 5)
+        if self.tr("code_nl_multi_line_cond")!="code_nl_multi_line_cond":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_cond")), 190, 0, 1, 5)
         label = QtWidgets.QLabel("nl_multi_line_cond")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 191, 0)
@@ -4461,7 +4861,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add a newline after '(' if an if/for/while/switch condition spans multiple lines. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 192, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_sparen_open")), 193, 0, 1, 5)
+        if self.tr("code_nl_multi_line_sparen_open")!="code_nl_multi_line_sparen_open":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_sparen_open")), 193, 0, 1, 5)
         label = QtWidgets.QLabel("nl_multi_line_sparen_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 194, 0)
@@ -4472,7 +4873,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add a newline before ')' if an if/for/while/switch condition spans multiple lines. ")+self.tr("Overrides nl_before_if_closing_paren if both are specified. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 195, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_sparen_close")), 196, 0, 1, 5)
+        if self.tr("code_nl_multi_line_sparen_close")!="code_nl_multi_line_sparen_close":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_sparen_close")), 196, 0, 1, 5)
         label = QtWidgets.QLabel("nl_multi_line_sparen_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 197, 0)
@@ -4483,7 +4885,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Force a newline in a define after the macro name for multi-line defines. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 198, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_define")), 199, 0, 1, 5)
+        if self.tr("code_nl_multi_line_define")!="code_nl_multi_line_define":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_multi_line_define")), 199, 0, 1, 5)
         label = QtWidgets.QLabel("nl_multi_line_define")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 200, 0)
@@ -4494,7 +4897,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before 'case', and a blank line before a 'case' statement that follows a ';' or '}'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 201, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_case")), 202, 0, 1, 5)
+        if self.tr("code_nl_before_case")!="code_nl_before_case":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_case")), 202, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_case")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 203, 0)
@@ -4505,7 +4909,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after a 'case' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 204, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_case")), 205, 0, 1, 5)
+        if self.tr("code_nl_after_case")!="code_nl_after_case":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_case")), 205, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_case")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 206, 0)
@@ -4516,7 +4921,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between a case ':' and '{'. ")+self.tr("Overrides nl_after_case. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 207, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_case_colon_brace")), 208, 0, 1, 5)
+        if self.tr("code_nl_case_colon_brace")!="code_nl_case_colon_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_case_colon_brace")), 208, 0, 1, 5)
         label = QtWidgets.QLabel("nl_case_colon_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 209, 0)
@@ -4527,7 +4933,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between ')' and 'throw'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 210, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_throw")), 211, 0, 1, 5)
+        if self.tr("code_nl_before_throw")!="code_nl_before_throw":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_throw")), 211, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_throw")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 212, 0)
@@ -4538,7 +4945,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'namespace' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 213, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_namespace_brace")), 214, 0, 1, 5)
+        if self.tr("code_nl_namespace_brace")!="code_nl_namespace_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_namespace_brace")), 214, 0, 1, 5)
         label = QtWidgets.QLabel("nl_namespace_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 215, 0)
@@ -4549,7 +4957,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<...>' of a template class. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 216, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class")), 217, 0, 1, 5)
+        if self.tr("code_nl_template_class")!="code_nl_template_class":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class")), 217, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 218, 0)
@@ -4560,7 +4969,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<...>' of a template class declaration. ")+self.tr("Overrides nl_template_class. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 219, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_decl")), 220, 0, 1, 5)
+        if self.tr("code_nl_template_class_decl")!="code_nl_template_class_decl":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_decl")), 220, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_class_decl")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 221, 0)
@@ -4571,7 +4981,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<>' of a specialized class declaration. ")+self.tr("Overrides nl_template_class_decl. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 222, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_decl_special")), 223, 0, 1, 5)
+        if self.tr("code_nl_template_class_decl_special")!="code_nl_template_class_decl_special":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_decl_special")), 223, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_class_decl_special")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 224, 0)
@@ -4582,7 +4993,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<...>' of a template class definition. ")+self.tr("Overrides nl_template_class. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 225, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_def")), 226, 0, 1, 5)
+        if self.tr("code_nl_template_class_def")!="code_nl_template_class_def":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_def")), 226, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_class_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 227, 0)
@@ -4593,7 +5005,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<>' of a specialized class definition. ")+self.tr("Overrides nl_template_class_def. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 228, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_def_special")), 229, 0, 1, 5)
+        if self.tr("code_nl_template_class_def_special")!="code_nl_template_class_def_special":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_class_def_special")), 229, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_class_def_special")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 230, 0)
@@ -4604,7 +5017,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<...>' of a template function. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 231, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func")), 232, 0, 1, 5)
+        if self.tr("code_nl_template_func")!="code_nl_template_func":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func")), 232, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 233, 0)
@@ -4615,7 +5029,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<...>' of a template function declaration. ")+self.tr("Overrides nl_template_func. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 234, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_decl")), 235, 0, 1, 5)
+        if self.tr("code_nl_template_func_decl")!="code_nl_template_func_decl":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_decl")), 235, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_func_decl")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 236, 0)
@@ -4626,7 +5041,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<>' of a specialized function declaration. ")+self.tr("Overrides nl_template_func_decl. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 237, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_decl_special")), 238, 0, 1, 5)
+        if self.tr("code_nl_template_func_decl_special")!="code_nl_template_func_decl_special":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_decl_special")), 238, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_func_decl_special")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 239, 0)
@@ -4637,7 +5053,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<...>' of a template function definition. ")+self.tr("Overrides nl_template_func. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 240, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_def")), 241, 0, 1, 5)
+        if self.tr("code_nl_template_func_def")!="code_nl_template_func_def":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_def")), 241, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_func_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 242, 0)
@@ -4648,7 +5065,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<>' of a specialized function definition. ")+self.tr("Overrides nl_template_func_def. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 243, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_def_special")), 244, 0, 1, 5)
+        if self.tr("code_nl_template_func_def_special")!="code_nl_template_func_def_special":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_func_def_special")), 244, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_func_def_special")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 245, 0)
@@ -4659,7 +5077,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after 'template<...>' of a template variable. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 246, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_var")), 247, 0, 1, 5)
+        if self.tr("code_nl_template_var")!="code_nl_template_var":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_var")), 247, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_var")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 248, 0)
@@ -4670,7 +5089,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'template<...>' and 'using' of a templated type alias. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 249, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_using")), 250, 0, 1, 5)
+        if self.tr("code_nl_template_using")!="code_nl_template_using":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_using")), 250, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_using")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 251, 0)
@@ -4681,7 +5101,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'class' and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 252, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_brace")), 253, 0, 1, 5)
+        if self.tr("code_nl_class_brace")!="code_nl_class_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_brace")), 253, 0, 1, 5)
         label = QtWidgets.QLabel("nl_class_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 254, 0)
@@ -4692,7 +5113,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before or after (depending on pos_class_comma, may not be IGNORE) each',' in the base class list. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 255, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_init_args")), 256, 0, 1, 5)
+        if self.tr("code_nl_class_init_args")!="code_nl_class_init_args":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_init_args")), 256, 0, 1, 5)
         label = QtWidgets.QLabel("nl_class_init_args")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 257, 0)
@@ -4703,7 +5125,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after each ',' in the constructor member initialization. ")+self.tr("Related to nl_constr_colon, pos_constr_colon and pos_constr_comma. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 258, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_constr_init_args")), 259, 0, 1, 5)
+        if self.tr("code_nl_constr_init_args")!="code_nl_constr_init_args":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_constr_init_args")), 259, 0, 1, 5)
         label = QtWidgets.QLabel("nl_constr_init_args")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 260, 0)
@@ -4714,7 +5137,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before first element, after comma, and after last element, in 'enum'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 261, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_own_lines")), 262, 0, 1, 5)
+        if self.tr("code_nl_enum_own_lines")!="code_nl_enum_own_lines":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_enum_own_lines")), 262, 0, 1, 5)
         label = QtWidgets.QLabel("nl_enum_own_lines")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 263, 0)
@@ -4725,7 +5149,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between return type and function name in a function definition. ")+self.tr("might be modified by nl_func_leave_one_liners. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 264, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_type_name")), 265, 0, 1, 5)
+        if self.tr("code_nl_func_type_name")!="code_nl_func_type_name":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_type_name")), 265, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_type_name")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 266, 0)
@@ -4736,7 +5161,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between return type and function name inside a class definition. ")+self.tr("If set to ignore, nl_func_type_name or nl_func_proto_type_name is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 267, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_type_name_class")), 268, 0, 1, 5)
+        if self.tr("code_nl_func_type_name_class")!="code_nl_func_type_name_class":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_type_name_class")), 268, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_type_name_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 269, 0)
@@ -4747,7 +5173,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between class specification and '::' in 'void A::f() { }'. ")+self.tr("Only appears in separate member implementation (does not appear with in-line implementation). "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 270, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_class_scope")), 271, 0, 1, 5)
+        if self.tr("code_nl_func_class_scope")!="code_nl_func_class_scope":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_class_scope")), 271, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_class_scope")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 272, 0)
@@ -4758,7 +5185,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between function scope and name, as in 'void A :: <here> f() { }'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 273, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_scope_name")), 274, 0, 1, 5)
+        if self.tr("code_nl_func_scope_name")!="code_nl_func_scope_name":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_scope_name")), 274, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_scope_name")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 275, 0)
@@ -4769,7 +5197,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between return type and function name in a prototype. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 276, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_proto_type_name")), 277, 0, 1, 5)
+        if self.tr("code_nl_func_proto_type_name")!="code_nl_func_proto_type_name":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_proto_type_name")), 277, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_proto_type_name")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 278, 0)
@@ -4780,7 +5209,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between a function name and the opening '(' in the declaration. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 279, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_paren")), 280, 0, 1, 5)
+        if self.tr("code_nl_func_paren")!="code_nl_func_paren":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_paren")), 280, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 281, 0)
@@ -4791,7 +5221,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides nl_func_paren for functions with no parameters. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 282, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_paren_empty")), 283, 0, 1, 5)
+        if self.tr("code_nl_func_paren_empty")!="code_nl_func_paren_empty":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_paren_empty")), 283, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 284, 0)
@@ -4802,7 +5233,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between a function name and the opening '(' in the definition. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 285, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_paren")), 286, 0, 1, 5)
+        if self.tr("code_nl_func_def_paren")!="code_nl_func_def_paren":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_paren")), 286, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 287, 0)
@@ -4813,7 +5245,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides nl_func_def_paren for functions with no parameters. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 288, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_paren_empty")), 289, 0, 1, 5)
+        if self.tr("code_nl_func_def_paren_empty")!="code_nl_func_def_paren_empty":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_paren_empty")), 289, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 290, 0)
@@ -4824,7 +5257,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between a function name and the opening '(' in the call. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 291, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_paren")), 292, 0, 1, 5)
+        if self.tr("code_nl_func_call_paren")!="code_nl_func_call_paren":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_paren")), 292, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_paren")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 293, 0)
@@ -4835,7 +5269,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides nl_func_call_paren for functions with no parameters. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 294, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_paren_empty")), 295, 0, 1, 5)
+        if self.tr("code_nl_func_call_paren_empty")!="code_nl_func_call_paren_empty":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_paren_empty")), 295, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_paren_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 296, 0)
@@ -4846,7 +5281,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after '(' in a function declaration. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 297, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_start")), 298, 0, 1, 5)
+        if self.tr("code_nl_func_decl_start")!="code_nl_func_decl_start":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_start")), 298, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 299, 0)
@@ -4857,7 +5293,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after '(' in a function definition. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 300, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_start")), 301, 0, 1, 5)
+        if self.tr("code_nl_func_def_start")!="code_nl_func_def_start":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_start")), 301, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 302, 0)
@@ -4868,7 +5305,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides nl_func_decl_start when there is only one parameter. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 303, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_start_single")), 304, 0, 1, 5)
+        if self.tr("code_nl_func_decl_start_single")!="code_nl_func_decl_start_single":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_start_single")), 304, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_start_single")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 305, 0)
@@ -4879,7 +5317,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides nl_func_def_start when there is only one parameter. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 306, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_start_single")), 307, 0, 1, 5)
+        if self.tr("code_nl_func_def_start_single")!="code_nl_func_def_start_single":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_start_single")), 307, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_start_single")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 308, 0)
@@ -4890,7 +5329,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after '(' in a function declaration if '(' and ')' are in different lines. ")+self.tr("If false, nl_func_decl_start is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 309, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_start_multi_line")), 310, 0, 1, 5)
+        if self.tr("code_nl_func_decl_start_multi_line")!="code_nl_func_decl_start_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_start_multi_line")), 310, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_start_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 311, 0)
@@ -4901,7 +5341,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after '(' in a function definition if '(' and ')' are in different lines. ")+self.tr("If false, nl_func_def_start is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 312, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_start_multi_line")), 313, 0, 1, 5)
+        if self.tr("code_nl_func_def_start_multi_line")!="code_nl_func_def_start_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_start_multi_line")), 313, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_start_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 314, 0)
@@ -4912,7 +5353,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after each ',' in a function declaration. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 315, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_args")), 316, 0, 1, 5)
+        if self.tr("code_nl_func_decl_args")!="code_nl_func_decl_args":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_args")), 316, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_args")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 317, 0)
@@ -4923,7 +5365,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after each ',' in a function definition. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 318, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_args")), 319, 0, 1, 5)
+        if self.tr("code_nl_func_def_args")!="code_nl_func_def_args":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_args")), 319, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_args")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 320, 0)
@@ -4934,7 +5377,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline after each ',' in a function call. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 321, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_args")), 322, 0, 1, 5)
+        if self.tr("code_nl_func_call_args")!="code_nl_func_call_args":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_args")), 322, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_args")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 323, 0)
@@ -4945,7 +5389,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after each ',' in a function declaration if '(' and ')' are in different lines. ")+self.tr("If false, nl_func_decl_args is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 324, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_args_multi_line")), 325, 0, 1, 5)
+        if self.tr("code_nl_func_decl_args_multi_line")!="code_nl_func_decl_args_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_args_multi_line")), 325, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_args_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 326, 0)
@@ -4956,7 +5401,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after each ',' in a function definition if '(' and ')' are in different lines. ")+self.tr("If false, nl_func_def_args is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 327, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_args_multi_line")), 328, 0, 1, 5)
+        if self.tr("code_nl_func_def_args_multi_line")!="code_nl_func_def_args_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_args_multi_line")), 328, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_args_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 329, 0)
@@ -4967,7 +5413,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before the ')' in a function declaration. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 330, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_end")), 331, 0, 1, 5)
+        if self.tr("code_nl_func_decl_end")!="code_nl_func_decl_end":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_end")), 331, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 332, 0)
@@ -4978,7 +5425,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before the ')' in a function definition. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 333, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_end")), 334, 0, 1, 5)
+        if self.tr("code_nl_func_def_end")!="code_nl_func_def_end":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_end")), 334, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 335, 0)
@@ -4989,7 +5437,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides nl_func_decl_end when there is only one parameter. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 336, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_end_single")), 337, 0, 1, 5)
+        if self.tr("code_nl_func_decl_end_single")!="code_nl_func_decl_end_single":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_end_single")), 337, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_end_single")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 338, 0)
@@ -5000,7 +5449,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Overrides nl_func_def_end when there is only one parameter. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 339, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_end_single")), 340, 0, 1, 5)
+        if self.tr("code_nl_func_def_end_single")!="code_nl_func_def_end_single":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_end_single")), 340, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_end_single")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 341, 0)
@@ -5011,7 +5461,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before ')' in a function declaration if '(' and ')' are in different lines. ")+self.tr("If false, nl_func_decl_end is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 342, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_end_multi_line")), 343, 0, 1, 5)
+        if self.tr("code_nl_func_decl_end_multi_line")!="code_nl_func_decl_end_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_end_multi_line")), 343, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_end_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 344, 0)
@@ -5022,7 +5473,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before ')' in a function definition if '(' and ')' are in different lines. ")+self.tr("If false, nl_func_def_end is used instead. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 345, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_end_multi_line")), 346, 0, 1, 5)
+        if self.tr("code_nl_func_def_end_multi_line")!="code_nl_func_def_end_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_end_multi_line")), 346, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_end_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 347, 0)
@@ -5033,7 +5485,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '()' in a function declaration. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 348, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_empty")), 349, 0, 1, 5)
+        if self.tr("code_nl_func_decl_empty")!="code_nl_func_decl_empty":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_decl_empty")), 349, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_decl_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 350, 0)
@@ -5044,7 +5497,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '()' in a function definition. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 351, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_empty")), 352, 0, 1, 5)
+        if self.tr("code_nl_func_def_empty")!="code_nl_func_def_empty":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_def_empty")), 352, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_def_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 353, 0)
@@ -5055,7 +5509,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between '()' in a function call. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 354, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_empty")), 355, 0, 1, 5)
+        if self.tr("code_nl_func_call_empty")!="code_nl_func_call_empty":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_empty")), 355, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 356, 0)
@@ -5066,7 +5521,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after '(' in a function call, has preference over nl_func_call_start_multi_line. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 357, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_start")), 358, 0, 1, 5)
+        if self.tr("code_nl_func_call_start")!="code_nl_func_call_start":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_start")), 358, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 359, 0)
@@ -5077,7 +5533,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before ')' in a function call. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 360, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_end")), 361, 0, 1, 5)
+        if self.tr("code_nl_func_call_end")!="code_nl_func_call_end":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_end")), 361, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 362, 0)
@@ -5088,7 +5545,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after '(' in a function call if '(' and ')' are in different lines. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 363, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_start_multi_line")), 364, 0, 1, 5)
+        if self.tr("code_nl_func_call_start_multi_line")!="code_nl_func_call_start_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_start_multi_line")), 364, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_start_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 365, 0)
@@ -5099,7 +5557,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after each ',' in a function call if '(' and ')' are in different lines. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 366, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_args_multi_line")), 367, 0, 1, 5)
+        if self.tr("code_nl_func_call_args_multi_line")!="code_nl_func_call_args_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_args_multi_line")), 367, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_args_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 368, 0)
@@ -5110,7 +5569,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before ')' in a function call if '(' and ')' are in different lines. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 369, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_end_multi_line")), 370, 0, 1, 5)
+        if self.tr("code_nl_func_call_end_multi_line")!="code_nl_func_call_end_multi_line":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_end_multi_line")), 370, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_end_multi_line")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 371, 0)
@@ -5121,7 +5581,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to respect nl_func_call_XXX option incase of closure args. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 372, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_args_multi_line_ignore_closures")), 373, 0, 1, 5)
+        if self.tr("code_nl_func_call_args_multi_line_ignore_closures")!="code_nl_func_call_args_multi_line_ignore_closures":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_call_args_multi_line_ignore_closures")), 373, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_call_args_multi_line_ignore_closures")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 374, 0)
@@ -5132,7 +5593,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after '<' of a template parameter list. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 375, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_start")), 376, 0, 1, 5)
+        if self.tr("code_nl_template_start")!="code_nl_template_start":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_start")), 376, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 377, 0)
@@ -5143,7 +5605,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after each ',' in a template parameter list. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 378, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_args")), 379, 0, 1, 5)
+        if self.tr("code_nl_template_args")!="code_nl_template_args":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_args")), 379, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_args")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 380, 0)
@@ -5154,7 +5617,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before '>' of a template parameter list. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 381, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_end")), 382, 0, 1, 5)
+        if self.tr("code_nl_template_end")!="code_nl_template_end":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_template_end")), 382, 0, 1, 5)
         label = QtWidgets.QLabel("nl_template_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 383, 0)
@@ -5165,7 +5629,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to put each Objective-C message parameter on a separate line. ")+self.tr("See nl_oc_msg_leave_one_liner. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 384, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_msg_args")), 385, 0, 1, 5)
+        if self.tr("code_nl_oc_msg_args")!="code_nl_oc_msg_args":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_oc_msg_args")), 385, 0, 1, 5)
         label = QtWidgets.QLabel("nl_oc_msg_args")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 386, 0)
@@ -5176,7 +5641,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between function signature and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 387, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_fdef_brace")), 388, 0, 1, 5)
+        if self.tr("code_nl_fdef_brace")!="code_nl_fdef_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_fdef_brace")), 388, 0, 1, 5)
         label = QtWidgets.QLabel("nl_fdef_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 389, 0)
@@ -5187,7 +5653,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between function signature and '{', if signature ends with ')'. ")+self.tr("Overrides nl_fdef_brace. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 390, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_fdef_brace_cond")), 391, 0, 1, 5)
+        if self.tr("code_nl_fdef_brace_cond")!="code_nl_fdef_brace_cond":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_fdef_brace_cond")), 391, 0, 1, 5)
         label = QtWidgets.QLabel("nl_fdef_brace_cond")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 392, 0)
@@ -5198,7 +5665,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between C++11 lambda signature and '{'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 393, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_cpp_ldef_brace")), 394, 0, 1, 5)
+        if self.tr("code_nl_cpp_ldef_brace")!="code_nl_cpp_ldef_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_cpp_ldef_brace")), 394, 0, 1, 5)
         label = QtWidgets.QLabel("nl_cpp_ldef_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 395, 0)
@@ -5209,7 +5677,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between 'return' and the return expression. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 396, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_return_expr")), 397, 0, 1, 5)
+        if self.tr("code_nl_return_expr")!="code_nl_return_expr":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_return_expr")), 397, 0, 1, 5)
         label = QtWidgets.QLabel("nl_return_expr")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 398, 0)
@@ -5220,7 +5689,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after semicolons, except in 'for' statements. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 399, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_semicolon")), 400, 0, 1, 5)
+        if self.tr("code_nl_after_semicolon")!="code_nl_after_semicolon":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_semicolon")), 400, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_semicolon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 401, 0)
@@ -5231,7 +5701,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Java) Add or remove newline between the ')' and '{{' of the double brace initializer. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 402, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_paren_dbrace_open")), 403, 0, 1, 5)
+        if self.tr("code_nl_paren_dbrace_open")!="code_nl_paren_dbrace_open":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_paren_dbrace_open")), 403, 0, 1, 5)
         label = QtWidgets.QLabel("nl_paren_dbrace_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 404, 0)
@@ -5242,7 +5713,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after the type in an unnamed temporary direct-list-initialization. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 405, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst")), 406, 0, 1, 5)
+        if self.tr("code_nl_type_brace_init_lst")!="code_nl_type_brace_init_lst":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst")), 406, 0, 1, 5)
         label = QtWidgets.QLabel("nl_type_brace_init_lst")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 407, 0)
@@ -5253,7 +5725,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after the open brace in an unnamed temporary direct-list-initialization. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 408, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst_open")), 409, 0, 1, 5)
+        if self.tr("code_nl_type_brace_init_lst_open")!="code_nl_type_brace_init_lst_open":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst_open")), 409, 0, 1, 5)
         label = QtWidgets.QLabel("nl_type_brace_init_lst_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 410, 0)
@@ -5264,7 +5737,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before the close brace in an unnamed temporary direct-list-initialization. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 411, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst_close")), 412, 0, 1, 5)
+        if self.tr("code_nl_type_brace_init_lst_close")!="code_nl_type_brace_init_lst_close":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst_close")), 412, 0, 1, 5)
         label = QtWidgets.QLabel("nl_type_brace_init_lst_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 413, 0)
@@ -5275,7 +5749,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after '{'. ")+self.tr("This also adds a newline before the matching '}'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 414, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_brace_open")), 415, 0, 1, 5)
+        if self.tr("code_nl_after_brace_open")!="code_nl_after_brace_open":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_brace_open")), 415, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_brace_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 416, 0)
@@ -5286,7 +5761,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline between the open brace and a trailing single-line comment. ")+self.tr("Requires nl_after_brace_open=true. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 417, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_brace_open_cmt")), 418, 0, 1, 5)
+        if self.tr("code_nl_after_brace_open_cmt")!="code_nl_after_brace_open_cmt":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_brace_open_cmt")), 418, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_brace_open_cmt")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 419, 0)
@@ -5297,7 +5773,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after a virtual brace open with a non-empty body. ")+self.tr("These occur in un-braced if/while/do/for statement bodies. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 420, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_vbrace_open")), 421, 0, 1, 5)
+        if self.tr("code_nl_after_vbrace_open")!="code_nl_after_vbrace_open":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_vbrace_open")), 421, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_vbrace_open")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 422, 0)
@@ -5308,7 +5785,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after a virtual brace open with an empty body. ")+self.tr("These occur in un-braced if/while/do/for statement bodies. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 423, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_vbrace_open_empty")), 424, 0, 1, 5)
+        if self.tr("code_nl_after_vbrace_open_empty")!="code_nl_after_vbrace_open_empty":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_vbrace_open_empty")), 424, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_vbrace_open_empty")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 425, 0)
@@ -5319,7 +5797,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after '}'. ")+self.tr("Does not apply if followed by a necessary ';'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 426, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_brace_close")), 427, 0, 1, 5)
+        if self.tr("code_nl_after_brace_close")!="code_nl_after_brace_close":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_brace_close")), 427, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_brace_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 428, 0)
@@ -5330,7 +5809,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline after a virtual brace close, as in 'if (foo) a++; <here> return;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 429, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_vbrace_close")), 430, 0, 1, 5)
+        if self.tr("code_nl_after_vbrace_close")!="code_nl_after_vbrace_close":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_vbrace_close")), 430, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_vbrace_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 431, 0)
@@ -5341,7 +5821,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline between the close brace and identifier, as in 'struct { int a; } <here> b;'. ")+self.tr("Affects enumerations, unions and structures. ")+self.tr("If set to ignore, uses nl_after_brace_close. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 432, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_struct_var")), 433, 0, 1, 5)
+        if self.tr("code_nl_brace_struct_var")!="code_nl_brace_struct_var":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_brace_struct_var")), 433, 0, 1, 5)
         label = QtWidgets.QLabel("nl_brace_struct_var")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 434, 0)
@@ -5352,7 +5833,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to alter newlines in '#define' macros. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 435, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_define_macro")), 436, 0, 1, 5)
+        if self.tr("code_nl_define_macro")!="code_nl_define_macro":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_define_macro")), 436, 0, 1, 5)
         label = QtWidgets.QLabel("nl_define_macro")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 437, 0)
@@ -5363,7 +5845,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to alter newlines between consecutive parenthesis closes. ")+self.tr("The number of closing parentheses in a line will depend on respective open parenthesis lines. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 438, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_squeeze_paren_close")), 439, 0, 1, 5)
+        if self.tr("code_nl_squeeze_paren_close")!="code_nl_squeeze_paren_close":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_squeeze_paren_close")), 439, 0, 1, 5)
         label = QtWidgets.QLabel("nl_squeeze_paren_close")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 440, 0)
@@ -5374,7 +5857,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove blanks after '#ifxx' and '#elxx', or before '#elxx' and '#endif'. ")+self.tr("Does not affect top-level #ifdefs. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 441, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_squeeze_ifdef")), 442, 0, 1, 5)
+        if self.tr("code_nl_squeeze_ifdef")!="code_nl_squeeze_ifdef":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_squeeze_ifdef")), 442, 0, 1, 5)
         label = QtWidgets.QLabel("nl_squeeze_ifdef")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 443, 0)
@@ -5385,7 +5869,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Makes the nl_squeeze_ifdef option affect the top-level #ifdefs as well. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 444, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_squeeze_ifdef_top_level")), 445, 0, 1, 5)
+        if self.tr("code_nl_squeeze_ifdef_top_level")!="code_nl_squeeze_ifdef_top_level":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_squeeze_ifdef_top_level")), 445, 0, 1, 5)
         label = QtWidgets.QLabel("nl_squeeze_ifdef_top_level")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 446, 0)
@@ -5396,7 +5881,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line before 'if'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 447, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_if")), 448, 0, 1, 5)
+        if self.tr("code_nl_before_if")!="code_nl_before_if":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_if")), 448, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_if")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 449, 0)
@@ -5407,7 +5893,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line after 'if' statement. ")+self.tr("Add/Force work only if the next token is not a closing brace. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 450, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_if")), 451, 0, 1, 5)
+        if self.tr("code_nl_after_if")!="code_nl_after_if":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_if")), 451, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_if")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 452, 0)
@@ -5418,7 +5905,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line before 'for'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 453, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_for")), 454, 0, 1, 5)
+        if self.tr("code_nl_before_for")!="code_nl_before_for":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_for")), 454, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_for")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 455, 0)
@@ -5429,7 +5917,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line after 'for' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 456, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_for")), 457, 0, 1, 5)
+        if self.tr("code_nl_after_for")!="code_nl_after_for":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_for")), 457, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_for")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 458, 0)
@@ -5440,7 +5929,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line before 'while'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 459, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_while")), 460, 0, 1, 5)
+        if self.tr("code_nl_before_while")!="code_nl_before_while":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_while")), 460, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_while")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 461, 0)
@@ -5451,7 +5941,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line after 'while' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 462, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_while")), 463, 0, 1, 5)
+        if self.tr("code_nl_after_while")!="code_nl_after_while":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_while")), 463, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_while")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 464, 0)
@@ -5462,7 +5953,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line before 'switch'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 465, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_switch")), 466, 0, 1, 5)
+        if self.tr("code_nl_before_switch")!="code_nl_before_switch":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_switch")), 466, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_switch")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 467, 0)
@@ -5473,7 +5965,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line after 'switch' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 468, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_switch")), 469, 0, 1, 5)
+        if self.tr("code_nl_after_switch")!="code_nl_after_switch":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_switch")), 469, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_switch")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 470, 0)
@@ -5484,7 +5977,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line before 'synchronized'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 471, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_synchronized")), 472, 0, 1, 5)
+        if self.tr("code_nl_before_synchronized")!="code_nl_before_synchronized":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_synchronized")), 472, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_synchronized")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 473, 0)
@@ -5495,7 +5989,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line after 'synchronized' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 474, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_synchronized")), 475, 0, 1, 5)
+        if self.tr("code_nl_after_synchronized")!="code_nl_after_synchronized":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_synchronized")), 475, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_synchronized")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 476, 0)
@@ -5506,7 +6001,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line before 'do'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 477, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_do")), 478, 0, 1, 5)
+        if self.tr("code_nl_before_do")!="code_nl_before_do":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_do")), 478, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_do")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 479, 0)
@@ -5517,7 +6013,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove blank line after 'do/while' statement. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 480, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_do")), 481, 0, 1, 5)
+        if self.tr("code_nl_after_do")!="code_nl_after_do":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_do")), 481, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_do")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 482, 0)
@@ -5528,7 +6025,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to put a blank line before 'return' statements, unless after an open brace. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 483, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_return")), 484, 0, 1, 5)
+        if self.tr("code_nl_before_return")!="code_nl_before_return":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_return")), 484, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 485, 0)
@@ -5539,7 +6037,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to put a blank line after 'return' statements, unless followed by a close brace. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 486, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_return")), 487, 0, 1, 5)
+        if self.tr("code_nl_after_return")!="code_nl_after_return":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_return")), 487, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 488, 0)
@@ -5550,7 +6049,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to put a blank line before a member '.' or '->' operators. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 489, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_member")), 490, 0, 1, 5)
+        if self.tr("code_nl_before_member")!="code_nl_before_member":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_member")), 490, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_member")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 491, 0)
@@ -5561,7 +6061,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Java) Whether to put a blank line after a member '.' or '->' operators. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 492, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_member")), 493, 0, 1, 5)
+        if self.tr("code_nl_after_member")!="code_nl_after_member":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_member")), 493, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_member")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 494, 0)
@@ -5572,7 +6073,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to double-space commented-entries in 'struct'/'union'/'enum'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 495, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_ds_struct_enum_cmt")), 496, 0, 1, 5)
+        if self.tr("code_nl_ds_struct_enum_cmt")!="code_nl_ds_struct_enum_cmt":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_ds_struct_enum_cmt")), 496, 0, 1, 5)
         label = QtWidgets.QLabel("nl_ds_struct_enum_cmt")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 497, 0)
@@ -5583,7 +6085,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to force a newline before '}' of a 'struct'/'union'/'enum'. ")+self.tr("(Lower priority than eat_blanks_before_close_brace.). "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 498, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_ds_struct_enum_close_brace")), 499, 0, 1, 5)
+        if self.tr("code_nl_ds_struct_enum_close_brace")!="code_nl_ds_struct_enum_close_brace":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_ds_struct_enum_close_brace")), 499, 0, 1, 5)
         label = QtWidgets.QLabel("nl_ds_struct_enum_close_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 500, 0)
@@ -5594,7 +6097,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline before or after (depending on pos_class_colon) a class colon, as in 'class Foo <here> : <or here> public Bar'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 501, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_colon")), 502, 0, 1, 5)
+        if self.tr("code_nl_class_colon")!="code_nl_class_colon":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_colon")), 502, 0, 1, 5)
         label = QtWidgets.QLabel("nl_class_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 503, 0)
@@ -5605,7 +6109,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove newline around a class constructor colon. ")+self.tr("The exact position depends on nl_constr_init_args, pos_constr_colon and pos_constr_comma. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 504, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_constr_colon")), 505, 0, 1, 5)
+        if self.tr("code_nl_constr_colon")!="code_nl_constr_colon":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_constr_colon")), 505, 0, 1, 5)
         label = QtWidgets.QLabel("nl_constr_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 506, 0)
@@ -5616,7 +6121,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to collapse a two-line namespace, like 'namespace foo\n{ decl; }' into a single line. ")+self.tr("If true, prevents other brace newline rules from turning such code into four lines. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 507, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_namespace_two_to_one_liner")), 508, 0, 1, 5)
+        if self.tr("code_nl_namespace_two_to_one_liner")!="code_nl_namespace_two_to_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_namespace_two_to_one_liner")), 508, 0, 1, 5)
         label = QtWidgets.QLabel("nl_namespace_two_to_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 509, 0)
@@ -5627,7 +6133,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove a newline in simple unbraced if statements, turning them into one-liners, as in 'if(b)\n i++;' => 'if(b) i++;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 510, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_if_one_liner")), 511, 0, 1, 5)
+        if self.tr("code_nl_create_if_one_liner")!="code_nl_create_if_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_if_one_liner")), 511, 0, 1, 5)
         label = QtWidgets.QLabel("nl_create_if_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 512, 0)
@@ -5638,7 +6145,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove a newline in simple unbraced for statements, turning them into one-liners, as in 'for (...)\n stmt;' => 'for (...) stmt;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 513, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_for_one_liner")), 514, 0, 1, 5)
+        if self.tr("code_nl_create_for_one_liner")!="code_nl_create_for_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_for_one_liner")), 514, 0, 1, 5)
         label = QtWidgets.QLabel("nl_create_for_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 515, 0)
@@ -5649,7 +6157,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove a newline in simple unbraced while statements, turning them into one-liners, as in 'while (expr)\n stmt;' => 'while (expr) stmt;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 516, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_while_one_liner")), 517, 0, 1, 5)
+        if self.tr("code_nl_create_while_one_liner")!="code_nl_create_while_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_while_one_liner")), 517, 0, 1, 5)
         label = QtWidgets.QLabel("nl_create_while_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 518, 0)
@@ -5660,7 +6169,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to collapse a function definition whose body (not counting braces) is only one line so that the entire definition (prototype, braces, body) is a single line. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 519, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_func_def_one_liner")), 520, 0, 1, 5)
+        if self.tr("code_nl_create_func_def_one_liner")!="code_nl_create_func_def_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_func_def_one_liner")), 520, 0, 1, 5)
         label = QtWidgets.QLabel("nl_create_func_def_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 521, 0)
@@ -5671,7 +6181,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to collapse a function definition whose body (not counting braces) is only one line so that the entire definition (prototype, braces, body) is a single line. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 522, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_list_one_liner")), 523, 0, 1, 5)
+        if self.tr("code_nl_create_list_one_liner")!="code_nl_create_list_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_create_list_one_liner")), 523, 0, 1, 5)
         label = QtWidgets.QLabel("nl_create_list_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 524, 0)
@@ -5682,7 +6193,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to split one-line simple unbraced if statements into two lines by adding a newline, as in 'if(b) <here> i++;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 525, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_split_if_one_liner")), 526, 0, 1, 5)
+        if self.tr("code_nl_split_if_one_liner")!="code_nl_split_if_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_split_if_one_liner")), 526, 0, 1, 5)
         label = QtWidgets.QLabel("nl_split_if_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 527, 0)
@@ -5693,7 +6205,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to split one-line simple unbraced for statements into two lines by adding a newline, as in 'for (...) <here> stmt;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 528, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_split_for_one_liner")), 529, 0, 1, 5)
+        if self.tr("code_nl_split_for_one_liner")!="code_nl_split_for_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_split_for_one_liner")), 529, 0, 1, 5)
         label = QtWidgets.QLabel("nl_split_for_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 530, 0)
@@ -5704,7 +6217,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to split one-line simple unbraced while statements into two lines by adding a newline, as in 'while (expr) <here> stmt;'. "))
         label.setWordWrap(True)
         self.lt4.addWidget(label, 531, 0, 1, 5)
-        self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_split_while_one_liner")), 532, 0, 1, 5)
+        if self.tr("code_nl_split_while_one_liner")!="code_nl_split_while_one_liner":
+            self.lt4.addWidget(QtWidgets.QLabel(self.tr("code_nl_split_while_one_liner")), 532, 0, 1, 5)
         label = QtWidgets.QLabel("nl_split_while_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt4.addWidget(label, 533, 0)
@@ -5718,7 +6232,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The maximum number of consecutive newlines (3 = 2 blank lines). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 0, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_max")), 1, 0, 1, 5)
+        if self.tr("code_nl_max")!="code_nl_max":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_max")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("nl_max")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 2, 0)
@@ -5730,7 +6245,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The maximum number of consecutive newlines in a function. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 3, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_max_blank_in_func")), 4, 0, 1, 5)
+        if self.tr("code_nl_max_blank_in_func")!="code_nl_max_blank_in_func":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_max_blank_in_func")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("nl_max_blank_in_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 5, 0)
@@ -5742,7 +6258,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a function prototype. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 6, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_body_proto")), 7, 0, 1, 5)
+        if self.tr("code_nl_before_func_body_proto")!="code_nl_before_func_body_proto":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_body_proto")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_func_body_proto")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 8, 0)
@@ -5754,7 +6271,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a multi-line function definition. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 9, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_body_def")), 10, 0, 1, 5)
+        if self.tr("code_nl_before_func_body_def")!="code_nl_before_func_body_def":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_body_def")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_func_body_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 11, 0)
@@ -5766,7 +6284,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a class constructor/destructor prototype. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 12, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_class_proto")), 13, 0, 1, 5)
+        if self.tr("code_nl_before_func_class_proto")!="code_nl_before_func_class_proto":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_class_proto")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_func_class_proto")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 14, 0)
@@ -5778,7 +6297,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a class constructor/destructor definition. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 15, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_class_def")), 16, 0, 1, 5)
+        if self.tr("code_nl_before_func_class_def")!="code_nl_before_func_class_def":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_func_class_def")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_func_class_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 17, 0)
@@ -5790,7 +6310,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a function prototype. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 18, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_proto")), 19, 0, 1, 5)
+        if self.tr("code_nl_after_func_proto")!="code_nl_after_func_proto":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_proto")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_func_proto")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 20, 0)
@@ -5802,7 +6323,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a function prototype, if not followed by another function prototype. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 21, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_proto_group")), 22, 0, 1, 5)
+        if self.tr("code_nl_after_func_proto_group")!="code_nl_after_func_proto_group":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_proto_group")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_func_proto_group")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 23, 0)
@@ -5814,7 +6336,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a class constructor/destructor prototype. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 24, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_class_proto")), 25, 0, 1, 5)
+        if self.tr("code_nl_after_func_class_proto")!="code_nl_after_func_class_proto":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_class_proto")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_func_class_proto")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 26, 0)
@@ -5826,7 +6349,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a class constructor/destructor prototype, if not followed by another constructor/destructor prototype. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 27, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_class_proto_group")), 28, 0, 1, 5)
+        if self.tr("code_nl_after_func_class_proto_group")!="code_nl_after_func_class_proto_group":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_class_proto_group")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_func_class_proto_group")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 29, 0)
@@ -5838,7 +6362,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether one-line method definitions inside a class body should be treated as if they were prototypes for the purposes of adding newlines. ")+self.tr("Requires nl_class_leave_one_liners=true. ")+self.tr("Overrides nl_before_func_body_def and nl_before_func_class_def for one-liners. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 30, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_leave_one_liner_groups")), 31, 0, 1, 5)
+        if self.tr("code_nl_class_leave_one_liner_groups")!="code_nl_class_leave_one_liner_groups":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_class_leave_one_liner_groups")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("nl_class_leave_one_liner_groups")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 32, 0)
@@ -5849,7 +6374,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after '}' of a multi-line function body. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 33, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_body")), 34, 0, 1, 5)
+        if self.tr("code_nl_after_func_body")!="code_nl_after_func_body":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_body")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_func_body")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 35, 0)
@@ -5861,7 +6387,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after '}' of a multi-line function body in a class declaration. ")+self.tr("Also affects class constructors/destructors. ")+self.tr("Overrides nl_after_func_body. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 36, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_body_class")), 37, 0, 1, 5)
+        if self.tr("code_nl_after_func_body_class")!="code_nl_after_func_body_class":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_body_class")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_func_body_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 38, 0)
@@ -5873,7 +6400,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after '}' of a single line function body. ")+self.tr("Also affects class constructors/destructors. ")+self.tr("Overrides nl_after_func_body and nl_after_func_body_class. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 39, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_body_one_liner")), 40, 0, 1, 5)
+        if self.tr("code_nl_after_func_body_one_liner")!="code_nl_after_func_body_one_liner":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_func_body_one_liner")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_func_body_one_liner")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 41, 0)
@@ -5885,7 +6413,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of blank lines after a block of variable definitions at the top of a function body. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 42, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_var_def_blk")), 43, 0, 1, 5)
+        if self.tr("code_nl_func_var_def_blk")!="code_nl_func_var_def_blk":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_func_var_def_blk")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("nl_func_var_def_blk")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 44, 0)
@@ -5897,7 +6426,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a block of typedefs. ")+self.tr("If nl_after_access_spec is non-zero, that option takes precedence. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 45, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_typedef_blk_start")), 46, 0, 1, 5)
+        if self.tr("code_nl_typedef_blk_start")!="code_nl_typedef_blk_start":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_typedef_blk_start")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("nl_typedef_blk_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 47, 0)
@@ -5909,7 +6439,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a block of typedefs. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 48, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_typedef_blk_end")), 49, 0, 1, 5)
+        if self.tr("code_nl_typedef_blk_end")!="code_nl_typedef_blk_end":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_typedef_blk_end")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("nl_typedef_blk_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 50, 0)
@@ -5921,7 +6452,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The maximum number of consecutive newlines within a block of typedefs. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 51, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_typedef_blk_in")), 52, 0, 1, 5)
+        if self.tr("code_nl_typedef_blk_in")!="code_nl_typedef_blk_in":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_typedef_blk_in")), 52, 0, 1, 5)
         label = QtWidgets.QLabel("nl_typedef_blk_in")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 53, 0)
@@ -5933,7 +6465,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a block of variable definitions not at the top of a function body. ")+self.tr("If nl_after_access_spec is non-zero, that option takes precedence. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 54, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_var_def_blk_start")), 55, 0, 1, 5)
+        if self.tr("code_nl_var_def_blk_start")!="code_nl_var_def_blk_start":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_var_def_blk_start")), 55, 0, 1, 5)
         label = QtWidgets.QLabel("nl_var_def_blk_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 56, 0)
@@ -5945,7 +6478,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a block of variable definitions not at the top of a function body. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 57, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_var_def_blk_end")), 58, 0, 1, 5)
+        if self.tr("code_nl_var_def_blk_end")!="code_nl_var_def_blk_end":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_var_def_blk_end")), 58, 0, 1, 5)
         label = QtWidgets.QLabel("nl_var_def_blk_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 59, 0)
@@ -5957,7 +6491,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The maximum number of consecutive newlines within a block of variable definitions. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 60, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_var_def_blk_in")), 61, 0, 1, 5)
+        if self.tr("code_nl_var_def_blk_in")!="code_nl_var_def_blk_in":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_var_def_blk_in")), 61, 0, 1, 5)
         label = QtWidgets.QLabel("nl_var_def_blk_in")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 62, 0)
@@ -5969,7 +6504,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The minimum number of newlines before a multi-line comment. ")+self.tr("Doesn't apply if after a brace open or another multi-line comment. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 63, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_block_comment")), 64, 0, 1, 5)
+        if self.tr("code_nl_before_block_comment")!="code_nl_before_block_comment":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_block_comment")), 64, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_block_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 65, 0)
@@ -5981,7 +6517,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The minimum number of newlines before a single-line C comment. ")+self.tr("Doesn't apply if after a brace open or other single-line C comments. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 66, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_c_comment")), 67, 0, 1, 5)
+        if self.tr("code_nl_before_c_comment")!="code_nl_before_c_comment":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_c_comment")), 67, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_c_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 68, 0)
@@ -5993,7 +6530,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The minimum number of newlines before a CPP comment. ")+self.tr("Doesn't apply if after a brace open or other CPP comments. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 69, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_cpp_comment")), 70, 0, 1, 5)
+        if self.tr("code_nl_before_cpp_comment")!="code_nl_before_cpp_comment":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_cpp_comment")), 70, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_cpp_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 71, 0)
@@ -6005,7 +6543,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to force a newline after a multi-line comment. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 72, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_multiline_comment")), 73, 0, 1, 5)
+        if self.tr("code_nl_after_multiline_comment")!="code_nl_after_multiline_comment":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_multiline_comment")), 73, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_multiline_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 74, 0)
@@ -6016,7 +6555,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to force a newline after a label's colon. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 75, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_label_colon")), 76, 0, 1, 5)
+        if self.tr("code_nl_after_label_colon")!="code_nl_after_label_colon":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_label_colon")), 76, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_label_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 77, 0)
@@ -6027,7 +6567,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after '}' or ';' of a struct/enum/union definition. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 78, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_struct")), 79, 0, 1, 5)
+        if self.tr("code_nl_after_struct")!="code_nl_after_struct":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_struct")), 79, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_struct")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 80, 0)
@@ -6039,7 +6580,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a class definition. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 81, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_class")), 82, 0, 1, 5)
+        if self.tr("code_nl_before_class")!="code_nl_before_class":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_class")), 82, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 83, 0)
@@ -6051,7 +6593,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after '}' or ';' of a class definition. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 84, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_class")), 85, 0, 1, 5)
+        if self.tr("code_nl_after_class")!="code_nl_after_class":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_class")), 85, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_class")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 86, 0)
@@ -6063,7 +6606,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a namespace. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 87, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_namespace")), 88, 0, 1, 5)
+        if self.tr("code_nl_before_namespace")!="code_nl_before_namespace":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_namespace")), 88, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_namespace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 89, 0)
@@ -6075,7 +6619,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after '{' of a namespace. ")+self.tr("This also adds newlines before the matching '}'. ")+self.tr("0: Apply eat_blanks_after_open_brace or eat_blanks_before_close_brace if     applicable, otherwise no change. ")+self.tr("Overrides eat_blanks_after_open_brace and eat_blanks_before_close_brace. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 90, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_inside_namespace")), 91, 0, 1, 5)
+        if self.tr("code_nl_inside_namespace")!="code_nl_inside_namespace":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_inside_namespace")), 91, 0, 1, 5)
         label = QtWidgets.QLabel("nl_inside_namespace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 92, 0)
@@ -6087,7 +6632,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after '}' of a namespace. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 93, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_namespace")), 94, 0, 1, 5)
+        if self.tr("code_nl_after_namespace")!="code_nl_after_namespace":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_namespace")), 94, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_namespace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 95, 0)
@@ -6099,7 +6645,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before an access specifier label. ")+self.tr("This also includes the Qt-specific 'signals:' and 'slots:'. ")+self.tr("Will not change the newline count if after a brace open. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 96, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_access_spec")), 97, 0, 1, 5)
+        if self.tr("code_nl_before_access_spec")!="code_nl_before_access_spec":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_access_spec")), 97, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_access_spec")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 98, 0)
@@ -6111,7 +6658,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after an access specifier label. ")+self.tr("This also includes the Qt-specific 'signals:' and 'slots:'. ")+self.tr("Will not change the newline count if after a brace open. ")+self.tr("0: No change (default). ")+self.tr("Overrides nl_typedef_blk_start and nl_var_def_blk_start. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 99, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_access_spec")), 100, 0, 1, 5)
+        if self.tr("code_nl_after_access_spec")!="code_nl_after_access_spec":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_access_spec")), 100, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_access_spec")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 101, 0)
@@ -6123,7 +6671,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines between a function definition and the function comment, as in '// comment\n <here> void foo() {...}'. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 102, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_comment_func_def")), 103, 0, 1, 5)
+        if self.tr("code_nl_comment_func_def")!="code_nl_comment_func_def":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_comment_func_def")), 103, 0, 1, 5)
         label = QtWidgets.QLabel("nl_comment_func_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 104, 0)
@@ -6135,7 +6684,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a try-catch-finally block that isn't followed by a brace close. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 105, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_try_catch_finally")), 106, 0, 1, 5)
+        if self.tr("code_nl_after_try_catch_finally")!="code_nl_after_try_catch_finally":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_try_catch_finally")), 106, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_try_catch_finally")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 107, 0)
@@ -6147,7 +6697,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) The number of newlines before and after a property, indexer or event declaration. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 108, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_around_cs_property")), 109, 0, 1, 5)
+        if self.tr("code_nl_around_cs_property")!="code_nl_around_cs_property":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_around_cs_property")), 109, 0, 1, 5)
         label = QtWidgets.QLabel("nl_around_cs_property")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 110, 0)
@@ -6159,7 +6710,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) The number of newlines between the get/set/add/remove handlers. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 111, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_between_get_set")), 112, 0, 1, 5)
+        if self.tr("code_nl_between_get_set")!="code_nl_between_get_set":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_between_get_set")), 112, 0, 1, 5)
         label = QtWidgets.QLabel("nl_between_get_set")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 113, 0)
@@ -6171,7 +6723,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Add or remove newline between property and the '{'. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 114, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_property_brace")), 115, 0, 1, 5)
+        if self.tr("code_nl_property_brace")!="code_nl_property_brace":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_property_brace")), 115, 0, 1, 5)
         label = QtWidgets.QLabel("nl_property_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 116, 0)
@@ -6182,7 +6735,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove blank lines after '{'. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 117, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_eat_blanks_after_open_brace")), 118, 0, 1, 5)
+        if self.tr("code_eat_blanks_after_open_brace")!="code_eat_blanks_after_open_brace":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_eat_blanks_after_open_brace")), 118, 0, 1, 5)
         label = QtWidgets.QLabel("eat_blanks_after_open_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 119, 0)
@@ -6193,7 +6747,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove blank lines before '}'. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 120, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_eat_blanks_before_close_brace")), 121, 0, 1, 5)
+        if self.tr("code_eat_blanks_before_close_brace")!="code_eat_blanks_before_close_brace":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_eat_blanks_before_close_brace")), 121, 0, 1, 5)
         label = QtWidgets.QLabel("eat_blanks_before_close_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 122, 0)
@@ -6204,7 +6759,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How aggressively to remove extra newlines not in preprocessor. ")+self.tr("0: No change (default) 1: Remove most newlines not handled by other config 2: Remove all newlines and reformat completely by config. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 123, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_remove_extra_newlines")), 124, 0, 1, 5)
+        if self.tr("code_nl_remove_extra_newlines")!="code_nl_remove_extra_newlines":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_remove_extra_newlines")), 124, 0, 1, 5)
         label = QtWidgets.QLabel("nl_remove_extra_newlines")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 125, 0)
@@ -6216,7 +6772,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Java) Add or remove newline after an annotation statement. ")+self.tr("Only affects annotations that are after a newline. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 126, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_annotation")), 127, 0, 1, 5)
+        if self.tr("code_nl_after_annotation")!="code_nl_after_annotation":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_annotation")), 127, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_annotation")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 128, 0)
@@ -6227,7 +6784,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Java) Add or remove newline between two annotations. "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 129, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_between_annotation")), 130, 0, 1, 5)
+        if self.tr("code_nl_between_annotation")!="code_nl_between_annotation":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_between_annotation")), 130, 0, 1, 5)
         label = QtWidgets.QLabel("nl_between_annotation")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 131, 0)
@@ -6238,7 +6796,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a whole-file #ifdef. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 132, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_whole_file_ifdef")), 133, 0, 1, 5)
+        if self.tr("code_nl_before_whole_file_ifdef")!="code_nl_before_whole_file_ifdef":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_whole_file_ifdef")), 133, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_whole_file_ifdef")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 134, 0)
@@ -6250,7 +6809,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a whole-file #ifdef. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 135, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_whole_file_ifdef")), 136, 0, 1, 5)
+        if self.tr("code_nl_after_whole_file_ifdef")!="code_nl_after_whole_file_ifdef":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_whole_file_ifdef")), 136, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_whole_file_ifdef")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 137, 0)
@@ -6262,7 +6822,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines before a whole-file #endif. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 138, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_whole_file_endif")), 139, 0, 1, 5)
+        if self.tr("code_nl_before_whole_file_endif")!="code_nl_before_whole_file_endif":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_before_whole_file_endif")), 139, 0, 1, 5)
         label = QtWidgets.QLabel("nl_before_whole_file_endif")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 140, 0)
@@ -6274,7 +6835,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of newlines after a whole-file #endif. ")+self.tr("0: No change (default). "))
         label.setWordWrap(True)
         self.lt5.addWidget(label, 141, 0, 1, 5)
-        self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_whole_file_endif")), 142, 0, 1, 5)
+        if self.tr("code_nl_after_whole_file_endif")!="code_nl_after_whole_file_endif":
+            self.lt5.addWidget(QtWidgets.QLabel(self.tr("code_nl_after_whole_file_endif")), 142, 0, 1, 5)
         label = QtWidgets.QLabel("nl_after_whole_file_endif")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt5.addWidget(label, 143, 0)
@@ -6289,7 +6851,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of arithmetic operators in wrapped expressions. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 0, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_arith")), 1, 0, 1, 5)
+        if self.tr("code_pos_arith")!="code_pos_arith":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_arith")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("pos_arith")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 2, 0)
@@ -6300,7 +6863,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of assignment in wrapped expressions. ")+self.tr("Do not affect '=' followed by '{'. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 3, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_assign")), 4, 0, 1, 5)
+        if self.tr("code_pos_assign")!="code_pos_assign":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_assign")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("pos_assign")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 5, 0)
@@ -6311,7 +6875,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of Boolean operators in wrapped expressions. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 6, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_bool")), 7, 0, 1, 5)
+        if self.tr("code_pos_bool")!="code_pos_bool":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_bool")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("pos_bool")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 8, 0)
@@ -6322,7 +6887,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of comparison operators in wrapped expressions. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 9, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_compare")), 10, 0, 1, 5)
+        if self.tr("code_pos_compare")!="code_pos_compare":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_compare")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("pos_compare")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 11, 0)
@@ -6333,7 +6899,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of conditional operators, as in the '?' and ':' of 'expr ? stmt : stmt', in wrapped expressions. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 12, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_conditional")), 13, 0, 1, 5)
+        if self.tr("code_pos_conditional")!="code_pos_conditional":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_conditional")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("pos_conditional")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 14, 0)
@@ -6344,7 +6911,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of the comma in wrapped expressions. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 15, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_comma")), 16, 0, 1, 5)
+        if self.tr("code_pos_comma")!="code_pos_comma":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_comma")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("pos_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 17, 0)
@@ -6355,7 +6923,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of the comma in enum entries. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 18, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_enum_comma")), 19, 0, 1, 5)
+        if self.tr("code_pos_enum_comma")!="code_pos_enum_comma":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_enum_comma")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("pos_enum_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 20, 0)
@@ -6366,7 +6935,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of the comma in the base class list if there is more than one line. ")+self.tr("Affects nl_class_init_args. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 21, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_class_comma")), 22, 0, 1, 5)
+        if self.tr("code_pos_class_comma")!="code_pos_class_comma":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_class_comma")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("pos_class_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 23, 0)
@@ -6377,7 +6947,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of the comma in the constructor initialization list. ")+self.tr("Related to nl_constr_colon, nl_constr_init_args and pos_constr_colon. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 24, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_constr_comma")), 25, 0, 1, 5)
+        if self.tr("code_pos_constr_comma")!="code_pos_constr_comma":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_constr_comma")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("pos_constr_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 26, 0)
@@ -6388,7 +6959,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of trailing/leading class colon, between class and base class list. ")+self.tr("Affects nl_class_colon. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 27, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_class_colon")), 28, 0, 1, 5)
+        if self.tr("code_pos_class_colon")!="code_pos_class_colon":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_class_colon")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("pos_class_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 29, 0)
@@ -6399,7 +6971,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The position of colons between constructor and member initialization. ")+self.tr("Related to nl_constr_colon, nl_constr_init_args and pos_constr_comma. "))
         label.setWordWrap(True)
         self.lt6.addWidget(label, 30, 0, 1, 5)
-        self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_constr_colon")), 31, 0, 1, 5)
+        if self.tr("code_pos_constr_colon")!="code_pos_constr_colon":
+            self.lt6.addWidget(QtWidgets.QLabel(self.tr("code_pos_constr_colon")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("pos_constr_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt6.addWidget(label, 32, 0)
@@ -6413,7 +6986,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Try to limit code width to N columns. "))
         label.setWordWrap(True)
         self.lt7.addWidget(label, 0, 0, 1, 5)
-        self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_code_width")), 1, 0, 1, 5)
+        if self.tr("code_code_width")!="code_code_width":
+            self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_code_width")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("code_width")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt7.addWidget(label, 2, 0)
@@ -6425,7 +6999,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to fully split long 'for' statements at semi-colons. "))
         label.setWordWrap(True)
         self.lt7.addWidget(label, 3, 0, 1, 5)
-        self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_ls_for_split_full")), 4, 0, 1, 5)
+        if self.tr("code_ls_for_split_full")!="code_ls_for_split_full":
+            self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_ls_for_split_full")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("ls_for_split_full")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt7.addWidget(label, 5, 0)
@@ -6436,7 +7011,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to fully split long function prototypes/calls at commas. ")+self.tr("The option ls_code_width has priority over the option ls_func_split_full. "))
         label.setWordWrap(True)
         self.lt7.addWidget(label, 6, 0, 1, 5)
-        self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_ls_func_split_full")), 7, 0, 1, 5)
+        if self.tr("code_ls_func_split_full")!="code_ls_func_split_full":
+            self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_ls_func_split_full")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("ls_func_split_full")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt7.addWidget(label, 8, 0)
@@ -6447,7 +7023,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to split lines as close to code_width as possible and ignore some groupings. ")+self.tr("The option ls_code_width has priority over the option ls_func_split_full. "))
         label.setWordWrap(True)
         self.lt7.addWidget(label, 9, 0, 1, 5)
-        self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_ls_code_width")), 10, 0, 1, 5)
+        if self.tr("code_ls_code_width")!="code_ls_code_width":
+            self.lt7.addWidget(QtWidgets.QLabel(self.tr("code_ls_code_width")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("ls_code_width")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt7.addWidget(label, 11, 0)
@@ -6461,7 +7038,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to keep non-indenting tabs. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 0, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_keep_tabs")), 1, 0, 1, 5)
+        if self.tr("code_align_keep_tabs")!="code_align_keep_tabs":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_keep_tabs")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("align_keep_tabs")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 2, 0)
@@ -6472,7 +7050,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to use tabs for aligning. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 3, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_with_tabs")), 4, 0, 1, 5)
+        if self.tr("code_align_with_tabs")!="code_align_with_tabs":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_with_tabs")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("align_with_tabs")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 5, 0)
@@ -6483,7 +7062,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to bump out to the next tab when aligning. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 6, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_on_tabstop")), 7, 0, 1, 5)
+        if self.tr("code_align_on_tabstop")!="code_align_on_tabstop":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_on_tabstop")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("align_on_tabstop")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 8, 0)
@@ -6494,7 +7074,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to right-align numbers. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 9, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_number_right")), 10, 0, 1, 5)
+        if self.tr("code_align_number_right")!="code_align_number_right":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_number_right")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("align_number_right")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 11, 0)
@@ -6505,7 +7086,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to keep whitespace not required for alignment. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 12, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_keep_extra_space")), 13, 0, 1, 5)
+        if self.tr("code_align_keep_extra_space")!="code_align_keep_extra_space":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_keep_extra_space")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("align_keep_extra_space")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 14, 0)
@@ -6516,7 +7098,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align variable definitions in prototypes and functions. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 15, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params")), 16, 0, 1, 5)
+        if self.tr("code_align_func_params")!="code_align_func_params":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("align_func_params")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 17, 0)
@@ -6527,7 +7110,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning parameter definitions in function on parameter name. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 18, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params_span")), 19, 0, 1, 5)
+        if self.tr("code_align_func_params_span")!="code_align_func_params_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params_span")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("align_func_params_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 20, 0)
@@ -6539,7 +7123,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning function parameter definitions. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 21, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params_thresh")), 22, 0, 1, 5)
+        if self.tr("code_align_func_params_thresh")!="code_align_func_params_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params_thresh")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("align_func_params_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 23, 0)
@@ -6551,7 +7136,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The gap for aligning function parameter definitions. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 24, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params_gap")), 25, 0, 1, 5)
+        if self.tr("code_align_func_params_gap")!="code_align_func_params_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_params_gap")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("align_func_params_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 26, 0)
@@ -6563,7 +7149,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning constructor value. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 27, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_constr_value_span")), 28, 0, 1, 5)
+        if self.tr("code_align_constr_value_span")!="code_align_constr_value_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_constr_value_span")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("align_constr_value_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 29, 0)
@@ -6575,7 +7162,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning constructor value. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 30, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_constr_value_thresh")), 31, 0, 1, 5)
+        if self.tr("code_align_constr_value_thresh")!="code_align_constr_value_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_constr_value_thresh")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("align_constr_value_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 32, 0)
@@ -6587,7 +7175,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The gap for aligning constructor value. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 33, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_constr_value_gap")), 34, 0, 1, 5)
+        if self.tr("code_align_constr_value_gap")!="code_align_constr_value_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_constr_value_gap")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("align_constr_value_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 35, 0)
@@ -6599,7 +7188,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align parameters in single-line functions that have the same name. ")+self.tr("The function names must already be aligned with each other. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 36, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_same_func_call_params")), 37, 0, 1, 5)
+        if self.tr("code_align_same_func_call_params")!="code_align_same_func_call_params":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_same_func_call_params")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("align_same_func_call_params")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 38, 0)
@@ -6610,7 +7200,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning function-call parameters for single line functions. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 39, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_same_func_call_params_span")), 40, 0, 1, 5)
+        if self.tr("code_align_same_func_call_params_span")!="code_align_same_func_call_params_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_same_func_call_params_span")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("align_same_func_call_params_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 41, 0)
@@ -6622,7 +7213,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning function-call parameters for single line functions. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 42, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_same_func_call_params_thresh")), 43, 0, 1, 5)
+        if self.tr("code_align_same_func_call_params_thresh")!="code_align_same_func_call_params_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_same_func_call_params_thresh")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("align_same_func_call_params_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 44, 0)
@@ -6634,7 +7226,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning variable definitions. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 45, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_span")), 46, 0, 1, 5)
+        if self.tr("code_align_var_def_span")!="code_align_var_def_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_span")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 47, 0)
@@ -6646,7 +7239,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to consider (or treat) the '*' in the alignment of variable definitions. ")+self.tr("0: Part of the type     'void *   foo;' (default) 1: Part of the variable 'void     *foo;' 2: Dangling             'void    *foo;' Dangling: the '*' will not be taken into account when aligning. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 48, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_star_style")), 49, 0, 1, 5)
+        if self.tr("code_align_var_def_star_style")!="code_align_var_def_star_style":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_star_style")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_star_style")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 50, 0)
@@ -6658,7 +7252,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to consider (or treat) the '&' in the alignment of variable definitions. ")+self.tr("0: Part of the type     'long &   foo;' (default) 1: Part of the variable 'long     &foo;' 2: Dangling             'long    &foo;' Dangling: the '&' will not be taken into account when aligning. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 51, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_amp_style")), 52, 0, 1, 5)
+        if self.tr("code_align_var_def_amp_style")!="code_align_var_def_amp_style":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_amp_style")), 52, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_amp_style")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 53, 0)
@@ -6670,7 +7265,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning variable definitions. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 54, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_thresh")), 55, 0, 1, 5)
+        if self.tr("code_align_var_def_thresh")!="code_align_var_def_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_thresh")), 55, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 56, 0)
@@ -6682,7 +7278,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The gap for aligning variable definitions. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 57, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_gap")), 58, 0, 1, 5)
+        if self.tr("code_align_var_def_gap")!="code_align_var_def_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_gap")), 58, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 59, 0)
@@ -6694,7 +7291,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align the colon in struct bit fields. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 60, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_colon")), 61, 0, 1, 5)
+        if self.tr("code_align_var_def_colon")!="code_align_var_def_colon":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_colon")), 61, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 62, 0)
@@ -6705,7 +7303,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The gap for aligning the colon in struct bit fields. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 63, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_colon_gap")), 64, 0, 1, 5)
+        if self.tr("code_align_var_def_colon_gap")!="code_align_var_def_colon_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_colon_gap")), 64, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_colon_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 65, 0)
@@ -6717,7 +7316,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align any attribute after the variable name. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 66, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_attribute")), 67, 0, 1, 5)
+        if self.tr("code_align_var_def_attribute")!="code_align_var_def_attribute":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_attribute")), 67, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_attribute")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 68, 0)
@@ -6728,7 +7328,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align inline struct/enum/union variable definitions. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 69, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_inline")), 70, 0, 1, 5)
+        if self.tr("code_align_var_def_inline")!="code_align_var_def_inline":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_def_inline")), 70, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_def_inline")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 71, 0)
@@ -6739,7 +7340,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning on '=' in assignments. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 72, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_span")), 73, 0, 1, 5)
+        if self.tr("code_align_assign_span")!="code_align_assign_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_span")), 73, 0, 1, 5)
         label = QtWidgets.QLabel("align_assign_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 74, 0)
@@ -6751,7 +7353,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning on '=' in function prototype modifier. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 75, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_func_proto_span")), 76, 0, 1, 5)
+        if self.tr("code_align_assign_func_proto_span")!="code_align_assign_func_proto_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_func_proto_span")), 76, 0, 1, 5)
         label = QtWidgets.QLabel("align_assign_func_proto_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 77, 0)
@@ -6763,7 +7366,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning on '=' in assignments. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 78, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_thresh")), 79, 0, 1, 5)
+        if self.tr("code_align_assign_thresh")!="code_align_assign_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_thresh")), 79, 0, 1, 5)
         label = QtWidgets.QLabel("align_assign_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 80, 0)
@@ -6775,7 +7379,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to apply align_assign_span to function declaration \"assignments\", ie 'virtual void foo() = 0' or '~foo() = {default|delete}'. ")+self.tr("0: Align with other assignments (default) 1: Align with each other, ignoring regular assignments 2: Don't align. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 81, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_decl_func")), 82, 0, 1, 5)
+        if self.tr("code_align_assign_decl_func")!="code_align_assign_decl_func":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_assign_decl_func")), 82, 0, 1, 5)
         label = QtWidgets.QLabel("align_assign_decl_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 83, 0)
@@ -6787,7 +7392,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning on '=' in enums. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 84, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_enum_equ_span")), 85, 0, 1, 5)
+        if self.tr("code_align_enum_equ_span")!="code_align_enum_equ_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_enum_equ_span")), 85, 0, 1, 5)
         label = QtWidgets.QLabel("align_enum_equ_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 86, 0)
@@ -6799,7 +7405,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning on '=' in enums. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: no limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 87, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_enum_equ_thresh")), 88, 0, 1, 5)
+        if self.tr("code_align_enum_equ_thresh")!="code_align_enum_equ_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_enum_equ_thresh")), 88, 0, 1, 5)
         label = QtWidgets.QLabel("align_enum_equ_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 89, 0)
@@ -6811,7 +7418,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning class member definitions. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 90, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_class_span")), 91, 0, 1, 5)
+        if self.tr("code_align_var_class_span")!="code_align_var_class_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_class_span")), 91, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_class_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 92, 0)
@@ -6823,7 +7431,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning class member definitions. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 93, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_class_thresh")), 94, 0, 1, 5)
+        if self.tr("code_align_var_class_thresh")!="code_align_var_class_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_class_thresh")), 94, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_class_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 95, 0)
@@ -6835,7 +7444,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The gap for aligning class member definitions. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 96, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_class_gap")), 97, 0, 1, 5)
+        if self.tr("code_align_var_class_gap")!="code_align_var_class_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_class_gap")), 97, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_class_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 98, 0)
@@ -6847,7 +7457,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning struct/union member definitions. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 99, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_struct_span")), 100, 0, 1, 5)
+        if self.tr("code_align_var_struct_span")!="code_align_var_struct_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_struct_span")), 100, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_struct_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 101, 0)
@@ -6859,7 +7470,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning struct/union member definitions. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 102, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_struct_thresh")), 103, 0, 1, 5)
+        if self.tr("code_align_var_struct_thresh")!="code_align_var_struct_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_struct_thresh")), 103, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_struct_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 104, 0)
@@ -6871,7 +7483,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The gap for aligning struct/union member definitions. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 105, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_struct_gap")), 106, 0, 1, 5)
+        if self.tr("code_align_var_struct_gap")!="code_align_var_struct_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_var_struct_gap")), 106, 0, 1, 5)
         label = QtWidgets.QLabel("align_var_struct_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 107, 0)
@@ -6883,7 +7496,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning struct initializer values. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 108, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_struct_init_span")), 109, 0, 1, 5)
+        if self.tr("code_align_struct_init_span")!="code_align_struct_init_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_struct_init_span")), 109, 0, 1, 5)
         label = QtWidgets.QLabel("align_struct_init_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 110, 0)
@@ -6895,7 +7509,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning single-line typedefs. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 111, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_span")), 112, 0, 1, 5)
+        if self.tr("code_align_typedef_span")!="code_align_typedef_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_span")), 112, 0, 1, 5)
         label = QtWidgets.QLabel("align_typedef_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 113, 0)
@@ -6907,7 +7522,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The minimum space between the type and the synonym of a typedef. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 114, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_gap")), 115, 0, 1, 5)
+        if self.tr("code_align_typedef_gap")!="code_align_typedef_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_gap")), 115, 0, 1, 5)
         label = QtWidgets.QLabel("align_typedef_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 116, 0)
@@ -6919,7 +7535,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to align typedef'd functions with other typedefs. ")+self.tr("0: Don't mix them at all (default) 1: Align the open parenthesis with the types 2: Align the function type name with the other type names. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 117, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_func")), 118, 0, 1, 5)
+        if self.tr("code_align_typedef_func")!="code_align_typedef_func":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_func")), 118, 0, 1, 5)
         label = QtWidgets.QLabel("align_typedef_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 119, 0)
@@ -6931,7 +7548,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to consider (or treat) the '*' in the alignment of typedefs. ")+self.tr("0: Part of the typedef type, 'typedef int * pint;' (default) 1: Part of type name:        'typedef int   *pint;' 2: Dangling:                 'typedef int  *pint;' Dangling: the '*' will not be taken into account when aligning. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 120, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_star_style")), 121, 0, 1, 5)
+        if self.tr("code_align_typedef_star_style")!="code_align_typedef_star_style":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_star_style")), 121, 0, 1, 5)
         label = QtWidgets.QLabel("align_typedef_star_style")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 122, 0)
@@ -6943,7 +7561,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to consider (or treat) the '&' in the alignment of typedefs. ")+self.tr("0: Part of the typedef type, 'typedef int & intref;' (default) 1: Part of type name:        'typedef int   &intref;' 2: Dangling:                 'typedef int  &intref;' Dangling: the '&' will not be taken into account when aligning. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 123, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_amp_style")), 124, 0, 1, 5)
+        if self.tr("code_align_typedef_amp_style")!="code_align_typedef_amp_style":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_typedef_amp_style")), 124, 0, 1, 5)
         label = QtWidgets.QLabel("align_typedef_amp_style")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 125, 0)
@@ -6955,7 +7574,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning comments that end lines. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 126, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_span")), 127, 0, 1, 5)
+        if self.tr("code_align_right_cmt_span")!="code_align_right_cmt_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_span")), 127, 0, 1, 5)
         label = QtWidgets.QLabel("align_right_cmt_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 128, 0)
@@ -6967,7 +7587,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Minimum number of columns between preceding text and a trailing comment in order for the comment to qualify for being aligned. ")+self.tr("Must be non-zero to have an effect. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 129, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_gap")), 130, 0, 1, 5)
+        if self.tr("code_align_right_cmt_gap")!="code_align_right_cmt_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_gap")), 130, 0, 1, 5)
         label = QtWidgets.QLabel("align_right_cmt_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 131, 0)
@@ -6979,7 +7600,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If aligning comments, whether to mix with comments after '}' and #endif with less than three spaces before the comment. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 132, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_mix")), 133, 0, 1, 5)
+        if self.tr("code_align_right_cmt_mix")!="code_align_right_cmt_mix":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_mix")), 133, 0, 1, 5)
         label = QtWidgets.QLabel("align_right_cmt_mix")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 134, 0)
@@ -6990,7 +7612,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to only align trailing comments that are at the same brace level. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 135, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_same_level")), 136, 0, 1, 5)
+        if self.tr("code_align_right_cmt_same_level")!="code_align_right_cmt_same_level":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_same_level")), 136, 0, 1, 5)
         label = QtWidgets.QLabel("align_right_cmt_same_level")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 137, 0)
@@ -7001,7 +7624,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Minimum column at which to align trailing comments. ")+self.tr("Comments which are aligned beyond this column, but which can be aligned in a lesser column, may be \"pulled in\". ")+self.tr("0: Ignore (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 138, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_at_col")), 139, 0, 1, 5)
+        if self.tr("code_align_right_cmt_at_col")!="code_align_right_cmt_at_col":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_right_cmt_at_col")), 139, 0, 1, 5)
         label = QtWidgets.QLabel("align_right_cmt_at_col")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 140, 0)
@@ -7013,7 +7637,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning function prototypes. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 141, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_proto_span")), 142, 0, 1, 5)
+        if self.tr("code_align_func_proto_span")!="code_align_func_proto_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_proto_span")), 142, 0, 1, 5)
         label = QtWidgets.QLabel("align_func_proto_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 143, 0)
@@ -7025,7 +7650,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The threshold for aligning function prototypes. ")+self.tr("Use a negative number for absolute thresholds. ")+self.tr("0: No limit (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 144, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_proto_thresh")), 145, 0, 1, 5)
+        if self.tr("code_align_func_proto_thresh")!="code_align_func_proto_thresh":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_proto_thresh")), 145, 0, 1, 5)
         label = QtWidgets.QLabel("align_func_proto_thresh")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 146, 0)
@@ -7037,7 +7663,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Minimum gap between the return type and the function name. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 147, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_proto_gap")), 148, 0, 1, 5)
+        if self.tr("code_align_func_proto_gap")!="code_align_func_proto_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_func_proto_gap")), 148, 0, 1, 5)
         label = QtWidgets.QLabel("align_func_proto_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 149, 0)
@@ -7049,7 +7676,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align function prototypes on the 'operator' keyword instead of what follows. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 150, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_on_operator")), 151, 0, 1, 5)
+        if self.tr("code_align_on_operator")!="code_align_on_operator":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_on_operator")), 151, 0, 1, 5)
         label = QtWidgets.QLabel("align_on_operator")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 152, 0)
@@ -7060,7 +7688,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to mix aligning prototype and variable declarations. ")+self.tr("If true, align_var_def_XXX options are used instead of align_func_proto_XXX options. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 153, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_mix_var_proto")), 154, 0, 1, 5)
+        if self.tr("code_align_mix_var_proto")!="code_align_mix_var_proto":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_mix_var_proto")), 154, 0, 1, 5)
         label = QtWidgets.QLabel("align_mix_var_proto")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 155, 0)
@@ -7071,7 +7700,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align single-line functions with function prototypes. ")+self.tr("Uses align_func_proto_span. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 156, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_single_line_func")), 157, 0, 1, 5)
+        if self.tr("code_align_single_line_func")!="code_align_single_line_func":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_single_line_func")), 157, 0, 1, 5)
         label = QtWidgets.QLabel("align_single_line_func")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 158, 0)
@@ -7082,7 +7712,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align the open brace of single-line functions. ")+self.tr("Requires align_single_line_func=true. ")+self.tr("Uses align_func_proto_span. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 159, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_single_line_brace")), 160, 0, 1, 5)
+        if self.tr("code_align_single_line_brace")!="code_align_single_line_brace":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_single_line_brace")), 160, 0, 1, 5)
         label = QtWidgets.QLabel("align_single_line_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 161, 0)
@@ -7093,7 +7724,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Gap for align_single_line_brace. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 162, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_single_line_brace_gap")), 163, 0, 1, 5)
+        if self.tr("code_align_single_line_brace_gap")!="code_align_single_line_brace_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_single_line_brace_gap")), 163, 0, 1, 5)
         label = QtWidgets.QLabel("align_single_line_brace_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 164, 0)
@@ -7105,7 +7737,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) The span for aligning Objective-C message specifications. ")+self.tr("0: Don't align (default). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 165, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_spec_span")), 166, 0, 1, 5)
+        if self.tr("code_align_oc_msg_spec_span")!="code_align_oc_msg_spec_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_spec_span")), 166, 0, 1, 5)
         label = QtWidgets.QLabel("align_oc_msg_spec_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 167, 0)
@@ -7117,7 +7750,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align macros wrapped with a backslash and a newline. ")+self.tr("This will not work right if the macro contains a multi-line comment. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 168, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_nl_cont")), 169, 0, 1, 5)
+        if self.tr("code_align_nl_cont")!="code_align_nl_cont":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_nl_cont")), 169, 0, 1, 5)
         label = QtWidgets.QLabel("align_nl_cont")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 170, 0)
@@ -7128,7 +7762,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align macro functions and variables together. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 171, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_pp_define_together")), 172, 0, 1, 5)
+        if self.tr("code_align_pp_define_together")!="code_align_pp_define_together":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_pp_define_together")), 172, 0, 1, 5)
         label = QtWidgets.QLabel("align_pp_define_together")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 173, 0)
@@ -7139,7 +7774,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The span for aligning on '#define' bodies. ")+self.tr("=0: Don't align (default) >0: Number of lines (including comments) between blocks. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 174, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_pp_define_span")), 175, 0, 1, 5)
+        if self.tr("code_align_pp_define_span")!="code_align_pp_define_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_pp_define_span")), 175, 0, 1, 5)
         label = QtWidgets.QLabel("align_pp_define_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 176, 0)
@@ -7151,7 +7787,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The minimum space between label and value of a preprocessor define. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 177, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_pp_define_gap")), 178, 0, 1, 5)
+        if self.tr("code_align_pp_define_gap")!="code_align_pp_define_gap":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_pp_define_gap")), 178, 0, 1, 5)
         label = QtWidgets.QLabel("align_pp_define_gap")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 179, 0)
@@ -7163,7 +7800,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align lines that start with '<<' with previous '<<'. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 180, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_left_shift")), 181, 0, 1, 5)
+        if self.tr("code_align_left_shift")!="code_align_left_shift":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_left_shift")), 181, 0, 1, 5)
         label = QtWidgets.QLabel("align_left_shift")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 182, 0)
@@ -7174,7 +7812,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to align text after 'asm volatile ()' colons. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 183, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_asm_colon")), 184, 0, 1, 5)
+        if self.tr("code_align_asm_colon")!="code_align_asm_colon":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_asm_colon")), 184, 0, 1, 5)
         label = QtWidgets.QLabel("align_asm_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 185, 0)
@@ -7185,7 +7824,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Span for aligning parameters in an Objective-C message call on the ':'. ")+self.tr("0: Don't align. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 186, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_span")), 187, 0, 1, 5)
+        if self.tr("code_align_oc_msg_colon_span")!="code_align_oc_msg_colon_span":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_span")), 187, 0, 1, 5)
         label = QtWidgets.QLabel("align_oc_msg_colon_span")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 188, 0)
@@ -7197,7 +7837,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to always align with the first parameter, even if it is too short. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 189, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_first")), 190, 0, 1, 5)
+        if self.tr("code_align_oc_msg_colon_first")!="code_align_oc_msg_colon_first":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_first")), 190, 0, 1, 5)
         label = QtWidgets.QLabel("align_oc_msg_colon_first")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 191, 0)
@@ -7208,7 +7849,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to align parameters in an Objective-C '+' or '-' declaration on the ':'. "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 192, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_decl_colon")), 193, 0, 1, 5)
+        if self.tr("code_align_oc_decl_colon")!="code_align_oc_decl_colon":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_decl_colon")), 193, 0, 1, 5)
         label = QtWidgets.QLabel("align_oc_decl_colon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 194, 0)
@@ -7219,7 +7861,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to not align parameters in an Objectve-C message call if first colon is not on next line of the message call (the same way Xcode does aligment). "))
         label.setWordWrap(True)
         self.lt8.addWidget(label, 195, 0, 1, 5)
-        self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_xcode_like")), 196, 0, 1, 5)
+        if self.tr("code_align_oc_msg_colon_xcode_like")!="code_align_oc_msg_colon_xcode_like":
+            self.lt8.addWidget(QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_xcode_like")), 196, 0, 1, 5)
         label = QtWidgets.QLabel("align_oc_msg_colon_xcode_like")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt8.addWidget(label, 197, 0)
@@ -7233,7 +7876,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Try to wrap comments at N columns. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 0, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_width")), 1, 0, 1, 5)
+        if self.tr("code_cmt_width")!="code_cmt_width":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_width")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_width")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 2, 0)
@@ -7245,7 +7889,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("How to reflow comments. ")+self.tr("0: No reflowing (apart from the line wrapping due to cmt_width) (default) 1: No touching at all 2: Full reflow. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 3, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_reflow_mode")), 4, 0, 1, 5)
+        if self.tr("code_cmt_reflow_mode")!="code_cmt_reflow_mode":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_reflow_mode")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_reflow_mode")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 5, 0)
@@ -7257,7 +7902,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to convert all tabs to spaces in comments. ")+self.tr("If false, tabs in comments are left alone, unless used for indenting. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 6, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_convert_tab_to_spaces")), 7, 0, 1, 5)
+        if self.tr("code_cmt_convert_tab_to_spaces")!="code_cmt_convert_tab_to_spaces":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_convert_tab_to_spaces")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_convert_tab_to_spaces")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 8, 0)
@@ -7268,7 +7914,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to apply changes to multi-line comments, including cmt_width, keyword substitution and leading chars. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 9, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_indent_multi")), 10, 0, 1, 5)
+        if self.tr("code_cmt_indent_multi")!="code_cmt_indent_multi":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_indent_multi")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_indent_multi")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 11, 0)
@@ -7279,7 +7926,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to group c-comments that look like they are in a block. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 12, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_c_group")), 13, 0, 1, 5)
+        if self.tr("code_cmt_c_group")!="code_cmt_c_group":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_c_group")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_c_group")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 14, 0)
@@ -7290,7 +7938,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to put an empty '/*' on the first line of the combined c-comment. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 15, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_c_nl_start")), 16, 0, 1, 5)
+        if self.tr("code_cmt_c_nl_start")!="code_cmt_c_nl_start":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_c_nl_start")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_c_nl_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 17, 0)
@@ -7301,7 +7950,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before the closing '*/' of the combined c-comment. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 18, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_c_nl_end")), 19, 0, 1, 5)
+        if self.tr("code_cmt_c_nl_end")!="code_cmt_c_nl_end":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_c_nl_end")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_c_nl_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 20, 0)
@@ -7312,7 +7962,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to change cpp-comments into c-comments. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 21, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_to_c")), 22, 0, 1, 5)
+        if self.tr("code_cmt_cpp_to_c")!="code_cmt_cpp_to_c":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_to_c")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_cpp_to_c")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 23, 0)
@@ -7323,7 +7974,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to group cpp-comments that look like they are in a block. ")+self.tr("Only meaningful if cmt_cpp_to_c=true. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 24, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_group")), 25, 0, 1, 5)
+        if self.tr("code_cmt_cpp_group")!="code_cmt_cpp_group":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_group")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_cpp_group")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 26, 0)
@@ -7334,7 +7986,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to put an empty '/*' on the first line of the combined cpp-comment when converting to a c-comment. ")+self.tr("Requires cmt_cpp_to_c=true and cmt_cpp_group=true. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 27, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_nl_start")), 28, 0, 1, 5)
+        if self.tr("code_cmt_cpp_nl_start")!="code_cmt_cpp_nl_start":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_nl_start")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_cpp_nl_start")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 29, 0)
@@ -7345,7 +7998,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add a newline before the closing '*/' of the combined cpp-comment when converting to a c-comment. ")+self.tr("Requires cmt_cpp_to_c=true and cmt_cpp_group=true. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 30, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_nl_end")), 31, 0, 1, 5)
+        if self.tr("code_cmt_cpp_nl_end")!="code_cmt_cpp_nl_end":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_cpp_nl_end")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_cpp_nl_end")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 32, 0)
@@ -7356,7 +8010,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to put a star on subsequent comment lines. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 33, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_star_cont")), 34, 0, 1, 5)
+        if self.tr("code_cmt_star_cont")!="code_cmt_star_cont":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_star_cont")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_star_cont")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 35, 0)
@@ -7367,7 +8022,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of spaces to insert at the start of subsequent comment lines. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 36, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_sp_before_star_cont")), 37, 0, 1, 5)
+        if self.tr("code_cmt_sp_before_star_cont")!="code_cmt_sp_before_star_cont":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_sp_before_star_cont")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_sp_before_star_cont")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 38, 0)
@@ -7379,7 +8035,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The number of spaces to insert after the star on subsequent comment lines. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 39, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_sp_after_star_cont")), 40, 0, 1, 5)
+        if self.tr("code_cmt_sp_after_star_cont")!="code_cmt_sp_after_star_cont":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_sp_after_star_cont")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_sp_after_star_cont")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 41, 0)
@@ -7391,7 +8048,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("For multi-line comments with a '*' lead, remove leading spaces if the first and last lines of the comment are the same length. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 42, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_multi_check_last")), 43, 0, 1, 5)
+        if self.tr("code_cmt_multi_check_last")!="code_cmt_multi_check_last":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_multi_check_last")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_multi_check_last")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 44, 0)
@@ -7402,7 +8060,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("For multi-line comments with a '*' lead, remove leading spaces if the first and last lines of the comment are the same length AND if the length is bigger as the first_len minimum. ")+self.tr("Default: 4. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 45, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_multi_first_len_minimum")), 46, 0, 1, 5)
+        if self.tr("code_cmt_multi_first_len_minimum")!="code_cmt_multi_first_len_minimum":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_multi_first_len_minimum")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_multi_first_len_minimum")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 47, 0)
@@ -7414,7 +8073,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Path to a file that contains text to insert at the beginning of a file if the file doesn't start with a C/C++ comment. ")+self.tr("If the inserted text contains '$(filename)', that will be replaced with the current file's name. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 48, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_file_header")), 49, 0, 1, 5)
+        if self.tr("code_cmt_insert_file_header")!="code_cmt_insert_file_header":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_file_header")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_file_header")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 50, 0)
@@ -7424,7 +8084,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Path to a file that contains text to insert at the end of a file if the file doesn't end with a C/C++ comment. ")+self.tr("If the inserted text contains '$(filename)', that will be replaced with the current file's name. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 51, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_file_footer")), 52, 0, 1, 5)
+        if self.tr("code_cmt_insert_file_footer")!="code_cmt_insert_file_footer":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_file_footer")), 52, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_file_footer")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 53, 0)
@@ -7434,7 +8095,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Path to a file that contains text to insert before a function definition if the function isn't preceded by a C/C++ comment. ")+self.tr("If the inserted text contains '$(function)', '$(javaparam)' or '$(fclass)', these will be replaced with, respectively, the name of the function, the javadoc '@param' and '@return' stuff, or the name of the class to which the member function belongs. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 54, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_func_header")), 55, 0, 1, 5)
+        if self.tr("code_cmt_insert_func_header")!="code_cmt_insert_func_header":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_func_header")), 55, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_func_header")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 56, 0)
@@ -7444,7 +8106,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Path to a file that contains text to insert before a class if the class isn't preceded by a C/C++ comment. ")+self.tr("If the inserted text contains '$(class)', that will be replaced with the class name. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 57, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_class_header")), 58, 0, 1, 5)
+        if self.tr("code_cmt_insert_class_header")!="code_cmt_insert_class_header":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_class_header")), 58, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_class_header")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 59, 0)
@@ -7454,7 +8117,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Path to a file that contains text to insert before an Objective-C message specification, if the method isn't preceded by a C/C++ comment. ")+self.tr("If the inserted text contains '$(message)' or '$(javaparam)', these will be replaced with, respectively, the name of the function, or the javadoc '@param' and '@return' stuff. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 60, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_oc_msg_header")), 61, 0, 1, 5)
+        if self.tr("code_cmt_insert_oc_msg_header")!="code_cmt_insert_oc_msg_header":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_oc_msg_header")), 61, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_oc_msg_header")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 62, 0)
@@ -7464,7 +8128,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether a comment should be inserted if a preprocessor is encountered when stepping backwards from a function name. ")+self.tr("Applies to cmt_insert_oc_msg_header, cmt_insert_func_header and cmt_insert_class_header. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 63, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_before_preproc")), 64, 0, 1, 5)
+        if self.tr("code_cmt_insert_before_preproc")!="code_cmt_insert_before_preproc":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_before_preproc")), 64, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_before_preproc")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 65, 0)
@@ -7475,7 +8140,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether a comment should be inserted if a function is declared inline to a class definition. ")+self.tr("Applies to cmt_insert_func_header. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 66, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_before_inlines")), 67, 0, 1, 5)
+        if self.tr("code_cmt_insert_before_inlines")!="code_cmt_insert_before_inlines":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_before_inlines")), 67, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_before_inlines")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 68, 0)
@@ -7486,7 +8152,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether a comment should be inserted if the function is a class constructor or destructor. ")+self.tr("Applies to cmt_insert_func_header. "))
         label.setWordWrap(True)
         self.lt9.addWidget(label, 69, 0, 1, 5)
-        self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_before_ctor_dtor")), 70, 0, 1, 5)
+        if self.tr("code_cmt_insert_before_ctor_dtor")!="code_cmt_insert_before_ctor_dtor":
+            self.lt9.addWidget(QtWidgets.QLabel(self.tr("code_cmt_insert_before_ctor_dtor")), 70, 0, 1, 5)
         label = QtWidgets.QLabel("cmt_insert_before_ctor_dtor")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt9.addWidget(label, 71, 0)
@@ -7500,7 +8167,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove braces on a single-line 'do' statement. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 0, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_do")), 1, 0, 1, 5)
+        if self.tr("code_mod_full_brace_do")!="code_mod_full_brace_do":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_do")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_do")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 2, 0)
@@ -7511,7 +8179,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove braces on a single-line 'for' statement. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 3, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_for")), 4, 0, 1, 5)
+        if self.tr("code_mod_full_brace_for")!="code_mod_full_brace_for":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_for")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_for")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 5, 0)
@@ -7522,7 +8191,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Pawn) Add or remove braces on a single-line function definition. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 6, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_function")), 7, 0, 1, 5)
+        if self.tr("code_mod_full_brace_function")!="code_mod_full_brace_function":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_function")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_function")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 8, 0)
@@ -7533,7 +8203,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove braces on a single-line 'if' statement. ")+self.tr("Braces will not be removed if the braced statement contains an 'else'. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 9, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_if")), 10, 0, 1, 5)
+        if self.tr("code_mod_full_brace_if")!="code_mod_full_brace_if":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_if")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_if")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 11, 0)
@@ -7544,7 +8215,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to enforce that all blocks of an 'if'/'else if'/'else' chain either have, or do not have, braces. ")+self.tr("If true, braces will be added if any block needs braces, and will only be removed if they can be removed from all blocks. ")+self.tr("Overrides mod_full_brace_if. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 12, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_if_chain")), 13, 0, 1, 5)
+        if self.tr("code_mod_full_brace_if_chain")!="code_mod_full_brace_if_chain":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_if_chain")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_if_chain")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 14, 0)
@@ -7555,7 +8227,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to add braces to all blocks of an 'if'/'else if'/'else' chain. ")+self.tr("If true, mod_full_brace_if_chain will only remove braces from an 'if' that does not have an 'else if' or 'else'. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 15, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_if_chain_only")), 16, 0, 1, 5)
+        if self.tr("code_mod_full_brace_if_chain_only")!="code_mod_full_brace_if_chain_only":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_if_chain_only")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_if_chain_only")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 17, 0)
@@ -7566,7 +8239,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove braces on single-line 'while' statement. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 18, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_while")), 19, 0, 1, 5)
+        if self.tr("code_mod_full_brace_while")!="code_mod_full_brace_while":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_while")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_while")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 20, 0)
@@ -7577,7 +8251,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove braces on single-line 'using ()' statement. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 21, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_using")), 22, 0, 1, 5)
+        if self.tr("code_mod_full_brace_using")!="code_mod_full_brace_using":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_using")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_using")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 23, 0)
@@ -7588,7 +8263,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Don't remove braces around statements that span N newlines. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 24, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_nl")), 25, 0, 1, 5)
+        if self.tr("code_mod_full_brace_nl")!="code_mod_full_brace_nl":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_nl")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_nl")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 26, 0)
@@ -7600,7 +8276,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to prevent removal of braces from 'if'/'for'/'while'/etc. ")+self.tr("blocks which span multiple lines. ")+self.tr("Affects:   mod_full_brace_for   mod_full_brace_if   mod_full_brace_if_chain   mod_full_brace_if_chain_only   mod_full_brace_while   mod_full_brace_using. ")+self.tr("Does not affect:   mod_full_brace_do   mod_full_brace_function. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 27, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_nl_block_rem_mlcond")), 28, 0, 1, 5)
+        if self.tr("code_mod_full_brace_nl_block_rem_mlcond")!="code_mod_full_brace_nl_block_rem_mlcond":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_brace_nl_block_rem_mlcond")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_brace_nl_block_rem_mlcond")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 29, 0)
@@ -7611,7 +8288,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove unnecessary parenthesis on 'return' statement. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 30, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_paren_on_return")), 31, 0, 1, 5)
+        if self.tr("code_mod_paren_on_return")!="code_mod_paren_on_return":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_paren_on_return")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("mod_paren_on_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 32, 0)
@@ -7622,7 +8300,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(Pawn) Whether to change optional semicolons to real semicolons. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 33, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_pawn_semicolon")), 34, 0, 1, 5)
+        if self.tr("code_mod_pawn_semicolon")!="code_mod_pawn_semicolon":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_pawn_semicolon")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("mod_pawn_semicolon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 35, 0)
@@ -7633,7 +8312,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to fully parenthesize Boolean expressions in 'while' and 'if' statement, as in 'if (a && b > c)' => 'if (a && (b > c))'. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 36, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_paren_if_bool")), 37, 0, 1, 5)
+        if self.tr("code_mod_full_paren_if_bool")!="code_mod_full_paren_if_bool":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_full_paren_if_bool")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("mod_full_paren_if_bool")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 38, 0)
@@ -7644,7 +8324,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove superfluous semicolons. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 39, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_remove_extra_semicolon")), 40, 0, 1, 5)
+        if self.tr("code_mod_remove_extra_semicolon")!="code_mod_remove_extra_semicolon":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_remove_extra_semicolon")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("mod_remove_extra_semicolon")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 41, 0)
@@ -7655,7 +8336,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If a function body exceeds the specified number of newlines and doesn't have a comment after the close brace, a comment will be added. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 42, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_function_closebrace_comment")), 43, 0, 1, 5)
+        if self.tr("code_mod_add_long_function_closebrace_comment")!="code_mod_add_long_function_closebrace_comment":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_function_closebrace_comment")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("mod_add_long_function_closebrace_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 44, 0)
@@ -7667,7 +8349,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If a namespace body exceeds the specified number of newlines and doesn't have a comment after the close brace, a comment will be added. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 45, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_namespace_closebrace_comment")), 46, 0, 1, 5)
+        if self.tr("code_mod_add_long_namespace_closebrace_comment")!="code_mod_add_long_namespace_closebrace_comment":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_namespace_closebrace_comment")), 46, 0, 1, 5)
         label = QtWidgets.QLabel("mod_add_long_namespace_closebrace_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 47, 0)
@@ -7679,7 +8362,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If a class body exceeds the specified number of newlines and doesn't have a comment after the close brace, a comment will be added. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 48, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_class_closebrace_comment")), 49, 0, 1, 5)
+        if self.tr("code_mod_add_long_class_closebrace_comment")!="code_mod_add_long_class_closebrace_comment":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_class_closebrace_comment")), 49, 0, 1, 5)
         label = QtWidgets.QLabel("mod_add_long_class_closebrace_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 50, 0)
@@ -7691,7 +8375,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If a switch body exceeds the specified number of newlines and doesn't have a comment after the close brace, a comment will be added. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 51, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_switch_closebrace_comment")), 52, 0, 1, 5)
+        if self.tr("code_mod_add_long_switch_closebrace_comment")!="code_mod_add_long_switch_closebrace_comment":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_switch_closebrace_comment")), 52, 0, 1, 5)
         label = QtWidgets.QLabel("mod_add_long_switch_closebrace_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 53, 0)
@@ -7703,7 +8388,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If an #ifdef body exceeds the specified number of newlines and doesn't have a comment after the #endif, a comment will be added. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 54, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_ifdef_endif_comment")), 55, 0, 1, 5)
+        if self.tr("code_mod_add_long_ifdef_endif_comment")!="code_mod_add_long_ifdef_endif_comment":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_ifdef_endif_comment")), 55, 0, 1, 5)
         label = QtWidgets.QLabel("mod_add_long_ifdef_endif_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 56, 0)
@@ -7715,7 +8401,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If an #ifdef or #else body exceeds the specified number of newlines and doesn't have a comment after the #else, a comment will be added. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 57, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_ifdef_else_comment")), 58, 0, 1, 5)
+        if self.tr("code_mod_add_long_ifdef_else_comment")!="code_mod_add_long_ifdef_else_comment":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_add_long_ifdef_else_comment")), 58, 0, 1, 5)
         label = QtWidgets.QLabel("mod_add_long_ifdef_else_comment")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 59, 0)
@@ -7727,7 +8414,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to take care of the case by the mod_sort_xx options. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 60, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_case_sensitive")), 61, 0, 1, 5)
+        if self.tr("code_mod_sort_case_sensitive")!="code_mod_sort_case_sensitive":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_case_sensitive")), 61, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_case_sensitive")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 62, 0)
@@ -7738,7 +8426,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to sort consecutive single-line 'import' statements. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 63, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_import")), 64, 0, 1, 5)
+        if self.tr("code_mod_sort_import")!="code_mod_sort_import":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_import")), 64, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_import")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 65, 0)
@@ -7749,7 +8438,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Whether to sort consecutive single-line 'using' statements. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 66, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_using")), 67, 0, 1, 5)
+        if self.tr("code_mod_sort_using")!="code_mod_sort_using":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_using")), 67, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_using")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 68, 0)
@@ -7760,7 +8450,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to sort consecutive single-line '#include' statements (C/C++) and '#import' statements (Objective-C). ")+self.tr("Be aware that this has the potential to break your code if your includes/imports have ordering dependencies. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 69, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_include")), 70, 0, 1, 5)
+        if self.tr("code_mod_sort_include")!="code_mod_sort_include":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_include")), 70, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_include")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 71, 0)
@@ -7771,7 +8462,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to prioritize '#include' and '#import' statements that contain filename without extension when sorting is enabled. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 72, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_filename")), 73, 0, 1, 5)
+        if self.tr("code_mod_sort_incl_import_prioritize_filename")!="code_mod_sort_incl_import_prioritize_filename":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_filename")), 73, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_incl_import_prioritize_filename")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 74, 0)
@@ -7782,7 +8474,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to prioritize '#include' and '#import' statements that does not contain extensions when sorting is enabled. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 75, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_extensionless")), 76, 0, 1, 5)
+        if self.tr("code_mod_sort_incl_import_prioritize_extensionless")!="code_mod_sort_incl_import_prioritize_extensionless":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_extensionless")), 76, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_incl_import_prioritize_extensionless")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 77, 0)
@@ -7793,7 +8486,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to prioritize '#include' and '#import' statements that contain angle over quotes when sorting is enabled. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 78, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_angle_over_quotes")), 79, 0, 1, 5)
+        if self.tr("code_mod_sort_incl_import_prioritize_angle_over_quotes")!="code_mod_sort_incl_import_prioritize_angle_over_quotes":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_angle_over_quotes")), 79, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_incl_import_prioritize_angle_over_quotes")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 80, 0)
@@ -7804,7 +8498,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to ignore file extension in '#include' and '#import' statements for sorting comparison. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 81, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_ignore_extension")), 82, 0, 1, 5)
+        if self.tr("code_mod_sort_incl_import_ignore_extension")!="code_mod_sort_incl_import_ignore_extension":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_ignore_extension")), 82, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_incl_import_ignore_extension")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 83, 0)
@@ -7815,7 +8510,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to group '#include' and '#import' statements when sorting is enabled. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 84, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_grouping_enabled")), 85, 0, 1, 5)
+        if self.tr("code_mod_sort_incl_import_grouping_enabled")!="code_mod_sort_incl_import_grouping_enabled":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_grouping_enabled")), 85, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_incl_import_grouping_enabled")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 86, 0)
@@ -7826,7 +8522,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to move a 'break' that appears after a fully braced 'case' before the close brace, as in 'case X: { ... ")+self.tr("} break;' => 'case X: { ... ")+self.tr("break; }'. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 87, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_move_case_break")), 88, 0, 1, 5)
+        if self.tr("code_mod_move_case_break")!="code_mod_move_case_break":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_move_case_break")), 88, 0, 1, 5)
         label = QtWidgets.QLabel("mod_move_case_break")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 89, 0)
@@ -7837,7 +8534,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove braces around a fully braced case statement. ")+self.tr("Will only remove braces if there are no variable declarations in the block. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 90, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_case_brace")), 91, 0, 1, 5)
+        if self.tr("code_mod_case_brace")!="code_mod_case_brace":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_case_brace")), 91, 0, 1, 5)
         label = QtWidgets.QLabel("mod_case_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 92, 0)
@@ -7848,7 +8546,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to remove a void 'return;' that appears as the last statement in a function. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 93, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_remove_empty_return")), 94, 0, 1, 5)
+        if self.tr("code_mod_remove_empty_return")!="code_mod_remove_empty_return":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_remove_empty_return")), 94, 0, 1, 5)
         label = QtWidgets.QLabel("mod_remove_empty_return")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 95, 0)
@@ -7859,7 +8558,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove the comma after the last value of an enumeration. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 96, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_enum_last_comma")), 97, 0, 1, 5)
+        if self.tr("code_mod_enum_last_comma")!="code_mod_enum_last_comma":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_enum_last_comma")), 97, 0, 1, 5)
         label = QtWidgets.QLabel("mod_enum_last_comma")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 98, 0)
@@ -7870,7 +8570,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Whether to organize the properties. ")+self.tr("If true, properties will be rearranged according to the mod_sort_oc_property_*_weight factors. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 99, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_properties")), 100, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_properties")!="code_mod_sort_oc_properties":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_properties")), 100, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_properties")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 101, 0)
@@ -7881,7 +8582,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Weight of a class property modifier. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 102, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_class_weight")), 103, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_property_class_weight")!="code_mod_sort_oc_property_class_weight":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_class_weight")), 103, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_property_class_weight")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 104, 0)
@@ -7893,7 +8595,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Weight of 'atomic' and 'nonatomic'. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 105, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_thread_safe_weight")), 106, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_property_thread_safe_weight")!="code_mod_sort_oc_property_thread_safe_weight":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_thread_safe_weight")), 106, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_property_thread_safe_weight")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 107, 0)
@@ -7905,7 +8608,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Weight of 'readwrite' when organizing properties. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 108, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_readwrite_weight")), 109, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_property_readwrite_weight")!="code_mod_sort_oc_property_readwrite_weight":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_readwrite_weight")), 109, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_property_readwrite_weight")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 110, 0)
@@ -7917,7 +8621,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Weight of a reference type specifier ('retain', 'copy', 'assign', 'weak', 'strong') when organizing properties. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 111, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_reference_weight")), 112, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_property_reference_weight")!="code_mod_sort_oc_property_reference_weight":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_reference_weight")), 112, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_property_reference_weight")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 113, 0)
@@ -7929,7 +8634,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Weight of getter type ('getter=') when organizing properties. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 114, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_getter_weight")), 115, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_property_getter_weight")!="code_mod_sort_oc_property_getter_weight":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_getter_weight")), 115, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_property_getter_weight")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 116, 0)
@@ -7941,7 +8647,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Weight of setter type ('setter=') when organizing properties. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 117, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_setter_weight")), 118, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_property_setter_weight")!="code_mod_sort_oc_property_setter_weight":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_setter_weight")), 118, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_property_setter_weight")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 119, 0)
@@ -7953,7 +8660,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(OC) Weight of nullability type ('nullable', 'nonnull', 'null_unspecified', 'null_resettable') when organizing properties. "))
         label.setWordWrap(True)
         self.lt10.addWidget(label, 120, 0, 1, 5)
-        self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_nullability_weight")), 121, 0, 1, 5)
+        if self.tr("code_mod_sort_oc_property_nullability_weight")!="code_mod_sort_oc_property_nullability_weight":
+            self.lt10.addWidget(QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_nullability_weight")), 121, 0, 1, 5)
         label = QtWidgets.QLabel("mod_sort_oc_property_nullability_weight")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt10.addWidget(label, 122, 0)
@@ -7968,7 +8676,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove indentation of preprocessor directives inside #if blocks at brace level 0 (file-level). "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 0, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent")), 1, 0, 1, 5)
+        if self.tr("code_pp_indent")!="code_pp_indent":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 2, 0)
@@ -7979,7 +8688,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent #if/#else/#endif at the brace level. ")+self.tr("If false, these are indented from column 1. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 3, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_at_level")), 4, 0, 1, 5)
+        if self.tr("code_pp_indent_at_level")!="code_pp_indent_at_level":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_at_level")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_at_level")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 5, 0)
@@ -7990,7 +8700,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Specifies the number of columns to indent preprocessors per level at brace level 0 (file-level). ")+self.tr("If pp_indent_at_level=false, also specifies the number of columns to indent preprocessors per level at brace level > 0 (function-level). ")+self.tr("Default: 1. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 6, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_count")), 7, 0, 1, 5)
+        if self.tr("code_pp_indent_count")!="code_pp_indent_count":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_count")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_count")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 8, 0)
@@ -8002,7 +8713,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Add or remove space after # based on pp_level of #if blocks. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 9, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_space")), 10, 0, 1, 5)
+        if self.tr("code_pp_space")!="code_pp_space":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_space")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("pp_space")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 11, 0)
@@ -8013,7 +8725,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Sets the number of spaces per level added with pp_space. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 12, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_space_count")), 13, 0, 1, 5)
+        if self.tr("code_pp_space_count")!="code_pp_space_count":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_space_count")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("pp_space_count")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 14, 0)
@@ -8025,7 +8738,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The indent for '#region' and '#endregion' in C# and '#pragma region' in C/C++. ")+self.tr("Negative values decrease indent down to the first column. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 15, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_region")), 16, 0, 1, 5)
+        if self.tr("code_pp_indent_region")!="code_pp_indent_region":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_region")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_region")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 17, 0)
@@ -8037,7 +8751,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the code between #region and #endregion. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 18, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_region_indent_code")), 19, 0, 1, 5)
+        if self.tr("code_pp_region_indent_code")!="code_pp_region_indent_code":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_region_indent_code")), 19, 0, 1, 5)
         label = QtWidgets.QLabel("pp_region_indent_code")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 20, 0)
@@ -8048,7 +8763,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If pp_indent_at_level=true, sets the indent for #if, #else and #endif when not at file-level. ")+self.tr("Negative values decrease indent down to the first column. ")+self.tr("=0: Indent preprocessors using output_tab_size >0: Column at which all preprocessors will be indented. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 21, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_if")), 22, 0, 1, 5)
+        if self.tr("code_pp_indent_if")!="code_pp_indent_if":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_if")), 22, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_if")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 23, 0)
@@ -8060,7 +8776,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent the code between #if, #else and #endif. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 24, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_if_indent_code")), 25, 0, 1, 5)
+        if self.tr("code_pp_if_indent_code")!="code_pp_if_indent_code":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_if_indent_code")), 25, 0, 1, 5)
         label = QtWidgets.QLabel("pp_if_indent_code")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 26, 0)
@@ -8071,7 +8788,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent '#define' at the brace level. ")+self.tr("If false, these are indented from column 1. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 27, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_define_at_level")), 28, 0, 1, 5)
+        if self.tr("code_pp_define_at_level")!="code_pp_define_at_level":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_define_at_level")), 28, 0, 1, 5)
         label = QtWidgets.QLabel("pp_define_at_level")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 29, 0)
@@ -8082,7 +8800,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to ignore the '#define' body while formatting. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 30, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_ignore_define_body")), 31, 0, 1, 5)
+        if self.tr("code_pp_ignore_define_body")!="code_pp_ignore_define_body":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_ignore_define_body")), 31, 0, 1, 5)
         label = QtWidgets.QLabel("pp_ignore_define_body")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 32, 0)
@@ -8093,7 +8812,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent case statements between #if, #else, and #endif. ")+self.tr("Only applies to the indent of the preprocesser that the case statements directly inside of. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 33, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_case")), 34, 0, 1, 5)
+        if self.tr("code_pp_indent_case")!="code_pp_indent_case":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_case")), 34, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_case")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 35, 0)
@@ -8104,7 +8824,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent whole function definitions between #if, #else, and #endif. ")+self.tr("Only applies to the indent of the preprocesser that the function definition is directly inside of. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 36, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_func_def")), 37, 0, 1, 5)
+        if self.tr("code_pp_indent_func_def")!="code_pp_indent_func_def":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_func_def")), 37, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_func_def")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 38, 0)
@@ -8115,7 +8836,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent extern C blocks between #if, #else, and #endif. ")+self.tr("Only applies to the indent of the preprocesser that the extern block is directly inside of. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 39, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_extern")), 40, 0, 1, 5)
+        if self.tr("code_pp_indent_extern")!="code_pp_indent_extern":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_extern")), 40, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_extern")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 41, 0)
@@ -8126,7 +8848,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to indent braces directly inside #if, #else, and #endif. ")+self.tr("Only applies to the indent of the preprocesser that the braces are directly inside of. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt11.addWidget(label, 42, 0, 1, 5)
-        self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_brace")), 43, 0, 1, 5)
+        if self.tr("code_pp_indent_brace")!="code_pp_indent_brace":
+            self.lt11.addWidget(QtWidgets.QLabel(self.tr("code_pp_indent_brace")), 43, 0, 1, 5)
         label = QtWidgets.QLabel("pp_indent_brace")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt11.addWidget(label, 44, 0)
@@ -8140,7 +8863,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The regex for include category with priority 0. "))
         label.setWordWrap(True)
         self.lt12.addWidget(label, 0, 0, 1, 5)
-        self.lt12.addWidget(QtWidgets.QLabel(self.tr("code_include_category_0")), 1, 0, 1, 5)
+        if self.tr("code_include_category_0")!="code_include_category_0":
+            self.lt12.addWidget(QtWidgets.QLabel(self.tr("code_include_category_0")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("include_category_0")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt12.addWidget(label, 2, 0)
@@ -8150,7 +8874,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The regex for include category with priority 1. "))
         label.setWordWrap(True)
         self.lt12.addWidget(label, 3, 0, 1, 5)
-        self.lt12.addWidget(QtWidgets.QLabel(self.tr("code_include_category_1")), 4, 0, 1, 5)
+        if self.tr("code_include_category_1")!="code_include_category_1":
+            self.lt12.addWidget(QtWidgets.QLabel(self.tr("code_include_category_1")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("include_category_1")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt12.addWidget(label, 5, 0)
@@ -8160,7 +8885,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The regex for include category with priority 2. "))
         label.setWordWrap(True)
         self.lt12.addWidget(label, 6, 0, 1, 5)
-        self.lt12.addWidget(QtWidgets.QLabel(self.tr("code_include_category_2")), 7, 0, 1, 5)
+        if self.tr("code_include_category_2")!="code_include_category_2":
+            self.lt12.addWidget(QtWidgets.QLabel(self.tr("code_include_category_2")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("include_category_2")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt12.addWidget(label, 8, 0)
@@ -8173,7 +8899,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("true:  indent_func_call_param will be used (default) false: indent_func_call_param will NOT be used. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt13.addWidget(label, 0, 0, 1, 5)
-        self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_indent_func_call_param")), 1, 0, 1, 5)
+        if self.tr("code_use_indent_func_call_param")!="code_use_indent_func_call_param":
+            self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_indent_func_call_param")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("use_indent_func_call_param")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt13.addWidget(label, 2, 0)
@@ -8184,7 +8911,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The value of the indentation for a continuation line is calculated differently if the statement is: - a declaration: your case with QString fileName ... ")+self.tr("- an assignment: your case with pSettings = new QSettings( ... ")+self.tr("At the second case the indentation value might be used twice: - at the assignment - at the function call (if present). ")+self.tr("To prevent the double use of the indentation value, use this option with the value 'true'. ")+self.tr("true:  indent_continue will be used only once false: indent_continue will be used every time (default). "))
         label.setWordWrap(True)
         self.lt13.addWidget(label, 3, 0, 1, 5)
-        self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_indent_continue_only_once")), 4, 0, 1, 5)
+        if self.tr("code_use_indent_continue_only_once")!="code_use_indent_continue_only_once":
+            self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_indent_continue_only_once")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("use_indent_continue_only_once")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt13.addWidget(label, 5, 0)
@@ -8195,7 +8923,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("The value might be used twice: - at the assignment - at the opening brace. ")+self.tr("To prevent the double use of the indentation value, use this option with the value 'true'. ")+self.tr("true:  indentation will be used only once false: indentation will be used every time (default). "))
         label.setWordWrap(True)
         self.lt13.addWidget(label, 6, 0, 1, 5)
-        self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_indent_cpp_lambda_only_once")), 7, 0, 1, 5)
+        if self.tr("code_indent_cpp_lambda_only_once")!="code_indent_cpp_lambda_only_once":
+            self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_indent_cpp_lambda_only_once")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("indent_cpp_lambda_only_once")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt13.addWidget(label, 8, 0)
@@ -8206,7 +8935,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether sp_after_angle takes precedence over sp_inside_fparen. ")+self.tr("This was the historic behavior, but is probably not the desired behavior, so this is off by default. "))
         label.setWordWrap(True)
         self.lt13.addWidget(label, 9, 0, 1, 5)
-        self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_sp_after_angle_always")), 10, 0, 1, 5)
+        if self.tr("code_use_sp_after_angle_always")!="code_use_sp_after_angle_always":
+            self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_sp_after_angle_always")), 10, 0, 1, 5)
         label = QtWidgets.QLabel("use_sp_after_angle_always")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt13.addWidget(label, 11, 0)
@@ -8217,7 +8947,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Whether to apply special formatting for Qt SIGNAL/SLOT macros. ")+self.tr("Essentially, this tries to format these so that they match Qt's normalized form (ie the result of QMetaObject::normalizedSignature), which can slightly improve the performance of the QObject::connect call, rather than how they would otherwise be formatted. ")+self.tr("See options_for_QT.cpp for details. ")+self.tr("Default: true. "))
         label.setWordWrap(True)
         self.lt13.addWidget(label, 12, 0, 1, 5)
-        self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_options_overriding_for_qt_macros")), 13, 0, 1, 5)
+        if self.tr("code_use_options_overriding_for_qt_macros")!="code_use_options_overriding_for_qt_macros":
+            self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_options_overriding_for_qt_macros")), 13, 0, 1, 5)
         label = QtWidgets.QLabel("use_options_overriding_for_qt_macros")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt13.addWidget(label, 14, 0)
@@ -8228,7 +8959,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("If true: the form feed character is removed from the list of whitespace characters. ")+self.tr("See https://en.cppreference.com/w/cpp/string/byte/isspace. "))
         label.setWordWrap(True)
         self.lt13.addWidget(label, 15, 0, 1, 5)
-        self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_form_feed_no_more_as_whitespace_character")), 16, 0, 1, 5)
+        if self.tr("code_use_form_feed_no_more_as_whitespace_character")!="code_use_form_feed_no_more_as_whitespace_character":
+            self.lt13.addWidget(QtWidgets.QLabel(self.tr("code_use_form_feed_no_more_as_whitespace_character")), 16, 0, 1, 5)
         label = QtWidgets.QLabel("use_form_feed_no_more_as_whitespace_character")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt13.addWidget(label, 17, 0)
@@ -8242,7 +8974,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("(C#) Warning is given if doing tab-to-\t replacement and we have found one in a C# verbatim string literal. ")+self.tr("Default: 2. "))
         label.setWordWrap(True)
         self.lt14.addWidget(label, 0, 0, 1, 5)
-        self.lt14.addWidget(QtWidgets.QLabel(self.tr("code_warn_level_tabs_found_in_verbatim_string_literals")), 1, 0, 1, 5)
+        if self.tr("code_warn_level_tabs_found_in_verbatim_string_literals")!="code_warn_level_tabs_found_in_verbatim_string_literals":
+            self.lt14.addWidget(QtWidgets.QLabel(self.tr("code_warn_level_tabs_found_in_verbatim_string_literals")), 1, 0, 1, 5)
         label = QtWidgets.QLabel("warn_level_tabs_found_in_verbatim_string_literals")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt14.addWidget(label, 2, 0)
@@ -8254,7 +8987,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Limit the number of loops. ")+self.tr("Used by uncrustify.cpp to exit from infinite loop. ")+self.tr("0: no limit. "))
         label.setWordWrap(True)
         self.lt14.addWidget(label, 3, 0, 1, 5)
-        self.lt14.addWidget(QtWidgets.QLabel(self.tr("code_debug_max_number_of_loops")), 4, 0, 1, 5)
+        if self.tr("code_debug_max_number_of_loops")!="code_debug_max_number_of_loops":
+            self.lt14.addWidget(QtWidgets.QLabel(self.tr("code_debug_max_number_of_loops")), 4, 0, 1, 5)
         label = QtWidgets.QLabel("debug_max_number_of_loops")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt14.addWidget(label, 5, 0)
@@ -8266,7 +9000,8 @@ class Widget(QtWidgets.QToolBox):
         label = QtWidgets.QLabel(self.tr("Set the number of the line to protocol; Used in the function prot_the_line if the 2. ")+self.tr("parameter is zero. ")+self.tr("0: nothing protocol. "))
         label.setWordWrap(True)
         self.lt14.addWidget(label, 6, 0, 1, 5)
-        self.lt14.addWidget(QtWidgets.QLabel(self.tr("code_debug_line_number_to_protocol")), 7, 0, 1, 5)
+        if self.tr("code_debug_line_number_to_protocol")!="code_debug_line_number_to_protocol":
+            self.lt14.addWidget(QtWidgets.QLabel(self.tr("code_debug_line_number_to_protocol")), 7, 0, 1, 5)
         label = QtWidgets.QLabel("debug_line_number_to_protocol")
         label.setFont(QtGui.QFont('Arial', 14, 2))
         self.lt14.addWidget(label, 8, 0)

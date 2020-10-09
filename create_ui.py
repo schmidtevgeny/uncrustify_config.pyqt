@@ -86,8 +86,9 @@ while i < len(d):
             init_strings.append("label.setWordWrap(True)")
             init_strings.append("self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
             rowid += 1
+            init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'],it['name']))
             init_strings.append(
-                "self.lt{}.addWidget(QtWidgets.QLabel(self.tr(\"code_{}\")), {}, 0, 1, 5)".format(section_id,
+                "    self.lt{}.addWidget(QtWidgets.QLabel(self.tr(\"code_{}\")), {}, 0, 1, 5)".format(section_id,
                                                                                                   it['name'], rowid))
             rowid += 1
             init_strings.append("label = QtWidgets.QLabel(\"{}\")".format(it['name']))
@@ -172,12 +173,12 @@ f.write("from PyQt5 import QtWidgets, QtGui\n")
 f.write("import textwrap\n")
 f.write('''
 def wrap(s):
-my_wrap = textwrap.TextWrapper(width = 80)
-wrap_list = my_wrap.wrap(text=s)
-s = ""
-for line in wrap_list:
-  s += "\\n# "+line
-return s''')
+    my_wrap = textwrap.TextWrapper(width = 80)
+    wrap_list = my_wrap.wrap(text=s)
+    s = ""
+    for line in wrap_list:
+        s += "\\n# "+line
+    return s''')
 f.write("\nclass Widget(QtWidgets.QToolBox):\n")
 f.write("\n    def __init__(self):\n        ")
 f.write("\n        ".join(init_strings))
