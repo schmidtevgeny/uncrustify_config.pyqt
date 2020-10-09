@@ -1,23 +1,59 @@
 import os
+import re
+
+regex = r"\.\s*[A-Z]"
 
 
-# os.system("uncrustify --show-config > uncrustify.cfg")
+os.system("uncrustify --show-config > uncrustify.cfg")
 
+
+# def parse_str(s):
+#     s = s.replace("i.e.", "ie").replace("i.e.", "vs")
+#     s = s.split("\n")
+#     items = []
+#     for i in s:
+#         if s == '':
+#             items.append('self.tr("\n\n")')
+#         else:
+#             w = i.split(". ")
+#             for j in w:
+#                 j = j.strip()
+#                 if j != "":
+#                     items.append('self.tr("{}. ")'.format(j.replace('"', '\\"')))
+#     return "+".join(items)
 
 def parse_str(s):
-    s = s.replace("i.e.", "ie").replace("i.e.", "vs")
-    s = s.split("\n")
     items = []
-    for i in s:
-        if s == '':
-            items.append('self.tr("\n\n")')
+    lines = s.split("\n")
+    sc = None
+    for si in lines:
+        if si == "":
+            if not sc is None:
+                items.append(sc)
+            items.append("\n")
+            sc = None
+        elif si[0] == '-':
+            # start list
+            if not sc is None:
+                items.append(sc)
+            sc = "\n"+si
         else:
-            w = i.split(". ")
-            for j in w:
-                j = j.strip()
-                if j != "":
-                    items.append('self.tr("{}. ")'.format(j.replace('"', '\\"')))
-    return "+".join(items)
+            if sc is None:
+                sc = ""
+            sc += " "+si
+            math = re.search(regex, sc)
+            while math:
+                items.append(sc[:math.start() + 1])
+                sc = sc[math.start() + 1:]
+                math = re.search(regex, sc)
+    if not sc is None:
+        items.append(sc)
+        sc = None
+    items2 = []
+    for s in items:
+        items2.append("self.tr(\"{}\")".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
+
+    return "+' '+".join(items2)
 
 
 if not os.path.exists("uncrustify.cfg"):
@@ -48,9 +84,9 @@ while i < len(d):
     elif s != "" and s[0] == "#":
         name = ""
         while i < len(d) and d[i] != "" and d[i].strip()[0] == "#":
-            name += d[i].strip()[2:] + ' '
-            if d[i].strip()[2:] == '':
-                name += "\n"
+            name += d[i].strip()[2:] + '\n'
+            # if d[i].strip()[2:] == '':
+            #     name += "\n"
             i += 1
         optstring = d[i]
         if optstring == "":
@@ -69,7 +105,7 @@ while i < len(d):
     init_strings = [
         "super(Widget, self).__init__()",
         "self.setWindowTitle('" + title + "')"
-    ]
+        ]
     get_strings = ['s=[]']
     section_id = 0
     rowid = 0
@@ -86,10 +122,10 @@ while i < len(d):
             init_strings.append("label.setWordWrap(True)")
             init_strings.append("self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
             rowid += 1
-            init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'],it['name']))
-            init_strings.append(
-                "    self.lt{}.addWidget(QtWidgets.QLabel(self.tr(\"code_{}\")), {}, 0, 1, 5)".format(section_id,
-                                                                                                  it['name'], rowid))
+            init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
+            init_strings.append("    label = QtWidgets.QLabel(self.tr(\"code_{}\"))".format(it['name']))
+            init_strings.append("    label.setFont(QtGui.QFont('Consolas', 12, 0))")
+            init_strings.append("    self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
             rowid += 1
             init_strings.append("label = QtWidgets.QLabel(\"{}\")".format(it['name']))
             init_strings.append("label.setFont(QtGui.QFont('Arial', 14, 2))")
@@ -100,7 +136,7 @@ while i < len(d):
                 init_strings.append("self.{}.setMinimum(-100)".format(it['name']))
                 init_strings.append("self.{}.setMaximum(100)".format(it['name']))
                 init_strings.append("self.{}.setValue({})".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'],rowid))
+                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
                 get_strings.append('s.append(wrap({}))'.format(s))
                 get_strings.append(
@@ -132,7 +168,8 @@ while i < len(d):
 
                 get_strings.append('s.append(wrap({}))'.format(s))
                 get_strings.append(
-                    's.append("' + it['name'] + ' = \\"{}\\" # ' + it['vtype'] + '".format(self.' + it['name'] + '.text()))')
+                    's.append("' + it['name'] + ' = \\"{}\\" # ' + it['vtype'] + '".format(self.' + it[
+                        'name'] + '.text()))')
             elif it['vtype'] == 'ignore/add/remove/force':
                 init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
                 init_strings.append("self.{}.addItems(['ignore','add','remove','force'])".format(it['name']))
@@ -145,7 +182,9 @@ while i < len(d):
                         'name'] + '.currentText()))')
             elif it['vtype'] == 'ignore/break/force/lead/trail/join/lead_break/lead_force/trail_break/trail_force':
                 init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
-                init_strings.append("self.{}.addItems(['ignore','break','force','lead','trail','join','lead_break','lead_force','trail_break','trail_force'])".format(it['name']))
+                init_strings.append(
+                    "self.{}.addItems(['ignore','break','force','lead','trail','join','lead_break','lead_force','trail_break','trail_force'])".format(
+                        it['name']))
                 init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
                 init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
