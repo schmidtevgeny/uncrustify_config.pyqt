@@ -1,0 +1,1 @@
+# uncrustify_config.pyqt
