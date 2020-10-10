@@ -1,3 +1,4 @@
 /.idea/
 /*.qm
 /__pycache__*/
+/test.py
