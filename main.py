@@ -26,6 +26,10 @@ class MainWidget(QtWidgets.QMainWindow):
         self.process.triggered.connect(self.on_process)
         self.panel.addAction(self.process)
 
+        self.diff = QtWidgets.QAction("diff")
+        self.diff.triggered.connect(self.on_diff)
+        self.panel.addAction(self.diff)
+
         self.sppos = QtWidgets.QAction("vertical")
         self.sppos.setCheckable(True)
         self.sppos.toggled.connect(self.on_sppos)
@@ -62,6 +66,22 @@ class MainWidget(QtWidgets.QMainWindow):
                 d = f.read()
                 f.close()
                 self.out_text.setText(d)
+        pass
+
+    def on_diff(self):
+        f = open("in.cpp", "w", encoding="utf-8")
+        f.write(self.in_text.toPlainText())
+        f.close()
+        f = open("conf1.cfg", "w", encoding="utf-8")
+        f.write(self.config.get())
+        f.close()
+        if os.system("uncrustify.exe  -c conf.cfg -f in.cpp -o out1.cpp"):
+            pass
+        elif os.system("uncrustify.exe  -c conf1.cfg -f in.cpp -o out2.cpp"):
+            pass
+        else:
+            if os.path.exists('out1.cpp') and os.path.exists('out2.cpp'):
+                os.system('"C:\Program Files\KDiff3\kdiff3.exe" out1.cpp out2.cpp')
         pass
 
 
