@@ -2,3 +2,5 @@
 /*.qm
 /__pycache__*/
 /test.py
+*.cpp
+conf.cfg

@@ -6,22 +6,6 @@ regex = r"\.\s*[A-Z]"
 
 os.system("uncrustify --show-config > uncrustify.cfg")
 
-
-# def parse_str(s):
-#     s = s.replace("i.e.", "ie").replace("i.e.", "vs")
-#     s = s.split("\n")
-#     items = []
-#     for i in s:
-#         if s == '':
-#             items.append('self.tr("\n\n")')
-#         else:
-#             w = i.split(". ")
-#             for j in w:
-#                 j = j.strip()
-#                 if j != "":
-#                     items.append('self.tr("{}. ")'.format(j.replace('"', '\\"')))
-#     return "+".join(items)
-
 def parse_str(s):
     items = []
     lines = s.split("\n")
@@ -102,128 +86,182 @@ while i < len(d):
         data.append({'type': 'option', 'title': name, 'name': optname, 'val': optvalue, 'vtype': opttype})
 
     i += 1
-    init_strings = [
-        "super(Widget, self).__init__()",
-        "self.setWindowTitle('" + title + "')"
-        ]
-    get_strings = ['s=[]']
-    section_id = 0
-    rowid = 0
-    for it in data:
-        if it['type'] == "section":
-            section_id += 1
-            init_strings.append("self.widget{} = QtWidgets.QWidget()".format(section_id))
-            init_strings.append("self.addItem(self.widget{}, self.tr(\"{}\"))".format(section_id, it['title']))
-            init_strings.append("self.lt{} = QtWidgets.QGridLayout(self.widget{})".format(section_id, section_id))
-            rowid = 0
-        elif it['type'] == "option":
-            s = parse_str(it['title'])
-            init_strings.append("label = QtWidgets.QLabel({})".format(s))
-            init_strings.append("label.setWordWrap(True)")
-            init_strings.append("self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
-            rowid += 1
-            init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
-            init_strings.append("    label = QtWidgets.QLabel(self.tr(\"code_{}\"))".format(it['name']))
-            init_strings.append("    label.setFont(QtGui.QFont('Consolas', 12, 0))")
-            init_strings.append("    self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
-            rowid += 1
-            init_strings.append("label = QtWidgets.QLabel(\"{}\")".format(it['name']))
-            init_strings.append("label.setFont(QtGui.QFont('Arial', 14, 2))")
-            init_strings.append("self.lt{}.addWidget(label, {}, 0)".format(section_id, rowid))
+init_strings = [
+    "super(Widget, self).__init__(parent)",
+    "self.setWindowTitle('" + title + "')"
+    ]
+get_strings = ['s=[]']
+load_strings = ['pass']
+section_id = 0
+rowid = 0
+for it in data:
+    if it['type'] == "section":
+        section_id += 1
+        init_strings.append("self.widget{} = QtWidgets.QWidget()".format(section_id))
+        init_strings.append("self.addItem(self.widget{}, self.tr(\"{}\"))".format(section_id, it['title']))
+        init_strings.append("self.lt{} = QtWidgets.QGridLayout(self.widget{})".format(section_id, section_id))
+        rowid = 0
 
-            if it['vtype'] == 'number':
-                init_strings.append("self.{} = QtWidgets.QSpinBox()".format(it['name']))
-                init_strings.append("self.{}.setMinimum(-100)".format(it['name']))
-                init_strings.append("self.{}.setMaximum(100)".format(it['name']))
-                init_strings.append("self.{}.setValue({})".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+        get_strings.append('s.append(wrap(self.tr(\"\\n{}\\n\")))'.format(it['title']))
+    elif it['type'] == "option":
+        s = parse_str(it['title'])
+        init_strings.append("label = QtWidgets.QLabel({})".format(s))
+        init_strings.append("label.setWordWrap(True)")
+        init_strings.append("self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
+        rowid += 1
+        init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
+        init_strings.append("    label = QtWidgets.QLabel(self.tr(\"code_{}\"))".format(it['name']))
+        init_strings.append("    label.setFont(QtGui.QFont('Consolas', 12, 0))")
+        init_strings.append("    self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
+        rowid += 1
+        init_strings.append("label = QtWidgets.QLabel(\"{}\")".format(it['name']))
+        init_strings.append("label.setFont(QtGui.QFont('Arial', 14, 2))")
+        init_strings.append("self.lt{}.addWidget(label, {}, 0)".format(section_id, rowid))
 
-                get_strings.append('s.append(wrap({}))'.format(s))
-                get_strings.append(
-                    's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
-            elif it['vtype'] == 'unsigned number':
-                init_strings.append("self.{} = QtWidgets.QSpinBox()".format(it['name']))
-                init_strings.append("self.{}.setMinimum(0)".format(it['name']))
-                init_strings.append("self.{}.setMaximum(100)".format(it['name']))
-                init_strings.append("self.{}.setValue({})".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+        if it['vtype'] == 'number':
+            init_strings.append("self.{} = QtWidgets.QSpinBox()".format(it['name']))
+            init_strings.append("self.{}.setMinimum(-100)".format(it['name']))
+            init_strings.append("self.{}.setMaximum(100)".format(it['name']))
+            init_strings.append("self.{}.setValue({})".format(it['name'], it['val']))
+            init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-                get_strings.append('s.append(wrap({}))'.format(s))
-                get_strings.append(
-                    's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
-            elif it['vtype'] == 'true/false':
-                init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
-                init_strings.append("self.{}.addItems(['true','false'])".format(it['name']))
-                init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append(
+                's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
 
-                get_strings.append('s.append(wrap({}))'.format(s))
-                get_strings.append(
-                    's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
-                        'name'] + '.currentText()))')
-            elif it['vtype'] == 'string':
-                init_strings.append("self.{} = QtWidgets.QLineEdit()".format(it['name']))
-                init_strings.append("self.{}.setText({})".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+            load_strings.append("if \"{}\" in params: self.{}.setValue(int(params[\"{}\"]))".format(it['name'],it['name'],it['name']))
+        elif it['vtype'] == 'unsigned number':
+            init_strings.append("self.{} = QtWidgets.QSpinBox()".format(it['name']))
+            init_strings.append("self.{}.setMinimum(0)".format(it['name']))
+            init_strings.append("self.{}.setMaximum(100)".format(it['name']))
+            init_strings.append("self.{}.setValue({})".format(it['name'], it['val']))
+            init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-                get_strings.append('s.append(wrap({}))'.format(s))
-                get_strings.append(
-                    's.append("' + it['name'] + ' = \\"{}\\" # ' + it['vtype'] + '".format(self.' + it[
-                        'name'] + '.text()))')
-            elif it['vtype'] == 'ignore/add/remove/force':
-                init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
-                init_strings.append("self.{}.addItems(['ignore','add','remove','force'])".format(it['name']))
-                init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append(
+                's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
 
-                get_strings.append('s.append(wrap({}))'.format(s))
-                get_strings.append(
-                    's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
-                        'name'] + '.currentText()))')
-            elif it['vtype'] == 'ignore/break/force/lead/trail/join/lead_break/lead_force/trail_break/trail_force':
-                init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
-                init_strings.append(
-                    "self.{}.addItems(['ignore','break','force','lead','trail','join','lead_break','lead_force','trail_break','trail_force'])".format(
-                        it['name']))
-                init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+            load_strings.append("if \"{}\" in params: self.{}.setValue(int(params[\"{}\"]))".format(it['name'],it['name'],it['name']))
 
-                get_strings.append('s.append(wrap({}))'.format(s))
-                get_strings.append(
-                    's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
-                        'name'] + '.currentText()))')
-            elif it['vtype'] == 'lf/crlf/cr/auto':
-                init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
-                init_strings.append("self.{}.addItems(['lf','crlf','cr','auto'])".format(it['name']))
-                init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
-                init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+        elif it['vtype'] == 'true/false':
+            init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
+            init_strings.append("self.{}.addItems(['true','false'])".format(it['name']))
+            init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
+            init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-                get_strings.append('s.append(wrap({}))'.format(s))
-                get_strings.append(
-                    's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
-                        'name'] + '.currentText()))')
-            else:
-                print(it['vtype'])
-            rowid += 1
-            pass
+            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append(
+                's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
+                    'name'] + '.currentText()))')
+
+            load_strings.append("if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(it['name'],it['name'],it['name']))
+
+        elif it['vtype'] == 'string':
+            init_strings.append("self.{} = QtWidgets.QLineEdit()".format(it['name']))
+            init_strings.append("self.{}.setText({})".format(it['name'], it['val']))
+            init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+
+            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append(
+                's.append("' + it['name'] + ' = \\"{}\\" # ' + it['vtype'] + '".format(self.' + it[
+                    'name'] + '.text()))')
+
+            load_strings.append(
+                "if \"{}\" in params: self.{}.setText(params[\"{}\"])".format(it['name'], it['name'],
+                                                                                     it['name']))
+        elif it['vtype'] == 'ignore/add/remove/force':
+            init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
+            init_strings.append("self.{}.addItems(['ignore','add','remove','force'])".format(it['name']))
+            init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
+            init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+
+            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append(
+                's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
+                    'name'] + '.currentText()))')
+
+            load_strings.append(
+                "if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(it['name'], it['name'],
+                                                                                     it['name']))
+        elif it['vtype'] == 'ignore/break/force/lead/trail/join/lead_break/lead_force/trail_break/trail_force':
+            init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
+            init_strings.append(
+                "self.{}.addItems(['ignore','break','force','lead','trail','join','lead_break','lead_force','trail_break','trail_force'])".format(
+                    it['name']))
+            init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
+            init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+
+            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append(
+                's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
+                    'name'] + '.currentText()))')
+
+            load_strings.append(
+                "if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(it['name'], it['name'],
+                                                                                     it['name']))
+        elif it['vtype'] == 'lf/crlf/cr/auto':
+            init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
+            init_strings.append("self.{}.addItems(['lf','crlf','cr','auto'])".format(it['name']))
+            init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
+            init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
+
+            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append(
+                's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
+                    'name'] + '.currentText()))')
+
+            load_strings.append(
+                "if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(it['name'], it['name'],
+                                                                                     it['name']))
+        else:
+            print(it['vtype'])
+        rowid += 1
+        pass
+
+get_strings.append("return '\\n'.join(s)")
+
 
 f = open("uncrustify_ui.py", "w")
-f.write("from PyQt5 import QtWidgets, QtGui\n")
-f.write("import textwrap\n")
-f.write('''
+f.write('''from PyQt5 import QtWidgets, QtGui
+import textwrap
+import re
 def wrap(s):
     my_wrap = textwrap.TextWrapper(width = 80)
     wrap_list = my_wrap.wrap(text=s)
     s = ""
     for line in wrap_list:
         s += "\\n# "+line
-    return s''')
-f.write("\nclass Widget(QtWidgets.QToolBox):\n")
-f.write("\n    def __init__(self):\n        ")
+    return s
+class Widget(QtWidgets.QToolBox):
+    def __init__(self, parent=None):
+        ''')
 f.write("\n        ".join(init_strings))
-f.write("\n    def get(self):\n        ")
-get_strings.append("return '\\n'.join(s)")
+f.write('''
+    def get(self):
+        ''')
 f.write("\n        ".join(get_strings))
+f.write('''
+    def load(self, path):
+        regexp = r"^([^#\\s].+)\\s*=\\s*(.*?)\\n"
+        f = open('conf.cfg', encoding = "utf-8")
+        d = f.read()
+        f.close()
+        matches = re.finditer(regexp, d, re.MULTILINE | re.IGNORECASE)
+        params = {}
+        for matchNum, match in enumerate(matches, start = 1):
+            param = match.group(1).strip()
+            val = match.group(2)
+            if val[0] == '"':
+                val = val[1:val.rfind('"')]
+            elif val[0] == "'":
+                val = val[1:val.rfind("'")]
+            else:
+                if val.rfind("#") > 0:
+                    val = val[:val.rfind("#")]
+                val = val.strip()
+            params[param] = val
+        ''')
+f.write("\n        ".join(load_strings))
 
 f.close()
 
