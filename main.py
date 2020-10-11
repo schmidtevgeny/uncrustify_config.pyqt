@@ -7,9 +7,15 @@ class MainWidget(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWidget, self).__init__()
         self.central = QtWidgets.QSplitter(self)
-        self.config = uncrustify_ui.Widget(self.central)
+        self.left = QtWidgets.QWidget(self.central)
+        self.leftlt = QtWidgets.QVBoxLayout(self.left)
+        self.filter=QtWidgets.QLineEdit()
+        self.leftlt.addWidget(self.filter)
+        self.config = uncrustify_ui.Widget()
+        self.leftlt.addWidget(self.config)
         self.right =  QtWidgets.QSplitter()
         self.central.addWidget(self.right)
+        self.filter.textChanged.connect(self.config.filter)
 
         self.in_text = QtWidgets.QTextEdit(self.right)
         self.in_text.setFontFamily('Courier')
@@ -42,7 +48,6 @@ class MainWidget(QtWidgets.QMainWindow):
             f = open("in.cpp", "r", encoding="utf-8")
             self.in_text.setPlainText(f.read())
             f.close()
-
 
     def on_sppos(self, b):
         if b:
@@ -83,8 +88,6 @@ class MainWidget(QtWidgets.QMainWindow):
             if os.path.exists('out1.cpp') and os.path.exists('out2.cpp'):
                 os.system('"C:\Program Files\KDiff3\kdiff3.exe" out1.cpp out2.cpp')
         pass
-
-
 
 if __name__ == "__main__":
     a = QtWidgets.QApplication(sys.argv)

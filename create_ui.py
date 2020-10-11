@@ -69,8 +69,6 @@ while i < len(d):
         name = ""
         while i < len(d) and d[i] != "" and d[i].strip()[0] == "#":
             name += d[i].strip()[2:] + '\n'
-            # if d[i].strip()[2:] == '':
-            #     name += "\n"
             i += 1
         optstring = d[i]
         if optstring == "":
@@ -92,8 +90,10 @@ init_strings = [
     ]
 get_strings = ['s=[]']
 load_strings = ['pass']
+filter_string=[]
 section_id = 0
 rowid = 0
+
 for it in data:
     if it['type'] == "section":
         section_id += 1
@@ -105,18 +105,18 @@ for it in data:
         get_strings.append('s.append(wrap(self.tr(\"\\n{}\\n\")))'.format(it['title']))
     elif it['type'] == "option":
         s = parse_str(it['title'])
-        init_strings.append("label = QtWidgets.QLabel({})".format(s))
-        init_strings.append("label.setWordWrap(True)")
-        init_strings.append("self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
+        init_strings.append("self.label{} = QtWidgets.QLabel({})".format(it['name'],s))
+        init_strings.append("self.label{}.setWordWrap(True)".format(it['name']))
+        init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, it['name'],rowid))
         rowid += 1
         init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
-        init_strings.append("    label = QtWidgets.QLabel(self.tr(\"code_{}\"))".format(it['name']))
-        init_strings.append("    label.setFont(QtGui.QFont('Consolas', 12, 0))")
-        init_strings.append("    self.lt{}.addWidget(label, {}, 0, 1, 5)".format(section_id, rowid))
+        init_strings.append("    self.code{} = QtWidgets.QLabel(self.tr(\"code_{}\"))".format(it['name'],it['name']))
+        init_strings.append("    self.code{}.setFont(QtGui.QFont('Consolas', 12, 0))".format(it['name']))
+        init_strings.append("    self.lt{}.addWidget(self.code{}, {}, 0, 1, 5)".format(section_id,it['name'], rowid))
         rowid += 1
-        init_strings.append("label = QtWidgets.QLabel(\"{}\")".format(it['name']))
-        init_strings.append("label.setFont(QtGui.QFont('Arial', 14, 2))")
-        init_strings.append("self.lt{}.addWidget(label, {}, 0)".format(section_id, rowid))
+        init_strings.append("self.name{} = QtWidgets.QLabel(\"{}\")".format(it['name'],it['name']))
+        init_strings.append("self.name{}.setFont(QtGui.QFont('Arial', 14, 2))".format(it['name']))
+        init_strings.append("self.lt{}.addWidget(self.name{}, {}, 0)".format(section_id,it['name'], rowid))
 
         if it['vtype'] == 'number':
             init_strings.append("self.{} = QtWidgets.QSpinBox()".format(it['name']))
@@ -144,7 +144,6 @@ for it in data:
 
             load_strings.append(
                 "if \"{}\" in params: self.{}.setValue(int(params[\"{}\"]))".format(it['name'], it['name'], it['name']))
-
         elif it['vtype'] == 'true/false':
             init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
             init_strings.append("self.{}.addItems(['true','false'])".format(it['name']))
@@ -159,7 +158,6 @@ for it in data:
             load_strings.append(
                 "if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(it['name'], it['name'],
                                                                                      it['name']))
-
         elif it['vtype'] == 'string':
             init_strings.append("self.{} = QtWidgets.QLineEdit()".format(it['name']))
             init_strings.append("self.{}.setText({})".format(it['name'], it['val']))
@@ -219,8 +217,17 @@ for it in data:
                                                                                      it['name']))
         else:
             print(it['vtype'])
+
+        filter_string.append("self.label{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name']))
+        filter_string.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
+        filter_string.append("    self.code{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name'],it['name']))
+        filter_string.append("self.name{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name']))
+        filter_string.append("self.{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name']))
         rowid += 1
         pass
+
+for i in range(1,section_id+1):
+    init_strings.append("self.lt{}.addItem(QtWidgets.QSpacerItem(10, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding), self.lt{}.rowCount(), 0)".format(i,i))
 
 get_strings.append("return '\\n'.join(s)")
 
@@ -265,6 +272,13 @@ f.write('''
             params[param] = val
         ''')
 f.write("\n        ".join(load_strings))
+f.write('''
+    def filter(self, filter):
+        ''')
+f.write("\n        ".join(filter_string))
+
 f.close()
 
 os.system('pylupdate5 uncrustify_ui.py -ts uncrustify.ts')
+
+os.system("main.py")
