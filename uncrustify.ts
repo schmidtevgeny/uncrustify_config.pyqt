@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru_RU" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="ru_RU">
 <context>
     <name>@default</name>
     <message>
@@ -62,7 +63,7 @@
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10509"/>
-        <source>Replace tab characters found in string literals with the escape sequence <byte value="x9"/> instead.</source>
+        <source>Replace tab characters found in string literals with the escape sequence 	 instead.</source>
         <translation>Замените символы табуляции, найденные в строковых литералах, на управляющую последовательность \t.</translation>
     </message>
     <message>
@@ -1454,7 +1455,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11976"/>
-        <source>(C#) Warning is given if doing tab-to-<byte value="x9"/> replacement and we have found one in a C# verbatim string literal.</source>
+        <source>(C#) Warning is given if doing tab-to-	 replacement and we have found one in a C# verbatim string literal.</source>
         <translation>(C#) Выдавать предупреждение при замене tab на \t, найденых в строковом литерале на C#.</translation>
     </message>
     <message>
@@ -3021,7 +3022,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13930"/>
         <source>code_force_tab_after_define</source>
         <translation>#define USING_TBB 1
-#define<byte value="x9"/>USING_TBB 1</translation>
+#define	USING_TBB 1</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="3371"/>
@@ -3124,17 +3125,17 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="10989"/>
         <source>0: Spaces only 1: Indent with tabs to brace level, align with spaces (default) 2: Indent and align with tabs, using spaces when not on a tabstop</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Пробелы только 1: Отступ с табуляторами до уровня скобки, выравнивание пробелами (по умолчанию) 2: Отступ и выравнивание с табуляторами, использование пробелов, когда не на табуляторе</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13960"/>
         <source>code_indent_with_tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_with_tabs</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10991"/>
         <source>Whether to indent comments that are not at a brace level with tabs on a tabstop.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступ для комментариев не на уровне скобки до следующей позиции табуляции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10991"/>
@@ -3149,7 +3150,7 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="13965"/>
         <source>code_indent_cmt_with_tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_cmt_with_tabs</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10993"/>
@@ -3164,7 +3165,7 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="10995"/>
         <source>The number of spaces to indent multi-line XML strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество пробелов для отступов многострочных XML-строк.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10995"/>
@@ -3174,67 +3175,106 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="13975"/>
         <source>code_indent_xml_string</source>
-        <translation type="unfinished"></translation>
+        <translation>void foo(void) {
+
+    const char *a = &quot;&lt;xml&gt;&quot;
+                    ЪЪ&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
+                    ЪЪЪЪ&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
+                    ЪЪ&quot;&lt;/data&gt;&quot;
+                    &quot;&lt;/xml&gt;&quot;;
+}
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10997"/>
         <source>Spaces to indent &apos;{&apos; from level.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступ для скобки &apos;{&apos; от уровня блока.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13980"/>
         <source>code_indent_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>                if (chunk_is_comment(pc))
+                ЪЪ{
+                      pc-&gt;column = pc-&gt;orig_col;
+                      if (pc-&gt;column &lt; min_col)
+                                pc-&gt;column = min_col + 1;
+                      LOG_FMT(LINDLINE, &quot;%s: set comment on line %d to col %d (orig %d)\n&quot;,
+                              __func__, pc-&gt;orig_line, pc-&gt;column, pc-&gt;orig_col);
+                ЪЪ}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10999"/>
         <source>Whether braces are indented to the body level.</source>
-        <translation type="unfinished"></translation>
+        <translation>Раместить скоюки на уровне блока кода.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13985"/>
         <source>code_indent_braces</source>
-        <translation type="unfinished"></translation>
+        <translation>    if (chunk_is_comment(pc))
+    ЪЪЪЪ{
+        pc-&gt;column = pc-&gt;orig_col;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11001"/>
         <source>Whether to disable indenting function braces if indent_braces=true.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключить code_indent_braces для функций (если indent_braces=true).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13990"/>
         <source>code_indent_braces_no_func</source>
-        <translation type="unfinished"></translation>
+        <translation>void f(double x)
+Ъ{
+    if (x&lt;0)
+        {
+        x=fabs(x);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11003"/>
         <source>Whether to disable indenting class braces if indent_braces=true.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключить code_indent_braces для классов (если indent_braces=true).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13995"/>
         <source>code_indent_braces_no_class</source>
-        <translation type="unfinished"></translation>
+        <translation>class myclass
+Ъ{
+    myclass()
+        {
+        if (ok)
+            {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11005"/>
         <source>Whether to disable indenting struct braces if indent_braces=true.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отключить code_indent_braces для структур (если indent_braces=true).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14000"/>
         <source>code_indent_braces_no_struct</source>
-        <translation type="unfinished"></translation>
+        <translation>struct myclass
+Ъ{
+    myclass()
+        {
+        if (ok)
+            {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11007"/>
         <source>Whether to indent based on the size of the brace parent, i.e. &apos;if&apos; =&gt; 3 spaces, &apos;for&apos; =&gt; 4 spaces, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли изменять отступ в зависимости от размера родителя, т.е. &apos;if&apos; =&gt; 3 пробела, &apos;for&apos; =&gt; 4 пробела и т.д.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14005"/>
         <source>code_indent_brace_parent</source>
-        <translation type="unfinished"></translation>
+        <translation>if (x = 0)              |        if (x = 0)
+{                       |           {
+    x++;                |           x++;
+    y *= x;             |           y *= x;
+}                       |           }
+for (auto x : y)        |        for (auto x : y)
+{                       |            {
+    print(x);           |            print(x);
+}                       |            }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11009"/>
