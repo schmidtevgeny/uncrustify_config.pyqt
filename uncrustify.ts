@@ -2287,7 +2287,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13400"/>
         <source>code_sp_type_brace_init_lst</source>
-        <translation>auto i12 = intЪ{42};</translation>
+        <translation>auto i12 = int¶{42};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10766"/>
@@ -2362,7 +2362,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13460"/>
         <source>code_sp_fparen_brace_initializer</source>
-        <translation>    return new ProcessStartInfo(&quot;smthg&quot;)Ъ{
+        <translation>    return new ProcessStartInfo(&quot;smthg&quot;)¶{
                Arguments = string.Format(&quot;-9 --ss -S aa \&quot;{0}\&quot;&quot;, file),
                WorkingDirectory = Directory.GetCurrentDirectory(),
                UseShellExecute = false,
@@ -2377,7 +2377,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13465"/>
         <source>code_sp_fparen_dbrace</source>
-        <translation>member.func(new List()Ъ{{
+        <translation>member.func(new List()¶{{
    add(&quot;Text&quot;);
    add(&quot;Text&quot;,
        &quot;Hello&quot;);
@@ -2481,7 +2481,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10822"/>
         <source>(OC) Add or remove space before Objective-C protocol list as in &apos;@protocol Protocol&lt;here&gt;&lt;Protocol_A&gt;&apos; or &apos;@interface MyClass : NSObject&lt;here&gt;&lt;MyProtocol&gt;&apos;.</source>
-        <translation>(OC) Добавьте или удалите пробел перед списком протоколов Objective-C, как в &apos;@protocol ProtocolЪ&lt;Protocol_A&gt;&apos; или &apos;@interface MyClass : NSObjectЪ&lt;MyProtocol&gt;&apos;&apos;.</translation>
+        <translation>(OC) Добавьте или удалите пробел перед списком протоколов Objective-C, как в &apos;@protocol Protocol¶&lt;Protocol_A&gt;&apos; или &apos;@interface MyClass : NSObject¶&lt;MyProtocol&gt;&apos;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10824"/>
@@ -2536,12 +2536,12 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10844"/>
         <source>Add or remove space before the &apos;{&apos; of a &apos;catch&apos; statement, if the &apos;{&apos; and &apos;catch&apos; are on the same line, as in &apos;catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation>Добавьте или удалите пробел перед &apos;{&apos; в операторе &apos;catch&apos;, если &apos;{&apos; и &apos;catch&apos; находятся на одной строке, как в операторе &apos;catch (decl) Ъ {&apos;.</translation>
+        <translation>Добавьте или удалите пробел перед &apos;{&apos; в операторе &apos;catch&apos;, если &apos;{&apos; и &apos;catch&apos; находятся на одной строке, как в операторе &apos;catch (decl) ¶ {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10846"/>
         <source>(OC) Add or remove space before the &apos;{&apos; of a &apos;@catch&apos; statement, if the &apos;{&apos; and &apos;@catch&apos; are on the same line, as in &apos;@catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation>(OC) Добавьте или удалите пробел перед &apos;{&apos; в выражении &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в выражении &apos;@catch (decl) Ъ {&apos;.</translation>
+        <translation>(OC) Добавьте или удалите пробел перед &apos;{&apos; в выражении &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в выражении &apos;@catch (decl) ¶ {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10846"/>
@@ -2876,7 +2876,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13855"/>
         <source>code_sp_cmt_cpp_doxygen</source>
-        <translation>///&lt;Ъa Doygen comment
+        <translation>///&lt;¶a Doygen comment
 </translation>
     </message>
     <message>
@@ -2906,7 +2906,7 @@ QString text = MyMagicClass::tr(&quot;Sim sala bim.&quot;);</translation>
     case 3:
         doFive();
         break;
-#endifЪ//specmacro</translation>
+#endif¶//specmacro</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10952"/>
@@ -2917,10 +2917,10 @@ QString text = MyMagicClass::tr(&quot;Sim sala bim.&quot;);</translation>
         <location filename="uncrustify_ui.py" line="13870"/>
         <source>code_sp_after_new</source>
         <translation>void x(int **d) {
-    deleteЪ*d;
+    delete¶*d;
 }
 void x(int &amp;d) {
-    deleteЪ&amp;d;
+    delete¶&amp;d;
 }</translation>
     </message>
     <message>
@@ -2972,8 +2972,8 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13910"/>
         <source>code_sp_annotation_paren</source>
         <translation>@Documented
-@RetentionЪ(RetentionPolicy.RUNTIME)
-@TargetЪ({ElementType.TYPE,ElementType.METHOD,
+@Retention¶(RetentionPolicy.RUNTIME)
+@Target¶({ElementType.TYPE,ElementType.METHOD,
          ElementType.CONSTRUCTOR,ElementType.ANNOTATION_TYPE,
          ElementType.PACKAGE,ElementType.FIELD,ElementType.LOCAL_VARIABLE})
 @Inherited
@@ -3011,7 +3011,7 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="13925"/>
         <source>code_sp_vala_after_translation</source>
-        <translation>new Gtk.Label (_Ъ(&quot;Label text&quot;));</translation>
+        <translation>new Gtk.Label (_¶(&quot;Label text&quot;));</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10976"/>
@@ -3068,10 +3068,10 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13940"/>
         <source>code_indent_continue</source>
         <translation>    LOG_FMT(LINDLINE, &quot;%s: %d] col %d on %.*s [%s] =&gt; %d\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
-    ЪЪЪЪpc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);
+    ¶¶¶¶pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);
     if ((cout_col &gt; 0) &amp;&amp;
-    ЪЪЪЪ(chunk_is_semicolon(pc) ||
-    ЪЪЪЪ(pc-&gt;level &lt; cout_level))) {
+    ¶¶¶¶(chunk_is_semicolon(pc) ||
+    ¶¶¶¶(pc-&gt;level &lt; cout_level))) {
         cout_col   = 0;
        cout_level = 0;
     }</translation>
@@ -3115,7 +3115,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13955"/>
         <source>code_indent_param</source>
         <translation>    LOG_FMT(LINDLINE, &quot;%s: %d] col %d on %.*s [%s] =&gt; %d\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
-    ЪЪЪЪpc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);</translation>
+    ¶¶¶¶pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10989"/>
@@ -3178,9 +3178,9 @@ void x(int &amp;d) {
         <translation>void foo(void) {
 
     const char *a = &quot;&lt;xml&gt;&quot;
-                    ЪЪ&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
-                    ЪЪЪЪ&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
-                    ЪЪ&quot;&lt;/data&gt;&quot;
+                    ¶¶&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
+                    ¶¶¶¶&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
+                    ¶¶&quot;&lt;/data&gt;&quot;
                     &quot;&lt;/xml&gt;&quot;;
 }
 </translation>
@@ -3194,13 +3194,13 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13980"/>
         <source>code_indent_brace</source>
         <translation>                if (chunk_is_comment(pc))
-                ЪЪ{
+                ¶¶{
                       pc-&gt;column = pc-&gt;orig_col;
                       if (pc-&gt;column &lt; min_col)
                                 pc-&gt;column = min_col + 1;
                       LOG_FMT(LINDLINE, &quot;%s: set comment on line %d to col %d (orig %d)\n&quot;,
                               __func__, pc-&gt;orig_line, pc-&gt;column, pc-&gt;orig_col);
-                ЪЪ}</translation>
+                ¶¶}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10999"/>
@@ -3211,7 +3211,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13985"/>
         <source>code_indent_braces</source>
         <translation>    if (chunk_is_comment(pc))
-    ЪЪЪЪ{
+    ¶¶¶¶{
         pc-&gt;column = pc-&gt;orig_col;</translation>
     </message>
     <message>
@@ -3223,7 +3223,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13990"/>
         <source>code_indent_braces_no_func</source>
         <translation>void f(double x)
-Ъ{
+¶{
     if (x&lt;0)
         {
         x=fabs(x);</translation>
@@ -3237,7 +3237,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13995"/>
         <source>code_indent_braces_no_class</source>
         <translation>class myclass
-Ъ{
+¶{
     myclass()
         {
         if (ok)
@@ -3252,7 +3252,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="14000"/>
         <source>code_indent_braces_no_struct</source>
         <translation>struct myclass
-Ъ{
+¶{
     myclass()
         {
         if (ok)
