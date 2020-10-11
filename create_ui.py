@@ -2,9 +2,8 @@ import os
 import re
 
 regex = r"\.\s*[A-Z]"
-
-
 os.system("uncrustify --show-config > uncrustify.cfg")
+
 
 def parse_str(s):
     items = []
@@ -20,11 +19,11 @@ def parse_str(s):
             # start list
             if not sc is None:
                 items.append(sc)
-            sc = "\n"+si
+            sc = "\n" + si
         else:
             if sc is None:
                 sc = ""
-            sc += " "+si
+            sc += " " + si
             math = re.search(regex, sc)
             while math:
                 items.append(sc[:math.start() + 1])
@@ -35,7 +34,8 @@ def parse_str(s):
         sc = None
     items2 = []
     for s in items:
-        items2.append("self.tr(\"{}\")".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
+        items2.append(
+            "self.tr(\"{}\")".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
 
     return "+' '+".join(items2)
 
@@ -129,7 +129,8 @@ for it in data:
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
 
-            load_strings.append("if \"{}\" in params: self.{}.setValue(int(params[\"{}\"]))".format(it['name'],it['name'],it['name']))
+            load_strings.append(
+                "if \"{}\" in params: self.{}.setValue(int(params[\"{}\"]))".format(it['name'], it['name'], it['name']))
         elif it['vtype'] == 'unsigned number':
             init_strings.append("self.{} = QtWidgets.QSpinBox()".format(it['name']))
             init_strings.append("self.{}.setMinimum(0)".format(it['name']))
@@ -141,7 +142,8 @@ for it in data:
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
 
-            load_strings.append("if \"{}\" in params: self.{}.setValue(int(params[\"{}\"]))".format(it['name'],it['name'],it['name']))
+            load_strings.append(
+                "if \"{}\" in params: self.{}.setValue(int(params[\"{}\"]))".format(it['name'], it['name'], it['name']))
 
         elif it['vtype'] == 'true/false':
             init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
@@ -154,7 +156,9 @@ for it in data:
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
                     'name'] + '.currentText()))')
 
-            load_strings.append("if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(it['name'],it['name'],it['name']))
+            load_strings.append(
+                "if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(it['name'], it['name'],
+                                                                                     it['name']))
 
         elif it['vtype'] == 'string':
             init_strings.append("self.{} = QtWidgets.QLineEdit()".format(it['name']))
@@ -168,7 +172,7 @@ for it in data:
 
             load_strings.append(
                 "if \"{}\" in params: self.{}.setText(params[\"{}\"])".format(it['name'], it['name'],
-                                                                                     it['name']))
+                                                                              it['name']))
         elif it['vtype'] == 'ignore/add/remove/force':
             init_strings.append("self.{} = QtWidgets.QComboBox()".format(it['name']))
             init_strings.append("self.{}.addItems(['ignore','add','remove','force'])".format(it['name']))
@@ -220,7 +224,6 @@ for it in data:
 
 get_strings.append("return '\\n'.join(s)")
 
-
 f = open("uncrustify_ui.py", "w")
 f.write('''from PyQt5 import QtWidgets, QtGui
 import textwrap
@@ -262,7 +265,6 @@ f.write('''
             params[param] = val
         ''')
 f.write("\n        ".join(load_strings))
-
 f.close()
 
 os.system('pylupdate5 uncrustify_ui.py -ts uncrustify.ts')
