@@ -1461,7 +1461,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="11978"/>
         <source>Limit the number of loops.</source>
-        <translation>0: без ограничений.</translation>
+        <translation>Ограничить количество петель.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10499"/>
@@ -1483,16 +1483,12 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="12745"/>
         <source>code_input_tab_size</source>
-        <translation>    int a;
-
-        int a;</translation>
+        <translation>ЪЪЪЪint a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12750"/>
         <source>code_output_tab_size</source>
-        <translation>    int a;
-
-        int a;</translation>
+        <translation>ЪЪЪЪint a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10505"/>
@@ -2836,7 +2832,21 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13825"/>
         <source>code_sp_case_label</source>
-        <translation type="unfinished"></translation>
+        <translation>int main()                                              |    int main()
+{                                                       |    {
+    int foo = 42;                                       |        int foo = 42;
+    switch (foo) {                                      |        switch (foo) {
+    case  1:                                            |        case 1:
+        std::cout &lt;&lt; &quot;1&quot; &lt;&lt; std::endl;                  |            std::cout &lt;&lt; &quot;1&quot; &lt;&lt; std::endl;
+        break;                                          |            break;
+    case                 2:                             |        case 2:
+        std::cout &lt;&lt; &quot;2&quot; &lt;&lt; std::endl;                  |            std::cout &lt;&lt; &quot;2&quot; &lt;&lt; std::endl;
+        break;                                          |            break;
+    default:                                            |        default:
+        std::cout &lt;&lt; &quot;Neither 1 nor 2.&quot; &lt;&lt; std::endl;   |            std::cout &lt;&lt; &quot;Neither 1 nor 2.&quot; &lt;&lt; std::endl;
+    }                                                   |        }
+}                                                       |    }
+                                                        |</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10936"/>
@@ -3089,7 +3099,10 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="13945"/>
         <source>code_indent_continue_class_head</source>
-        <translation type="unfinished"></translation>
+        <translation>class              |      class
+        MyClass    |      ¶¶¶¶¶¶MyClass
+{                  |      {
+public:            |      public:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10985"/>
@@ -3193,14 +3206,14 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="13980"/>
         <source>code_indent_brace</source>
-        <translation>                if (chunk_is_comment(pc))
-                ¶¶{
-                      pc-&gt;column = pc-&gt;orig_col;
-                      if (pc-&gt;column &lt; min_col)
-                                pc-&gt;column = min_col + 1;
-                      LOG_FMT(LINDLINE, &quot;%s: set comment on line %d to col %d (orig %d)\n&quot;,
-                              __func__, pc-&gt;orig_line, pc-&gt;column, pc-&gt;orig_col);
-                ¶¶}</translation>
+        <translation>    if (chunk_is_comment(pc))
+    ¶¶{
+          pc-&gt;column = pc-&gt;orig_col;
+          if (pc-&gt;column &lt; min_col)
+                    pc-&gt;column = min_col + 1;
+          LOG_FMT(LINDLINE, &quot;%s: set comment on line %d to col %d (orig %d)\n&quot;,
+                  __func__, pc-&gt;orig_line, pc-&gt;column, pc-&gt;orig_col);
+    ¶¶}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10999"/>
@@ -3280,22 +3293,30 @@ for (auto x : y)        |        for (auto x : y)
         <location filename="uncrustify_ui.py" line="11009"/>
         <source>Whether to indent based on the open parenthesis instead of the open brace in &apos;({
 &apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>В последовательности &apos;({&apos; делать отступ на основе &apos;(&apos;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14010"/>
         <source>code_indent_paren_open_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>false                                                  |  true
+¶¶¶¶¶¶¶¶                                               |                   ¶¶¶¶¶¶¶¶
+funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {  |  funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {
+        return PairingCmpnt()                          |                           return PairingCmpnt()
+}));                                                   |                   }));
+¶¶¶¶¶¶¶¶                                               |         ¶¶¶¶¶¶¶¶
+match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp; ]( const ContentProps &amp;props)  {
+        return PairingCmpnt()                          |                 return PairingCmpnt()
+});                                                    |         });</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14015"/>
         <source>code_indent_cs_delegate_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_cs_delegate_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14020"/>
         <source>code_indent_cs_delegate_body</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_cs_delegate_body</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11015"/>
@@ -3305,7 +3326,10 @@ for (auto x : y)        |        for (auto x : y)
     <message>
         <location filename="uncrustify_ui.py" line="14025"/>
         <source>code_indent_namespace</source>
-        <translation type="unfinished"></translation>
+        <translation>namespace Constants
+{
+¶¶¶¶double PI = 3.14;
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11017"/>
@@ -3320,12 +3344,18 @@ for (auto x : y)        |        for (auto x : y)
     <message>
         <location filename="uncrustify_ui.py" line="14030"/>
         <source>code_indent_namespace_single_indent</source>
-        <translation type="unfinished"></translation>
+        <translation>namespace Constants            |     namespace Constants
+{                              |     {
+    namespace Constants        |     namespace Constants
+    {                          |     {
+        double PI = 3.14;      |             double PI = 3.14;
+    }                          |     }
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11019"/>
         <source>The number of spaces to indent a namespace block.</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество пробелов для отступов блока namespace.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11019"/>
@@ -3335,7 +3365,8 @@ for (auto x : y)        |        for (auto x : y)
     <message>
         <location filename="uncrustify_ui.py" line="14035"/>
         <source>code_indent_namespace_level</source>
-        <translation type="unfinished"></translation>
+        <translation>namespace Constants{
+¶¶¶¶double PI </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11021"/>
@@ -3345,27 +3376,35 @@ for (auto x : y)        |        for (auto x : y)
     <message>
         <location filename="uncrustify_ui.py" line="14040"/>
         <source>code_indent_namespace_limit</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_namespace_limit</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11023"/>
         <source>Whether the &apos;extern &quot;C&quot;&apos; body is indented.</source>
-        <translation type="unfinished"></translation>
+        <translation>Есть ли в теле extern &quot;С&quot; отступы.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14045"/>
         <source>code_indent_extern</source>
-        <translation type="unfinished"></translation>
+        <translation>extern &quot;C&quot;{
+¶¶¶¶disConnectionH createDisConnection();
+¶¶¶¶int open_DisConnect(disConnectionH record);
+}
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11025"/>
         <source>Whether the &apos;class&apos; body is indented.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступы в теле класса</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14050"/>
         <source>code_indent_class</source>
-        <translation type="unfinished"></translation>
+        <translation>class Widget :
+        public QWidget
+{
+¶¶¶¶int a;
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11027"/>
@@ -3375,12 +3414,17 @@ for (auto x : y)        |        for (auto x : y)
     <message>
         <location filename="uncrustify_ui.py" line="14055"/>
         <source>code_indent_class_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>class MyClass
+    : myvar(0),
+    ¶¶myvar2(0){...
+
+class MyClass : myvar(0),
+    ¶¶¶¶¶¶¶¶¶¶¶¶myvar2(0){...</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11029"/>
         <source>Whether to indent based on a class colon instead of the stuff after the colon.</source>
-        <translation type="unfinished"></translation>
+        <translation>Делать отступ не по тексту после двоеточия класса, а по самому двоеточию.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11029"/>
@@ -3390,7 +3434,13 @@ for (auto x : y)        |        for (auto x : y)
     <message>
         <location filename="uncrustify_ui.py" line="14060"/>
         <source>code_indent_class_on_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>class MyClass
+    : myvar(0),
+    myvar2(0){...
+
+class MyClass : myvar(0),
+   ¶¶¶¶¶¶¶¶¶¶¶myvar2(0){...
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11031"/>
