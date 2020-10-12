@@ -8726,17 +8726,17 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="10882"/>
         <source>Default: remove</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию: remove</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11770"/>
         <source>0: Don&apos;t align (default).</source>
-        <translation type="unfinished"></translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11784"/>
         <source>0: Don&apos;t align.</source>
-        <translation type="unfinished"></translation>
+        <translation>0: не выравнивать.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10507"/>
@@ -8768,7 +8768,9 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
         <source>
 General options
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+Общие параметры
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10533"/>
@@ -8802,7 +8804,9 @@ Newline adding and removing options
         <source>
 Blank line options
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+Параметры пустых строк
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11627"/>
@@ -8866,14 +8870,18 @@ Sort includes options
         <source>
 Use or Do not Use options
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+Пареметры использовиния опций
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11975"/>
         <source>
 Warn levels - 1: error, 2: warning (default), 3: note
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+Уровень предупреждений - 1: ошибка, 2: предупреждение (по умолчанию), 3: примечания
+</translation>
     </message>
 </context>
 </TS>
