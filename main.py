@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from PyQt5 import QtWidgets, QtCore, QtGui
 import sys, os
 import uncrustify_ui
@@ -63,7 +64,7 @@ class MainWidget(QtWidgets.QMainWindow):
         f = open("conf.cfg", "w", encoding="utf-8")
         f.write(self.config.get())
         f.close()
-        if os.system("uncrustify.exe  -c conf.cfg -f in.cpp -o out.cpp"):
+        if os.system("uncrustify  -c conf.cfg -f in.cpp -o out.cpp"):
             pass
         else:
             if os.path.exists('out.cpp'):
@@ -80,13 +81,13 @@ class MainWidget(QtWidgets.QMainWindow):
         f = open("conf1.cfg", "w", encoding="utf-8")
         f.write(self.config.get())
         f.close()
-        if os.system("uncrustify.exe  -c conf.cfg -f in.cpp -o out1.cpp"):
+        if os.system("uncrustify  -c conf.cfg -f in.cpp -o out1.cpp"):
             pass
-        elif os.system("uncrustify.exe  -c conf1.cfg -f in.cpp -o out2.cpp"):
+        elif os.system("uncrustify  -c conf1.cfg -f in.cpp -o out2.cpp"):
             pass
         else:
             if os.path.exists('out1.cpp') and os.path.exists('out2.cpp'):
-                os.system('"C:\Program Files\KDiff3\kdiff3.exe" out1.cpp out2.cpp')
+                os.system('meld out1.cpp out2.cpp')
         pass
 
 if __name__ == "__main__":
