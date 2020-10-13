@@ -107,6 +107,7 @@ for it in data:
         s = parse_str(it['title'])
         init_strings.append("self.label{} = QtWidgets.QLabel({})".format(it['name'],s))
         init_strings.append("self.label{}.setWordWrap(True)".format(it['name']))
+        init_strings.append("self.label{}.setStyleSheet(\"QLabel{{ border-top: 1px solid red;}}\")".format(it['name']))
         init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, it['name'],rowid))
         rowid += 1
         init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
@@ -281,4 +282,4 @@ f.close()
 
 os.system('pylupdate5 uncrustify_ui.py -ts uncrustify.ts')
 
-os.system("main.py")
+os.system("./main.py")

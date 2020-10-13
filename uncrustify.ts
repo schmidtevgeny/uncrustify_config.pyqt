@@ -1426,22 +1426,22 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="11842"/>
         <source>Add or remove braces on a single-line &apos;do&apos; statement.</source>
-        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;do&apos;.</translation>
+        <translation>Добавить или удалить фигурные скобки вокруг однострочного блока &apos;do&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11844"/>
         <source>Add or remove braces on a single-line &apos;for&apos; statement.</source>
-        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;for&apos;.</translation>
+        <translation>Добавить или удалить фигурные скобки вокруг однострочного блока &apos;for&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11854"/>
         <source>Add or remove braces on single-line &apos;while&apos; statement.</source>
-        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;while&apos;.</translation>
+        <translation>Добавить или удалить фигурные скобки вокруг однострочного блока &apos;while&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11856"/>
         <source>Add or remove braces on single-line &apos;using ()&apos; statement.</source>
-        <translation>Добавить или удалить скобки вокруг однострочного блока &apos;using ()&apos;.</translation>
+        <translation>Добавить или удалить фигурные скобки вокруг однострочного блока &apos;using ()&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11886"/>
@@ -3032,7 +3032,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13930"/>
         <source>code_force_tab_after_define</source>
         <translation>#define USING_TBB 1
-#define	USING_TBB 1</translation>
+#define⟼USING_TBB 1</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="3371"/>
@@ -3496,12 +3496,20 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14080"/>
         <source>code_indent_else_if</source>
-        <translation type="unfinished"></translation>
+        <translation>    if ( true )
+    {
+        i = 10;
+    }
+    else
+    ЪЪЪЪif ( true )
+        {
+            i = 10;
+        }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11039"/>
         <source>Amount to indent variable declarations after a open brace.</source>
-        <translation type="unfinished"></translation>
+        <translation>Сумма отступов объявлений переменных после открытой скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14085"/>
@@ -3621,7 +3629,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11061"/>
         <source>Use both values of the options indent_columns and indent_param.</source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать оба значения опций indent_columns и indent_param.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14140"/>
@@ -3656,7 +3664,8 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11067"/>
         <source>true:  add an indent for the brace on the same line as the macro false: do not add an indent for the brace on the same line as the macro</source>
-        <translation type="unfinished"></translation>
+        <translation>true: добавить отступ для скобки на той же линии, что и макрос 
+false: не добавлять отступ для скобки на той же линии, что и макрос</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14155"/>
@@ -3671,7 +3680,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11069"/>
         <source>Usually set to 0, 1, or indent_columns.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обычно 0, 1 или indent_columns.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14160"/>
@@ -3736,7 +3745,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11079"/>
         <source>Usually 0 or indent_columns.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обычно 0 или indent_columns.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14185"/>
@@ -3771,7 +3780,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11085"/>
         <source>Usually 0.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обычно 0.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14200"/>
@@ -3791,7 +3800,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11087"/>
         <source>Usually set to 0 or indent_columns.</source>
-        <translation type="unfinished"></translation>
+        <translation>Обычно 0 или indent_columns.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11087"/>
@@ -3846,7 +3855,8 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14225"/>
         <source>code_indent_access_spec</source>
-        <translation type="unfinished"></translation>
+        <translation>class A{
+ЪЪpiblic:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11097"/>
@@ -3861,7 +3871,10 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14230"/>
         <source>code_indent_access_spec_body</source>
-        <translation type="unfinished"></translation>
+        <translation>class{
+  int b;
+  public:
+  ЪЪint a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11099"/>
@@ -4011,7 +4024,10 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14295"/>
         <source>code_indent_align_assign</source>
-        <translation type="unfinished"></translation>
+        <translation>false                      true
+auto c = [] {              auto c = [] {
+        return true;                ЪЪЪЪreturn true;
+    };                              };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11125"/>
@@ -4036,7 +4052,9 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14305"/>
         <source>code_indent_align_paren</source>
-        <translation type="unfinished"></translation>
+        <translation>false                      true
+foobar = bar[a + b + (c    foobar = bar[a + b + (c
+ЪЪЪЪ+ d)];                                       + d)];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11129"/>
@@ -4151,7 +4169,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11149"/>
         <source>When indenting after virtual brace open and newline add further spaces to reach this minimum indent.</source>
-        <translation type="unfinished"></translation>
+        <translation>При отступах после открытия виртуальной скобки и новой строки добавляйте дополнительные пробелы для достижения этого минимального отступа.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14360"/>
@@ -4926,7 +4944,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11300"/>
         <source>Add a newline between &apos;)&apos; and &apos;{&apos; if the &apos;)&apos; is on a different line than the if/for/etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте новую строку между &apos;)&apos; и &apos;{&apos;, если &apos;)&apos; находится на другой строке, чем if/for/while/switch.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11300"/>
@@ -4941,7 +4959,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11302"/>
         <source>Add a newline after &apos;(&apos; if an if/for/while/switch condition spans multiple lines</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление новой строки после &apos;(&apos; если условие if/for/while/switch охватывает несколько строк</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14740"/>
@@ -4951,7 +4969,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11304"/>
         <source>Add a newline before &apos;)&apos; if an if/for/while/switch condition spans multiple lines.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление новой строки перед &apos;)&apos; если условие if/for/while/switch охватывает несколько строк</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11304"/>
@@ -5861,7 +5879,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11462"/>
         <source>Affects enumerations, unions and structures.</source>
-        <translation type="unfinished"></translation>
+        <translation>Влияет на перечисления, объединения и структуры.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11462"/>
@@ -5931,7 +5949,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11474"/>
         <source>Add or remove blank line after &apos;if&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;if&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11474"/>
@@ -6170,7 +6188,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="7257"/>
         <source>Blank line options</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметры пустых строк</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11531"/>
@@ -6310,7 +6328,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11557"/>
         <source>Also affects class constructors/destructors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Также влияет на конструкторы/деструкторы классов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11555"/>
@@ -6560,7 +6578,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11597"/>
         <source>This also includes the Qt-specific &apos;signals:&apos; and &apos;slots:&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это также включает в себя Qt-специфические &apos;signals:&apos; и &apos;slots:&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11597"/>
@@ -6811,7 +6829,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11642"/>
         <source>Affects nl_class_init_args.</source>
-        <translation type="unfinished"></translation>
+        <translation>Влияет nl_class_init_args.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15585"/>
@@ -6841,7 +6859,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11646"/>
         <source>Affects nl_class_colon.</source>
-        <translation type="unfinished"></translation>
+        <translation>Влияет nl_class_colon.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15595"/>
@@ -6871,7 +6889,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11651"/>
         <source>Try to limit code width to N columns.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пытаться ограничить ширину кода N столбцами.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15605"/>
@@ -6916,7 +6934,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="8189"/>
         <source>Code alignment options (not left column spaces/tabs)</source>
-        <translation type="unfinished"></translation>
+        <translation>Опции выравнивания кода (не левые пробелы)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11660"/>
@@ -6976,7 +6994,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11672"/>
         <source>The span for aligning parameter definitions in function on parameter name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются имен параметров в определении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15655"/>
@@ -6986,12 +7004,12 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11674"/>
         <source>The threshold for aligning function parameter definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания имен параметров в определении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11756"/>
         <source>Use a negative number for absolute thresholds.</source>
-        <translation type="unfinished"></translation>
+        <translation>Используйте отрицательное число для абсолютных порогов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15660"/>
@@ -7011,7 +7029,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11678"/>
         <source>The span for aligning constructor value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются значений конструктора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15670"/>
@@ -7021,7 +7039,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11680"/>
         <source>The threshold for aligning constructor value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания значений конструктора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15675"/>
@@ -7056,7 +7074,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11686"/>
         <source>The span for aligning function-call parameters for single line functions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются параметры однострочного вызова функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15690"/>
@@ -7066,7 +7084,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11688"/>
         <source>The threshold for aligning function-call parameters for single line functions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания параметров однострочного вызова функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15695"/>
@@ -7076,7 +7094,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11690"/>
         <source>The span for aligning variable definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются определение переменных.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15700"/>
@@ -7116,7 +7134,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11696"/>
         <source>The threshold for aligning variable definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания определений переменных.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15715"/>
@@ -7176,7 +7194,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11708"/>
         <source>The span for aligning on &apos;=&apos; in assignments.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются позиции знака равно в присваивании.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15745"/>
@@ -7186,7 +7204,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11710"/>
         <source>The span for aligning on &apos;=&apos; in function prototype modifier.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются позиции знака равно в модификаторах прототипов функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15750"/>
@@ -7196,7 +7214,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11712"/>
         <source>The threshold for aligning on &apos;=&apos; in assignments.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания знака = в присваивании.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15755"/>
@@ -7221,7 +7239,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11716"/>
         <source>The span for aligning on &apos;=&apos; in enums.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются позиции знака равно в перечислениях.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15765"/>
@@ -7231,7 +7249,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11718"/>
         <source>The threshold for aligning on &apos;=&apos; in enums.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания знака = в перечислениях.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15770"/>
@@ -7241,7 +7259,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11720"/>
         <source>The span for aligning class member definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются определение полей класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15775"/>
@@ -7251,7 +7269,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11722"/>
         <source>The threshold for aligning class member definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания определений членов класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15780"/>
@@ -7271,7 +7289,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11726"/>
         <source>The span for aligning struct/union member definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются определение полей структур/объединений.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15790"/>
@@ -7281,7 +7299,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11728"/>
         <source>The threshold for aligning struct/union member definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания определения полей структур/объединений.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15795"/>
@@ -7301,7 +7319,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11732"/>
         <source>The span for aligning struct initializer values.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются инициализаторы структур.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15805"/>
@@ -7311,7 +7329,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11734"/>
         <source>The span for aligning single-line typedefs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются однострочных typedefs.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15810"/>
@@ -7376,7 +7394,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11744"/>
         <source>The span for aligning comments that end lines.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются завершающие комментарии.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15835"/>
@@ -7436,7 +7454,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11754"/>
         <source>The span for aligning function prototypes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются прототипы функций.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15860"/>
@@ -7446,7 +7464,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11756"/>
         <source>The threshold for aligning function prototypes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Порог (максимальное число пробелов) для выравнивания прототипов функций.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15865"/>
@@ -7496,7 +7514,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11766"/>
         <source>Uses align_func_proto_span.</source>
-        <translation type="unfinished"></translation>
+        <translation>Использует align_func_proto_span.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15885"/>
@@ -7546,7 +7564,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11772"/>
         <source>This will not work right if the macro contains a multi-line comment.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это не будет работать правильно, если макрос содержит многострочный комментарий.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15905"/>
@@ -7901,7 +7919,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11835"/>
         <source>Applies to cmt_insert_oc_msg_header, cmt_insert_func_header and cmt_insert_class_header.</source>
-        <translation type="unfinished"></translation>
+        <translation>Применяется к cmt_insert_oc_msg_header, cmt_insert_func_header and cmt_insert_class_header.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16060"/>
@@ -7916,7 +7934,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11839"/>
         <source>Applies to cmt_insert_func_header.</source>
-        <translation type="unfinished"></translation>
+        <translation>Применяется к cmt_insert_func_header.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16065"/>
@@ -7936,7 +7954,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="9498"/>
         <source>Code modifying options (non-whitespace)</source>
-        <translation type="unfinished"></translation>
+        <translation>Опции изменения кода (кроме пробелов)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16075"/>
@@ -7961,7 +7979,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11848"/>
         <source>Add or remove braces on a single-line &apos;if&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить фигурные скобки в однострочном операторе &apos;if&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11848"/>
@@ -8036,7 +8054,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11860"/>
         <source>Affects:   mod_full_brace_for   mod_full_brace_if   mod_full_brace_if_chain   mod_full_brace_if_chain_only   mod_full_brace_while   mod_full_brace_using</source>
-        <translation type="unfinished"></translation>
+        <translation>Влияет: mod_full_brace_for   mod_full_brace_if   mod_full_brace_if_chain   mod_full_brace_if_chain_only   mod_full_brace_while   mod_full_brace_using</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11860"/>
@@ -8051,7 +8069,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11862"/>
         <source>Add or remove unnecessary parenthesis on &apos;return&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ненужные круглые скобки на операторе &apos;return&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16125"/>
@@ -8276,7 +8294,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11906"/>
         <source>Add or remove the comma after the last value of an enumeration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить запятую после последнего значения перечисления.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16235"/>
@@ -8571,7 +8589,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="16355"/>
         <source>code_include_category_0</source>
-        <translation type="unfinished"></translation>
+        <translation>code_include_category_0</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11958"/>
@@ -8581,7 +8599,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="16360"/>
         <source>code_include_category_1</source>
-        <translation type="unfinished"></translation>
+        <translation>code_include_category_1</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11960"/>
@@ -8591,17 +8609,18 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="16365"/>
         <source>code_include_category_2</source>
-        <translation type="unfinished"></translation>
+        <translation>code_include_category_2</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10348"/>
         <source>Use or Do not Use options</source>
-        <translation type="unfinished"></translation>
+        <translation>Пареметры использовиния опций</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11963"/>
         <source>true:  indent_func_call_param will be used (default) false: indent_func_call_param will NOT be used</source>
-        <translation type="unfinished"></translation>
+        <translation>true: indent_func_call_param будет использовано (по умолчанию)
+false: indent_func_call_param НЕ будет использован</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16370"/>
@@ -8611,7 +8630,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11965"/>
         <source>The value of the indentation for a continuation line is calculated differently if the statement is:</source>
-        <translation type="unfinished"></translation>
+        <translation>Значение отступа для непрерывной строки вычисляется по-разному, если это утверждение:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11965"/>
@@ -8649,12 +8668,13 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11967"/>
         <source>To prevent the double use of the indentation value, use this option with the value &apos;true&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Чтобы предотвратить двойное использование значения отступа, используйте эту опцию со значением &apos;true&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11965"/>
         <source>true:  indent_continue will be used only once false: indent_continue will be used every time (default)</source>
-        <translation type="unfinished"></translation>
+        <translation>true: indent_continue будет использоваться только один раз 
+false: indent_continue будет использоваться каждый раз (по умолчанию)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16375"/>
@@ -8664,7 +8684,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11967"/>
         <source>The value might be used twice:</source>
-        <translation type="unfinished"></translation>
+        <translation>Значение может быть использовано дважды:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11967"/>
@@ -8676,7 +8696,8 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11967"/>
         <source>true:  indentation will be used only once false: indentation will be used every time (default)</source>
-        <translation type="unfinished"></translation>
+        <translation>true: отступ будет использоваться только один раз
+false: отступ будет использоваться каждый раз (по умолчанию)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16380"/>
@@ -8691,7 +8712,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11969"/>
         <source>This was the historic behavior, but is probably not the desired behavior, so this is off by default.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это было историческое поведение, но, вероятно, это не желаемое поведение, поэтому по умолчанию оно выключено.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16385"/>
@@ -8736,7 +8757,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="10435"/>
         <source>Warn levels - 1: error, 2: warning (default), 3: note</source>
-        <translation type="unfinished"></translation>
+        <translation>Уровень предупреждений - 1: ошибка, 2: предупреждение (по умолчанию), 3: примечания</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16400"/>
@@ -8746,7 +8767,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11978"/>
         <source>Used by uncrustify.cpp to exit from infinite loop. 0: no limit.</source>
-        <translation type="unfinished"></translation>
+        <translation>Используется uncrustify.cpp для выхода из бесконечного цикла. 0: без ограничений.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16405"/>
@@ -8811,7 +8832,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11776"/>
         <source>The span for aligning on &apos;#define&apos; bodies.</source>
-        <translation type="unfinished"></translation>
+        <translation>Число строк, для которых выравниваются тела макросов #define.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10498"/>
@@ -8881,7 +8902,9 @@ Line splitting options
         <source>
 Code alignment options (not left column spaces/tabs)
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+Опции выравнивания кода (не левые пробелы)
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11792"/>
@@ -8895,7 +8918,9 @@ Comment modification options
         <source>
 Code modifying options (non-whitespace)
 </source>
-        <translation type="unfinished"></translation>
+        <translation>
+Опции изменения кода (кроме пробелов)
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11924"/>
