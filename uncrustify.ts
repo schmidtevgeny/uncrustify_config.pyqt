@@ -84,37 +84,37 @@
     <message>
         <location filename="uncrustify_ui.py" line="12810"/>
         <source>code_sp_do_brace_open</source>
-        <translation>do¶{i++;}while(i&lt;10);</translation>
+        <translation>do🡘{i++;}while(i&lt;10);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12815"/>
         <source>code_sp_brace_close_while</source>
-        <translation>`do{i++;}¶while(i&lt;10);`</translation>
+        <translation>`do{i++;}🡘while(i&lt;10);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12820"/>
         <source>code_sp_while_paren_open</source>
-        <translation>do{i++;}while¶(i&lt;10);</translation>
+        <translation>do{i++;}while🡘(i&lt;10);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12825"/>
         <source>code_sp_arith</source>
-        <translation>i=a¶+¶b¶/¶2;</translation>
+        <translation>i=a🡘+🡘b🡘/🡘2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12830"/>
         <source>code_sp_arith_additive</source>
-        <translation>i=a¶+¶b/2;</translation>
+        <translation>i=a🡘+🡘b/2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12835"/>
         <source>code_sp_assign</source>
-        <translation>i¶=¶a+b/2;</translation>
+        <translation>i🡘=🡘a+b/2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12840"/>
         <source>code_sp_cpp_lambda_assign</source>
-        <translation>auto a = [¶=¶] (int *a, Something &amp; b)</translation>
+        <translation>auto a = [🡘=🡘] (int *a, Something &amp; b)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10531"/>
@@ -124,17 +124,17 @@
     <message>
         <location filename="uncrustify_ui.py" line="12845"/>
         <source>code_sp_cpp_lambda_square_paren</source>
-        <translation>[]¶(int x){ ... }</translation>
+        <translation>[]🡘(int x){ ... }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12850"/>
         <source>code_sp_cpp_lambda_square_brace</source>
-        <translation>[]¶{ ... }</translation>
+        <translation>[]🡘{ ... }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12855"/>
         <source>code_sp_cpp_lambda_paren_brace</source>
-        <translation>[](int x)¶{ ... }</translation>
+        <translation>[](int x)🡘{ ... }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10533"/>
@@ -154,42 +154,42 @@
     <message>
         <location filename="uncrustify_ui.py" line="12860"/>
         <source>code_sp_cpp_lambda_fparen</source>
-        <translation>[]( ... ){ ... }¶(...)</translation>
+        <translation>[]( ... ){ ... }🡘(...)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12865"/>
         <source>code_sp_assign_default</source>
-        <translation>int find(size_t idx¶=¶0);</translation>
+        <translation>int find(size_t idx🡘=🡘0);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12870"/>
         <source>code_sp_before_assign</source>
-        <translation>int decimal¶=1; normal¶+=2;</translation>
+        <translation>int decimal🡘=1; normal🡘+=2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12875"/>
         <source>code_sp_after_assign</source>
-        <translation>int decimal=¶1; normal+=¶2;</translation>
+        <translation>int decimal=🡘1; normal+=🡘2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12885"/>
         <source>code_sp_enum_assign</source>
-        <translation>enum FLAGS {FLAGS_decimal¶=¶1, ...}</translation>
+        <translation>enum FLAGS {FLAGS_decimal🡘=🡘1, ...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12890"/>
         <source>code_sp_enum_before_assign</source>
-        <translation>enum FLAGS {FLAGS_decimal¶=1, ...}</translation>
+        <translation>enum FLAGS {FLAGS_decimal🡘=1, ...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12895"/>
         <source>code_sp_enum_after_assign</source>
-        <translation>enum FLAGS {FLAGS_decimal=¶1, ...}</translation>
+        <translation>enum FLAGS {FLAGS_decimal=🡘1, ...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12900"/>
         <source>code_sp_enum_colon</source>
-        <translation>enum class comment_align_e¶:¶unsigned int</translation>
+        <translation>enum class comment_align_e🡘:🡘unsigned int</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10869"/>
@@ -199,33 +199,33 @@
     <message>
         <location filename="uncrustify_ui.py" line="12905"/>
         <source>code_sp_pp_concat</source>
-        <translation>#define LOG_FMT (sev, args ...) log_fmt(sev¶##¶args);</translation>
+        <translation>#define LOG_FMT (sev, args ...) log_fmt(sev🡘##🡘args);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12910"/>
         <source>code_sp_pp_stringify</source>
-        <translation>#define LOG_FMT (sev, args ...) log_fmt(#¶args);</translation>
+        <translation>#define LOG_FMT (sev, args ...) log_fmt(#🡘args);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12915"/>
         <source>code_sp_before_pp_stringify</source>
-        <translation>#define LOG_FMT (sev, args ...) log_fmt(¶#args);
-#define x(y) L¶#y</translation>
+        <translation>#define LOG_FMT (sev, args ...) log_fmt(🡘#args);
+#define x(y) L🡘#y</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12920"/>
         <source>code_sp_bool</source>
-        <translation>bool a=b¶||¶c;</translation>
+        <translation>bool a=b🡘||🡘c;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12925"/>
         <source>code_sp_compare</source>
-        <translation>bool a=b¶==¶c;</translation>
+        <translation>bool a=b🡘==🡘c;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12930"/>
         <source>code_sp_inside_paren</source>
-        <translation>a=(¶a+b¶);</translation>
+        <translation>a=(🡘a+b🡘);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10563"/>
@@ -235,7 +235,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="12935"/>
         <source>code_sp_paren_paren</source>
-        <translation>a=sin(¶(a+b)*c)</translation>
+        <translation>a=sin(🡘(a+b)*c)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10565"/>
@@ -245,87 +245,87 @@
     <message>
         <location filename="uncrustify_ui.py" line="12940"/>
         <source>code_sp_cparen_oparen</source>
-        <translation>a.at(i)¶(0)</translation>
+        <translation>a.at(i)🡘(0)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12950"/>
         <source>code_sp_paren_brace</source>
-        <translation>(struct foo)¶{...}</translation>
+        <translation>(struct foo)🡘{...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12955"/>
         <source>code_sp_brace_brace</source>
-        <translation>{¶{</translation>
+        <translation>{🡘{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12960"/>
         <source>code_sp_before_ptr_star</source>
-        <translation>void f(int¶*a, int¶*)</translation>
+        <translation>void f(int🡘*a, int🡘*)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12965"/>
         <source>code_sp_before_unnamed_ptr_star</source>
-        <translation>void f(int *a, int¶*)</translation>
+        <translation>void f(int *a, int🡘*)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12970"/>
         <source>code_sp_between_ptr_star</source>
-        <translation>int *¶*x;</translation>
+        <translation>int *🡘*x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12975"/>
         <source>code_sp_after_ptr_star</source>
-        <translation>void f(int*¶a, int*)</translation>
+        <translation>void f(int*🡘a, int*)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12980"/>
         <source>code_sp_after_ptr_block_caret</source>
-        <translation>int^¶a</translation>
+        <translation>int^🡘a</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12985"/>
         <source>code_sp_after_ptr_star_qualifier</source>
-        <translation>int *¶const i;</translation>
+        <translation>int *🡘const i;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12990"/>
         <source>code_sp_after_ptr_star_func</source>
-        <translation>void *¶bar()</translation>
+        <translation>void *🡘bar()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12995"/>
         <source>code_sp_ptr_star_paren</source>
-        <translation>void*¶(*)()</translation>
+        <translation>void*🡘(*)()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13000"/>
         <source>code_sp_before_ptr_star_func</source>
-        <translation>void¶*bar()</translation>
+        <translation>void🡘*bar()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13005"/>
         <source>code_sp_before_byref</source>
-        <translation>void f(int¶&amp;a, int¶&amp;)</translation>
+        <translation>void f(int🡘&amp;a, int🡘&amp;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13010"/>
         <source>code_sp_before_unnamed_byref</source>
-        <translation>void f(int&amp;a, int¶&amp;)</translation>
+        <translation>void f(int&amp;a, int🡘&amp;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13015"/>
         <source>code_sp_after_byref</source>
-        <translation>void f(int¶&amp;a, int&amp;)</translation>
+        <translation>void f(int🡘&amp;a, int&amp;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13020"/>
         <source>code_sp_after_byref_func</source>
-        <translation>int&amp;¶f(int a)</translation>
+        <translation>int&amp;🡘f(int a)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13025"/>
         <source>code_sp_before_byref_func</source>
-        <translation>int¶&amp;f(int a)</translation>
+        <translation>int🡘&amp;f(int a)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10683"/>
@@ -335,84 +335,84 @@
     <message>
         <location filename="uncrustify_ui.py" line="13030"/>
         <source>code_sp_after_type</source>
-        <translation>auto la = [] (int i1, int i2) -&gt; bool mutable¶{...}
-typedef int¶(FooClass::*ACTION) (int);</translation>
+        <translation>auto la = [] (int i1, int i2) -&gt; bool mutable🡘{...}
+typedef int🡘(FooClass::*ACTION) (int);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13035"/>
         <source>code_sp_after_decltype</source>
-        <translation>auto x1 = decltype(x)¶{0};</translation>
+        <translation>auto x1 = decltype(x)🡘{0};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13040"/>
         <source>code_sp_before_template_paren</source>
-        <translation>template Foo¶(
-class Foo¶(</translation>
+        <translation>template Foo🡘(
+class Foo🡘(</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13045"/>
         <source>code_sp_template_angle</source>
-        <translation>template¶&lt;bool a&gt;void f();</translation>
+        <translation>template🡘&lt;bool a&gt;void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13050"/>
         <source>code_sp_before_angle</source>
-        <translation>List¶&lt;byte&gt;m; template¶&lt;typename T&gt;static ...</translation>
+        <translation>List🡘&lt;byte&gt;m; template🡘&lt;typename T&gt;static ...</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13055"/>
         <source>code_sp_inside_angle</source>
-        <translation>template&lt;¶bool a¶&gt;void f();</translation>
+        <translation>template&lt;🡘bool a🡘&gt;void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13060"/>
         <source>code_sp_inside_angle_empty</source>
-        <translation>template&lt;¶&gt;void f();</translation>
+        <translation>template&lt;🡘&gt;void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13065"/>
         <source>code_sp_angle_colon</source>
-        <translation>template&lt; &gt; struct Bar&lt; false &gt;¶: Foo { };</translation>
+        <translation>template&lt; &gt; struct Bar&lt; false &gt;🡘: Foo { };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13070"/>
         <source>code_sp_after_angle</source>
-        <translation>template&lt;bool a&gt;¶void f();</translation>
+        <translation>template&lt;bool a&gt;🡘void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13075"/>
         <source>code_sp_angle_paren</source>
-        <translation>new List&lt;byte&gt;¶(foo);</translation>
+        <translation>new List&lt;byte&gt;🡘(foo);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13080"/>
         <source>code_sp_angle_paren_empty</source>
-        <translation>new List&lt;byte&gt;¶();</translation>
+        <translation>new List&lt;byte&gt;🡘();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13085"/>
         <source>code_sp_angle_word</source>
-        <translation>List&lt;byte&gt;¶m; template &lt;typename T&gt;¶static ...</translation>
+        <translation>List&lt;byte&gt;🡘m; template &lt;typename T&gt;🡘static ...</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13090"/>
         <source>code_sp_angle_shift</source>
-        <translation>class Foo&lt;Bar&lt;T&gt;¶&gt;</translation>
+        <translation>class Foo&lt;Bar&lt;T&gt;🡘&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13095"/>
         <source>code_sp_permit_cpp11_shift</source>
-        <translation>foo&lt;bar&lt;int&gt;¶&gt;</translation>
+        <translation>foo&lt;bar&lt;int&gt;🡘&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13100"/>
         <source>code_sp_before_sparen</source>
-        <translation>if¶(a)return;</translation>
+        <translation>if🡘(a)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13105"/>
         <source>code_sp_inside_sparen</source>
-        <translation>if(¶a¶)return;</translation>
+        <translation>if(🡘a🡘)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10648"/>
@@ -422,37 +422,37 @@ class Foo¶(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13110"/>
         <source>code_sp_inside_sparen_open</source>
-        <translation>if(¶a)return;</translation>
+        <translation>if(🡘a)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13115"/>
         <source>code_sp_inside_sparen_close</source>
-        <translation>if(a¶)return;</translation>
+        <translation>if(a🡘)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13120"/>
         <source>code_sp_after_sparen</source>
-        <translation>if(a)¶return;</translation>
+        <translation>if(a)🡘return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13125"/>
         <source>code_sp_sparen_brace</source>
-        <translation>if(a)¶{return;}</translation>
+        <translation>if(a)🡘{return;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13130"/>
         <source>code_sp_invariant_paren</source>
-        <translation>invariant¶(C)c</translation>
+        <translation>invariant🡘(C)c</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13135"/>
         <source>code_sp_after_invariant_paren</source>
-        <translation>invariant (C)¶c</translation>
+        <translation>invariant (C)🡘c</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13140"/>
         <source>code_sp_special_semi</source>
-        <translation>while(readLine())¶;</translation>
+        <translation>while(readLine())🡘;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10867"/>
@@ -462,77 +462,77 @@ class Foo¶(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13145"/>
         <source>code_sp_before_semi</source>
-        <translation>int a¶;for(int i=0;;i++){</translation>
+        <translation>int a🡘;for(int i=0;;i++){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13150"/>
         <source>code_sp_before_semi_for</source>
-        <translation>for(int i=0¶;i&lt;10¶;i++){</translation>
+        <translation>for(int i=0🡘;i&lt;10🡘;i++){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13155"/>
         <source>code_sp_before_semi_for_empty</source>
-        <translation>for(¶;¶;)</translation>
+        <translation>for(🡘;🡘;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13160"/>
         <source>code_sp_after_semi</source>
-        <translation>a=b;¶c=d;//comm</translation>
+        <translation>a=b;🡘c=d;//comm</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13165"/>
         <source>code_sp_after_semi_for</source>
-        <translation>for(int i=0;¶i&lt;10;¶i++){</translation>
+        <translation>for(int i=0;🡘i&lt;10;🡘i++){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13170"/>
         <source>code_sp_after_semi_for_empty</source>
-        <translation>for(;;¶)</translation>
+        <translation>for(;;🡘)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13175"/>
         <source>code_sp_before_square</source>
-        <translation>int main(int argc , char *argv¶[]){ int a¶[2]; const char *names [] =</translation>
+        <translation>int main(int argc , char *argv🡘[]){ int a🡘[2]; const char *names [] =</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13180"/>
         <source>code_sp_before_vardef_square</source>
-        <translation>int main(int argc , char *argv¶[]){ int a¶[2]; const char *names [] =</translation>
+        <translation>int main(int argc , char *argv🡘[]){ int a🡘[2]; const char *names [] =</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13185"/>
         <source>code_sp_before_square_asm_block</source>
-        <translation>bar    %0,¶[%4]\n\t&quot;</translation>
+        <translation>bar    %0,🡘[%4]\n\t&quot;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13190"/>
         <source>code_sp_before_squares</source>
-        <translation>int main(int argc , char *argv []){ int a [2]; const char *names¶[] =</translation>
+        <translation>int main(int argc , char *argv []){ int a [2]; const char *names🡘[] =</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13195"/>
         <source>code_sp_cpp_before_struct_binding</source>
-        <translation>auto const¶[sequence, type, firstPosition, lastPosition] = parseLink(inLink);</translation>
+        <translation>auto const🡘[sequence, type, firstPosition, lastPosition] = parseLink(inLink);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13200"/>
         <source>code_sp_inside_square</source>
-        <translation>a[¶n¶] = 3;</translation>
+        <translation>a[🡘n🡘] = 3;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13205"/>
         <source>code_sp_inside_square_oc_array</source>
-        <translation>a=@[¶object1, object2, object3¶]</translation>
+        <translation>a=@[🡘object1, object2, object3🡘]</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13210"/>
         <source>code_sp_after_comma</source>
-        <translation>a,¶b</translation>
+        <translation>a,🡘b</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13215"/>
         <source>code_sp_before_comma</source>
-        <translation>a¶,b</translation>
+        <translation>a🡘,b</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10692"/>
@@ -542,7 +542,7 @@ class Foo¶(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13220"/>
         <source>code_sp_after_mdatype_commas</source>
-        <translation>int[,,¶] array1 = new int[4, 2, 3];</translation>
+        <translation>int[,,🡘] array1 = new int[4, 2, 3];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10694"/>
@@ -552,7 +552,7 @@ class Foo¶(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13225"/>
         <source>code_sp_before_mdatype_commas</source>
-        <translation>int[¶,,] array1 = new int[4, 2, 3];</translation>
+        <translation>int[🡘,,] array1 = new int[4, 2, 3];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10696"/>
@@ -562,7 +562,7 @@ class Foo¶(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13230"/>
         <source>code_sp_between_mdatype_commas</source>
-        <translation>int[,¶,] array1 = new int[4, 2, 3];</translation>
+        <translation>int[,🡘,] array1 = new int[4, 2, 3];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10683"/>
@@ -572,74 +572,74 @@ class Foo¶(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13235"/>
         <source>code_sp_paren_comma</source>
-        <translation>(¶,</translation>
+        <translation>(🡘,</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13240"/>
         <source>code_sp_before_ellipsis</source>
-        <translation>#define LOG_FMT (sev, args¶...)
-template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&gt;</translation>
+        <translation>#define LOG_FMT (sev, args🡘...)
+template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Elements&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13245"/>
         <source>code_sp_type_ellipsis</source>
         <translation>#define LOG_FMT (sev, args...)
-template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&gt;</translation>
+template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Elements&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13255"/>
         <source>code_sp_paren_ellipsis</source>
-        <translation>#define LOG_FMT (sev, args...¶)</translation>
+        <translation>#define LOG_FMT (sev, args...🡘)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13260"/>
         <source>code_sp_paren_qualifier</source>
-        <translation>float fabs(fload x)¶const</translation>
+        <translation>float fabs(fload x)🡘const</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13265"/>
         <source>code_sp_paren_noexcept</source>
-        <translation>float fabs(fload x)¶noexept</translation>
+        <translation>float fabs(fload x)🡘noexept</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13270"/>
         <source>code_sp_after_class_colon</source>
-        <translation>class my_class:¶baseclass1</translation>
+        <translation>class my_class:🡘baseclass1</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13275"/>
         <source>code_sp_before_class_colon</source>
-        <translation>class my_class¶:baseclass1</translation>
+        <translation>class my_class🡘:baseclass1</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13280"/>
         <source>code_sp_after_constr_colon</source>
-        <translation>my_class::my_class(int b):¶x(b){...}</translation>
+        <translation>my_class::my_class(int b):🡘x(b){...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13285"/>
         <source>code_sp_before_constr_colon</source>
-        <translation>my_class::my_class(int b)¶:x(b){...}</translation>
+        <translation>my_class::my_class(int b)🡘:x(b){...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13290"/>
         <source>code_sp_before_case_colon</source>
-        <translation>case 1¶:</translation>
+        <translation>case 1🡘:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13295"/>
         <source>code_sp_after_operator</source>
-        <translation>T operator¶+(T v)</translation>
+        <translation>T operator🡘+(T v)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13300"/>
         <source>code_sp_after_operator_sym</source>
-        <translation>`operator ++¶(</translation>
+        <translation>`operator ++🡘(</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13305"/>
         <source>code_sp_after_operator_sym_empty</source>
-        <translation>operator *¶()</translation>
+        <translation>operator *🡘()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10713"/>
@@ -649,12 +649,12 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13310"/>
         <source>code_sp_after_cast</source>
-        <translation>(int)¶a</translation>
+        <translation>(int)🡘a</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13315"/>
         <source>code_sp_inside_paren_cast</source>
-        <translation>(¶int¶)a</translation>
+        <translation>(🡘int🡘)a</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10717"/>
@@ -664,18 +664,18 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13320"/>
         <source>code_sp_cpp_cast_paren</source>
-        <translation>int¶(exp)</translation>
+        <translation>int🡘(exp)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13325"/>
         <source>code_sp_sizeof_paren</source>
-        <translation>a=sizeof¶(int)</translation>
+        <translation>a=sizeof🡘(int)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13330"/>
         <source>code_sp_sizeof_ellipsis</source>
         <translation>template &lt;typename... Args&gt; std::size_t GetSize (Args&amp;&amp;... args) { 
-    std::size_t Count= sizeof¶...(Args); 
+    std::size_t Count= sizeof🡘...(Args); 
     return Count;
 }</translation>
     </message>
@@ -683,134 +683,134 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
         <location filename="uncrustify_ui.py" line="13335"/>
         <source>code_sp_sizeof_ellipsis_paren</source>
         <translation>template &lt;typename... Args&gt; std::size_t GetSize (Args&amp;&amp;... args) { 
-    std::size_t Count= sizeof...¶(Args); 
+    std::size_t Count= sizeof...🡘(Args); 
     return Count;
 }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13340"/>
         <source>code_sp_decltype_paren</source>
-        <translation>auto a=decltype¶(x){10};</translation>
+        <translation>auto a=decltype🡘(x){10};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13350"/>
         <source>code_sp_inside_braces_enum</source>
-        <translation>enum Status {¶Unknown, Success, Error¶};</translation>
+        <translation>enum Status {🡘Unknown, Success, Error🡘};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13355"/>
         <source>code_sp_inside_braces_struct</source>
-        <translation>union {¶int m_size; int m_any;¶};</translation>
+        <translation>union {🡘int m_size; int m_any;🡘};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13365"/>
         <source>code_sp_after_type_brace_init_lst_open</source>
-        <translation>int a0[][] = {¶{¶1}};</translation>
+        <translation>int a0[][] = {🡘{🡘1}};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13370"/>
         <source>code_sp_before_type_brace_init_lst_close</source>
-        <translation>int a0[][] = {{1¶}¶};</translation>
+        <translation>int a0[][] = {{1🡘}🡘};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13375"/>
         <source>code_sp_inside_type_brace_init_lst</source>
-        <translation>int a0[][] = {¶{¶1¶}¶};</translation>
+        <translation>int a0[][] = {🡘{🡘1🡘}🡘};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13380"/>
         <source>code_sp_inside_braces</source>
-        <translation>while(1){¶i++;¶}</translation>
+        <translation>while(1){🡘i++;🡘}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13385"/>
         <source>code_sp_inside_braces_empty</source>
-        <translation>while(1){¶}</translation>
+        <translation>while(1){🡘}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13390"/>
         <source>code_sp_trailing_return</source>
-        <translation>auto max(int a, int b)¶-&gt;¶int;</translation>
+        <translation>auto max(int a, int b)🡘-&gt;🡘int;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13395"/>
         <source>code_sp_type_func</source>
-        <translation>int c(int &amp;);int*¶c(int &amp;){}</translation>
+        <translation>int c(int &amp;);int*🡘c(int &amp;){}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13405"/>
         <source>code_sp_func_proto_paren</source>
-        <translation>void f¶(int i);</translation>
+        <translation>void f🡘(int i);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13410"/>
         <source>code_sp_func_proto_paren_empty</source>
-        <translation>void f¶();</translation>
+        <translation>void f🡘();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13415"/>
         <source>code_sp_func_type_paren</source>
-        <translation>typedef void timer_cb¶(struct timer_node *n);</translation>
+        <translation>typedef void timer_cb🡘(struct timer_node *n);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13420"/>
         <source>code_sp_func_def_paren</source>
-        <translation>int a¶(int b) {};</translation>
+        <translation>int a🡘(int b) {};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13425"/>
         <source>code_sp_func_def_paren_empty</source>
-        <translation>int a¶() {};</translation>
+        <translation>int a🡘() {};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13430"/>
         <source>code_sp_inside_fparens</source>
-        <translation>int a (¶);</translation>
+        <translation>int a (🡘);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13435"/>
         <source>code_sp_inside_fparen</source>
-        <translation># void ( int a ) (¶int b¶);</translation>
+        <translation># void ( int a ) (🡘int b🡘);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13440"/>
         <source>code_sp_inside_tparen</source>
-        <translation>void (¶*x¶)(...)`</translation>
+        <translation>void (🡘*x🡘)(...)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13445"/>
         <source>code_sp_after_tparen_close</source>
-        <translation>void (*x)¶(...)</translation>
+        <translation>void (*x)🡘(...)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13450"/>
         <source>code_sp_square_fparen</source>
-        <translation>auto a = [ = ]¶(int *a, Something &amp; b)</translation>
+        <translation>auto a = [ = ]🡘(int *a, Something &amp; b)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13455"/>
         <source>code_sp_fparen_brace</source>
-        <translation>int a (int b)¶{};</translation>
+        <translation>int a (int b)🡘{};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13470"/>
         <source>code_sp_func_call_paren</source>
-        <translation>x=sin¶(5);</translation>
+        <translation>x=sin🡘(5);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13475"/>
         <source>code_sp_func_call_paren_empty</source>
-        <translation>x=rand¶();</translation>
+        <translation>x=rand🡘();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13480"/>
         <source>code_sp_func_call_user_paren</source>
-        <translation>foo¶(ABC)</translation>
+        <translation>foo🡘(ABC)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13485"/>
         <source>code_sp_func_call_user_inside_fparen</source>
-        <translation>foo(¶ABC¶);</translation>
+        <translation>foo(🡘ABC🡘);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10785"/>
@@ -820,223 +820,223 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13490"/>
         <source>code_sp_func_call_user_paren_paren</source>
-        <translation>foo(¶( ABC )¶)</translation>
+        <translation>foo(🡘( ABC )🡘)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13495"/>
         <source>code_sp_func_class_paren</source>
-        <translation>myclass¶(int i){</translation>
+        <translation>myclass🡘(int i){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13500"/>
         <source>code_sp_func_class_paren_empty</source>
-        <translation>myclass¶(){</translation>
+        <translation>myclass🡘(){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13505"/>
         <source>code_sp_return_paren</source>
-        <translation>return¶(-1);</translation>
+        <translation>return🡘(-1);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13510"/>
         <source>code_sp_return_brace</source>
-        <translation>return¶{ -1, -1, -1 };</translation>
+        <translation>return🡘{ -1, -1, -1 };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13515"/>
         <source>code_sp_attribute_paren</source>
-        <translation>struct sockaddr *sa __attribute__¶((unused))</translation>
+        <translation>struct sockaddr *sa __attribute__🡘((unused))</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13520"/>
         <source>code_sp_defined_paren</source>
-        <translation>#if defined¶(FOO)</translation>
+        <translation>#if defined🡘(FOO)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13525"/>
         <source>code_sp_throw_paren</source>
-        <translation>throw¶(something)</translation>
+        <translation>throw🡘(something)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13530"/>
         <source>code_sp_after_throw</source>
-        <translation>@throw¶[...];</translation>
+        <translation>@throw🡘[...];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13535"/>
         <source>code_sp_catch_paren</source>
-        <translation>catch¶(something) { }</translation>
+        <translation>catch🡘(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13540"/>
         <source>code_sp_oc_catch_paren</source>
-        <translation>@catch¶(something) { }</translation>
+        <translation>@catch🡘(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13545"/>
         <source>code_sp_before_oc_proto_list</source>
-        <translation>@protocol Protocol¶&lt;Protocol_A&gt;
-@interface MyClass : NSObject¶&lt;MyProtocol&gt;</translation>
+        <translation>@protocol Protocol🡘&lt;Protocol_A&gt;
+@interface MyClass : NSObject🡘&lt;MyProtocol&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13550"/>
         <source>code_sp_oc_classname_paren</source>
-        <translation>@interface className¶(categoryName)&lt;ProtocolName&gt;:BaseClass</translation>
+        <translation>@interface className🡘(categoryName)&lt;ProtocolName&gt;:BaseClass</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13555"/>
         <source>code_sp_version_paren</source>
-        <translation>version¶(something) { }</translation>
+        <translation>version🡘(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13560"/>
         <source>code_sp_scope_paren</source>
-        <translation>scope¶(something) { }</translation>
+        <translation>scope🡘(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13565"/>
         <source>code_sp_super_paren</source>
-        <translation>super¶(something)</translation>
+        <translation>super🡘(something)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13570"/>
         <source>code_sp_this_paren</source>
-        <translation>this¶(something)</translation>
+        <translation>this🡘(something)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13575"/>
         <source>code_sp_macro</source>
-        <translation>#define FS_NOCOW_FL¶0x00800000</translation>
+        <translation>#define FS_NOCOW_FL🡘0x00800000</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13580"/>
         <source>code_sp_macro_func</source>
-        <translation>#define log(x)¶qMessage(x.toStdString().c_str());</translation>
+        <translation>#define log(x)🡘qMessage(x.toStdString().c_str());</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13585"/>
         <source>code_sp_else_brace</source>
-        <translation>if(i&gt;0){i++;}else¶{i=-i;}</translation>
+        <translation>if(i&gt;0){i++;}else🡘{i=-i;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13590"/>
         <source>code_sp_brace_else</source>
-        <translation>if(i&gt;0){i++;}¶else{i=-i;}</translation>
+        <translation>if(i&gt;0){i++;}🡘else{i=-i;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13595"/>
         <source>code_sp_brace_typedef</source>
-        <translation>typedef struct { int val; int sel; }¶DiceInfo;</translation>
+        <translation>typedef struct { int val; int sel; }🡘DiceInfo;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13600"/>
         <source>code_sp_catch_brace</source>
-        <translation>catch (decl)¶{</translation>
+        <translation>catch (decl)🡘{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13605"/>
         <source>code_sp_oc_catch_brace</source>
-        <translation>@catch (decl) ¶ {</translation>
+        <translation>@catch (decl) 🡘 {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13610"/>
         <source>code_sp_brace_catch</source>
-        <translation>}¶catch (decl){</translation>
+        <translation>}🡘catch (decl){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13615"/>
         <source>code_sp_oc_brace_catch</source>
-        <translation>}¶@catch (decl)  {</translation>
+        <translation>}🡘@catch (decl)  {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13620"/>
         <source>code_sp_finally_brace</source>
-        <translation>}finally (decl)¶{</translation>
+        <translation>}finally (decl)🡘{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13625"/>
         <source>code_sp_brace_finally</source>
-        <translation>}¶finally (decl){</translation>
+        <translation>}🡘finally (decl){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13630"/>
         <source>code_sp_try_brace</source>
-        <translation>try¶{</translation>
+        <translation>try🡘{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13635"/>
         <source>code_sp_getset_brace</source>
         <translation>public double Seconds
 {
-    get¶{ return _seconds; }
-    set¶{ _seconds = value; }
+    get🡘{ return _seconds; }
+    set🡘{ _seconds = value; }
 }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13640"/>
         <source>code_sp_word_brace_init_lst</source>
-        <translation>int a¶{5};</translation>
+        <translation>int a🡘{5};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13645"/>
         <source>code_sp_word_brace_ns</source>
-        <translation>namespace std¶{</translation>
+        <translation>namespace std🡘{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13650"/>
         <source>code_sp_before_dc</source>
-        <translation>class Parser¶:: ParserPrivate { }</translation>
+        <translation>class Parser🡘:: ParserPrivate { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13655"/>
         <source>code_sp_after_dc</source>
-        <translation>class Parser ::¶ParserPrivate { };</translation>
+        <translation>class Parser ::🡘ParserPrivate { };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13665"/>
         <source>code_sp_not</source>
-        <translation>if(!¶a)</translation>
+        <translation>if(!🡘a)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13670"/>
         <source>code_sp_inv</source>
-        <translation>int a=~¶b;</translation>
+        <translation>int a=~🡘b;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13675"/>
         <source>code_sp_addr</source>
-        <translation>i=s.toDouble(&amp;¶ok);</translation>
+        <translation>i=s.toDouble(&amp;🡘ok);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13680"/>
         <source>code_sp_member</source>
-        <translation>ui¶-&gt;¶Label1¶-&gt;¶text()¶.¶toDouble()</translation>
+        <translation>ui🡘-&gt;🡘Label1🡘-&gt;🡘text()🡘.🡘toDouble()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13685"/>
         <source>code_sp_deref</source>
-        <translation>int a=*¶b;</translation>
+        <translation>int a=*🡘b;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13690"/>
         <source>code_sp_sign</source>
-        <translation>x = -¶5;y = +¶7</translation>
+        <translation>x = -🡘5;y = +🡘7</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13695"/>
         <source>code_sp_incdec</source>
-        <translation>(--¶x);y¶++;</translation>
+        <translation>(--🡘x);y🡘++;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13700"/>
         <source>code_sp_before_nl_cont</source>
-        <translation>#define wakeUpCaller(cond)¶\`
+        <translation>#define wakeUpCaller(cond)🡘\`
    do { if (log_sev_on(sev)) { log_fmt(sev, ## args); } } while (0)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13705"/>
         <source>code_sp_after_oc_scope</source>
-        <translation>-¶(void) foo; +¶(int) bar;</translation>
+        <translation>-🡘(void) foo; +🡘(int) bar;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10873"/>
@@ -1051,17 +1051,17 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13715"/>
         <source>code_sp_before_oc_colon</source>
-        <translation>-(int) f:¶(int) x;</translation>
+        <translation>-(int) f:🡘(int) x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13720"/>
         <source>code_sp_after_oc_dict_colon</source>
-        <translation>NSDictionary *test = @{@&quot;foo&quot; :¶@&quot;bar&quot;};</translation>
+        <translation>NSDictionary *test = @{@&quot;foo&quot; :🡘@&quot;bar&quot;};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13725"/>
         <source>code_sp_before_oc_dict_colon</source>
-        <translation>NSDictionary *test = @{@&quot;foo&quot;¶:@&quot;bar&quot;};</translation>
+        <translation>NSDictionary *test = @{@&quot;foo&quot;🡘:@&quot;bar&quot;};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10881"/>
@@ -1071,7 +1071,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13730"/>
         <source>code_sp_after_send_oc_colon</source>
-        <translation>[object setValue:¶1];</translation>
+        <translation>[object setValue:🡘1];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10883"/>
@@ -1081,7 +1081,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13735"/>
         <source>code_sp_before_send_oc_colon</source>
-        <translation>[object setValue¶:1];</translation>
+        <translation>[object setValue🡘:1];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10885"/>
@@ -1091,7 +1091,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13740"/>
         <source>code_sp_after_oc_type</source>
-        <translation>-(int)f: (int)¶x;</translation>
+        <translation>-(int)f: (int)🡘x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10887"/>
@@ -1101,7 +1101,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13745"/>
         <source>code_sp_after_oc_return_type</source>
-        <translation>-(int)¶f:(int)x;</translation>
+        <translation>-(int)🡘f:(int)x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10889"/>
@@ -1111,7 +1111,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13750"/>
         <source>code_sp_after_oc_at_sel</source>
-        <translation>@selector¶(msgName)</translation>
+        <translation>@selector🡘(msgName)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10891"/>
@@ -1121,7 +1121,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13755"/>
         <source>code_sp_after_oc_at_sel_parens</source>
-        <translation>@selector(foo)¶a:</translation>
+        <translation>@selector(foo)🡘a:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10893"/>
@@ -1131,7 +1131,7 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13760"/>
         <source>code_sp_inside_oc_at_sel_parens</source>
-        <translation>@selector(¶foo¶)</translation>
+        <translation>@selector(🡘foo🡘)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10895"/>
@@ -1146,57 +1146,57 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13785"/>
         <source>code_sp_after_oc_synchronized</source>
-        <translation>@synchronized¶(foo)</translation>
+        <translation>@synchronized🡘(foo)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13790"/>
         <source>code_sp_cond_colon</source>
-        <translation>b ? t¶:¶f</translation>
+        <translation>b ? t🡘:🡘f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13795"/>
         <source>code_sp_cond_colon_before</source>
-        <translation>b ? t¶: f</translation>
+        <translation>b ? t🡘: f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13800"/>
         <source>code_sp_cond_colon_after</source>
-        <translation>b ? t :¶f</translation>
+        <translation>b ? t :🡘f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13805"/>
         <source>code_sp_cond_question</source>
-        <translation>b¶?¶t : f</translation>
+        <translation>b🡘?🡘t : f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13810"/>
         <source>code_sp_cond_question_before</source>
-        <translation>b¶? t : f</translation>
+        <translation>b🡘? t : f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13815"/>
         <source>code_sp_cond_question_after</source>
-        <translation>b ?¶t : f</translation>
+        <translation>b ?🡘t : f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13820"/>
         <source>code_sp_cond_ternary_short</source>
-        <translation>(a ?¶: b)</translation>
+        <translation>(a ?🡘: b)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13835"/>
         <source>code_sp_after_for_colon</source>
-        <translation>for (Type var :¶expr)</translation>
+        <translation>for (Type var :🡘expr)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13840"/>
         <source>code_sp_before_for_colon</source>
-        <translation>for (Type var¶: expr)</translation>
+        <translation>for (Type var🡘: expr)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13845"/>
         <source>code_sp_extern_paren</source>
-        <translation>extern¶(C)</translation>
+        <translation>extern🡘(C)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10929"/>
@@ -1206,47 +1206,47 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="13850"/>
         <source>code_sp_cmt_cpp_start</source>
-        <translation>i++; //¶A</translation>
+        <translation>i++; //🡘A</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13875"/>
         <source>code_sp_between_new_paren</source>
-        <translation>new¶()</translation>
+        <translation>new🡘()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13880"/>
         <source>code_sp_after_newop_paren</source>
-        <translation>new(foo)¶BAR</translation>
+        <translation>new(foo)🡘BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13885"/>
         <source>code_sp_inside_newop_paren</source>
-        <translation>new(¶foo¶) BAR</translation>
+        <translation>new(🡘foo🡘) BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13890"/>
         <source>code_sp_inside_newop_paren_open</source>
-        <translation>new(¶foo) BAR</translation>
+        <translation>new(🡘foo) BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13895"/>
         <source>code_sp_inside_newop_paren_close</source>
-        <translation>new(foo¶) BAR</translation>
+        <translation>new(foo🡘) BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13900"/>
         <source>code_sp_before_tr_emb_cmt</source>
-        <translation>int a;¶/* emb cmt */ int b;¶// trailing cmt</translation>
+        <translation>int a;🡘/* emb cmt */ int b;🡘// trailing cmt</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13905"/>
         <source>code_sp_num_before_tr_emb_cmt</source>
-        <translation>int a;¶∙∙∙∙∙∙∙∙∙¶/* emb cmt */ int b;¶∙∙∙∙∙∙∙∙∙∙¶// trailing cmt</translation>
+        <translation>int a;🡘∙∙∙∙∙∙∙∙∙🡘/* emb cmt */ int b;🡘∙∙∙∙∙∙∙∙∙∙🡘// trailing cmt</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13920"/>
         <source>code_sp_after_noexcept</source>
-        <translation>Foo() noexcept¶() {}</translation>
+        <translation>Foo() noexcept🡘() {}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11929"/>
@@ -1483,12 +1483,12 @@ template&lt;int i, int¶... Indexes, typename IdxHolder, typename¶... Elements&
     <message>
         <location filename="uncrustify_ui.py" line="12745"/>
         <source>code_input_tab_size</source>
-        <translation>ЪЪЪЪint a;</translation>
+        <translation>🡘🡘🡘🡘int a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12750"/>
         <source>code_output_tab_size</source>
-        <translation>ЪЪЪЪint a;</translation>
+        <translation>🡘🡘🡘🡘int a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10505"/>
@@ -1649,22 +1649,22 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10542"/>
         <source>Add or remove space after the capture specification of a C++11 lambda when an argument list is present, as in &apos;[] &lt;here&gt; (int x){ ... }&apos;.</source>
-        <translation>Добавьте или удалите пробел после спецификации захвата лямбды C++11 при наличии списка аргументов, как в `[]¶(int x){ ... }`.</translation>
+        <translation>Добавьте или удалите пробел после спецификации захвата лямбды C++11 при наличии списка аргументов, как в `[]🡘(int x){ ... }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10544"/>
         <source>Add or remove space after the capture specification of a C++11 lambda with no argument list is present, as in &apos;[] &lt;here&gt; { ... }&apos;.</source>
-        <translation>Добавлять или удалять пробел после спецификации захвата лямбды C++11 без списка аргументов, как в `[]¶{ ... }`.</translation>
+        <translation>Добавлять или удалять пробел после спецификации захвата лямбды C++11 без списка аргументов, как в `[]🡘{ ... }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10546"/>
         <source>Add or remove space after the argument list of a C++11 lambda, as in &apos;[](int x) &lt;here&gt; { ... }&apos;.</source>
-        <translation>Добавьте или удалите пробел после списка аргументов лямбды C++11, как в `[](int x)¶{ ... }`.</translation>
+        <translation>Добавьте или удалите пробел после списка аргументов лямбды C++11, как в `[](int x)🡘{ ... }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10548"/>
         <source>Add or remove space between a lambda body and its call operator of an immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&apos;.</source>
-        <translation>Добавить или удалить пробел между телом лямбды и его оператором вызова, как в `[]( ... ){ ... }¶(...)`.</translation>
+        <translation>Добавить или удалить пробел между телом лямбды и его оператором вызова, как в `[]( ... ){ ... }🡘(...)`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10550"/>
@@ -1739,7 +1739,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10570"/>
         <source>Add or remove space before preprocessor &apos;#&apos; stringify operator as in &apos;#define x(y) L#y&apos;.</source>
-        <translation>Добавить или удалить пробел перед препроцессорной коммандой строки &apos;#&apos; в смысле &apos;#define x(y) L¶#y&apos;.</translation>
+        <translation>Добавить или удалить пробел перед препроцессорной коммандой строки &apos;#&apos; в смысле &apos;#define x(y) L🡘#y&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10572"/>
@@ -1759,12 +1759,12 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10578"/>
         <source>Add or remove space between nested parentheses, i.e. &apos;((&apos; vs. &apos;) )&apos;.</source>
-        <translation>Добавить или удалить пробел между вложенными скобками, т.е &apos;(¶(&apos;.</translation>
+        <translation>Добавить или удалить пробел между вложенными скобками, т.е &apos;(🡘(&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10580"/>
         <source>Add or remove space between back-to-back parentheses, i.e. &apos;)(&apos; vs. &apos;) (&apos;.</source>
-        <translation>Добавить или удалить пробел между соседними скобками, т.е. &apos;)¶(&apos;.</translation>
+        <translation>Добавить или удалить пробел между соседними скобками, т.е. &apos;)🡘(&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10582"/>
@@ -1774,10 +1774,10 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="12945"/>
         <source>code_sp_balance_nested_parens</source>
-        <translation>if (¶f.exists()¶)
+        <translation>if (🡘f.exists()🡘)
 {
-    f.copy(¶imgpath + images.at(i)¶);
-    qWarning(¶(¶imgpath + images.at(i)¶).toStdString().c_str() );
+    f.copy(🡘imgpath + images.at(i)🡘);
+    qWarning(🡘(🡘imgpath + images.at(i)🡘).toStdString().c_str() );
 }</translation>
     </message>
     <message>
@@ -1788,7 +1788,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10586"/>
         <source>Add or remove space between nested braces, i.e. &apos;{{&apos; vs &apos;{ {&apos;.</source>
-        <translation>Добавить или удалить пробел между вложенными скобками, т.е. &apos;{¶{&apos;.</translation>
+        <translation>Добавить или удалить пробел между вложенными скобками, т.е. &apos;{🡘{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10588"/>
@@ -1903,7 +1903,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10620"/>
         <source>(D) Add or remove space before the parenthesis in the D constructs &apos;template Foo(&apos; and &apos;class Foo(&apos;.</source>
-        <translation>(D) Добавить или удалить пробел перед скобкой ( в D-конструкторе &apos;template Foo¶(&apos; и &apos;class Foo¶(&apos;.</translation>
+        <translation>(D) Добавить или удалить пробел перед скобкой ( в D-конструкторе &apos;template Foo🡘(&apos; и &apos;class Foo🡘(&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10622"/>
@@ -1943,17 +1943,17 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10634"/>
         <source>Add or remove space between &apos;&gt;&apos; and &apos;(&apos; as found in &apos;new List&lt;byte&gt;(foo);&apos;.</source>
-        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;(&apos; как  в `new List&lt;byte&gt;¶(foo);`.</translation>
+        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;(&apos; как  в `new List&lt;byte&gt;🡘(foo);`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10636"/>
         <source>Add or remove space between &apos;&gt;&apos; and &apos;()&apos; as found in &apos;new List&lt;byte&gt;();&apos;.</source>
-        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;()&apos; как в `new List&lt;byte&gt;¶();`.</translation>
+        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;()&apos; как в `new List&lt;byte&gt;🡘();`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10638"/>
         <source>Add or remove space between &apos;&gt;&apos; and a word as in &apos;List&lt;byte&gt; m;&apos; or &apos;template &lt;typename T&gt; static ...&apos;.</source>
-        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и word как в `List&lt;byte&gt;¶m; template &lt;typename T&gt;¶static ...`.</translation>
+        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и word как в `List&lt;byte&gt;🡘m; template &lt;typename T&gt;🡘static ...`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10640"/>
@@ -1963,7 +1963,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10642"/>
         <source>(C++11) Permit removal of the space between &apos;&gt;&gt;&apos; in &apos;foo&lt;bar&lt;int&gt; &gt;&apos;.</source>
-        <translation>(C++11) Разрешение на удаление пробела между &apos;&gt;&gt;&apos; в `foo&lt;bar&lt;int&gt;¶&gt;`.</translation>
+        <translation>(C++11) Разрешение на удаление пробела между &apos;&gt;&gt;&apos; в `foo&lt;bar&lt;int&gt;🡘&gt;`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10642"/>
@@ -2283,7 +2283,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13400"/>
         <source>code_sp_type_brace_init_lst</source>
-        <translation>auto i12 = int¶{42};</translation>
+        <translation>auto i12 = int🡘{42};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10766"/>
@@ -2358,7 +2358,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13460"/>
         <source>code_sp_fparen_brace_initializer</source>
-        <translation>    return new ProcessStartInfo(&quot;smthg&quot;)¶{
+        <translation>    return new ProcessStartInfo(&quot;smthg&quot;)🡘{
                Arguments = string.Format(&quot;-9 --ss -S aa \&quot;{0}\&quot;&quot;, file),
                WorkingDirectory = Directory.GetCurrentDirectory(),
                UseShellExecute = false,
@@ -2373,7 +2373,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13465"/>
         <source>code_sp_fparen_dbrace</source>
-        <translation>member.func(new List()¶{{
+        <translation>member.func(new List()🡘{{
    add(&quot;Text&quot;);
    add(&quot;Text&quot;,
        &quot;Hello&quot;);
@@ -2477,7 +2477,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10822"/>
         <source>(OC) Add or remove space before Objective-C protocol list as in &apos;@protocol Protocol&lt;here&gt;&lt;Protocol_A&gt;&apos; or &apos;@interface MyClass : NSObject&lt;here&gt;&lt;MyProtocol&gt;&apos;.</source>
-        <translation>(OC) Добавьте или удалите пробел перед списком протоколов Objective-C, как в &apos;@protocol Protocol¶&lt;Protocol_A&gt;&apos; или &apos;@interface MyClass : NSObject¶&lt;MyProtocol&gt;&apos;&apos;.</translation>
+        <translation>(OC) Добавьте или удалите пробел перед списком протоколов Objective-C, как в &apos;@protocol Protocol🡘&lt;Protocol_A&gt;&apos; или &apos;@interface MyClass : NSObject🡘&lt;MyProtocol&gt;&apos;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10824"/>
@@ -2532,12 +2532,12 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="10844"/>
         <source>Add or remove space before the &apos;{&apos; of a &apos;catch&apos; statement, if the &apos;{&apos; and &apos;catch&apos; are on the same line, as in &apos;catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation>Добавьте или удалите пробел перед &apos;{&apos; в операторе &apos;catch&apos;, если &apos;{&apos; и &apos;catch&apos; находятся на одной строке, как в операторе &apos;catch (decl) ¶ {&apos;.</translation>
+        <translation>Добавьте или удалите пробел перед &apos;{&apos; в операторе &apos;catch&apos;, если &apos;{&apos; и &apos;catch&apos; находятся на одной строке, как в операторе &apos;catch (decl) 🡘 {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10846"/>
         <source>(OC) Add or remove space before the &apos;{&apos; of a &apos;@catch&apos; statement, if the &apos;{&apos; and &apos;@catch&apos; are on the same line, as in &apos;@catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation>(OC) Добавьте или удалите пробел перед &apos;{&apos; в выражении &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в выражении &apos;@catch (decl) ¶ {&apos;.</translation>
+        <translation>(OC) Добавьте или удалите пробел перед &apos;{&apos; в выражении &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в выражении &apos;@catch (decl) 🡘 {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10846"/>
@@ -2886,7 +2886,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13855"/>
         <source>code_sp_cmt_cpp_doxygen</source>
-        <translation>///&lt;¶a Doygen comment
+        <translation>///&lt;🡘a Doygen comment
 </translation>
     </message>
     <message>
@@ -2916,7 +2916,7 @@ QString text = MyMagicClass::tr(&quot;Sim sala bim.&quot;);</translation>
     case 3:
         doFive();
         break;
-#endif¶//specmacro</translation>
+#endif🡘//specmacro</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10952"/>
@@ -2927,10 +2927,10 @@ QString text = MyMagicClass::tr(&quot;Sim sala bim.&quot;);</translation>
         <location filename="uncrustify_ui.py" line="13870"/>
         <source>code_sp_after_new</source>
         <translation>void x(int **d) {
-    delete¶*d;
+    delete🡘*d;
 }
 void x(int &amp;d) {
-    delete¶&amp;d;
+    delete🡘&amp;d;
 }</translation>
     </message>
     <message>
@@ -2982,8 +2982,8 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13910"/>
         <source>code_sp_annotation_paren</source>
         <translation>@Documented
-@Retention¶(RetentionPolicy.RUNTIME)
-@Target¶({ElementType.TYPE,ElementType.METHOD,
+@Retention🡘(RetentionPolicy.RUNTIME)
+@Target🡘({ElementType.TYPE,ElementType.METHOD,
          ElementType.CONSTRUCTOR,ElementType.ANNOTATION_TYPE,
          ElementType.PACKAGE,ElementType.FIELD,ElementType.LOCAL_VARIABLE})
 @Inherited
@@ -3021,7 +3021,7 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="13925"/>
         <source>code_sp_vala_after_translation</source>
-        <translation>new Gtk.Label (_¶(&quot;Label text&quot;));</translation>
+        <translation>new Gtk.Label (_🡘(&quot;Label text&quot;));</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10976"/>
@@ -3078,10 +3078,10 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13940"/>
         <source>code_indent_continue</source>
         <translation>    LOG_FMT(LINDLINE, &quot;%s: %d] col %d on %.*s [%s] =&gt; %d\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
-    ¶¶¶¶pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);
+    🡘🡘🡘🡘pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);
     if ((cout_col &gt; 0) &amp;&amp;
-    ¶¶¶¶(chunk_is_semicolon(pc) ||
-    ¶¶¶¶(pc-&gt;level &lt; cout_level))) {
+    🡘🡘🡘🡘(chunk_is_semicolon(pc) ||
+    🡘🡘🡘🡘(pc-&gt;level &lt; cout_level))) {
         cout_col   = 0;
        cout_level = 0;
     }</translation>
@@ -3100,7 +3100,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="13945"/>
         <source>code_indent_continue_class_head</source>
         <translation>class              |      class
-        MyClass    |      ¶¶¶¶¶¶MyClass
+        MyClass    |      🡘🡘🡘🡘🡘🡘MyClass
 {                  |      {
 public:            |      public:</translation>
     </message>
@@ -3128,7 +3128,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="13955"/>
         <source>code_indent_param</source>
         <translation>    LOG_FMT(LINDLINE, &quot;%s: %d] col %d on %.*s [%s] =&gt; %d\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
-    ¶¶¶¶pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);</translation>
+    🡘🡘🡘🡘pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10989"/>
@@ -3173,7 +3173,9 @@ public:            |      public:</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13970"/>
         <source>code_indent_align_string</source>
-        <translation type="unfinished"></translation>
+        <translation>char*s=&quot;very long string&quot;
+      ↑&quot;very long string&quot;
+      ↑&quot;very long string&quot;;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10995"/>
@@ -3191,9 +3193,9 @@ public:            |      public:</translation>
         <translation>void foo(void) {
 
     const char *a = &quot;&lt;xml&gt;&quot;
-                    ¶¶&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
-                    ¶¶¶¶&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
-                    ¶¶&quot;&lt;/data&gt;&quot;
+                    🡘🡘&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
+                    🡘🡘🡘🡘&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
+                    🡘🡘&quot;&lt;/data&gt;&quot;
                     &quot;&lt;/xml&gt;&quot;;
 }
 </translation>
@@ -3207,13 +3209,13 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="13980"/>
         <source>code_indent_brace</source>
         <translation>    if (chunk_is_comment(pc))
-    ¶¶{
+    🡘🡘{
           pc-&gt;column = pc-&gt;orig_col;
           if (pc-&gt;column &lt; min_col)
                     pc-&gt;column = min_col + 1;
           LOG_FMT(LINDLINE, &quot;%s: set comment on line %d to col %d (orig %d)\n&quot;,
                   __func__, pc-&gt;orig_line, pc-&gt;column, pc-&gt;orig_col);
-    ¶¶}</translation>
+    🡘🡘}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10999"/>
@@ -3224,7 +3226,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="13985"/>
         <source>code_indent_braces</source>
         <translation>    if (chunk_is_comment(pc))
-    ¶¶¶¶{
+    🡘🡘🡘🡘{
         pc-&gt;column = pc-&gt;orig_col;</translation>
     </message>
     <message>
@@ -3236,7 +3238,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="13990"/>
         <source>code_indent_braces_no_func</source>
         <translation>void f(double x)
-¶{
+🡘{
     if (x&lt;0)
         {
         x=fabs(x);</translation>
@@ -3250,7 +3252,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="13995"/>
         <source>code_indent_braces_no_class</source>
         <translation>class myclass
-¶{
+🡘{
     myclass()
         {
         if (ok)
@@ -3265,7 +3267,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="14000"/>
         <source>code_indent_braces_no_struct</source>
         <translation>struct myclass
-¶{
+🡘{
     myclass()
         {
         if (ok)
@@ -3299,11 +3301,11 @@ for (auto x : y)        |        for (auto x : y)
         <location filename="uncrustify_ui.py" line="14010"/>
         <source>code_indent_paren_open_brace</source>
         <translation>false                                                  |  true
-¶¶¶¶¶¶¶¶                                               |                   ¶¶¶¶¶¶¶¶
+🡘🡘🡘🡘🡘🡘🡘🡘                                               |                   🡘🡘🡘🡘🡘🡘🡘🡘
 funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {  |  funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {
         return PairingCmpnt()                          |                           return PairingCmpnt()
 }));                                                   |                   }));
-¶¶¶¶¶¶¶¶                                               |         ¶¶¶¶¶¶¶¶
+🡘🡘🡘🡘🡘🡘🡘🡘                                               |         🡘🡘🡘🡘🡘🡘🡘🡘
 match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp; ]( const ContentProps &amp;props)  {
         return PairingCmpnt()                          |                 return PairingCmpnt()
 });                                                    |         });</translation>
@@ -3328,7 +3330,7 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <source>code_indent_namespace</source>
         <translation>namespace Constants
 {
-¶¶¶¶double PI = 3.14;
+🡘🡘🡘🡘double PI = 3.14;
 }</translation>
     </message>
     <message>
@@ -3366,7 +3368,7 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <location filename="uncrustify_ui.py" line="14035"/>
         <source>code_indent_namespace_level</source>
         <translation>namespace Constants{
-¶¶¶¶double PI </translation>
+🡘🡘🡘🡘double PI </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11021"/>
@@ -3387,8 +3389,8 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <location filename="uncrustify_ui.py" line="14045"/>
         <source>code_indent_extern</source>
         <translation>extern &quot;C&quot;{
-¶¶¶¶disConnectionH createDisConnection();
-¶¶¶¶int open_DisConnect(disConnectionH record);
+🡘🡘🡘🡘disConnectionH createDisConnection();
+🡘🡘🡘🡘int open_DisConnect(disConnectionH record);
 }
 </translation>
     </message>
@@ -3403,7 +3405,7 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <translation>class Widget :
         public QWidget
 {
-¶¶¶¶int a;
+🡘🡘🡘🡘int a;
 }</translation>
     </message>
     <message>
@@ -3416,10 +3418,10 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <source>code_indent_class_colon</source>
         <translation>class MyClass
     : myvar(0),
-    ¶¶myvar2(0){...
+    🡘🡘myvar2(0){...
 
 class MyClass : myvar(0),
-    ¶¶¶¶¶¶¶¶¶¶¶¶myvar2(0){...</translation>
+    🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘myvar2(0){...</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11029"/>
@@ -3439,7 +3441,7 @@ class MyClass : myvar(0),
     myvar2(0){...
 
 class MyClass : myvar(0),
-   ¶¶¶¶¶¶¶¶¶¶¶myvar2(0){...
+   🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘myvar2(0){...
 </translation>
     </message>
     <message>
@@ -3450,17 +3452,18 @@ class MyClass : myvar(0),
     <message>
         <location filename="uncrustify_ui.py" line="14065"/>
         <source>code_indent_constr_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>void bar_c(int tttt, int uu, int abc, int defxx)   : tttt(4444)
+                                                    ↑, uu(22), abc(333), defxx(55555)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11033"/>
         <source>Virtual indent from the &apos;:&apos; for member initializers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Виртуальный отступ от &quot;:&quot; для инициализаторов членов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11976"/>
         <source>Default: 2</source>
-        <translation type="unfinished">По умолчанию: 2.</translation>
+        <translation>По умолчанию: 2. </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14070"/>
@@ -3470,7 +3473,7 @@ class MyClass : myvar(0),
     <message>
         <location filename="uncrustify_ui.py" line="11035"/>
         <source>Additional indent for constructor initializer list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Дополнительный отступ для списка инициализаторов конструктора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11939"/>
@@ -3491,7 +3494,8 @@ class MyClass : myvar(0),
         <location filename="uncrustify_ui.py" line="11037"/>
         <source>If false, &apos;else
 if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если false, то &apos;else
+if&apos; рассматривается как &apos;else if&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14080"/>
@@ -3501,7 +3505,7 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
         i = 10;
     }
     else
-    ЪЪЪЪif ( true )
+    🡘🡘🡘🡘if ( true )
         {
             i = 10;
         }</translation>
@@ -3514,7 +3518,13 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14085"/>
         <source>code_indent_var_def_blk</source>
-        <translation type="unfinished"></translation>
+        <translation>void foo()
+{
+   Logger log = new Logger();
+   Logger log= new Logger( );
+🡘🡘🡘↑
+    log.foo.bar    = 5;
+    log.narf.sweat = &quot;cat&quot;;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11041"/>
@@ -3524,12 +3534,18 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14090"/>
         <source>code_indent_var_def_cont</source>
-        <translation type="unfinished"></translation>
+        <translation>false                  | true
+static uint jhash(K x) | static uint jhash(K x)
+{                      | {
+    ubyte *k;          |     ubyte *k;
+    uint a,            |     uint a,
+         b,            |         b,
+         c;            |         c;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11043"/>
         <source>Whether to indent continued shift expressions (&apos;&lt;&lt;&apos; and &apos;&gt;&gt;&apos;) instead of aligning.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступать ли от продолжающихся выражений сдвига (&apos;&lt;&lt;&apos; и &apos;&gt;&gt;&apos;) вместо выравнивания.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11043"/>
@@ -3539,12 +3555,16 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="14095"/>
         <source>code_indent_shift</source>
-        <translation type="unfinished"></translation>
+        <translation>False               |        True
+return log          |        return log
+       &gt;&gt; var       |        &gt;&gt; var
+       &gt;&gt; second    |        &gt;&gt; second
+;                   |        ;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11045"/>
         <source>Whether to force indentation of function definitions to start in column 1.</source>
-        <translation type="unfinished"></translation>
+        <translation>Заставить ли отступы от определений функций начинаться в колонке 1.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14100"/>
@@ -3554,17 +3574,22 @@ if&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
     <message>
         <location filename="uncrustify_ui.py" line="11047"/>
         <source>Whether to indent continued function call parameters one indent level, rather than aligning parameters under the open parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли отступать для многострочных параметров вызова функции на один уровень отступов, а не выравнивать параметры под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14105"/>
         <source>code_indent_func_call_param</source>
-        <translation type="unfinished"></translation>
+        <translation> false                   ↓            |  true
+Type tmp = call_function(getObj().x,  |   Type tmp = call_function(getObj().x,
+                         getObj().y,  |   🡘🡘🡘🡘getObj().y,
+                         getObj().z,  |   🡘🡘🡘🡘getObj().z,
+                         getObj().w); |   🡘🡘🡘🡘getObj().w);
+                         ↑</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11049"/>
         <source>Whether to indent continued function definition parameters one indent level, rather than aligning parameters under the open parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли отступать для многострочных параметров определения функции на один уровень отступов, а не выравнивать параметры под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14110"/>
@@ -3856,7 +3881,7 @@ false: не добавлять отступ для скобки на той же
         <location filename="uncrustify_ui.py" line="14225"/>
         <source>code_indent_access_spec</source>
         <translation>class A{
-ЪЪpiblic:</translation>
+🡘🡘piblic:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11097"/>
@@ -3874,7 +3899,7 @@ false: не добавлять отступ для скобки на той же
         <translation>class{
   int b;
   public:
-  ЪЪint a;</translation>
+  🡘🡘int a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11099"/>
@@ -4026,7 +4051,7 @@ false: не добавлять отступ для скобки на той же
         <source>code_indent_align_assign</source>
         <translation>false                      true
 auto c = [] {              auto c = [] {
-        return true;                ЪЪЪЪreturn true;
+        return true;                🡘🡘🡘🡘return true;
     };                              };</translation>
     </message>
     <message>
@@ -4054,7 +4079,7 @@ auto c = [] {              auto c = [] {
         <source>code_indent_align_paren</source>
         <translation>false                      true
 foobar = bar[a + b + (c    foobar = bar[a + b + (c
-ЪЪЪЪ+ d)];                                       + d)];</translation>
+🡘🡘🡘🡘+ d)];                                       + d)];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11129"/>

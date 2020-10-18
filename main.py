@@ -3,7 +3,9 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 import sys, os
 import uncrustify_ui
 
-
+'''
+⮆🢣🡘⯮⯭⯯⯬⮰ ←↑→↓↔↕↖↗↘↙↚↛
+'''
 class MainWidget(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWidget, self).__init__()
