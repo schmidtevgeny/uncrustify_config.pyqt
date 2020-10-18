@@ -1,10 +1,22 @@
 #!/usr/bin/python3
 import os
 import re
+import platform
 
+'''
+⮰
+1234567890
+↑↑↑↑↑↑↑↑↑↑
+↓↓↓↓↓↓↓↓↓↓
+··········
+¶¶¶¶¶¶¶¶¶¶
+'''
 FontName = "Arial"
 FontNameSize = 14
-FontCode = "monospace"
+if platform.system() == "Windows":
+    FontCode = "Consolas"
+else:
+    FontCode = "monospace"
 FontCodeSize = 12
 regex = r"\.\s*[A-Z]"
 os.system("uncrustify --show-config > uncrustify.cfg")
@@ -294,4 +306,7 @@ f.close()
 
 os.system('pylupdate5 uncrustify_ui.py -ts uncrustify.ts')
 
-os.system("./main.py")
+if platform.system() == "Windows":
+    os.system("main.py")
+else:
+    os.system("./main.py")

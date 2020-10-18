@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru_RU" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="ru_RU">
 <context>
     <name>@default</name>
     <message>
@@ -62,7 +63,7 @@
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11244"/>
-        <source>Replace tab characters found in string literals with the escape sequence <byte value="x9"/> instead.</source>
+        <source>Replace tab characters found in string literals with the escape sequence 	 instead.</source>
         <translation>Замените символы табуляции, найденные в строковых литералах, на управляющую последовательность \t.</translation>
     </message>
     <message>
@@ -83,37 +84,37 @@
     <message>
         <location filename="uncrustify_ui.py" line="13545"/>
         <source>code_sp_do_brace_open</source>
-        <translation>do🡘{i++;}while(i&lt;10);</translation>
+        <translation>do·{i++;}while(i&lt;10);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13550"/>
         <source>code_sp_brace_close_while</source>
-        <translation>`do{i++;}🡘while(i&lt;10);`</translation>
+        <translation>`do{i++;}·while(i&lt;10);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13555"/>
         <source>code_sp_while_paren_open</source>
-        <translation>do{i++;}while🡘(i&lt;10);</translation>
+        <translation>do{i++;}while·(i&lt;10);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13560"/>
         <source>code_sp_arith</source>
-        <translation>i=a🡘+🡘b🡘/🡘2;</translation>
+        <translation>i=a·+·b·/·2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13565"/>
         <source>code_sp_arith_additive</source>
-        <translation>i=a🡘+🡘b/2;</translation>
+        <translation>i=a·+·b/2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13570"/>
         <source>code_sp_assign</source>
-        <translation>i🡘=🡘a+b/2;</translation>
+        <translation>i·=·a+b/2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13575"/>
         <source>code_sp_cpp_lambda_assign</source>
-        <translation>auto a = [🡘=🡘] (int *a, Something &amp; b)</translation>
+        <translation>auto a = [·=·] (int *a, Something &amp; b)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10531"/>
@@ -123,17 +124,17 @@
     <message>
         <location filename="uncrustify_ui.py" line="13580"/>
         <source>code_sp_cpp_lambda_square_paren</source>
-        <translation>[]🡘(int x){ ... }</translation>
+        <translation>[]·(int x){ ... }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13585"/>
         <source>code_sp_cpp_lambda_square_brace</source>
-        <translation>[]🡘{ ... }</translation>
+        <translation>[]·{ ... }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13590"/>
         <source>code_sp_cpp_lambda_paren_brace</source>
-        <translation>[](int x)🡘{ ... }</translation>
+        <translation>[](int x)·{ ... }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10533"/>
@@ -153,42 +154,42 @@
     <message>
         <location filename="uncrustify_ui.py" line="13595"/>
         <source>code_sp_cpp_lambda_fparen</source>
-        <translation>[]( ... ){ ... }🡘(...)</translation>
+        <translation>[]( ... ){ ... }·(...)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13600"/>
         <source>code_sp_assign_default</source>
-        <translation>int find(size_t idx🡘=🡘0);</translation>
+        <translation>int find(size_t idx·=·0);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13605"/>
         <source>code_sp_before_assign</source>
-        <translation>int decimal🡘=1; normal🡘+=2;</translation>
+        <translation>int decimal·=1; normal·+=2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13610"/>
         <source>code_sp_after_assign</source>
-        <translation>int decimal=🡘1; normal+=🡘2;</translation>
+        <translation>int decimal=·1; normal+=·2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13620"/>
         <source>code_sp_enum_assign</source>
-        <translation>enum FLAGS {FLAGS_decimal🡘=🡘1, ...}</translation>
+        <translation>enum FLAGS {FLAGS_decimal·=·1, ...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13625"/>
         <source>code_sp_enum_before_assign</source>
-        <translation>enum FLAGS {FLAGS_decimal🡘=1, ...}</translation>
+        <translation>enum FLAGS {FLAGS_decimal·=1, ...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13630"/>
         <source>code_sp_enum_after_assign</source>
-        <translation>enum FLAGS {FLAGS_decimal=🡘1, ...}</translation>
+        <translation>enum FLAGS {FLAGS_decimal=·1, ...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13635"/>
         <source>code_sp_enum_colon</source>
-        <translation>enum class comment_align_e🡘:🡘unsigned int</translation>
+        <translation>enum class comment_align_e·:·unsigned int</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10869"/>
@@ -198,33 +199,33 @@
     <message>
         <location filename="uncrustify_ui.py" line="13640"/>
         <source>code_sp_pp_concat</source>
-        <translation>#define LOG_FMT (sev, args ...) log_fmt(sev🡘##🡘args);</translation>
+        <translation>#define LOG_FMT (sev, args ...) log_fmt(sev·##·args);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13645"/>
         <source>code_sp_pp_stringify</source>
-        <translation>#define LOG_FMT (sev, args ...) log_fmt(#🡘args);</translation>
+        <translation>#define LOG_FMT (sev, args ...) log_fmt(#·args);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13650"/>
         <source>code_sp_before_pp_stringify</source>
-        <translation>#define LOG_FMT (sev, args ...) log_fmt(🡘#args);
-#define x(y) L🡘#y</translation>
+        <translation>#define LOG_FMT (sev, args ...) log_fmt(·#args);
+#define x(y) L·#y</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13655"/>
         <source>code_sp_bool</source>
-        <translation>bool a=b🡘||🡘c;</translation>
+        <translation>bool a=b·||·c;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13660"/>
         <source>code_sp_compare</source>
-        <translation>bool a=b🡘==🡘c;</translation>
+        <translation>bool a=b·==·c;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13665"/>
         <source>code_sp_inside_paren</source>
-        <translation>a=(🡘a+b🡘);</translation>
+        <translation>a=(·a+b·);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10563"/>
@@ -234,7 +235,7 @@
     <message>
         <location filename="uncrustify_ui.py" line="13670"/>
         <source>code_sp_paren_paren</source>
-        <translation>a=sin(🡘(a+b)*c)</translation>
+        <translation>a=sin(·(a+b)*c)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10565"/>
@@ -244,87 +245,87 @@
     <message>
         <location filename="uncrustify_ui.py" line="13675"/>
         <source>code_sp_cparen_oparen</source>
-        <translation>a.at(i)🡘(0)</translation>
+        <translation>a.at(i)·(0)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13685"/>
         <source>code_sp_paren_brace</source>
-        <translation>(struct foo)🡘{...}</translation>
+        <translation>(struct foo)·{...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13690"/>
         <source>code_sp_brace_brace</source>
-        <translation>{🡘{</translation>
+        <translation>{·{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13695"/>
         <source>code_sp_before_ptr_star</source>
-        <translation>void f(int🡘*a, int🡘*)</translation>
+        <translation>void f(int·*a, int·*)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13700"/>
         <source>code_sp_before_unnamed_ptr_star</source>
-        <translation>void f(int *a, int🡘*)</translation>
+        <translation>void f(int *a, int·*)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13705"/>
         <source>code_sp_between_ptr_star</source>
-        <translation>int *🡘*x;</translation>
+        <translation>int *·*x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13710"/>
         <source>code_sp_after_ptr_star</source>
-        <translation>void f(int*🡘a, int*)</translation>
+        <translation>void f(int*·a, int*)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13715"/>
         <source>code_sp_after_ptr_block_caret</source>
-        <translation>int^🡘a</translation>
+        <translation>int^·a</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13720"/>
         <source>code_sp_after_ptr_star_qualifier</source>
-        <translation>int *🡘const i;</translation>
+        <translation>int *·const i;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13725"/>
         <source>code_sp_after_ptr_star_func</source>
-        <translation>void *🡘bar()</translation>
+        <translation>void *·bar()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13730"/>
         <source>code_sp_ptr_star_paren</source>
-        <translation>void*🡘(*)()</translation>
+        <translation>void*·(*)()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13735"/>
         <source>code_sp_before_ptr_star_func</source>
-        <translation>void🡘*bar()</translation>
+        <translation>void·*bar()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13740"/>
         <source>code_sp_before_byref</source>
-        <translation>void f(int🡘&amp;a, int🡘&amp;)</translation>
+        <translation>void f(int·&amp;a, int·&amp;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13745"/>
         <source>code_sp_before_unnamed_byref</source>
-        <translation>void f(int&amp;a, int🡘&amp;)</translation>
+        <translation>void f(int&amp;a, int·&amp;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13750"/>
         <source>code_sp_after_byref</source>
-        <translation>void f(int🡘&amp;a, int&amp;)</translation>
+        <translation>void f(int·&amp;a, int&amp;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13755"/>
         <source>code_sp_after_byref_func</source>
-        <translation>int&amp;🡘f(int a)</translation>
+        <translation>int&amp;·f(int a)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13760"/>
         <source>code_sp_before_byref_func</source>
-        <translation>int🡘&amp;f(int a)</translation>
+        <translation>int·&amp;f(int a)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10683"/>
@@ -334,84 +335,84 @@
     <message>
         <location filename="uncrustify_ui.py" line="13765"/>
         <source>code_sp_after_type</source>
-        <translation>auto la = [] (int i1, int i2) -&gt; bool mutable🡘{...}
-typedef int🡘(FooClass::*ACTION) (int);</translation>
+        <translation>auto la = [] (int i1, int i2) -&gt; bool mutable·{...}
+typedef int·(FooClass::*ACTION) (int);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13770"/>
         <source>code_sp_after_decltype</source>
-        <translation>auto x1 = decltype(x)🡘{0};</translation>
+        <translation>auto x1 = decltype(x)·{0};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13775"/>
         <source>code_sp_before_template_paren</source>
-        <translation>template Foo🡘(
-class Foo🡘(</translation>
+        <translation>template Foo·(
+class Foo·(</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13780"/>
         <source>code_sp_template_angle</source>
-        <translation>template🡘&lt;bool a&gt;void f();</translation>
+        <translation>template·&lt;bool a&gt;void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13785"/>
         <source>code_sp_before_angle</source>
-        <translation>List🡘&lt;byte&gt;m; template🡘&lt;typename T&gt;static ...</translation>
+        <translation>List·&lt;byte&gt;m; template·&lt;typename T&gt;static ...</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13790"/>
         <source>code_sp_inside_angle</source>
-        <translation>template&lt;🡘bool a🡘&gt;void f();</translation>
+        <translation>template&lt;·bool a·&gt;void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13795"/>
         <source>code_sp_inside_angle_empty</source>
-        <translation>template&lt;🡘&gt;void f();</translation>
+        <translation>template&lt;·&gt;void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13800"/>
         <source>code_sp_angle_colon</source>
-        <translation>template&lt; &gt; struct Bar&lt; false &gt;🡘: Foo { };</translation>
+        <translation>template&lt; &gt; struct Bar&lt; false &gt;·: Foo { };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13805"/>
         <source>code_sp_after_angle</source>
-        <translation>template&lt;bool a&gt;🡘void f();</translation>
+        <translation>template&lt;bool a&gt;·void f();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13810"/>
         <source>code_sp_angle_paren</source>
-        <translation>new List&lt;byte&gt;🡘(foo);</translation>
+        <translation>new List&lt;byte&gt;·(foo);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13815"/>
         <source>code_sp_angle_paren_empty</source>
-        <translation>new List&lt;byte&gt;🡘();</translation>
+        <translation>new List&lt;byte&gt;·();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13820"/>
         <source>code_sp_angle_word</source>
-        <translation>List&lt;byte&gt;🡘m; template &lt;typename T&gt;🡘static ...</translation>
+        <translation>List&lt;byte&gt;·m; template &lt;typename T&gt;·static ...</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13825"/>
         <source>code_sp_angle_shift</source>
-        <translation>class Foo&lt;Bar&lt;T&gt;🡘&gt;</translation>
+        <translation>class Foo&lt;Bar&lt;T&gt;·&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13830"/>
         <source>code_sp_permit_cpp11_shift</source>
-        <translation>foo&lt;bar&lt;int&gt;🡘&gt;</translation>
+        <translation>foo&lt;bar&lt;int&gt;·&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13835"/>
         <source>code_sp_before_sparen</source>
-        <translation>if🡘(a)return;</translation>
+        <translation>if·(a)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13840"/>
         <source>code_sp_inside_sparen</source>
-        <translation>if(🡘a🡘)return;</translation>
+        <translation>if(·a·)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11383"/>
@@ -421,37 +422,37 @@ class Foo🡘(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13845"/>
         <source>code_sp_inside_sparen_open</source>
-        <translation>if(🡘a)return;</translation>
+        <translation>if(·a)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13850"/>
         <source>code_sp_inside_sparen_close</source>
-        <translation>if(a🡘)return;</translation>
+        <translation>if(a·)return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13855"/>
         <source>code_sp_after_sparen</source>
-        <translation>if(a)🡘return;</translation>
+        <translation>if(a)·return;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13860"/>
         <source>code_sp_sparen_brace</source>
-        <translation>if(a)🡘{return;}</translation>
+        <translation>if(a)·{return;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13865"/>
         <source>code_sp_invariant_paren</source>
-        <translation>invariant🡘(C)c</translation>
+        <translation>invariant·(C)c</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13870"/>
         <source>code_sp_after_invariant_paren</source>
-        <translation>invariant (C)🡘c</translation>
+        <translation>invariant (C)·c</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13875"/>
         <source>code_sp_special_semi</source>
-        <translation>while(readLine())🡘;</translation>
+        <translation>while(readLine())·;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10867"/>
@@ -461,77 +462,77 @@ class Foo🡘(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13880"/>
         <source>code_sp_before_semi</source>
-        <translation>int a🡘;for(int i=0;;i++){</translation>
+        <translation>int a·;for(int i=0;;i++){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13885"/>
         <source>code_sp_before_semi_for</source>
-        <translation>for(int i=0🡘;i&lt;10🡘;i++){</translation>
+        <translation>for(int i=0·;i&lt;10·;i++){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13890"/>
         <source>code_sp_before_semi_for_empty</source>
-        <translation>for(🡘;🡘;)</translation>
+        <translation>for(·;·;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13895"/>
         <source>code_sp_after_semi</source>
-        <translation>a=b;🡘c=d;//comm</translation>
+        <translation>a=b;·c=d;//comm</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13900"/>
         <source>code_sp_after_semi_for</source>
-        <translation>for(int i=0;🡘i&lt;10;🡘i++){</translation>
+        <translation>for(int i=0;·i&lt;10;·i++){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13905"/>
         <source>code_sp_after_semi_for_empty</source>
-        <translation>for(;;🡘)</translation>
+        <translation>for(;;·)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13910"/>
         <source>code_sp_before_square</source>
-        <translation>int main(int argc , char *argv🡘[]){ int a🡘[2]; const char *names [] =</translation>
+        <translation>int main(int argc , char *argv·[]){ int a·[2]; const char *names [] =</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13915"/>
         <source>code_sp_before_vardef_square</source>
-        <translation>int main(int argc , char *argv🡘[]){ int a🡘[2]; const char *names [] =</translation>
+        <translation>int main(int argc , char *argv·[]){ int a·[2]; const char *names [] =</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13920"/>
         <source>code_sp_before_square_asm_block</source>
-        <translation>bar    %0,🡘[%4]\n\t&quot;</translation>
+        <translation>bar    %0,·[%4]\n\t&quot;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13925"/>
         <source>code_sp_before_squares</source>
-        <translation>int main(int argc , char *argv []){ int a [2]; const char *names🡘[] =</translation>
+        <translation>int main(int argc , char *argv []){ int a [2]; const char *names·[] =</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13930"/>
         <source>code_sp_cpp_before_struct_binding</source>
-        <translation>auto const🡘[sequence, type, firstPosition, lastPosition] = parseLink(inLink);</translation>
+        <translation>auto const·[sequence, type, firstPosition, lastPosition] = parseLink(inLink);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13935"/>
         <source>code_sp_inside_square</source>
-        <translation>a[🡘n🡘] = 3;</translation>
+        <translation>a[·n·] = 3;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13940"/>
         <source>code_sp_inside_square_oc_array</source>
-        <translation>a=@[🡘object1, object2, object3🡘]</translation>
+        <translation>a=@[·object1, object2, object3·]</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13945"/>
         <source>code_sp_after_comma</source>
-        <translation>a,🡘b</translation>
+        <translation>a,·b</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13950"/>
         <source>code_sp_before_comma</source>
-        <translation>a🡘,b</translation>
+        <translation>a·,b</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11427"/>
@@ -541,7 +542,7 @@ class Foo🡘(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13955"/>
         <source>code_sp_after_mdatype_commas</source>
-        <translation>int[,,🡘] array1 = new int[4, 2, 3];</translation>
+        <translation>int[,,·] array1 = new int[4, 2, 3];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11429"/>
@@ -551,7 +552,7 @@ class Foo🡘(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13960"/>
         <source>code_sp_before_mdatype_commas</source>
-        <translation>int[🡘,,] array1 = new int[4, 2, 3];</translation>
+        <translation>int[·,,] array1 = new int[4, 2, 3];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11431"/>
@@ -561,7 +562,7 @@ class Foo🡘(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13965"/>
         <source>code_sp_between_mdatype_commas</source>
-        <translation>int[,🡘,] array1 = new int[4, 2, 3];</translation>
+        <translation>int[,·,] array1 = new int[4, 2, 3];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10683"/>
@@ -571,74 +572,74 @@ class Foo🡘(</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13970"/>
         <source>code_sp_paren_comma</source>
-        <translation>(🡘,</translation>
+        <translation>(·,</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13975"/>
         <source>code_sp_before_ellipsis</source>
-        <translation>#define LOG_FMT (sev, args🡘...)
-template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Elements&gt;</translation>
+        <translation>#define LOG_FMT (sev, args·...)
+template&lt;int i, int·... Indexes, typename IdxHolder, typename·... Elements&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13980"/>
         <source>code_sp_type_ellipsis</source>
         <translation>#define LOG_FMT (sev, args...)
-template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Elements&gt;</translation>
+template&lt;int i, int·... Indexes, typename IdxHolder, typename·... Elements&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13990"/>
         <source>code_sp_paren_ellipsis</source>
-        <translation>#define LOG_FMT (sev, args...🡘)</translation>
+        <translation>#define LOG_FMT (sev, args...·)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13995"/>
         <source>code_sp_paren_qualifier</source>
-        <translation>float fabs(fload x)🡘const</translation>
+        <translation>float fabs(fload x)·const</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14000"/>
         <source>code_sp_paren_noexcept</source>
-        <translation>float fabs(fload x)🡘noexept</translation>
+        <translation>float fabs(fload x)·noexept</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14005"/>
         <source>code_sp_after_class_colon</source>
-        <translation>class my_class:🡘baseclass1</translation>
+        <translation>class my_class:·baseclass1</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14010"/>
         <source>code_sp_before_class_colon</source>
-        <translation>class my_class🡘:baseclass1</translation>
+        <translation>class my_class·:baseclass1</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14015"/>
         <source>code_sp_after_constr_colon</source>
-        <translation>my_class::my_class(int b):🡘x(b){...}</translation>
+        <translation>my_class::my_class(int b):·x(b){...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14020"/>
         <source>code_sp_before_constr_colon</source>
-        <translation>my_class::my_class(int b)🡘:x(b){...}</translation>
+        <translation>my_class::my_class(int b)·:x(b){...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14025"/>
         <source>code_sp_before_case_colon</source>
-        <translation>case 1🡘:</translation>
+        <translation>case 1·:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14030"/>
         <source>code_sp_after_operator</source>
-        <translation>T operator🡘+(T v)</translation>
+        <translation>T operator·+(T v)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14035"/>
         <source>code_sp_after_operator_sym</source>
-        <translation>`operator ++🡘(</translation>
+        <translation>`operator ++·(</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14040"/>
         <source>code_sp_after_operator_sym_empty</source>
-        <translation>operator *🡘()</translation>
+        <translation>operator *·()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10713"/>
@@ -648,12 +649,12 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14045"/>
         <source>code_sp_after_cast</source>
-        <translation>(int)🡘a</translation>
+        <translation>(int)·a</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14050"/>
         <source>code_sp_inside_paren_cast</source>
-        <translation>(🡘int🡘)a</translation>
+        <translation>(·int·)a</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10717"/>
@@ -663,18 +664,18 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14055"/>
         <source>code_sp_cpp_cast_paren</source>
-        <translation>int🡘(exp)</translation>
+        <translation>int·(exp)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14060"/>
         <source>code_sp_sizeof_paren</source>
-        <translation>a=sizeof🡘(int)</translation>
+        <translation>a=sizeof·(int)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14065"/>
         <source>code_sp_sizeof_ellipsis</source>
         <translation>template &lt;typename... Args&gt; std::size_t GetSize (Args&amp;&amp;... args) { 
-    std::size_t Count= sizeof🡘...(Args); 
+    std::size_t Count= sizeof·...(Args); 
     return Count;
 }</translation>
     </message>
@@ -682,134 +683,134 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
         <location filename="uncrustify_ui.py" line="14070"/>
         <source>code_sp_sizeof_ellipsis_paren</source>
         <translation>template &lt;typename... Args&gt; std::size_t GetSize (Args&amp;&amp;... args) { 
-    std::size_t Count= sizeof...🡘(Args); 
+    std::size_t Count= sizeof...·(Args); 
     return Count;
 }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14075"/>
         <source>code_sp_decltype_paren</source>
-        <translation>auto a=decltype🡘(x){10};</translation>
+        <translation>auto a=decltype·(x){10};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14085"/>
         <source>code_sp_inside_braces_enum</source>
-        <translation>enum Status {🡘Unknown, Success, Error🡘};</translation>
+        <translation>enum Status {·Unknown, Success, Error·};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14090"/>
         <source>code_sp_inside_braces_struct</source>
-        <translation>union {🡘int m_size; int m_any;🡘};</translation>
+        <translation>union {·int m_size; int m_any;·};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14100"/>
         <source>code_sp_after_type_brace_init_lst_open</source>
-        <translation>int a0[][] = {🡘{🡘1}};</translation>
+        <translation>int a0[][] = {·{·1}};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14105"/>
         <source>code_sp_before_type_brace_init_lst_close</source>
-        <translation>int a0[][] = {{1🡘}🡘};</translation>
+        <translation>int a0[][] = {{1·}·};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14110"/>
         <source>code_sp_inside_type_brace_init_lst</source>
-        <translation>int a0[][] = {🡘{🡘1🡘}🡘};</translation>
+        <translation>int a0[][] = {·{·1·}·};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14115"/>
         <source>code_sp_inside_braces</source>
-        <translation>while(1){🡘i++;🡘}</translation>
+        <translation>while(1){·i++;·}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14120"/>
         <source>code_sp_inside_braces_empty</source>
-        <translation>while(1){🡘}</translation>
+        <translation>while(1){·}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14125"/>
         <source>code_sp_trailing_return</source>
-        <translation>auto max(int a, int b)🡘-&gt;🡘int;</translation>
+        <translation>auto max(int a, int b)·-&gt;·int;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14130"/>
         <source>code_sp_type_func</source>
-        <translation>int c(int &amp;);int*🡘c(int &amp;){}</translation>
+        <translation>int c(int &amp;);int*·c(int &amp;){}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14140"/>
         <source>code_sp_func_proto_paren</source>
-        <translation>void f🡘(int i);</translation>
+        <translation>void f·(int i);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14145"/>
         <source>code_sp_func_proto_paren_empty</source>
-        <translation>void f🡘();</translation>
+        <translation>void f·();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14150"/>
         <source>code_sp_func_type_paren</source>
-        <translation>typedef void timer_cb🡘(struct timer_node *n);</translation>
+        <translation>typedef void timer_cb·(struct timer_node *n);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14155"/>
         <source>code_sp_func_def_paren</source>
-        <translation>int a🡘(int b) {};</translation>
+        <translation>int a·(int b) {};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14160"/>
         <source>code_sp_func_def_paren_empty</source>
-        <translation>int a🡘() {};</translation>
+        <translation>int a·() {};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14165"/>
         <source>code_sp_inside_fparens</source>
-        <translation>int a (🡘);</translation>
+        <translation>int a (·);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14170"/>
         <source>code_sp_inside_fparen</source>
-        <translation># void ( int a ) (🡘int b🡘);</translation>
+        <translation># void ( int a ) (·int b·);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14175"/>
         <source>code_sp_inside_tparen</source>
-        <translation>void (🡘*x🡘)(...)`</translation>
+        <translation>void (·*x·)(...)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14180"/>
         <source>code_sp_after_tparen_close</source>
-        <translation>void (*x)🡘(...)</translation>
+        <translation>void (*x)·(...)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14185"/>
         <source>code_sp_square_fparen</source>
-        <translation>auto a = [ = ]🡘(int *a, Something &amp; b)</translation>
+        <translation>auto a = [ = ]·(int *a, Something &amp; b)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14190"/>
         <source>code_sp_fparen_brace</source>
-        <translation>int a (int b)🡘{};</translation>
+        <translation>int a (int b)·{};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14205"/>
         <source>code_sp_func_call_paren</source>
-        <translation>x=sin🡘(5);</translation>
+        <translation>x=sin·(5);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14210"/>
         <source>code_sp_func_call_paren_empty</source>
-        <translation>x=rand🡘();</translation>
+        <translation>x=rand·();</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14215"/>
         <source>code_sp_func_call_user_paren</source>
-        <translation>foo🡘(ABC)</translation>
+        <translation>foo·(ABC)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14220"/>
         <source>code_sp_func_call_user_inside_fparen</source>
-        <translation>foo(🡘ABC🡘);</translation>
+        <translation>foo(·ABC·);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10785"/>
@@ -819,223 +820,223 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14225"/>
         <source>code_sp_func_call_user_paren_paren</source>
-        <translation>foo(🡘( ABC )🡘)</translation>
+        <translation>foo(·( ABC )·)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14230"/>
         <source>code_sp_func_class_paren</source>
-        <translation>myclass🡘(int i){</translation>
+        <translation>myclass·(int i){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14235"/>
         <source>code_sp_func_class_paren_empty</source>
-        <translation>myclass🡘(){</translation>
+        <translation>myclass·(){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14240"/>
         <source>code_sp_return_paren</source>
-        <translation>return🡘(-1);</translation>
+        <translation>return·(-1);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14245"/>
         <source>code_sp_return_brace</source>
-        <translation>return🡘{ -1, -1, -1 };</translation>
+        <translation>return·{ -1, -1, -1 };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14250"/>
         <source>code_sp_attribute_paren</source>
-        <translation>struct sockaddr *sa __attribute__🡘((unused))</translation>
+        <translation>struct sockaddr *sa __attribute__·((unused))</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14255"/>
         <source>code_sp_defined_paren</source>
-        <translation>#if defined🡘(FOO)</translation>
+        <translation>#if defined·(FOO)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14260"/>
         <source>code_sp_throw_paren</source>
-        <translation>throw🡘(something)</translation>
+        <translation>throw·(something)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14265"/>
         <source>code_sp_after_throw</source>
-        <translation>@throw🡘[...];</translation>
+        <translation>@throw·[...];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14270"/>
         <source>code_sp_catch_paren</source>
-        <translation>catch🡘(something) { }</translation>
+        <translation>catch·(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14275"/>
         <source>code_sp_oc_catch_paren</source>
-        <translation>@catch🡘(something) { }</translation>
+        <translation>@catch·(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14280"/>
         <source>code_sp_before_oc_proto_list</source>
-        <translation>@protocol Protocol🡘&lt;Protocol_A&gt;
-@interface MyClass : NSObject🡘&lt;MyProtocol&gt;</translation>
+        <translation>@protocol Protocol·&lt;Protocol_A&gt;
+@interface MyClass : NSObject·&lt;MyProtocol&gt;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14285"/>
         <source>code_sp_oc_classname_paren</source>
-        <translation>@interface className🡘(categoryName)&lt;ProtocolName&gt;:BaseClass</translation>
+        <translation>@interface className·(categoryName)&lt;ProtocolName&gt;:BaseClass</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14290"/>
         <source>code_sp_version_paren</source>
-        <translation>version🡘(something) { }</translation>
+        <translation>version·(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14295"/>
         <source>code_sp_scope_paren</source>
-        <translation>scope🡘(something) { }</translation>
+        <translation>scope·(something) { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14300"/>
         <source>code_sp_super_paren</source>
-        <translation>super🡘(something)</translation>
+        <translation>super·(something)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14305"/>
         <source>code_sp_this_paren</source>
-        <translation>this🡘(something)</translation>
+        <translation>this·(something)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14310"/>
         <source>code_sp_macro</source>
-        <translation>#define FS_NOCOW_FL🡘0x00800000</translation>
+        <translation>#define FS_NOCOW_FL·0x00800000</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14315"/>
         <source>code_sp_macro_func</source>
-        <translation>#define log(x)🡘qMessage(x.toStdString().c_str());</translation>
+        <translation>#define log(x)·qMessage(x.toStdString().c_str());</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14320"/>
         <source>code_sp_else_brace</source>
-        <translation>if(i&gt;0){i++;}else🡘{i=-i;}</translation>
+        <translation>if(i&gt;0){i++;}else·{i=-i;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14325"/>
         <source>code_sp_brace_else</source>
-        <translation>if(i&gt;0){i++;}🡘else{i=-i;}</translation>
+        <translation>if(i&gt;0){i++;}·else{i=-i;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14330"/>
         <source>code_sp_brace_typedef</source>
-        <translation>typedef struct { int val; int sel; }🡘DiceInfo;</translation>
+        <translation>typedef struct { int val; int sel; }·DiceInfo;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14335"/>
         <source>code_sp_catch_brace</source>
-        <translation>catch (decl)🡘{</translation>
+        <translation>catch (decl)·{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14340"/>
         <source>code_sp_oc_catch_brace</source>
-        <translation>@catch (decl) 🡘 {</translation>
+        <translation>@catch (decl) · {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14345"/>
         <source>code_sp_brace_catch</source>
-        <translation>}🡘catch (decl){</translation>
+        <translation>}·catch (decl){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14350"/>
         <source>code_sp_oc_brace_catch</source>
-        <translation>}🡘@catch (decl)  {</translation>
+        <translation>}·@catch (decl)  {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14355"/>
         <source>code_sp_finally_brace</source>
-        <translation>}finally (decl)🡘{</translation>
+        <translation>}finally (decl)·{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14360"/>
         <source>code_sp_brace_finally</source>
-        <translation>}🡘finally (decl){</translation>
+        <translation>}·finally (decl){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14365"/>
         <source>code_sp_try_brace</source>
-        <translation>try🡘{</translation>
+        <translation>try·{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14370"/>
         <source>code_sp_getset_brace</source>
         <translation>public double Seconds
 {
-    get🡘{ return _seconds; }
-    set🡘{ _seconds = value; }
+    get·{ return _seconds; }
+    set·{ _seconds = value; }
 }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14375"/>
         <source>code_sp_word_brace_init_lst</source>
-        <translation>int a🡘{5};</translation>
+        <translation>int a·{5};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14380"/>
         <source>code_sp_word_brace_ns</source>
-        <translation>namespace std🡘{</translation>
+        <translation>namespace std·{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14385"/>
         <source>code_sp_before_dc</source>
-        <translation>class Parser🡘:: ParserPrivate { }</translation>
+        <translation>class Parser·:: ParserPrivate { }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14390"/>
         <source>code_sp_after_dc</source>
-        <translation>class Parser ::🡘ParserPrivate { };</translation>
+        <translation>class Parser ::·ParserPrivate { };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14400"/>
         <source>code_sp_not</source>
-        <translation>if(!🡘a)</translation>
+        <translation>if(!·a)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14405"/>
         <source>code_sp_inv</source>
-        <translation>int a=~🡘b;</translation>
+        <translation>int a=~·b;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14410"/>
         <source>code_sp_addr</source>
-        <translation>i=s.toDouble(&amp;🡘ok);</translation>
+        <translation>i=s.toDouble(&amp;·ok);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14415"/>
         <source>code_sp_member</source>
-        <translation>ui🡘-&gt;🡘Label1🡘-&gt;🡘text()🡘.🡘toDouble()</translation>
+        <translation>ui·-&gt;·Label1·-&gt;·text()·.·toDouble()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14420"/>
         <source>code_sp_deref</source>
-        <translation>int a=*🡘b;</translation>
+        <translation>int a=*·b;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14425"/>
         <source>code_sp_sign</source>
-        <translation>x = -🡘5;y = +🡘7</translation>
+        <translation>x = -·5;y = +·7</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14430"/>
         <source>code_sp_incdec</source>
-        <translation>(--🡘x);y🡘++;</translation>
+        <translation>(--·x);y·++;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14435"/>
         <source>code_sp_before_nl_cont</source>
-        <translation>#define wakeUpCaller(cond)🡘\`
+        <translation>#define wakeUpCaller(cond)·\`
    do { if (log_sev_on(sev)) { log_fmt(sev, ## args); } } while (0)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14440"/>
         <source>code_sp_after_oc_scope</source>
-        <translation>-🡘(void) foo; +🡘(int) bar;</translation>
+        <translation>-·(void) foo; +·(int) bar;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10873"/>
@@ -1050,17 +1051,17 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14450"/>
         <source>code_sp_before_oc_colon</source>
-        <translation>-(int) f:🡘(int) x;</translation>
+        <translation>-(int) f:·(int) x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14455"/>
         <source>code_sp_after_oc_dict_colon</source>
-        <translation>NSDictionary *test = @{@&quot;foo&quot; :🡘@&quot;bar&quot;};</translation>
+        <translation>NSDictionary *test = @{@&quot;foo&quot; :·@&quot;bar&quot;};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14460"/>
         <source>code_sp_before_oc_dict_colon</source>
-        <translation>NSDictionary *test = @{@&quot;foo&quot;🡘:@&quot;bar&quot;};</translation>
+        <translation>NSDictionary *test = @{@&quot;foo&quot;·:@&quot;bar&quot;};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10881"/>
@@ -1070,7 +1071,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14465"/>
         <source>code_sp_after_send_oc_colon</source>
-        <translation>[object setValue:🡘1];</translation>
+        <translation>[object setValue:·1];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10883"/>
@@ -1080,7 +1081,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14470"/>
         <source>code_sp_before_send_oc_colon</source>
-        <translation>[object setValue🡘:1];</translation>
+        <translation>[object setValue·:1];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10885"/>
@@ -1090,7 +1091,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14475"/>
         <source>code_sp_after_oc_type</source>
-        <translation>-(int)f: (int)🡘x;</translation>
+        <translation>-(int)f: (int)·x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10887"/>
@@ -1100,7 +1101,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14480"/>
         <source>code_sp_after_oc_return_type</source>
-        <translation>-(int)🡘f:(int)x;</translation>
+        <translation>-(int)·f:(int)x;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10889"/>
@@ -1110,7 +1111,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14485"/>
         <source>code_sp_after_oc_at_sel</source>
-        <translation>@selector🡘(msgName)</translation>
+        <translation>@selector·(msgName)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10891"/>
@@ -1120,7 +1121,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14490"/>
         <source>code_sp_after_oc_at_sel_parens</source>
-        <translation>@selector(foo)🡘a:</translation>
+        <translation>@selector(foo)·a:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10893"/>
@@ -1130,7 +1131,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14495"/>
         <source>code_sp_inside_oc_at_sel_parens</source>
-        <translation>@selector(🡘foo🡘)</translation>
+        <translation>@selector(·foo·)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10895"/>
@@ -1145,57 +1146,57 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14520"/>
         <source>code_sp_after_oc_synchronized</source>
-        <translation>@synchronized🡘(foo)</translation>
+        <translation>@synchronized·(foo)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14525"/>
         <source>code_sp_cond_colon</source>
-        <translation>b ? t🡘:🡘f</translation>
+        <translation>b ? t·:·f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14530"/>
         <source>code_sp_cond_colon_before</source>
-        <translation>b ? t🡘: f</translation>
+        <translation>b ? t·: f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14535"/>
         <source>code_sp_cond_colon_after</source>
-        <translation>b ? t :🡘f</translation>
+        <translation>b ? t :·f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14540"/>
         <source>code_sp_cond_question</source>
-        <translation>b🡘?🡘t : f</translation>
+        <translation>b·?·t : f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14545"/>
         <source>code_sp_cond_question_before</source>
-        <translation>b🡘? t : f</translation>
+        <translation>b·? t : f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14550"/>
         <source>code_sp_cond_question_after</source>
-        <translation>b ?🡘t : f</translation>
+        <translation>b ?·t : f</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14555"/>
         <source>code_sp_cond_ternary_short</source>
-        <translation>(a ?🡘: b)</translation>
+        <translation>(a ?·: b)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14570"/>
         <source>code_sp_after_for_colon</source>
-        <translation>for (Type var :🡘expr)</translation>
+        <translation>for (Type var :·expr)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14575"/>
         <source>code_sp_before_for_colon</source>
-        <translation>for (Type var🡘: expr)</translation>
+        <translation>for (Type var·: expr)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14580"/>
         <source>code_sp_extern_paren</source>
-        <translation>extern🡘(C)</translation>
+        <translation>extern·(C)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10929"/>
@@ -1205,47 +1206,47 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="14585"/>
         <source>code_sp_cmt_cpp_start</source>
-        <translation>i++; //🡘A</translation>
+        <translation>i++; //·A</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14610"/>
         <source>code_sp_between_new_paren</source>
-        <translation>new🡘()</translation>
+        <translation>new·()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14615"/>
         <source>code_sp_after_newop_paren</source>
-        <translation>new(foo)🡘BAR</translation>
+        <translation>new(foo)·BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14620"/>
         <source>code_sp_inside_newop_paren</source>
-        <translation>new(🡘foo🡘) BAR</translation>
+        <translation>new(·foo·) BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14625"/>
         <source>code_sp_inside_newop_paren_open</source>
-        <translation>new(🡘foo) BAR</translation>
+        <translation>new(·foo) BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14630"/>
         <source>code_sp_inside_newop_paren_close</source>
-        <translation>new(foo🡘) BAR</translation>
+        <translation>new(foo·) BAR</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14635"/>
         <source>code_sp_before_tr_emb_cmt</source>
-        <translation>int a;🡘/* emb cmt */ int b;🡘// trailing cmt</translation>
+        <translation>int a;·/* emb cmt */ int b;·// trailing cmt</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14640"/>
         <source>code_sp_num_before_tr_emb_cmt</source>
-        <translation>int a;🡘∙∙∙∙∙∙∙∙∙🡘/* emb cmt */ int b;🡘∙∙∙∙∙∙∙∙∙∙🡘// trailing cmt</translation>
+        <translation>int a;·∙∙∙∙∙∙∙∙∙·/* emb cmt */ int b;·∙∙∙∙∙∙∙∙∙∙·// trailing cmt</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14655"/>
         <source>code_sp_after_noexcept</source>
-        <translation>Foo() noexcept🡘() {}</translation>
+        <translation>Foo() noexcept·() {}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12664"/>
@@ -1454,7 +1455,7 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12711"/>
-        <source>(C#) Warning is given if doing tab-to-<byte value="x9"/> replacement and we have found one in a C# verbatim string literal.</source>
+        <source>(C#) Warning is given if doing tab-to-	 replacement and we have found one in a C# verbatim string literal.</source>
         <translation>(C#) Выдавать предупреждение при замене tab на \t, найденых в строковом литерале на C#.</translation>
     </message>
     <message>
@@ -1482,12 +1483,12 @@ template&lt;int i, int🡘... Indexes, typename IdxHolder, typename🡘... Eleme
     <message>
         <location filename="uncrustify_ui.py" line="13480"/>
         <source>code_input_tab_size</source>
-        <translation>🡘🡘🡘🡘int a;</translation>
+        <translation>····int a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13485"/>
         <source>code_output_tab_size</source>
-        <translation>🡘🡘🡘🡘int a;</translation>
+        <translation>····int a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11240"/>
@@ -1648,22 +1649,22 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11277"/>
         <source>Add or remove space after the capture specification of a C++11 lambda when an argument list is present, as in &apos;[] &lt;here&gt; (int x){ ... }&apos;.</source>
-        <translation>Добавьте или удалите пробел после спецификации захвата лямбды C++11 при наличии списка аргументов, как в `[]🡘(int x){ ... }`.</translation>
+        <translation>Добавьте или удалите пробел после спецификации захвата лямбды C++11 при наличии списка аргументов, как в `[]·(int x){ ... }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11279"/>
         <source>Add or remove space after the capture specification of a C++11 lambda with no argument list is present, as in &apos;[] &lt;here&gt; { ... }&apos;.</source>
-        <translation>Добавлять или удалять пробел после спецификации захвата лямбды C++11 без списка аргументов, как в `[]🡘{ ... }`.</translation>
+        <translation>Добавлять или удалять пробел после спецификации захвата лямбды C++11 без списка аргументов, как в `[]·{ ... }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11281"/>
         <source>Add or remove space after the argument list of a C++11 lambda, as in &apos;[](int x) &lt;here&gt; { ... }&apos;.</source>
-        <translation>Добавьте или удалите пробел после списка аргументов лямбды C++11, как в `[](int x)🡘{ ... }`.</translation>
+        <translation>Добавьте или удалите пробел после списка аргументов лямбды C++11, как в `[](int x)·{ ... }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11283"/>
         <source>Add or remove space between a lambda body and its call operator of an immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&apos;.</source>
-        <translation>Добавить или удалить пробел между телом лямбды и его оператором вызова, как в `[]( ... ){ ... }🡘(...)`.</translation>
+        <translation>Добавить или удалить пробел между телом лямбды и его оператором вызова, как в `[]( ... ){ ... }·(...)`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11285"/>
@@ -1738,7 +1739,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11305"/>
         <source>Add or remove space before preprocessor &apos;#&apos; stringify operator as in &apos;#define x(y) L#y&apos;.</source>
-        <translation>Добавить или удалить пробел перед препроцессорной коммандой строки &apos;#&apos; в смысле &apos;#define x(y) L🡘#y&apos;.</translation>
+        <translation>Добавить или удалить пробел перед препроцессорной коммандой строки &apos;#&apos; в смысле &apos;#define x(y) L·#y&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11307"/>
@@ -1758,12 +1759,12 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11313"/>
         <source>Add or remove space between nested parentheses, i.e. &apos;((&apos; vs. &apos;) )&apos;.</source>
-        <translation>Добавить или удалить пробел между вложенными скобками, т.е &apos;(🡘(&apos;.</translation>
+        <translation>Добавить или удалить пробел между вложенными скобками, т.е &apos;(·(&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11315"/>
         <source>Add or remove space between back-to-back parentheses, i.e. &apos;)(&apos; vs. &apos;) (&apos;.</source>
-        <translation>Добавить или удалить пробел между соседними скобками, т.е. &apos;)🡘(&apos;.</translation>
+        <translation>Добавить или удалить пробел между соседними скобками, т.е. &apos;)·(&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11317"/>
@@ -1773,10 +1774,10 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="13680"/>
         <source>code_sp_balance_nested_parens</source>
-        <translation>if (🡘f.exists()🡘)
+        <translation>if (·f.exists()·)
 {
-    f.copy(🡘imgpath + images.at(i)🡘);
-    qWarning(🡘(🡘imgpath + images.at(i)🡘).toStdString().c_str() );
+    f.copy(·imgpath + images.at(i)·);
+    qWarning(·(·imgpath + images.at(i)·).toStdString().c_str() );
 }</translation>
     </message>
     <message>
@@ -1787,7 +1788,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11321"/>
         <source>Add or remove space between nested braces, i.e. &apos;{{&apos; vs &apos;{ {&apos;.</source>
-        <translation>Добавить или удалить пробел между вложенными скобками, т.е. &apos;{🡘{&apos;.</translation>
+        <translation>Добавить или удалить пробел между вложенными скобками, т.е. &apos;{·{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11323"/>
@@ -1902,7 +1903,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11355"/>
         <source>(D) Add or remove space before the parenthesis in the D constructs &apos;template Foo(&apos; and &apos;class Foo(&apos;.</source>
-        <translation>(D) Добавить или удалить пробел перед скобкой ( в D-конструкторе &apos;template Foo🡘(&apos; и &apos;class Foo🡘(&apos;.</translation>
+        <translation>(D) Добавить или удалить пробел перед скобкой ( в D-конструкторе &apos;template Foo·(&apos; и &apos;class Foo·(&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11357"/>
@@ -1942,17 +1943,17 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11369"/>
         <source>Add or remove space between &apos;&gt;&apos; and &apos;(&apos; as found in &apos;new List&lt;byte&gt;(foo);&apos;.</source>
-        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;(&apos; как  в `new List&lt;byte&gt;🡘(foo);`.</translation>
+        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;(&apos; как  в `new List&lt;byte&gt;·(foo);`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11371"/>
         <source>Add or remove space between &apos;&gt;&apos; and &apos;()&apos; as found in &apos;new List&lt;byte&gt;();&apos;.</source>
-        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;()&apos; как в `new List&lt;byte&gt;🡘();`.</translation>
+        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и &apos;()&apos; как в `new List&lt;byte&gt;·();`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11373"/>
         <source>Add or remove space between &apos;&gt;&apos; and a word as in &apos;List&lt;byte&gt; m;&apos; or &apos;template &lt;typename T&gt; static ...&apos;.</source>
-        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и word как в `List&lt;byte&gt;🡘m; template &lt;typename T&gt;🡘static ...`.</translation>
+        <translation>Добавить или удалить пробел между &apos;&gt;&apos; и word как в `List&lt;byte&gt;·m; template &lt;typename T&gt;·static ...`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11375"/>
@@ -1962,7 +1963,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11377"/>
         <source>(C++11) Permit removal of the space between &apos;&gt;&gt;&apos; in &apos;foo&lt;bar&lt;int&gt; &gt;&apos;.</source>
-        <translation>(C++11) Разрешение на удаление пробела между &apos;&gt;&gt;&apos; в `foo&lt;bar&lt;int&gt;🡘&gt;`.</translation>
+        <translation>(C++11) Разрешение на удаление пробела между &apos;&gt;&gt;&apos; в `foo&lt;bar&lt;int&gt;·&gt;`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11377"/>
@@ -2282,7 +2283,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="14135"/>
         <source>code_sp_type_brace_init_lst</source>
-        <translation>auto i12 = int🡘{42};</translation>
+        <translation>auto i12 = int·{42};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11501"/>
@@ -2357,7 +2358,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="14195"/>
         <source>code_sp_fparen_brace_initializer</source>
-        <translation>    return new ProcessStartInfo(&quot;smthg&quot;)🡘{
+        <translation>    return new ProcessStartInfo(&quot;smthg&quot;)·{
                Arguments = string.Format(&quot;-9 --ss -S aa \&quot;{0}\&quot;&quot;, file),
                WorkingDirectory = Directory.GetCurrentDirectory(),
                UseShellExecute = false,
@@ -2372,7 +2373,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="14200"/>
         <source>code_sp_fparen_dbrace</source>
-        <translation>member.func(new List()🡘{{
+        <translation>member.func(new List()·{{
    add(&quot;Text&quot;);
    add(&quot;Text&quot;,
        &quot;Hello&quot;);
@@ -2476,7 +2477,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11557"/>
         <source>(OC) Add or remove space before Objective-C protocol list as in &apos;@protocol Protocol&lt;here&gt;&lt;Protocol_A&gt;&apos; or &apos;@interface MyClass : NSObject&lt;here&gt;&lt;MyProtocol&gt;&apos;.</source>
-        <translation>(OC) Добавьте или удалите пробел перед списком протоколов Objective-C, как в &apos;@protocol Protocol🡘&lt;Protocol_A&gt;&apos; или &apos;@interface MyClass : NSObject🡘&lt;MyProtocol&gt;&apos;&apos;.</translation>
+        <translation>(OC) Добавьте или удалите пробел перед списком протоколов Objective-C, как в &apos;@protocol Protocol·&lt;Protocol_A&gt;&apos; или &apos;@interface MyClass : NSObject·&lt;MyProtocol&gt;&apos;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11559"/>
@@ -2531,12 +2532,12 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="11579"/>
         <source>Add or remove space before the &apos;{&apos; of a &apos;catch&apos; statement, if the &apos;{&apos; and &apos;catch&apos; are on the same line, as in &apos;catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation>Добавьте или удалите пробел перед &apos;{&apos; в операторе &apos;catch&apos;, если &apos;{&apos; и &apos;catch&apos; находятся на одной строке, как в операторе &apos;catch (decl) 🡘 {&apos;.</translation>
+        <translation>Добавьте или удалите пробел перед &apos;{&apos; в операторе &apos;catch&apos;, если &apos;{&apos; и &apos;catch&apos; находятся на одной строке, как в операторе &apos;catch (decl) · {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11581"/>
         <source>(OC) Add or remove space before the &apos;{&apos; of a &apos;@catch&apos; statement, if the &apos;{&apos; and &apos;@catch&apos; are on the same line, as in &apos;@catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation>(OC) Добавьте или удалите пробел перед &apos;{&apos; в выражении &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в выражении &apos;@catch (decl) 🡘 {&apos;.</translation>
+        <translation>(OC) Добавьте или удалите пробел перед &apos;{&apos; в выражении &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в выражении &apos;@catch (decl) · {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11581"/>
@@ -2885,7 +2886,7 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="14590"/>
         <source>code_sp_cmt_cpp_doxygen</source>
-        <translation>///&lt;🡘a Doygen comment
+        <translation>///&lt;·a Doygen comment
 </translation>
     </message>
     <message>
@@ -2915,7 +2916,7 @@ QString text = MyMagicClass::tr(&quot;Sim sala bim.&quot;);</translation>
     case 3:
         doFive();
         break;
-#endif🡘//specmacro</translation>
+#endif·//specmacro</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11687"/>
@@ -2926,10 +2927,10 @@ QString text = MyMagicClass::tr(&quot;Sim sala bim.&quot;);</translation>
         <location filename="uncrustify_ui.py" line="14605"/>
         <source>code_sp_after_new</source>
         <translation>void x(int **d) {
-    delete🡘*d;
+    delete·*d;
 }
 void x(int &amp;d) {
-    delete🡘&amp;d;
+    delete·&amp;d;
 }</translation>
     </message>
     <message>
@@ -2981,8 +2982,8 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="14645"/>
         <source>code_sp_annotation_paren</source>
         <translation>@Documented
-@Retention🡘(RetentionPolicy.RUNTIME)
-@Target🡘({ElementType.TYPE,ElementType.METHOD,
+@Retention·(RetentionPolicy.RUNTIME)
+@Target·({ElementType.TYPE,ElementType.METHOD,
          ElementType.CONSTRUCTOR,ElementType.ANNOTATION_TYPE,
          ElementType.PACKAGE,ElementType.FIELD,ElementType.LOCAL_VARIABLE})
 @Inherited
@@ -3020,7 +3021,7 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="14660"/>
         <source>code_sp_vala_after_translation</source>
-        <translation>new Gtk.Label (_🡘(&quot;Label text&quot;));</translation>
+        <translation>new Gtk.Label (_·(&quot;Label text&quot;));</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11711"/>
@@ -3077,10 +3078,10 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="14675"/>
         <source>code_indent_continue</source>
         <translation>    LOG_FMT(LINDLINE, &quot;%s: %d] col %d on %.*s [%s] =&gt; %d\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
-    🡘🡘🡘🡘pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);
+    ····pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);
     if ((cout_col &gt; 0) &amp;&amp;
-    🡘🡘🡘🡘(chunk_is_semicolon(pc) ||
-    🡘🡘🡘🡘(pc-&gt;level &lt; cout_level))) {
+    ····(chunk_is_semicolon(pc) ||
+    ····(pc-&gt;level &lt; cout_level))) {
         cout_col   = 0;
        cout_level = 0;
     }</translation>
@@ -3099,7 +3100,7 @@ void x(int &amp;d) {
         <location filename="uncrustify_ui.py" line="14680"/>
         <source>code_indent_continue_class_head</source>
         <translation>class              |      class
-        MyClass    |      🡘🡘🡘🡘🡘🡘MyClass
+        MyClass    |      ······MyClass
 {                  |      {
 public:            |      public:</translation>
     </message>
@@ -3127,7 +3128,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="14690"/>
         <source>code_indent_param</source>
         <translation>    LOG_FMT(LINDLINE, &quot;%s: %d] col %d on %.*s [%s] =&gt; %d\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
-    🡘🡘🡘🡘pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);</translation>
+    ····pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11724"/>
@@ -3192,9 +3193,9 @@ public:            |      public:</translation>
         <translation>void foo(void) {
 
     const char *a = &quot;&lt;xml&gt;&quot;
-                    🡘🡘&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
-                    🡘🡘🡘🡘&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
-                    🡘🡘&quot;&lt;/data&gt;&quot;
+                    ··&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
+                    ····&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
+                    ··&quot;&lt;/data&gt;&quot;
                     &quot;&lt;/xml&gt;&quot;;
 }
 </translation>
@@ -3208,13 +3209,13 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="14715"/>
         <source>code_indent_brace</source>
         <translation>    if (chunk_is_comment(pc))
-    🡘🡘{
+    ··{
           pc-&gt;column = pc-&gt;orig_col;
           if (pc-&gt;column &lt; min_col)
                     pc-&gt;column = min_col + 1;
           LOG_FMT(LINDLINE, &quot;%s: set comment on line %d to col %d (orig %d)\n&quot;,
                   __func__, pc-&gt;orig_line, pc-&gt;column, pc-&gt;orig_col);
-    🡘🡘}</translation>
+    ··}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11734"/>
@@ -3225,7 +3226,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="14720"/>
         <source>code_indent_braces</source>
         <translation>if (chunk_is_comment(pc))
-🡘🡘🡘🡘{
+····{
     pc-&gt;column = pc-&gt;orig_col;</translation>
     </message>
     <message>
@@ -3237,7 +3238,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="14725"/>
         <source>code_indent_braces_no_func</source>
         <translation>void f(double x)
-🡘{
+·{
     if (x&lt;0)
         {
         x=fabs(x);</translation>
@@ -3251,7 +3252,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="14730"/>
         <source>code_indent_braces_no_class</source>
         <translation>class myclass
-🡘{
+·{
     myclass()
         {
         if (ok)
@@ -3266,7 +3267,7 @@ public:            |      public:</translation>
         <location filename="uncrustify_ui.py" line="14735"/>
         <source>code_indent_braces_no_struct</source>
         <translation>struct myclass
-🡘{
+·{
     myclass()
         {
         if (ok)
@@ -3300,11 +3301,11 @@ for (auto x : y)        |        for (auto x : y)
         <location filename="uncrustify_ui.py" line="14745"/>
         <source>code_indent_paren_open_brace</source>
         <translation>false                                                  |  true
-🡘🡘🡘🡘🡘🡘🡘🡘                                               |                   🡘🡘🡘🡘🡘🡘🡘🡘
+········                                               |                   ········
 funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {  |  funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {
         return PairingCmpnt()                          |                           return PairingCmpnt()
 }));                                                   |                   }));
-🡘🡘🡘🡘🡘🡘🡘🡘                                               |         🡘🡘🡘🡘🡘🡘🡘🡘
+········                                               |         ········
 match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp; ]( const ContentProps &amp;props)  {
         return PairingCmpnt()                          |                 return PairingCmpnt()
 });                                                    |         });</translation>
@@ -3329,7 +3330,7 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <source>code_indent_namespace</source>
         <translation>namespace Constants
 {
-🡘🡘🡘🡘double PI = 3.14;
+····double PI = 3.14;
 }</translation>
     </message>
     <message>
@@ -3367,7 +3368,7 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <location filename="uncrustify_ui.py" line="14770"/>
         <source>code_indent_namespace_level</source>
         <translation>namespace Constants{
-🡘🡘🡘🡘double PI </translation>
+····double PI </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11756"/>
@@ -3388,8 +3389,8 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <location filename="uncrustify_ui.py" line="14780"/>
         <source>code_indent_extern</source>
         <translation>extern &quot;C&quot;{
-🡘🡘🡘🡘disConnectionH createDisConnection();
-🡘🡘🡘🡘int open_DisConnect(disConnectionH record);
+····disConnectionH createDisConnection();
+····int open_DisConnect(disConnectionH record);
 }
 </translation>
     </message>
@@ -3404,7 +3405,7 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <translation>class Widget :
         public QWidget
 {
-🡘🡘🡘🡘int a;
+····int a;
 }</translation>
     </message>
     <message>
@@ -3417,10 +3418,10 @@ match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp;
         <source>code_indent_class_colon</source>
         <translation>class MyClass
     : myvar(0),
-    🡘🡘myvar2(0){...
+    ··myvar2(0){...
 
 class MyClass : myvar(0),
-    🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘myvar2(0){...</translation>
+    ············myvar2(0){...</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11764"/>
@@ -3440,7 +3441,7 @@ class MyClass : myvar(0),
     myvar2(0){...
 
 class MyClass : myvar(0),
-   🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘🡘myvar2(0){...
+   ···········myvar2(0){...
 </translation>
     </message>
     <message>
@@ -3504,7 +3505,7 @@ if&apos; рассматривается как &apos;else if&apos;.</translation
         i = 10;
     }
     else
-    🡘🡘🡘🡘if ( true )
+    ····if ( true )
         {
             i = 10;
         }</translation>
@@ -3521,7 +3522,7 @@ if&apos; рассматривается как &apos;else if&apos;.</translation
 {
    Logger log = new Logger();
    Logger log= new Logger( );
-🡘🡘🡘↑
+···↑
     log.foo.bar    = 5;
     log.narf.sweat = &quot;cat&quot;;</translation>
     </message>
@@ -3568,7 +3569,16 @@ return log          |        return log
     <message>
         <location filename="uncrustify_ui.py" line="14835"/>
         <source>code_indent_func_def_force_col1</source>
-        <translation type="unfinished"></translation>
+        <translation>struct foobar {
+char *foobarz() {
+    return &quot;foobar&quot;;
+}
+char *foo_bar() {
+    return &quot;foo_bar&quot;;
+}
+
+    int foo;
+};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11782"/>
@@ -3580,9 +3590,9 @@ return log          |        return log
         <source>code_indent_func_call_param</source>
         <translation> false                   ↓            |  true
 Type tmp = call_function(getObj().x,  |   Type tmp = call_function(getObj().x,
-                         getObj().y,  |   🡘🡘🡘🡘getObj().y,
-                         getObj().z,  |   🡘🡘🡘🡘getObj().z,
-                         getObj().w); |   🡘🡘🡘🡘getObj().w);
+                         getObj().y,  |   ····getObj().y,
+                         getObj().z,  |   ····getObj().z,
+                         getObj().w); |   ····getObj().w);
                          ↑</translation>
     </message>
     <message>
@@ -3595,12 +3605,12 @@ Type tmp = call_function(getObj().x,  |   Type tmp = call_function(getObj().x,
         <source>code_indent_func_def_param</source>
         <translation>false    ↓                        | true
 void bar(int someval,             | void bar(int someval,
-         void *puser,             | 🡘🡘🡘🡘void *puser,
-         const char *filename,    | 🡘🡘🡘🡘const char *filename,
-         struct willy *the_list,  | 🡘🡘🡘🡘struct willy *the_list,
-         int list_len)            | 🡘🡘🡘🡘int list_len)
+         void *puser,             | ····void *puser,
+         const char *filename,    | ····const char *filename,
+         struct willy *the_list,  | ····struct willy *the_list,
+         int list_len)            | ····int list_len)
 {        ↑                        | {
-<byte value="x9"/>int idx;                      | <byte value="x9"/>int idx;</translation>
+	int idx;                      | 	int idx;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11786"/>
@@ -3610,32 +3620,59 @@ void bar(int someval,             | void bar(int someval,
     <message>
         <location filename="uncrustify_ui.py" line="14850"/>
         <source>code_indent_func_def_param_paren_pos_threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>               ↓
+void f(int x,  ↓
+       int y,  ↓
+       int z)  ↓
+       ↑       ↓
+void very_long_function(int x,
+····int y,
+····int z)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11788"/>
         <source>Whether to indent continued function call prototype one indent level, rather than aligning parameters under the open parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли отступать для многострочных параметров прототипа функции на один уровень отступов, а не выравнивать параметры под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14855"/>
         <source>code_indent_func_proto_param</source>
-        <translation type="unfinished"></translation>
+        <translation>false    ↓                        | true
+void bar(int someval,             | void bar(int someval,
+         void *puser,             | ····void *puser,
+         const char *filename,    | ····const char *filename,
+         struct willy *the_list,  | ····struct willy *the_list,
+         int list_len);           | ····int list_len);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11790"/>
         <source>Whether to indent continued function call declaration one indent level, rather than aligning parameters under the open parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли отступать для многострочных параметров определения функции класса на один уровень отступов, а не выравнивать параметры под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14860"/>
         <source>code_indent_func_class_param</source>
-        <translation type="unfinished"></translation>
+        <translation>false                     ↓                       |     true
+ClientBase :: ClientBase (const std::string&amp; ns,  |     ClientBase :: ClientBase (const std::string&amp; ns,
+                          const std::string&amp; ns1, |     ····const std::string&amp; ns1,
+                          const std::string&amp; ns2) |     ····const std::string&amp; ns2)
+{                                                 |     {
+                                                  |     
+}                                                 |     }
+struct MyClass : public Foo {                     |     struct MyClass : public Foo {
+            ↓                                     |     
+    MyClass(int a,                                |         MyClass(int a,
+            int b,                                |         ····int b,
+            int c)                                |         ····int c)
+        : m_a(a), m_b(b), m_c(c) {                |             : m_a(a), m_b(b), m_c(c) {
+    }                                             |         }
+};                                                |     };
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11792"/>
         <source>Whether to indent continued class variable constructors one indent level, rather than aligning parameters under the open parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли отступать для многострочных параметров коструктора на один уровень отступов, а не выравнивать параметры под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14865"/>
@@ -3645,17 +3682,21 @@ void bar(int someval,             | void bar(int someval,
     <message>
         <location filename="uncrustify_ui.py" line="11794"/>
         <source>Whether to indent continued template parameter list one indent level, rather than aligning parameters under the open parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли делать отступ на один уровень отступов, а не выравнивать параметры под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14870"/>
         <source>code_indent_template_param</source>
-        <translation type="unfinished"></translation>
+        <translation> ↓
+template          |  template
+&lt;typename T,      |  &lt;typename T,
+ typename U&gt;      |  ····typename U&gt;
+void h(T s, U t)  |  void h(T s, U t)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11796"/>
         <source>Double the indent for indent_func_xxx_param options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Удвойте отступ для опции indent_func_xxx_param.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11796"/>
@@ -3665,32 +3706,40 @@ void bar(int someval,             | void bar(int someval,
     <message>
         <location filename="uncrustify_ui.py" line="14875"/>
         <source>code_indent_func_param_double</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_func_param_double</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11798"/>
         <source>Indentation column for standalone &apos;const&apos; qualifier on a function prototype.</source>
-        <translation type="unfinished"></translation>
+        <translation>Колонка отступов для отдельного классификатора &apos;const&apos; для прототипа функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14880"/>
         <source>code_indent_func_const</source>
-        <translation type="unfinished"></translation>
+        <translation>void GetFoo(void)
+····const
+{
+    return (m_Foo);
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11800"/>
         <source>Indentation column for standalone &apos;throw&apos; qualifier on a function prototype.</source>
-        <translation type="unfinished"></translation>
+        <translation>Колонка отступов для отдельного классификатора &apos;throw&apos; для прототипа функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14885"/>
         <source>code_indent_func_throw</source>
-        <translation type="unfinished"></translation>
+        <translation>int GetFoo(void)
+····throw (std::bad_alloc)
+{
+    return (m_Foo);
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11802"/>
         <source>How to indent within a macro followed by a brace on the same line This allows reducing the indent in macros that have (for example) `do { ... } while (0)` blocks bracketing them.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как сделать отступ внутри макроса с последующей скобкой на той же строке Это позволяет уменьшить отступ в макросах, которые содержат,например, `do { ... } while (0)`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11802"/>
@@ -3706,7 +3755,7 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="11804"/>
         <source>The number of spaces to indent a continued &apos;-&gt;&apos; or &apos;.&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество пробелов для отступов у продолжающегося &apos;-&gt;&apos; или &apos;...&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11804"/>
@@ -3716,37 +3765,51 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14895"/>
         <source>code_indent_member</source>
-        <translation type="unfinished"></translation>
+        <translation>sass.asdfvas-&gt;asdfasd[asdfasdf].
+····asdfasdf = 5;
+
+::asdasda::adasd::
+····asdfasdf = 5;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11806"/>
         <source>Whether lines broken at &apos;.&apos; or &apos;-&gt;&apos; should be indented by a single indent.</source>
-        <translation type="unfinished"></translation>
+        <translation>Строки, разбитые по &quot;.&quot; или &quot; -&gt;&quot;, должны быть смещены на один отступ.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11806"/>
         <source>The indent_member option will not be effective if this is set to true.</source>
-        <translation type="unfinished"></translation>
+        <translation>Опция indent_member не будет действовать, если она установлена в true.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14900"/>
         <source>code_indent_member_single</source>
-        <translation type="unfinished"></translation>
+        <translation>sass.asdfvas-&gt;asdfasd[asdfasdf].
+····asdfasdf = 5;
+
+adasd-&gt;
+····asdfasdf = 5;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11808"/>
         <source>Spaces to indent single line (&apos;//&apos;) comments on lines before code.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пробелы для отступов однострочных (&apos;//&apos;) комментариев.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14905"/>
         <source>code_indent_sing_line_comments</source>
-        <translation type="unfinished"></translation>
+        <translation>int main()
+{
+    int b = 3;
+    int* p = &amp;b;
+
+    ··// Should stay as b * *p
+    int a = b * *p;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11810"/>
         <source>When opening a paren for a control statement (if, for, while, etc), increase the indent level by this value.</source>
-        <translation type="unfinished"></translation>
+        <translation>При открытии скобки управляющего оператор а(if, for, while и т.д.) увеличьте уровень отступа на это значение.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11810"/>
@@ -3771,7 +3834,7 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="11814"/>
         <source>Spaces to indent &apos;case&apos; from &apos;switch&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пробелы для отступов &quot;case&quot; от &quot;switch&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11814"/>
@@ -3781,32 +3844,47 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14920"/>
         <source>code_indent_switch_case</source>
-        <translation type="unfinished"></translation>
+        <translation>switch(i) {
+··case 1: [[fallthrough]];
+      [[likely]] case 2: return 1;
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11816"/>
         <source>indent &apos;break&apos; with &apos;case&apos; from &apos;switch&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступ &apos;break&apos; от &apos;switch&apos;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14925"/>
         <source>code_indent_switch_break_with_case</source>
-        <translation type="unfinished"></translation>
+        <translation>switch (message_p)                                |    switch (message_p)
+{                                                 |    {
+case A:                                           |    case A:
+{                                                 |    {
+    const table* entry2 = findMsg( message_p );   |        const table* entry2 = findMsg( message_p );
+    table* entry3 = findMsg( message_p );         |        table* entry3 = findMsg( message_p );
+}                                                 |    }
+break;                                            |    break;
+                                                  |    ↓
+case B:                                           |    case B:
+    const table* entry2 = findMsg( message_p );   |        const table* entry2 = findMsg( message_p );
+    table* entry3 = findMsg( message_p );         |        table* entry3 = findMsg( message_p );
+····break;                                        |    break;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11818"/>
         <source>Whether to indent preprocessor statements inside of switch statements.</source>
-        <translation>Следует ли отступать от препроцессорных утверждений внутри утверждений switch.</translation>
+        <translation>Следует ли отступать для препроцессорных утверждений внутри утверждений switch.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14930"/>
         <source>code_indent_switch_pp</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11820"/>
         <source>Spaces to shift the &apos;case&apos; line, without affecting any other lines.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пробелы для сдвига линии &apos;case&apos;, не затрагивая другие линии.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11820"/>
@@ -3816,17 +3894,20 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14935"/>
         <source>code_indent_case_shift</source>
-        <translation type="unfinished"></translation>
+        <translation>switch(i) {
+··case 1: [[fallthrough]];
+    [[likely]] case 2: return 1;
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11822"/>
         <source>Spaces to indent &apos;{&apos; from &apos;case&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пробелов для отступа { от case</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11822"/>
         <source>By default, the brace will appear under the &apos;c&apos; in case.</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию, скобка появится под буквой &quot;c&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11822"/>
@@ -3841,17 +3922,18 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14940"/>
         <source>code_indent_case_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_case_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11824"/>
         <source>Whether to indent comments found in first column.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступы для  комментариев, найденных в первой колонке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14945"/>
         <source>code_indent_col1_comment</source>
-        <translation type="unfinished"></translation>
+        <translation>··// the main func
+void main(int, char**){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11826"/>
@@ -3866,28 +3948,28 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="11828"/>
         <source>How to indent goto labels.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как размещать метки goto</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11830"/>
         <source>&gt;0: Absolute column where 1 is the leftmost column &lt;=0: Subtract from brace indent</source>
-        <translation type="unfinished"></translation>
+        <translation>&gt;0: Абсолютный столбец, где 1 - самый левый столбец &lt;=0: Вычитается из отступа блока.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14955"/>
         <source>code_indent_label</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_label</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11830"/>
         <source>How to indent access specifiers that are followed by a colon.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступы для спецификаторов доступа, за которыми следует двоеточие.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14960"/>
         <source>code_indent_access_spec</source>
         <translation>class A{
-🡘🡘piblic:</translation>
+··piblic:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11832"/>
@@ -3897,7 +3979,7 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="11832"/>
         <source>If true, this option forces &apos;indent_access_spec=0&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если переменная имеет значение true, то эта опция принудительно устанавливает &apos;indent_access_spec=0&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14965"/>
@@ -3905,32 +3987,44 @@ false: не добавлять отступ для скобки на той же
         <translation>class{
   int b;
   public:
-  🡘🡘int a;</translation>
+  ··int a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11834"/>
         <source>If an open parenthesis is followed by a newline, whether to indent the next line so that it lines up after the open parenthesis (not recommended).</source>
-        <translation type="unfinished"></translation>
+        <translation>Если за открытой круглой скобкой следует новая строка, следует ли отступать от следующей строки так, чтобы она выстраивалась после открытой круглой скобки (не рекомендуется).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14970"/>
         <source>code_indent_paren_nl</source>
-        <translation type="unfinished"></translation>
+        <translation>void method51(                              |   void method51(↓
+····int int_param,                          |                 int int_param,
+····SomeLongNamespace long_parameter_name,  |                 SomeLongNamespace long_parameter_name,
+····float float_param,                      |                 float float_param,
+····double double_param,                    |                 double double_param,
+····const string &amp; string_param)            |                 const string &amp; string_param)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11836"/>
         <source>How to indent a close parenthesis after a newline.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как отступить от ближайшей скобки после новой строки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11836"/>
         <source>0: Indent to body level (default) 1: Align under the open parenthesis 2: Indent to the brace level</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Отступ до уровня тела (по умолчанию) 1: Выравнивание под открытой круглой скобкой 2: Отступ до уровня скобы</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14975"/>
         <source>code_indent_paren_close</source>
-        <translation type="unfinished"></translation>
+        <translation>0  ↓              1  ↓           2↓
+x=f(x,            x=f(x,          x=f(x,
+      ↓                ↓              ↓
+    y(5,              y(5,            y(5,
+      6                 6               6
+      ),               ),             ),
+    12                12              12
+    )                )            )</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11838"/>
@@ -3940,7 +4034,12 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14980"/>
         <source>code_indent_paren_after_func_def</source>
-        <translation type="unfinished"></translation>
+        <translation>void method51(                              |   void method51(↓
+····int int_param,                          |                 int int_param,
+····SomeLongNamespace long_parameter_name,  |                 SomeLongNamespace long_parameter_name,
+····float float_param,                      |                 float float_param,
+····double double_param,                    |                 double double_param,
+····const string &amp; string_param){           |                 const string &amp; string_param){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11840"/>
@@ -3950,7 +4049,12 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14985"/>
         <source>code_indent_paren_after_func_decl</source>
-        <translation type="unfinished"></translation>
+        <translation>void method51(                              |   void method51(↓
+····int int_param,                          |                 int int_param,
+····SomeLongNamespace long_parameter_name,  |                 SomeLongNamespace long_parameter_name,
+····float float_param,                      |                 float float_param,
+····double double_param,                    |                 double double_param,
+····const string &amp; string_param);           |                 const string &amp; string_param);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11842"/>
@@ -3960,12 +4064,12 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14990"/>
         <source>code_indent_paren_after_func_call</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_paren_after_func_call</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11844"/>
         <source>Whether to indent a comma when inside a parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступать ли по запятой, когда внутри скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11846"/>
@@ -3975,22 +4079,32 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="14995"/>
         <source>code_indent_comma_paren</source>
-        <translation type="unfinished"></translation>
+        <translation>               ↓                                             ↓
+uint32_t foo ( uint8_t param1                 uint32_t foo ( uint8_t param1
+               , some_datatype param2                      , some_datatype param2
+               , datatype param3                           , datatype param3
+               , another_datatype *param4                  , another_datatype *param4
+               , uint16_t param5                           , uint16_t param5
+               , uint32_t *param6                          , uint32_t *param6
+             );                                            );</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11846"/>
         <source>Whether to indent a Boolean operator when inside a parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли отступать по булевскому оператору, когда он находится внутри скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15000"/>
         <source>code_indent_bool_paren</source>
-        <translation type="unfinished"></translation>
+        <translation>if (a             if (a
+    &amp;&amp; b) {          &amp;&amp; b) {
+    h();              h();
+}                 }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11848"/>
         <source>Whether to indent a semicolon when inside a for parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступать ли по точке с запятой, когда внутри скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11848"/>
@@ -4000,37 +4114,44 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="15005"/>
         <source>code_indent_semicolon_for_paren</source>
-        <translation type="unfinished"></translation>
+        <translation>for (int i=0     for (int i=0
+     ; i&lt;10          ; i&lt;10
+     ; i++)          ; i++)
+{                {
+}                }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11850"/>
         <source>Whether to align the first expression to following ones if indent_bool_paren=true.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли первое выражение с последующими, если indent_bool_paren=true.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15010"/>
         <source>code_indent_first_bool_expr</source>
-        <translation type="unfinished"></translation>
+        <translation>if (a           if (  a
+   &amp;&amp; b) {         &amp;&amp; b) {
+    h();            h();
+}               }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11852"/>
         <source>Whether to align the first expression to following ones if indent_semicolon_for_paren=true.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли первое выражение с последующими, если indent_semicolon_for_paren=true.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15015"/>
         <source>code_indent_first_for_expr</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11854"/>
         <source>If an open square is followed by a newline, whether to indent the next line so that it lines up after the open square (not recommended).</source>
-        <translation type="unfinished"></translation>
+        <translation>Если за открытой квадратной скобки следует новая строка, следует ли отступать на следующей линии так, чтобы она выстраивалась после открытой скобки(не рекомендуется).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15020"/>
         <source>code_indent_square_nl</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11856"/>
@@ -4040,112 +4161,115 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="15025"/>
         <source>code_indent_preserve_sql</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11858"/>
         <source>Whether to align continued statements at the &apos;=&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли выравнивать серию присваиваний по знаку &quot;=&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11858"/>
         <source>If false or if the &apos;=&apos; is followed by a newline, the next line is indent one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если false или если за &apos;=&apos; следует новая строка, то следующая строка отступает на одну табуляцию.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15030"/>
         <source>code_indent_align_assign</source>
         <translation>false                      true
 auto c = [] {              auto c = [] {
-        return true;                🡘🡘🡘🡘return true;
+        return true;                ····return true;
     };                              };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11860"/>
         <source>If true, the indentation of the chunks after a &apos;=&apos; sequence will be set at LHS token indentation column before &apos;=&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если переменная имеет значение &apos;=&apos;, то отступ фрагментов после последовательности &apos;=&apos; будет установлен в столбце LHS перед &apos;=&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15035"/>
         <source>code_indent_off_after_assign</source>
-        <translation type="unfinished"></translation>
+        <translation>bool dllInit =
+    []()
+bool dllInit =
+[]()</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11862"/>
         <source>Whether to align continued statements at the &apos;(&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли согласовывать продолжающиеся утверждения на &quot;(&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11862"/>
         <source>If false or the &apos;(&apos; is followed by a newline, the next line indent is one tab.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если false или &apos;(&apos; следует новая строка, то следующий отступ строки - одна табуляция.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15040"/>
         <source>code_indent_align_paren</source>
         <translation>false                      true
 foobar = bar[a + b + (c    foobar = bar[a + b + (c
-🡘🡘🡘🡘+ d)];                                       + d)];</translation>
+····+ d)];                                       + d)];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11864"/>
         <source>(OC) Whether to indent Objective-C code inside message selectors.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Следует ли отступать от кода Objective-C внутри селекторов сообщений.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15045"/>
         <source>code_indent_oc_inside_msg_sel</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_inside_msg_sel</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11866"/>
         <source>(OC) Whether to indent Objective-C blocks at brace level instead of usual rules.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Следует ли отступать от блоков Objective-C на уровне скобок вместо обычных правил.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15050"/>
         <source>code_indent_oc_block</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_block</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11868"/>
         <source>(OC) Indent for Objective-C blocks in a message relative to the parameter name.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Отступ для блоков Objective-C в сообщении относительно имени параметра.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11868"/>
         <source>=0: Use indent_oc_block rules &gt;0: Use specified number of spaces to indent</source>
-        <translation type="unfinished"></translation>
+        <translation>=0: Использовать правила indent_oc_block &gt;0: Использовать указанное количество пробелов для отступов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15055"/>
         <source>code_indent_oc_block_msg</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_block_msg</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11870"/>
         <source>(OC) Minimum indent for subsequent parameters</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Минимальный отступ для последующих параметров</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15060"/>
         <source>code_indent_oc_msg_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_msg_colon</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11872"/>
         <source>(OC) Whether to prioritize aligning with initial colon (and stripping spaces from lines, if necessary).</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Следует ли расставлять приоритеты по выравниванию с начальной двоеточием (и удалять пробелы из линий, если необходимо).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15065"/>
         <source>code_indent_oc_msg_prioritize_first_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_msg_prioritize_first_colon</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11874"/>
         <source>(OC) Whether to indent blocks the way that Xcode does by default (from the keyword if the parameter is on its own line; otherwise, from the previous indentation level).</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Блокирует ли отступ по умолчанию то, что делает Xcode (из ключевого слова, если параметр находится на своей собственной строке; в противном случае, из предыдущего уровня отступов).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11882"/>
@@ -4155,47 +4279,47 @@ foobar = bar[a + b + (c    foobar = bar[a + b + (c
     <message>
         <location filename="uncrustify_ui.py" line="15070"/>
         <source>code_indent_oc_block_msg_xcode_style</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_block_msg_xcode_style</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11876"/>
         <source>(OC) Whether to indent blocks from where the brace is, relative to a message keyword.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Следует ли отступать блоками от того места, где находится скобка, по отношению к ключевому слову сообщения.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15075"/>
         <source>code_indent_oc_block_msg_from_keyword</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_block_msg_from_keyword</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11878"/>
         <source>(OC) Whether to indent blocks from where the brace is, relative to a message colon.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Следует ли отступать блоками от того места, где находится скобка, относительно двоеточия сообщения.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15080"/>
         <source>code_indent_oc_block_msg_from_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_block_msg_from_colon</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11880"/>
         <source>(OC) Whether to indent blocks from where the block caret is.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Следует ли отступать блоками от того места, где находится каретка блока.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15085"/>
         <source>code_indent_oc_block_msg_from_caret</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_block_msg_from_caret</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11882"/>
         <source>(OC) Whether to indent blocks from where the brace caret is.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Следует ли отступать блоками от того места, где находится каретта.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15090"/>
         <source>code_indent_oc_block_msg_from_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_oc_block_msg_from_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11884"/>
@@ -4205,27 +4329,35 @@ foobar = bar[a + b + (c    foobar = bar[a + b + (c
     <message>
         <location filename="uncrustify_ui.py" line="15095"/>
         <source>code_indent_min_vbrace_open</source>
-        <translation type="unfinished"></translation>
+        <translation>if (something)
+········cout &lt;&lt; &quot;blah&quot;;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11886"/>
         <source>Whether to add further spaces after regular indent to reach next tabstop when identing after virtual brace open and newline.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли добавлять дополнительные пробелы после регулярного отступа, чтобы добраться до следующего табстопа при идентентификации после открытия виртуальной скобки и новой строки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15100"/>
         <source>code_indent_vbrace_open_on_tabstop</source>
-        <translation type="unfinished"></translation>
+        <translation>if(Y == Z)
+    Y = X;
+или
+if(Y == Z)
+        Y = X;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11888"/>
         <source>How to indent after a brace followed by another token (not a newline). true:  indent all contained lines to match the token false: indent all contained lines to match the brace</source>
-        <translation type="unfinished"></translation>
+        <translation>Как сделать отступ после скобки, за которой следует другой маркер (не новая строка). true: отступ от всех содержащихся строк, чтобы соответствовать маркеру false: отступ от всех содержащихся строк, чтобы соответствовать скобке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15105"/>
         <source>code_indent_token_after_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>struct S { static if (false) void bar() {
+        }; }
+struct S { static if (false) void bar() {
+               }; }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11890"/>
@@ -4235,37 +4367,61 @@ foobar = bar[a + b + (c    foobar = bar[a + b + (c
     <message>
         <location filename="uncrustify_ui.py" line="15110"/>
         <source>code_indent_cpp_lambda_body</source>
-        <translation type="unfinished"></translation>
+        <translation>    std::find_if(a.begin(), a.end(), [&amp;b](const some_type &amp;v){
+        return v == b;
+    });
+
+    std::find_if(a.begin(), a.end(), [&amp;b](const some_type &amp;v){
+                     return v == b;
+                 });</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11892"/>
         <source>How to indent compound literals that are being returned. true: add both the indent from return &amp; the compound literal open brace (ie:       2 indent levels) false: only indent 1 level, don&apos;t add the indent for the open brace, only add        the indent for the return.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как отступать для составных литералов в выражении return. true: добавить и отступ от return, и от открытой скобки (т.е. 2 уровня отступов) false: только отступ 1 уровня, не добавлять отступ для открытой фигурной скобки, добавлять только отступ для return.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15115"/>
         <source>code_indent_compound_literal_return</source>
-        <translation type="unfinished"></translation>
+        <translation>struct f z(void) {
+    return (struct f){
+        .z = 1,
+    };
+}
+
+struct f z(void) {
+    return (struct f){
+               .z = 1,
+    };
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15120"/>
         <source>code_indent_using_block</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_using_block</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11896"/>
         <source>How to indent the continuation of ternary operator.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отстуры для разбитого тернарного оператора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11896"/>
         <source>0: Off (default) 1: When the `if_false` is a continuation, indent it under `if_false` 2: When the `:` is a continuation, indent it under `?`</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Выключено (по умолчанию) 1: Когда `if_false` является продолжением, выровнять  под `if_false` 2: Когда `:` является продолжением, выровнять под `?`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15125"/>
         <source>code_indent_ternary_operator</source>
-        <translation type="unfinished"></translation>
+        <translation>0               1   ↓         2  ↓
+x=a?b:          x=a?b:↓       x=a?b:
+   c?d:             c?d:         c?d:
+   e;             ↓   e;      ↓  e;
+y=a             y=a           y=a
+? b             ? b           ? b
+   + c             + c           + c
+: d             : d           : d
+   + e;            + e;          + e;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11898"/>
@@ -4275,52 +4431,66 @@ foobar = bar[a + b + (c    foobar = bar[a + b + (c
     <message>
         <location filename="uncrustify_ui.py" line="15130"/>
         <source>code_indent_inside_ternary_operator</source>
-        <translation type="unfinished"></translation>
+        <translation>x=a?b:      x=a?b:       
+   c?d:        ····c?d:  
+   e;              ····e;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11900"/>
         <source>If true, the indentation of the chunks after a `return` sequence will be set at return indentation column.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если переменная имеет значение true, то строке после выражения `return` будет установлен отступ как у return.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15135"/>
         <source>code_indent_off_after_return</source>
-        <translation type="unfinished"></translation>
+        <translation>    return
+        int{3} &amp; 2;
+    return
+    int{3} &amp; 2;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11902"/>
         <source>If true, the indentation of the chunks after a `return new` sequence will be set at return indentation column.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если переменная имеет значение true, то строке после выражения `return new` будет установлен отступ как у return.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15140"/>
         <source>code_indent_off_after_return_new</source>
-        <translation type="unfinished"></translation>
+        <translation>return new
+       ProcessStartInfo(&quot;smthg&quot;)
+       {
+
+return new
+ProcessStartInfo(&quot;smthg&quot;)
+{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11904"/>
         <source>If true, the tokens after return are indented with regular single indentation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если true, то токены после return имеют одинаковые отступы.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11904"/>
         <source>By default (false) the indentation is after the return token.</source>
-        <translation type="unfinished"></translation>
+        <translation>По умолчанию (false) отступ находится на уровне возвращаемого токена.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15145"/>
         <source>code_indent_single_after_return</source>
-        <translation type="unfinished"></translation>
+        <translation>    return log                    return log
+           &gt;&gt; var                     &gt;&gt; var
+           &gt;&gt; second                  &gt;&gt; second
+    ;                             ;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11906"/>
         <source>Whether to ignore indent and alignment for &apos;asm&apos; blocks (i.e. assume they have their own indentation).</source>
-        <translation type="unfinished"></translation>
+        <translation>Игнорировать ли отступ и выравнивание для блоков &apos;asm&apos; (т.е. предположить, что у них есть свой отступ).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15150"/>
         <source>code_indent_ignore_asm_block</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_ignore_asm_block</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="5096"/>
@@ -4330,232 +4500,238 @@ foobar = bar[a + b + (c    foobar = bar[a + b + (c
     <message>
         <location filename="uncrustify_ui.py" line="11909"/>
         <source>Whether to collapse empty blocks between &apos;{&apos; and &apos;}&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Сворачивать пустые фигурные скобки</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15155"/>
         <source>code_nl_collapse_empty_body</source>
-        <translation type="unfinished"></translation>
+        <translation>while(readline()){¶  |  while(readline()){}
+}                    |</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11911"/>
         <source>Don&apos;t split one-line braced assignments, as in &apos;foo_t f = { 1, 2 };&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разделяйте однострочные фигурные скобки в присваивании, как в &apos;foo_t f = { 1, 2 };&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15160"/>
         <source>code_nl_assign_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_assign_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11913"/>
         <source>Don&apos;t split one-line braced statements inside a &apos;class xx { }&apos; body.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разбивайте однострочные скобки внутри тела &quot;class xxx{}&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15165"/>
         <source>code_nl_class_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>class X {                  class X {
+public:                    public:
+int v() const { ¶          int v() const { return x; }
+    return x;¶             }
+}
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11915"/>
         <source>Don&apos;t split one-line enums, as in &apos;enum foo { BAR = 15 };&apos;</source>
-        <translation type="unfinished"></translation>
+        <translation>Не делите однострочные перечисления, как в &apos;enum foo { BAR = 15 };&apos;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15170"/>
         <source>code_nl_enum_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_enum_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11917"/>
         <source>Don&apos;t split one-line get or set functions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разбивать однострочные get/set функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15175"/>
         <source>code_nl_getset_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_getset_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15180"/>
         <source>code_nl_cs_property_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_cs_property_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11921"/>
         <source>Don&apos;t split one-line function definitions, as in &apos;int foo() { return 0; }&apos;. might modify nl_func_type_name</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разделяйте определения однострочных функций, как в &apos;int foo() { return 0; }&apos;. может модифицировать  nl_func_type_name</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15185"/>
         <source>code_nl_func_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_func_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11923"/>
         <source>Don&apos;t split one-line C++11 lambdas, as in &apos;[]() { return 0; }&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разделяйте однострочные лямбды C++11, как в &apos;[]() { вернуть 0; }&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15190"/>
         <source>code_nl_cpp_lambda_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_cpp_lambda_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11925"/>
         <source>Don&apos;t split one-line if/else statements, as in &apos;if(...) b++;&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разделяйте однострочные операторы if/else, как в &apos;if(...) b++;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15195"/>
         <source>code_nl_if_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_if_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11927"/>
         <source>Don&apos;t split one-line while statements, as in &apos;while(...) b++;&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разделяйте однострочные операторы while, как в &apos;while(...) b++;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15200"/>
         <source>code_nl_while_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_while_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11929"/>
         <source>Don&apos;t split one-line for statements, as in &apos;for(...) b++;&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разделяйте однострочные операторы for, как в &apos;for(...) b++;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15205"/>
         <source>code_nl_for_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_for_leave_one_liners</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11931"/>
         <source>(OC) Don&apos;t split one-line Objective-C messages.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Не разбивайте однострочные сообщения Objective-C.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15210"/>
         <source>code_nl_oc_msg_leave_one_liner</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_msg_leave_one_liner</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11933"/>
         <source>(OC) Add or remove newline between method declaration and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавление или удаление новой строки между объявлением метода и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15215"/>
         <source>code_nl_oc_mdef_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_mdef_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11935"/>
         <source>(OC) Add or remove newline between Objective-C block signature and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавление или удаление новой строки между сигнатурой блока Objective-C и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15220"/>
         <source>code_nl_oc_block_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_block_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11937"/>
         <source>(OC) Add or remove blank line before &apos;@interface&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавить или удалить пустую строку перед оператором &apos;@interface&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15225"/>
         <source>code_nl_oc_before_interface</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_before_interface</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11939"/>
         <source>(OC) Add or remove blank line before &apos;@implementation&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавление или удаление пустой строки перед оператором &apos;@implementation&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15230"/>
         <source>code_nl_oc_before_implementation</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_before_implementation</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11941"/>
         <source>(OC) Add or remove blank line before &apos;@end&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавление или удаление пустой строки перед оператором &apos;@end&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15235"/>
         <source>code_nl_oc_before_end</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_before_end</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11943"/>
         <source>(OC) Add or remove newline between &apos;@interface&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавление или удаление новой строки между &apos;@interface&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15240"/>
         <source>code_nl_oc_interface_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_interface_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11945"/>
         <source>(OC) Add or remove newline between &apos;@implementation&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавление или удаление новой строки между &apos;@implementation&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15245"/>
         <source>code_nl_oc_implementation_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_implementation_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11947"/>
         <source>Add or remove newlines at the start of the file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новых строк в начале файла.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15250"/>
         <source>code_nl_start_of_file</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_start_of_file</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11949"/>
         <source>The minimum number of newlines at the start of the file (only used if nl_start_of_file is &apos;add&apos; or &apos;force&apos;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное количество новых строк в начале файла (используется, только если nl_start_of_file &apos;add&apos; или &apos;force&apos;).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15255"/>
         <source>code_nl_start_of_file_min</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_start_of_file_min</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11951"/>
         <source>Add or remove newline at the end of the file.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки в конце файла.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15260"/>
         <source>code_nl_end_of_file</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_end_of_file</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11953"/>
         <source>The minimum number of newlines at the end of the file (only used if nl_end_of_file is &apos;add&apos; or &apos;force&apos;).</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное количество новых строк в конце файла (используется, только если nl_end_of_file &apos;add&apos; или &apos;force&apos;).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15265"/>
         <source>code_nl_end_of_file_min</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_end_of_file_min</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11955"/>
         <source>Add or remove newline between &apos;=&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;=&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15270"/>
@@ -4575,7 +4751,7 @@ foobar = bar[a + b + (c    foobar = bar[a + b + (c
     <message>
         <location filename="uncrustify_ui.py" line="11959"/>
         <source>Add or remove newline between &apos;[]&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;[]&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15280"/>
@@ -4595,67 +4771,93 @@ foobar = bar[a + b + (c    foobar = bar[a + b + (c
     <message>
         <location filename="uncrustify_ui.py" line="15285"/>
         <source>code_nl_after_square_assign</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_after_square_assign</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11963"/>
         <source>Add or remove newline between a function call&apos;s &apos;)&apos; and &apos;{&apos;, as in &apos;list_for_each(item, &amp;list) { }&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки при вызове функции между &apos;)&apos; и &apos;{&apos;, как в &apos;list_for_each(item, &amp;list) { }&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15290"/>
         <source>code_nl_fcall_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>list_for_each(a,b)¶{
+    bar(a);
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11965"/>
         <source>Add or remove newline between &apos;enum&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;enum&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15295"/>
         <source>code_nl_enum_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>typedef enum¶ {
+  HAL_USART_ENABLED = 64, 
+  HAL_USART_DISABLED, 
+} hal_usart_errors_t;
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11967"/>
         <source>Add or remove newline between &apos;enum&apos; and &apos;class&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;enum&apos; и &apos;class&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15300"/>
         <source>code_nl_enum_class</source>
-        <translation type="unfinished"></translation>
+        <translation>enum¶ class comment_align_e : unsigned int
+{
+    REGULAR,
+    BRACE,
+    ENDIF,
+};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11969"/>
         <source>Add or remove newline between &apos;enum class&apos; and the identifier.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;enum class&apos; и идентификатором.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15305"/>
         <source>code_nl_enum_class_identifier</source>
-        <translation type="unfinished"></translation>
+        <translation>enum class¶ comment_align_e : unsigned int
+{
+    REGULAR,
+    BRACE,
+    ENDIF,
+};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11971"/>
         <source>Add or remove newline between &apos;enum class&apos; type and &apos;:&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;enum class&apos; и двоеточием перед типом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15310"/>
         <source>code_nl_enum_identifier_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>enum class comment_align_e¶: unsigned int
+{
+    REGULAR,
+    BRACE,
+    ENDIF,
+};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11973"/>
         <source>Add or remove newline between &apos;enum class identifier :&apos; and type.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;enum class identifier :&apos; и типом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15315"/>
         <source>code_nl_enum_colon_type</source>
-        <translation type="unfinished"></translation>
+        <translation>enum class comment_align_e:¶ unsigned int
+{
+    REGULAR,
+    BRACE,
+    ENDIF,
+};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11975"/>
