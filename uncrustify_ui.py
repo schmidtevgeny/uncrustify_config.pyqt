@@ -21,7 +21,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelnewlines, 0, 0, 1, 5)
         if self.tr("code_newlines")!="code_newlines":
             self.codenewlines = QtWidgets.QLabel(self.tr("code_newlines"))
-            self.codenewlines.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenewlines.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codenewlines, 1, 0, 1, 5)
         self.namenewlines = QtWidgets.QLabel("newlines")
         self.namenewlines.setFont(QtGui.QFont('Arial', 14, 2))
@@ -36,7 +36,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelinput_tab_size, 3, 0, 1, 5)
         if self.tr("code_input_tab_size")!="code_input_tab_size":
             self.codeinput_tab_size = QtWidgets.QLabel(self.tr("code_input_tab_size"))
-            self.codeinput_tab_size.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeinput_tab_size.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codeinput_tab_size, 4, 0, 1, 5)
         self.nameinput_tab_size = QtWidgets.QLabel("input_tab_size")
         self.nameinput_tab_size.setFont(QtGui.QFont('Arial', 14, 2))
@@ -52,7 +52,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labeloutput_tab_size, 6, 0, 1, 5)
         if self.tr("code_output_tab_size")!="code_output_tab_size":
             self.codeoutput_tab_size = QtWidgets.QLabel(self.tr("code_output_tab_size"))
-            self.codeoutput_tab_size.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeoutput_tab_size.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codeoutput_tab_size, 7, 0, 1, 5)
         self.nameoutput_tab_size = QtWidgets.QLabel("output_tab_size")
         self.nameoutput_tab_size.setFont(QtGui.QFont('Arial', 14, 2))
@@ -68,7 +68,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelstring_escape_char, 9, 0, 1, 5)
         if self.tr("code_string_escape_char")!="code_string_escape_char":
             self.codestring_escape_char = QtWidgets.QLabel(self.tr("code_string_escape_char"))
-            self.codestring_escape_char.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codestring_escape_char.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codestring_escape_char, 10, 0, 1, 5)
         self.namestring_escape_char = QtWidgets.QLabel("string_escape_char")
         self.namestring_escape_char.setFont(QtGui.QFont('Arial', 14, 2))
@@ -84,7 +84,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelstring_escape_char2, 12, 0, 1, 5)
         if self.tr("code_string_escape_char2")!="code_string_escape_char2":
             self.codestring_escape_char2 = QtWidgets.QLabel(self.tr("code_string_escape_char2"))
-            self.codestring_escape_char2.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codestring_escape_char2.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codestring_escape_char2, 13, 0, 1, 5)
         self.namestring_escape_char2 = QtWidgets.QLabel("string_escape_char2")
         self.namestring_escape_char2.setFont(QtGui.QFont('Arial', 14, 2))
@@ -100,7 +100,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelstring_replace_tab_chars, 15, 0, 1, 5)
         if self.tr("code_string_replace_tab_chars")!="code_string_replace_tab_chars":
             self.codestring_replace_tab_chars = QtWidgets.QLabel(self.tr("code_string_replace_tab_chars"))
-            self.codestring_replace_tab_chars.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codestring_replace_tab_chars.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codestring_replace_tab_chars, 16, 0, 1, 5)
         self.namestring_replace_tab_chars = QtWidgets.QLabel("string_replace_tab_chars")
         self.namestring_replace_tab_chars.setFont(QtGui.QFont('Arial', 14, 2))
@@ -115,7 +115,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labeltok_split_gte, 18, 0, 1, 5)
         if self.tr("code_tok_split_gte")!="code_tok_split_gte":
             self.codetok_split_gte = QtWidgets.QLabel(self.tr("code_tok_split_gte"))
-            self.codetok_split_gte.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codetok_split_gte.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codetok_split_gte, 19, 0, 1, 5)
         self.nametok_split_gte = QtWidgets.QLabel("tok_split_gte")
         self.nametok_split_gte.setFont(QtGui.QFont('Arial', 14, 2))
@@ -130,7 +130,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labeldisable_processing_nl_cont, 21, 0, 1, 5)
         if self.tr("code_disable_processing_nl_cont")!="code_disable_processing_nl_cont":
             self.codedisable_processing_nl_cont = QtWidgets.QLabel(self.tr("code_disable_processing_nl_cont"))
-            self.codedisable_processing_nl_cont.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codedisable_processing_nl_cont.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codedisable_processing_nl_cont, 22, 0, 1, 5)
         self.namedisable_processing_nl_cont = QtWidgets.QLabel("disable_processing_nl_cont")
         self.namedisable_processing_nl_cont.setFont(QtGui.QFont('Arial', 14, 2))
@@ -145,7 +145,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labeldisable_processing_cmt, 24, 0, 1, 5)
         if self.tr("code_disable_processing_cmt")!="code_disable_processing_cmt":
             self.codedisable_processing_cmt = QtWidgets.QLabel(self.tr("code_disable_processing_cmt"))
-            self.codedisable_processing_cmt.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codedisable_processing_cmt.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codedisable_processing_cmt, 25, 0, 1, 5)
         self.namedisable_processing_cmt = QtWidgets.QLabel("disable_processing_cmt")
         self.namedisable_processing_cmt.setFont(QtGui.QFont('Arial', 14, 2))
@@ -159,7 +159,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelenable_processing_cmt, 27, 0, 1, 5)
         if self.tr("code_enable_processing_cmt")!="code_enable_processing_cmt":
             self.codeenable_processing_cmt = QtWidgets.QLabel(self.tr("code_enable_processing_cmt"))
-            self.codeenable_processing_cmt.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeenable_processing_cmt.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codeenable_processing_cmt, 28, 0, 1, 5)
         self.nameenable_processing_cmt = QtWidgets.QLabel("enable_processing_cmt")
         self.nameenable_processing_cmt.setFont(QtGui.QFont('Arial', 14, 2))
@@ -173,7 +173,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelenable_digraphs, 30, 0, 1, 5)
         if self.tr("code_enable_digraphs")!="code_enable_digraphs":
             self.codeenable_digraphs = QtWidgets.QLabel(self.tr("code_enable_digraphs"))
-            self.codeenable_digraphs.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeenable_digraphs.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codeenable_digraphs, 31, 0, 1, 5)
         self.nameenable_digraphs = QtWidgets.QLabel("enable_digraphs")
         self.nameenable_digraphs.setFont(QtGui.QFont('Arial', 14, 2))
@@ -188,7 +188,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelutf8_bom, 33, 0, 1, 5)
         if self.tr("code_utf8_bom")!="code_utf8_bom":
             self.codeutf8_bom = QtWidgets.QLabel(self.tr("code_utf8_bom"))
-            self.codeutf8_bom.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeutf8_bom.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codeutf8_bom, 34, 0, 1, 5)
         self.nameutf8_bom = QtWidgets.QLabel("utf8_bom")
         self.nameutf8_bom.setFont(QtGui.QFont('Arial', 14, 2))
@@ -203,7 +203,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelutf8_byte, 36, 0, 1, 5)
         if self.tr("code_utf8_byte")!="code_utf8_byte":
             self.codeutf8_byte = QtWidgets.QLabel(self.tr("code_utf8_byte"))
-            self.codeutf8_byte.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeutf8_byte.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codeutf8_byte, 37, 0, 1, 5)
         self.nameutf8_byte = QtWidgets.QLabel("utf8_byte")
         self.nameutf8_byte.setFont(QtGui.QFont('Arial', 14, 2))
@@ -218,7 +218,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelutf8_force, 39, 0, 1, 5)
         if self.tr("code_utf8_force")!="code_utf8_force":
             self.codeutf8_force = QtWidgets.QLabel(self.tr("code_utf8_force"))
-            self.codeutf8_force.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeutf8_force.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codeutf8_force, 40, 0, 1, 5)
         self.nameutf8_force = QtWidgets.QLabel("utf8_force")
         self.nameutf8_force.setFont(QtGui.QFont('Arial', 14, 2))
@@ -233,7 +233,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelsp_do_brace_open, 42, 0, 1, 5)
         if self.tr("code_sp_do_brace_open")!="code_sp_do_brace_open":
             self.codesp_do_brace_open = QtWidgets.QLabel(self.tr("code_sp_do_brace_open"))
-            self.codesp_do_brace_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_do_brace_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codesp_do_brace_open, 43, 0, 1, 5)
         self.namesp_do_brace_open = QtWidgets.QLabel("sp_do_brace_open")
         self.namesp_do_brace_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -248,7 +248,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelsp_brace_close_while, 45, 0, 1, 5)
         if self.tr("code_sp_brace_close_while")!="code_sp_brace_close_while":
             self.codesp_brace_close_while = QtWidgets.QLabel(self.tr("code_sp_brace_close_while"))
-            self.codesp_brace_close_while.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_brace_close_while.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codesp_brace_close_while, 46, 0, 1, 5)
         self.namesp_brace_close_while = QtWidgets.QLabel("sp_brace_close_while")
         self.namesp_brace_close_while.setFont(QtGui.QFont('Arial', 14, 2))
@@ -263,7 +263,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt1.addWidget(self.labelsp_while_paren_open, 48, 0, 1, 5)
         if self.tr("code_sp_while_paren_open")!="code_sp_while_paren_open":
             self.codesp_while_paren_open = QtWidgets.QLabel(self.tr("code_sp_while_paren_open"))
-            self.codesp_while_paren_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_while_paren_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt1.addWidget(self.codesp_while_paren_open, 49, 0, 1, 5)
         self.namesp_while_paren_open = QtWidgets.QLabel("sp_while_paren_open")
         self.namesp_while_paren_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -281,7 +281,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_arith, 0, 0, 1, 5)
         if self.tr("code_sp_arith")!="code_sp_arith":
             self.codesp_arith = QtWidgets.QLabel(self.tr("code_sp_arith"))
-            self.codesp_arith.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_arith.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_arith, 1, 0, 1, 5)
         self.namesp_arith = QtWidgets.QLabel("sp_arith")
         self.namesp_arith.setFont(QtGui.QFont('Arial', 14, 2))
@@ -296,7 +296,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_arith_additive, 3, 0, 1, 5)
         if self.tr("code_sp_arith_additive")!="code_sp_arith_additive":
             self.codesp_arith_additive = QtWidgets.QLabel(self.tr("code_sp_arith_additive"))
-            self.codesp_arith_additive.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_arith_additive.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_arith_additive, 4, 0, 1, 5)
         self.namesp_arith_additive = QtWidgets.QLabel("sp_arith_additive")
         self.namesp_arith_additive.setFont(QtGui.QFont('Arial', 14, 2))
@@ -311,7 +311,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_assign, 6, 0, 1, 5)
         if self.tr("code_sp_assign")!="code_sp_assign":
             self.codesp_assign = QtWidgets.QLabel(self.tr("code_sp_assign"))
-            self.codesp_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_assign, 7, 0, 1, 5)
         self.namesp_assign = QtWidgets.QLabel("sp_assign")
         self.namesp_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -326,7 +326,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cpp_lambda_assign, 9, 0, 1, 5)
         if self.tr("code_sp_cpp_lambda_assign")!="code_sp_cpp_lambda_assign":
             self.codesp_cpp_lambda_assign = QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_assign"))
-            self.codesp_cpp_lambda_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cpp_lambda_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cpp_lambda_assign, 10, 0, 1, 5)
         self.namesp_cpp_lambda_assign = QtWidgets.QLabel("sp_cpp_lambda_assign")
         self.namesp_cpp_lambda_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -341,7 +341,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cpp_lambda_square_paren, 12, 0, 1, 5)
         if self.tr("code_sp_cpp_lambda_square_paren")!="code_sp_cpp_lambda_square_paren":
             self.codesp_cpp_lambda_square_paren = QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_square_paren"))
-            self.codesp_cpp_lambda_square_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cpp_lambda_square_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cpp_lambda_square_paren, 13, 0, 1, 5)
         self.namesp_cpp_lambda_square_paren = QtWidgets.QLabel("sp_cpp_lambda_square_paren")
         self.namesp_cpp_lambda_square_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -356,7 +356,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cpp_lambda_square_brace, 15, 0, 1, 5)
         if self.tr("code_sp_cpp_lambda_square_brace")!="code_sp_cpp_lambda_square_brace":
             self.codesp_cpp_lambda_square_brace = QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_square_brace"))
-            self.codesp_cpp_lambda_square_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cpp_lambda_square_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cpp_lambda_square_brace, 16, 0, 1, 5)
         self.namesp_cpp_lambda_square_brace = QtWidgets.QLabel("sp_cpp_lambda_square_brace")
         self.namesp_cpp_lambda_square_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -371,7 +371,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cpp_lambda_paren_brace, 18, 0, 1, 5)
         if self.tr("code_sp_cpp_lambda_paren_brace")!="code_sp_cpp_lambda_paren_brace":
             self.codesp_cpp_lambda_paren_brace = QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_paren_brace"))
-            self.codesp_cpp_lambda_paren_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cpp_lambda_paren_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cpp_lambda_paren_brace, 19, 0, 1, 5)
         self.namesp_cpp_lambda_paren_brace = QtWidgets.QLabel("sp_cpp_lambda_paren_brace")
         self.namesp_cpp_lambda_paren_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -386,7 +386,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cpp_lambda_fparen, 21, 0, 1, 5)
         if self.tr("code_sp_cpp_lambda_fparen")!="code_sp_cpp_lambda_fparen":
             self.codesp_cpp_lambda_fparen = QtWidgets.QLabel(self.tr("code_sp_cpp_lambda_fparen"))
-            self.codesp_cpp_lambda_fparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cpp_lambda_fparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cpp_lambda_fparen, 22, 0, 1, 5)
         self.namesp_cpp_lambda_fparen = QtWidgets.QLabel("sp_cpp_lambda_fparen")
         self.namesp_cpp_lambda_fparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -401,7 +401,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_assign_default, 24, 0, 1, 5)
         if self.tr("code_sp_assign_default")!="code_sp_assign_default":
             self.codesp_assign_default = QtWidgets.QLabel(self.tr("code_sp_assign_default"))
-            self.codesp_assign_default.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_assign_default.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_assign_default, 25, 0, 1, 5)
         self.namesp_assign_default = QtWidgets.QLabel("sp_assign_default")
         self.namesp_assign_default.setFont(QtGui.QFont('Arial', 14, 2))
@@ -416,7 +416,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_assign, 27, 0, 1, 5)
         if self.tr("code_sp_before_assign")!="code_sp_before_assign":
             self.codesp_before_assign = QtWidgets.QLabel(self.tr("code_sp_before_assign"))
-            self.codesp_before_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_assign, 28, 0, 1, 5)
         self.namesp_before_assign = QtWidgets.QLabel("sp_before_assign")
         self.namesp_before_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -431,7 +431,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_assign, 30, 0, 1, 5)
         if self.tr("code_sp_after_assign")!="code_sp_after_assign":
             self.codesp_after_assign = QtWidgets.QLabel(self.tr("code_sp_after_assign"))
-            self.codesp_after_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_assign, 31, 0, 1, 5)
         self.namesp_after_assign = QtWidgets.QLabel("sp_after_assign")
         self.namesp_after_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -446,7 +446,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_enum_paren, 33, 0, 1, 5)
         if self.tr("code_sp_enum_paren")!="code_sp_enum_paren":
             self.codesp_enum_paren = QtWidgets.QLabel(self.tr("code_sp_enum_paren"))
-            self.codesp_enum_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_enum_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_enum_paren, 34, 0, 1, 5)
         self.namesp_enum_paren = QtWidgets.QLabel("sp_enum_paren")
         self.namesp_enum_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -461,7 +461,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_enum_assign, 36, 0, 1, 5)
         if self.tr("code_sp_enum_assign")!="code_sp_enum_assign":
             self.codesp_enum_assign = QtWidgets.QLabel(self.tr("code_sp_enum_assign"))
-            self.codesp_enum_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_enum_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_enum_assign, 37, 0, 1, 5)
         self.namesp_enum_assign = QtWidgets.QLabel("sp_enum_assign")
         self.namesp_enum_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -476,7 +476,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_enum_before_assign, 39, 0, 1, 5)
         if self.tr("code_sp_enum_before_assign")!="code_sp_enum_before_assign":
             self.codesp_enum_before_assign = QtWidgets.QLabel(self.tr("code_sp_enum_before_assign"))
-            self.codesp_enum_before_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_enum_before_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_enum_before_assign, 40, 0, 1, 5)
         self.namesp_enum_before_assign = QtWidgets.QLabel("sp_enum_before_assign")
         self.namesp_enum_before_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -491,7 +491,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_enum_after_assign, 42, 0, 1, 5)
         if self.tr("code_sp_enum_after_assign")!="code_sp_enum_after_assign":
             self.codesp_enum_after_assign = QtWidgets.QLabel(self.tr("code_sp_enum_after_assign"))
-            self.codesp_enum_after_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_enum_after_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_enum_after_assign, 43, 0, 1, 5)
         self.namesp_enum_after_assign = QtWidgets.QLabel("sp_enum_after_assign")
         self.namesp_enum_after_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -506,7 +506,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_enum_colon, 45, 0, 1, 5)
         if self.tr("code_sp_enum_colon")!="code_sp_enum_colon":
             self.codesp_enum_colon = QtWidgets.QLabel(self.tr("code_sp_enum_colon"))
-            self.codesp_enum_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_enum_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_enum_colon, 46, 0, 1, 5)
         self.namesp_enum_colon = QtWidgets.QLabel("sp_enum_colon")
         self.namesp_enum_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -521,7 +521,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_pp_concat, 48, 0, 1, 5)
         if self.tr("code_sp_pp_concat")!="code_sp_pp_concat":
             self.codesp_pp_concat = QtWidgets.QLabel(self.tr("code_sp_pp_concat"))
-            self.codesp_pp_concat.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_pp_concat.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_pp_concat, 49, 0, 1, 5)
         self.namesp_pp_concat = QtWidgets.QLabel("sp_pp_concat")
         self.namesp_pp_concat.setFont(QtGui.QFont('Arial', 14, 2))
@@ -536,7 +536,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_pp_stringify, 51, 0, 1, 5)
         if self.tr("code_sp_pp_stringify")!="code_sp_pp_stringify":
             self.codesp_pp_stringify = QtWidgets.QLabel(self.tr("code_sp_pp_stringify"))
-            self.codesp_pp_stringify.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_pp_stringify.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_pp_stringify, 52, 0, 1, 5)
         self.namesp_pp_stringify = QtWidgets.QLabel("sp_pp_stringify")
         self.namesp_pp_stringify.setFont(QtGui.QFont('Arial', 14, 2))
@@ -551,7 +551,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_pp_stringify, 54, 0, 1, 5)
         if self.tr("code_sp_before_pp_stringify")!="code_sp_before_pp_stringify":
             self.codesp_before_pp_stringify = QtWidgets.QLabel(self.tr("code_sp_before_pp_stringify"))
-            self.codesp_before_pp_stringify.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_pp_stringify.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_pp_stringify, 55, 0, 1, 5)
         self.namesp_before_pp_stringify = QtWidgets.QLabel("sp_before_pp_stringify")
         self.namesp_before_pp_stringify.setFont(QtGui.QFont('Arial', 14, 2))
@@ -566,7 +566,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_bool, 57, 0, 1, 5)
         if self.tr("code_sp_bool")!="code_sp_bool":
             self.codesp_bool = QtWidgets.QLabel(self.tr("code_sp_bool"))
-            self.codesp_bool.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_bool.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_bool, 58, 0, 1, 5)
         self.namesp_bool = QtWidgets.QLabel("sp_bool")
         self.namesp_bool.setFont(QtGui.QFont('Arial', 14, 2))
@@ -581,7 +581,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_compare, 60, 0, 1, 5)
         if self.tr("code_sp_compare")!="code_sp_compare":
             self.codesp_compare = QtWidgets.QLabel(self.tr("code_sp_compare"))
-            self.codesp_compare.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_compare.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_compare, 61, 0, 1, 5)
         self.namesp_compare = QtWidgets.QLabel("sp_compare")
         self.namesp_compare.setFont(QtGui.QFont('Arial', 14, 2))
@@ -596,7 +596,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_paren, 63, 0, 1, 5)
         if self.tr("code_sp_inside_paren")!="code_sp_inside_paren":
             self.codesp_inside_paren = QtWidgets.QLabel(self.tr("code_sp_inside_paren"))
-            self.codesp_inside_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_paren, 64, 0, 1, 5)
         self.namesp_inside_paren = QtWidgets.QLabel("sp_inside_paren")
         self.namesp_inside_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -611,7 +611,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_paren_paren, 66, 0, 1, 5)
         if self.tr("code_sp_paren_paren")!="code_sp_paren_paren":
             self.codesp_paren_paren = QtWidgets.QLabel(self.tr("code_sp_paren_paren"))
-            self.codesp_paren_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_paren_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_paren_paren, 67, 0, 1, 5)
         self.namesp_paren_paren = QtWidgets.QLabel("sp_paren_paren")
         self.namesp_paren_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -626,7 +626,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cparen_oparen, 69, 0, 1, 5)
         if self.tr("code_sp_cparen_oparen")!="code_sp_cparen_oparen":
             self.codesp_cparen_oparen = QtWidgets.QLabel(self.tr("code_sp_cparen_oparen"))
-            self.codesp_cparen_oparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cparen_oparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cparen_oparen, 70, 0, 1, 5)
         self.namesp_cparen_oparen = QtWidgets.QLabel("sp_cparen_oparen")
         self.namesp_cparen_oparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -641,7 +641,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_balance_nested_parens, 72, 0, 1, 5)
         if self.tr("code_sp_balance_nested_parens")!="code_sp_balance_nested_parens":
             self.codesp_balance_nested_parens = QtWidgets.QLabel(self.tr("code_sp_balance_nested_parens"))
-            self.codesp_balance_nested_parens.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_balance_nested_parens.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_balance_nested_parens, 73, 0, 1, 5)
         self.namesp_balance_nested_parens = QtWidgets.QLabel("sp_balance_nested_parens")
         self.namesp_balance_nested_parens.setFont(QtGui.QFont('Arial', 14, 2))
@@ -656,7 +656,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_paren_brace, 75, 0, 1, 5)
         if self.tr("code_sp_paren_brace")!="code_sp_paren_brace":
             self.codesp_paren_brace = QtWidgets.QLabel(self.tr("code_sp_paren_brace"))
-            self.codesp_paren_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_paren_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_paren_brace, 76, 0, 1, 5)
         self.namesp_paren_brace = QtWidgets.QLabel("sp_paren_brace")
         self.namesp_paren_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -671,7 +671,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_brace_brace, 78, 0, 1, 5)
         if self.tr("code_sp_brace_brace")!="code_sp_brace_brace":
             self.codesp_brace_brace = QtWidgets.QLabel(self.tr("code_sp_brace_brace"))
-            self.codesp_brace_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_brace_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_brace_brace, 79, 0, 1, 5)
         self.namesp_brace_brace = QtWidgets.QLabel("sp_brace_brace")
         self.namesp_brace_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -686,7 +686,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_ptr_star, 81, 0, 1, 5)
         if self.tr("code_sp_before_ptr_star")!="code_sp_before_ptr_star":
             self.codesp_before_ptr_star = QtWidgets.QLabel(self.tr("code_sp_before_ptr_star"))
-            self.codesp_before_ptr_star.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_ptr_star.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_ptr_star, 82, 0, 1, 5)
         self.namesp_before_ptr_star = QtWidgets.QLabel("sp_before_ptr_star")
         self.namesp_before_ptr_star.setFont(QtGui.QFont('Arial', 14, 2))
@@ -701,7 +701,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_unnamed_ptr_star, 84, 0, 1, 5)
         if self.tr("code_sp_before_unnamed_ptr_star")!="code_sp_before_unnamed_ptr_star":
             self.codesp_before_unnamed_ptr_star = QtWidgets.QLabel(self.tr("code_sp_before_unnamed_ptr_star"))
-            self.codesp_before_unnamed_ptr_star.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_unnamed_ptr_star.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_unnamed_ptr_star, 85, 0, 1, 5)
         self.namesp_before_unnamed_ptr_star = QtWidgets.QLabel("sp_before_unnamed_ptr_star")
         self.namesp_before_unnamed_ptr_star.setFont(QtGui.QFont('Arial', 14, 2))
@@ -716,7 +716,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_between_ptr_star, 87, 0, 1, 5)
         if self.tr("code_sp_between_ptr_star")!="code_sp_between_ptr_star":
             self.codesp_between_ptr_star = QtWidgets.QLabel(self.tr("code_sp_between_ptr_star"))
-            self.codesp_between_ptr_star.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_between_ptr_star.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_between_ptr_star, 88, 0, 1, 5)
         self.namesp_between_ptr_star = QtWidgets.QLabel("sp_between_ptr_star")
         self.namesp_between_ptr_star.setFont(QtGui.QFont('Arial', 14, 2))
@@ -731,7 +731,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_ptr_star, 90, 0, 1, 5)
         if self.tr("code_sp_after_ptr_star")!="code_sp_after_ptr_star":
             self.codesp_after_ptr_star = QtWidgets.QLabel(self.tr("code_sp_after_ptr_star"))
-            self.codesp_after_ptr_star.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_ptr_star.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_ptr_star, 91, 0, 1, 5)
         self.namesp_after_ptr_star = QtWidgets.QLabel("sp_after_ptr_star")
         self.namesp_after_ptr_star.setFont(QtGui.QFont('Arial', 14, 2))
@@ -746,7 +746,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_ptr_block_caret, 93, 0, 1, 5)
         if self.tr("code_sp_after_ptr_block_caret")!="code_sp_after_ptr_block_caret":
             self.codesp_after_ptr_block_caret = QtWidgets.QLabel(self.tr("code_sp_after_ptr_block_caret"))
-            self.codesp_after_ptr_block_caret.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_ptr_block_caret.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_ptr_block_caret, 94, 0, 1, 5)
         self.namesp_after_ptr_block_caret = QtWidgets.QLabel("sp_after_ptr_block_caret")
         self.namesp_after_ptr_block_caret.setFont(QtGui.QFont('Arial', 14, 2))
@@ -761,7 +761,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_ptr_star_qualifier, 96, 0, 1, 5)
         if self.tr("code_sp_after_ptr_star_qualifier")!="code_sp_after_ptr_star_qualifier":
             self.codesp_after_ptr_star_qualifier = QtWidgets.QLabel(self.tr("code_sp_after_ptr_star_qualifier"))
-            self.codesp_after_ptr_star_qualifier.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_ptr_star_qualifier.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_ptr_star_qualifier, 97, 0, 1, 5)
         self.namesp_after_ptr_star_qualifier = QtWidgets.QLabel("sp_after_ptr_star_qualifier")
         self.namesp_after_ptr_star_qualifier.setFont(QtGui.QFont('Arial', 14, 2))
@@ -776,7 +776,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_ptr_star_func, 99, 0, 1, 5)
         if self.tr("code_sp_after_ptr_star_func")!="code_sp_after_ptr_star_func":
             self.codesp_after_ptr_star_func = QtWidgets.QLabel(self.tr("code_sp_after_ptr_star_func"))
-            self.codesp_after_ptr_star_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_ptr_star_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_ptr_star_func, 100, 0, 1, 5)
         self.namesp_after_ptr_star_func = QtWidgets.QLabel("sp_after_ptr_star_func")
         self.namesp_after_ptr_star_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -791,7 +791,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_ptr_star_paren, 102, 0, 1, 5)
         if self.tr("code_sp_ptr_star_paren")!="code_sp_ptr_star_paren":
             self.codesp_ptr_star_paren = QtWidgets.QLabel(self.tr("code_sp_ptr_star_paren"))
-            self.codesp_ptr_star_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_ptr_star_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_ptr_star_paren, 103, 0, 1, 5)
         self.namesp_ptr_star_paren = QtWidgets.QLabel("sp_ptr_star_paren")
         self.namesp_ptr_star_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -806,7 +806,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_ptr_star_func, 105, 0, 1, 5)
         if self.tr("code_sp_before_ptr_star_func")!="code_sp_before_ptr_star_func":
             self.codesp_before_ptr_star_func = QtWidgets.QLabel(self.tr("code_sp_before_ptr_star_func"))
-            self.codesp_before_ptr_star_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_ptr_star_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_ptr_star_func, 106, 0, 1, 5)
         self.namesp_before_ptr_star_func = QtWidgets.QLabel("sp_before_ptr_star_func")
         self.namesp_before_ptr_star_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -821,7 +821,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_byref, 108, 0, 1, 5)
         if self.tr("code_sp_before_byref")!="code_sp_before_byref":
             self.codesp_before_byref = QtWidgets.QLabel(self.tr("code_sp_before_byref"))
-            self.codesp_before_byref.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_byref.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_byref, 109, 0, 1, 5)
         self.namesp_before_byref = QtWidgets.QLabel("sp_before_byref")
         self.namesp_before_byref.setFont(QtGui.QFont('Arial', 14, 2))
@@ -836,7 +836,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_unnamed_byref, 111, 0, 1, 5)
         if self.tr("code_sp_before_unnamed_byref")!="code_sp_before_unnamed_byref":
             self.codesp_before_unnamed_byref = QtWidgets.QLabel(self.tr("code_sp_before_unnamed_byref"))
-            self.codesp_before_unnamed_byref.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_unnamed_byref.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_unnamed_byref, 112, 0, 1, 5)
         self.namesp_before_unnamed_byref = QtWidgets.QLabel("sp_before_unnamed_byref")
         self.namesp_before_unnamed_byref.setFont(QtGui.QFont('Arial', 14, 2))
@@ -851,7 +851,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_byref, 114, 0, 1, 5)
         if self.tr("code_sp_after_byref")!="code_sp_after_byref":
             self.codesp_after_byref = QtWidgets.QLabel(self.tr("code_sp_after_byref"))
-            self.codesp_after_byref.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_byref.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_byref, 115, 0, 1, 5)
         self.namesp_after_byref = QtWidgets.QLabel("sp_after_byref")
         self.namesp_after_byref.setFont(QtGui.QFont('Arial', 14, 2))
@@ -866,7 +866,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_byref_func, 117, 0, 1, 5)
         if self.tr("code_sp_after_byref_func")!="code_sp_after_byref_func":
             self.codesp_after_byref_func = QtWidgets.QLabel(self.tr("code_sp_after_byref_func"))
-            self.codesp_after_byref_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_byref_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_byref_func, 118, 0, 1, 5)
         self.namesp_after_byref_func = QtWidgets.QLabel("sp_after_byref_func")
         self.namesp_after_byref_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -881,7 +881,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_byref_func, 120, 0, 1, 5)
         if self.tr("code_sp_before_byref_func")!="code_sp_before_byref_func":
             self.codesp_before_byref_func = QtWidgets.QLabel(self.tr("code_sp_before_byref_func"))
-            self.codesp_before_byref_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_byref_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_byref_func, 121, 0, 1, 5)
         self.namesp_before_byref_func = QtWidgets.QLabel("sp_before_byref_func")
         self.namesp_before_byref_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -896,7 +896,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_type, 123, 0, 1, 5)
         if self.tr("code_sp_after_type")!="code_sp_after_type":
             self.codesp_after_type = QtWidgets.QLabel(self.tr("code_sp_after_type"))
-            self.codesp_after_type.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_type.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_type, 124, 0, 1, 5)
         self.namesp_after_type = QtWidgets.QLabel("sp_after_type")
         self.namesp_after_type.setFont(QtGui.QFont('Arial', 14, 2))
@@ -911,7 +911,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_decltype, 126, 0, 1, 5)
         if self.tr("code_sp_after_decltype")!="code_sp_after_decltype":
             self.codesp_after_decltype = QtWidgets.QLabel(self.tr("code_sp_after_decltype"))
-            self.codesp_after_decltype.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_decltype.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_decltype, 127, 0, 1, 5)
         self.namesp_after_decltype = QtWidgets.QLabel("sp_after_decltype")
         self.namesp_after_decltype.setFont(QtGui.QFont('Arial', 14, 2))
@@ -926,7 +926,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_template_paren, 129, 0, 1, 5)
         if self.tr("code_sp_before_template_paren")!="code_sp_before_template_paren":
             self.codesp_before_template_paren = QtWidgets.QLabel(self.tr("code_sp_before_template_paren"))
-            self.codesp_before_template_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_template_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_template_paren, 130, 0, 1, 5)
         self.namesp_before_template_paren = QtWidgets.QLabel("sp_before_template_paren")
         self.namesp_before_template_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -941,7 +941,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_template_angle, 132, 0, 1, 5)
         if self.tr("code_sp_template_angle")!="code_sp_template_angle":
             self.codesp_template_angle = QtWidgets.QLabel(self.tr("code_sp_template_angle"))
-            self.codesp_template_angle.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_template_angle.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_template_angle, 133, 0, 1, 5)
         self.namesp_template_angle = QtWidgets.QLabel("sp_template_angle")
         self.namesp_template_angle.setFont(QtGui.QFont('Arial', 14, 2))
@@ -956,7 +956,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_angle, 135, 0, 1, 5)
         if self.tr("code_sp_before_angle")!="code_sp_before_angle":
             self.codesp_before_angle = QtWidgets.QLabel(self.tr("code_sp_before_angle"))
-            self.codesp_before_angle.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_angle.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_angle, 136, 0, 1, 5)
         self.namesp_before_angle = QtWidgets.QLabel("sp_before_angle")
         self.namesp_before_angle.setFont(QtGui.QFont('Arial', 14, 2))
@@ -971,7 +971,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_angle, 138, 0, 1, 5)
         if self.tr("code_sp_inside_angle")!="code_sp_inside_angle":
             self.codesp_inside_angle = QtWidgets.QLabel(self.tr("code_sp_inside_angle"))
-            self.codesp_inside_angle.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_angle.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_angle, 139, 0, 1, 5)
         self.namesp_inside_angle = QtWidgets.QLabel("sp_inside_angle")
         self.namesp_inside_angle.setFont(QtGui.QFont('Arial', 14, 2))
@@ -986,7 +986,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_angle_empty, 141, 0, 1, 5)
         if self.tr("code_sp_inside_angle_empty")!="code_sp_inside_angle_empty":
             self.codesp_inside_angle_empty = QtWidgets.QLabel(self.tr("code_sp_inside_angle_empty"))
-            self.codesp_inside_angle_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_angle_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_angle_empty, 142, 0, 1, 5)
         self.namesp_inside_angle_empty = QtWidgets.QLabel("sp_inside_angle_empty")
         self.namesp_inside_angle_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1001,7 +1001,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_angle_colon, 144, 0, 1, 5)
         if self.tr("code_sp_angle_colon")!="code_sp_angle_colon":
             self.codesp_angle_colon = QtWidgets.QLabel(self.tr("code_sp_angle_colon"))
-            self.codesp_angle_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_angle_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_angle_colon, 145, 0, 1, 5)
         self.namesp_angle_colon = QtWidgets.QLabel("sp_angle_colon")
         self.namesp_angle_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1016,7 +1016,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_angle, 147, 0, 1, 5)
         if self.tr("code_sp_after_angle")!="code_sp_after_angle":
             self.codesp_after_angle = QtWidgets.QLabel(self.tr("code_sp_after_angle"))
-            self.codesp_after_angle.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_angle.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_angle, 148, 0, 1, 5)
         self.namesp_after_angle = QtWidgets.QLabel("sp_after_angle")
         self.namesp_after_angle.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1031,7 +1031,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_angle_paren, 150, 0, 1, 5)
         if self.tr("code_sp_angle_paren")!="code_sp_angle_paren":
             self.codesp_angle_paren = QtWidgets.QLabel(self.tr("code_sp_angle_paren"))
-            self.codesp_angle_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_angle_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_angle_paren, 151, 0, 1, 5)
         self.namesp_angle_paren = QtWidgets.QLabel("sp_angle_paren")
         self.namesp_angle_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1046,7 +1046,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_angle_paren_empty, 153, 0, 1, 5)
         if self.tr("code_sp_angle_paren_empty")!="code_sp_angle_paren_empty":
             self.codesp_angle_paren_empty = QtWidgets.QLabel(self.tr("code_sp_angle_paren_empty"))
-            self.codesp_angle_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_angle_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_angle_paren_empty, 154, 0, 1, 5)
         self.namesp_angle_paren_empty = QtWidgets.QLabel("sp_angle_paren_empty")
         self.namesp_angle_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1061,7 +1061,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_angle_word, 156, 0, 1, 5)
         if self.tr("code_sp_angle_word")!="code_sp_angle_word":
             self.codesp_angle_word = QtWidgets.QLabel(self.tr("code_sp_angle_word"))
-            self.codesp_angle_word.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_angle_word.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_angle_word, 157, 0, 1, 5)
         self.namesp_angle_word = QtWidgets.QLabel("sp_angle_word")
         self.namesp_angle_word.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1076,7 +1076,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_angle_shift, 159, 0, 1, 5)
         if self.tr("code_sp_angle_shift")!="code_sp_angle_shift":
             self.codesp_angle_shift = QtWidgets.QLabel(self.tr("code_sp_angle_shift"))
-            self.codesp_angle_shift.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_angle_shift.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_angle_shift, 160, 0, 1, 5)
         self.namesp_angle_shift = QtWidgets.QLabel("sp_angle_shift")
         self.namesp_angle_shift.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1091,7 +1091,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_permit_cpp11_shift, 162, 0, 1, 5)
         if self.tr("code_sp_permit_cpp11_shift")!="code_sp_permit_cpp11_shift":
             self.codesp_permit_cpp11_shift = QtWidgets.QLabel(self.tr("code_sp_permit_cpp11_shift"))
-            self.codesp_permit_cpp11_shift.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_permit_cpp11_shift.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_permit_cpp11_shift, 163, 0, 1, 5)
         self.namesp_permit_cpp11_shift = QtWidgets.QLabel("sp_permit_cpp11_shift")
         self.namesp_permit_cpp11_shift.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1106,7 +1106,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_sparen, 165, 0, 1, 5)
         if self.tr("code_sp_before_sparen")!="code_sp_before_sparen":
             self.codesp_before_sparen = QtWidgets.QLabel(self.tr("code_sp_before_sparen"))
-            self.codesp_before_sparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_sparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_sparen, 166, 0, 1, 5)
         self.namesp_before_sparen = QtWidgets.QLabel("sp_before_sparen")
         self.namesp_before_sparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1121,7 +1121,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_sparen, 168, 0, 1, 5)
         if self.tr("code_sp_inside_sparen")!="code_sp_inside_sparen":
             self.codesp_inside_sparen = QtWidgets.QLabel(self.tr("code_sp_inside_sparen"))
-            self.codesp_inside_sparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_sparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_sparen, 169, 0, 1, 5)
         self.namesp_inside_sparen = QtWidgets.QLabel("sp_inside_sparen")
         self.namesp_inside_sparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1136,7 +1136,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_sparen_open, 171, 0, 1, 5)
         if self.tr("code_sp_inside_sparen_open")!="code_sp_inside_sparen_open":
             self.codesp_inside_sparen_open = QtWidgets.QLabel(self.tr("code_sp_inside_sparen_open"))
-            self.codesp_inside_sparen_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_sparen_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_sparen_open, 172, 0, 1, 5)
         self.namesp_inside_sparen_open = QtWidgets.QLabel("sp_inside_sparen_open")
         self.namesp_inside_sparen_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1151,7 +1151,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_sparen_close, 174, 0, 1, 5)
         if self.tr("code_sp_inside_sparen_close")!="code_sp_inside_sparen_close":
             self.codesp_inside_sparen_close = QtWidgets.QLabel(self.tr("code_sp_inside_sparen_close"))
-            self.codesp_inside_sparen_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_sparen_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_sparen_close, 175, 0, 1, 5)
         self.namesp_inside_sparen_close = QtWidgets.QLabel("sp_inside_sparen_close")
         self.namesp_inside_sparen_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1166,7 +1166,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_sparen, 177, 0, 1, 5)
         if self.tr("code_sp_after_sparen")!="code_sp_after_sparen":
             self.codesp_after_sparen = QtWidgets.QLabel(self.tr("code_sp_after_sparen"))
-            self.codesp_after_sparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_sparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_sparen, 178, 0, 1, 5)
         self.namesp_after_sparen = QtWidgets.QLabel("sp_after_sparen")
         self.namesp_after_sparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1181,7 +1181,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_sparen_brace, 180, 0, 1, 5)
         if self.tr("code_sp_sparen_brace")!="code_sp_sparen_brace":
             self.codesp_sparen_brace = QtWidgets.QLabel(self.tr("code_sp_sparen_brace"))
-            self.codesp_sparen_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_sparen_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_sparen_brace, 181, 0, 1, 5)
         self.namesp_sparen_brace = QtWidgets.QLabel("sp_sparen_brace")
         self.namesp_sparen_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1196,7 +1196,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_invariant_paren, 183, 0, 1, 5)
         if self.tr("code_sp_invariant_paren")!="code_sp_invariant_paren":
             self.codesp_invariant_paren = QtWidgets.QLabel(self.tr("code_sp_invariant_paren"))
-            self.codesp_invariant_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_invariant_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_invariant_paren, 184, 0, 1, 5)
         self.namesp_invariant_paren = QtWidgets.QLabel("sp_invariant_paren")
         self.namesp_invariant_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1211,7 +1211,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_invariant_paren, 186, 0, 1, 5)
         if self.tr("code_sp_after_invariant_paren")!="code_sp_after_invariant_paren":
             self.codesp_after_invariant_paren = QtWidgets.QLabel(self.tr("code_sp_after_invariant_paren"))
-            self.codesp_after_invariant_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_invariant_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_invariant_paren, 187, 0, 1, 5)
         self.namesp_after_invariant_paren = QtWidgets.QLabel("sp_after_invariant_paren")
         self.namesp_after_invariant_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1226,7 +1226,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_special_semi, 189, 0, 1, 5)
         if self.tr("code_sp_special_semi")!="code_sp_special_semi":
             self.codesp_special_semi = QtWidgets.QLabel(self.tr("code_sp_special_semi"))
-            self.codesp_special_semi.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_special_semi.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_special_semi, 190, 0, 1, 5)
         self.namesp_special_semi = QtWidgets.QLabel("sp_special_semi")
         self.namesp_special_semi.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1241,7 +1241,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_semi, 192, 0, 1, 5)
         if self.tr("code_sp_before_semi")!="code_sp_before_semi":
             self.codesp_before_semi = QtWidgets.QLabel(self.tr("code_sp_before_semi"))
-            self.codesp_before_semi.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_semi.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_semi, 193, 0, 1, 5)
         self.namesp_before_semi = QtWidgets.QLabel("sp_before_semi")
         self.namesp_before_semi.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1256,7 +1256,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_semi_for, 195, 0, 1, 5)
         if self.tr("code_sp_before_semi_for")!="code_sp_before_semi_for":
             self.codesp_before_semi_for = QtWidgets.QLabel(self.tr("code_sp_before_semi_for"))
-            self.codesp_before_semi_for.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_semi_for.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_semi_for, 196, 0, 1, 5)
         self.namesp_before_semi_for = QtWidgets.QLabel("sp_before_semi_for")
         self.namesp_before_semi_for.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1271,7 +1271,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_semi_for_empty, 198, 0, 1, 5)
         if self.tr("code_sp_before_semi_for_empty")!="code_sp_before_semi_for_empty":
             self.codesp_before_semi_for_empty = QtWidgets.QLabel(self.tr("code_sp_before_semi_for_empty"))
-            self.codesp_before_semi_for_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_semi_for_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_semi_for_empty, 199, 0, 1, 5)
         self.namesp_before_semi_for_empty = QtWidgets.QLabel("sp_before_semi_for_empty")
         self.namesp_before_semi_for_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1286,7 +1286,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_semi, 201, 0, 1, 5)
         if self.tr("code_sp_after_semi")!="code_sp_after_semi":
             self.codesp_after_semi = QtWidgets.QLabel(self.tr("code_sp_after_semi"))
-            self.codesp_after_semi.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_semi.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_semi, 202, 0, 1, 5)
         self.namesp_after_semi = QtWidgets.QLabel("sp_after_semi")
         self.namesp_after_semi.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1301,7 +1301,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_semi_for, 204, 0, 1, 5)
         if self.tr("code_sp_after_semi_for")!="code_sp_after_semi_for":
             self.codesp_after_semi_for = QtWidgets.QLabel(self.tr("code_sp_after_semi_for"))
-            self.codesp_after_semi_for.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_semi_for.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_semi_for, 205, 0, 1, 5)
         self.namesp_after_semi_for = QtWidgets.QLabel("sp_after_semi_for")
         self.namesp_after_semi_for.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1316,7 +1316,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_semi_for_empty, 207, 0, 1, 5)
         if self.tr("code_sp_after_semi_for_empty")!="code_sp_after_semi_for_empty":
             self.codesp_after_semi_for_empty = QtWidgets.QLabel(self.tr("code_sp_after_semi_for_empty"))
-            self.codesp_after_semi_for_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_semi_for_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_semi_for_empty, 208, 0, 1, 5)
         self.namesp_after_semi_for_empty = QtWidgets.QLabel("sp_after_semi_for_empty")
         self.namesp_after_semi_for_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1331,7 +1331,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_square, 210, 0, 1, 5)
         if self.tr("code_sp_before_square")!="code_sp_before_square":
             self.codesp_before_square = QtWidgets.QLabel(self.tr("code_sp_before_square"))
-            self.codesp_before_square.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_square.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_square, 211, 0, 1, 5)
         self.namesp_before_square = QtWidgets.QLabel("sp_before_square")
         self.namesp_before_square.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1346,7 +1346,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_vardef_square, 213, 0, 1, 5)
         if self.tr("code_sp_before_vardef_square")!="code_sp_before_vardef_square":
             self.codesp_before_vardef_square = QtWidgets.QLabel(self.tr("code_sp_before_vardef_square"))
-            self.codesp_before_vardef_square.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_vardef_square.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_vardef_square, 214, 0, 1, 5)
         self.namesp_before_vardef_square = QtWidgets.QLabel("sp_before_vardef_square")
         self.namesp_before_vardef_square.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1361,7 +1361,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_square_asm_block, 216, 0, 1, 5)
         if self.tr("code_sp_before_square_asm_block")!="code_sp_before_square_asm_block":
             self.codesp_before_square_asm_block = QtWidgets.QLabel(self.tr("code_sp_before_square_asm_block"))
-            self.codesp_before_square_asm_block.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_square_asm_block.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_square_asm_block, 217, 0, 1, 5)
         self.namesp_before_square_asm_block = QtWidgets.QLabel("sp_before_square_asm_block")
         self.namesp_before_square_asm_block.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1376,7 +1376,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_squares, 219, 0, 1, 5)
         if self.tr("code_sp_before_squares")!="code_sp_before_squares":
             self.codesp_before_squares = QtWidgets.QLabel(self.tr("code_sp_before_squares"))
-            self.codesp_before_squares.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_squares.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_squares, 220, 0, 1, 5)
         self.namesp_before_squares = QtWidgets.QLabel("sp_before_squares")
         self.namesp_before_squares.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1391,7 +1391,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cpp_before_struct_binding, 222, 0, 1, 5)
         if self.tr("code_sp_cpp_before_struct_binding")!="code_sp_cpp_before_struct_binding":
             self.codesp_cpp_before_struct_binding = QtWidgets.QLabel(self.tr("code_sp_cpp_before_struct_binding"))
-            self.codesp_cpp_before_struct_binding.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cpp_before_struct_binding.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cpp_before_struct_binding, 223, 0, 1, 5)
         self.namesp_cpp_before_struct_binding = QtWidgets.QLabel("sp_cpp_before_struct_binding")
         self.namesp_cpp_before_struct_binding.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1406,7 +1406,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_square, 225, 0, 1, 5)
         if self.tr("code_sp_inside_square")!="code_sp_inside_square":
             self.codesp_inside_square = QtWidgets.QLabel(self.tr("code_sp_inside_square"))
-            self.codesp_inside_square.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_square.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_square, 226, 0, 1, 5)
         self.namesp_inside_square = QtWidgets.QLabel("sp_inside_square")
         self.namesp_inside_square.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1421,7 +1421,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_square_oc_array, 228, 0, 1, 5)
         if self.tr("code_sp_inside_square_oc_array")!="code_sp_inside_square_oc_array":
             self.codesp_inside_square_oc_array = QtWidgets.QLabel(self.tr("code_sp_inside_square_oc_array"))
-            self.codesp_inside_square_oc_array.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_square_oc_array.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_square_oc_array, 229, 0, 1, 5)
         self.namesp_inside_square_oc_array = QtWidgets.QLabel("sp_inside_square_oc_array")
         self.namesp_inside_square_oc_array.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1436,7 +1436,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_comma, 231, 0, 1, 5)
         if self.tr("code_sp_after_comma")!="code_sp_after_comma":
             self.codesp_after_comma = QtWidgets.QLabel(self.tr("code_sp_after_comma"))
-            self.codesp_after_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_comma, 232, 0, 1, 5)
         self.namesp_after_comma = QtWidgets.QLabel("sp_after_comma")
         self.namesp_after_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1451,7 +1451,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_comma, 234, 0, 1, 5)
         if self.tr("code_sp_before_comma")!="code_sp_before_comma":
             self.codesp_before_comma = QtWidgets.QLabel(self.tr("code_sp_before_comma"))
-            self.codesp_before_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_comma, 235, 0, 1, 5)
         self.namesp_before_comma = QtWidgets.QLabel("sp_before_comma")
         self.namesp_before_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1466,7 +1466,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_mdatype_commas, 237, 0, 1, 5)
         if self.tr("code_sp_after_mdatype_commas")!="code_sp_after_mdatype_commas":
             self.codesp_after_mdatype_commas = QtWidgets.QLabel(self.tr("code_sp_after_mdatype_commas"))
-            self.codesp_after_mdatype_commas.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_mdatype_commas.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_mdatype_commas, 238, 0, 1, 5)
         self.namesp_after_mdatype_commas = QtWidgets.QLabel("sp_after_mdatype_commas")
         self.namesp_after_mdatype_commas.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1481,7 +1481,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_mdatype_commas, 240, 0, 1, 5)
         if self.tr("code_sp_before_mdatype_commas")!="code_sp_before_mdatype_commas":
             self.codesp_before_mdatype_commas = QtWidgets.QLabel(self.tr("code_sp_before_mdatype_commas"))
-            self.codesp_before_mdatype_commas.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_mdatype_commas.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_mdatype_commas, 241, 0, 1, 5)
         self.namesp_before_mdatype_commas = QtWidgets.QLabel("sp_before_mdatype_commas")
         self.namesp_before_mdatype_commas.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1496,7 +1496,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_between_mdatype_commas, 243, 0, 1, 5)
         if self.tr("code_sp_between_mdatype_commas")!="code_sp_between_mdatype_commas":
             self.codesp_between_mdatype_commas = QtWidgets.QLabel(self.tr("code_sp_between_mdatype_commas"))
-            self.codesp_between_mdatype_commas.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_between_mdatype_commas.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_between_mdatype_commas, 244, 0, 1, 5)
         self.namesp_between_mdatype_commas = QtWidgets.QLabel("sp_between_mdatype_commas")
         self.namesp_between_mdatype_commas.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1511,7 +1511,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_paren_comma, 246, 0, 1, 5)
         if self.tr("code_sp_paren_comma")!="code_sp_paren_comma":
             self.codesp_paren_comma = QtWidgets.QLabel(self.tr("code_sp_paren_comma"))
-            self.codesp_paren_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_paren_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_paren_comma, 247, 0, 1, 5)
         self.namesp_paren_comma = QtWidgets.QLabel("sp_paren_comma")
         self.namesp_paren_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1526,7 +1526,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_ellipsis, 249, 0, 1, 5)
         if self.tr("code_sp_before_ellipsis")!="code_sp_before_ellipsis":
             self.codesp_before_ellipsis = QtWidgets.QLabel(self.tr("code_sp_before_ellipsis"))
-            self.codesp_before_ellipsis.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_ellipsis.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_ellipsis, 250, 0, 1, 5)
         self.namesp_before_ellipsis = QtWidgets.QLabel("sp_before_ellipsis")
         self.namesp_before_ellipsis.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1541,7 +1541,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_type_ellipsis, 252, 0, 1, 5)
         if self.tr("code_sp_type_ellipsis")!="code_sp_type_ellipsis":
             self.codesp_type_ellipsis = QtWidgets.QLabel(self.tr("code_sp_type_ellipsis"))
-            self.codesp_type_ellipsis.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_type_ellipsis.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_type_ellipsis, 253, 0, 1, 5)
         self.namesp_type_ellipsis = QtWidgets.QLabel("sp_type_ellipsis")
         self.namesp_type_ellipsis.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1556,7 +1556,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_type_question, 255, 0, 1, 5)
         if self.tr("code_sp_type_question")!="code_sp_type_question":
             self.codesp_type_question = QtWidgets.QLabel(self.tr("code_sp_type_question"))
-            self.codesp_type_question.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_type_question.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_type_question, 256, 0, 1, 5)
         self.namesp_type_question = QtWidgets.QLabel("sp_type_question")
         self.namesp_type_question.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1571,7 +1571,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_paren_ellipsis, 258, 0, 1, 5)
         if self.tr("code_sp_paren_ellipsis")!="code_sp_paren_ellipsis":
             self.codesp_paren_ellipsis = QtWidgets.QLabel(self.tr("code_sp_paren_ellipsis"))
-            self.codesp_paren_ellipsis.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_paren_ellipsis.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_paren_ellipsis, 259, 0, 1, 5)
         self.namesp_paren_ellipsis = QtWidgets.QLabel("sp_paren_ellipsis")
         self.namesp_paren_ellipsis.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1586,7 +1586,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_paren_qualifier, 261, 0, 1, 5)
         if self.tr("code_sp_paren_qualifier")!="code_sp_paren_qualifier":
             self.codesp_paren_qualifier = QtWidgets.QLabel(self.tr("code_sp_paren_qualifier"))
-            self.codesp_paren_qualifier.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_paren_qualifier.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_paren_qualifier, 262, 0, 1, 5)
         self.namesp_paren_qualifier = QtWidgets.QLabel("sp_paren_qualifier")
         self.namesp_paren_qualifier.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1601,7 +1601,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_paren_noexcept, 264, 0, 1, 5)
         if self.tr("code_sp_paren_noexcept")!="code_sp_paren_noexcept":
             self.codesp_paren_noexcept = QtWidgets.QLabel(self.tr("code_sp_paren_noexcept"))
-            self.codesp_paren_noexcept.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_paren_noexcept.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_paren_noexcept, 265, 0, 1, 5)
         self.namesp_paren_noexcept = QtWidgets.QLabel("sp_paren_noexcept")
         self.namesp_paren_noexcept.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1616,7 +1616,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_class_colon, 267, 0, 1, 5)
         if self.tr("code_sp_after_class_colon")!="code_sp_after_class_colon":
             self.codesp_after_class_colon = QtWidgets.QLabel(self.tr("code_sp_after_class_colon"))
-            self.codesp_after_class_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_class_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_class_colon, 268, 0, 1, 5)
         self.namesp_after_class_colon = QtWidgets.QLabel("sp_after_class_colon")
         self.namesp_after_class_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1631,7 +1631,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_class_colon, 270, 0, 1, 5)
         if self.tr("code_sp_before_class_colon")!="code_sp_before_class_colon":
             self.codesp_before_class_colon = QtWidgets.QLabel(self.tr("code_sp_before_class_colon"))
-            self.codesp_before_class_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_class_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_class_colon, 271, 0, 1, 5)
         self.namesp_before_class_colon = QtWidgets.QLabel("sp_before_class_colon")
         self.namesp_before_class_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1646,7 +1646,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_constr_colon, 273, 0, 1, 5)
         if self.tr("code_sp_after_constr_colon")!="code_sp_after_constr_colon":
             self.codesp_after_constr_colon = QtWidgets.QLabel(self.tr("code_sp_after_constr_colon"))
-            self.codesp_after_constr_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_constr_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_constr_colon, 274, 0, 1, 5)
         self.namesp_after_constr_colon = QtWidgets.QLabel("sp_after_constr_colon")
         self.namesp_after_constr_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1661,7 +1661,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_constr_colon, 276, 0, 1, 5)
         if self.tr("code_sp_before_constr_colon")!="code_sp_before_constr_colon":
             self.codesp_before_constr_colon = QtWidgets.QLabel(self.tr("code_sp_before_constr_colon"))
-            self.codesp_before_constr_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_constr_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_constr_colon, 277, 0, 1, 5)
         self.namesp_before_constr_colon = QtWidgets.QLabel("sp_before_constr_colon")
         self.namesp_before_constr_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1676,7 +1676,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_case_colon, 279, 0, 1, 5)
         if self.tr("code_sp_before_case_colon")!="code_sp_before_case_colon":
             self.codesp_before_case_colon = QtWidgets.QLabel(self.tr("code_sp_before_case_colon"))
-            self.codesp_before_case_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_case_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_case_colon, 280, 0, 1, 5)
         self.namesp_before_case_colon = QtWidgets.QLabel("sp_before_case_colon")
         self.namesp_before_case_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1691,7 +1691,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_operator, 282, 0, 1, 5)
         if self.tr("code_sp_after_operator")!="code_sp_after_operator":
             self.codesp_after_operator = QtWidgets.QLabel(self.tr("code_sp_after_operator"))
-            self.codesp_after_operator.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_operator.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_operator, 283, 0, 1, 5)
         self.namesp_after_operator = QtWidgets.QLabel("sp_after_operator")
         self.namesp_after_operator.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1706,7 +1706,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_operator_sym, 285, 0, 1, 5)
         if self.tr("code_sp_after_operator_sym")!="code_sp_after_operator_sym":
             self.codesp_after_operator_sym = QtWidgets.QLabel(self.tr("code_sp_after_operator_sym"))
-            self.codesp_after_operator_sym.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_operator_sym.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_operator_sym, 286, 0, 1, 5)
         self.namesp_after_operator_sym = QtWidgets.QLabel("sp_after_operator_sym")
         self.namesp_after_operator_sym.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1721,7 +1721,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_operator_sym_empty, 288, 0, 1, 5)
         if self.tr("code_sp_after_operator_sym_empty")!="code_sp_after_operator_sym_empty":
             self.codesp_after_operator_sym_empty = QtWidgets.QLabel(self.tr("code_sp_after_operator_sym_empty"))
-            self.codesp_after_operator_sym_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_operator_sym_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_operator_sym_empty, 289, 0, 1, 5)
         self.namesp_after_operator_sym_empty = QtWidgets.QLabel("sp_after_operator_sym_empty")
         self.namesp_after_operator_sym_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1736,7 +1736,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_cast, 291, 0, 1, 5)
         if self.tr("code_sp_after_cast")!="code_sp_after_cast":
             self.codesp_after_cast = QtWidgets.QLabel(self.tr("code_sp_after_cast"))
-            self.codesp_after_cast.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_cast.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_cast, 292, 0, 1, 5)
         self.namesp_after_cast = QtWidgets.QLabel("sp_after_cast")
         self.namesp_after_cast.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1751,7 +1751,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_paren_cast, 294, 0, 1, 5)
         if self.tr("code_sp_inside_paren_cast")!="code_sp_inside_paren_cast":
             self.codesp_inside_paren_cast = QtWidgets.QLabel(self.tr("code_sp_inside_paren_cast"))
-            self.codesp_inside_paren_cast.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_paren_cast.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_paren_cast, 295, 0, 1, 5)
         self.namesp_inside_paren_cast = QtWidgets.QLabel("sp_inside_paren_cast")
         self.namesp_inside_paren_cast.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1766,7 +1766,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cpp_cast_paren, 297, 0, 1, 5)
         if self.tr("code_sp_cpp_cast_paren")!="code_sp_cpp_cast_paren":
             self.codesp_cpp_cast_paren = QtWidgets.QLabel(self.tr("code_sp_cpp_cast_paren"))
-            self.codesp_cpp_cast_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cpp_cast_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cpp_cast_paren, 298, 0, 1, 5)
         self.namesp_cpp_cast_paren = QtWidgets.QLabel("sp_cpp_cast_paren")
         self.namesp_cpp_cast_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1781,7 +1781,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_sizeof_paren, 300, 0, 1, 5)
         if self.tr("code_sp_sizeof_paren")!="code_sp_sizeof_paren":
             self.codesp_sizeof_paren = QtWidgets.QLabel(self.tr("code_sp_sizeof_paren"))
-            self.codesp_sizeof_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_sizeof_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_sizeof_paren, 301, 0, 1, 5)
         self.namesp_sizeof_paren = QtWidgets.QLabel("sp_sizeof_paren")
         self.namesp_sizeof_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1796,7 +1796,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_sizeof_ellipsis, 303, 0, 1, 5)
         if self.tr("code_sp_sizeof_ellipsis")!="code_sp_sizeof_ellipsis":
             self.codesp_sizeof_ellipsis = QtWidgets.QLabel(self.tr("code_sp_sizeof_ellipsis"))
-            self.codesp_sizeof_ellipsis.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_sizeof_ellipsis.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_sizeof_ellipsis, 304, 0, 1, 5)
         self.namesp_sizeof_ellipsis = QtWidgets.QLabel("sp_sizeof_ellipsis")
         self.namesp_sizeof_ellipsis.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1811,7 +1811,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_sizeof_ellipsis_paren, 306, 0, 1, 5)
         if self.tr("code_sp_sizeof_ellipsis_paren")!="code_sp_sizeof_ellipsis_paren":
             self.codesp_sizeof_ellipsis_paren = QtWidgets.QLabel(self.tr("code_sp_sizeof_ellipsis_paren"))
-            self.codesp_sizeof_ellipsis_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_sizeof_ellipsis_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_sizeof_ellipsis_paren, 307, 0, 1, 5)
         self.namesp_sizeof_ellipsis_paren = QtWidgets.QLabel("sp_sizeof_ellipsis_paren")
         self.namesp_sizeof_ellipsis_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1826,7 +1826,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_decltype_paren, 309, 0, 1, 5)
         if self.tr("code_sp_decltype_paren")!="code_sp_decltype_paren":
             self.codesp_decltype_paren = QtWidgets.QLabel(self.tr("code_sp_decltype_paren"))
-            self.codesp_decltype_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_decltype_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_decltype_paren, 310, 0, 1, 5)
         self.namesp_decltype_paren = QtWidgets.QLabel("sp_decltype_paren")
         self.namesp_decltype_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1841,7 +1841,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_tag, 312, 0, 1, 5)
         if self.tr("code_sp_after_tag")!="code_sp_after_tag":
             self.codesp_after_tag = QtWidgets.QLabel(self.tr("code_sp_after_tag"))
-            self.codesp_after_tag.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_tag.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_tag, 313, 0, 1, 5)
         self.namesp_after_tag = QtWidgets.QLabel("sp_after_tag")
         self.namesp_after_tag.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1856,7 +1856,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_braces_enum, 315, 0, 1, 5)
         if self.tr("code_sp_inside_braces_enum")!="code_sp_inside_braces_enum":
             self.codesp_inside_braces_enum = QtWidgets.QLabel(self.tr("code_sp_inside_braces_enum"))
-            self.codesp_inside_braces_enum.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_braces_enum.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_braces_enum, 316, 0, 1, 5)
         self.namesp_inside_braces_enum = QtWidgets.QLabel("sp_inside_braces_enum")
         self.namesp_inside_braces_enum.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1871,7 +1871,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_braces_struct, 318, 0, 1, 5)
         if self.tr("code_sp_inside_braces_struct")!="code_sp_inside_braces_struct":
             self.codesp_inside_braces_struct = QtWidgets.QLabel(self.tr("code_sp_inside_braces_struct"))
-            self.codesp_inside_braces_struct.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_braces_struct.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_braces_struct, 319, 0, 1, 5)
         self.namesp_inside_braces_struct = QtWidgets.QLabel("sp_inside_braces_struct")
         self.namesp_inside_braces_struct.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1886,7 +1886,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_braces_oc_dict, 321, 0, 1, 5)
         if self.tr("code_sp_inside_braces_oc_dict")!="code_sp_inside_braces_oc_dict":
             self.codesp_inside_braces_oc_dict = QtWidgets.QLabel(self.tr("code_sp_inside_braces_oc_dict"))
-            self.codesp_inside_braces_oc_dict.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_braces_oc_dict.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_braces_oc_dict, 322, 0, 1, 5)
         self.namesp_inside_braces_oc_dict = QtWidgets.QLabel("sp_inside_braces_oc_dict")
         self.namesp_inside_braces_oc_dict.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1901,7 +1901,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_type_brace_init_lst_open, 324, 0, 1, 5)
         if self.tr("code_sp_after_type_brace_init_lst_open")!="code_sp_after_type_brace_init_lst_open":
             self.codesp_after_type_brace_init_lst_open = QtWidgets.QLabel(self.tr("code_sp_after_type_brace_init_lst_open"))
-            self.codesp_after_type_brace_init_lst_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_type_brace_init_lst_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_type_brace_init_lst_open, 325, 0, 1, 5)
         self.namesp_after_type_brace_init_lst_open = QtWidgets.QLabel("sp_after_type_brace_init_lst_open")
         self.namesp_after_type_brace_init_lst_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1916,7 +1916,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_type_brace_init_lst_close, 327, 0, 1, 5)
         if self.tr("code_sp_before_type_brace_init_lst_close")!="code_sp_before_type_brace_init_lst_close":
             self.codesp_before_type_brace_init_lst_close = QtWidgets.QLabel(self.tr("code_sp_before_type_brace_init_lst_close"))
-            self.codesp_before_type_brace_init_lst_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_type_brace_init_lst_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_type_brace_init_lst_close, 328, 0, 1, 5)
         self.namesp_before_type_brace_init_lst_close = QtWidgets.QLabel("sp_before_type_brace_init_lst_close")
         self.namesp_before_type_brace_init_lst_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1931,7 +1931,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_type_brace_init_lst, 330, 0, 1, 5)
         if self.tr("code_sp_inside_type_brace_init_lst")!="code_sp_inside_type_brace_init_lst":
             self.codesp_inside_type_brace_init_lst = QtWidgets.QLabel(self.tr("code_sp_inside_type_brace_init_lst"))
-            self.codesp_inside_type_brace_init_lst.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_type_brace_init_lst.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_type_brace_init_lst, 331, 0, 1, 5)
         self.namesp_inside_type_brace_init_lst = QtWidgets.QLabel("sp_inside_type_brace_init_lst")
         self.namesp_inside_type_brace_init_lst.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1946,7 +1946,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_braces, 333, 0, 1, 5)
         if self.tr("code_sp_inside_braces")!="code_sp_inside_braces":
             self.codesp_inside_braces = QtWidgets.QLabel(self.tr("code_sp_inside_braces"))
-            self.codesp_inside_braces.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_braces.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_braces, 334, 0, 1, 5)
         self.namesp_inside_braces = QtWidgets.QLabel("sp_inside_braces")
         self.namesp_inside_braces.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1961,7 +1961,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_braces_empty, 336, 0, 1, 5)
         if self.tr("code_sp_inside_braces_empty")!="code_sp_inside_braces_empty":
             self.codesp_inside_braces_empty = QtWidgets.QLabel(self.tr("code_sp_inside_braces_empty"))
-            self.codesp_inside_braces_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_braces_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_braces_empty, 337, 0, 1, 5)
         self.namesp_inside_braces_empty = QtWidgets.QLabel("sp_inside_braces_empty")
         self.namesp_inside_braces_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1976,7 +1976,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_trailing_return, 339, 0, 1, 5)
         if self.tr("code_sp_trailing_return")!="code_sp_trailing_return":
             self.codesp_trailing_return = QtWidgets.QLabel(self.tr("code_sp_trailing_return"))
-            self.codesp_trailing_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_trailing_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_trailing_return, 340, 0, 1, 5)
         self.namesp_trailing_return = QtWidgets.QLabel("sp_trailing_return")
         self.namesp_trailing_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -1991,7 +1991,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_type_func, 342, 0, 1, 5)
         if self.tr("code_sp_type_func")!="code_sp_type_func":
             self.codesp_type_func = QtWidgets.QLabel(self.tr("code_sp_type_func"))
-            self.codesp_type_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_type_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_type_func, 343, 0, 1, 5)
         self.namesp_type_func = QtWidgets.QLabel("sp_type_func")
         self.namesp_type_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2006,7 +2006,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_type_brace_init_lst, 345, 0, 1, 5)
         if self.tr("code_sp_type_brace_init_lst")!="code_sp_type_brace_init_lst":
             self.codesp_type_brace_init_lst = QtWidgets.QLabel(self.tr("code_sp_type_brace_init_lst"))
-            self.codesp_type_brace_init_lst.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_type_brace_init_lst.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_type_brace_init_lst, 346, 0, 1, 5)
         self.namesp_type_brace_init_lst = QtWidgets.QLabel("sp_type_brace_init_lst")
         self.namesp_type_brace_init_lst.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2021,7 +2021,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_proto_paren, 348, 0, 1, 5)
         if self.tr("code_sp_func_proto_paren")!="code_sp_func_proto_paren":
             self.codesp_func_proto_paren = QtWidgets.QLabel(self.tr("code_sp_func_proto_paren"))
-            self.codesp_func_proto_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_proto_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_proto_paren, 349, 0, 1, 5)
         self.namesp_func_proto_paren = QtWidgets.QLabel("sp_func_proto_paren")
         self.namesp_func_proto_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2036,7 +2036,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_proto_paren_empty, 351, 0, 1, 5)
         if self.tr("code_sp_func_proto_paren_empty")!="code_sp_func_proto_paren_empty":
             self.codesp_func_proto_paren_empty = QtWidgets.QLabel(self.tr("code_sp_func_proto_paren_empty"))
-            self.codesp_func_proto_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_proto_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_proto_paren_empty, 352, 0, 1, 5)
         self.namesp_func_proto_paren_empty = QtWidgets.QLabel("sp_func_proto_paren_empty")
         self.namesp_func_proto_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2051,7 +2051,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_type_paren, 354, 0, 1, 5)
         if self.tr("code_sp_func_type_paren")!="code_sp_func_type_paren":
             self.codesp_func_type_paren = QtWidgets.QLabel(self.tr("code_sp_func_type_paren"))
-            self.codesp_func_type_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_type_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_type_paren, 355, 0, 1, 5)
         self.namesp_func_type_paren = QtWidgets.QLabel("sp_func_type_paren")
         self.namesp_func_type_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2066,7 +2066,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_def_paren, 357, 0, 1, 5)
         if self.tr("code_sp_func_def_paren")!="code_sp_func_def_paren":
             self.codesp_func_def_paren = QtWidgets.QLabel(self.tr("code_sp_func_def_paren"))
-            self.codesp_func_def_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_def_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_def_paren, 358, 0, 1, 5)
         self.namesp_func_def_paren = QtWidgets.QLabel("sp_func_def_paren")
         self.namesp_func_def_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2081,7 +2081,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_def_paren_empty, 360, 0, 1, 5)
         if self.tr("code_sp_func_def_paren_empty")!="code_sp_func_def_paren_empty":
             self.codesp_func_def_paren_empty = QtWidgets.QLabel(self.tr("code_sp_func_def_paren_empty"))
-            self.codesp_func_def_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_def_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_def_paren_empty, 361, 0, 1, 5)
         self.namesp_func_def_paren_empty = QtWidgets.QLabel("sp_func_def_paren_empty")
         self.namesp_func_def_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2096,7 +2096,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_fparens, 363, 0, 1, 5)
         if self.tr("code_sp_inside_fparens")!="code_sp_inside_fparens":
             self.codesp_inside_fparens = QtWidgets.QLabel(self.tr("code_sp_inside_fparens"))
-            self.codesp_inside_fparens.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_fparens.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_fparens, 364, 0, 1, 5)
         self.namesp_inside_fparens = QtWidgets.QLabel("sp_inside_fparens")
         self.namesp_inside_fparens.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2111,7 +2111,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_fparen, 366, 0, 1, 5)
         if self.tr("code_sp_inside_fparen")!="code_sp_inside_fparen":
             self.codesp_inside_fparen = QtWidgets.QLabel(self.tr("code_sp_inside_fparen"))
-            self.codesp_inside_fparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_fparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_fparen, 367, 0, 1, 5)
         self.namesp_inside_fparen = QtWidgets.QLabel("sp_inside_fparen")
         self.namesp_inside_fparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2126,7 +2126,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_tparen, 369, 0, 1, 5)
         if self.tr("code_sp_inside_tparen")!="code_sp_inside_tparen":
             self.codesp_inside_tparen = QtWidgets.QLabel(self.tr("code_sp_inside_tparen"))
-            self.codesp_inside_tparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_tparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_tparen, 370, 0, 1, 5)
         self.namesp_inside_tparen = QtWidgets.QLabel("sp_inside_tparen")
         self.namesp_inside_tparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2141,7 +2141,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_tparen_close, 372, 0, 1, 5)
         if self.tr("code_sp_after_tparen_close")!="code_sp_after_tparen_close":
             self.codesp_after_tparen_close = QtWidgets.QLabel(self.tr("code_sp_after_tparen_close"))
-            self.codesp_after_tparen_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_tparen_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_tparen_close, 373, 0, 1, 5)
         self.namesp_after_tparen_close = QtWidgets.QLabel("sp_after_tparen_close")
         self.namesp_after_tparen_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2156,7 +2156,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_square_fparen, 375, 0, 1, 5)
         if self.tr("code_sp_square_fparen")!="code_sp_square_fparen":
             self.codesp_square_fparen = QtWidgets.QLabel(self.tr("code_sp_square_fparen"))
-            self.codesp_square_fparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_square_fparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_square_fparen, 376, 0, 1, 5)
         self.namesp_square_fparen = QtWidgets.QLabel("sp_square_fparen")
         self.namesp_square_fparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2171,7 +2171,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_fparen_brace, 378, 0, 1, 5)
         if self.tr("code_sp_fparen_brace")!="code_sp_fparen_brace":
             self.codesp_fparen_brace = QtWidgets.QLabel(self.tr("code_sp_fparen_brace"))
-            self.codesp_fparen_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_fparen_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_fparen_brace, 379, 0, 1, 5)
         self.namesp_fparen_brace = QtWidgets.QLabel("sp_fparen_brace")
         self.namesp_fparen_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2186,7 +2186,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_fparen_brace_initializer, 381, 0, 1, 5)
         if self.tr("code_sp_fparen_brace_initializer")!="code_sp_fparen_brace_initializer":
             self.codesp_fparen_brace_initializer = QtWidgets.QLabel(self.tr("code_sp_fparen_brace_initializer"))
-            self.codesp_fparen_brace_initializer.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_fparen_brace_initializer.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_fparen_brace_initializer, 382, 0, 1, 5)
         self.namesp_fparen_brace_initializer = QtWidgets.QLabel("sp_fparen_brace_initializer")
         self.namesp_fparen_brace_initializer.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2201,7 +2201,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_fparen_dbrace, 384, 0, 1, 5)
         if self.tr("code_sp_fparen_dbrace")!="code_sp_fparen_dbrace":
             self.codesp_fparen_dbrace = QtWidgets.QLabel(self.tr("code_sp_fparen_dbrace"))
-            self.codesp_fparen_dbrace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_fparen_dbrace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_fparen_dbrace, 385, 0, 1, 5)
         self.namesp_fparen_dbrace = QtWidgets.QLabel("sp_fparen_dbrace")
         self.namesp_fparen_dbrace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2216,7 +2216,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_call_paren, 387, 0, 1, 5)
         if self.tr("code_sp_func_call_paren")!="code_sp_func_call_paren":
             self.codesp_func_call_paren = QtWidgets.QLabel(self.tr("code_sp_func_call_paren"))
-            self.codesp_func_call_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_call_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_call_paren, 388, 0, 1, 5)
         self.namesp_func_call_paren = QtWidgets.QLabel("sp_func_call_paren")
         self.namesp_func_call_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2231,7 +2231,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_call_paren_empty, 390, 0, 1, 5)
         if self.tr("code_sp_func_call_paren_empty")!="code_sp_func_call_paren_empty":
             self.codesp_func_call_paren_empty = QtWidgets.QLabel(self.tr("code_sp_func_call_paren_empty"))
-            self.codesp_func_call_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_call_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_call_paren_empty, 391, 0, 1, 5)
         self.namesp_func_call_paren_empty = QtWidgets.QLabel("sp_func_call_paren_empty")
         self.namesp_func_call_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2246,7 +2246,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_call_user_paren, 393, 0, 1, 5)
         if self.tr("code_sp_func_call_user_paren")!="code_sp_func_call_user_paren":
             self.codesp_func_call_user_paren = QtWidgets.QLabel(self.tr("code_sp_func_call_user_paren"))
-            self.codesp_func_call_user_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_call_user_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_call_user_paren, 394, 0, 1, 5)
         self.namesp_func_call_user_paren = QtWidgets.QLabel("sp_func_call_user_paren")
         self.namesp_func_call_user_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2261,7 +2261,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_call_user_inside_fparen, 396, 0, 1, 5)
         if self.tr("code_sp_func_call_user_inside_fparen")!="code_sp_func_call_user_inside_fparen":
             self.codesp_func_call_user_inside_fparen = QtWidgets.QLabel(self.tr("code_sp_func_call_user_inside_fparen"))
-            self.codesp_func_call_user_inside_fparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_call_user_inside_fparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_call_user_inside_fparen, 397, 0, 1, 5)
         self.namesp_func_call_user_inside_fparen = QtWidgets.QLabel("sp_func_call_user_inside_fparen")
         self.namesp_func_call_user_inside_fparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2276,7 +2276,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_call_user_paren_paren, 399, 0, 1, 5)
         if self.tr("code_sp_func_call_user_paren_paren")!="code_sp_func_call_user_paren_paren":
             self.codesp_func_call_user_paren_paren = QtWidgets.QLabel(self.tr("code_sp_func_call_user_paren_paren"))
-            self.codesp_func_call_user_paren_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_call_user_paren_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_call_user_paren_paren, 400, 0, 1, 5)
         self.namesp_func_call_user_paren_paren = QtWidgets.QLabel("sp_func_call_user_paren_paren")
         self.namesp_func_call_user_paren_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2291,7 +2291,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_class_paren, 402, 0, 1, 5)
         if self.tr("code_sp_func_class_paren")!="code_sp_func_class_paren":
             self.codesp_func_class_paren = QtWidgets.QLabel(self.tr("code_sp_func_class_paren"))
-            self.codesp_func_class_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_class_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_class_paren, 403, 0, 1, 5)
         self.namesp_func_class_paren = QtWidgets.QLabel("sp_func_class_paren")
         self.namesp_func_class_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2306,7 +2306,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_func_class_paren_empty, 405, 0, 1, 5)
         if self.tr("code_sp_func_class_paren_empty")!="code_sp_func_class_paren_empty":
             self.codesp_func_class_paren_empty = QtWidgets.QLabel(self.tr("code_sp_func_class_paren_empty"))
-            self.codesp_func_class_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_func_class_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_func_class_paren_empty, 406, 0, 1, 5)
         self.namesp_func_class_paren_empty = QtWidgets.QLabel("sp_func_class_paren_empty")
         self.namesp_func_class_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2321,7 +2321,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_return_paren, 408, 0, 1, 5)
         if self.tr("code_sp_return_paren")!="code_sp_return_paren":
             self.codesp_return_paren = QtWidgets.QLabel(self.tr("code_sp_return_paren"))
-            self.codesp_return_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_return_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_return_paren, 409, 0, 1, 5)
         self.namesp_return_paren = QtWidgets.QLabel("sp_return_paren")
         self.namesp_return_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2336,7 +2336,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_return_brace, 411, 0, 1, 5)
         if self.tr("code_sp_return_brace")!="code_sp_return_brace":
             self.codesp_return_brace = QtWidgets.QLabel(self.tr("code_sp_return_brace"))
-            self.codesp_return_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_return_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_return_brace, 412, 0, 1, 5)
         self.namesp_return_brace = QtWidgets.QLabel("sp_return_brace")
         self.namesp_return_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2351,7 +2351,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_attribute_paren, 414, 0, 1, 5)
         if self.tr("code_sp_attribute_paren")!="code_sp_attribute_paren":
             self.codesp_attribute_paren = QtWidgets.QLabel(self.tr("code_sp_attribute_paren"))
-            self.codesp_attribute_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_attribute_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_attribute_paren, 415, 0, 1, 5)
         self.namesp_attribute_paren = QtWidgets.QLabel("sp_attribute_paren")
         self.namesp_attribute_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2366,7 +2366,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_defined_paren, 417, 0, 1, 5)
         if self.tr("code_sp_defined_paren")!="code_sp_defined_paren":
             self.codesp_defined_paren = QtWidgets.QLabel(self.tr("code_sp_defined_paren"))
-            self.codesp_defined_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_defined_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_defined_paren, 418, 0, 1, 5)
         self.namesp_defined_paren = QtWidgets.QLabel("sp_defined_paren")
         self.namesp_defined_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2381,7 +2381,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_throw_paren, 420, 0, 1, 5)
         if self.tr("code_sp_throw_paren")!="code_sp_throw_paren":
             self.codesp_throw_paren = QtWidgets.QLabel(self.tr("code_sp_throw_paren"))
-            self.codesp_throw_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_throw_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_throw_paren, 421, 0, 1, 5)
         self.namesp_throw_paren = QtWidgets.QLabel("sp_throw_paren")
         self.namesp_throw_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2396,7 +2396,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_throw, 423, 0, 1, 5)
         if self.tr("code_sp_after_throw")!="code_sp_after_throw":
             self.codesp_after_throw = QtWidgets.QLabel(self.tr("code_sp_after_throw"))
-            self.codesp_after_throw.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_throw.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_throw, 424, 0, 1, 5)
         self.namesp_after_throw = QtWidgets.QLabel("sp_after_throw")
         self.namesp_after_throw.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2411,7 +2411,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_catch_paren, 426, 0, 1, 5)
         if self.tr("code_sp_catch_paren")!="code_sp_catch_paren":
             self.codesp_catch_paren = QtWidgets.QLabel(self.tr("code_sp_catch_paren"))
-            self.codesp_catch_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_catch_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_catch_paren, 427, 0, 1, 5)
         self.namesp_catch_paren = QtWidgets.QLabel("sp_catch_paren")
         self.namesp_catch_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2426,7 +2426,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_oc_catch_paren, 429, 0, 1, 5)
         if self.tr("code_sp_oc_catch_paren")!="code_sp_oc_catch_paren":
             self.codesp_oc_catch_paren = QtWidgets.QLabel(self.tr("code_sp_oc_catch_paren"))
-            self.codesp_oc_catch_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_oc_catch_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_oc_catch_paren, 430, 0, 1, 5)
         self.namesp_oc_catch_paren = QtWidgets.QLabel("sp_oc_catch_paren")
         self.namesp_oc_catch_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2441,7 +2441,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_oc_proto_list, 432, 0, 1, 5)
         if self.tr("code_sp_before_oc_proto_list")!="code_sp_before_oc_proto_list":
             self.codesp_before_oc_proto_list = QtWidgets.QLabel(self.tr("code_sp_before_oc_proto_list"))
-            self.codesp_before_oc_proto_list.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_oc_proto_list.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_oc_proto_list, 433, 0, 1, 5)
         self.namesp_before_oc_proto_list = QtWidgets.QLabel("sp_before_oc_proto_list")
         self.namesp_before_oc_proto_list.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2456,7 +2456,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_oc_classname_paren, 435, 0, 1, 5)
         if self.tr("code_sp_oc_classname_paren")!="code_sp_oc_classname_paren":
             self.codesp_oc_classname_paren = QtWidgets.QLabel(self.tr("code_sp_oc_classname_paren"))
-            self.codesp_oc_classname_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_oc_classname_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_oc_classname_paren, 436, 0, 1, 5)
         self.namesp_oc_classname_paren = QtWidgets.QLabel("sp_oc_classname_paren")
         self.namesp_oc_classname_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2471,7 +2471,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_version_paren, 438, 0, 1, 5)
         if self.tr("code_sp_version_paren")!="code_sp_version_paren":
             self.codesp_version_paren = QtWidgets.QLabel(self.tr("code_sp_version_paren"))
-            self.codesp_version_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_version_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_version_paren, 439, 0, 1, 5)
         self.namesp_version_paren = QtWidgets.QLabel("sp_version_paren")
         self.namesp_version_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2486,7 +2486,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_scope_paren, 441, 0, 1, 5)
         if self.tr("code_sp_scope_paren")!="code_sp_scope_paren":
             self.codesp_scope_paren = QtWidgets.QLabel(self.tr("code_sp_scope_paren"))
-            self.codesp_scope_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_scope_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_scope_paren, 442, 0, 1, 5)
         self.namesp_scope_paren = QtWidgets.QLabel("sp_scope_paren")
         self.namesp_scope_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2501,7 +2501,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_super_paren, 444, 0, 1, 5)
         if self.tr("code_sp_super_paren")!="code_sp_super_paren":
             self.codesp_super_paren = QtWidgets.QLabel(self.tr("code_sp_super_paren"))
-            self.codesp_super_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_super_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_super_paren, 445, 0, 1, 5)
         self.namesp_super_paren = QtWidgets.QLabel("sp_super_paren")
         self.namesp_super_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2516,7 +2516,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_this_paren, 447, 0, 1, 5)
         if self.tr("code_sp_this_paren")!="code_sp_this_paren":
             self.codesp_this_paren = QtWidgets.QLabel(self.tr("code_sp_this_paren"))
-            self.codesp_this_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_this_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_this_paren, 448, 0, 1, 5)
         self.namesp_this_paren = QtWidgets.QLabel("sp_this_paren")
         self.namesp_this_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2531,7 +2531,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_macro, 450, 0, 1, 5)
         if self.tr("code_sp_macro")!="code_sp_macro":
             self.codesp_macro = QtWidgets.QLabel(self.tr("code_sp_macro"))
-            self.codesp_macro.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_macro.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_macro, 451, 0, 1, 5)
         self.namesp_macro = QtWidgets.QLabel("sp_macro")
         self.namesp_macro.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2546,7 +2546,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_macro_func, 453, 0, 1, 5)
         if self.tr("code_sp_macro_func")!="code_sp_macro_func":
             self.codesp_macro_func = QtWidgets.QLabel(self.tr("code_sp_macro_func"))
-            self.codesp_macro_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_macro_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_macro_func, 454, 0, 1, 5)
         self.namesp_macro_func = QtWidgets.QLabel("sp_macro_func")
         self.namesp_macro_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2561,7 +2561,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_else_brace, 456, 0, 1, 5)
         if self.tr("code_sp_else_brace")!="code_sp_else_brace":
             self.codesp_else_brace = QtWidgets.QLabel(self.tr("code_sp_else_brace"))
-            self.codesp_else_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_else_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_else_brace, 457, 0, 1, 5)
         self.namesp_else_brace = QtWidgets.QLabel("sp_else_brace")
         self.namesp_else_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2576,7 +2576,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_brace_else, 459, 0, 1, 5)
         if self.tr("code_sp_brace_else")!="code_sp_brace_else":
             self.codesp_brace_else = QtWidgets.QLabel(self.tr("code_sp_brace_else"))
-            self.codesp_brace_else.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_brace_else.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_brace_else, 460, 0, 1, 5)
         self.namesp_brace_else = QtWidgets.QLabel("sp_brace_else")
         self.namesp_brace_else.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2591,7 +2591,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_brace_typedef, 462, 0, 1, 5)
         if self.tr("code_sp_brace_typedef")!="code_sp_brace_typedef":
             self.codesp_brace_typedef = QtWidgets.QLabel(self.tr("code_sp_brace_typedef"))
-            self.codesp_brace_typedef.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_brace_typedef.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_brace_typedef, 463, 0, 1, 5)
         self.namesp_brace_typedef = QtWidgets.QLabel("sp_brace_typedef")
         self.namesp_brace_typedef.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2606,7 +2606,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_catch_brace, 465, 0, 1, 5)
         if self.tr("code_sp_catch_brace")!="code_sp_catch_brace":
             self.codesp_catch_brace = QtWidgets.QLabel(self.tr("code_sp_catch_brace"))
-            self.codesp_catch_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_catch_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_catch_brace, 466, 0, 1, 5)
         self.namesp_catch_brace = QtWidgets.QLabel("sp_catch_brace")
         self.namesp_catch_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2621,7 +2621,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_oc_catch_brace, 468, 0, 1, 5)
         if self.tr("code_sp_oc_catch_brace")!="code_sp_oc_catch_brace":
             self.codesp_oc_catch_brace = QtWidgets.QLabel(self.tr("code_sp_oc_catch_brace"))
-            self.codesp_oc_catch_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_oc_catch_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_oc_catch_brace, 469, 0, 1, 5)
         self.namesp_oc_catch_brace = QtWidgets.QLabel("sp_oc_catch_brace")
         self.namesp_oc_catch_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2636,7 +2636,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_brace_catch, 471, 0, 1, 5)
         if self.tr("code_sp_brace_catch")!="code_sp_brace_catch":
             self.codesp_brace_catch = QtWidgets.QLabel(self.tr("code_sp_brace_catch"))
-            self.codesp_brace_catch.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_brace_catch.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_brace_catch, 472, 0, 1, 5)
         self.namesp_brace_catch = QtWidgets.QLabel("sp_brace_catch")
         self.namesp_brace_catch.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2651,7 +2651,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_oc_brace_catch, 474, 0, 1, 5)
         if self.tr("code_sp_oc_brace_catch")!="code_sp_oc_brace_catch":
             self.codesp_oc_brace_catch = QtWidgets.QLabel(self.tr("code_sp_oc_brace_catch"))
-            self.codesp_oc_brace_catch.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_oc_brace_catch.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_oc_brace_catch, 475, 0, 1, 5)
         self.namesp_oc_brace_catch = QtWidgets.QLabel("sp_oc_brace_catch")
         self.namesp_oc_brace_catch.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2666,7 +2666,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_finally_brace, 477, 0, 1, 5)
         if self.tr("code_sp_finally_brace")!="code_sp_finally_brace":
             self.codesp_finally_brace = QtWidgets.QLabel(self.tr("code_sp_finally_brace"))
-            self.codesp_finally_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_finally_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_finally_brace, 478, 0, 1, 5)
         self.namesp_finally_brace = QtWidgets.QLabel("sp_finally_brace")
         self.namesp_finally_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2681,7 +2681,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_brace_finally, 480, 0, 1, 5)
         if self.tr("code_sp_brace_finally")!="code_sp_brace_finally":
             self.codesp_brace_finally = QtWidgets.QLabel(self.tr("code_sp_brace_finally"))
-            self.codesp_brace_finally.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_brace_finally.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_brace_finally, 481, 0, 1, 5)
         self.namesp_brace_finally = QtWidgets.QLabel("sp_brace_finally")
         self.namesp_brace_finally.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2696,7 +2696,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_try_brace, 483, 0, 1, 5)
         if self.tr("code_sp_try_brace")!="code_sp_try_brace":
             self.codesp_try_brace = QtWidgets.QLabel(self.tr("code_sp_try_brace"))
-            self.codesp_try_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_try_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_try_brace, 484, 0, 1, 5)
         self.namesp_try_brace = QtWidgets.QLabel("sp_try_brace")
         self.namesp_try_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2711,7 +2711,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_getset_brace, 486, 0, 1, 5)
         if self.tr("code_sp_getset_brace")!="code_sp_getset_brace":
             self.codesp_getset_brace = QtWidgets.QLabel(self.tr("code_sp_getset_brace"))
-            self.codesp_getset_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_getset_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_getset_brace, 487, 0, 1, 5)
         self.namesp_getset_brace = QtWidgets.QLabel("sp_getset_brace")
         self.namesp_getset_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2726,7 +2726,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_word_brace_init_lst, 489, 0, 1, 5)
         if self.tr("code_sp_word_brace_init_lst")!="code_sp_word_brace_init_lst":
             self.codesp_word_brace_init_lst = QtWidgets.QLabel(self.tr("code_sp_word_brace_init_lst"))
-            self.codesp_word_brace_init_lst.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_word_brace_init_lst.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_word_brace_init_lst, 490, 0, 1, 5)
         self.namesp_word_brace_init_lst = QtWidgets.QLabel("sp_word_brace_init_lst")
         self.namesp_word_brace_init_lst.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2741,7 +2741,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_word_brace_ns, 492, 0, 1, 5)
         if self.tr("code_sp_word_brace_ns")!="code_sp_word_brace_ns":
             self.codesp_word_brace_ns = QtWidgets.QLabel(self.tr("code_sp_word_brace_ns"))
-            self.codesp_word_brace_ns.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_word_brace_ns.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_word_brace_ns, 493, 0, 1, 5)
         self.namesp_word_brace_ns = QtWidgets.QLabel("sp_word_brace_ns")
         self.namesp_word_brace_ns.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2756,7 +2756,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_dc, 495, 0, 1, 5)
         if self.tr("code_sp_before_dc")!="code_sp_before_dc":
             self.codesp_before_dc = QtWidgets.QLabel(self.tr("code_sp_before_dc"))
-            self.codesp_before_dc.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_dc.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_dc, 496, 0, 1, 5)
         self.namesp_before_dc = QtWidgets.QLabel("sp_before_dc")
         self.namesp_before_dc.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2771,7 +2771,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_dc, 498, 0, 1, 5)
         if self.tr("code_sp_after_dc")!="code_sp_after_dc":
             self.codesp_after_dc = QtWidgets.QLabel(self.tr("code_sp_after_dc"))
-            self.codesp_after_dc.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_dc.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_dc, 499, 0, 1, 5)
         self.namesp_after_dc = QtWidgets.QLabel("sp_after_dc")
         self.namesp_after_dc.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2786,7 +2786,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_d_array_colon, 501, 0, 1, 5)
         if self.tr("code_sp_d_array_colon")!="code_sp_d_array_colon":
             self.codesp_d_array_colon = QtWidgets.QLabel(self.tr("code_sp_d_array_colon"))
-            self.codesp_d_array_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_d_array_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_d_array_colon, 502, 0, 1, 5)
         self.namesp_d_array_colon = QtWidgets.QLabel("sp_d_array_colon")
         self.namesp_d_array_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2801,7 +2801,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_not, 504, 0, 1, 5)
         if self.tr("code_sp_not")!="code_sp_not":
             self.codesp_not = QtWidgets.QLabel(self.tr("code_sp_not"))
-            self.codesp_not.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_not.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_not, 505, 0, 1, 5)
         self.namesp_not = QtWidgets.QLabel("sp_not")
         self.namesp_not.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2816,7 +2816,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inv, 507, 0, 1, 5)
         if self.tr("code_sp_inv")!="code_sp_inv":
             self.codesp_inv = QtWidgets.QLabel(self.tr("code_sp_inv"))
-            self.codesp_inv.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inv.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inv, 508, 0, 1, 5)
         self.namesp_inv = QtWidgets.QLabel("sp_inv")
         self.namesp_inv.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2831,7 +2831,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_addr, 510, 0, 1, 5)
         if self.tr("code_sp_addr")!="code_sp_addr":
             self.codesp_addr = QtWidgets.QLabel(self.tr("code_sp_addr"))
-            self.codesp_addr.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_addr.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_addr, 511, 0, 1, 5)
         self.namesp_addr = QtWidgets.QLabel("sp_addr")
         self.namesp_addr.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2846,7 +2846,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_member, 513, 0, 1, 5)
         if self.tr("code_sp_member")!="code_sp_member":
             self.codesp_member = QtWidgets.QLabel(self.tr("code_sp_member"))
-            self.codesp_member.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_member.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_member, 514, 0, 1, 5)
         self.namesp_member = QtWidgets.QLabel("sp_member")
         self.namesp_member.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2861,7 +2861,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_deref, 516, 0, 1, 5)
         if self.tr("code_sp_deref")!="code_sp_deref":
             self.codesp_deref = QtWidgets.QLabel(self.tr("code_sp_deref"))
-            self.codesp_deref.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_deref.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_deref, 517, 0, 1, 5)
         self.namesp_deref = QtWidgets.QLabel("sp_deref")
         self.namesp_deref.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2876,7 +2876,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_sign, 519, 0, 1, 5)
         if self.tr("code_sp_sign")!="code_sp_sign":
             self.codesp_sign = QtWidgets.QLabel(self.tr("code_sp_sign"))
-            self.codesp_sign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_sign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_sign, 520, 0, 1, 5)
         self.namesp_sign = QtWidgets.QLabel("sp_sign")
         self.namesp_sign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2891,7 +2891,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_incdec, 522, 0, 1, 5)
         if self.tr("code_sp_incdec")!="code_sp_incdec":
             self.codesp_incdec = QtWidgets.QLabel(self.tr("code_sp_incdec"))
-            self.codesp_incdec.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_incdec.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_incdec, 523, 0, 1, 5)
         self.namesp_incdec = QtWidgets.QLabel("sp_incdec")
         self.namesp_incdec.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2906,7 +2906,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_nl_cont, 525, 0, 1, 5)
         if self.tr("code_sp_before_nl_cont")!="code_sp_before_nl_cont":
             self.codesp_before_nl_cont = QtWidgets.QLabel(self.tr("code_sp_before_nl_cont"))
-            self.codesp_before_nl_cont.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_nl_cont.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_nl_cont, 526, 0, 1, 5)
         self.namesp_before_nl_cont = QtWidgets.QLabel("sp_before_nl_cont")
         self.namesp_before_nl_cont.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2921,7 +2921,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_scope, 528, 0, 1, 5)
         if self.tr("code_sp_after_oc_scope")!="code_sp_after_oc_scope":
             self.codesp_after_oc_scope = QtWidgets.QLabel(self.tr("code_sp_after_oc_scope"))
-            self.codesp_after_oc_scope.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_scope.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_scope, 529, 0, 1, 5)
         self.namesp_after_oc_scope = QtWidgets.QLabel("sp_after_oc_scope")
         self.namesp_after_oc_scope.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2936,7 +2936,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_colon, 531, 0, 1, 5)
         if self.tr("code_sp_after_oc_colon")!="code_sp_after_oc_colon":
             self.codesp_after_oc_colon = QtWidgets.QLabel(self.tr("code_sp_after_oc_colon"))
-            self.codesp_after_oc_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_colon, 532, 0, 1, 5)
         self.namesp_after_oc_colon = QtWidgets.QLabel("sp_after_oc_colon")
         self.namesp_after_oc_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2951,7 +2951,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_oc_colon, 534, 0, 1, 5)
         if self.tr("code_sp_before_oc_colon")!="code_sp_before_oc_colon":
             self.codesp_before_oc_colon = QtWidgets.QLabel(self.tr("code_sp_before_oc_colon"))
-            self.codesp_before_oc_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_oc_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_oc_colon, 535, 0, 1, 5)
         self.namesp_before_oc_colon = QtWidgets.QLabel("sp_before_oc_colon")
         self.namesp_before_oc_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2966,7 +2966,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_dict_colon, 537, 0, 1, 5)
         if self.tr("code_sp_after_oc_dict_colon")!="code_sp_after_oc_dict_colon":
             self.codesp_after_oc_dict_colon = QtWidgets.QLabel(self.tr("code_sp_after_oc_dict_colon"))
-            self.codesp_after_oc_dict_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_dict_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_dict_colon, 538, 0, 1, 5)
         self.namesp_after_oc_dict_colon = QtWidgets.QLabel("sp_after_oc_dict_colon")
         self.namesp_after_oc_dict_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2981,7 +2981,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_oc_dict_colon, 540, 0, 1, 5)
         if self.tr("code_sp_before_oc_dict_colon")!="code_sp_before_oc_dict_colon":
             self.codesp_before_oc_dict_colon = QtWidgets.QLabel(self.tr("code_sp_before_oc_dict_colon"))
-            self.codesp_before_oc_dict_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_oc_dict_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_oc_dict_colon, 541, 0, 1, 5)
         self.namesp_before_oc_dict_colon = QtWidgets.QLabel("sp_before_oc_dict_colon")
         self.namesp_before_oc_dict_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -2996,7 +2996,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_send_oc_colon, 543, 0, 1, 5)
         if self.tr("code_sp_after_send_oc_colon")!="code_sp_after_send_oc_colon":
             self.codesp_after_send_oc_colon = QtWidgets.QLabel(self.tr("code_sp_after_send_oc_colon"))
-            self.codesp_after_send_oc_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_send_oc_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_send_oc_colon, 544, 0, 1, 5)
         self.namesp_after_send_oc_colon = QtWidgets.QLabel("sp_after_send_oc_colon")
         self.namesp_after_send_oc_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3011,7 +3011,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_send_oc_colon, 546, 0, 1, 5)
         if self.tr("code_sp_before_send_oc_colon")!="code_sp_before_send_oc_colon":
             self.codesp_before_send_oc_colon = QtWidgets.QLabel(self.tr("code_sp_before_send_oc_colon"))
-            self.codesp_before_send_oc_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_send_oc_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_send_oc_colon, 547, 0, 1, 5)
         self.namesp_before_send_oc_colon = QtWidgets.QLabel("sp_before_send_oc_colon")
         self.namesp_before_send_oc_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3026,7 +3026,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_type, 549, 0, 1, 5)
         if self.tr("code_sp_after_oc_type")!="code_sp_after_oc_type":
             self.codesp_after_oc_type = QtWidgets.QLabel(self.tr("code_sp_after_oc_type"))
-            self.codesp_after_oc_type.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_type.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_type, 550, 0, 1, 5)
         self.namesp_after_oc_type = QtWidgets.QLabel("sp_after_oc_type")
         self.namesp_after_oc_type.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3041,7 +3041,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_return_type, 552, 0, 1, 5)
         if self.tr("code_sp_after_oc_return_type")!="code_sp_after_oc_return_type":
             self.codesp_after_oc_return_type = QtWidgets.QLabel(self.tr("code_sp_after_oc_return_type"))
-            self.codesp_after_oc_return_type.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_return_type.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_return_type, 553, 0, 1, 5)
         self.namesp_after_oc_return_type = QtWidgets.QLabel("sp_after_oc_return_type")
         self.namesp_after_oc_return_type.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3056,7 +3056,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_at_sel, 555, 0, 1, 5)
         if self.tr("code_sp_after_oc_at_sel")!="code_sp_after_oc_at_sel":
             self.codesp_after_oc_at_sel = QtWidgets.QLabel(self.tr("code_sp_after_oc_at_sel"))
-            self.codesp_after_oc_at_sel.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_at_sel.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_at_sel, 556, 0, 1, 5)
         self.namesp_after_oc_at_sel = QtWidgets.QLabel("sp_after_oc_at_sel")
         self.namesp_after_oc_at_sel.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3071,7 +3071,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_at_sel_parens, 558, 0, 1, 5)
         if self.tr("code_sp_after_oc_at_sel_parens")!="code_sp_after_oc_at_sel_parens":
             self.codesp_after_oc_at_sel_parens = QtWidgets.QLabel(self.tr("code_sp_after_oc_at_sel_parens"))
-            self.codesp_after_oc_at_sel_parens.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_at_sel_parens.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_at_sel_parens, 559, 0, 1, 5)
         self.namesp_after_oc_at_sel_parens = QtWidgets.QLabel("sp_after_oc_at_sel_parens")
         self.namesp_after_oc_at_sel_parens.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3086,7 +3086,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_oc_at_sel_parens, 561, 0, 1, 5)
         if self.tr("code_sp_inside_oc_at_sel_parens")!="code_sp_inside_oc_at_sel_parens":
             self.codesp_inside_oc_at_sel_parens = QtWidgets.QLabel(self.tr("code_sp_inside_oc_at_sel_parens"))
-            self.codesp_inside_oc_at_sel_parens.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_oc_at_sel_parens.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_oc_at_sel_parens, 562, 0, 1, 5)
         self.namesp_inside_oc_at_sel_parens = QtWidgets.QLabel("sp_inside_oc_at_sel_parens")
         self.namesp_inside_oc_at_sel_parens.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3101,7 +3101,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_oc_block_caret, 564, 0, 1, 5)
         if self.tr("code_sp_before_oc_block_caret")!="code_sp_before_oc_block_caret":
             self.codesp_before_oc_block_caret = QtWidgets.QLabel(self.tr("code_sp_before_oc_block_caret"))
-            self.codesp_before_oc_block_caret.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_oc_block_caret.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_oc_block_caret, 565, 0, 1, 5)
         self.namesp_before_oc_block_caret = QtWidgets.QLabel("sp_before_oc_block_caret")
         self.namesp_before_oc_block_caret.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3116,7 +3116,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_block_caret, 567, 0, 1, 5)
         if self.tr("code_sp_after_oc_block_caret")!="code_sp_after_oc_block_caret":
             self.codesp_after_oc_block_caret = QtWidgets.QLabel(self.tr("code_sp_after_oc_block_caret"))
-            self.codesp_after_oc_block_caret.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_block_caret.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_block_caret, 568, 0, 1, 5)
         self.namesp_after_oc_block_caret = QtWidgets.QLabel("sp_after_oc_block_caret")
         self.namesp_after_oc_block_caret.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3131,7 +3131,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_msg_receiver, 570, 0, 1, 5)
         if self.tr("code_sp_after_oc_msg_receiver")!="code_sp_after_oc_msg_receiver":
             self.codesp_after_oc_msg_receiver = QtWidgets.QLabel(self.tr("code_sp_after_oc_msg_receiver"))
-            self.codesp_after_oc_msg_receiver.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_msg_receiver.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_msg_receiver, 571, 0, 1, 5)
         self.namesp_after_oc_msg_receiver = QtWidgets.QLabel("sp_after_oc_msg_receiver")
         self.namesp_after_oc_msg_receiver.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3146,7 +3146,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_property, 573, 0, 1, 5)
         if self.tr("code_sp_after_oc_property")!="code_sp_after_oc_property":
             self.codesp_after_oc_property = QtWidgets.QLabel(self.tr("code_sp_after_oc_property"))
-            self.codesp_after_oc_property.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_property.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_property, 574, 0, 1, 5)
         self.namesp_after_oc_property = QtWidgets.QLabel("sp_after_oc_property")
         self.namesp_after_oc_property.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3161,7 +3161,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_oc_synchronized, 576, 0, 1, 5)
         if self.tr("code_sp_after_oc_synchronized")!="code_sp_after_oc_synchronized":
             self.codesp_after_oc_synchronized = QtWidgets.QLabel(self.tr("code_sp_after_oc_synchronized"))
-            self.codesp_after_oc_synchronized.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_oc_synchronized.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_oc_synchronized, 577, 0, 1, 5)
         self.namesp_after_oc_synchronized = QtWidgets.QLabel("sp_after_oc_synchronized")
         self.namesp_after_oc_synchronized.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3176,7 +3176,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cond_colon, 579, 0, 1, 5)
         if self.tr("code_sp_cond_colon")!="code_sp_cond_colon":
             self.codesp_cond_colon = QtWidgets.QLabel(self.tr("code_sp_cond_colon"))
-            self.codesp_cond_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cond_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cond_colon, 580, 0, 1, 5)
         self.namesp_cond_colon = QtWidgets.QLabel("sp_cond_colon")
         self.namesp_cond_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3191,7 +3191,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cond_colon_before, 582, 0, 1, 5)
         if self.tr("code_sp_cond_colon_before")!="code_sp_cond_colon_before":
             self.codesp_cond_colon_before = QtWidgets.QLabel(self.tr("code_sp_cond_colon_before"))
-            self.codesp_cond_colon_before.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cond_colon_before.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cond_colon_before, 583, 0, 1, 5)
         self.namesp_cond_colon_before = QtWidgets.QLabel("sp_cond_colon_before")
         self.namesp_cond_colon_before.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3206,7 +3206,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cond_colon_after, 585, 0, 1, 5)
         if self.tr("code_sp_cond_colon_after")!="code_sp_cond_colon_after":
             self.codesp_cond_colon_after = QtWidgets.QLabel(self.tr("code_sp_cond_colon_after"))
-            self.codesp_cond_colon_after.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cond_colon_after.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cond_colon_after, 586, 0, 1, 5)
         self.namesp_cond_colon_after = QtWidgets.QLabel("sp_cond_colon_after")
         self.namesp_cond_colon_after.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3221,7 +3221,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cond_question, 588, 0, 1, 5)
         if self.tr("code_sp_cond_question")!="code_sp_cond_question":
             self.codesp_cond_question = QtWidgets.QLabel(self.tr("code_sp_cond_question"))
-            self.codesp_cond_question.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cond_question.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cond_question, 589, 0, 1, 5)
         self.namesp_cond_question = QtWidgets.QLabel("sp_cond_question")
         self.namesp_cond_question.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3236,7 +3236,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cond_question_before, 591, 0, 1, 5)
         if self.tr("code_sp_cond_question_before")!="code_sp_cond_question_before":
             self.codesp_cond_question_before = QtWidgets.QLabel(self.tr("code_sp_cond_question_before"))
-            self.codesp_cond_question_before.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cond_question_before.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cond_question_before, 592, 0, 1, 5)
         self.namesp_cond_question_before = QtWidgets.QLabel("sp_cond_question_before")
         self.namesp_cond_question_before.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3251,7 +3251,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cond_question_after, 594, 0, 1, 5)
         if self.tr("code_sp_cond_question_after")!="code_sp_cond_question_after":
             self.codesp_cond_question_after = QtWidgets.QLabel(self.tr("code_sp_cond_question_after"))
-            self.codesp_cond_question_after.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cond_question_after.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cond_question_after, 595, 0, 1, 5)
         self.namesp_cond_question_after = QtWidgets.QLabel("sp_cond_question_after")
         self.namesp_cond_question_after.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3266,7 +3266,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cond_ternary_short, 597, 0, 1, 5)
         if self.tr("code_sp_cond_ternary_short")!="code_sp_cond_ternary_short":
             self.codesp_cond_ternary_short = QtWidgets.QLabel(self.tr("code_sp_cond_ternary_short"))
-            self.codesp_cond_ternary_short.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cond_ternary_short.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cond_ternary_short, 598, 0, 1, 5)
         self.namesp_cond_ternary_short = QtWidgets.QLabel("sp_cond_ternary_short")
         self.namesp_cond_ternary_short.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3281,7 +3281,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_case_label, 600, 0, 1, 5)
         if self.tr("code_sp_case_label")!="code_sp_case_label":
             self.codesp_case_label = QtWidgets.QLabel(self.tr("code_sp_case_label"))
-            self.codesp_case_label.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_case_label.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_case_label, 601, 0, 1, 5)
         self.namesp_case_label = QtWidgets.QLabel("sp_case_label")
         self.namesp_case_label.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3296,7 +3296,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_range, 603, 0, 1, 5)
         if self.tr("code_sp_range")!="code_sp_range":
             self.codesp_range = QtWidgets.QLabel(self.tr("code_sp_range"))
-            self.codesp_range.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_range.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_range, 604, 0, 1, 5)
         self.namesp_range = QtWidgets.QLabel("sp_range")
         self.namesp_range.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3311,7 +3311,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_for_colon, 606, 0, 1, 5)
         if self.tr("code_sp_after_for_colon")!="code_sp_after_for_colon":
             self.codesp_after_for_colon = QtWidgets.QLabel(self.tr("code_sp_after_for_colon"))
-            self.codesp_after_for_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_for_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_for_colon, 607, 0, 1, 5)
         self.namesp_after_for_colon = QtWidgets.QLabel("sp_after_for_colon")
         self.namesp_after_for_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3326,7 +3326,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_for_colon, 609, 0, 1, 5)
         if self.tr("code_sp_before_for_colon")!="code_sp_before_for_colon":
             self.codesp_before_for_colon = QtWidgets.QLabel(self.tr("code_sp_before_for_colon"))
-            self.codesp_before_for_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_for_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_for_colon, 610, 0, 1, 5)
         self.namesp_before_for_colon = QtWidgets.QLabel("sp_before_for_colon")
         self.namesp_before_for_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3341,7 +3341,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_extern_paren, 612, 0, 1, 5)
         if self.tr("code_sp_extern_paren")!="code_sp_extern_paren":
             self.codesp_extern_paren = QtWidgets.QLabel(self.tr("code_sp_extern_paren"))
-            self.codesp_extern_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_extern_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_extern_paren, 613, 0, 1, 5)
         self.namesp_extern_paren = QtWidgets.QLabel("sp_extern_paren")
         self.namesp_extern_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3356,7 +3356,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cmt_cpp_start, 615, 0, 1, 5)
         if self.tr("code_sp_cmt_cpp_start")!="code_sp_cmt_cpp_start":
             self.codesp_cmt_cpp_start = QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_start"))
-            self.codesp_cmt_cpp_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cmt_cpp_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cmt_cpp_start, 616, 0, 1, 5)
         self.namesp_cmt_cpp_start = QtWidgets.QLabel("sp_cmt_cpp_start")
         self.namesp_cmt_cpp_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3371,7 +3371,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cmt_cpp_doxygen, 618, 0, 1, 5)
         if self.tr("code_sp_cmt_cpp_doxygen")!="code_sp_cmt_cpp_doxygen":
             self.codesp_cmt_cpp_doxygen = QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_doxygen"))
-            self.codesp_cmt_cpp_doxygen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cmt_cpp_doxygen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cmt_cpp_doxygen, 619, 0, 1, 5)
         self.namesp_cmt_cpp_doxygen = QtWidgets.QLabel("sp_cmt_cpp_doxygen")
         self.namesp_cmt_cpp_doxygen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3386,7 +3386,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_cmt_cpp_qttr, 621, 0, 1, 5)
         if self.tr("code_sp_cmt_cpp_qttr")!="code_sp_cmt_cpp_qttr":
             self.codesp_cmt_cpp_qttr = QtWidgets.QLabel(self.tr("code_sp_cmt_cpp_qttr"))
-            self.codesp_cmt_cpp_qttr.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_cmt_cpp_qttr.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_cmt_cpp_qttr, 622, 0, 1, 5)
         self.namesp_cmt_cpp_qttr = QtWidgets.QLabel("sp_cmt_cpp_qttr")
         self.namesp_cmt_cpp_qttr.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3401,7 +3401,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_endif_cmt, 624, 0, 1, 5)
         if self.tr("code_sp_endif_cmt")!="code_sp_endif_cmt":
             self.codesp_endif_cmt = QtWidgets.QLabel(self.tr("code_sp_endif_cmt"))
-            self.codesp_endif_cmt.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_endif_cmt.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_endif_cmt, 625, 0, 1, 5)
         self.namesp_endif_cmt = QtWidgets.QLabel("sp_endif_cmt")
         self.namesp_endif_cmt.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3416,7 +3416,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_new, 627, 0, 1, 5)
         if self.tr("code_sp_after_new")!="code_sp_after_new":
             self.codesp_after_new = QtWidgets.QLabel(self.tr("code_sp_after_new"))
-            self.codesp_after_new.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_new.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_new, 628, 0, 1, 5)
         self.namesp_after_new = QtWidgets.QLabel("sp_after_new")
         self.namesp_after_new.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3431,7 +3431,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_between_new_paren, 630, 0, 1, 5)
         if self.tr("code_sp_between_new_paren")!="code_sp_between_new_paren":
             self.codesp_between_new_paren = QtWidgets.QLabel(self.tr("code_sp_between_new_paren"))
-            self.codesp_between_new_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_between_new_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_between_new_paren, 631, 0, 1, 5)
         self.namesp_between_new_paren = QtWidgets.QLabel("sp_between_new_paren")
         self.namesp_between_new_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3446,7 +3446,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_newop_paren, 633, 0, 1, 5)
         if self.tr("code_sp_after_newop_paren")!="code_sp_after_newop_paren":
             self.codesp_after_newop_paren = QtWidgets.QLabel(self.tr("code_sp_after_newop_paren"))
-            self.codesp_after_newop_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_newop_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_newop_paren, 634, 0, 1, 5)
         self.namesp_after_newop_paren = QtWidgets.QLabel("sp_after_newop_paren")
         self.namesp_after_newop_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3461,7 +3461,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_newop_paren, 636, 0, 1, 5)
         if self.tr("code_sp_inside_newop_paren")!="code_sp_inside_newop_paren":
             self.codesp_inside_newop_paren = QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren"))
-            self.codesp_inside_newop_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_newop_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_newop_paren, 637, 0, 1, 5)
         self.namesp_inside_newop_paren = QtWidgets.QLabel("sp_inside_newop_paren")
         self.namesp_inside_newop_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3476,7 +3476,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_newop_paren_open, 639, 0, 1, 5)
         if self.tr("code_sp_inside_newop_paren_open")!="code_sp_inside_newop_paren_open":
             self.codesp_inside_newop_paren_open = QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren_open"))
-            self.codesp_inside_newop_paren_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_newop_paren_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_newop_paren_open, 640, 0, 1, 5)
         self.namesp_inside_newop_paren_open = QtWidgets.QLabel("sp_inside_newop_paren_open")
         self.namesp_inside_newop_paren_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3491,7 +3491,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_inside_newop_paren_close, 642, 0, 1, 5)
         if self.tr("code_sp_inside_newop_paren_close")!="code_sp_inside_newop_paren_close":
             self.codesp_inside_newop_paren_close = QtWidgets.QLabel(self.tr("code_sp_inside_newop_paren_close"))
-            self.codesp_inside_newop_paren_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_inside_newop_paren_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_inside_newop_paren_close, 643, 0, 1, 5)
         self.namesp_inside_newop_paren_close = QtWidgets.QLabel("sp_inside_newop_paren_close")
         self.namesp_inside_newop_paren_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3506,7 +3506,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_before_tr_emb_cmt, 645, 0, 1, 5)
         if self.tr("code_sp_before_tr_emb_cmt")!="code_sp_before_tr_emb_cmt":
             self.codesp_before_tr_emb_cmt = QtWidgets.QLabel(self.tr("code_sp_before_tr_emb_cmt"))
-            self.codesp_before_tr_emb_cmt.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_before_tr_emb_cmt.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_before_tr_emb_cmt, 646, 0, 1, 5)
         self.namesp_before_tr_emb_cmt = QtWidgets.QLabel("sp_before_tr_emb_cmt")
         self.namesp_before_tr_emb_cmt.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3521,7 +3521,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_num_before_tr_emb_cmt, 648, 0, 1, 5)
         if self.tr("code_sp_num_before_tr_emb_cmt")!="code_sp_num_before_tr_emb_cmt":
             self.codesp_num_before_tr_emb_cmt = QtWidgets.QLabel(self.tr("code_sp_num_before_tr_emb_cmt"))
-            self.codesp_num_before_tr_emb_cmt.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_num_before_tr_emb_cmt.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_num_before_tr_emb_cmt, 649, 0, 1, 5)
         self.namesp_num_before_tr_emb_cmt = QtWidgets.QLabel("sp_num_before_tr_emb_cmt")
         self.namesp_num_before_tr_emb_cmt.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3537,7 +3537,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_annotation_paren, 651, 0, 1, 5)
         if self.tr("code_sp_annotation_paren")!="code_sp_annotation_paren":
             self.codesp_annotation_paren = QtWidgets.QLabel(self.tr("code_sp_annotation_paren"))
-            self.codesp_annotation_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_annotation_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_annotation_paren, 652, 0, 1, 5)
         self.namesp_annotation_paren = QtWidgets.QLabel("sp_annotation_paren")
         self.namesp_annotation_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3552,7 +3552,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_skip_vbrace_tokens, 654, 0, 1, 5)
         if self.tr("code_sp_skip_vbrace_tokens")!="code_sp_skip_vbrace_tokens":
             self.codesp_skip_vbrace_tokens = QtWidgets.QLabel(self.tr("code_sp_skip_vbrace_tokens"))
-            self.codesp_skip_vbrace_tokens.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_skip_vbrace_tokens.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_skip_vbrace_tokens, 655, 0, 1, 5)
         self.namesp_skip_vbrace_tokens = QtWidgets.QLabel("sp_skip_vbrace_tokens")
         self.namesp_skip_vbrace_tokens.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3567,7 +3567,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_after_noexcept, 657, 0, 1, 5)
         if self.tr("code_sp_after_noexcept")!="code_sp_after_noexcept":
             self.codesp_after_noexcept = QtWidgets.QLabel(self.tr("code_sp_after_noexcept"))
-            self.codesp_after_noexcept.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_after_noexcept.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_after_noexcept, 658, 0, 1, 5)
         self.namesp_after_noexcept = QtWidgets.QLabel("sp_after_noexcept")
         self.namesp_after_noexcept.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3582,7 +3582,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelsp_vala_after_translation, 660, 0, 1, 5)
         if self.tr("code_sp_vala_after_translation")!="code_sp_vala_after_translation":
             self.codesp_vala_after_translation = QtWidgets.QLabel(self.tr("code_sp_vala_after_translation"))
-            self.codesp_vala_after_translation.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codesp_vala_after_translation.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codesp_vala_after_translation, 661, 0, 1, 5)
         self.namesp_vala_after_translation = QtWidgets.QLabel("sp_vala_after_translation")
         self.namesp_vala_after_translation.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3597,7 +3597,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt2.addWidget(self.labelforce_tab_after_define, 663, 0, 1, 5)
         if self.tr("code_force_tab_after_define")!="code_force_tab_after_define":
             self.codeforce_tab_after_define = QtWidgets.QLabel(self.tr("code_force_tab_after_define"))
-            self.codeforce_tab_after_define.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeforce_tab_after_define.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt2.addWidget(self.codeforce_tab_after_define, 664, 0, 1, 5)
         self.nameforce_tab_after_define = QtWidgets.QLabel("force_tab_after_define")
         self.nameforce_tab_after_define.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3615,7 +3615,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_columns, 0, 0, 1, 5)
         if self.tr("code_indent_columns")!="code_indent_columns":
             self.codeindent_columns = QtWidgets.QLabel(self.tr("code_indent_columns"))
-            self.codeindent_columns.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_columns.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_columns, 1, 0, 1, 5)
         self.nameindent_columns = QtWidgets.QLabel("indent_columns")
         self.nameindent_columns.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3631,7 +3631,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_continue, 3, 0, 1, 5)
         if self.tr("code_indent_continue")!="code_indent_continue":
             self.codeindent_continue = QtWidgets.QLabel(self.tr("code_indent_continue"))
-            self.codeindent_continue.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_continue.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_continue, 4, 0, 1, 5)
         self.nameindent_continue = QtWidgets.QLabel("indent_continue")
         self.nameindent_continue.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3647,7 +3647,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_continue_class_head, 6, 0, 1, 5)
         if self.tr("code_indent_continue_class_head")!="code_indent_continue_class_head":
             self.codeindent_continue_class_head = QtWidgets.QLabel(self.tr("code_indent_continue_class_head"))
-            self.codeindent_continue_class_head.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_continue_class_head.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_continue_class_head, 7, 0, 1, 5)
         self.nameindent_continue_class_head = QtWidgets.QLabel("indent_continue_class_head")
         self.nameindent_continue_class_head.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3663,7 +3663,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_single_newlines, 9, 0, 1, 5)
         if self.tr("code_indent_single_newlines")!="code_indent_single_newlines":
             self.codeindent_single_newlines = QtWidgets.QLabel(self.tr("code_indent_single_newlines"))
-            self.codeindent_single_newlines.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_single_newlines.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_single_newlines, 10, 0, 1, 5)
         self.nameindent_single_newlines = QtWidgets.QLabel("indent_single_newlines")
         self.nameindent_single_newlines.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3678,7 +3678,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_param, 12, 0, 1, 5)
         if self.tr("code_indent_param")!="code_indent_param":
             self.codeindent_param = QtWidgets.QLabel(self.tr("code_indent_param"))
-            self.codeindent_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_param, 13, 0, 1, 5)
         self.nameindent_param = QtWidgets.QLabel("indent_param")
         self.nameindent_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3694,7 +3694,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_with_tabs, 15, 0, 1, 5)
         if self.tr("code_indent_with_tabs")!="code_indent_with_tabs":
             self.codeindent_with_tabs = QtWidgets.QLabel(self.tr("code_indent_with_tabs"))
-            self.codeindent_with_tabs.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_with_tabs.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_with_tabs, 16, 0, 1, 5)
         self.nameindent_with_tabs = QtWidgets.QLabel("indent_with_tabs")
         self.nameindent_with_tabs.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3710,7 +3710,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_cmt_with_tabs, 18, 0, 1, 5)
         if self.tr("code_indent_cmt_with_tabs")!="code_indent_cmt_with_tabs":
             self.codeindent_cmt_with_tabs = QtWidgets.QLabel(self.tr("code_indent_cmt_with_tabs"))
-            self.codeindent_cmt_with_tabs.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_cmt_with_tabs.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_cmt_with_tabs, 19, 0, 1, 5)
         self.nameindent_cmt_with_tabs = QtWidgets.QLabel("indent_cmt_with_tabs")
         self.nameindent_cmt_with_tabs.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3725,7 +3725,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_align_string, 21, 0, 1, 5)
         if self.tr("code_indent_align_string")!="code_indent_align_string":
             self.codeindent_align_string = QtWidgets.QLabel(self.tr("code_indent_align_string"))
-            self.codeindent_align_string.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_align_string.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_align_string, 22, 0, 1, 5)
         self.nameindent_align_string = QtWidgets.QLabel("indent_align_string")
         self.nameindent_align_string.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3740,7 +3740,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_xml_string, 24, 0, 1, 5)
         if self.tr("code_indent_xml_string")!="code_indent_xml_string":
             self.codeindent_xml_string = QtWidgets.QLabel(self.tr("code_indent_xml_string"))
-            self.codeindent_xml_string.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_xml_string.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_xml_string, 25, 0, 1, 5)
         self.nameindent_xml_string = QtWidgets.QLabel("indent_xml_string")
         self.nameindent_xml_string.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3756,7 +3756,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_brace, 27, 0, 1, 5)
         if self.tr("code_indent_brace")!="code_indent_brace":
             self.codeindent_brace = QtWidgets.QLabel(self.tr("code_indent_brace"))
-            self.codeindent_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_brace, 28, 0, 1, 5)
         self.nameindent_brace = QtWidgets.QLabel("indent_brace")
         self.nameindent_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3772,7 +3772,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_braces, 30, 0, 1, 5)
         if self.tr("code_indent_braces")!="code_indent_braces":
             self.codeindent_braces = QtWidgets.QLabel(self.tr("code_indent_braces"))
-            self.codeindent_braces.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_braces.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_braces, 31, 0, 1, 5)
         self.nameindent_braces = QtWidgets.QLabel("indent_braces")
         self.nameindent_braces.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3787,7 +3787,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_braces_no_func, 33, 0, 1, 5)
         if self.tr("code_indent_braces_no_func")!="code_indent_braces_no_func":
             self.codeindent_braces_no_func = QtWidgets.QLabel(self.tr("code_indent_braces_no_func"))
-            self.codeindent_braces_no_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_braces_no_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_braces_no_func, 34, 0, 1, 5)
         self.nameindent_braces_no_func = QtWidgets.QLabel("indent_braces_no_func")
         self.nameindent_braces_no_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3802,7 +3802,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_braces_no_class, 36, 0, 1, 5)
         if self.tr("code_indent_braces_no_class")!="code_indent_braces_no_class":
             self.codeindent_braces_no_class = QtWidgets.QLabel(self.tr("code_indent_braces_no_class"))
-            self.codeindent_braces_no_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_braces_no_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_braces_no_class, 37, 0, 1, 5)
         self.nameindent_braces_no_class = QtWidgets.QLabel("indent_braces_no_class")
         self.nameindent_braces_no_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3817,7 +3817,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_braces_no_struct, 39, 0, 1, 5)
         if self.tr("code_indent_braces_no_struct")!="code_indent_braces_no_struct":
             self.codeindent_braces_no_struct = QtWidgets.QLabel(self.tr("code_indent_braces_no_struct"))
-            self.codeindent_braces_no_struct.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_braces_no_struct.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_braces_no_struct, 40, 0, 1, 5)
         self.nameindent_braces_no_struct = QtWidgets.QLabel("indent_braces_no_struct")
         self.nameindent_braces_no_struct.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3832,7 +3832,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_brace_parent, 42, 0, 1, 5)
         if self.tr("code_indent_brace_parent")!="code_indent_brace_parent":
             self.codeindent_brace_parent = QtWidgets.QLabel(self.tr("code_indent_brace_parent"))
-            self.codeindent_brace_parent.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_brace_parent.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_brace_parent, 43, 0, 1, 5)
         self.nameindent_brace_parent = QtWidgets.QLabel("indent_brace_parent")
         self.nameindent_brace_parent.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3847,7 +3847,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_paren_open_brace, 45, 0, 1, 5)
         if self.tr("code_indent_paren_open_brace")!="code_indent_paren_open_brace":
             self.codeindent_paren_open_brace = QtWidgets.QLabel(self.tr("code_indent_paren_open_brace"))
-            self.codeindent_paren_open_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_paren_open_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_paren_open_brace, 46, 0, 1, 5)
         self.nameindent_paren_open_brace = QtWidgets.QLabel("indent_paren_open_brace")
         self.nameindent_paren_open_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3862,7 +3862,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_cs_delegate_brace, 48, 0, 1, 5)
         if self.tr("code_indent_cs_delegate_brace")!="code_indent_cs_delegate_brace":
             self.codeindent_cs_delegate_brace = QtWidgets.QLabel(self.tr("code_indent_cs_delegate_brace"))
-            self.codeindent_cs_delegate_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_cs_delegate_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_cs_delegate_brace, 49, 0, 1, 5)
         self.nameindent_cs_delegate_brace = QtWidgets.QLabel("indent_cs_delegate_brace")
         self.nameindent_cs_delegate_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3877,7 +3877,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_cs_delegate_body, 51, 0, 1, 5)
         if self.tr("code_indent_cs_delegate_body")!="code_indent_cs_delegate_body":
             self.codeindent_cs_delegate_body = QtWidgets.QLabel(self.tr("code_indent_cs_delegate_body"))
-            self.codeindent_cs_delegate_body.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_cs_delegate_body.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_cs_delegate_body, 52, 0, 1, 5)
         self.nameindent_cs_delegate_body = QtWidgets.QLabel("indent_cs_delegate_body")
         self.nameindent_cs_delegate_body.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3892,7 +3892,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_namespace, 54, 0, 1, 5)
         if self.tr("code_indent_namespace")!="code_indent_namespace":
             self.codeindent_namespace = QtWidgets.QLabel(self.tr("code_indent_namespace"))
-            self.codeindent_namespace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_namespace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_namespace, 55, 0, 1, 5)
         self.nameindent_namespace = QtWidgets.QLabel("indent_namespace")
         self.nameindent_namespace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3907,7 +3907,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_namespace_single_indent, 57, 0, 1, 5)
         if self.tr("code_indent_namespace_single_indent")!="code_indent_namespace_single_indent":
             self.codeindent_namespace_single_indent = QtWidgets.QLabel(self.tr("code_indent_namespace_single_indent"))
-            self.codeindent_namespace_single_indent.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_namespace_single_indent.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_namespace_single_indent, 58, 0, 1, 5)
         self.nameindent_namespace_single_indent = QtWidgets.QLabel("indent_namespace_single_indent")
         self.nameindent_namespace_single_indent.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3922,7 +3922,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_namespace_level, 60, 0, 1, 5)
         if self.tr("code_indent_namespace_level")!="code_indent_namespace_level":
             self.codeindent_namespace_level = QtWidgets.QLabel(self.tr("code_indent_namespace_level"))
-            self.codeindent_namespace_level.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_namespace_level.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_namespace_level, 61, 0, 1, 5)
         self.nameindent_namespace_level = QtWidgets.QLabel("indent_namespace_level")
         self.nameindent_namespace_level.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3938,7 +3938,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_namespace_limit, 63, 0, 1, 5)
         if self.tr("code_indent_namespace_limit")!="code_indent_namespace_limit":
             self.codeindent_namespace_limit = QtWidgets.QLabel(self.tr("code_indent_namespace_limit"))
-            self.codeindent_namespace_limit.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_namespace_limit.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_namespace_limit, 64, 0, 1, 5)
         self.nameindent_namespace_limit = QtWidgets.QLabel("indent_namespace_limit")
         self.nameindent_namespace_limit.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3954,7 +3954,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_extern, 66, 0, 1, 5)
         if self.tr("code_indent_extern")!="code_indent_extern":
             self.codeindent_extern = QtWidgets.QLabel(self.tr("code_indent_extern"))
-            self.codeindent_extern.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_extern.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_extern, 67, 0, 1, 5)
         self.nameindent_extern = QtWidgets.QLabel("indent_extern")
         self.nameindent_extern.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3969,7 +3969,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_class, 69, 0, 1, 5)
         if self.tr("code_indent_class")!="code_indent_class":
             self.codeindent_class = QtWidgets.QLabel(self.tr("code_indent_class"))
-            self.codeindent_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_class, 70, 0, 1, 5)
         self.nameindent_class = QtWidgets.QLabel("indent_class")
         self.nameindent_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3984,7 +3984,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_class_colon, 72, 0, 1, 5)
         if self.tr("code_indent_class_colon")!="code_indent_class_colon":
             self.codeindent_class_colon = QtWidgets.QLabel(self.tr("code_indent_class_colon"))
-            self.codeindent_class_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_class_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_class_colon, 73, 0, 1, 5)
         self.nameindent_class_colon = QtWidgets.QLabel("indent_class_colon")
         self.nameindent_class_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -3999,7 +3999,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_class_on_colon, 75, 0, 1, 5)
         if self.tr("code_indent_class_on_colon")!="code_indent_class_on_colon":
             self.codeindent_class_on_colon = QtWidgets.QLabel(self.tr("code_indent_class_on_colon"))
-            self.codeindent_class_on_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_class_on_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_class_on_colon, 76, 0, 1, 5)
         self.nameindent_class_on_colon = QtWidgets.QLabel("indent_class_on_colon")
         self.nameindent_class_on_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4014,7 +4014,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_constr_colon, 78, 0, 1, 5)
         if self.tr("code_indent_constr_colon")!="code_indent_constr_colon":
             self.codeindent_constr_colon = QtWidgets.QLabel(self.tr("code_indent_constr_colon"))
-            self.codeindent_constr_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_constr_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_constr_colon, 79, 0, 1, 5)
         self.nameindent_constr_colon = QtWidgets.QLabel("indent_constr_colon")
         self.nameindent_constr_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4029,7 +4029,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_ctor_init_leading, 81, 0, 1, 5)
         if self.tr("code_indent_ctor_init_leading")!="code_indent_ctor_init_leading":
             self.codeindent_ctor_init_leading = QtWidgets.QLabel(self.tr("code_indent_ctor_init_leading"))
-            self.codeindent_ctor_init_leading.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_ctor_init_leading.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_ctor_init_leading, 82, 0, 1, 5)
         self.nameindent_ctor_init_leading = QtWidgets.QLabel("indent_ctor_init_leading")
         self.nameindent_ctor_init_leading.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4045,7 +4045,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_ctor_init, 84, 0, 1, 5)
         if self.tr("code_indent_ctor_init")!="code_indent_ctor_init":
             self.codeindent_ctor_init = QtWidgets.QLabel(self.tr("code_indent_ctor_init"))
-            self.codeindent_ctor_init.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_ctor_init.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_ctor_init, 85, 0, 1, 5)
         self.nameindent_ctor_init = QtWidgets.QLabel("indent_ctor_init")
         self.nameindent_ctor_init.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4061,7 +4061,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_else_if, 87, 0, 1, 5)
         if self.tr("code_indent_else_if")!="code_indent_else_if":
             self.codeindent_else_if = QtWidgets.QLabel(self.tr("code_indent_else_if"))
-            self.codeindent_else_if.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_else_if.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_else_if, 88, 0, 1, 5)
         self.nameindent_else_if = QtWidgets.QLabel("indent_else_if")
         self.nameindent_else_if.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4076,7 +4076,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_var_def_blk, 90, 0, 1, 5)
         if self.tr("code_indent_var_def_blk")!="code_indent_var_def_blk":
             self.codeindent_var_def_blk = QtWidgets.QLabel(self.tr("code_indent_var_def_blk"))
-            self.codeindent_var_def_blk.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_var_def_blk.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_var_def_blk, 91, 0, 1, 5)
         self.nameindent_var_def_blk = QtWidgets.QLabel("indent_var_def_blk")
         self.nameindent_var_def_blk.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4092,7 +4092,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_var_def_cont, 93, 0, 1, 5)
         if self.tr("code_indent_var_def_cont")!="code_indent_var_def_cont":
             self.codeindent_var_def_cont = QtWidgets.QLabel(self.tr("code_indent_var_def_cont"))
-            self.codeindent_var_def_cont.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_var_def_cont.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_var_def_cont, 94, 0, 1, 5)
         self.nameindent_var_def_cont = QtWidgets.QLabel("indent_var_def_cont")
         self.nameindent_var_def_cont.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4107,7 +4107,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_shift, 96, 0, 1, 5)
         if self.tr("code_indent_shift")!="code_indent_shift":
             self.codeindent_shift = QtWidgets.QLabel(self.tr("code_indent_shift"))
-            self.codeindent_shift.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_shift.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_shift, 97, 0, 1, 5)
         self.nameindent_shift = QtWidgets.QLabel("indent_shift")
         self.nameindent_shift.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4122,7 +4122,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_def_force_col1, 99, 0, 1, 5)
         if self.tr("code_indent_func_def_force_col1")!="code_indent_func_def_force_col1":
             self.codeindent_func_def_force_col1 = QtWidgets.QLabel(self.tr("code_indent_func_def_force_col1"))
-            self.codeindent_func_def_force_col1.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_def_force_col1.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_def_force_col1, 100, 0, 1, 5)
         self.nameindent_func_def_force_col1 = QtWidgets.QLabel("indent_func_def_force_col1")
         self.nameindent_func_def_force_col1.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4137,7 +4137,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_call_param, 102, 0, 1, 5)
         if self.tr("code_indent_func_call_param")!="code_indent_func_call_param":
             self.codeindent_func_call_param = QtWidgets.QLabel(self.tr("code_indent_func_call_param"))
-            self.codeindent_func_call_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_call_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_call_param, 103, 0, 1, 5)
         self.nameindent_func_call_param = QtWidgets.QLabel("indent_func_call_param")
         self.nameindent_func_call_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4152,7 +4152,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_def_param, 105, 0, 1, 5)
         if self.tr("code_indent_func_def_param")!="code_indent_func_def_param":
             self.codeindent_func_def_param = QtWidgets.QLabel(self.tr("code_indent_func_def_param"))
-            self.codeindent_func_def_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_def_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_def_param, 106, 0, 1, 5)
         self.nameindent_func_def_param = QtWidgets.QLabel("indent_func_def_param")
         self.nameindent_func_def_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4167,7 +4167,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_def_param_paren_pos_threshold, 108, 0, 1, 5)
         if self.tr("code_indent_func_def_param_paren_pos_threshold")!="code_indent_func_def_param_paren_pos_threshold":
             self.codeindent_func_def_param_paren_pos_threshold = QtWidgets.QLabel(self.tr("code_indent_func_def_param_paren_pos_threshold"))
-            self.codeindent_func_def_param_paren_pos_threshold.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_def_param_paren_pos_threshold.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_def_param_paren_pos_threshold, 109, 0, 1, 5)
         self.nameindent_func_def_param_paren_pos_threshold = QtWidgets.QLabel("indent_func_def_param_paren_pos_threshold")
         self.nameindent_func_def_param_paren_pos_threshold.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4183,7 +4183,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_proto_param, 111, 0, 1, 5)
         if self.tr("code_indent_func_proto_param")!="code_indent_func_proto_param":
             self.codeindent_func_proto_param = QtWidgets.QLabel(self.tr("code_indent_func_proto_param"))
-            self.codeindent_func_proto_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_proto_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_proto_param, 112, 0, 1, 5)
         self.nameindent_func_proto_param = QtWidgets.QLabel("indent_func_proto_param")
         self.nameindent_func_proto_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4198,7 +4198,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_class_param, 114, 0, 1, 5)
         if self.tr("code_indent_func_class_param")!="code_indent_func_class_param":
             self.codeindent_func_class_param = QtWidgets.QLabel(self.tr("code_indent_func_class_param"))
-            self.codeindent_func_class_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_class_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_class_param, 115, 0, 1, 5)
         self.nameindent_func_class_param = QtWidgets.QLabel("indent_func_class_param")
         self.nameindent_func_class_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4213,7 +4213,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_ctor_var_param, 117, 0, 1, 5)
         if self.tr("code_indent_func_ctor_var_param")!="code_indent_func_ctor_var_param":
             self.codeindent_func_ctor_var_param = QtWidgets.QLabel(self.tr("code_indent_func_ctor_var_param"))
-            self.codeindent_func_ctor_var_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_ctor_var_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_ctor_var_param, 118, 0, 1, 5)
         self.nameindent_func_ctor_var_param = QtWidgets.QLabel("indent_func_ctor_var_param")
         self.nameindent_func_ctor_var_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4228,7 +4228,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_template_param, 120, 0, 1, 5)
         if self.tr("code_indent_template_param")!="code_indent_template_param":
             self.codeindent_template_param = QtWidgets.QLabel(self.tr("code_indent_template_param"))
-            self.codeindent_template_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_template_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_template_param, 121, 0, 1, 5)
         self.nameindent_template_param = QtWidgets.QLabel("indent_template_param")
         self.nameindent_template_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4243,7 +4243,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_param_double, 123, 0, 1, 5)
         if self.tr("code_indent_func_param_double")!="code_indent_func_param_double":
             self.codeindent_func_param_double = QtWidgets.QLabel(self.tr("code_indent_func_param_double"))
-            self.codeindent_func_param_double.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_param_double.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_param_double, 124, 0, 1, 5)
         self.nameindent_func_param_double = QtWidgets.QLabel("indent_func_param_double")
         self.nameindent_func_param_double.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4258,7 +4258,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_const, 126, 0, 1, 5)
         if self.tr("code_indent_func_const")!="code_indent_func_const":
             self.codeindent_func_const = QtWidgets.QLabel(self.tr("code_indent_func_const"))
-            self.codeindent_func_const.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_const.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_const, 127, 0, 1, 5)
         self.nameindent_func_const = QtWidgets.QLabel("indent_func_const")
         self.nameindent_func_const.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4274,7 +4274,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_func_throw, 129, 0, 1, 5)
         if self.tr("code_indent_func_throw")!="code_indent_func_throw":
             self.codeindent_func_throw = QtWidgets.QLabel(self.tr("code_indent_func_throw"))
-            self.codeindent_func_throw.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_func_throw.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_func_throw, 130, 0, 1, 5)
         self.nameindent_func_throw = QtWidgets.QLabel("indent_func_throw")
         self.nameindent_func_throw.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4290,7 +4290,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_macro_brace, 132, 0, 1, 5)
         if self.tr("code_indent_macro_brace")!="code_indent_macro_brace":
             self.codeindent_macro_brace = QtWidgets.QLabel(self.tr("code_indent_macro_brace"))
-            self.codeindent_macro_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_macro_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_macro_brace, 133, 0, 1, 5)
         self.nameindent_macro_brace = QtWidgets.QLabel("indent_macro_brace")
         self.nameindent_macro_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4305,7 +4305,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_member, 135, 0, 1, 5)
         if self.tr("code_indent_member")!="code_indent_member":
             self.codeindent_member = QtWidgets.QLabel(self.tr("code_indent_member"))
-            self.codeindent_member.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_member.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_member, 136, 0, 1, 5)
         self.nameindent_member = QtWidgets.QLabel("indent_member")
         self.nameindent_member.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4321,7 +4321,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_member_single, 138, 0, 1, 5)
         if self.tr("code_indent_member_single")!="code_indent_member_single":
             self.codeindent_member_single = QtWidgets.QLabel(self.tr("code_indent_member_single"))
-            self.codeindent_member_single.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_member_single.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_member_single, 139, 0, 1, 5)
         self.nameindent_member_single = QtWidgets.QLabel("indent_member_single")
         self.nameindent_member_single.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4336,7 +4336,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_sing_line_comments, 141, 0, 1, 5)
         if self.tr("code_indent_sing_line_comments")!="code_indent_sing_line_comments":
             self.codeindent_sing_line_comments = QtWidgets.QLabel(self.tr("code_indent_sing_line_comments"))
-            self.codeindent_sing_line_comments.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_sing_line_comments.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_sing_line_comments, 142, 0, 1, 5)
         self.nameindent_sing_line_comments = QtWidgets.QLabel("indent_sing_line_comments")
         self.nameindent_sing_line_comments.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4352,7 +4352,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_sparen_extra, 144, 0, 1, 5)
         if self.tr("code_indent_sparen_extra")!="code_indent_sparen_extra":
             self.codeindent_sparen_extra = QtWidgets.QLabel(self.tr("code_indent_sparen_extra"))
-            self.codeindent_sparen_extra.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_sparen_extra.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_sparen_extra, 145, 0, 1, 5)
         self.nameindent_sparen_extra = QtWidgets.QLabel("indent_sparen_extra")
         self.nameindent_sparen_extra.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4368,7 +4368,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_relative_single_line_comments, 147, 0, 1, 5)
         if self.tr("code_indent_relative_single_line_comments")!="code_indent_relative_single_line_comments":
             self.codeindent_relative_single_line_comments = QtWidgets.QLabel(self.tr("code_indent_relative_single_line_comments"))
-            self.codeindent_relative_single_line_comments.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_relative_single_line_comments.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_relative_single_line_comments, 148, 0, 1, 5)
         self.nameindent_relative_single_line_comments = QtWidgets.QLabel("indent_relative_single_line_comments")
         self.nameindent_relative_single_line_comments.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4383,7 +4383,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_switch_case, 150, 0, 1, 5)
         if self.tr("code_indent_switch_case")!="code_indent_switch_case":
             self.codeindent_switch_case = QtWidgets.QLabel(self.tr("code_indent_switch_case"))
-            self.codeindent_switch_case.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_switch_case.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_switch_case, 151, 0, 1, 5)
         self.nameindent_switch_case = QtWidgets.QLabel("indent_switch_case")
         self.nameindent_switch_case.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4399,7 +4399,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_switch_break_with_case, 153, 0, 1, 5)
         if self.tr("code_indent_switch_break_with_case")!="code_indent_switch_break_with_case":
             self.codeindent_switch_break_with_case = QtWidgets.QLabel(self.tr("code_indent_switch_break_with_case"))
-            self.codeindent_switch_break_with_case.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_switch_break_with_case.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_switch_break_with_case, 154, 0, 1, 5)
         self.nameindent_switch_break_with_case = QtWidgets.QLabel("indent_switch_break_with_case")
         self.nameindent_switch_break_with_case.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4414,7 +4414,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_switch_pp, 156, 0, 1, 5)
         if self.tr("code_indent_switch_pp")!="code_indent_switch_pp":
             self.codeindent_switch_pp = QtWidgets.QLabel(self.tr("code_indent_switch_pp"))
-            self.codeindent_switch_pp.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_switch_pp.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_switch_pp, 157, 0, 1, 5)
         self.nameindent_switch_pp = QtWidgets.QLabel("indent_switch_pp")
         self.nameindent_switch_pp.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4429,7 +4429,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_case_shift, 159, 0, 1, 5)
         if self.tr("code_indent_case_shift")!="code_indent_case_shift":
             self.codeindent_case_shift = QtWidgets.QLabel(self.tr("code_indent_case_shift"))
-            self.codeindent_case_shift.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_case_shift.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_case_shift, 160, 0, 1, 5)
         self.nameindent_case_shift = QtWidgets.QLabel("indent_case_shift")
         self.nameindent_case_shift.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4445,7 +4445,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_case_brace, 162, 0, 1, 5)
         if self.tr("code_indent_case_brace")!="code_indent_case_brace":
             self.codeindent_case_brace = QtWidgets.QLabel(self.tr("code_indent_case_brace"))
-            self.codeindent_case_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_case_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_case_brace, 163, 0, 1, 5)
         self.nameindent_case_brace = QtWidgets.QLabel("indent_case_brace")
         self.nameindent_case_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4461,7 +4461,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_col1_comment, 165, 0, 1, 5)
         if self.tr("code_indent_col1_comment")!="code_indent_col1_comment":
             self.codeindent_col1_comment = QtWidgets.QLabel(self.tr("code_indent_col1_comment"))
-            self.codeindent_col1_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_col1_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_col1_comment, 166, 0, 1, 5)
         self.nameindent_col1_comment = QtWidgets.QLabel("indent_col1_comment")
         self.nameindent_col1_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4476,7 +4476,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_col1_multi_string_literal, 168, 0, 1, 5)
         if self.tr("code_indent_col1_multi_string_literal")!="code_indent_col1_multi_string_literal":
             self.codeindent_col1_multi_string_literal = QtWidgets.QLabel(self.tr("code_indent_col1_multi_string_literal"))
-            self.codeindent_col1_multi_string_literal.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_col1_multi_string_literal.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_col1_multi_string_literal, 169, 0, 1, 5)
         self.nameindent_col1_multi_string_literal = QtWidgets.QLabel("indent_col1_multi_string_literal")
         self.nameindent_col1_multi_string_literal.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4491,7 +4491,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_label, 171, 0, 1, 5)
         if self.tr("code_indent_label")!="code_indent_label":
             self.codeindent_label = QtWidgets.QLabel(self.tr("code_indent_label"))
-            self.codeindent_label.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_label.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_label, 172, 0, 1, 5)
         self.nameindent_label = QtWidgets.QLabel("indent_label")
         self.nameindent_label.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4507,7 +4507,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_access_spec, 174, 0, 1, 5)
         if self.tr("code_indent_access_spec")!="code_indent_access_spec":
             self.codeindent_access_spec = QtWidgets.QLabel(self.tr("code_indent_access_spec"))
-            self.codeindent_access_spec.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_access_spec.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_access_spec, 175, 0, 1, 5)
         self.nameindent_access_spec = QtWidgets.QLabel("indent_access_spec")
         self.nameindent_access_spec.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4523,7 +4523,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_access_spec_body, 177, 0, 1, 5)
         if self.tr("code_indent_access_spec_body")!="code_indent_access_spec_body":
             self.codeindent_access_spec_body = QtWidgets.QLabel(self.tr("code_indent_access_spec_body"))
-            self.codeindent_access_spec_body.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_access_spec_body.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_access_spec_body, 178, 0, 1, 5)
         self.nameindent_access_spec_body = QtWidgets.QLabel("indent_access_spec_body")
         self.nameindent_access_spec_body.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4538,7 +4538,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_paren_nl, 180, 0, 1, 5)
         if self.tr("code_indent_paren_nl")!="code_indent_paren_nl":
             self.codeindent_paren_nl = QtWidgets.QLabel(self.tr("code_indent_paren_nl"))
-            self.codeindent_paren_nl.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_paren_nl.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_paren_nl, 181, 0, 1, 5)
         self.nameindent_paren_nl = QtWidgets.QLabel("indent_paren_nl")
         self.nameindent_paren_nl.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4553,7 +4553,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_paren_close, 183, 0, 1, 5)
         if self.tr("code_indent_paren_close")!="code_indent_paren_close":
             self.codeindent_paren_close = QtWidgets.QLabel(self.tr("code_indent_paren_close"))
-            self.codeindent_paren_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_paren_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_paren_close, 184, 0, 1, 5)
         self.nameindent_paren_close = QtWidgets.QLabel("indent_paren_close")
         self.nameindent_paren_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4569,7 +4569,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_paren_after_func_def, 186, 0, 1, 5)
         if self.tr("code_indent_paren_after_func_def")!="code_indent_paren_after_func_def":
             self.codeindent_paren_after_func_def = QtWidgets.QLabel(self.tr("code_indent_paren_after_func_def"))
-            self.codeindent_paren_after_func_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_paren_after_func_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_paren_after_func_def, 187, 0, 1, 5)
         self.nameindent_paren_after_func_def = QtWidgets.QLabel("indent_paren_after_func_def")
         self.nameindent_paren_after_func_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4584,7 +4584,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_paren_after_func_decl, 189, 0, 1, 5)
         if self.tr("code_indent_paren_after_func_decl")!="code_indent_paren_after_func_decl":
             self.codeindent_paren_after_func_decl = QtWidgets.QLabel(self.tr("code_indent_paren_after_func_decl"))
-            self.codeindent_paren_after_func_decl.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_paren_after_func_decl.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_paren_after_func_decl, 190, 0, 1, 5)
         self.nameindent_paren_after_func_decl = QtWidgets.QLabel("indent_paren_after_func_decl")
         self.nameindent_paren_after_func_decl.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4599,7 +4599,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_paren_after_func_call, 192, 0, 1, 5)
         if self.tr("code_indent_paren_after_func_call")!="code_indent_paren_after_func_call":
             self.codeindent_paren_after_func_call = QtWidgets.QLabel(self.tr("code_indent_paren_after_func_call"))
-            self.codeindent_paren_after_func_call.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_paren_after_func_call.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_paren_after_func_call, 193, 0, 1, 5)
         self.nameindent_paren_after_func_call = QtWidgets.QLabel("indent_paren_after_func_call")
         self.nameindent_paren_after_func_call.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4614,7 +4614,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_comma_paren, 195, 0, 1, 5)
         if self.tr("code_indent_comma_paren")!="code_indent_comma_paren":
             self.codeindent_comma_paren = QtWidgets.QLabel(self.tr("code_indent_comma_paren"))
-            self.codeindent_comma_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_comma_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_comma_paren, 196, 0, 1, 5)
         self.nameindent_comma_paren = QtWidgets.QLabel("indent_comma_paren")
         self.nameindent_comma_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4629,7 +4629,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_bool_paren, 198, 0, 1, 5)
         if self.tr("code_indent_bool_paren")!="code_indent_bool_paren":
             self.codeindent_bool_paren = QtWidgets.QLabel(self.tr("code_indent_bool_paren"))
-            self.codeindent_bool_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_bool_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_bool_paren, 199, 0, 1, 5)
         self.nameindent_bool_paren = QtWidgets.QLabel("indent_bool_paren")
         self.nameindent_bool_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4644,7 +4644,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_semicolon_for_paren, 201, 0, 1, 5)
         if self.tr("code_indent_semicolon_for_paren")!="code_indent_semicolon_for_paren":
             self.codeindent_semicolon_for_paren = QtWidgets.QLabel(self.tr("code_indent_semicolon_for_paren"))
-            self.codeindent_semicolon_for_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_semicolon_for_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_semicolon_for_paren, 202, 0, 1, 5)
         self.nameindent_semicolon_for_paren = QtWidgets.QLabel("indent_semicolon_for_paren")
         self.nameindent_semicolon_for_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4659,7 +4659,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_first_bool_expr, 204, 0, 1, 5)
         if self.tr("code_indent_first_bool_expr")!="code_indent_first_bool_expr":
             self.codeindent_first_bool_expr = QtWidgets.QLabel(self.tr("code_indent_first_bool_expr"))
-            self.codeindent_first_bool_expr.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_first_bool_expr.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_first_bool_expr, 205, 0, 1, 5)
         self.nameindent_first_bool_expr = QtWidgets.QLabel("indent_first_bool_expr")
         self.nameindent_first_bool_expr.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4674,7 +4674,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_first_for_expr, 207, 0, 1, 5)
         if self.tr("code_indent_first_for_expr")!="code_indent_first_for_expr":
             self.codeindent_first_for_expr = QtWidgets.QLabel(self.tr("code_indent_first_for_expr"))
-            self.codeindent_first_for_expr.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_first_for_expr.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_first_for_expr, 208, 0, 1, 5)
         self.nameindent_first_for_expr = QtWidgets.QLabel("indent_first_for_expr")
         self.nameindent_first_for_expr.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4689,7 +4689,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_square_nl, 210, 0, 1, 5)
         if self.tr("code_indent_square_nl")!="code_indent_square_nl":
             self.codeindent_square_nl = QtWidgets.QLabel(self.tr("code_indent_square_nl"))
-            self.codeindent_square_nl.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_square_nl.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_square_nl, 211, 0, 1, 5)
         self.nameindent_square_nl = QtWidgets.QLabel("indent_square_nl")
         self.nameindent_square_nl.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4704,7 +4704,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_preserve_sql, 213, 0, 1, 5)
         if self.tr("code_indent_preserve_sql")!="code_indent_preserve_sql":
             self.codeindent_preserve_sql = QtWidgets.QLabel(self.tr("code_indent_preserve_sql"))
-            self.codeindent_preserve_sql.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_preserve_sql.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_preserve_sql, 214, 0, 1, 5)
         self.nameindent_preserve_sql = QtWidgets.QLabel("indent_preserve_sql")
         self.nameindent_preserve_sql.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4719,7 +4719,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_align_assign, 216, 0, 1, 5)
         if self.tr("code_indent_align_assign")!="code_indent_align_assign":
             self.codeindent_align_assign = QtWidgets.QLabel(self.tr("code_indent_align_assign"))
-            self.codeindent_align_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_align_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_align_assign, 217, 0, 1, 5)
         self.nameindent_align_assign = QtWidgets.QLabel("indent_align_assign")
         self.nameindent_align_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4734,7 +4734,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_off_after_assign, 219, 0, 1, 5)
         if self.tr("code_indent_off_after_assign")!="code_indent_off_after_assign":
             self.codeindent_off_after_assign = QtWidgets.QLabel(self.tr("code_indent_off_after_assign"))
-            self.codeindent_off_after_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_off_after_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_off_after_assign, 220, 0, 1, 5)
         self.nameindent_off_after_assign = QtWidgets.QLabel("indent_off_after_assign")
         self.nameindent_off_after_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4749,7 +4749,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_align_paren, 222, 0, 1, 5)
         if self.tr("code_indent_align_paren")!="code_indent_align_paren":
             self.codeindent_align_paren = QtWidgets.QLabel(self.tr("code_indent_align_paren"))
-            self.codeindent_align_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_align_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_align_paren, 223, 0, 1, 5)
         self.nameindent_align_paren = QtWidgets.QLabel("indent_align_paren")
         self.nameindent_align_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4764,7 +4764,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_inside_msg_sel, 225, 0, 1, 5)
         if self.tr("code_indent_oc_inside_msg_sel")!="code_indent_oc_inside_msg_sel":
             self.codeindent_oc_inside_msg_sel = QtWidgets.QLabel(self.tr("code_indent_oc_inside_msg_sel"))
-            self.codeindent_oc_inside_msg_sel.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_inside_msg_sel.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_inside_msg_sel, 226, 0, 1, 5)
         self.nameindent_oc_inside_msg_sel = QtWidgets.QLabel("indent_oc_inside_msg_sel")
         self.nameindent_oc_inside_msg_sel.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4779,7 +4779,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_block, 228, 0, 1, 5)
         if self.tr("code_indent_oc_block")!="code_indent_oc_block":
             self.codeindent_oc_block = QtWidgets.QLabel(self.tr("code_indent_oc_block"))
-            self.codeindent_oc_block.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_block.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_block, 229, 0, 1, 5)
         self.nameindent_oc_block = QtWidgets.QLabel("indent_oc_block")
         self.nameindent_oc_block.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4794,7 +4794,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_block_msg, 231, 0, 1, 5)
         if self.tr("code_indent_oc_block_msg")!="code_indent_oc_block_msg":
             self.codeindent_oc_block_msg = QtWidgets.QLabel(self.tr("code_indent_oc_block_msg"))
-            self.codeindent_oc_block_msg.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_block_msg.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_block_msg, 232, 0, 1, 5)
         self.nameindent_oc_block_msg = QtWidgets.QLabel("indent_oc_block_msg")
         self.nameindent_oc_block_msg.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4810,7 +4810,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_msg_colon, 234, 0, 1, 5)
         if self.tr("code_indent_oc_msg_colon")!="code_indent_oc_msg_colon":
             self.codeindent_oc_msg_colon = QtWidgets.QLabel(self.tr("code_indent_oc_msg_colon"))
-            self.codeindent_oc_msg_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_msg_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_msg_colon, 235, 0, 1, 5)
         self.nameindent_oc_msg_colon = QtWidgets.QLabel("indent_oc_msg_colon")
         self.nameindent_oc_msg_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4826,7 +4826,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_msg_prioritize_first_colon, 237, 0, 1, 5)
         if self.tr("code_indent_oc_msg_prioritize_first_colon")!="code_indent_oc_msg_prioritize_first_colon":
             self.codeindent_oc_msg_prioritize_first_colon = QtWidgets.QLabel(self.tr("code_indent_oc_msg_prioritize_first_colon"))
-            self.codeindent_oc_msg_prioritize_first_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_msg_prioritize_first_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_msg_prioritize_first_colon, 238, 0, 1, 5)
         self.nameindent_oc_msg_prioritize_first_colon = QtWidgets.QLabel("indent_oc_msg_prioritize_first_colon")
         self.nameindent_oc_msg_prioritize_first_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4841,7 +4841,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_block_msg_xcode_style, 240, 0, 1, 5)
         if self.tr("code_indent_oc_block_msg_xcode_style")!="code_indent_oc_block_msg_xcode_style":
             self.codeindent_oc_block_msg_xcode_style = QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_xcode_style"))
-            self.codeindent_oc_block_msg_xcode_style.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_block_msg_xcode_style.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_block_msg_xcode_style, 241, 0, 1, 5)
         self.nameindent_oc_block_msg_xcode_style = QtWidgets.QLabel("indent_oc_block_msg_xcode_style")
         self.nameindent_oc_block_msg_xcode_style.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4856,7 +4856,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_block_msg_from_keyword, 243, 0, 1, 5)
         if self.tr("code_indent_oc_block_msg_from_keyword")!="code_indent_oc_block_msg_from_keyword":
             self.codeindent_oc_block_msg_from_keyword = QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_keyword"))
-            self.codeindent_oc_block_msg_from_keyword.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_block_msg_from_keyword.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_block_msg_from_keyword, 244, 0, 1, 5)
         self.nameindent_oc_block_msg_from_keyword = QtWidgets.QLabel("indent_oc_block_msg_from_keyword")
         self.nameindent_oc_block_msg_from_keyword.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4871,7 +4871,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_block_msg_from_colon, 246, 0, 1, 5)
         if self.tr("code_indent_oc_block_msg_from_colon")!="code_indent_oc_block_msg_from_colon":
             self.codeindent_oc_block_msg_from_colon = QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_colon"))
-            self.codeindent_oc_block_msg_from_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_block_msg_from_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_block_msg_from_colon, 247, 0, 1, 5)
         self.nameindent_oc_block_msg_from_colon = QtWidgets.QLabel("indent_oc_block_msg_from_colon")
         self.nameindent_oc_block_msg_from_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4886,7 +4886,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_block_msg_from_caret, 249, 0, 1, 5)
         if self.tr("code_indent_oc_block_msg_from_caret")!="code_indent_oc_block_msg_from_caret":
             self.codeindent_oc_block_msg_from_caret = QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_caret"))
-            self.codeindent_oc_block_msg_from_caret.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_block_msg_from_caret.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_block_msg_from_caret, 250, 0, 1, 5)
         self.nameindent_oc_block_msg_from_caret = QtWidgets.QLabel("indent_oc_block_msg_from_caret")
         self.nameindent_oc_block_msg_from_caret.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4901,7 +4901,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_oc_block_msg_from_brace, 252, 0, 1, 5)
         if self.tr("code_indent_oc_block_msg_from_brace")!="code_indent_oc_block_msg_from_brace":
             self.codeindent_oc_block_msg_from_brace = QtWidgets.QLabel(self.tr("code_indent_oc_block_msg_from_brace"))
-            self.codeindent_oc_block_msg_from_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_oc_block_msg_from_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_oc_block_msg_from_brace, 253, 0, 1, 5)
         self.nameindent_oc_block_msg_from_brace = QtWidgets.QLabel("indent_oc_block_msg_from_brace")
         self.nameindent_oc_block_msg_from_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4916,7 +4916,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_min_vbrace_open, 255, 0, 1, 5)
         if self.tr("code_indent_min_vbrace_open")!="code_indent_min_vbrace_open":
             self.codeindent_min_vbrace_open = QtWidgets.QLabel(self.tr("code_indent_min_vbrace_open"))
-            self.codeindent_min_vbrace_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_min_vbrace_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_min_vbrace_open, 256, 0, 1, 5)
         self.nameindent_min_vbrace_open = QtWidgets.QLabel("indent_min_vbrace_open")
         self.nameindent_min_vbrace_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4932,7 +4932,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_vbrace_open_on_tabstop, 258, 0, 1, 5)
         if self.tr("code_indent_vbrace_open_on_tabstop")!="code_indent_vbrace_open_on_tabstop":
             self.codeindent_vbrace_open_on_tabstop = QtWidgets.QLabel(self.tr("code_indent_vbrace_open_on_tabstop"))
-            self.codeindent_vbrace_open_on_tabstop.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_vbrace_open_on_tabstop.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_vbrace_open_on_tabstop, 259, 0, 1, 5)
         self.nameindent_vbrace_open_on_tabstop = QtWidgets.QLabel("indent_vbrace_open_on_tabstop")
         self.nameindent_vbrace_open_on_tabstop.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4947,7 +4947,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_token_after_brace, 261, 0, 1, 5)
         if self.tr("code_indent_token_after_brace")!="code_indent_token_after_brace":
             self.codeindent_token_after_brace = QtWidgets.QLabel(self.tr("code_indent_token_after_brace"))
-            self.codeindent_token_after_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_token_after_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_token_after_brace, 262, 0, 1, 5)
         self.nameindent_token_after_brace = QtWidgets.QLabel("indent_token_after_brace")
         self.nameindent_token_after_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4962,7 +4962,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_cpp_lambda_body, 264, 0, 1, 5)
         if self.tr("code_indent_cpp_lambda_body")!="code_indent_cpp_lambda_body":
             self.codeindent_cpp_lambda_body = QtWidgets.QLabel(self.tr("code_indent_cpp_lambda_body"))
-            self.codeindent_cpp_lambda_body.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_cpp_lambda_body.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_cpp_lambda_body, 265, 0, 1, 5)
         self.nameindent_cpp_lambda_body = QtWidgets.QLabel("indent_cpp_lambda_body")
         self.nameindent_cpp_lambda_body.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4977,7 +4977,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_compound_literal_return, 267, 0, 1, 5)
         if self.tr("code_indent_compound_literal_return")!="code_indent_compound_literal_return":
             self.codeindent_compound_literal_return = QtWidgets.QLabel(self.tr("code_indent_compound_literal_return"))
-            self.codeindent_compound_literal_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_compound_literal_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_compound_literal_return, 268, 0, 1, 5)
         self.nameindent_compound_literal_return = QtWidgets.QLabel("indent_compound_literal_return")
         self.nameindent_compound_literal_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -4992,7 +4992,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_using_block, 270, 0, 1, 5)
         if self.tr("code_indent_using_block")!="code_indent_using_block":
             self.codeindent_using_block = QtWidgets.QLabel(self.tr("code_indent_using_block"))
-            self.codeindent_using_block.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_using_block.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_using_block, 271, 0, 1, 5)
         self.nameindent_using_block = QtWidgets.QLabel("indent_using_block")
         self.nameindent_using_block.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5007,7 +5007,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_ternary_operator, 273, 0, 1, 5)
         if self.tr("code_indent_ternary_operator")!="code_indent_ternary_operator":
             self.codeindent_ternary_operator = QtWidgets.QLabel(self.tr("code_indent_ternary_operator"))
-            self.codeindent_ternary_operator.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_ternary_operator.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_ternary_operator, 274, 0, 1, 5)
         self.nameindent_ternary_operator = QtWidgets.QLabel("indent_ternary_operator")
         self.nameindent_ternary_operator.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5023,7 +5023,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_inside_ternary_operator, 276, 0, 1, 5)
         if self.tr("code_indent_inside_ternary_operator")!="code_indent_inside_ternary_operator":
             self.codeindent_inside_ternary_operator = QtWidgets.QLabel(self.tr("code_indent_inside_ternary_operator"))
-            self.codeindent_inside_ternary_operator.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_inside_ternary_operator.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_inside_ternary_operator, 277, 0, 1, 5)
         self.nameindent_inside_ternary_operator = QtWidgets.QLabel("indent_inside_ternary_operator")
         self.nameindent_inside_ternary_operator.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5038,7 +5038,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_off_after_return, 279, 0, 1, 5)
         if self.tr("code_indent_off_after_return")!="code_indent_off_after_return":
             self.codeindent_off_after_return = QtWidgets.QLabel(self.tr("code_indent_off_after_return"))
-            self.codeindent_off_after_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_off_after_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_off_after_return, 280, 0, 1, 5)
         self.nameindent_off_after_return = QtWidgets.QLabel("indent_off_after_return")
         self.nameindent_off_after_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5053,7 +5053,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_off_after_return_new, 282, 0, 1, 5)
         if self.tr("code_indent_off_after_return_new")!="code_indent_off_after_return_new":
             self.codeindent_off_after_return_new = QtWidgets.QLabel(self.tr("code_indent_off_after_return_new"))
-            self.codeindent_off_after_return_new.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_off_after_return_new.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_off_after_return_new, 283, 0, 1, 5)
         self.nameindent_off_after_return_new = QtWidgets.QLabel("indent_off_after_return_new")
         self.nameindent_off_after_return_new.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5068,7 +5068,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_single_after_return, 285, 0, 1, 5)
         if self.tr("code_indent_single_after_return")!="code_indent_single_after_return":
             self.codeindent_single_after_return = QtWidgets.QLabel(self.tr("code_indent_single_after_return"))
-            self.codeindent_single_after_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_single_after_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_single_after_return, 286, 0, 1, 5)
         self.nameindent_single_after_return = QtWidgets.QLabel("indent_single_after_return")
         self.nameindent_single_after_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5083,7 +5083,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt3.addWidget(self.labelindent_ignore_asm_block, 288, 0, 1, 5)
         if self.tr("code_indent_ignore_asm_block")!="code_indent_ignore_asm_block":
             self.codeindent_ignore_asm_block = QtWidgets.QLabel(self.tr("code_indent_ignore_asm_block"))
-            self.codeindent_ignore_asm_block.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_ignore_asm_block.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt3.addWidget(self.codeindent_ignore_asm_block, 289, 0, 1, 5)
         self.nameindent_ignore_asm_block = QtWidgets.QLabel("indent_ignore_asm_block")
         self.nameindent_ignore_asm_block.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5101,7 +5101,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_collapse_empty_body, 0, 0, 1, 5)
         if self.tr("code_nl_collapse_empty_body")!="code_nl_collapse_empty_body":
             self.codenl_collapse_empty_body = QtWidgets.QLabel(self.tr("code_nl_collapse_empty_body"))
-            self.codenl_collapse_empty_body.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_collapse_empty_body.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_collapse_empty_body, 1, 0, 1, 5)
         self.namenl_collapse_empty_body = QtWidgets.QLabel("nl_collapse_empty_body")
         self.namenl_collapse_empty_body.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5116,7 +5116,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_assign_leave_one_liners, 3, 0, 1, 5)
         if self.tr("code_nl_assign_leave_one_liners")!="code_nl_assign_leave_one_liners":
             self.codenl_assign_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_assign_leave_one_liners"))
-            self.codenl_assign_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_assign_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_assign_leave_one_liners, 4, 0, 1, 5)
         self.namenl_assign_leave_one_liners = QtWidgets.QLabel("nl_assign_leave_one_liners")
         self.namenl_assign_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5131,7 +5131,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_class_leave_one_liners, 6, 0, 1, 5)
         if self.tr("code_nl_class_leave_one_liners")!="code_nl_class_leave_one_liners":
             self.codenl_class_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_class_leave_one_liners"))
-            self.codenl_class_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_class_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_class_leave_one_liners, 7, 0, 1, 5)
         self.namenl_class_leave_one_liners = QtWidgets.QLabel("nl_class_leave_one_liners")
         self.namenl_class_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5146,7 +5146,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_enum_leave_one_liners, 9, 0, 1, 5)
         if self.tr("code_nl_enum_leave_one_liners")!="code_nl_enum_leave_one_liners":
             self.codenl_enum_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_enum_leave_one_liners"))
-            self.codenl_enum_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_enum_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_enum_leave_one_liners, 10, 0, 1, 5)
         self.namenl_enum_leave_one_liners = QtWidgets.QLabel("nl_enum_leave_one_liners")
         self.namenl_enum_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5161,7 +5161,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_getset_leave_one_liners, 12, 0, 1, 5)
         if self.tr("code_nl_getset_leave_one_liners")!="code_nl_getset_leave_one_liners":
             self.codenl_getset_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_getset_leave_one_liners"))
-            self.codenl_getset_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_getset_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_getset_leave_one_liners, 13, 0, 1, 5)
         self.namenl_getset_leave_one_liners = QtWidgets.QLabel("nl_getset_leave_one_liners")
         self.namenl_getset_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5176,7 +5176,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_cs_property_leave_one_liners, 15, 0, 1, 5)
         if self.tr("code_nl_cs_property_leave_one_liners")!="code_nl_cs_property_leave_one_liners":
             self.codenl_cs_property_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_cs_property_leave_one_liners"))
-            self.codenl_cs_property_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_cs_property_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_cs_property_leave_one_liners, 16, 0, 1, 5)
         self.namenl_cs_property_leave_one_liners = QtWidgets.QLabel("nl_cs_property_leave_one_liners")
         self.namenl_cs_property_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5191,7 +5191,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_leave_one_liners, 18, 0, 1, 5)
         if self.tr("code_nl_func_leave_one_liners")!="code_nl_func_leave_one_liners":
             self.codenl_func_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_func_leave_one_liners"))
-            self.codenl_func_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_leave_one_liners, 19, 0, 1, 5)
         self.namenl_func_leave_one_liners = QtWidgets.QLabel("nl_func_leave_one_liners")
         self.namenl_func_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5206,7 +5206,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_cpp_lambda_leave_one_liners, 21, 0, 1, 5)
         if self.tr("code_nl_cpp_lambda_leave_one_liners")!="code_nl_cpp_lambda_leave_one_liners":
             self.codenl_cpp_lambda_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_cpp_lambda_leave_one_liners"))
-            self.codenl_cpp_lambda_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_cpp_lambda_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_cpp_lambda_leave_one_liners, 22, 0, 1, 5)
         self.namenl_cpp_lambda_leave_one_liners = QtWidgets.QLabel("nl_cpp_lambda_leave_one_liners")
         self.namenl_cpp_lambda_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5221,7 +5221,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_if_leave_one_liners, 24, 0, 1, 5)
         if self.tr("code_nl_if_leave_one_liners")!="code_nl_if_leave_one_liners":
             self.codenl_if_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_if_leave_one_liners"))
-            self.codenl_if_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_if_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_if_leave_one_liners, 25, 0, 1, 5)
         self.namenl_if_leave_one_liners = QtWidgets.QLabel("nl_if_leave_one_liners")
         self.namenl_if_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5236,7 +5236,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_while_leave_one_liners, 27, 0, 1, 5)
         if self.tr("code_nl_while_leave_one_liners")!="code_nl_while_leave_one_liners":
             self.codenl_while_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_while_leave_one_liners"))
-            self.codenl_while_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_while_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_while_leave_one_liners, 28, 0, 1, 5)
         self.namenl_while_leave_one_liners = QtWidgets.QLabel("nl_while_leave_one_liners")
         self.namenl_while_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5251,7 +5251,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_for_leave_one_liners, 30, 0, 1, 5)
         if self.tr("code_nl_for_leave_one_liners")!="code_nl_for_leave_one_liners":
             self.codenl_for_leave_one_liners = QtWidgets.QLabel(self.tr("code_nl_for_leave_one_liners"))
-            self.codenl_for_leave_one_liners.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_for_leave_one_liners.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_for_leave_one_liners, 31, 0, 1, 5)
         self.namenl_for_leave_one_liners = QtWidgets.QLabel("nl_for_leave_one_liners")
         self.namenl_for_leave_one_liners.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5266,7 +5266,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_msg_leave_one_liner, 33, 0, 1, 5)
         if self.tr("code_nl_oc_msg_leave_one_liner")!="code_nl_oc_msg_leave_one_liner":
             self.codenl_oc_msg_leave_one_liner = QtWidgets.QLabel(self.tr("code_nl_oc_msg_leave_one_liner"))
-            self.codenl_oc_msg_leave_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_msg_leave_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_msg_leave_one_liner, 34, 0, 1, 5)
         self.namenl_oc_msg_leave_one_liner = QtWidgets.QLabel("nl_oc_msg_leave_one_liner")
         self.namenl_oc_msg_leave_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5281,7 +5281,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_mdef_brace, 36, 0, 1, 5)
         if self.tr("code_nl_oc_mdef_brace")!="code_nl_oc_mdef_brace":
             self.codenl_oc_mdef_brace = QtWidgets.QLabel(self.tr("code_nl_oc_mdef_brace"))
-            self.codenl_oc_mdef_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_mdef_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_mdef_brace, 37, 0, 1, 5)
         self.namenl_oc_mdef_brace = QtWidgets.QLabel("nl_oc_mdef_brace")
         self.namenl_oc_mdef_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5296,7 +5296,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_block_brace, 39, 0, 1, 5)
         if self.tr("code_nl_oc_block_brace")!="code_nl_oc_block_brace":
             self.codenl_oc_block_brace = QtWidgets.QLabel(self.tr("code_nl_oc_block_brace"))
-            self.codenl_oc_block_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_block_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_block_brace, 40, 0, 1, 5)
         self.namenl_oc_block_brace = QtWidgets.QLabel("nl_oc_block_brace")
         self.namenl_oc_block_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5311,7 +5311,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_before_interface, 42, 0, 1, 5)
         if self.tr("code_nl_oc_before_interface")!="code_nl_oc_before_interface":
             self.codenl_oc_before_interface = QtWidgets.QLabel(self.tr("code_nl_oc_before_interface"))
-            self.codenl_oc_before_interface.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_before_interface.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_before_interface, 43, 0, 1, 5)
         self.namenl_oc_before_interface = QtWidgets.QLabel("nl_oc_before_interface")
         self.namenl_oc_before_interface.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5326,7 +5326,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_before_implementation, 45, 0, 1, 5)
         if self.tr("code_nl_oc_before_implementation")!="code_nl_oc_before_implementation":
             self.codenl_oc_before_implementation = QtWidgets.QLabel(self.tr("code_nl_oc_before_implementation"))
-            self.codenl_oc_before_implementation.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_before_implementation.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_before_implementation, 46, 0, 1, 5)
         self.namenl_oc_before_implementation = QtWidgets.QLabel("nl_oc_before_implementation")
         self.namenl_oc_before_implementation.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5341,7 +5341,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_before_end, 48, 0, 1, 5)
         if self.tr("code_nl_oc_before_end")!="code_nl_oc_before_end":
             self.codenl_oc_before_end = QtWidgets.QLabel(self.tr("code_nl_oc_before_end"))
-            self.codenl_oc_before_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_before_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_before_end, 49, 0, 1, 5)
         self.namenl_oc_before_end = QtWidgets.QLabel("nl_oc_before_end")
         self.namenl_oc_before_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5356,7 +5356,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_interface_brace, 51, 0, 1, 5)
         if self.tr("code_nl_oc_interface_brace")!="code_nl_oc_interface_brace":
             self.codenl_oc_interface_brace = QtWidgets.QLabel(self.tr("code_nl_oc_interface_brace"))
-            self.codenl_oc_interface_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_interface_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_interface_brace, 52, 0, 1, 5)
         self.namenl_oc_interface_brace = QtWidgets.QLabel("nl_oc_interface_brace")
         self.namenl_oc_interface_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5371,7 +5371,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_implementation_brace, 54, 0, 1, 5)
         if self.tr("code_nl_oc_implementation_brace")!="code_nl_oc_implementation_brace":
             self.codenl_oc_implementation_brace = QtWidgets.QLabel(self.tr("code_nl_oc_implementation_brace"))
-            self.codenl_oc_implementation_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_implementation_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_implementation_brace, 55, 0, 1, 5)
         self.namenl_oc_implementation_brace = QtWidgets.QLabel("nl_oc_implementation_brace")
         self.namenl_oc_implementation_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5386,7 +5386,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_start_of_file, 57, 0, 1, 5)
         if self.tr("code_nl_start_of_file")!="code_nl_start_of_file":
             self.codenl_start_of_file = QtWidgets.QLabel(self.tr("code_nl_start_of_file"))
-            self.codenl_start_of_file.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_start_of_file.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_start_of_file, 58, 0, 1, 5)
         self.namenl_start_of_file = QtWidgets.QLabel("nl_start_of_file")
         self.namenl_start_of_file.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5401,7 +5401,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_start_of_file_min, 60, 0, 1, 5)
         if self.tr("code_nl_start_of_file_min")!="code_nl_start_of_file_min":
             self.codenl_start_of_file_min = QtWidgets.QLabel(self.tr("code_nl_start_of_file_min"))
-            self.codenl_start_of_file_min.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_start_of_file_min.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_start_of_file_min, 61, 0, 1, 5)
         self.namenl_start_of_file_min = QtWidgets.QLabel("nl_start_of_file_min")
         self.namenl_start_of_file_min.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5417,7 +5417,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_end_of_file, 63, 0, 1, 5)
         if self.tr("code_nl_end_of_file")!="code_nl_end_of_file":
             self.codenl_end_of_file = QtWidgets.QLabel(self.tr("code_nl_end_of_file"))
-            self.codenl_end_of_file.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_end_of_file.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_end_of_file, 64, 0, 1, 5)
         self.namenl_end_of_file = QtWidgets.QLabel("nl_end_of_file")
         self.namenl_end_of_file.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5432,7 +5432,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_end_of_file_min, 66, 0, 1, 5)
         if self.tr("code_nl_end_of_file_min")!="code_nl_end_of_file_min":
             self.codenl_end_of_file_min = QtWidgets.QLabel(self.tr("code_nl_end_of_file_min"))
-            self.codenl_end_of_file_min.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_end_of_file_min.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_end_of_file_min, 67, 0, 1, 5)
         self.namenl_end_of_file_min = QtWidgets.QLabel("nl_end_of_file_min")
         self.namenl_end_of_file_min.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5448,7 +5448,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_assign_brace, 69, 0, 1, 5)
         if self.tr("code_nl_assign_brace")!="code_nl_assign_brace":
             self.codenl_assign_brace = QtWidgets.QLabel(self.tr("code_nl_assign_brace"))
-            self.codenl_assign_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_assign_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_assign_brace, 70, 0, 1, 5)
         self.namenl_assign_brace = QtWidgets.QLabel("nl_assign_brace")
         self.namenl_assign_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5463,7 +5463,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_assign_square, 72, 0, 1, 5)
         if self.tr("code_nl_assign_square")!="code_nl_assign_square":
             self.codenl_assign_square = QtWidgets.QLabel(self.tr("code_nl_assign_square"))
-            self.codenl_assign_square.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_assign_square.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_assign_square, 73, 0, 1, 5)
         self.namenl_assign_square = QtWidgets.QLabel("nl_assign_square")
         self.namenl_assign_square.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5478,7 +5478,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_tsquare_brace, 75, 0, 1, 5)
         if self.tr("code_nl_tsquare_brace")!="code_nl_tsquare_brace":
             self.codenl_tsquare_brace = QtWidgets.QLabel(self.tr("code_nl_tsquare_brace"))
-            self.codenl_tsquare_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_tsquare_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_tsquare_brace, 76, 0, 1, 5)
         self.namenl_tsquare_brace = QtWidgets.QLabel("nl_tsquare_brace")
         self.namenl_tsquare_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5493,7 +5493,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_square_assign, 78, 0, 1, 5)
         if self.tr("code_nl_after_square_assign")!="code_nl_after_square_assign":
             self.codenl_after_square_assign = QtWidgets.QLabel(self.tr("code_nl_after_square_assign"))
-            self.codenl_after_square_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_square_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_square_assign, 79, 0, 1, 5)
         self.namenl_after_square_assign = QtWidgets.QLabel("nl_after_square_assign")
         self.namenl_after_square_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5508,7 +5508,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_fcall_brace, 81, 0, 1, 5)
         if self.tr("code_nl_fcall_brace")!="code_nl_fcall_brace":
             self.codenl_fcall_brace = QtWidgets.QLabel(self.tr("code_nl_fcall_brace"))
-            self.codenl_fcall_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_fcall_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_fcall_brace, 82, 0, 1, 5)
         self.namenl_fcall_brace = QtWidgets.QLabel("nl_fcall_brace")
         self.namenl_fcall_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5523,7 +5523,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_enum_brace, 84, 0, 1, 5)
         if self.tr("code_nl_enum_brace")!="code_nl_enum_brace":
             self.codenl_enum_brace = QtWidgets.QLabel(self.tr("code_nl_enum_brace"))
-            self.codenl_enum_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_enum_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_enum_brace, 85, 0, 1, 5)
         self.namenl_enum_brace = QtWidgets.QLabel("nl_enum_brace")
         self.namenl_enum_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5538,7 +5538,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_enum_class, 87, 0, 1, 5)
         if self.tr("code_nl_enum_class")!="code_nl_enum_class":
             self.codenl_enum_class = QtWidgets.QLabel(self.tr("code_nl_enum_class"))
-            self.codenl_enum_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_enum_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_enum_class, 88, 0, 1, 5)
         self.namenl_enum_class = QtWidgets.QLabel("nl_enum_class")
         self.namenl_enum_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5553,7 +5553,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_enum_class_identifier, 90, 0, 1, 5)
         if self.tr("code_nl_enum_class_identifier")!="code_nl_enum_class_identifier":
             self.codenl_enum_class_identifier = QtWidgets.QLabel(self.tr("code_nl_enum_class_identifier"))
-            self.codenl_enum_class_identifier.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_enum_class_identifier.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_enum_class_identifier, 91, 0, 1, 5)
         self.namenl_enum_class_identifier = QtWidgets.QLabel("nl_enum_class_identifier")
         self.namenl_enum_class_identifier.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5568,7 +5568,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_enum_identifier_colon, 93, 0, 1, 5)
         if self.tr("code_nl_enum_identifier_colon")!="code_nl_enum_identifier_colon":
             self.codenl_enum_identifier_colon = QtWidgets.QLabel(self.tr("code_nl_enum_identifier_colon"))
-            self.codenl_enum_identifier_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_enum_identifier_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_enum_identifier_colon, 94, 0, 1, 5)
         self.namenl_enum_identifier_colon = QtWidgets.QLabel("nl_enum_identifier_colon")
         self.namenl_enum_identifier_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5583,7 +5583,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_enum_colon_type, 96, 0, 1, 5)
         if self.tr("code_nl_enum_colon_type")!="code_nl_enum_colon_type":
             self.codenl_enum_colon_type = QtWidgets.QLabel(self.tr("code_nl_enum_colon_type"))
-            self.codenl_enum_colon_type.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_enum_colon_type.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_enum_colon_type, 97, 0, 1, 5)
         self.namenl_enum_colon_type = QtWidgets.QLabel("nl_enum_colon_type")
         self.namenl_enum_colon_type.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5598,7 +5598,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_struct_brace, 99, 0, 1, 5)
         if self.tr("code_nl_struct_brace")!="code_nl_struct_brace":
             self.codenl_struct_brace = QtWidgets.QLabel(self.tr("code_nl_struct_brace"))
-            self.codenl_struct_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_struct_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_struct_brace, 100, 0, 1, 5)
         self.namenl_struct_brace = QtWidgets.QLabel("nl_struct_brace")
         self.namenl_struct_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5613,7 +5613,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_union_brace, 102, 0, 1, 5)
         if self.tr("code_nl_union_brace")!="code_nl_union_brace":
             self.codenl_union_brace = QtWidgets.QLabel(self.tr("code_nl_union_brace"))
-            self.codenl_union_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_union_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_union_brace, 103, 0, 1, 5)
         self.namenl_union_brace = QtWidgets.QLabel("nl_union_brace")
         self.namenl_union_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5628,7 +5628,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_if_brace, 105, 0, 1, 5)
         if self.tr("code_nl_if_brace")!="code_nl_if_brace":
             self.codenl_if_brace = QtWidgets.QLabel(self.tr("code_nl_if_brace"))
-            self.codenl_if_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_if_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_if_brace, 106, 0, 1, 5)
         self.namenl_if_brace = QtWidgets.QLabel("nl_if_brace")
         self.namenl_if_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5643,7 +5643,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_else, 108, 0, 1, 5)
         if self.tr("code_nl_brace_else")!="code_nl_brace_else":
             self.codenl_brace_else = QtWidgets.QLabel(self.tr("code_nl_brace_else"))
-            self.codenl_brace_else.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_else.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_else, 109, 0, 1, 5)
         self.namenl_brace_else = QtWidgets.QLabel("nl_brace_else")
         self.namenl_brace_else.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5658,7 +5658,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_elseif_brace, 111, 0, 1, 5)
         if self.tr("code_nl_elseif_brace")!="code_nl_elseif_brace":
             self.codenl_elseif_brace = QtWidgets.QLabel(self.tr("code_nl_elseif_brace"))
-            self.codenl_elseif_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_elseif_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_elseif_brace, 112, 0, 1, 5)
         self.namenl_elseif_brace = QtWidgets.QLabel("nl_elseif_brace")
         self.namenl_elseif_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5673,7 +5673,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_else_brace, 114, 0, 1, 5)
         if self.tr("code_nl_else_brace")!="code_nl_else_brace":
             self.codenl_else_brace = QtWidgets.QLabel(self.tr("code_nl_else_brace"))
-            self.codenl_else_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_else_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_else_brace, 115, 0, 1, 5)
         self.namenl_else_brace = QtWidgets.QLabel("nl_else_brace")
         self.namenl_else_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5688,7 +5688,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_else_if, 117, 0, 1, 5)
         if self.tr("code_nl_else_if")!="code_nl_else_if":
             self.codenl_else_if = QtWidgets.QLabel(self.tr("code_nl_else_if"))
-            self.codenl_else_if.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_else_if.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_else_if, 118, 0, 1, 5)
         self.namenl_else_if = QtWidgets.QLabel("nl_else_if")
         self.namenl_else_if.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5703,7 +5703,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_opening_brace_func_class_def, 120, 0, 1, 5)
         if self.tr("code_nl_before_opening_brace_func_class_def")!="code_nl_before_opening_brace_func_class_def":
             self.codenl_before_opening_brace_func_class_def = QtWidgets.QLabel(self.tr("code_nl_before_opening_brace_func_class_def"))
-            self.codenl_before_opening_brace_func_class_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_opening_brace_func_class_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_opening_brace_func_class_def, 121, 0, 1, 5)
         self.namenl_before_opening_brace_func_class_def = QtWidgets.QLabel("nl_before_opening_brace_func_class_def")
         self.namenl_before_opening_brace_func_class_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5718,7 +5718,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_if_closing_paren, 123, 0, 1, 5)
         if self.tr("code_nl_before_if_closing_paren")!="code_nl_before_if_closing_paren":
             self.codenl_before_if_closing_paren = QtWidgets.QLabel(self.tr("code_nl_before_if_closing_paren"))
-            self.codenl_before_if_closing_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_if_closing_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_if_closing_paren, 124, 0, 1, 5)
         self.namenl_before_if_closing_paren = QtWidgets.QLabel("nl_before_if_closing_paren")
         self.namenl_before_if_closing_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5733,7 +5733,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_finally, 126, 0, 1, 5)
         if self.tr("code_nl_brace_finally")!="code_nl_brace_finally":
             self.codenl_brace_finally = QtWidgets.QLabel(self.tr("code_nl_brace_finally"))
-            self.codenl_brace_finally.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_finally.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_finally, 127, 0, 1, 5)
         self.namenl_brace_finally = QtWidgets.QLabel("nl_brace_finally")
         self.namenl_brace_finally.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5748,7 +5748,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_finally_brace, 129, 0, 1, 5)
         if self.tr("code_nl_finally_brace")!="code_nl_finally_brace":
             self.codenl_finally_brace = QtWidgets.QLabel(self.tr("code_nl_finally_brace"))
-            self.codenl_finally_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_finally_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_finally_brace, 130, 0, 1, 5)
         self.namenl_finally_brace = QtWidgets.QLabel("nl_finally_brace")
         self.namenl_finally_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5763,7 +5763,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_try_brace, 132, 0, 1, 5)
         if self.tr("code_nl_try_brace")!="code_nl_try_brace":
             self.codenl_try_brace = QtWidgets.QLabel(self.tr("code_nl_try_brace"))
-            self.codenl_try_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_try_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_try_brace, 133, 0, 1, 5)
         self.namenl_try_brace = QtWidgets.QLabel("nl_try_brace")
         self.namenl_try_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5778,7 +5778,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_getset_brace, 135, 0, 1, 5)
         if self.tr("code_nl_getset_brace")!="code_nl_getset_brace":
             self.codenl_getset_brace = QtWidgets.QLabel(self.tr("code_nl_getset_brace"))
-            self.codenl_getset_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_getset_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_getset_brace, 136, 0, 1, 5)
         self.namenl_getset_brace = QtWidgets.QLabel("nl_getset_brace")
         self.namenl_getset_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5793,7 +5793,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_for_brace, 138, 0, 1, 5)
         if self.tr("code_nl_for_brace")!="code_nl_for_brace":
             self.codenl_for_brace = QtWidgets.QLabel(self.tr("code_nl_for_brace"))
-            self.codenl_for_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_for_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_for_brace, 139, 0, 1, 5)
         self.namenl_for_brace = QtWidgets.QLabel("nl_for_brace")
         self.namenl_for_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5808,7 +5808,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_catch_brace, 141, 0, 1, 5)
         if self.tr("code_nl_catch_brace")!="code_nl_catch_brace":
             self.codenl_catch_brace = QtWidgets.QLabel(self.tr("code_nl_catch_brace"))
-            self.codenl_catch_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_catch_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_catch_brace, 142, 0, 1, 5)
         self.namenl_catch_brace = QtWidgets.QLabel("nl_catch_brace")
         self.namenl_catch_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5823,7 +5823,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_catch_brace, 144, 0, 1, 5)
         if self.tr("code_nl_oc_catch_brace")!="code_nl_oc_catch_brace":
             self.codenl_oc_catch_brace = QtWidgets.QLabel(self.tr("code_nl_oc_catch_brace"))
-            self.codenl_oc_catch_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_catch_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_catch_brace, 145, 0, 1, 5)
         self.namenl_oc_catch_brace = QtWidgets.QLabel("nl_oc_catch_brace")
         self.namenl_oc_catch_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5838,7 +5838,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_catch, 147, 0, 1, 5)
         if self.tr("code_nl_brace_catch")!="code_nl_brace_catch":
             self.codenl_brace_catch = QtWidgets.QLabel(self.tr("code_nl_brace_catch"))
-            self.codenl_brace_catch.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_catch.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_catch, 148, 0, 1, 5)
         self.namenl_brace_catch = QtWidgets.QLabel("nl_brace_catch")
         self.namenl_brace_catch.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5853,7 +5853,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_brace_catch, 150, 0, 1, 5)
         if self.tr("code_nl_oc_brace_catch")!="code_nl_oc_brace_catch":
             self.codenl_oc_brace_catch = QtWidgets.QLabel(self.tr("code_nl_oc_brace_catch"))
-            self.codenl_oc_brace_catch.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_brace_catch.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_brace_catch, 151, 0, 1, 5)
         self.namenl_oc_brace_catch = QtWidgets.QLabel("nl_oc_brace_catch")
         self.namenl_oc_brace_catch.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5868,7 +5868,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_square, 153, 0, 1, 5)
         if self.tr("code_nl_brace_square")!="code_nl_brace_square":
             self.codenl_brace_square = QtWidgets.QLabel(self.tr("code_nl_brace_square"))
-            self.codenl_brace_square.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_square.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_square, 154, 0, 1, 5)
         self.namenl_brace_square = QtWidgets.QLabel("nl_brace_square")
         self.namenl_brace_square.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5883,7 +5883,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_fparen, 156, 0, 1, 5)
         if self.tr("code_nl_brace_fparen")!="code_nl_brace_fparen":
             self.codenl_brace_fparen = QtWidgets.QLabel(self.tr("code_nl_brace_fparen"))
-            self.codenl_brace_fparen.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_fparen.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_fparen, 157, 0, 1, 5)
         self.namenl_brace_fparen = QtWidgets.QLabel("nl_brace_fparen")
         self.namenl_brace_fparen.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5898,7 +5898,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_while_brace, 159, 0, 1, 5)
         if self.tr("code_nl_while_brace")!="code_nl_while_brace":
             self.codenl_while_brace = QtWidgets.QLabel(self.tr("code_nl_while_brace"))
-            self.codenl_while_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_while_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_while_brace, 160, 0, 1, 5)
         self.namenl_while_brace = QtWidgets.QLabel("nl_while_brace")
         self.namenl_while_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5913,7 +5913,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_scope_brace, 162, 0, 1, 5)
         if self.tr("code_nl_scope_brace")!="code_nl_scope_brace":
             self.codenl_scope_brace = QtWidgets.QLabel(self.tr("code_nl_scope_brace"))
-            self.codenl_scope_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_scope_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_scope_brace, 163, 0, 1, 5)
         self.namenl_scope_brace = QtWidgets.QLabel("nl_scope_brace")
         self.namenl_scope_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5928,7 +5928,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_unittest_brace, 165, 0, 1, 5)
         if self.tr("code_nl_unittest_brace")!="code_nl_unittest_brace":
             self.codenl_unittest_brace = QtWidgets.QLabel(self.tr("code_nl_unittest_brace"))
-            self.codenl_unittest_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_unittest_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_unittest_brace, 166, 0, 1, 5)
         self.namenl_unittest_brace = QtWidgets.QLabel("nl_unittest_brace")
         self.namenl_unittest_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5943,7 +5943,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_version_brace, 168, 0, 1, 5)
         if self.tr("code_nl_version_brace")!="code_nl_version_brace":
             self.codenl_version_brace = QtWidgets.QLabel(self.tr("code_nl_version_brace"))
-            self.codenl_version_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_version_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_version_brace, 169, 0, 1, 5)
         self.namenl_version_brace = QtWidgets.QLabel("nl_version_brace")
         self.namenl_version_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5958,7 +5958,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_using_brace, 171, 0, 1, 5)
         if self.tr("code_nl_using_brace")!="code_nl_using_brace":
             self.codenl_using_brace = QtWidgets.QLabel(self.tr("code_nl_using_brace"))
-            self.codenl_using_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_using_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_using_brace, 172, 0, 1, 5)
         self.namenl_using_brace = QtWidgets.QLabel("nl_using_brace")
         self.namenl_using_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5973,7 +5973,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_brace, 174, 0, 1, 5)
         if self.tr("code_nl_brace_brace")!="code_nl_brace_brace":
             self.codenl_brace_brace = QtWidgets.QLabel(self.tr("code_nl_brace_brace"))
-            self.codenl_brace_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_brace, 175, 0, 1, 5)
         self.namenl_brace_brace = QtWidgets.QLabel("nl_brace_brace")
         self.namenl_brace_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -5988,7 +5988,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_do_brace, 177, 0, 1, 5)
         if self.tr("code_nl_do_brace")!="code_nl_do_brace":
             self.codenl_do_brace = QtWidgets.QLabel(self.tr("code_nl_do_brace"))
-            self.codenl_do_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_do_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_do_brace, 178, 0, 1, 5)
         self.namenl_do_brace = QtWidgets.QLabel("nl_do_brace")
         self.namenl_do_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6003,7 +6003,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_while, 180, 0, 1, 5)
         if self.tr("code_nl_brace_while")!="code_nl_brace_while":
             self.codenl_brace_while = QtWidgets.QLabel(self.tr("code_nl_brace_while"))
-            self.codenl_brace_while.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_while.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_while, 181, 0, 1, 5)
         self.namenl_brace_while = QtWidgets.QLabel("nl_brace_while")
         self.namenl_brace_while.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6018,7 +6018,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_switch_brace, 183, 0, 1, 5)
         if self.tr("code_nl_switch_brace")!="code_nl_switch_brace":
             self.codenl_switch_brace = QtWidgets.QLabel(self.tr("code_nl_switch_brace"))
-            self.codenl_switch_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_switch_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_switch_brace, 184, 0, 1, 5)
         self.namenl_switch_brace = QtWidgets.QLabel("nl_switch_brace")
         self.namenl_switch_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6033,7 +6033,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_synchronized_brace, 186, 0, 1, 5)
         if self.tr("code_nl_synchronized_brace")!="code_nl_synchronized_brace":
             self.codenl_synchronized_brace = QtWidgets.QLabel(self.tr("code_nl_synchronized_brace"))
-            self.codenl_synchronized_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_synchronized_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_synchronized_brace, 187, 0, 1, 5)
         self.namenl_synchronized_brace = QtWidgets.QLabel("nl_synchronized_brace")
         self.namenl_synchronized_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6048,7 +6048,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_multi_line_cond, 189, 0, 1, 5)
         if self.tr("code_nl_multi_line_cond")!="code_nl_multi_line_cond":
             self.codenl_multi_line_cond = QtWidgets.QLabel(self.tr("code_nl_multi_line_cond"))
-            self.codenl_multi_line_cond.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_multi_line_cond.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_multi_line_cond, 190, 0, 1, 5)
         self.namenl_multi_line_cond = QtWidgets.QLabel("nl_multi_line_cond")
         self.namenl_multi_line_cond.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6063,7 +6063,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_multi_line_sparen_open, 192, 0, 1, 5)
         if self.tr("code_nl_multi_line_sparen_open")!="code_nl_multi_line_sparen_open":
             self.codenl_multi_line_sparen_open = QtWidgets.QLabel(self.tr("code_nl_multi_line_sparen_open"))
-            self.codenl_multi_line_sparen_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_multi_line_sparen_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_multi_line_sparen_open, 193, 0, 1, 5)
         self.namenl_multi_line_sparen_open = QtWidgets.QLabel("nl_multi_line_sparen_open")
         self.namenl_multi_line_sparen_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6078,7 +6078,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_multi_line_sparen_close, 195, 0, 1, 5)
         if self.tr("code_nl_multi_line_sparen_close")!="code_nl_multi_line_sparen_close":
             self.codenl_multi_line_sparen_close = QtWidgets.QLabel(self.tr("code_nl_multi_line_sparen_close"))
-            self.codenl_multi_line_sparen_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_multi_line_sparen_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_multi_line_sparen_close, 196, 0, 1, 5)
         self.namenl_multi_line_sparen_close = QtWidgets.QLabel("nl_multi_line_sparen_close")
         self.namenl_multi_line_sparen_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6093,7 +6093,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_multi_line_define, 198, 0, 1, 5)
         if self.tr("code_nl_multi_line_define")!="code_nl_multi_line_define":
             self.codenl_multi_line_define = QtWidgets.QLabel(self.tr("code_nl_multi_line_define"))
-            self.codenl_multi_line_define.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_multi_line_define.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_multi_line_define, 199, 0, 1, 5)
         self.namenl_multi_line_define = QtWidgets.QLabel("nl_multi_line_define")
         self.namenl_multi_line_define.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6108,7 +6108,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_case, 201, 0, 1, 5)
         if self.tr("code_nl_before_case")!="code_nl_before_case":
             self.codenl_before_case = QtWidgets.QLabel(self.tr("code_nl_before_case"))
-            self.codenl_before_case.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_case.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_case, 202, 0, 1, 5)
         self.namenl_before_case = QtWidgets.QLabel("nl_before_case")
         self.namenl_before_case.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6123,7 +6123,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_case, 204, 0, 1, 5)
         if self.tr("code_nl_after_case")!="code_nl_after_case":
             self.codenl_after_case = QtWidgets.QLabel(self.tr("code_nl_after_case"))
-            self.codenl_after_case.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_case.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_case, 205, 0, 1, 5)
         self.namenl_after_case = QtWidgets.QLabel("nl_after_case")
         self.namenl_after_case.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6138,7 +6138,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_case_colon_brace, 207, 0, 1, 5)
         if self.tr("code_nl_case_colon_brace")!="code_nl_case_colon_brace":
             self.codenl_case_colon_brace = QtWidgets.QLabel(self.tr("code_nl_case_colon_brace"))
-            self.codenl_case_colon_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_case_colon_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_case_colon_brace, 208, 0, 1, 5)
         self.namenl_case_colon_brace = QtWidgets.QLabel("nl_case_colon_brace")
         self.namenl_case_colon_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6153,7 +6153,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_throw, 210, 0, 1, 5)
         if self.tr("code_nl_before_throw")!="code_nl_before_throw":
             self.codenl_before_throw = QtWidgets.QLabel(self.tr("code_nl_before_throw"))
-            self.codenl_before_throw.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_throw.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_throw, 211, 0, 1, 5)
         self.namenl_before_throw = QtWidgets.QLabel("nl_before_throw")
         self.namenl_before_throw.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6168,7 +6168,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_namespace_brace, 213, 0, 1, 5)
         if self.tr("code_nl_namespace_brace")!="code_nl_namespace_brace":
             self.codenl_namespace_brace = QtWidgets.QLabel(self.tr("code_nl_namespace_brace"))
-            self.codenl_namespace_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_namespace_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_namespace_brace, 214, 0, 1, 5)
         self.namenl_namespace_brace = QtWidgets.QLabel("nl_namespace_brace")
         self.namenl_namespace_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6183,7 +6183,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_class, 216, 0, 1, 5)
         if self.tr("code_nl_template_class")!="code_nl_template_class":
             self.codenl_template_class = QtWidgets.QLabel(self.tr("code_nl_template_class"))
-            self.codenl_template_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_class, 217, 0, 1, 5)
         self.namenl_template_class = QtWidgets.QLabel("nl_template_class")
         self.namenl_template_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6198,7 +6198,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_class_decl, 219, 0, 1, 5)
         if self.tr("code_nl_template_class_decl")!="code_nl_template_class_decl":
             self.codenl_template_class_decl = QtWidgets.QLabel(self.tr("code_nl_template_class_decl"))
-            self.codenl_template_class_decl.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_class_decl.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_class_decl, 220, 0, 1, 5)
         self.namenl_template_class_decl = QtWidgets.QLabel("nl_template_class_decl")
         self.namenl_template_class_decl.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6213,7 +6213,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_class_decl_special, 222, 0, 1, 5)
         if self.tr("code_nl_template_class_decl_special")!="code_nl_template_class_decl_special":
             self.codenl_template_class_decl_special = QtWidgets.QLabel(self.tr("code_nl_template_class_decl_special"))
-            self.codenl_template_class_decl_special.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_class_decl_special.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_class_decl_special, 223, 0, 1, 5)
         self.namenl_template_class_decl_special = QtWidgets.QLabel("nl_template_class_decl_special")
         self.namenl_template_class_decl_special.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6228,7 +6228,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_class_def, 225, 0, 1, 5)
         if self.tr("code_nl_template_class_def")!="code_nl_template_class_def":
             self.codenl_template_class_def = QtWidgets.QLabel(self.tr("code_nl_template_class_def"))
-            self.codenl_template_class_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_class_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_class_def, 226, 0, 1, 5)
         self.namenl_template_class_def = QtWidgets.QLabel("nl_template_class_def")
         self.namenl_template_class_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6243,7 +6243,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_class_def_special, 228, 0, 1, 5)
         if self.tr("code_nl_template_class_def_special")!="code_nl_template_class_def_special":
             self.codenl_template_class_def_special = QtWidgets.QLabel(self.tr("code_nl_template_class_def_special"))
-            self.codenl_template_class_def_special.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_class_def_special.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_class_def_special, 229, 0, 1, 5)
         self.namenl_template_class_def_special = QtWidgets.QLabel("nl_template_class_def_special")
         self.namenl_template_class_def_special.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6258,7 +6258,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_func, 231, 0, 1, 5)
         if self.tr("code_nl_template_func")!="code_nl_template_func":
             self.codenl_template_func = QtWidgets.QLabel(self.tr("code_nl_template_func"))
-            self.codenl_template_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_func, 232, 0, 1, 5)
         self.namenl_template_func = QtWidgets.QLabel("nl_template_func")
         self.namenl_template_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6273,7 +6273,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_func_decl, 234, 0, 1, 5)
         if self.tr("code_nl_template_func_decl")!="code_nl_template_func_decl":
             self.codenl_template_func_decl = QtWidgets.QLabel(self.tr("code_nl_template_func_decl"))
-            self.codenl_template_func_decl.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_func_decl.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_func_decl, 235, 0, 1, 5)
         self.namenl_template_func_decl = QtWidgets.QLabel("nl_template_func_decl")
         self.namenl_template_func_decl.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6288,7 +6288,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_func_decl_special, 237, 0, 1, 5)
         if self.tr("code_nl_template_func_decl_special")!="code_nl_template_func_decl_special":
             self.codenl_template_func_decl_special = QtWidgets.QLabel(self.tr("code_nl_template_func_decl_special"))
-            self.codenl_template_func_decl_special.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_func_decl_special.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_func_decl_special, 238, 0, 1, 5)
         self.namenl_template_func_decl_special = QtWidgets.QLabel("nl_template_func_decl_special")
         self.namenl_template_func_decl_special.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6303,7 +6303,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_func_def, 240, 0, 1, 5)
         if self.tr("code_nl_template_func_def")!="code_nl_template_func_def":
             self.codenl_template_func_def = QtWidgets.QLabel(self.tr("code_nl_template_func_def"))
-            self.codenl_template_func_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_func_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_func_def, 241, 0, 1, 5)
         self.namenl_template_func_def = QtWidgets.QLabel("nl_template_func_def")
         self.namenl_template_func_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6318,7 +6318,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_func_def_special, 243, 0, 1, 5)
         if self.tr("code_nl_template_func_def_special")!="code_nl_template_func_def_special":
             self.codenl_template_func_def_special = QtWidgets.QLabel(self.tr("code_nl_template_func_def_special"))
-            self.codenl_template_func_def_special.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_func_def_special.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_func_def_special, 244, 0, 1, 5)
         self.namenl_template_func_def_special = QtWidgets.QLabel("nl_template_func_def_special")
         self.namenl_template_func_def_special.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6333,7 +6333,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_var, 246, 0, 1, 5)
         if self.tr("code_nl_template_var")!="code_nl_template_var":
             self.codenl_template_var = QtWidgets.QLabel(self.tr("code_nl_template_var"))
-            self.codenl_template_var.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_var.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_var, 247, 0, 1, 5)
         self.namenl_template_var = QtWidgets.QLabel("nl_template_var")
         self.namenl_template_var.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6348,7 +6348,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_using, 249, 0, 1, 5)
         if self.tr("code_nl_template_using")!="code_nl_template_using":
             self.codenl_template_using = QtWidgets.QLabel(self.tr("code_nl_template_using"))
-            self.codenl_template_using.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_using.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_using, 250, 0, 1, 5)
         self.namenl_template_using = QtWidgets.QLabel("nl_template_using")
         self.namenl_template_using.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6363,7 +6363,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_class_brace, 252, 0, 1, 5)
         if self.tr("code_nl_class_brace")!="code_nl_class_brace":
             self.codenl_class_brace = QtWidgets.QLabel(self.tr("code_nl_class_brace"))
-            self.codenl_class_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_class_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_class_brace, 253, 0, 1, 5)
         self.namenl_class_brace = QtWidgets.QLabel("nl_class_brace")
         self.namenl_class_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6378,7 +6378,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_class_init_args, 255, 0, 1, 5)
         if self.tr("code_nl_class_init_args")!="code_nl_class_init_args":
             self.codenl_class_init_args = QtWidgets.QLabel(self.tr("code_nl_class_init_args"))
-            self.codenl_class_init_args.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_class_init_args.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_class_init_args, 256, 0, 1, 5)
         self.namenl_class_init_args = QtWidgets.QLabel("nl_class_init_args")
         self.namenl_class_init_args.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6393,7 +6393,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_constr_init_args, 258, 0, 1, 5)
         if self.tr("code_nl_constr_init_args")!="code_nl_constr_init_args":
             self.codenl_constr_init_args = QtWidgets.QLabel(self.tr("code_nl_constr_init_args"))
-            self.codenl_constr_init_args.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_constr_init_args.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_constr_init_args, 259, 0, 1, 5)
         self.namenl_constr_init_args = QtWidgets.QLabel("nl_constr_init_args")
         self.namenl_constr_init_args.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6408,7 +6408,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_enum_own_lines, 261, 0, 1, 5)
         if self.tr("code_nl_enum_own_lines")!="code_nl_enum_own_lines":
             self.codenl_enum_own_lines = QtWidgets.QLabel(self.tr("code_nl_enum_own_lines"))
-            self.codenl_enum_own_lines.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_enum_own_lines.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_enum_own_lines, 262, 0, 1, 5)
         self.namenl_enum_own_lines = QtWidgets.QLabel("nl_enum_own_lines")
         self.namenl_enum_own_lines.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6423,7 +6423,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_type_name, 264, 0, 1, 5)
         if self.tr("code_nl_func_type_name")!="code_nl_func_type_name":
             self.codenl_func_type_name = QtWidgets.QLabel(self.tr("code_nl_func_type_name"))
-            self.codenl_func_type_name.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_type_name.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_type_name, 265, 0, 1, 5)
         self.namenl_func_type_name = QtWidgets.QLabel("nl_func_type_name")
         self.namenl_func_type_name.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6438,7 +6438,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_type_name_class, 267, 0, 1, 5)
         if self.tr("code_nl_func_type_name_class")!="code_nl_func_type_name_class":
             self.codenl_func_type_name_class = QtWidgets.QLabel(self.tr("code_nl_func_type_name_class"))
-            self.codenl_func_type_name_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_type_name_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_type_name_class, 268, 0, 1, 5)
         self.namenl_func_type_name_class = QtWidgets.QLabel("nl_func_type_name_class")
         self.namenl_func_type_name_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6453,7 +6453,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_class_scope, 270, 0, 1, 5)
         if self.tr("code_nl_func_class_scope")!="code_nl_func_class_scope":
             self.codenl_func_class_scope = QtWidgets.QLabel(self.tr("code_nl_func_class_scope"))
-            self.codenl_func_class_scope.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_class_scope.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_class_scope, 271, 0, 1, 5)
         self.namenl_func_class_scope = QtWidgets.QLabel("nl_func_class_scope")
         self.namenl_func_class_scope.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6468,7 +6468,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_scope_name, 273, 0, 1, 5)
         if self.tr("code_nl_func_scope_name")!="code_nl_func_scope_name":
             self.codenl_func_scope_name = QtWidgets.QLabel(self.tr("code_nl_func_scope_name"))
-            self.codenl_func_scope_name.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_scope_name.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_scope_name, 274, 0, 1, 5)
         self.namenl_func_scope_name = QtWidgets.QLabel("nl_func_scope_name")
         self.namenl_func_scope_name.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6483,7 +6483,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_proto_type_name, 276, 0, 1, 5)
         if self.tr("code_nl_func_proto_type_name")!="code_nl_func_proto_type_name":
             self.codenl_func_proto_type_name = QtWidgets.QLabel(self.tr("code_nl_func_proto_type_name"))
-            self.codenl_func_proto_type_name.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_proto_type_name.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_proto_type_name, 277, 0, 1, 5)
         self.namenl_func_proto_type_name = QtWidgets.QLabel("nl_func_proto_type_name")
         self.namenl_func_proto_type_name.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6498,7 +6498,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_paren, 279, 0, 1, 5)
         if self.tr("code_nl_func_paren")!="code_nl_func_paren":
             self.codenl_func_paren = QtWidgets.QLabel(self.tr("code_nl_func_paren"))
-            self.codenl_func_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_paren, 280, 0, 1, 5)
         self.namenl_func_paren = QtWidgets.QLabel("nl_func_paren")
         self.namenl_func_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6513,7 +6513,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_paren_empty, 282, 0, 1, 5)
         if self.tr("code_nl_func_paren_empty")!="code_nl_func_paren_empty":
             self.codenl_func_paren_empty = QtWidgets.QLabel(self.tr("code_nl_func_paren_empty"))
-            self.codenl_func_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_paren_empty, 283, 0, 1, 5)
         self.namenl_func_paren_empty = QtWidgets.QLabel("nl_func_paren_empty")
         self.namenl_func_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6528,7 +6528,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_paren, 285, 0, 1, 5)
         if self.tr("code_nl_func_def_paren")!="code_nl_func_def_paren":
             self.codenl_func_def_paren = QtWidgets.QLabel(self.tr("code_nl_func_def_paren"))
-            self.codenl_func_def_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_paren, 286, 0, 1, 5)
         self.namenl_func_def_paren = QtWidgets.QLabel("nl_func_def_paren")
         self.namenl_func_def_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6543,7 +6543,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_paren_empty, 288, 0, 1, 5)
         if self.tr("code_nl_func_def_paren_empty")!="code_nl_func_def_paren_empty":
             self.codenl_func_def_paren_empty = QtWidgets.QLabel(self.tr("code_nl_func_def_paren_empty"))
-            self.codenl_func_def_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_paren_empty, 289, 0, 1, 5)
         self.namenl_func_def_paren_empty = QtWidgets.QLabel("nl_func_def_paren_empty")
         self.namenl_func_def_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6558,7 +6558,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_paren, 291, 0, 1, 5)
         if self.tr("code_nl_func_call_paren")!="code_nl_func_call_paren":
             self.codenl_func_call_paren = QtWidgets.QLabel(self.tr("code_nl_func_call_paren"))
-            self.codenl_func_call_paren.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_paren.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_paren, 292, 0, 1, 5)
         self.namenl_func_call_paren = QtWidgets.QLabel("nl_func_call_paren")
         self.namenl_func_call_paren.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6573,7 +6573,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_paren_empty, 294, 0, 1, 5)
         if self.tr("code_nl_func_call_paren_empty")!="code_nl_func_call_paren_empty":
             self.codenl_func_call_paren_empty = QtWidgets.QLabel(self.tr("code_nl_func_call_paren_empty"))
-            self.codenl_func_call_paren_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_paren_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_paren_empty, 295, 0, 1, 5)
         self.namenl_func_call_paren_empty = QtWidgets.QLabel("nl_func_call_paren_empty")
         self.namenl_func_call_paren_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6588,7 +6588,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_start, 297, 0, 1, 5)
         if self.tr("code_nl_func_decl_start")!="code_nl_func_decl_start":
             self.codenl_func_decl_start = QtWidgets.QLabel(self.tr("code_nl_func_decl_start"))
-            self.codenl_func_decl_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_start, 298, 0, 1, 5)
         self.namenl_func_decl_start = QtWidgets.QLabel("nl_func_decl_start")
         self.namenl_func_decl_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6603,7 +6603,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_start, 300, 0, 1, 5)
         if self.tr("code_nl_func_def_start")!="code_nl_func_def_start":
             self.codenl_func_def_start = QtWidgets.QLabel(self.tr("code_nl_func_def_start"))
-            self.codenl_func_def_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_start, 301, 0, 1, 5)
         self.namenl_func_def_start = QtWidgets.QLabel("nl_func_def_start")
         self.namenl_func_def_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6618,7 +6618,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_start_single, 303, 0, 1, 5)
         if self.tr("code_nl_func_decl_start_single")!="code_nl_func_decl_start_single":
             self.codenl_func_decl_start_single = QtWidgets.QLabel(self.tr("code_nl_func_decl_start_single"))
-            self.codenl_func_decl_start_single.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_start_single.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_start_single, 304, 0, 1, 5)
         self.namenl_func_decl_start_single = QtWidgets.QLabel("nl_func_decl_start_single")
         self.namenl_func_decl_start_single.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6633,7 +6633,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_start_single, 306, 0, 1, 5)
         if self.tr("code_nl_func_def_start_single")!="code_nl_func_def_start_single":
             self.codenl_func_def_start_single = QtWidgets.QLabel(self.tr("code_nl_func_def_start_single"))
-            self.codenl_func_def_start_single.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_start_single.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_start_single, 307, 0, 1, 5)
         self.namenl_func_def_start_single = QtWidgets.QLabel("nl_func_def_start_single")
         self.namenl_func_def_start_single.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6648,7 +6648,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_start_multi_line, 309, 0, 1, 5)
         if self.tr("code_nl_func_decl_start_multi_line")!="code_nl_func_decl_start_multi_line":
             self.codenl_func_decl_start_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_decl_start_multi_line"))
-            self.codenl_func_decl_start_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_start_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_start_multi_line, 310, 0, 1, 5)
         self.namenl_func_decl_start_multi_line = QtWidgets.QLabel("nl_func_decl_start_multi_line")
         self.namenl_func_decl_start_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6663,7 +6663,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_start_multi_line, 312, 0, 1, 5)
         if self.tr("code_nl_func_def_start_multi_line")!="code_nl_func_def_start_multi_line":
             self.codenl_func_def_start_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_def_start_multi_line"))
-            self.codenl_func_def_start_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_start_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_start_multi_line, 313, 0, 1, 5)
         self.namenl_func_def_start_multi_line = QtWidgets.QLabel("nl_func_def_start_multi_line")
         self.namenl_func_def_start_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6678,7 +6678,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_args, 315, 0, 1, 5)
         if self.tr("code_nl_func_decl_args")!="code_nl_func_decl_args":
             self.codenl_func_decl_args = QtWidgets.QLabel(self.tr("code_nl_func_decl_args"))
-            self.codenl_func_decl_args.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_args.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_args, 316, 0, 1, 5)
         self.namenl_func_decl_args = QtWidgets.QLabel("nl_func_decl_args")
         self.namenl_func_decl_args.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6693,7 +6693,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_args, 318, 0, 1, 5)
         if self.tr("code_nl_func_def_args")!="code_nl_func_def_args":
             self.codenl_func_def_args = QtWidgets.QLabel(self.tr("code_nl_func_def_args"))
-            self.codenl_func_def_args.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_args.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_args, 319, 0, 1, 5)
         self.namenl_func_def_args = QtWidgets.QLabel("nl_func_def_args")
         self.namenl_func_def_args.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6708,7 +6708,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_args, 321, 0, 1, 5)
         if self.tr("code_nl_func_call_args")!="code_nl_func_call_args":
             self.codenl_func_call_args = QtWidgets.QLabel(self.tr("code_nl_func_call_args"))
-            self.codenl_func_call_args.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_args.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_args, 322, 0, 1, 5)
         self.namenl_func_call_args = QtWidgets.QLabel("nl_func_call_args")
         self.namenl_func_call_args.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6723,7 +6723,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_args_multi_line, 324, 0, 1, 5)
         if self.tr("code_nl_func_decl_args_multi_line")!="code_nl_func_decl_args_multi_line":
             self.codenl_func_decl_args_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_decl_args_multi_line"))
-            self.codenl_func_decl_args_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_args_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_args_multi_line, 325, 0, 1, 5)
         self.namenl_func_decl_args_multi_line = QtWidgets.QLabel("nl_func_decl_args_multi_line")
         self.namenl_func_decl_args_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6738,7 +6738,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_args_multi_line, 327, 0, 1, 5)
         if self.tr("code_nl_func_def_args_multi_line")!="code_nl_func_def_args_multi_line":
             self.codenl_func_def_args_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_def_args_multi_line"))
-            self.codenl_func_def_args_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_args_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_args_multi_line, 328, 0, 1, 5)
         self.namenl_func_def_args_multi_line = QtWidgets.QLabel("nl_func_def_args_multi_line")
         self.namenl_func_def_args_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6753,7 +6753,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_end, 330, 0, 1, 5)
         if self.tr("code_nl_func_decl_end")!="code_nl_func_decl_end":
             self.codenl_func_decl_end = QtWidgets.QLabel(self.tr("code_nl_func_decl_end"))
-            self.codenl_func_decl_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_end, 331, 0, 1, 5)
         self.namenl_func_decl_end = QtWidgets.QLabel("nl_func_decl_end")
         self.namenl_func_decl_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6768,7 +6768,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_end, 333, 0, 1, 5)
         if self.tr("code_nl_func_def_end")!="code_nl_func_def_end":
             self.codenl_func_def_end = QtWidgets.QLabel(self.tr("code_nl_func_def_end"))
-            self.codenl_func_def_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_end, 334, 0, 1, 5)
         self.namenl_func_def_end = QtWidgets.QLabel("nl_func_def_end")
         self.namenl_func_def_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6783,7 +6783,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_end_single, 336, 0, 1, 5)
         if self.tr("code_nl_func_decl_end_single")!="code_nl_func_decl_end_single":
             self.codenl_func_decl_end_single = QtWidgets.QLabel(self.tr("code_nl_func_decl_end_single"))
-            self.codenl_func_decl_end_single.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_end_single.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_end_single, 337, 0, 1, 5)
         self.namenl_func_decl_end_single = QtWidgets.QLabel("nl_func_decl_end_single")
         self.namenl_func_decl_end_single.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6798,7 +6798,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_end_single, 339, 0, 1, 5)
         if self.tr("code_nl_func_def_end_single")!="code_nl_func_def_end_single":
             self.codenl_func_def_end_single = QtWidgets.QLabel(self.tr("code_nl_func_def_end_single"))
-            self.codenl_func_def_end_single.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_end_single.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_end_single, 340, 0, 1, 5)
         self.namenl_func_def_end_single = QtWidgets.QLabel("nl_func_def_end_single")
         self.namenl_func_def_end_single.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6813,7 +6813,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_end_multi_line, 342, 0, 1, 5)
         if self.tr("code_nl_func_decl_end_multi_line")!="code_nl_func_decl_end_multi_line":
             self.codenl_func_decl_end_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_decl_end_multi_line"))
-            self.codenl_func_decl_end_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_end_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_end_multi_line, 343, 0, 1, 5)
         self.namenl_func_decl_end_multi_line = QtWidgets.QLabel("nl_func_decl_end_multi_line")
         self.namenl_func_decl_end_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6828,7 +6828,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_end_multi_line, 345, 0, 1, 5)
         if self.tr("code_nl_func_def_end_multi_line")!="code_nl_func_def_end_multi_line":
             self.codenl_func_def_end_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_def_end_multi_line"))
-            self.codenl_func_def_end_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_end_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_end_multi_line, 346, 0, 1, 5)
         self.namenl_func_def_end_multi_line = QtWidgets.QLabel("nl_func_def_end_multi_line")
         self.namenl_func_def_end_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6843,7 +6843,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_decl_empty, 348, 0, 1, 5)
         if self.tr("code_nl_func_decl_empty")!="code_nl_func_decl_empty":
             self.codenl_func_decl_empty = QtWidgets.QLabel(self.tr("code_nl_func_decl_empty"))
-            self.codenl_func_decl_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_decl_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_decl_empty, 349, 0, 1, 5)
         self.namenl_func_decl_empty = QtWidgets.QLabel("nl_func_decl_empty")
         self.namenl_func_decl_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6858,7 +6858,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_def_empty, 351, 0, 1, 5)
         if self.tr("code_nl_func_def_empty")!="code_nl_func_def_empty":
             self.codenl_func_def_empty = QtWidgets.QLabel(self.tr("code_nl_func_def_empty"))
-            self.codenl_func_def_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_def_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_def_empty, 352, 0, 1, 5)
         self.namenl_func_def_empty = QtWidgets.QLabel("nl_func_def_empty")
         self.namenl_func_def_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6873,7 +6873,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_empty, 354, 0, 1, 5)
         if self.tr("code_nl_func_call_empty")!="code_nl_func_call_empty":
             self.codenl_func_call_empty = QtWidgets.QLabel(self.tr("code_nl_func_call_empty"))
-            self.codenl_func_call_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_empty, 355, 0, 1, 5)
         self.namenl_func_call_empty = QtWidgets.QLabel("nl_func_call_empty")
         self.namenl_func_call_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6888,7 +6888,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_start, 357, 0, 1, 5)
         if self.tr("code_nl_func_call_start")!="code_nl_func_call_start":
             self.codenl_func_call_start = QtWidgets.QLabel(self.tr("code_nl_func_call_start"))
-            self.codenl_func_call_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_start, 358, 0, 1, 5)
         self.namenl_func_call_start = QtWidgets.QLabel("nl_func_call_start")
         self.namenl_func_call_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6903,7 +6903,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_end, 360, 0, 1, 5)
         if self.tr("code_nl_func_call_end")!="code_nl_func_call_end":
             self.codenl_func_call_end = QtWidgets.QLabel(self.tr("code_nl_func_call_end"))
-            self.codenl_func_call_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_end, 361, 0, 1, 5)
         self.namenl_func_call_end = QtWidgets.QLabel("nl_func_call_end")
         self.namenl_func_call_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6918,7 +6918,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_start_multi_line, 363, 0, 1, 5)
         if self.tr("code_nl_func_call_start_multi_line")!="code_nl_func_call_start_multi_line":
             self.codenl_func_call_start_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_call_start_multi_line"))
-            self.codenl_func_call_start_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_start_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_start_multi_line, 364, 0, 1, 5)
         self.namenl_func_call_start_multi_line = QtWidgets.QLabel("nl_func_call_start_multi_line")
         self.namenl_func_call_start_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6933,7 +6933,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_args_multi_line, 366, 0, 1, 5)
         if self.tr("code_nl_func_call_args_multi_line")!="code_nl_func_call_args_multi_line":
             self.codenl_func_call_args_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_call_args_multi_line"))
-            self.codenl_func_call_args_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_args_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_args_multi_line, 367, 0, 1, 5)
         self.namenl_func_call_args_multi_line = QtWidgets.QLabel("nl_func_call_args_multi_line")
         self.namenl_func_call_args_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6948,7 +6948,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_end_multi_line, 369, 0, 1, 5)
         if self.tr("code_nl_func_call_end_multi_line")!="code_nl_func_call_end_multi_line":
             self.codenl_func_call_end_multi_line = QtWidgets.QLabel(self.tr("code_nl_func_call_end_multi_line"))
-            self.codenl_func_call_end_multi_line.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_end_multi_line.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_end_multi_line, 370, 0, 1, 5)
         self.namenl_func_call_end_multi_line = QtWidgets.QLabel("nl_func_call_end_multi_line")
         self.namenl_func_call_end_multi_line.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6963,7 +6963,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_func_call_args_multi_line_ignore_closures, 372, 0, 1, 5)
         if self.tr("code_nl_func_call_args_multi_line_ignore_closures")!="code_nl_func_call_args_multi_line_ignore_closures":
             self.codenl_func_call_args_multi_line_ignore_closures = QtWidgets.QLabel(self.tr("code_nl_func_call_args_multi_line_ignore_closures"))
-            self.codenl_func_call_args_multi_line_ignore_closures.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_call_args_multi_line_ignore_closures.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_func_call_args_multi_line_ignore_closures, 373, 0, 1, 5)
         self.namenl_func_call_args_multi_line_ignore_closures = QtWidgets.QLabel("nl_func_call_args_multi_line_ignore_closures")
         self.namenl_func_call_args_multi_line_ignore_closures.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6978,7 +6978,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_start, 375, 0, 1, 5)
         if self.tr("code_nl_template_start")!="code_nl_template_start":
             self.codenl_template_start = QtWidgets.QLabel(self.tr("code_nl_template_start"))
-            self.codenl_template_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_start, 376, 0, 1, 5)
         self.namenl_template_start = QtWidgets.QLabel("nl_template_start")
         self.namenl_template_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -6993,7 +6993,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_args, 378, 0, 1, 5)
         if self.tr("code_nl_template_args")!="code_nl_template_args":
             self.codenl_template_args = QtWidgets.QLabel(self.tr("code_nl_template_args"))
-            self.codenl_template_args.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_args.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_args, 379, 0, 1, 5)
         self.namenl_template_args = QtWidgets.QLabel("nl_template_args")
         self.namenl_template_args.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7008,7 +7008,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_template_end, 381, 0, 1, 5)
         if self.tr("code_nl_template_end")!="code_nl_template_end":
             self.codenl_template_end = QtWidgets.QLabel(self.tr("code_nl_template_end"))
-            self.codenl_template_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_template_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_template_end, 382, 0, 1, 5)
         self.namenl_template_end = QtWidgets.QLabel("nl_template_end")
         self.namenl_template_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7023,7 +7023,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_oc_msg_args, 384, 0, 1, 5)
         if self.tr("code_nl_oc_msg_args")!="code_nl_oc_msg_args":
             self.codenl_oc_msg_args = QtWidgets.QLabel(self.tr("code_nl_oc_msg_args"))
-            self.codenl_oc_msg_args.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_oc_msg_args.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_oc_msg_args, 385, 0, 1, 5)
         self.namenl_oc_msg_args = QtWidgets.QLabel("nl_oc_msg_args")
         self.namenl_oc_msg_args.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7038,7 +7038,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_fdef_brace, 387, 0, 1, 5)
         if self.tr("code_nl_fdef_brace")!="code_nl_fdef_brace":
             self.codenl_fdef_brace = QtWidgets.QLabel(self.tr("code_nl_fdef_brace"))
-            self.codenl_fdef_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_fdef_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_fdef_brace, 388, 0, 1, 5)
         self.namenl_fdef_brace = QtWidgets.QLabel("nl_fdef_brace")
         self.namenl_fdef_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7053,7 +7053,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_fdef_brace_cond, 390, 0, 1, 5)
         if self.tr("code_nl_fdef_brace_cond")!="code_nl_fdef_brace_cond":
             self.codenl_fdef_brace_cond = QtWidgets.QLabel(self.tr("code_nl_fdef_brace_cond"))
-            self.codenl_fdef_brace_cond.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_fdef_brace_cond.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_fdef_brace_cond, 391, 0, 1, 5)
         self.namenl_fdef_brace_cond = QtWidgets.QLabel("nl_fdef_brace_cond")
         self.namenl_fdef_brace_cond.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7068,7 +7068,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_cpp_ldef_brace, 393, 0, 1, 5)
         if self.tr("code_nl_cpp_ldef_brace")!="code_nl_cpp_ldef_brace":
             self.codenl_cpp_ldef_brace = QtWidgets.QLabel(self.tr("code_nl_cpp_ldef_brace"))
-            self.codenl_cpp_ldef_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_cpp_ldef_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_cpp_ldef_brace, 394, 0, 1, 5)
         self.namenl_cpp_ldef_brace = QtWidgets.QLabel("nl_cpp_ldef_brace")
         self.namenl_cpp_ldef_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7083,7 +7083,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_return_expr, 396, 0, 1, 5)
         if self.tr("code_nl_return_expr")!="code_nl_return_expr":
             self.codenl_return_expr = QtWidgets.QLabel(self.tr("code_nl_return_expr"))
-            self.codenl_return_expr.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_return_expr.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_return_expr, 397, 0, 1, 5)
         self.namenl_return_expr = QtWidgets.QLabel("nl_return_expr")
         self.namenl_return_expr.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7098,7 +7098,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_semicolon, 399, 0, 1, 5)
         if self.tr("code_nl_after_semicolon")!="code_nl_after_semicolon":
             self.codenl_after_semicolon = QtWidgets.QLabel(self.tr("code_nl_after_semicolon"))
-            self.codenl_after_semicolon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_semicolon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_semicolon, 400, 0, 1, 5)
         self.namenl_after_semicolon = QtWidgets.QLabel("nl_after_semicolon")
         self.namenl_after_semicolon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7113,7 +7113,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_paren_dbrace_open, 402, 0, 1, 5)
         if self.tr("code_nl_paren_dbrace_open")!="code_nl_paren_dbrace_open":
             self.codenl_paren_dbrace_open = QtWidgets.QLabel(self.tr("code_nl_paren_dbrace_open"))
-            self.codenl_paren_dbrace_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_paren_dbrace_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_paren_dbrace_open, 403, 0, 1, 5)
         self.namenl_paren_dbrace_open = QtWidgets.QLabel("nl_paren_dbrace_open")
         self.namenl_paren_dbrace_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7128,7 +7128,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_type_brace_init_lst, 405, 0, 1, 5)
         if self.tr("code_nl_type_brace_init_lst")!="code_nl_type_brace_init_lst":
             self.codenl_type_brace_init_lst = QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst"))
-            self.codenl_type_brace_init_lst.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_type_brace_init_lst.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_type_brace_init_lst, 406, 0, 1, 5)
         self.namenl_type_brace_init_lst = QtWidgets.QLabel("nl_type_brace_init_lst")
         self.namenl_type_brace_init_lst.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7143,7 +7143,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_type_brace_init_lst_open, 408, 0, 1, 5)
         if self.tr("code_nl_type_brace_init_lst_open")!="code_nl_type_brace_init_lst_open":
             self.codenl_type_brace_init_lst_open = QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst_open"))
-            self.codenl_type_brace_init_lst_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_type_brace_init_lst_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_type_brace_init_lst_open, 409, 0, 1, 5)
         self.namenl_type_brace_init_lst_open = QtWidgets.QLabel("nl_type_brace_init_lst_open")
         self.namenl_type_brace_init_lst_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7158,7 +7158,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_type_brace_init_lst_close, 411, 0, 1, 5)
         if self.tr("code_nl_type_brace_init_lst_close")!="code_nl_type_brace_init_lst_close":
             self.codenl_type_brace_init_lst_close = QtWidgets.QLabel(self.tr("code_nl_type_brace_init_lst_close"))
-            self.codenl_type_brace_init_lst_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_type_brace_init_lst_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_type_brace_init_lst_close, 412, 0, 1, 5)
         self.namenl_type_brace_init_lst_close = QtWidgets.QLabel("nl_type_brace_init_lst_close")
         self.namenl_type_brace_init_lst_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7173,7 +7173,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_brace_open, 414, 0, 1, 5)
         if self.tr("code_nl_after_brace_open")!="code_nl_after_brace_open":
             self.codenl_after_brace_open = QtWidgets.QLabel(self.tr("code_nl_after_brace_open"))
-            self.codenl_after_brace_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_brace_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_brace_open, 415, 0, 1, 5)
         self.namenl_after_brace_open = QtWidgets.QLabel("nl_after_brace_open")
         self.namenl_after_brace_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7188,7 +7188,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_brace_open_cmt, 417, 0, 1, 5)
         if self.tr("code_nl_after_brace_open_cmt")!="code_nl_after_brace_open_cmt":
             self.codenl_after_brace_open_cmt = QtWidgets.QLabel(self.tr("code_nl_after_brace_open_cmt"))
-            self.codenl_after_brace_open_cmt.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_brace_open_cmt.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_brace_open_cmt, 418, 0, 1, 5)
         self.namenl_after_brace_open_cmt = QtWidgets.QLabel("nl_after_brace_open_cmt")
         self.namenl_after_brace_open_cmt.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7203,7 +7203,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_vbrace_open, 420, 0, 1, 5)
         if self.tr("code_nl_after_vbrace_open")!="code_nl_after_vbrace_open":
             self.codenl_after_vbrace_open = QtWidgets.QLabel(self.tr("code_nl_after_vbrace_open"))
-            self.codenl_after_vbrace_open.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_vbrace_open.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_vbrace_open, 421, 0, 1, 5)
         self.namenl_after_vbrace_open = QtWidgets.QLabel("nl_after_vbrace_open")
         self.namenl_after_vbrace_open.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7218,7 +7218,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_vbrace_open_empty, 423, 0, 1, 5)
         if self.tr("code_nl_after_vbrace_open_empty")!="code_nl_after_vbrace_open_empty":
             self.codenl_after_vbrace_open_empty = QtWidgets.QLabel(self.tr("code_nl_after_vbrace_open_empty"))
-            self.codenl_after_vbrace_open_empty.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_vbrace_open_empty.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_vbrace_open_empty, 424, 0, 1, 5)
         self.namenl_after_vbrace_open_empty = QtWidgets.QLabel("nl_after_vbrace_open_empty")
         self.namenl_after_vbrace_open_empty.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7233,7 +7233,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_brace_close, 426, 0, 1, 5)
         if self.tr("code_nl_after_brace_close")!="code_nl_after_brace_close":
             self.codenl_after_brace_close = QtWidgets.QLabel(self.tr("code_nl_after_brace_close"))
-            self.codenl_after_brace_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_brace_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_brace_close, 427, 0, 1, 5)
         self.namenl_after_brace_close = QtWidgets.QLabel("nl_after_brace_close")
         self.namenl_after_brace_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7248,7 +7248,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_vbrace_close, 429, 0, 1, 5)
         if self.tr("code_nl_after_vbrace_close")!="code_nl_after_vbrace_close":
             self.codenl_after_vbrace_close = QtWidgets.QLabel(self.tr("code_nl_after_vbrace_close"))
-            self.codenl_after_vbrace_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_vbrace_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_vbrace_close, 430, 0, 1, 5)
         self.namenl_after_vbrace_close = QtWidgets.QLabel("nl_after_vbrace_close")
         self.namenl_after_vbrace_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7263,7 +7263,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_brace_struct_var, 432, 0, 1, 5)
         if self.tr("code_nl_brace_struct_var")!="code_nl_brace_struct_var":
             self.codenl_brace_struct_var = QtWidgets.QLabel(self.tr("code_nl_brace_struct_var"))
-            self.codenl_brace_struct_var.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_brace_struct_var.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_brace_struct_var, 433, 0, 1, 5)
         self.namenl_brace_struct_var = QtWidgets.QLabel("nl_brace_struct_var")
         self.namenl_brace_struct_var.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7278,7 +7278,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_define_macro, 435, 0, 1, 5)
         if self.tr("code_nl_define_macro")!="code_nl_define_macro":
             self.codenl_define_macro = QtWidgets.QLabel(self.tr("code_nl_define_macro"))
-            self.codenl_define_macro.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_define_macro.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_define_macro, 436, 0, 1, 5)
         self.namenl_define_macro = QtWidgets.QLabel("nl_define_macro")
         self.namenl_define_macro.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7293,7 +7293,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_squeeze_paren_close, 438, 0, 1, 5)
         if self.tr("code_nl_squeeze_paren_close")!="code_nl_squeeze_paren_close":
             self.codenl_squeeze_paren_close = QtWidgets.QLabel(self.tr("code_nl_squeeze_paren_close"))
-            self.codenl_squeeze_paren_close.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_squeeze_paren_close.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_squeeze_paren_close, 439, 0, 1, 5)
         self.namenl_squeeze_paren_close = QtWidgets.QLabel("nl_squeeze_paren_close")
         self.namenl_squeeze_paren_close.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7308,7 +7308,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_squeeze_ifdef, 441, 0, 1, 5)
         if self.tr("code_nl_squeeze_ifdef")!="code_nl_squeeze_ifdef":
             self.codenl_squeeze_ifdef = QtWidgets.QLabel(self.tr("code_nl_squeeze_ifdef"))
-            self.codenl_squeeze_ifdef.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_squeeze_ifdef.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_squeeze_ifdef, 442, 0, 1, 5)
         self.namenl_squeeze_ifdef = QtWidgets.QLabel("nl_squeeze_ifdef")
         self.namenl_squeeze_ifdef.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7323,7 +7323,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_squeeze_ifdef_top_level, 444, 0, 1, 5)
         if self.tr("code_nl_squeeze_ifdef_top_level")!="code_nl_squeeze_ifdef_top_level":
             self.codenl_squeeze_ifdef_top_level = QtWidgets.QLabel(self.tr("code_nl_squeeze_ifdef_top_level"))
-            self.codenl_squeeze_ifdef_top_level.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_squeeze_ifdef_top_level.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_squeeze_ifdef_top_level, 445, 0, 1, 5)
         self.namenl_squeeze_ifdef_top_level = QtWidgets.QLabel("nl_squeeze_ifdef_top_level")
         self.namenl_squeeze_ifdef_top_level.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7338,7 +7338,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_if, 447, 0, 1, 5)
         if self.tr("code_nl_before_if")!="code_nl_before_if":
             self.codenl_before_if = QtWidgets.QLabel(self.tr("code_nl_before_if"))
-            self.codenl_before_if.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_if.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_if, 448, 0, 1, 5)
         self.namenl_before_if = QtWidgets.QLabel("nl_before_if")
         self.namenl_before_if.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7353,7 +7353,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_if, 450, 0, 1, 5)
         if self.tr("code_nl_after_if")!="code_nl_after_if":
             self.codenl_after_if = QtWidgets.QLabel(self.tr("code_nl_after_if"))
-            self.codenl_after_if.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_if.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_if, 451, 0, 1, 5)
         self.namenl_after_if = QtWidgets.QLabel("nl_after_if")
         self.namenl_after_if.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7368,7 +7368,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_for, 453, 0, 1, 5)
         if self.tr("code_nl_before_for")!="code_nl_before_for":
             self.codenl_before_for = QtWidgets.QLabel(self.tr("code_nl_before_for"))
-            self.codenl_before_for.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_for.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_for, 454, 0, 1, 5)
         self.namenl_before_for = QtWidgets.QLabel("nl_before_for")
         self.namenl_before_for.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7383,7 +7383,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_for, 456, 0, 1, 5)
         if self.tr("code_nl_after_for")!="code_nl_after_for":
             self.codenl_after_for = QtWidgets.QLabel(self.tr("code_nl_after_for"))
-            self.codenl_after_for.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_for.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_for, 457, 0, 1, 5)
         self.namenl_after_for = QtWidgets.QLabel("nl_after_for")
         self.namenl_after_for.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7398,7 +7398,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_while, 459, 0, 1, 5)
         if self.tr("code_nl_before_while")!="code_nl_before_while":
             self.codenl_before_while = QtWidgets.QLabel(self.tr("code_nl_before_while"))
-            self.codenl_before_while.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_while.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_while, 460, 0, 1, 5)
         self.namenl_before_while = QtWidgets.QLabel("nl_before_while")
         self.namenl_before_while.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7413,7 +7413,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_while, 462, 0, 1, 5)
         if self.tr("code_nl_after_while")!="code_nl_after_while":
             self.codenl_after_while = QtWidgets.QLabel(self.tr("code_nl_after_while"))
-            self.codenl_after_while.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_while.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_while, 463, 0, 1, 5)
         self.namenl_after_while = QtWidgets.QLabel("nl_after_while")
         self.namenl_after_while.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7428,7 +7428,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_switch, 465, 0, 1, 5)
         if self.tr("code_nl_before_switch")!="code_nl_before_switch":
             self.codenl_before_switch = QtWidgets.QLabel(self.tr("code_nl_before_switch"))
-            self.codenl_before_switch.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_switch.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_switch, 466, 0, 1, 5)
         self.namenl_before_switch = QtWidgets.QLabel("nl_before_switch")
         self.namenl_before_switch.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7443,7 +7443,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_switch, 468, 0, 1, 5)
         if self.tr("code_nl_after_switch")!="code_nl_after_switch":
             self.codenl_after_switch = QtWidgets.QLabel(self.tr("code_nl_after_switch"))
-            self.codenl_after_switch.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_switch.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_switch, 469, 0, 1, 5)
         self.namenl_after_switch = QtWidgets.QLabel("nl_after_switch")
         self.namenl_after_switch.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7458,7 +7458,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_synchronized, 471, 0, 1, 5)
         if self.tr("code_nl_before_synchronized")!="code_nl_before_synchronized":
             self.codenl_before_synchronized = QtWidgets.QLabel(self.tr("code_nl_before_synchronized"))
-            self.codenl_before_synchronized.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_synchronized.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_synchronized, 472, 0, 1, 5)
         self.namenl_before_synchronized = QtWidgets.QLabel("nl_before_synchronized")
         self.namenl_before_synchronized.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7473,7 +7473,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_synchronized, 474, 0, 1, 5)
         if self.tr("code_nl_after_synchronized")!="code_nl_after_synchronized":
             self.codenl_after_synchronized = QtWidgets.QLabel(self.tr("code_nl_after_synchronized"))
-            self.codenl_after_synchronized.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_synchronized.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_synchronized, 475, 0, 1, 5)
         self.namenl_after_synchronized = QtWidgets.QLabel("nl_after_synchronized")
         self.namenl_after_synchronized.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7488,7 +7488,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_do, 477, 0, 1, 5)
         if self.tr("code_nl_before_do")!="code_nl_before_do":
             self.codenl_before_do = QtWidgets.QLabel(self.tr("code_nl_before_do"))
-            self.codenl_before_do.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_do.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_do, 478, 0, 1, 5)
         self.namenl_before_do = QtWidgets.QLabel("nl_before_do")
         self.namenl_before_do.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7503,7 +7503,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_do, 480, 0, 1, 5)
         if self.tr("code_nl_after_do")!="code_nl_after_do":
             self.codenl_after_do = QtWidgets.QLabel(self.tr("code_nl_after_do"))
-            self.codenl_after_do.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_do.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_do, 481, 0, 1, 5)
         self.namenl_after_do = QtWidgets.QLabel("nl_after_do")
         self.namenl_after_do.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7518,7 +7518,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_return, 483, 0, 1, 5)
         if self.tr("code_nl_before_return")!="code_nl_before_return":
             self.codenl_before_return = QtWidgets.QLabel(self.tr("code_nl_before_return"))
-            self.codenl_before_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_return, 484, 0, 1, 5)
         self.namenl_before_return = QtWidgets.QLabel("nl_before_return")
         self.namenl_before_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7533,7 +7533,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_return, 486, 0, 1, 5)
         if self.tr("code_nl_after_return")!="code_nl_after_return":
             self.codenl_after_return = QtWidgets.QLabel(self.tr("code_nl_after_return"))
-            self.codenl_after_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_return, 487, 0, 1, 5)
         self.namenl_after_return = QtWidgets.QLabel("nl_after_return")
         self.namenl_after_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7548,7 +7548,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_before_member, 489, 0, 1, 5)
         if self.tr("code_nl_before_member")!="code_nl_before_member":
             self.codenl_before_member = QtWidgets.QLabel(self.tr("code_nl_before_member"))
-            self.codenl_before_member.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_member.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_before_member, 490, 0, 1, 5)
         self.namenl_before_member = QtWidgets.QLabel("nl_before_member")
         self.namenl_before_member.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7563,7 +7563,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_after_member, 492, 0, 1, 5)
         if self.tr("code_nl_after_member")!="code_nl_after_member":
             self.codenl_after_member = QtWidgets.QLabel(self.tr("code_nl_after_member"))
-            self.codenl_after_member.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_member.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_after_member, 493, 0, 1, 5)
         self.namenl_after_member = QtWidgets.QLabel("nl_after_member")
         self.namenl_after_member.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7578,7 +7578,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_ds_struct_enum_cmt, 495, 0, 1, 5)
         if self.tr("code_nl_ds_struct_enum_cmt")!="code_nl_ds_struct_enum_cmt":
             self.codenl_ds_struct_enum_cmt = QtWidgets.QLabel(self.tr("code_nl_ds_struct_enum_cmt"))
-            self.codenl_ds_struct_enum_cmt.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_ds_struct_enum_cmt.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_ds_struct_enum_cmt, 496, 0, 1, 5)
         self.namenl_ds_struct_enum_cmt = QtWidgets.QLabel("nl_ds_struct_enum_cmt")
         self.namenl_ds_struct_enum_cmt.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7593,7 +7593,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_ds_struct_enum_close_brace, 498, 0, 1, 5)
         if self.tr("code_nl_ds_struct_enum_close_brace")!="code_nl_ds_struct_enum_close_brace":
             self.codenl_ds_struct_enum_close_brace = QtWidgets.QLabel(self.tr("code_nl_ds_struct_enum_close_brace"))
-            self.codenl_ds_struct_enum_close_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_ds_struct_enum_close_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_ds_struct_enum_close_brace, 499, 0, 1, 5)
         self.namenl_ds_struct_enum_close_brace = QtWidgets.QLabel("nl_ds_struct_enum_close_brace")
         self.namenl_ds_struct_enum_close_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7608,7 +7608,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_class_colon, 501, 0, 1, 5)
         if self.tr("code_nl_class_colon")!="code_nl_class_colon":
             self.codenl_class_colon = QtWidgets.QLabel(self.tr("code_nl_class_colon"))
-            self.codenl_class_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_class_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_class_colon, 502, 0, 1, 5)
         self.namenl_class_colon = QtWidgets.QLabel("nl_class_colon")
         self.namenl_class_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7623,7 +7623,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_constr_colon, 504, 0, 1, 5)
         if self.tr("code_nl_constr_colon")!="code_nl_constr_colon":
             self.codenl_constr_colon = QtWidgets.QLabel(self.tr("code_nl_constr_colon"))
-            self.codenl_constr_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_constr_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_constr_colon, 505, 0, 1, 5)
         self.namenl_constr_colon = QtWidgets.QLabel("nl_constr_colon")
         self.namenl_constr_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7638,7 +7638,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_namespace_two_to_one_liner, 507, 0, 1, 5)
         if self.tr("code_nl_namespace_two_to_one_liner")!="code_nl_namespace_two_to_one_liner":
             self.codenl_namespace_two_to_one_liner = QtWidgets.QLabel(self.tr("code_nl_namespace_two_to_one_liner"))
-            self.codenl_namespace_two_to_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_namespace_two_to_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_namespace_two_to_one_liner, 508, 0, 1, 5)
         self.namenl_namespace_two_to_one_liner = QtWidgets.QLabel("nl_namespace_two_to_one_liner")
         self.namenl_namespace_two_to_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7653,7 +7653,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_create_if_one_liner, 510, 0, 1, 5)
         if self.tr("code_nl_create_if_one_liner")!="code_nl_create_if_one_liner":
             self.codenl_create_if_one_liner = QtWidgets.QLabel(self.tr("code_nl_create_if_one_liner"))
-            self.codenl_create_if_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_create_if_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_create_if_one_liner, 511, 0, 1, 5)
         self.namenl_create_if_one_liner = QtWidgets.QLabel("nl_create_if_one_liner")
         self.namenl_create_if_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7668,7 +7668,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_create_for_one_liner, 513, 0, 1, 5)
         if self.tr("code_nl_create_for_one_liner")!="code_nl_create_for_one_liner":
             self.codenl_create_for_one_liner = QtWidgets.QLabel(self.tr("code_nl_create_for_one_liner"))
-            self.codenl_create_for_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_create_for_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_create_for_one_liner, 514, 0, 1, 5)
         self.namenl_create_for_one_liner = QtWidgets.QLabel("nl_create_for_one_liner")
         self.namenl_create_for_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7683,7 +7683,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_create_while_one_liner, 516, 0, 1, 5)
         if self.tr("code_nl_create_while_one_liner")!="code_nl_create_while_one_liner":
             self.codenl_create_while_one_liner = QtWidgets.QLabel(self.tr("code_nl_create_while_one_liner"))
-            self.codenl_create_while_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_create_while_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_create_while_one_liner, 517, 0, 1, 5)
         self.namenl_create_while_one_liner = QtWidgets.QLabel("nl_create_while_one_liner")
         self.namenl_create_while_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7698,7 +7698,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_create_func_def_one_liner, 519, 0, 1, 5)
         if self.tr("code_nl_create_func_def_one_liner")!="code_nl_create_func_def_one_liner":
             self.codenl_create_func_def_one_liner = QtWidgets.QLabel(self.tr("code_nl_create_func_def_one_liner"))
-            self.codenl_create_func_def_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_create_func_def_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_create_func_def_one_liner, 520, 0, 1, 5)
         self.namenl_create_func_def_one_liner = QtWidgets.QLabel("nl_create_func_def_one_liner")
         self.namenl_create_func_def_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7713,7 +7713,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_create_list_one_liner, 522, 0, 1, 5)
         if self.tr("code_nl_create_list_one_liner")!="code_nl_create_list_one_liner":
             self.codenl_create_list_one_liner = QtWidgets.QLabel(self.tr("code_nl_create_list_one_liner"))
-            self.codenl_create_list_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_create_list_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_create_list_one_liner, 523, 0, 1, 5)
         self.namenl_create_list_one_liner = QtWidgets.QLabel("nl_create_list_one_liner")
         self.namenl_create_list_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7728,7 +7728,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_split_if_one_liner, 525, 0, 1, 5)
         if self.tr("code_nl_split_if_one_liner")!="code_nl_split_if_one_liner":
             self.codenl_split_if_one_liner = QtWidgets.QLabel(self.tr("code_nl_split_if_one_liner"))
-            self.codenl_split_if_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_split_if_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_split_if_one_liner, 526, 0, 1, 5)
         self.namenl_split_if_one_liner = QtWidgets.QLabel("nl_split_if_one_liner")
         self.namenl_split_if_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7743,7 +7743,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_split_for_one_liner, 528, 0, 1, 5)
         if self.tr("code_nl_split_for_one_liner")!="code_nl_split_for_one_liner":
             self.codenl_split_for_one_liner = QtWidgets.QLabel(self.tr("code_nl_split_for_one_liner"))
-            self.codenl_split_for_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_split_for_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_split_for_one_liner, 529, 0, 1, 5)
         self.namenl_split_for_one_liner = QtWidgets.QLabel("nl_split_for_one_liner")
         self.namenl_split_for_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7758,7 +7758,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt4.addWidget(self.labelnl_split_while_one_liner, 531, 0, 1, 5)
         if self.tr("code_nl_split_while_one_liner")!="code_nl_split_while_one_liner":
             self.codenl_split_while_one_liner = QtWidgets.QLabel(self.tr("code_nl_split_while_one_liner"))
-            self.codenl_split_while_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_split_while_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt4.addWidget(self.codenl_split_while_one_liner, 532, 0, 1, 5)
         self.namenl_split_while_one_liner = QtWidgets.QLabel("nl_split_while_one_liner")
         self.namenl_split_while_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7776,7 +7776,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_max, 0, 0, 1, 5)
         if self.tr("code_nl_max")!="code_nl_max":
             self.codenl_max = QtWidgets.QLabel(self.tr("code_nl_max"))
-            self.codenl_max.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_max.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_max, 1, 0, 1, 5)
         self.namenl_max = QtWidgets.QLabel("nl_max")
         self.namenl_max.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7792,7 +7792,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_max_blank_in_func, 3, 0, 1, 5)
         if self.tr("code_nl_max_blank_in_func")!="code_nl_max_blank_in_func":
             self.codenl_max_blank_in_func = QtWidgets.QLabel(self.tr("code_nl_max_blank_in_func"))
-            self.codenl_max_blank_in_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_max_blank_in_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_max_blank_in_func, 4, 0, 1, 5)
         self.namenl_max_blank_in_func = QtWidgets.QLabel("nl_max_blank_in_func")
         self.namenl_max_blank_in_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7808,7 +7808,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_func_body_proto, 6, 0, 1, 5)
         if self.tr("code_nl_before_func_body_proto")!="code_nl_before_func_body_proto":
             self.codenl_before_func_body_proto = QtWidgets.QLabel(self.tr("code_nl_before_func_body_proto"))
-            self.codenl_before_func_body_proto.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_func_body_proto.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_func_body_proto, 7, 0, 1, 5)
         self.namenl_before_func_body_proto = QtWidgets.QLabel("nl_before_func_body_proto")
         self.namenl_before_func_body_proto.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7824,7 +7824,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_func_body_def, 9, 0, 1, 5)
         if self.tr("code_nl_before_func_body_def")!="code_nl_before_func_body_def":
             self.codenl_before_func_body_def = QtWidgets.QLabel(self.tr("code_nl_before_func_body_def"))
-            self.codenl_before_func_body_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_func_body_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_func_body_def, 10, 0, 1, 5)
         self.namenl_before_func_body_def = QtWidgets.QLabel("nl_before_func_body_def")
         self.namenl_before_func_body_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7840,7 +7840,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_func_class_proto, 12, 0, 1, 5)
         if self.tr("code_nl_before_func_class_proto")!="code_nl_before_func_class_proto":
             self.codenl_before_func_class_proto = QtWidgets.QLabel(self.tr("code_nl_before_func_class_proto"))
-            self.codenl_before_func_class_proto.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_func_class_proto.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_func_class_proto, 13, 0, 1, 5)
         self.namenl_before_func_class_proto = QtWidgets.QLabel("nl_before_func_class_proto")
         self.namenl_before_func_class_proto.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7856,7 +7856,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_func_class_def, 15, 0, 1, 5)
         if self.tr("code_nl_before_func_class_def")!="code_nl_before_func_class_def":
             self.codenl_before_func_class_def = QtWidgets.QLabel(self.tr("code_nl_before_func_class_def"))
-            self.codenl_before_func_class_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_func_class_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_func_class_def, 16, 0, 1, 5)
         self.namenl_before_func_class_def = QtWidgets.QLabel("nl_before_func_class_def")
         self.namenl_before_func_class_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7872,7 +7872,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_func_proto, 18, 0, 1, 5)
         if self.tr("code_nl_after_func_proto")!="code_nl_after_func_proto":
             self.codenl_after_func_proto = QtWidgets.QLabel(self.tr("code_nl_after_func_proto"))
-            self.codenl_after_func_proto.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_func_proto.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_func_proto, 19, 0, 1, 5)
         self.namenl_after_func_proto = QtWidgets.QLabel("nl_after_func_proto")
         self.namenl_after_func_proto.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7888,7 +7888,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_func_proto_group, 21, 0, 1, 5)
         if self.tr("code_nl_after_func_proto_group")!="code_nl_after_func_proto_group":
             self.codenl_after_func_proto_group = QtWidgets.QLabel(self.tr("code_nl_after_func_proto_group"))
-            self.codenl_after_func_proto_group.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_func_proto_group.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_func_proto_group, 22, 0, 1, 5)
         self.namenl_after_func_proto_group = QtWidgets.QLabel("nl_after_func_proto_group")
         self.namenl_after_func_proto_group.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7904,7 +7904,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_func_class_proto, 24, 0, 1, 5)
         if self.tr("code_nl_after_func_class_proto")!="code_nl_after_func_class_proto":
             self.codenl_after_func_class_proto = QtWidgets.QLabel(self.tr("code_nl_after_func_class_proto"))
-            self.codenl_after_func_class_proto.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_func_class_proto.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_func_class_proto, 25, 0, 1, 5)
         self.namenl_after_func_class_proto = QtWidgets.QLabel("nl_after_func_class_proto")
         self.namenl_after_func_class_proto.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7920,7 +7920,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_func_class_proto_group, 27, 0, 1, 5)
         if self.tr("code_nl_after_func_class_proto_group")!="code_nl_after_func_class_proto_group":
             self.codenl_after_func_class_proto_group = QtWidgets.QLabel(self.tr("code_nl_after_func_class_proto_group"))
-            self.codenl_after_func_class_proto_group.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_func_class_proto_group.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_func_class_proto_group, 28, 0, 1, 5)
         self.namenl_after_func_class_proto_group = QtWidgets.QLabel("nl_after_func_class_proto_group")
         self.namenl_after_func_class_proto_group.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7936,7 +7936,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_class_leave_one_liner_groups, 30, 0, 1, 5)
         if self.tr("code_nl_class_leave_one_liner_groups")!="code_nl_class_leave_one_liner_groups":
             self.codenl_class_leave_one_liner_groups = QtWidgets.QLabel(self.tr("code_nl_class_leave_one_liner_groups"))
-            self.codenl_class_leave_one_liner_groups.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_class_leave_one_liner_groups.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_class_leave_one_liner_groups, 31, 0, 1, 5)
         self.namenl_class_leave_one_liner_groups = QtWidgets.QLabel("nl_class_leave_one_liner_groups")
         self.namenl_class_leave_one_liner_groups.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7951,7 +7951,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_func_body, 33, 0, 1, 5)
         if self.tr("code_nl_after_func_body")!="code_nl_after_func_body":
             self.codenl_after_func_body = QtWidgets.QLabel(self.tr("code_nl_after_func_body"))
-            self.codenl_after_func_body.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_func_body.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_func_body, 34, 0, 1, 5)
         self.namenl_after_func_body = QtWidgets.QLabel("nl_after_func_body")
         self.namenl_after_func_body.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7967,7 +7967,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_func_body_class, 36, 0, 1, 5)
         if self.tr("code_nl_after_func_body_class")!="code_nl_after_func_body_class":
             self.codenl_after_func_body_class = QtWidgets.QLabel(self.tr("code_nl_after_func_body_class"))
-            self.codenl_after_func_body_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_func_body_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_func_body_class, 37, 0, 1, 5)
         self.namenl_after_func_body_class = QtWidgets.QLabel("nl_after_func_body_class")
         self.namenl_after_func_body_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7983,7 +7983,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_func_body_one_liner, 39, 0, 1, 5)
         if self.tr("code_nl_after_func_body_one_liner")!="code_nl_after_func_body_one_liner":
             self.codenl_after_func_body_one_liner = QtWidgets.QLabel(self.tr("code_nl_after_func_body_one_liner"))
-            self.codenl_after_func_body_one_liner.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_func_body_one_liner.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_func_body_one_liner, 40, 0, 1, 5)
         self.namenl_after_func_body_one_liner = QtWidgets.QLabel("nl_after_func_body_one_liner")
         self.namenl_after_func_body_one_liner.setFont(QtGui.QFont('Arial', 14, 2))
@@ -7999,7 +7999,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_func_var_def_blk, 42, 0, 1, 5)
         if self.tr("code_nl_func_var_def_blk")!="code_nl_func_var_def_blk":
             self.codenl_func_var_def_blk = QtWidgets.QLabel(self.tr("code_nl_func_var_def_blk"))
-            self.codenl_func_var_def_blk.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_func_var_def_blk.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_func_var_def_blk, 43, 0, 1, 5)
         self.namenl_func_var_def_blk = QtWidgets.QLabel("nl_func_var_def_blk")
         self.namenl_func_var_def_blk.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8015,7 +8015,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_typedef_blk_start, 45, 0, 1, 5)
         if self.tr("code_nl_typedef_blk_start")!="code_nl_typedef_blk_start":
             self.codenl_typedef_blk_start = QtWidgets.QLabel(self.tr("code_nl_typedef_blk_start"))
-            self.codenl_typedef_blk_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_typedef_blk_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_typedef_blk_start, 46, 0, 1, 5)
         self.namenl_typedef_blk_start = QtWidgets.QLabel("nl_typedef_blk_start")
         self.namenl_typedef_blk_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8031,7 +8031,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_typedef_blk_end, 48, 0, 1, 5)
         if self.tr("code_nl_typedef_blk_end")!="code_nl_typedef_blk_end":
             self.codenl_typedef_blk_end = QtWidgets.QLabel(self.tr("code_nl_typedef_blk_end"))
-            self.codenl_typedef_blk_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_typedef_blk_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_typedef_blk_end, 49, 0, 1, 5)
         self.namenl_typedef_blk_end = QtWidgets.QLabel("nl_typedef_blk_end")
         self.namenl_typedef_blk_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8047,7 +8047,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_typedef_blk_in, 51, 0, 1, 5)
         if self.tr("code_nl_typedef_blk_in")!="code_nl_typedef_blk_in":
             self.codenl_typedef_blk_in = QtWidgets.QLabel(self.tr("code_nl_typedef_blk_in"))
-            self.codenl_typedef_blk_in.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_typedef_blk_in.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_typedef_blk_in, 52, 0, 1, 5)
         self.namenl_typedef_blk_in = QtWidgets.QLabel("nl_typedef_blk_in")
         self.namenl_typedef_blk_in.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8063,7 +8063,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_var_def_blk_start, 54, 0, 1, 5)
         if self.tr("code_nl_var_def_blk_start")!="code_nl_var_def_blk_start":
             self.codenl_var_def_blk_start = QtWidgets.QLabel(self.tr("code_nl_var_def_blk_start"))
-            self.codenl_var_def_blk_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_var_def_blk_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_var_def_blk_start, 55, 0, 1, 5)
         self.namenl_var_def_blk_start = QtWidgets.QLabel("nl_var_def_blk_start")
         self.namenl_var_def_blk_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8079,7 +8079,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_var_def_blk_end, 57, 0, 1, 5)
         if self.tr("code_nl_var_def_blk_end")!="code_nl_var_def_blk_end":
             self.codenl_var_def_blk_end = QtWidgets.QLabel(self.tr("code_nl_var_def_blk_end"))
-            self.codenl_var_def_blk_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_var_def_blk_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_var_def_blk_end, 58, 0, 1, 5)
         self.namenl_var_def_blk_end = QtWidgets.QLabel("nl_var_def_blk_end")
         self.namenl_var_def_blk_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8095,7 +8095,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_var_def_blk_in, 60, 0, 1, 5)
         if self.tr("code_nl_var_def_blk_in")!="code_nl_var_def_blk_in":
             self.codenl_var_def_blk_in = QtWidgets.QLabel(self.tr("code_nl_var_def_blk_in"))
-            self.codenl_var_def_blk_in.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_var_def_blk_in.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_var_def_blk_in, 61, 0, 1, 5)
         self.namenl_var_def_blk_in = QtWidgets.QLabel("nl_var_def_blk_in")
         self.namenl_var_def_blk_in.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8111,7 +8111,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_block_comment, 63, 0, 1, 5)
         if self.tr("code_nl_before_block_comment")!="code_nl_before_block_comment":
             self.codenl_before_block_comment = QtWidgets.QLabel(self.tr("code_nl_before_block_comment"))
-            self.codenl_before_block_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_block_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_block_comment, 64, 0, 1, 5)
         self.namenl_before_block_comment = QtWidgets.QLabel("nl_before_block_comment")
         self.namenl_before_block_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8127,7 +8127,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_c_comment, 66, 0, 1, 5)
         if self.tr("code_nl_before_c_comment")!="code_nl_before_c_comment":
             self.codenl_before_c_comment = QtWidgets.QLabel(self.tr("code_nl_before_c_comment"))
-            self.codenl_before_c_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_c_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_c_comment, 67, 0, 1, 5)
         self.namenl_before_c_comment = QtWidgets.QLabel("nl_before_c_comment")
         self.namenl_before_c_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8143,7 +8143,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_cpp_comment, 69, 0, 1, 5)
         if self.tr("code_nl_before_cpp_comment")!="code_nl_before_cpp_comment":
             self.codenl_before_cpp_comment = QtWidgets.QLabel(self.tr("code_nl_before_cpp_comment"))
-            self.codenl_before_cpp_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_cpp_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_cpp_comment, 70, 0, 1, 5)
         self.namenl_before_cpp_comment = QtWidgets.QLabel("nl_before_cpp_comment")
         self.namenl_before_cpp_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8159,7 +8159,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_multiline_comment, 72, 0, 1, 5)
         if self.tr("code_nl_after_multiline_comment")!="code_nl_after_multiline_comment":
             self.codenl_after_multiline_comment = QtWidgets.QLabel(self.tr("code_nl_after_multiline_comment"))
-            self.codenl_after_multiline_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_multiline_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_multiline_comment, 73, 0, 1, 5)
         self.namenl_after_multiline_comment = QtWidgets.QLabel("nl_after_multiline_comment")
         self.namenl_after_multiline_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8174,7 +8174,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_label_colon, 75, 0, 1, 5)
         if self.tr("code_nl_after_label_colon")!="code_nl_after_label_colon":
             self.codenl_after_label_colon = QtWidgets.QLabel(self.tr("code_nl_after_label_colon"))
-            self.codenl_after_label_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_label_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_label_colon, 76, 0, 1, 5)
         self.namenl_after_label_colon = QtWidgets.QLabel("nl_after_label_colon")
         self.namenl_after_label_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8189,7 +8189,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_struct, 78, 0, 1, 5)
         if self.tr("code_nl_after_struct")!="code_nl_after_struct":
             self.codenl_after_struct = QtWidgets.QLabel(self.tr("code_nl_after_struct"))
-            self.codenl_after_struct.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_struct.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_struct, 79, 0, 1, 5)
         self.namenl_after_struct = QtWidgets.QLabel("nl_after_struct")
         self.namenl_after_struct.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8205,7 +8205,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_class, 81, 0, 1, 5)
         if self.tr("code_nl_before_class")!="code_nl_before_class":
             self.codenl_before_class = QtWidgets.QLabel(self.tr("code_nl_before_class"))
-            self.codenl_before_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_class, 82, 0, 1, 5)
         self.namenl_before_class = QtWidgets.QLabel("nl_before_class")
         self.namenl_before_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8221,7 +8221,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_class, 84, 0, 1, 5)
         if self.tr("code_nl_after_class")!="code_nl_after_class":
             self.codenl_after_class = QtWidgets.QLabel(self.tr("code_nl_after_class"))
-            self.codenl_after_class.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_class.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_class, 85, 0, 1, 5)
         self.namenl_after_class = QtWidgets.QLabel("nl_after_class")
         self.namenl_after_class.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8237,7 +8237,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_namespace, 87, 0, 1, 5)
         if self.tr("code_nl_before_namespace")!="code_nl_before_namespace":
             self.codenl_before_namespace = QtWidgets.QLabel(self.tr("code_nl_before_namespace"))
-            self.codenl_before_namespace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_namespace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_namespace, 88, 0, 1, 5)
         self.namenl_before_namespace = QtWidgets.QLabel("nl_before_namespace")
         self.namenl_before_namespace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8253,7 +8253,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_inside_namespace, 90, 0, 1, 5)
         if self.tr("code_nl_inside_namespace")!="code_nl_inside_namespace":
             self.codenl_inside_namespace = QtWidgets.QLabel(self.tr("code_nl_inside_namespace"))
-            self.codenl_inside_namespace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_inside_namespace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_inside_namespace, 91, 0, 1, 5)
         self.namenl_inside_namespace = QtWidgets.QLabel("nl_inside_namespace")
         self.namenl_inside_namespace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8269,7 +8269,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_namespace, 93, 0, 1, 5)
         if self.tr("code_nl_after_namespace")!="code_nl_after_namespace":
             self.codenl_after_namespace = QtWidgets.QLabel(self.tr("code_nl_after_namespace"))
-            self.codenl_after_namespace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_namespace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_namespace, 94, 0, 1, 5)
         self.namenl_after_namespace = QtWidgets.QLabel("nl_after_namespace")
         self.namenl_after_namespace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8285,7 +8285,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_access_spec, 96, 0, 1, 5)
         if self.tr("code_nl_before_access_spec")!="code_nl_before_access_spec":
             self.codenl_before_access_spec = QtWidgets.QLabel(self.tr("code_nl_before_access_spec"))
-            self.codenl_before_access_spec.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_access_spec.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_access_spec, 97, 0, 1, 5)
         self.namenl_before_access_spec = QtWidgets.QLabel("nl_before_access_spec")
         self.namenl_before_access_spec.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8301,7 +8301,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_access_spec, 99, 0, 1, 5)
         if self.tr("code_nl_after_access_spec")!="code_nl_after_access_spec":
             self.codenl_after_access_spec = QtWidgets.QLabel(self.tr("code_nl_after_access_spec"))
-            self.codenl_after_access_spec.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_access_spec.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_access_spec, 100, 0, 1, 5)
         self.namenl_after_access_spec = QtWidgets.QLabel("nl_after_access_spec")
         self.namenl_after_access_spec.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8317,7 +8317,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_comment_func_def, 102, 0, 1, 5)
         if self.tr("code_nl_comment_func_def")!="code_nl_comment_func_def":
             self.codenl_comment_func_def = QtWidgets.QLabel(self.tr("code_nl_comment_func_def"))
-            self.codenl_comment_func_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_comment_func_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_comment_func_def, 103, 0, 1, 5)
         self.namenl_comment_func_def = QtWidgets.QLabel("nl_comment_func_def")
         self.namenl_comment_func_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8333,7 +8333,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_try_catch_finally, 105, 0, 1, 5)
         if self.tr("code_nl_after_try_catch_finally")!="code_nl_after_try_catch_finally":
             self.codenl_after_try_catch_finally = QtWidgets.QLabel(self.tr("code_nl_after_try_catch_finally"))
-            self.codenl_after_try_catch_finally.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_try_catch_finally.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_try_catch_finally, 106, 0, 1, 5)
         self.namenl_after_try_catch_finally = QtWidgets.QLabel("nl_after_try_catch_finally")
         self.namenl_after_try_catch_finally.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8349,7 +8349,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_around_cs_property, 108, 0, 1, 5)
         if self.tr("code_nl_around_cs_property")!="code_nl_around_cs_property":
             self.codenl_around_cs_property = QtWidgets.QLabel(self.tr("code_nl_around_cs_property"))
-            self.codenl_around_cs_property.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_around_cs_property.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_around_cs_property, 109, 0, 1, 5)
         self.namenl_around_cs_property = QtWidgets.QLabel("nl_around_cs_property")
         self.namenl_around_cs_property.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8365,7 +8365,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_between_get_set, 111, 0, 1, 5)
         if self.tr("code_nl_between_get_set")!="code_nl_between_get_set":
             self.codenl_between_get_set = QtWidgets.QLabel(self.tr("code_nl_between_get_set"))
-            self.codenl_between_get_set.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_between_get_set.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_between_get_set, 112, 0, 1, 5)
         self.namenl_between_get_set = QtWidgets.QLabel("nl_between_get_set")
         self.namenl_between_get_set.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8381,7 +8381,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_property_brace, 114, 0, 1, 5)
         if self.tr("code_nl_property_brace")!="code_nl_property_brace":
             self.codenl_property_brace = QtWidgets.QLabel(self.tr("code_nl_property_brace"))
-            self.codenl_property_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_property_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_property_brace, 115, 0, 1, 5)
         self.namenl_property_brace = QtWidgets.QLabel("nl_property_brace")
         self.namenl_property_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8396,7 +8396,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labeleat_blanks_after_open_brace, 117, 0, 1, 5)
         if self.tr("code_eat_blanks_after_open_brace")!="code_eat_blanks_after_open_brace":
             self.codeeat_blanks_after_open_brace = QtWidgets.QLabel(self.tr("code_eat_blanks_after_open_brace"))
-            self.codeeat_blanks_after_open_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeeat_blanks_after_open_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codeeat_blanks_after_open_brace, 118, 0, 1, 5)
         self.nameeat_blanks_after_open_brace = QtWidgets.QLabel("eat_blanks_after_open_brace")
         self.nameeat_blanks_after_open_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8411,7 +8411,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labeleat_blanks_before_close_brace, 120, 0, 1, 5)
         if self.tr("code_eat_blanks_before_close_brace")!="code_eat_blanks_before_close_brace":
             self.codeeat_blanks_before_close_brace = QtWidgets.QLabel(self.tr("code_eat_blanks_before_close_brace"))
-            self.codeeat_blanks_before_close_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeeat_blanks_before_close_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codeeat_blanks_before_close_brace, 121, 0, 1, 5)
         self.nameeat_blanks_before_close_brace = QtWidgets.QLabel("eat_blanks_before_close_brace")
         self.nameeat_blanks_before_close_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8426,7 +8426,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_remove_extra_newlines, 123, 0, 1, 5)
         if self.tr("code_nl_remove_extra_newlines")!="code_nl_remove_extra_newlines":
             self.codenl_remove_extra_newlines = QtWidgets.QLabel(self.tr("code_nl_remove_extra_newlines"))
-            self.codenl_remove_extra_newlines.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_remove_extra_newlines.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_remove_extra_newlines, 124, 0, 1, 5)
         self.namenl_remove_extra_newlines = QtWidgets.QLabel("nl_remove_extra_newlines")
         self.namenl_remove_extra_newlines.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8442,7 +8442,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_annotation, 126, 0, 1, 5)
         if self.tr("code_nl_after_annotation")!="code_nl_after_annotation":
             self.codenl_after_annotation = QtWidgets.QLabel(self.tr("code_nl_after_annotation"))
-            self.codenl_after_annotation.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_annotation.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_annotation, 127, 0, 1, 5)
         self.namenl_after_annotation = QtWidgets.QLabel("nl_after_annotation")
         self.namenl_after_annotation.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8457,7 +8457,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_between_annotation, 129, 0, 1, 5)
         if self.tr("code_nl_between_annotation")!="code_nl_between_annotation":
             self.codenl_between_annotation = QtWidgets.QLabel(self.tr("code_nl_between_annotation"))
-            self.codenl_between_annotation.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_between_annotation.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_between_annotation, 130, 0, 1, 5)
         self.namenl_between_annotation = QtWidgets.QLabel("nl_between_annotation")
         self.namenl_between_annotation.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8472,7 +8472,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_whole_file_ifdef, 132, 0, 1, 5)
         if self.tr("code_nl_before_whole_file_ifdef")!="code_nl_before_whole_file_ifdef":
             self.codenl_before_whole_file_ifdef = QtWidgets.QLabel(self.tr("code_nl_before_whole_file_ifdef"))
-            self.codenl_before_whole_file_ifdef.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_whole_file_ifdef.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_whole_file_ifdef, 133, 0, 1, 5)
         self.namenl_before_whole_file_ifdef = QtWidgets.QLabel("nl_before_whole_file_ifdef")
         self.namenl_before_whole_file_ifdef.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8488,7 +8488,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_whole_file_ifdef, 135, 0, 1, 5)
         if self.tr("code_nl_after_whole_file_ifdef")!="code_nl_after_whole_file_ifdef":
             self.codenl_after_whole_file_ifdef = QtWidgets.QLabel(self.tr("code_nl_after_whole_file_ifdef"))
-            self.codenl_after_whole_file_ifdef.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_whole_file_ifdef.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_whole_file_ifdef, 136, 0, 1, 5)
         self.namenl_after_whole_file_ifdef = QtWidgets.QLabel("nl_after_whole_file_ifdef")
         self.namenl_after_whole_file_ifdef.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8504,7 +8504,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_before_whole_file_endif, 138, 0, 1, 5)
         if self.tr("code_nl_before_whole_file_endif")!="code_nl_before_whole_file_endif":
             self.codenl_before_whole_file_endif = QtWidgets.QLabel(self.tr("code_nl_before_whole_file_endif"))
-            self.codenl_before_whole_file_endif.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_before_whole_file_endif.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_before_whole_file_endif, 139, 0, 1, 5)
         self.namenl_before_whole_file_endif = QtWidgets.QLabel("nl_before_whole_file_endif")
         self.namenl_before_whole_file_endif.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8520,7 +8520,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt5.addWidget(self.labelnl_after_whole_file_endif, 141, 0, 1, 5)
         if self.tr("code_nl_after_whole_file_endif")!="code_nl_after_whole_file_endif":
             self.codenl_after_whole_file_endif = QtWidgets.QLabel(self.tr("code_nl_after_whole_file_endif"))
-            self.codenl_after_whole_file_endif.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codenl_after_whole_file_endif.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt5.addWidget(self.codenl_after_whole_file_endif, 142, 0, 1, 5)
         self.namenl_after_whole_file_endif = QtWidgets.QLabel("nl_after_whole_file_endif")
         self.namenl_after_whole_file_endif.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8539,7 +8539,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_arith, 0, 0, 1, 5)
         if self.tr("code_pos_arith")!="code_pos_arith":
             self.codepos_arith = QtWidgets.QLabel(self.tr("code_pos_arith"))
-            self.codepos_arith.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_arith.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_arith, 1, 0, 1, 5)
         self.namepos_arith = QtWidgets.QLabel("pos_arith")
         self.namepos_arith.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8554,7 +8554,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_assign, 3, 0, 1, 5)
         if self.tr("code_pos_assign")!="code_pos_assign":
             self.codepos_assign = QtWidgets.QLabel(self.tr("code_pos_assign"))
-            self.codepos_assign.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_assign.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_assign, 4, 0, 1, 5)
         self.namepos_assign = QtWidgets.QLabel("pos_assign")
         self.namepos_assign.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8569,7 +8569,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_bool, 6, 0, 1, 5)
         if self.tr("code_pos_bool")!="code_pos_bool":
             self.codepos_bool = QtWidgets.QLabel(self.tr("code_pos_bool"))
-            self.codepos_bool.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_bool.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_bool, 7, 0, 1, 5)
         self.namepos_bool = QtWidgets.QLabel("pos_bool")
         self.namepos_bool.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8584,7 +8584,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_compare, 9, 0, 1, 5)
         if self.tr("code_pos_compare")!="code_pos_compare":
             self.codepos_compare = QtWidgets.QLabel(self.tr("code_pos_compare"))
-            self.codepos_compare.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_compare.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_compare, 10, 0, 1, 5)
         self.namepos_compare = QtWidgets.QLabel("pos_compare")
         self.namepos_compare.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8599,7 +8599,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_conditional, 12, 0, 1, 5)
         if self.tr("code_pos_conditional")!="code_pos_conditional":
             self.codepos_conditional = QtWidgets.QLabel(self.tr("code_pos_conditional"))
-            self.codepos_conditional.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_conditional.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_conditional, 13, 0, 1, 5)
         self.namepos_conditional = QtWidgets.QLabel("pos_conditional")
         self.namepos_conditional.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8614,7 +8614,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_comma, 15, 0, 1, 5)
         if self.tr("code_pos_comma")!="code_pos_comma":
             self.codepos_comma = QtWidgets.QLabel(self.tr("code_pos_comma"))
-            self.codepos_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_comma, 16, 0, 1, 5)
         self.namepos_comma = QtWidgets.QLabel("pos_comma")
         self.namepos_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8629,7 +8629,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_enum_comma, 18, 0, 1, 5)
         if self.tr("code_pos_enum_comma")!="code_pos_enum_comma":
             self.codepos_enum_comma = QtWidgets.QLabel(self.tr("code_pos_enum_comma"))
-            self.codepos_enum_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_enum_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_enum_comma, 19, 0, 1, 5)
         self.namepos_enum_comma = QtWidgets.QLabel("pos_enum_comma")
         self.namepos_enum_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8644,7 +8644,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_class_comma, 21, 0, 1, 5)
         if self.tr("code_pos_class_comma")!="code_pos_class_comma":
             self.codepos_class_comma = QtWidgets.QLabel(self.tr("code_pos_class_comma"))
-            self.codepos_class_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_class_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_class_comma, 22, 0, 1, 5)
         self.namepos_class_comma = QtWidgets.QLabel("pos_class_comma")
         self.namepos_class_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8659,7 +8659,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_constr_comma, 24, 0, 1, 5)
         if self.tr("code_pos_constr_comma")!="code_pos_constr_comma":
             self.codepos_constr_comma = QtWidgets.QLabel(self.tr("code_pos_constr_comma"))
-            self.codepos_constr_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_constr_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_constr_comma, 25, 0, 1, 5)
         self.namepos_constr_comma = QtWidgets.QLabel("pos_constr_comma")
         self.namepos_constr_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8674,7 +8674,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_class_colon, 27, 0, 1, 5)
         if self.tr("code_pos_class_colon")!="code_pos_class_colon":
             self.codepos_class_colon = QtWidgets.QLabel(self.tr("code_pos_class_colon"))
-            self.codepos_class_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_class_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_class_colon, 28, 0, 1, 5)
         self.namepos_class_colon = QtWidgets.QLabel("pos_class_colon")
         self.namepos_class_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8689,7 +8689,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt6.addWidget(self.labelpos_constr_colon, 30, 0, 1, 5)
         if self.tr("code_pos_constr_colon")!="code_pos_constr_colon":
             self.codepos_constr_colon = QtWidgets.QLabel(self.tr("code_pos_constr_colon"))
-            self.codepos_constr_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepos_constr_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt6.addWidget(self.codepos_constr_colon, 31, 0, 1, 5)
         self.namepos_constr_colon = QtWidgets.QLabel("pos_constr_colon")
         self.namepos_constr_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8707,7 +8707,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt7.addWidget(self.labelcode_width, 0, 0, 1, 5)
         if self.tr("code_code_width")!="code_code_width":
             self.codecode_width = QtWidgets.QLabel(self.tr("code_code_width"))
-            self.codecode_width.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecode_width.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt7.addWidget(self.codecode_width, 1, 0, 1, 5)
         self.namecode_width = QtWidgets.QLabel("code_width")
         self.namecode_width.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8723,7 +8723,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt7.addWidget(self.labells_for_split_full, 3, 0, 1, 5)
         if self.tr("code_ls_for_split_full")!="code_ls_for_split_full":
             self.codels_for_split_full = QtWidgets.QLabel(self.tr("code_ls_for_split_full"))
-            self.codels_for_split_full.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codels_for_split_full.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt7.addWidget(self.codels_for_split_full, 4, 0, 1, 5)
         self.namels_for_split_full = QtWidgets.QLabel("ls_for_split_full")
         self.namels_for_split_full.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8738,7 +8738,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt7.addWidget(self.labells_func_split_full, 6, 0, 1, 5)
         if self.tr("code_ls_func_split_full")!="code_ls_func_split_full":
             self.codels_func_split_full = QtWidgets.QLabel(self.tr("code_ls_func_split_full"))
-            self.codels_func_split_full.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codels_func_split_full.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt7.addWidget(self.codels_func_split_full, 7, 0, 1, 5)
         self.namels_func_split_full = QtWidgets.QLabel("ls_func_split_full")
         self.namels_func_split_full.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8753,7 +8753,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt7.addWidget(self.labells_code_width, 9, 0, 1, 5)
         if self.tr("code_ls_code_width")!="code_ls_code_width":
             self.codels_code_width = QtWidgets.QLabel(self.tr("code_ls_code_width"))
-            self.codels_code_width.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codels_code_width.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt7.addWidget(self.codels_code_width, 10, 0, 1, 5)
         self.namels_code_width = QtWidgets.QLabel("ls_code_width")
         self.namels_code_width.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8771,7 +8771,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_keep_tabs, 0, 0, 1, 5)
         if self.tr("code_align_keep_tabs")!="code_align_keep_tabs":
             self.codealign_keep_tabs = QtWidgets.QLabel(self.tr("code_align_keep_tabs"))
-            self.codealign_keep_tabs.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_keep_tabs.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_keep_tabs, 1, 0, 1, 5)
         self.namealign_keep_tabs = QtWidgets.QLabel("align_keep_tabs")
         self.namealign_keep_tabs.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8786,7 +8786,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_with_tabs, 3, 0, 1, 5)
         if self.tr("code_align_with_tabs")!="code_align_with_tabs":
             self.codealign_with_tabs = QtWidgets.QLabel(self.tr("code_align_with_tabs"))
-            self.codealign_with_tabs.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_with_tabs.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_with_tabs, 4, 0, 1, 5)
         self.namealign_with_tabs = QtWidgets.QLabel("align_with_tabs")
         self.namealign_with_tabs.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8801,7 +8801,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_on_tabstop, 6, 0, 1, 5)
         if self.tr("code_align_on_tabstop")!="code_align_on_tabstop":
             self.codealign_on_tabstop = QtWidgets.QLabel(self.tr("code_align_on_tabstop"))
-            self.codealign_on_tabstop.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_on_tabstop.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_on_tabstop, 7, 0, 1, 5)
         self.namealign_on_tabstop = QtWidgets.QLabel("align_on_tabstop")
         self.namealign_on_tabstop.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8816,7 +8816,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_number_right, 9, 0, 1, 5)
         if self.tr("code_align_number_right")!="code_align_number_right":
             self.codealign_number_right = QtWidgets.QLabel(self.tr("code_align_number_right"))
-            self.codealign_number_right.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_number_right.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_number_right, 10, 0, 1, 5)
         self.namealign_number_right = QtWidgets.QLabel("align_number_right")
         self.namealign_number_right.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8831,7 +8831,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_keep_extra_space, 12, 0, 1, 5)
         if self.tr("code_align_keep_extra_space")!="code_align_keep_extra_space":
             self.codealign_keep_extra_space = QtWidgets.QLabel(self.tr("code_align_keep_extra_space"))
-            self.codealign_keep_extra_space.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_keep_extra_space.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_keep_extra_space, 13, 0, 1, 5)
         self.namealign_keep_extra_space = QtWidgets.QLabel("align_keep_extra_space")
         self.namealign_keep_extra_space.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8846,7 +8846,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_func_params, 15, 0, 1, 5)
         if self.tr("code_align_func_params")!="code_align_func_params":
             self.codealign_func_params = QtWidgets.QLabel(self.tr("code_align_func_params"))
-            self.codealign_func_params.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_func_params.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_func_params, 16, 0, 1, 5)
         self.namealign_func_params = QtWidgets.QLabel("align_func_params")
         self.namealign_func_params.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8861,7 +8861,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_func_params_span, 18, 0, 1, 5)
         if self.tr("code_align_func_params_span")!="code_align_func_params_span":
             self.codealign_func_params_span = QtWidgets.QLabel(self.tr("code_align_func_params_span"))
-            self.codealign_func_params_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_func_params_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_func_params_span, 19, 0, 1, 5)
         self.namealign_func_params_span = QtWidgets.QLabel("align_func_params_span")
         self.namealign_func_params_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8877,7 +8877,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_func_params_thresh, 21, 0, 1, 5)
         if self.tr("code_align_func_params_thresh")!="code_align_func_params_thresh":
             self.codealign_func_params_thresh = QtWidgets.QLabel(self.tr("code_align_func_params_thresh"))
-            self.codealign_func_params_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_func_params_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_func_params_thresh, 22, 0, 1, 5)
         self.namealign_func_params_thresh = QtWidgets.QLabel("align_func_params_thresh")
         self.namealign_func_params_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8893,7 +8893,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_func_params_gap, 24, 0, 1, 5)
         if self.tr("code_align_func_params_gap")!="code_align_func_params_gap":
             self.codealign_func_params_gap = QtWidgets.QLabel(self.tr("code_align_func_params_gap"))
-            self.codealign_func_params_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_func_params_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_func_params_gap, 25, 0, 1, 5)
         self.namealign_func_params_gap = QtWidgets.QLabel("align_func_params_gap")
         self.namealign_func_params_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8909,7 +8909,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_constr_value_span, 27, 0, 1, 5)
         if self.tr("code_align_constr_value_span")!="code_align_constr_value_span":
             self.codealign_constr_value_span = QtWidgets.QLabel(self.tr("code_align_constr_value_span"))
-            self.codealign_constr_value_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_constr_value_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_constr_value_span, 28, 0, 1, 5)
         self.namealign_constr_value_span = QtWidgets.QLabel("align_constr_value_span")
         self.namealign_constr_value_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8925,7 +8925,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_constr_value_thresh, 30, 0, 1, 5)
         if self.tr("code_align_constr_value_thresh")!="code_align_constr_value_thresh":
             self.codealign_constr_value_thresh = QtWidgets.QLabel(self.tr("code_align_constr_value_thresh"))
-            self.codealign_constr_value_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_constr_value_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_constr_value_thresh, 31, 0, 1, 5)
         self.namealign_constr_value_thresh = QtWidgets.QLabel("align_constr_value_thresh")
         self.namealign_constr_value_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8941,7 +8941,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_constr_value_gap, 33, 0, 1, 5)
         if self.tr("code_align_constr_value_gap")!="code_align_constr_value_gap":
             self.codealign_constr_value_gap = QtWidgets.QLabel(self.tr("code_align_constr_value_gap"))
-            self.codealign_constr_value_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_constr_value_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_constr_value_gap, 34, 0, 1, 5)
         self.namealign_constr_value_gap = QtWidgets.QLabel("align_constr_value_gap")
         self.namealign_constr_value_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8957,7 +8957,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_same_func_call_params, 36, 0, 1, 5)
         if self.tr("code_align_same_func_call_params")!="code_align_same_func_call_params":
             self.codealign_same_func_call_params = QtWidgets.QLabel(self.tr("code_align_same_func_call_params"))
-            self.codealign_same_func_call_params.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_same_func_call_params.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_same_func_call_params, 37, 0, 1, 5)
         self.namealign_same_func_call_params = QtWidgets.QLabel("align_same_func_call_params")
         self.namealign_same_func_call_params.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8972,7 +8972,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_same_func_call_params_span, 39, 0, 1, 5)
         if self.tr("code_align_same_func_call_params_span")!="code_align_same_func_call_params_span":
             self.codealign_same_func_call_params_span = QtWidgets.QLabel(self.tr("code_align_same_func_call_params_span"))
-            self.codealign_same_func_call_params_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_same_func_call_params_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_same_func_call_params_span, 40, 0, 1, 5)
         self.namealign_same_func_call_params_span = QtWidgets.QLabel("align_same_func_call_params_span")
         self.namealign_same_func_call_params_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -8988,7 +8988,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_same_func_call_params_thresh, 42, 0, 1, 5)
         if self.tr("code_align_same_func_call_params_thresh")!="code_align_same_func_call_params_thresh":
             self.codealign_same_func_call_params_thresh = QtWidgets.QLabel(self.tr("code_align_same_func_call_params_thresh"))
-            self.codealign_same_func_call_params_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_same_func_call_params_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_same_func_call_params_thresh, 43, 0, 1, 5)
         self.namealign_same_func_call_params_thresh = QtWidgets.QLabel("align_same_func_call_params_thresh")
         self.namealign_same_func_call_params_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9004,7 +9004,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_span, 45, 0, 1, 5)
         if self.tr("code_align_var_def_span")!="code_align_var_def_span":
             self.codealign_var_def_span = QtWidgets.QLabel(self.tr("code_align_var_def_span"))
-            self.codealign_var_def_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_span, 46, 0, 1, 5)
         self.namealign_var_def_span = QtWidgets.QLabel("align_var_def_span")
         self.namealign_var_def_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9020,7 +9020,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_star_style, 48, 0, 1, 5)
         if self.tr("code_align_var_def_star_style")!="code_align_var_def_star_style":
             self.codealign_var_def_star_style = QtWidgets.QLabel(self.tr("code_align_var_def_star_style"))
-            self.codealign_var_def_star_style.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_star_style.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_star_style, 49, 0, 1, 5)
         self.namealign_var_def_star_style = QtWidgets.QLabel("align_var_def_star_style")
         self.namealign_var_def_star_style.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9036,7 +9036,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_amp_style, 51, 0, 1, 5)
         if self.tr("code_align_var_def_amp_style")!="code_align_var_def_amp_style":
             self.codealign_var_def_amp_style = QtWidgets.QLabel(self.tr("code_align_var_def_amp_style"))
-            self.codealign_var_def_amp_style.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_amp_style.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_amp_style, 52, 0, 1, 5)
         self.namealign_var_def_amp_style = QtWidgets.QLabel("align_var_def_amp_style")
         self.namealign_var_def_amp_style.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9052,7 +9052,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_thresh, 54, 0, 1, 5)
         if self.tr("code_align_var_def_thresh")!="code_align_var_def_thresh":
             self.codealign_var_def_thresh = QtWidgets.QLabel(self.tr("code_align_var_def_thresh"))
-            self.codealign_var_def_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_thresh, 55, 0, 1, 5)
         self.namealign_var_def_thresh = QtWidgets.QLabel("align_var_def_thresh")
         self.namealign_var_def_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9068,7 +9068,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_gap, 57, 0, 1, 5)
         if self.tr("code_align_var_def_gap")!="code_align_var_def_gap":
             self.codealign_var_def_gap = QtWidgets.QLabel(self.tr("code_align_var_def_gap"))
-            self.codealign_var_def_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_gap, 58, 0, 1, 5)
         self.namealign_var_def_gap = QtWidgets.QLabel("align_var_def_gap")
         self.namealign_var_def_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9084,7 +9084,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_colon, 60, 0, 1, 5)
         if self.tr("code_align_var_def_colon")!="code_align_var_def_colon":
             self.codealign_var_def_colon = QtWidgets.QLabel(self.tr("code_align_var_def_colon"))
-            self.codealign_var_def_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_colon, 61, 0, 1, 5)
         self.namealign_var_def_colon = QtWidgets.QLabel("align_var_def_colon")
         self.namealign_var_def_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9099,7 +9099,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_colon_gap, 63, 0, 1, 5)
         if self.tr("code_align_var_def_colon_gap")!="code_align_var_def_colon_gap":
             self.codealign_var_def_colon_gap = QtWidgets.QLabel(self.tr("code_align_var_def_colon_gap"))
-            self.codealign_var_def_colon_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_colon_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_colon_gap, 64, 0, 1, 5)
         self.namealign_var_def_colon_gap = QtWidgets.QLabel("align_var_def_colon_gap")
         self.namealign_var_def_colon_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9115,7 +9115,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_attribute, 66, 0, 1, 5)
         if self.tr("code_align_var_def_attribute")!="code_align_var_def_attribute":
             self.codealign_var_def_attribute = QtWidgets.QLabel(self.tr("code_align_var_def_attribute"))
-            self.codealign_var_def_attribute.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_attribute.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_attribute, 67, 0, 1, 5)
         self.namealign_var_def_attribute = QtWidgets.QLabel("align_var_def_attribute")
         self.namealign_var_def_attribute.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9130,7 +9130,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_def_inline, 69, 0, 1, 5)
         if self.tr("code_align_var_def_inline")!="code_align_var_def_inline":
             self.codealign_var_def_inline = QtWidgets.QLabel(self.tr("code_align_var_def_inline"))
-            self.codealign_var_def_inline.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_def_inline.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_def_inline, 70, 0, 1, 5)
         self.namealign_var_def_inline = QtWidgets.QLabel("align_var_def_inline")
         self.namealign_var_def_inline.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9145,7 +9145,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_assign_span, 72, 0, 1, 5)
         if self.tr("code_align_assign_span")!="code_align_assign_span":
             self.codealign_assign_span = QtWidgets.QLabel(self.tr("code_align_assign_span"))
-            self.codealign_assign_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_assign_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_assign_span, 73, 0, 1, 5)
         self.namealign_assign_span = QtWidgets.QLabel("align_assign_span")
         self.namealign_assign_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9161,7 +9161,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_assign_func_proto_span, 75, 0, 1, 5)
         if self.tr("code_align_assign_func_proto_span")!="code_align_assign_func_proto_span":
             self.codealign_assign_func_proto_span = QtWidgets.QLabel(self.tr("code_align_assign_func_proto_span"))
-            self.codealign_assign_func_proto_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_assign_func_proto_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_assign_func_proto_span, 76, 0, 1, 5)
         self.namealign_assign_func_proto_span = QtWidgets.QLabel("align_assign_func_proto_span")
         self.namealign_assign_func_proto_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9177,7 +9177,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_assign_thresh, 78, 0, 1, 5)
         if self.tr("code_align_assign_thresh")!="code_align_assign_thresh":
             self.codealign_assign_thresh = QtWidgets.QLabel(self.tr("code_align_assign_thresh"))
-            self.codealign_assign_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_assign_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_assign_thresh, 79, 0, 1, 5)
         self.namealign_assign_thresh = QtWidgets.QLabel("align_assign_thresh")
         self.namealign_assign_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9193,7 +9193,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_assign_decl_func, 81, 0, 1, 5)
         if self.tr("code_align_assign_decl_func")!="code_align_assign_decl_func":
             self.codealign_assign_decl_func = QtWidgets.QLabel(self.tr("code_align_assign_decl_func"))
-            self.codealign_assign_decl_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_assign_decl_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_assign_decl_func, 82, 0, 1, 5)
         self.namealign_assign_decl_func = QtWidgets.QLabel("align_assign_decl_func")
         self.namealign_assign_decl_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9209,7 +9209,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_enum_equ_span, 84, 0, 1, 5)
         if self.tr("code_align_enum_equ_span")!="code_align_enum_equ_span":
             self.codealign_enum_equ_span = QtWidgets.QLabel(self.tr("code_align_enum_equ_span"))
-            self.codealign_enum_equ_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_enum_equ_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_enum_equ_span, 85, 0, 1, 5)
         self.namealign_enum_equ_span = QtWidgets.QLabel("align_enum_equ_span")
         self.namealign_enum_equ_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9225,7 +9225,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_enum_equ_thresh, 87, 0, 1, 5)
         if self.tr("code_align_enum_equ_thresh")!="code_align_enum_equ_thresh":
             self.codealign_enum_equ_thresh = QtWidgets.QLabel(self.tr("code_align_enum_equ_thresh"))
-            self.codealign_enum_equ_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_enum_equ_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_enum_equ_thresh, 88, 0, 1, 5)
         self.namealign_enum_equ_thresh = QtWidgets.QLabel("align_enum_equ_thresh")
         self.namealign_enum_equ_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9241,7 +9241,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_class_span, 90, 0, 1, 5)
         if self.tr("code_align_var_class_span")!="code_align_var_class_span":
             self.codealign_var_class_span = QtWidgets.QLabel(self.tr("code_align_var_class_span"))
-            self.codealign_var_class_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_class_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_class_span, 91, 0, 1, 5)
         self.namealign_var_class_span = QtWidgets.QLabel("align_var_class_span")
         self.namealign_var_class_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9257,7 +9257,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_class_thresh, 93, 0, 1, 5)
         if self.tr("code_align_var_class_thresh")!="code_align_var_class_thresh":
             self.codealign_var_class_thresh = QtWidgets.QLabel(self.tr("code_align_var_class_thresh"))
-            self.codealign_var_class_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_class_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_class_thresh, 94, 0, 1, 5)
         self.namealign_var_class_thresh = QtWidgets.QLabel("align_var_class_thresh")
         self.namealign_var_class_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9273,7 +9273,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_class_gap, 96, 0, 1, 5)
         if self.tr("code_align_var_class_gap")!="code_align_var_class_gap":
             self.codealign_var_class_gap = QtWidgets.QLabel(self.tr("code_align_var_class_gap"))
-            self.codealign_var_class_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_class_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_class_gap, 97, 0, 1, 5)
         self.namealign_var_class_gap = QtWidgets.QLabel("align_var_class_gap")
         self.namealign_var_class_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9289,7 +9289,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_struct_span, 99, 0, 1, 5)
         if self.tr("code_align_var_struct_span")!="code_align_var_struct_span":
             self.codealign_var_struct_span = QtWidgets.QLabel(self.tr("code_align_var_struct_span"))
-            self.codealign_var_struct_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_struct_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_struct_span, 100, 0, 1, 5)
         self.namealign_var_struct_span = QtWidgets.QLabel("align_var_struct_span")
         self.namealign_var_struct_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9305,7 +9305,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_struct_thresh, 102, 0, 1, 5)
         if self.tr("code_align_var_struct_thresh")!="code_align_var_struct_thresh":
             self.codealign_var_struct_thresh = QtWidgets.QLabel(self.tr("code_align_var_struct_thresh"))
-            self.codealign_var_struct_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_struct_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_struct_thresh, 103, 0, 1, 5)
         self.namealign_var_struct_thresh = QtWidgets.QLabel("align_var_struct_thresh")
         self.namealign_var_struct_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9321,7 +9321,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_var_struct_gap, 105, 0, 1, 5)
         if self.tr("code_align_var_struct_gap")!="code_align_var_struct_gap":
             self.codealign_var_struct_gap = QtWidgets.QLabel(self.tr("code_align_var_struct_gap"))
-            self.codealign_var_struct_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_var_struct_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_var_struct_gap, 106, 0, 1, 5)
         self.namealign_var_struct_gap = QtWidgets.QLabel("align_var_struct_gap")
         self.namealign_var_struct_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9337,7 +9337,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_struct_init_span, 108, 0, 1, 5)
         if self.tr("code_align_struct_init_span")!="code_align_struct_init_span":
             self.codealign_struct_init_span = QtWidgets.QLabel(self.tr("code_align_struct_init_span"))
-            self.codealign_struct_init_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_struct_init_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_struct_init_span, 109, 0, 1, 5)
         self.namealign_struct_init_span = QtWidgets.QLabel("align_struct_init_span")
         self.namealign_struct_init_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9353,7 +9353,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_typedef_span, 111, 0, 1, 5)
         if self.tr("code_align_typedef_span")!="code_align_typedef_span":
             self.codealign_typedef_span = QtWidgets.QLabel(self.tr("code_align_typedef_span"))
-            self.codealign_typedef_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_typedef_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_typedef_span, 112, 0, 1, 5)
         self.namealign_typedef_span = QtWidgets.QLabel("align_typedef_span")
         self.namealign_typedef_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9369,7 +9369,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_typedef_gap, 114, 0, 1, 5)
         if self.tr("code_align_typedef_gap")!="code_align_typedef_gap":
             self.codealign_typedef_gap = QtWidgets.QLabel(self.tr("code_align_typedef_gap"))
-            self.codealign_typedef_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_typedef_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_typedef_gap, 115, 0, 1, 5)
         self.namealign_typedef_gap = QtWidgets.QLabel("align_typedef_gap")
         self.namealign_typedef_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9385,7 +9385,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_typedef_func, 117, 0, 1, 5)
         if self.tr("code_align_typedef_func")!="code_align_typedef_func":
             self.codealign_typedef_func = QtWidgets.QLabel(self.tr("code_align_typedef_func"))
-            self.codealign_typedef_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_typedef_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_typedef_func, 118, 0, 1, 5)
         self.namealign_typedef_func = QtWidgets.QLabel("align_typedef_func")
         self.namealign_typedef_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9401,7 +9401,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_typedef_star_style, 120, 0, 1, 5)
         if self.tr("code_align_typedef_star_style")!="code_align_typedef_star_style":
             self.codealign_typedef_star_style = QtWidgets.QLabel(self.tr("code_align_typedef_star_style"))
-            self.codealign_typedef_star_style.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_typedef_star_style.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_typedef_star_style, 121, 0, 1, 5)
         self.namealign_typedef_star_style = QtWidgets.QLabel("align_typedef_star_style")
         self.namealign_typedef_star_style.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9417,7 +9417,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_typedef_amp_style, 123, 0, 1, 5)
         if self.tr("code_align_typedef_amp_style")!="code_align_typedef_amp_style":
             self.codealign_typedef_amp_style = QtWidgets.QLabel(self.tr("code_align_typedef_amp_style"))
-            self.codealign_typedef_amp_style.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_typedef_amp_style.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_typedef_amp_style, 124, 0, 1, 5)
         self.namealign_typedef_amp_style = QtWidgets.QLabel("align_typedef_amp_style")
         self.namealign_typedef_amp_style.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9433,7 +9433,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_right_cmt_span, 126, 0, 1, 5)
         if self.tr("code_align_right_cmt_span")!="code_align_right_cmt_span":
             self.codealign_right_cmt_span = QtWidgets.QLabel(self.tr("code_align_right_cmt_span"))
-            self.codealign_right_cmt_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_right_cmt_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_right_cmt_span, 127, 0, 1, 5)
         self.namealign_right_cmt_span = QtWidgets.QLabel("align_right_cmt_span")
         self.namealign_right_cmt_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9449,7 +9449,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_right_cmt_gap, 129, 0, 1, 5)
         if self.tr("code_align_right_cmt_gap")!="code_align_right_cmt_gap":
             self.codealign_right_cmt_gap = QtWidgets.QLabel(self.tr("code_align_right_cmt_gap"))
-            self.codealign_right_cmt_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_right_cmt_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_right_cmt_gap, 130, 0, 1, 5)
         self.namealign_right_cmt_gap = QtWidgets.QLabel("align_right_cmt_gap")
         self.namealign_right_cmt_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9465,7 +9465,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_right_cmt_mix, 132, 0, 1, 5)
         if self.tr("code_align_right_cmt_mix")!="code_align_right_cmt_mix":
             self.codealign_right_cmt_mix = QtWidgets.QLabel(self.tr("code_align_right_cmt_mix"))
-            self.codealign_right_cmt_mix.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_right_cmt_mix.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_right_cmt_mix, 133, 0, 1, 5)
         self.namealign_right_cmt_mix = QtWidgets.QLabel("align_right_cmt_mix")
         self.namealign_right_cmt_mix.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9480,7 +9480,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_right_cmt_same_level, 135, 0, 1, 5)
         if self.tr("code_align_right_cmt_same_level")!="code_align_right_cmt_same_level":
             self.codealign_right_cmt_same_level = QtWidgets.QLabel(self.tr("code_align_right_cmt_same_level"))
-            self.codealign_right_cmt_same_level.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_right_cmt_same_level.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_right_cmt_same_level, 136, 0, 1, 5)
         self.namealign_right_cmt_same_level = QtWidgets.QLabel("align_right_cmt_same_level")
         self.namealign_right_cmt_same_level.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9495,7 +9495,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_right_cmt_at_col, 138, 0, 1, 5)
         if self.tr("code_align_right_cmt_at_col")!="code_align_right_cmt_at_col":
             self.codealign_right_cmt_at_col = QtWidgets.QLabel(self.tr("code_align_right_cmt_at_col"))
-            self.codealign_right_cmt_at_col.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_right_cmt_at_col.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_right_cmt_at_col, 139, 0, 1, 5)
         self.namealign_right_cmt_at_col = QtWidgets.QLabel("align_right_cmt_at_col")
         self.namealign_right_cmt_at_col.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9511,7 +9511,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_func_proto_span, 141, 0, 1, 5)
         if self.tr("code_align_func_proto_span")!="code_align_func_proto_span":
             self.codealign_func_proto_span = QtWidgets.QLabel(self.tr("code_align_func_proto_span"))
-            self.codealign_func_proto_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_func_proto_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_func_proto_span, 142, 0, 1, 5)
         self.namealign_func_proto_span = QtWidgets.QLabel("align_func_proto_span")
         self.namealign_func_proto_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9527,7 +9527,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_func_proto_thresh, 144, 0, 1, 5)
         if self.tr("code_align_func_proto_thresh")!="code_align_func_proto_thresh":
             self.codealign_func_proto_thresh = QtWidgets.QLabel(self.tr("code_align_func_proto_thresh"))
-            self.codealign_func_proto_thresh.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_func_proto_thresh.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_func_proto_thresh, 145, 0, 1, 5)
         self.namealign_func_proto_thresh = QtWidgets.QLabel("align_func_proto_thresh")
         self.namealign_func_proto_thresh.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9543,7 +9543,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_func_proto_gap, 147, 0, 1, 5)
         if self.tr("code_align_func_proto_gap")!="code_align_func_proto_gap":
             self.codealign_func_proto_gap = QtWidgets.QLabel(self.tr("code_align_func_proto_gap"))
-            self.codealign_func_proto_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_func_proto_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_func_proto_gap, 148, 0, 1, 5)
         self.namealign_func_proto_gap = QtWidgets.QLabel("align_func_proto_gap")
         self.namealign_func_proto_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9559,7 +9559,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_on_operator, 150, 0, 1, 5)
         if self.tr("code_align_on_operator")!="code_align_on_operator":
             self.codealign_on_operator = QtWidgets.QLabel(self.tr("code_align_on_operator"))
-            self.codealign_on_operator.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_on_operator.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_on_operator, 151, 0, 1, 5)
         self.namealign_on_operator = QtWidgets.QLabel("align_on_operator")
         self.namealign_on_operator.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9574,7 +9574,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_mix_var_proto, 153, 0, 1, 5)
         if self.tr("code_align_mix_var_proto")!="code_align_mix_var_proto":
             self.codealign_mix_var_proto = QtWidgets.QLabel(self.tr("code_align_mix_var_proto"))
-            self.codealign_mix_var_proto.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_mix_var_proto.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_mix_var_proto, 154, 0, 1, 5)
         self.namealign_mix_var_proto = QtWidgets.QLabel("align_mix_var_proto")
         self.namealign_mix_var_proto.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9589,7 +9589,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_single_line_func, 156, 0, 1, 5)
         if self.tr("code_align_single_line_func")!="code_align_single_line_func":
             self.codealign_single_line_func = QtWidgets.QLabel(self.tr("code_align_single_line_func"))
-            self.codealign_single_line_func.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_single_line_func.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_single_line_func, 157, 0, 1, 5)
         self.namealign_single_line_func = QtWidgets.QLabel("align_single_line_func")
         self.namealign_single_line_func.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9604,7 +9604,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_single_line_brace, 159, 0, 1, 5)
         if self.tr("code_align_single_line_brace")!="code_align_single_line_brace":
             self.codealign_single_line_brace = QtWidgets.QLabel(self.tr("code_align_single_line_brace"))
-            self.codealign_single_line_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_single_line_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_single_line_brace, 160, 0, 1, 5)
         self.namealign_single_line_brace = QtWidgets.QLabel("align_single_line_brace")
         self.namealign_single_line_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9619,7 +9619,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_single_line_brace_gap, 162, 0, 1, 5)
         if self.tr("code_align_single_line_brace_gap")!="code_align_single_line_brace_gap":
             self.codealign_single_line_brace_gap = QtWidgets.QLabel(self.tr("code_align_single_line_brace_gap"))
-            self.codealign_single_line_brace_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_single_line_brace_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_single_line_brace_gap, 163, 0, 1, 5)
         self.namealign_single_line_brace_gap = QtWidgets.QLabel("align_single_line_brace_gap")
         self.namealign_single_line_brace_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9635,7 +9635,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_oc_msg_spec_span, 165, 0, 1, 5)
         if self.tr("code_align_oc_msg_spec_span")!="code_align_oc_msg_spec_span":
             self.codealign_oc_msg_spec_span = QtWidgets.QLabel(self.tr("code_align_oc_msg_spec_span"))
-            self.codealign_oc_msg_spec_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_oc_msg_spec_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_oc_msg_spec_span, 166, 0, 1, 5)
         self.namealign_oc_msg_spec_span = QtWidgets.QLabel("align_oc_msg_spec_span")
         self.namealign_oc_msg_spec_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9651,7 +9651,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_nl_cont, 168, 0, 1, 5)
         if self.tr("code_align_nl_cont")!="code_align_nl_cont":
             self.codealign_nl_cont = QtWidgets.QLabel(self.tr("code_align_nl_cont"))
-            self.codealign_nl_cont.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_nl_cont.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_nl_cont, 169, 0, 1, 5)
         self.namealign_nl_cont = QtWidgets.QLabel("align_nl_cont")
         self.namealign_nl_cont.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9666,7 +9666,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_pp_define_together, 171, 0, 1, 5)
         if self.tr("code_align_pp_define_together")!="code_align_pp_define_together":
             self.codealign_pp_define_together = QtWidgets.QLabel(self.tr("code_align_pp_define_together"))
-            self.codealign_pp_define_together.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_pp_define_together.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_pp_define_together, 172, 0, 1, 5)
         self.namealign_pp_define_together = QtWidgets.QLabel("align_pp_define_together")
         self.namealign_pp_define_together.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9681,7 +9681,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_pp_define_span, 174, 0, 1, 5)
         if self.tr("code_align_pp_define_span")!="code_align_pp_define_span":
             self.codealign_pp_define_span = QtWidgets.QLabel(self.tr("code_align_pp_define_span"))
-            self.codealign_pp_define_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_pp_define_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_pp_define_span, 175, 0, 1, 5)
         self.namealign_pp_define_span = QtWidgets.QLabel("align_pp_define_span")
         self.namealign_pp_define_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9697,7 +9697,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_pp_define_gap, 177, 0, 1, 5)
         if self.tr("code_align_pp_define_gap")!="code_align_pp_define_gap":
             self.codealign_pp_define_gap = QtWidgets.QLabel(self.tr("code_align_pp_define_gap"))
-            self.codealign_pp_define_gap.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_pp_define_gap.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_pp_define_gap, 178, 0, 1, 5)
         self.namealign_pp_define_gap = QtWidgets.QLabel("align_pp_define_gap")
         self.namealign_pp_define_gap.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9713,7 +9713,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_left_shift, 180, 0, 1, 5)
         if self.tr("code_align_left_shift")!="code_align_left_shift":
             self.codealign_left_shift = QtWidgets.QLabel(self.tr("code_align_left_shift"))
-            self.codealign_left_shift.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_left_shift.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_left_shift, 181, 0, 1, 5)
         self.namealign_left_shift = QtWidgets.QLabel("align_left_shift")
         self.namealign_left_shift.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9728,7 +9728,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_asm_colon, 183, 0, 1, 5)
         if self.tr("code_align_asm_colon")!="code_align_asm_colon":
             self.codealign_asm_colon = QtWidgets.QLabel(self.tr("code_align_asm_colon"))
-            self.codealign_asm_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_asm_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_asm_colon, 184, 0, 1, 5)
         self.namealign_asm_colon = QtWidgets.QLabel("align_asm_colon")
         self.namealign_asm_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9743,7 +9743,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_oc_msg_colon_span, 186, 0, 1, 5)
         if self.tr("code_align_oc_msg_colon_span")!="code_align_oc_msg_colon_span":
             self.codealign_oc_msg_colon_span = QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_span"))
-            self.codealign_oc_msg_colon_span.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_oc_msg_colon_span.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_oc_msg_colon_span, 187, 0, 1, 5)
         self.namealign_oc_msg_colon_span = QtWidgets.QLabel("align_oc_msg_colon_span")
         self.namealign_oc_msg_colon_span.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9759,7 +9759,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_oc_msg_colon_first, 189, 0, 1, 5)
         if self.tr("code_align_oc_msg_colon_first")!="code_align_oc_msg_colon_first":
             self.codealign_oc_msg_colon_first = QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_first"))
-            self.codealign_oc_msg_colon_first.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_oc_msg_colon_first.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_oc_msg_colon_first, 190, 0, 1, 5)
         self.namealign_oc_msg_colon_first = QtWidgets.QLabel("align_oc_msg_colon_first")
         self.namealign_oc_msg_colon_first.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9774,7 +9774,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_oc_decl_colon, 192, 0, 1, 5)
         if self.tr("code_align_oc_decl_colon")!="code_align_oc_decl_colon":
             self.codealign_oc_decl_colon = QtWidgets.QLabel(self.tr("code_align_oc_decl_colon"))
-            self.codealign_oc_decl_colon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_oc_decl_colon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_oc_decl_colon, 193, 0, 1, 5)
         self.namealign_oc_decl_colon = QtWidgets.QLabel("align_oc_decl_colon")
         self.namealign_oc_decl_colon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9789,7 +9789,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt8.addWidget(self.labelalign_oc_msg_colon_xcode_like, 195, 0, 1, 5)
         if self.tr("code_align_oc_msg_colon_xcode_like")!="code_align_oc_msg_colon_xcode_like":
             self.codealign_oc_msg_colon_xcode_like = QtWidgets.QLabel(self.tr("code_align_oc_msg_colon_xcode_like"))
-            self.codealign_oc_msg_colon_xcode_like.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codealign_oc_msg_colon_xcode_like.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt8.addWidget(self.codealign_oc_msg_colon_xcode_like, 196, 0, 1, 5)
         self.namealign_oc_msg_colon_xcode_like = QtWidgets.QLabel("align_oc_msg_colon_xcode_like")
         self.namealign_oc_msg_colon_xcode_like.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9807,7 +9807,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_width, 0, 0, 1, 5)
         if self.tr("code_cmt_width")!="code_cmt_width":
             self.codecmt_width = QtWidgets.QLabel(self.tr("code_cmt_width"))
-            self.codecmt_width.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_width.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_width, 1, 0, 1, 5)
         self.namecmt_width = QtWidgets.QLabel("cmt_width")
         self.namecmt_width.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9823,7 +9823,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_reflow_mode, 3, 0, 1, 5)
         if self.tr("code_cmt_reflow_mode")!="code_cmt_reflow_mode":
             self.codecmt_reflow_mode = QtWidgets.QLabel(self.tr("code_cmt_reflow_mode"))
-            self.codecmt_reflow_mode.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_reflow_mode.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_reflow_mode, 4, 0, 1, 5)
         self.namecmt_reflow_mode = QtWidgets.QLabel("cmt_reflow_mode")
         self.namecmt_reflow_mode.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9839,7 +9839,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_convert_tab_to_spaces, 6, 0, 1, 5)
         if self.tr("code_cmt_convert_tab_to_spaces")!="code_cmt_convert_tab_to_spaces":
             self.codecmt_convert_tab_to_spaces = QtWidgets.QLabel(self.tr("code_cmt_convert_tab_to_spaces"))
-            self.codecmt_convert_tab_to_spaces.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_convert_tab_to_spaces.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_convert_tab_to_spaces, 7, 0, 1, 5)
         self.namecmt_convert_tab_to_spaces = QtWidgets.QLabel("cmt_convert_tab_to_spaces")
         self.namecmt_convert_tab_to_spaces.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9854,7 +9854,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_indent_multi, 9, 0, 1, 5)
         if self.tr("code_cmt_indent_multi")!="code_cmt_indent_multi":
             self.codecmt_indent_multi = QtWidgets.QLabel(self.tr("code_cmt_indent_multi"))
-            self.codecmt_indent_multi.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_indent_multi.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_indent_multi, 10, 0, 1, 5)
         self.namecmt_indent_multi = QtWidgets.QLabel("cmt_indent_multi")
         self.namecmt_indent_multi.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9869,7 +9869,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_c_group, 12, 0, 1, 5)
         if self.tr("code_cmt_c_group")!="code_cmt_c_group":
             self.codecmt_c_group = QtWidgets.QLabel(self.tr("code_cmt_c_group"))
-            self.codecmt_c_group.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_c_group.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_c_group, 13, 0, 1, 5)
         self.namecmt_c_group = QtWidgets.QLabel("cmt_c_group")
         self.namecmt_c_group.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9884,7 +9884,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_c_nl_start, 15, 0, 1, 5)
         if self.tr("code_cmt_c_nl_start")!="code_cmt_c_nl_start":
             self.codecmt_c_nl_start = QtWidgets.QLabel(self.tr("code_cmt_c_nl_start"))
-            self.codecmt_c_nl_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_c_nl_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_c_nl_start, 16, 0, 1, 5)
         self.namecmt_c_nl_start = QtWidgets.QLabel("cmt_c_nl_start")
         self.namecmt_c_nl_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9899,7 +9899,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_c_nl_end, 18, 0, 1, 5)
         if self.tr("code_cmt_c_nl_end")!="code_cmt_c_nl_end":
             self.codecmt_c_nl_end = QtWidgets.QLabel(self.tr("code_cmt_c_nl_end"))
-            self.codecmt_c_nl_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_c_nl_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_c_nl_end, 19, 0, 1, 5)
         self.namecmt_c_nl_end = QtWidgets.QLabel("cmt_c_nl_end")
         self.namecmt_c_nl_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9914,7 +9914,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_cpp_to_c, 21, 0, 1, 5)
         if self.tr("code_cmt_cpp_to_c")!="code_cmt_cpp_to_c":
             self.codecmt_cpp_to_c = QtWidgets.QLabel(self.tr("code_cmt_cpp_to_c"))
-            self.codecmt_cpp_to_c.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_cpp_to_c.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_cpp_to_c, 22, 0, 1, 5)
         self.namecmt_cpp_to_c = QtWidgets.QLabel("cmt_cpp_to_c")
         self.namecmt_cpp_to_c.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9929,7 +9929,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_cpp_group, 24, 0, 1, 5)
         if self.tr("code_cmt_cpp_group")!="code_cmt_cpp_group":
             self.codecmt_cpp_group = QtWidgets.QLabel(self.tr("code_cmt_cpp_group"))
-            self.codecmt_cpp_group.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_cpp_group.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_cpp_group, 25, 0, 1, 5)
         self.namecmt_cpp_group = QtWidgets.QLabel("cmt_cpp_group")
         self.namecmt_cpp_group.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9944,7 +9944,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_cpp_nl_start, 27, 0, 1, 5)
         if self.tr("code_cmt_cpp_nl_start")!="code_cmt_cpp_nl_start":
             self.codecmt_cpp_nl_start = QtWidgets.QLabel(self.tr("code_cmt_cpp_nl_start"))
-            self.codecmt_cpp_nl_start.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_cpp_nl_start.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_cpp_nl_start, 28, 0, 1, 5)
         self.namecmt_cpp_nl_start = QtWidgets.QLabel("cmt_cpp_nl_start")
         self.namecmt_cpp_nl_start.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9959,7 +9959,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_cpp_nl_end, 30, 0, 1, 5)
         if self.tr("code_cmt_cpp_nl_end")!="code_cmt_cpp_nl_end":
             self.codecmt_cpp_nl_end = QtWidgets.QLabel(self.tr("code_cmt_cpp_nl_end"))
-            self.codecmt_cpp_nl_end.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_cpp_nl_end.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_cpp_nl_end, 31, 0, 1, 5)
         self.namecmt_cpp_nl_end = QtWidgets.QLabel("cmt_cpp_nl_end")
         self.namecmt_cpp_nl_end.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9974,7 +9974,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_star_cont, 33, 0, 1, 5)
         if self.tr("code_cmt_star_cont")!="code_cmt_star_cont":
             self.codecmt_star_cont = QtWidgets.QLabel(self.tr("code_cmt_star_cont"))
-            self.codecmt_star_cont.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_star_cont.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_star_cont, 34, 0, 1, 5)
         self.namecmt_star_cont = QtWidgets.QLabel("cmt_star_cont")
         self.namecmt_star_cont.setFont(QtGui.QFont('Arial', 14, 2))
@@ -9989,7 +9989,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_sp_before_star_cont, 36, 0, 1, 5)
         if self.tr("code_cmt_sp_before_star_cont")!="code_cmt_sp_before_star_cont":
             self.codecmt_sp_before_star_cont = QtWidgets.QLabel(self.tr("code_cmt_sp_before_star_cont"))
-            self.codecmt_sp_before_star_cont.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_sp_before_star_cont.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_sp_before_star_cont, 37, 0, 1, 5)
         self.namecmt_sp_before_star_cont = QtWidgets.QLabel("cmt_sp_before_star_cont")
         self.namecmt_sp_before_star_cont.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10005,7 +10005,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_sp_after_star_cont, 39, 0, 1, 5)
         if self.tr("code_cmt_sp_after_star_cont")!="code_cmt_sp_after_star_cont":
             self.codecmt_sp_after_star_cont = QtWidgets.QLabel(self.tr("code_cmt_sp_after_star_cont"))
-            self.codecmt_sp_after_star_cont.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_sp_after_star_cont.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_sp_after_star_cont, 40, 0, 1, 5)
         self.namecmt_sp_after_star_cont = QtWidgets.QLabel("cmt_sp_after_star_cont")
         self.namecmt_sp_after_star_cont.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10021,7 +10021,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_multi_check_last, 42, 0, 1, 5)
         if self.tr("code_cmt_multi_check_last")!="code_cmt_multi_check_last":
             self.codecmt_multi_check_last = QtWidgets.QLabel(self.tr("code_cmt_multi_check_last"))
-            self.codecmt_multi_check_last.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_multi_check_last.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_multi_check_last, 43, 0, 1, 5)
         self.namecmt_multi_check_last = QtWidgets.QLabel("cmt_multi_check_last")
         self.namecmt_multi_check_last.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10036,7 +10036,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_multi_first_len_minimum, 45, 0, 1, 5)
         if self.tr("code_cmt_multi_first_len_minimum")!="code_cmt_multi_first_len_minimum":
             self.codecmt_multi_first_len_minimum = QtWidgets.QLabel(self.tr("code_cmt_multi_first_len_minimum"))
-            self.codecmt_multi_first_len_minimum.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_multi_first_len_minimum.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_multi_first_len_minimum, 46, 0, 1, 5)
         self.namecmt_multi_first_len_minimum = QtWidgets.QLabel("cmt_multi_first_len_minimum")
         self.namecmt_multi_first_len_minimum.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10052,7 +10052,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_file_header, 48, 0, 1, 5)
         if self.tr("code_cmt_insert_file_header")!="code_cmt_insert_file_header":
             self.codecmt_insert_file_header = QtWidgets.QLabel(self.tr("code_cmt_insert_file_header"))
-            self.codecmt_insert_file_header.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_file_header.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_file_header, 49, 0, 1, 5)
         self.namecmt_insert_file_header = QtWidgets.QLabel("cmt_insert_file_header")
         self.namecmt_insert_file_header.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10066,7 +10066,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_file_footer, 51, 0, 1, 5)
         if self.tr("code_cmt_insert_file_footer")!="code_cmt_insert_file_footer":
             self.codecmt_insert_file_footer = QtWidgets.QLabel(self.tr("code_cmt_insert_file_footer"))
-            self.codecmt_insert_file_footer.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_file_footer.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_file_footer, 52, 0, 1, 5)
         self.namecmt_insert_file_footer = QtWidgets.QLabel("cmt_insert_file_footer")
         self.namecmt_insert_file_footer.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10080,7 +10080,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_func_header, 54, 0, 1, 5)
         if self.tr("code_cmt_insert_func_header")!="code_cmt_insert_func_header":
             self.codecmt_insert_func_header = QtWidgets.QLabel(self.tr("code_cmt_insert_func_header"))
-            self.codecmt_insert_func_header.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_func_header.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_func_header, 55, 0, 1, 5)
         self.namecmt_insert_func_header = QtWidgets.QLabel("cmt_insert_func_header")
         self.namecmt_insert_func_header.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10094,7 +10094,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_class_header, 57, 0, 1, 5)
         if self.tr("code_cmt_insert_class_header")!="code_cmt_insert_class_header":
             self.codecmt_insert_class_header = QtWidgets.QLabel(self.tr("code_cmt_insert_class_header"))
-            self.codecmt_insert_class_header.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_class_header.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_class_header, 58, 0, 1, 5)
         self.namecmt_insert_class_header = QtWidgets.QLabel("cmt_insert_class_header")
         self.namecmt_insert_class_header.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10108,7 +10108,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_oc_msg_header, 60, 0, 1, 5)
         if self.tr("code_cmt_insert_oc_msg_header")!="code_cmt_insert_oc_msg_header":
             self.codecmt_insert_oc_msg_header = QtWidgets.QLabel(self.tr("code_cmt_insert_oc_msg_header"))
-            self.codecmt_insert_oc_msg_header.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_oc_msg_header.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_oc_msg_header, 61, 0, 1, 5)
         self.namecmt_insert_oc_msg_header = QtWidgets.QLabel("cmt_insert_oc_msg_header")
         self.namecmt_insert_oc_msg_header.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10122,7 +10122,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_before_preproc, 63, 0, 1, 5)
         if self.tr("code_cmt_insert_before_preproc")!="code_cmt_insert_before_preproc":
             self.codecmt_insert_before_preproc = QtWidgets.QLabel(self.tr("code_cmt_insert_before_preproc"))
-            self.codecmt_insert_before_preproc.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_before_preproc.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_before_preproc, 64, 0, 1, 5)
         self.namecmt_insert_before_preproc = QtWidgets.QLabel("cmt_insert_before_preproc")
         self.namecmt_insert_before_preproc.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10137,7 +10137,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_before_inlines, 66, 0, 1, 5)
         if self.tr("code_cmt_insert_before_inlines")!="code_cmt_insert_before_inlines":
             self.codecmt_insert_before_inlines = QtWidgets.QLabel(self.tr("code_cmt_insert_before_inlines"))
-            self.codecmt_insert_before_inlines.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_before_inlines.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_before_inlines, 67, 0, 1, 5)
         self.namecmt_insert_before_inlines = QtWidgets.QLabel("cmt_insert_before_inlines")
         self.namecmt_insert_before_inlines.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10152,7 +10152,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt9.addWidget(self.labelcmt_insert_before_ctor_dtor, 69, 0, 1, 5)
         if self.tr("code_cmt_insert_before_ctor_dtor")!="code_cmt_insert_before_ctor_dtor":
             self.codecmt_insert_before_ctor_dtor = QtWidgets.QLabel(self.tr("code_cmt_insert_before_ctor_dtor"))
-            self.codecmt_insert_before_ctor_dtor.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codecmt_insert_before_ctor_dtor.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt9.addWidget(self.codecmt_insert_before_ctor_dtor, 70, 0, 1, 5)
         self.namecmt_insert_before_ctor_dtor = QtWidgets.QLabel("cmt_insert_before_ctor_dtor")
         self.namecmt_insert_before_ctor_dtor.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10170,7 +10170,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_do, 0, 0, 1, 5)
         if self.tr("code_mod_full_brace_do")!="code_mod_full_brace_do":
             self.codemod_full_brace_do = QtWidgets.QLabel(self.tr("code_mod_full_brace_do"))
-            self.codemod_full_brace_do.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_do.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_do, 1, 0, 1, 5)
         self.namemod_full_brace_do = QtWidgets.QLabel("mod_full_brace_do")
         self.namemod_full_brace_do.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10185,7 +10185,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_for, 3, 0, 1, 5)
         if self.tr("code_mod_full_brace_for")!="code_mod_full_brace_for":
             self.codemod_full_brace_for = QtWidgets.QLabel(self.tr("code_mod_full_brace_for"))
-            self.codemod_full_brace_for.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_for.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_for, 4, 0, 1, 5)
         self.namemod_full_brace_for = QtWidgets.QLabel("mod_full_brace_for")
         self.namemod_full_brace_for.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10200,7 +10200,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_function, 6, 0, 1, 5)
         if self.tr("code_mod_full_brace_function")!="code_mod_full_brace_function":
             self.codemod_full_brace_function = QtWidgets.QLabel(self.tr("code_mod_full_brace_function"))
-            self.codemod_full_brace_function.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_function.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_function, 7, 0, 1, 5)
         self.namemod_full_brace_function = QtWidgets.QLabel("mod_full_brace_function")
         self.namemod_full_brace_function.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10215,7 +10215,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_if, 9, 0, 1, 5)
         if self.tr("code_mod_full_brace_if")!="code_mod_full_brace_if":
             self.codemod_full_brace_if = QtWidgets.QLabel(self.tr("code_mod_full_brace_if"))
-            self.codemod_full_brace_if.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_if.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_if, 10, 0, 1, 5)
         self.namemod_full_brace_if = QtWidgets.QLabel("mod_full_brace_if")
         self.namemod_full_brace_if.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10230,7 +10230,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_if_chain, 12, 0, 1, 5)
         if self.tr("code_mod_full_brace_if_chain")!="code_mod_full_brace_if_chain":
             self.codemod_full_brace_if_chain = QtWidgets.QLabel(self.tr("code_mod_full_brace_if_chain"))
-            self.codemod_full_brace_if_chain.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_if_chain.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_if_chain, 13, 0, 1, 5)
         self.namemod_full_brace_if_chain = QtWidgets.QLabel("mod_full_brace_if_chain")
         self.namemod_full_brace_if_chain.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10245,7 +10245,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_if_chain_only, 15, 0, 1, 5)
         if self.tr("code_mod_full_brace_if_chain_only")!="code_mod_full_brace_if_chain_only":
             self.codemod_full_brace_if_chain_only = QtWidgets.QLabel(self.tr("code_mod_full_brace_if_chain_only"))
-            self.codemod_full_brace_if_chain_only.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_if_chain_only.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_if_chain_only, 16, 0, 1, 5)
         self.namemod_full_brace_if_chain_only = QtWidgets.QLabel("mod_full_brace_if_chain_only")
         self.namemod_full_brace_if_chain_only.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10260,7 +10260,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_while, 18, 0, 1, 5)
         if self.tr("code_mod_full_brace_while")!="code_mod_full_brace_while":
             self.codemod_full_brace_while = QtWidgets.QLabel(self.tr("code_mod_full_brace_while"))
-            self.codemod_full_brace_while.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_while.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_while, 19, 0, 1, 5)
         self.namemod_full_brace_while = QtWidgets.QLabel("mod_full_brace_while")
         self.namemod_full_brace_while.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10275,7 +10275,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_using, 21, 0, 1, 5)
         if self.tr("code_mod_full_brace_using")!="code_mod_full_brace_using":
             self.codemod_full_brace_using = QtWidgets.QLabel(self.tr("code_mod_full_brace_using"))
-            self.codemod_full_brace_using.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_using.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_using, 22, 0, 1, 5)
         self.namemod_full_brace_using = QtWidgets.QLabel("mod_full_brace_using")
         self.namemod_full_brace_using.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10290,7 +10290,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_nl, 24, 0, 1, 5)
         if self.tr("code_mod_full_brace_nl")!="code_mod_full_brace_nl":
             self.codemod_full_brace_nl = QtWidgets.QLabel(self.tr("code_mod_full_brace_nl"))
-            self.codemod_full_brace_nl.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_nl.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_nl, 25, 0, 1, 5)
         self.namemod_full_brace_nl = QtWidgets.QLabel("mod_full_brace_nl")
         self.namemod_full_brace_nl.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10306,7 +10306,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_brace_nl_block_rem_mlcond, 27, 0, 1, 5)
         if self.tr("code_mod_full_brace_nl_block_rem_mlcond")!="code_mod_full_brace_nl_block_rem_mlcond":
             self.codemod_full_brace_nl_block_rem_mlcond = QtWidgets.QLabel(self.tr("code_mod_full_brace_nl_block_rem_mlcond"))
-            self.codemod_full_brace_nl_block_rem_mlcond.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_brace_nl_block_rem_mlcond.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_brace_nl_block_rem_mlcond, 28, 0, 1, 5)
         self.namemod_full_brace_nl_block_rem_mlcond = QtWidgets.QLabel("mod_full_brace_nl_block_rem_mlcond")
         self.namemod_full_brace_nl_block_rem_mlcond.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10321,7 +10321,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_paren_on_return, 30, 0, 1, 5)
         if self.tr("code_mod_paren_on_return")!="code_mod_paren_on_return":
             self.codemod_paren_on_return = QtWidgets.QLabel(self.tr("code_mod_paren_on_return"))
-            self.codemod_paren_on_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_paren_on_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_paren_on_return, 31, 0, 1, 5)
         self.namemod_paren_on_return = QtWidgets.QLabel("mod_paren_on_return")
         self.namemod_paren_on_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10336,7 +10336,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_pawn_semicolon, 33, 0, 1, 5)
         if self.tr("code_mod_pawn_semicolon")!="code_mod_pawn_semicolon":
             self.codemod_pawn_semicolon = QtWidgets.QLabel(self.tr("code_mod_pawn_semicolon"))
-            self.codemod_pawn_semicolon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_pawn_semicolon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_pawn_semicolon, 34, 0, 1, 5)
         self.namemod_pawn_semicolon = QtWidgets.QLabel("mod_pawn_semicolon")
         self.namemod_pawn_semicolon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10351,7 +10351,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_full_paren_if_bool, 36, 0, 1, 5)
         if self.tr("code_mod_full_paren_if_bool")!="code_mod_full_paren_if_bool":
             self.codemod_full_paren_if_bool = QtWidgets.QLabel(self.tr("code_mod_full_paren_if_bool"))
-            self.codemod_full_paren_if_bool.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_full_paren_if_bool.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_full_paren_if_bool, 37, 0, 1, 5)
         self.namemod_full_paren_if_bool = QtWidgets.QLabel("mod_full_paren_if_bool")
         self.namemod_full_paren_if_bool.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10366,7 +10366,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_remove_extra_semicolon, 39, 0, 1, 5)
         if self.tr("code_mod_remove_extra_semicolon")!="code_mod_remove_extra_semicolon":
             self.codemod_remove_extra_semicolon = QtWidgets.QLabel(self.tr("code_mod_remove_extra_semicolon"))
-            self.codemod_remove_extra_semicolon.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_remove_extra_semicolon.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_remove_extra_semicolon, 40, 0, 1, 5)
         self.namemod_remove_extra_semicolon = QtWidgets.QLabel("mod_remove_extra_semicolon")
         self.namemod_remove_extra_semicolon.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10381,7 +10381,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_add_long_function_closebrace_comment, 42, 0, 1, 5)
         if self.tr("code_mod_add_long_function_closebrace_comment")!="code_mod_add_long_function_closebrace_comment":
             self.codemod_add_long_function_closebrace_comment = QtWidgets.QLabel(self.tr("code_mod_add_long_function_closebrace_comment"))
-            self.codemod_add_long_function_closebrace_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_add_long_function_closebrace_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_add_long_function_closebrace_comment, 43, 0, 1, 5)
         self.namemod_add_long_function_closebrace_comment = QtWidgets.QLabel("mod_add_long_function_closebrace_comment")
         self.namemod_add_long_function_closebrace_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10397,7 +10397,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_add_long_namespace_closebrace_comment, 45, 0, 1, 5)
         if self.tr("code_mod_add_long_namespace_closebrace_comment")!="code_mod_add_long_namespace_closebrace_comment":
             self.codemod_add_long_namespace_closebrace_comment = QtWidgets.QLabel(self.tr("code_mod_add_long_namespace_closebrace_comment"))
-            self.codemod_add_long_namespace_closebrace_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_add_long_namespace_closebrace_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_add_long_namespace_closebrace_comment, 46, 0, 1, 5)
         self.namemod_add_long_namespace_closebrace_comment = QtWidgets.QLabel("mod_add_long_namespace_closebrace_comment")
         self.namemod_add_long_namespace_closebrace_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10413,7 +10413,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_add_long_class_closebrace_comment, 48, 0, 1, 5)
         if self.tr("code_mod_add_long_class_closebrace_comment")!="code_mod_add_long_class_closebrace_comment":
             self.codemod_add_long_class_closebrace_comment = QtWidgets.QLabel(self.tr("code_mod_add_long_class_closebrace_comment"))
-            self.codemod_add_long_class_closebrace_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_add_long_class_closebrace_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_add_long_class_closebrace_comment, 49, 0, 1, 5)
         self.namemod_add_long_class_closebrace_comment = QtWidgets.QLabel("mod_add_long_class_closebrace_comment")
         self.namemod_add_long_class_closebrace_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10429,7 +10429,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_add_long_switch_closebrace_comment, 51, 0, 1, 5)
         if self.tr("code_mod_add_long_switch_closebrace_comment")!="code_mod_add_long_switch_closebrace_comment":
             self.codemod_add_long_switch_closebrace_comment = QtWidgets.QLabel(self.tr("code_mod_add_long_switch_closebrace_comment"))
-            self.codemod_add_long_switch_closebrace_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_add_long_switch_closebrace_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_add_long_switch_closebrace_comment, 52, 0, 1, 5)
         self.namemod_add_long_switch_closebrace_comment = QtWidgets.QLabel("mod_add_long_switch_closebrace_comment")
         self.namemod_add_long_switch_closebrace_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10445,7 +10445,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_add_long_ifdef_endif_comment, 54, 0, 1, 5)
         if self.tr("code_mod_add_long_ifdef_endif_comment")!="code_mod_add_long_ifdef_endif_comment":
             self.codemod_add_long_ifdef_endif_comment = QtWidgets.QLabel(self.tr("code_mod_add_long_ifdef_endif_comment"))
-            self.codemod_add_long_ifdef_endif_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_add_long_ifdef_endif_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_add_long_ifdef_endif_comment, 55, 0, 1, 5)
         self.namemod_add_long_ifdef_endif_comment = QtWidgets.QLabel("mod_add_long_ifdef_endif_comment")
         self.namemod_add_long_ifdef_endif_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10461,7 +10461,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_add_long_ifdef_else_comment, 57, 0, 1, 5)
         if self.tr("code_mod_add_long_ifdef_else_comment")!="code_mod_add_long_ifdef_else_comment":
             self.codemod_add_long_ifdef_else_comment = QtWidgets.QLabel(self.tr("code_mod_add_long_ifdef_else_comment"))
-            self.codemod_add_long_ifdef_else_comment.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_add_long_ifdef_else_comment.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_add_long_ifdef_else_comment, 58, 0, 1, 5)
         self.namemod_add_long_ifdef_else_comment = QtWidgets.QLabel("mod_add_long_ifdef_else_comment")
         self.namemod_add_long_ifdef_else_comment.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10477,7 +10477,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_case_sensitive, 60, 0, 1, 5)
         if self.tr("code_mod_sort_case_sensitive")!="code_mod_sort_case_sensitive":
             self.codemod_sort_case_sensitive = QtWidgets.QLabel(self.tr("code_mod_sort_case_sensitive"))
-            self.codemod_sort_case_sensitive.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_case_sensitive.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_case_sensitive, 61, 0, 1, 5)
         self.namemod_sort_case_sensitive = QtWidgets.QLabel("mod_sort_case_sensitive")
         self.namemod_sort_case_sensitive.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10492,7 +10492,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_import, 63, 0, 1, 5)
         if self.tr("code_mod_sort_import")!="code_mod_sort_import":
             self.codemod_sort_import = QtWidgets.QLabel(self.tr("code_mod_sort_import"))
-            self.codemod_sort_import.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_import.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_import, 64, 0, 1, 5)
         self.namemod_sort_import = QtWidgets.QLabel("mod_sort_import")
         self.namemod_sort_import.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10507,7 +10507,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_using, 66, 0, 1, 5)
         if self.tr("code_mod_sort_using")!="code_mod_sort_using":
             self.codemod_sort_using = QtWidgets.QLabel(self.tr("code_mod_sort_using"))
-            self.codemod_sort_using.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_using.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_using, 67, 0, 1, 5)
         self.namemod_sort_using = QtWidgets.QLabel("mod_sort_using")
         self.namemod_sort_using.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10522,7 +10522,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_include, 69, 0, 1, 5)
         if self.tr("code_mod_sort_include")!="code_mod_sort_include":
             self.codemod_sort_include = QtWidgets.QLabel(self.tr("code_mod_sort_include"))
-            self.codemod_sort_include.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_include.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_include, 70, 0, 1, 5)
         self.namemod_sort_include = QtWidgets.QLabel("mod_sort_include")
         self.namemod_sort_include.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10537,7 +10537,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_incl_import_prioritize_filename, 72, 0, 1, 5)
         if self.tr("code_mod_sort_incl_import_prioritize_filename")!="code_mod_sort_incl_import_prioritize_filename":
             self.codemod_sort_incl_import_prioritize_filename = QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_filename"))
-            self.codemod_sort_incl_import_prioritize_filename.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_incl_import_prioritize_filename.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_incl_import_prioritize_filename, 73, 0, 1, 5)
         self.namemod_sort_incl_import_prioritize_filename = QtWidgets.QLabel("mod_sort_incl_import_prioritize_filename")
         self.namemod_sort_incl_import_prioritize_filename.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10552,7 +10552,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_incl_import_prioritize_extensionless, 75, 0, 1, 5)
         if self.tr("code_mod_sort_incl_import_prioritize_extensionless")!="code_mod_sort_incl_import_prioritize_extensionless":
             self.codemod_sort_incl_import_prioritize_extensionless = QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_extensionless"))
-            self.codemod_sort_incl_import_prioritize_extensionless.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_incl_import_prioritize_extensionless.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_incl_import_prioritize_extensionless, 76, 0, 1, 5)
         self.namemod_sort_incl_import_prioritize_extensionless = QtWidgets.QLabel("mod_sort_incl_import_prioritize_extensionless")
         self.namemod_sort_incl_import_prioritize_extensionless.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10567,7 +10567,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_incl_import_prioritize_angle_over_quotes, 78, 0, 1, 5)
         if self.tr("code_mod_sort_incl_import_prioritize_angle_over_quotes")!="code_mod_sort_incl_import_prioritize_angle_over_quotes":
             self.codemod_sort_incl_import_prioritize_angle_over_quotes = QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_prioritize_angle_over_quotes"))
-            self.codemod_sort_incl_import_prioritize_angle_over_quotes.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_incl_import_prioritize_angle_over_quotes.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_incl_import_prioritize_angle_over_quotes, 79, 0, 1, 5)
         self.namemod_sort_incl_import_prioritize_angle_over_quotes = QtWidgets.QLabel("mod_sort_incl_import_prioritize_angle_over_quotes")
         self.namemod_sort_incl_import_prioritize_angle_over_quotes.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10582,7 +10582,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_incl_import_ignore_extension, 81, 0, 1, 5)
         if self.tr("code_mod_sort_incl_import_ignore_extension")!="code_mod_sort_incl_import_ignore_extension":
             self.codemod_sort_incl_import_ignore_extension = QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_ignore_extension"))
-            self.codemod_sort_incl_import_ignore_extension.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_incl_import_ignore_extension.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_incl_import_ignore_extension, 82, 0, 1, 5)
         self.namemod_sort_incl_import_ignore_extension = QtWidgets.QLabel("mod_sort_incl_import_ignore_extension")
         self.namemod_sort_incl_import_ignore_extension.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10597,7 +10597,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_incl_import_grouping_enabled, 84, 0, 1, 5)
         if self.tr("code_mod_sort_incl_import_grouping_enabled")!="code_mod_sort_incl_import_grouping_enabled":
             self.codemod_sort_incl_import_grouping_enabled = QtWidgets.QLabel(self.tr("code_mod_sort_incl_import_grouping_enabled"))
-            self.codemod_sort_incl_import_grouping_enabled.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_incl_import_grouping_enabled.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_incl_import_grouping_enabled, 85, 0, 1, 5)
         self.namemod_sort_incl_import_grouping_enabled = QtWidgets.QLabel("mod_sort_incl_import_grouping_enabled")
         self.namemod_sort_incl_import_grouping_enabled.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10612,7 +10612,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_move_case_break, 87, 0, 1, 5)
         if self.tr("code_mod_move_case_break")!="code_mod_move_case_break":
             self.codemod_move_case_break = QtWidgets.QLabel(self.tr("code_mod_move_case_break"))
-            self.codemod_move_case_break.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_move_case_break.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_move_case_break, 88, 0, 1, 5)
         self.namemod_move_case_break = QtWidgets.QLabel("mod_move_case_break")
         self.namemod_move_case_break.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10627,7 +10627,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_case_brace, 90, 0, 1, 5)
         if self.tr("code_mod_case_brace")!="code_mod_case_brace":
             self.codemod_case_brace = QtWidgets.QLabel(self.tr("code_mod_case_brace"))
-            self.codemod_case_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_case_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_case_brace, 91, 0, 1, 5)
         self.namemod_case_brace = QtWidgets.QLabel("mod_case_brace")
         self.namemod_case_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10642,7 +10642,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_remove_empty_return, 93, 0, 1, 5)
         if self.tr("code_mod_remove_empty_return")!="code_mod_remove_empty_return":
             self.codemod_remove_empty_return = QtWidgets.QLabel(self.tr("code_mod_remove_empty_return"))
-            self.codemod_remove_empty_return.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_remove_empty_return.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_remove_empty_return, 94, 0, 1, 5)
         self.namemod_remove_empty_return = QtWidgets.QLabel("mod_remove_empty_return")
         self.namemod_remove_empty_return.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10657,7 +10657,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_enum_last_comma, 96, 0, 1, 5)
         if self.tr("code_mod_enum_last_comma")!="code_mod_enum_last_comma":
             self.codemod_enum_last_comma = QtWidgets.QLabel(self.tr("code_mod_enum_last_comma"))
-            self.codemod_enum_last_comma.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_enum_last_comma.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_enum_last_comma, 97, 0, 1, 5)
         self.namemod_enum_last_comma = QtWidgets.QLabel("mod_enum_last_comma")
         self.namemod_enum_last_comma.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10672,7 +10672,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_properties, 99, 0, 1, 5)
         if self.tr("code_mod_sort_oc_properties")!="code_mod_sort_oc_properties":
             self.codemod_sort_oc_properties = QtWidgets.QLabel(self.tr("code_mod_sort_oc_properties"))
-            self.codemod_sort_oc_properties.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_properties.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_properties, 100, 0, 1, 5)
         self.namemod_sort_oc_properties = QtWidgets.QLabel("mod_sort_oc_properties")
         self.namemod_sort_oc_properties.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10687,7 +10687,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_property_class_weight, 102, 0, 1, 5)
         if self.tr("code_mod_sort_oc_property_class_weight")!="code_mod_sort_oc_property_class_weight":
             self.codemod_sort_oc_property_class_weight = QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_class_weight"))
-            self.codemod_sort_oc_property_class_weight.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_property_class_weight.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_property_class_weight, 103, 0, 1, 5)
         self.namemod_sort_oc_property_class_weight = QtWidgets.QLabel("mod_sort_oc_property_class_weight")
         self.namemod_sort_oc_property_class_weight.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10703,7 +10703,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_property_thread_safe_weight, 105, 0, 1, 5)
         if self.tr("code_mod_sort_oc_property_thread_safe_weight")!="code_mod_sort_oc_property_thread_safe_weight":
             self.codemod_sort_oc_property_thread_safe_weight = QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_thread_safe_weight"))
-            self.codemod_sort_oc_property_thread_safe_weight.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_property_thread_safe_weight.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_property_thread_safe_weight, 106, 0, 1, 5)
         self.namemod_sort_oc_property_thread_safe_weight = QtWidgets.QLabel("mod_sort_oc_property_thread_safe_weight")
         self.namemod_sort_oc_property_thread_safe_weight.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10719,7 +10719,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_property_readwrite_weight, 108, 0, 1, 5)
         if self.tr("code_mod_sort_oc_property_readwrite_weight")!="code_mod_sort_oc_property_readwrite_weight":
             self.codemod_sort_oc_property_readwrite_weight = QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_readwrite_weight"))
-            self.codemod_sort_oc_property_readwrite_weight.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_property_readwrite_weight.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_property_readwrite_weight, 109, 0, 1, 5)
         self.namemod_sort_oc_property_readwrite_weight = QtWidgets.QLabel("mod_sort_oc_property_readwrite_weight")
         self.namemod_sort_oc_property_readwrite_weight.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10735,7 +10735,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_property_reference_weight, 111, 0, 1, 5)
         if self.tr("code_mod_sort_oc_property_reference_weight")!="code_mod_sort_oc_property_reference_weight":
             self.codemod_sort_oc_property_reference_weight = QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_reference_weight"))
-            self.codemod_sort_oc_property_reference_weight.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_property_reference_weight.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_property_reference_weight, 112, 0, 1, 5)
         self.namemod_sort_oc_property_reference_weight = QtWidgets.QLabel("mod_sort_oc_property_reference_weight")
         self.namemod_sort_oc_property_reference_weight.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10751,7 +10751,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_property_getter_weight, 114, 0, 1, 5)
         if self.tr("code_mod_sort_oc_property_getter_weight")!="code_mod_sort_oc_property_getter_weight":
             self.codemod_sort_oc_property_getter_weight = QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_getter_weight"))
-            self.codemod_sort_oc_property_getter_weight.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_property_getter_weight.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_property_getter_weight, 115, 0, 1, 5)
         self.namemod_sort_oc_property_getter_weight = QtWidgets.QLabel("mod_sort_oc_property_getter_weight")
         self.namemod_sort_oc_property_getter_weight.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10767,7 +10767,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_property_setter_weight, 117, 0, 1, 5)
         if self.tr("code_mod_sort_oc_property_setter_weight")!="code_mod_sort_oc_property_setter_weight":
             self.codemod_sort_oc_property_setter_weight = QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_setter_weight"))
-            self.codemod_sort_oc_property_setter_weight.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_property_setter_weight.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_property_setter_weight, 118, 0, 1, 5)
         self.namemod_sort_oc_property_setter_weight = QtWidgets.QLabel("mod_sort_oc_property_setter_weight")
         self.namemod_sort_oc_property_setter_weight.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10783,7 +10783,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt10.addWidget(self.labelmod_sort_oc_property_nullability_weight, 120, 0, 1, 5)
         if self.tr("code_mod_sort_oc_property_nullability_weight")!="code_mod_sort_oc_property_nullability_weight":
             self.codemod_sort_oc_property_nullability_weight = QtWidgets.QLabel(self.tr("code_mod_sort_oc_property_nullability_weight"))
-            self.codemod_sort_oc_property_nullability_weight.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codemod_sort_oc_property_nullability_weight.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt10.addWidget(self.codemod_sort_oc_property_nullability_weight, 121, 0, 1, 5)
         self.namemod_sort_oc_property_nullability_weight = QtWidgets.QLabel("mod_sort_oc_property_nullability_weight")
         self.namemod_sort_oc_property_nullability_weight.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10802,7 +10802,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent, 0, 0, 1, 5)
         if self.tr("code_pp_indent")!="code_pp_indent":
             self.codepp_indent = QtWidgets.QLabel(self.tr("code_pp_indent"))
-            self.codepp_indent.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent, 1, 0, 1, 5)
         self.namepp_indent = QtWidgets.QLabel("pp_indent")
         self.namepp_indent.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10817,7 +10817,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_at_level, 3, 0, 1, 5)
         if self.tr("code_pp_indent_at_level")!="code_pp_indent_at_level":
             self.codepp_indent_at_level = QtWidgets.QLabel(self.tr("code_pp_indent_at_level"))
-            self.codepp_indent_at_level.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_at_level.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_at_level, 4, 0, 1, 5)
         self.namepp_indent_at_level = QtWidgets.QLabel("pp_indent_at_level")
         self.namepp_indent_at_level.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10832,7 +10832,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_count, 6, 0, 1, 5)
         if self.tr("code_pp_indent_count")!="code_pp_indent_count":
             self.codepp_indent_count = QtWidgets.QLabel(self.tr("code_pp_indent_count"))
-            self.codepp_indent_count.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_count.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_count, 7, 0, 1, 5)
         self.namepp_indent_count = QtWidgets.QLabel("pp_indent_count")
         self.namepp_indent_count.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10848,7 +10848,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_space, 9, 0, 1, 5)
         if self.tr("code_pp_space")!="code_pp_space":
             self.codepp_space = QtWidgets.QLabel(self.tr("code_pp_space"))
-            self.codepp_space.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_space.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_space, 10, 0, 1, 5)
         self.namepp_space = QtWidgets.QLabel("pp_space")
         self.namepp_space.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10863,7 +10863,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_space_count, 12, 0, 1, 5)
         if self.tr("code_pp_space_count")!="code_pp_space_count":
             self.codepp_space_count = QtWidgets.QLabel(self.tr("code_pp_space_count"))
-            self.codepp_space_count.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_space_count.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_space_count, 13, 0, 1, 5)
         self.namepp_space_count = QtWidgets.QLabel("pp_space_count")
         self.namepp_space_count.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10879,7 +10879,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_region, 15, 0, 1, 5)
         if self.tr("code_pp_indent_region")!="code_pp_indent_region":
             self.codepp_indent_region = QtWidgets.QLabel(self.tr("code_pp_indent_region"))
-            self.codepp_indent_region.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_region.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_region, 16, 0, 1, 5)
         self.namepp_indent_region = QtWidgets.QLabel("pp_indent_region")
         self.namepp_indent_region.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10895,7 +10895,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_region_indent_code, 18, 0, 1, 5)
         if self.tr("code_pp_region_indent_code")!="code_pp_region_indent_code":
             self.codepp_region_indent_code = QtWidgets.QLabel(self.tr("code_pp_region_indent_code"))
-            self.codepp_region_indent_code.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_region_indent_code.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_region_indent_code, 19, 0, 1, 5)
         self.namepp_region_indent_code = QtWidgets.QLabel("pp_region_indent_code")
         self.namepp_region_indent_code.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10910,7 +10910,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_if, 21, 0, 1, 5)
         if self.tr("code_pp_indent_if")!="code_pp_indent_if":
             self.codepp_indent_if = QtWidgets.QLabel(self.tr("code_pp_indent_if"))
-            self.codepp_indent_if.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_if.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_if, 22, 0, 1, 5)
         self.namepp_indent_if = QtWidgets.QLabel("pp_indent_if")
         self.namepp_indent_if.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10926,7 +10926,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_if_indent_code, 24, 0, 1, 5)
         if self.tr("code_pp_if_indent_code")!="code_pp_if_indent_code":
             self.codepp_if_indent_code = QtWidgets.QLabel(self.tr("code_pp_if_indent_code"))
-            self.codepp_if_indent_code.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_if_indent_code.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_if_indent_code, 25, 0, 1, 5)
         self.namepp_if_indent_code = QtWidgets.QLabel("pp_if_indent_code")
         self.namepp_if_indent_code.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10941,7 +10941,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_define_at_level, 27, 0, 1, 5)
         if self.tr("code_pp_define_at_level")!="code_pp_define_at_level":
             self.codepp_define_at_level = QtWidgets.QLabel(self.tr("code_pp_define_at_level"))
-            self.codepp_define_at_level.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_define_at_level.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_define_at_level, 28, 0, 1, 5)
         self.namepp_define_at_level = QtWidgets.QLabel("pp_define_at_level")
         self.namepp_define_at_level.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10956,7 +10956,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_ignore_define_body, 30, 0, 1, 5)
         if self.tr("code_pp_ignore_define_body")!="code_pp_ignore_define_body":
             self.codepp_ignore_define_body = QtWidgets.QLabel(self.tr("code_pp_ignore_define_body"))
-            self.codepp_ignore_define_body.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_ignore_define_body.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_ignore_define_body, 31, 0, 1, 5)
         self.namepp_ignore_define_body = QtWidgets.QLabel("pp_ignore_define_body")
         self.namepp_ignore_define_body.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10971,7 +10971,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_case, 33, 0, 1, 5)
         if self.tr("code_pp_indent_case")!="code_pp_indent_case":
             self.codepp_indent_case = QtWidgets.QLabel(self.tr("code_pp_indent_case"))
-            self.codepp_indent_case.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_case.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_case, 34, 0, 1, 5)
         self.namepp_indent_case = QtWidgets.QLabel("pp_indent_case")
         self.namepp_indent_case.setFont(QtGui.QFont('Arial', 14, 2))
@@ -10986,7 +10986,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_func_def, 36, 0, 1, 5)
         if self.tr("code_pp_indent_func_def")!="code_pp_indent_func_def":
             self.codepp_indent_func_def = QtWidgets.QLabel(self.tr("code_pp_indent_func_def"))
-            self.codepp_indent_func_def.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_func_def.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_func_def, 37, 0, 1, 5)
         self.namepp_indent_func_def = QtWidgets.QLabel("pp_indent_func_def")
         self.namepp_indent_func_def.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11001,7 +11001,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_extern, 39, 0, 1, 5)
         if self.tr("code_pp_indent_extern")!="code_pp_indent_extern":
             self.codepp_indent_extern = QtWidgets.QLabel(self.tr("code_pp_indent_extern"))
-            self.codepp_indent_extern.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_extern.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_extern, 40, 0, 1, 5)
         self.namepp_indent_extern = QtWidgets.QLabel("pp_indent_extern")
         self.namepp_indent_extern.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11016,7 +11016,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt11.addWidget(self.labelpp_indent_brace, 42, 0, 1, 5)
         if self.tr("code_pp_indent_brace")!="code_pp_indent_brace":
             self.codepp_indent_brace = QtWidgets.QLabel(self.tr("code_pp_indent_brace"))
-            self.codepp_indent_brace.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codepp_indent_brace.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt11.addWidget(self.codepp_indent_brace, 43, 0, 1, 5)
         self.namepp_indent_brace = QtWidgets.QLabel("pp_indent_brace")
         self.namepp_indent_brace.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11034,7 +11034,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt12.addWidget(self.labelinclude_category_0, 0, 0, 1, 5)
         if self.tr("code_include_category_0")!="code_include_category_0":
             self.codeinclude_category_0 = QtWidgets.QLabel(self.tr("code_include_category_0"))
-            self.codeinclude_category_0.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeinclude_category_0.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt12.addWidget(self.codeinclude_category_0, 1, 0, 1, 5)
         self.nameinclude_category_0 = QtWidgets.QLabel("include_category_0")
         self.nameinclude_category_0.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11048,7 +11048,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt12.addWidget(self.labelinclude_category_1, 3, 0, 1, 5)
         if self.tr("code_include_category_1")!="code_include_category_1":
             self.codeinclude_category_1 = QtWidgets.QLabel(self.tr("code_include_category_1"))
-            self.codeinclude_category_1.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeinclude_category_1.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt12.addWidget(self.codeinclude_category_1, 4, 0, 1, 5)
         self.nameinclude_category_1 = QtWidgets.QLabel("include_category_1")
         self.nameinclude_category_1.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11062,7 +11062,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt12.addWidget(self.labelinclude_category_2, 6, 0, 1, 5)
         if self.tr("code_include_category_2")!="code_include_category_2":
             self.codeinclude_category_2 = QtWidgets.QLabel(self.tr("code_include_category_2"))
-            self.codeinclude_category_2.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeinclude_category_2.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt12.addWidget(self.codeinclude_category_2, 7, 0, 1, 5)
         self.nameinclude_category_2 = QtWidgets.QLabel("include_category_2")
         self.nameinclude_category_2.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11079,7 +11079,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt13.addWidget(self.labeluse_indent_func_call_param, 0, 0, 1, 5)
         if self.tr("code_use_indent_func_call_param")!="code_use_indent_func_call_param":
             self.codeuse_indent_func_call_param = QtWidgets.QLabel(self.tr("code_use_indent_func_call_param"))
-            self.codeuse_indent_func_call_param.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeuse_indent_func_call_param.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt13.addWidget(self.codeuse_indent_func_call_param, 1, 0, 1, 5)
         self.nameuse_indent_func_call_param = QtWidgets.QLabel("use_indent_func_call_param")
         self.nameuse_indent_func_call_param.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11094,7 +11094,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt13.addWidget(self.labeluse_indent_continue_only_once, 3, 0, 1, 5)
         if self.tr("code_use_indent_continue_only_once")!="code_use_indent_continue_only_once":
             self.codeuse_indent_continue_only_once = QtWidgets.QLabel(self.tr("code_use_indent_continue_only_once"))
-            self.codeuse_indent_continue_only_once.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeuse_indent_continue_only_once.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt13.addWidget(self.codeuse_indent_continue_only_once, 4, 0, 1, 5)
         self.nameuse_indent_continue_only_once = QtWidgets.QLabel("use_indent_continue_only_once")
         self.nameuse_indent_continue_only_once.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11109,7 +11109,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt13.addWidget(self.labelindent_cpp_lambda_only_once, 6, 0, 1, 5)
         if self.tr("code_indent_cpp_lambda_only_once")!="code_indent_cpp_lambda_only_once":
             self.codeindent_cpp_lambda_only_once = QtWidgets.QLabel(self.tr("code_indent_cpp_lambda_only_once"))
-            self.codeindent_cpp_lambda_only_once.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeindent_cpp_lambda_only_once.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt13.addWidget(self.codeindent_cpp_lambda_only_once, 7, 0, 1, 5)
         self.nameindent_cpp_lambda_only_once = QtWidgets.QLabel("indent_cpp_lambda_only_once")
         self.nameindent_cpp_lambda_only_once.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11124,7 +11124,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt13.addWidget(self.labeluse_sp_after_angle_always, 9, 0, 1, 5)
         if self.tr("code_use_sp_after_angle_always")!="code_use_sp_after_angle_always":
             self.codeuse_sp_after_angle_always = QtWidgets.QLabel(self.tr("code_use_sp_after_angle_always"))
-            self.codeuse_sp_after_angle_always.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeuse_sp_after_angle_always.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt13.addWidget(self.codeuse_sp_after_angle_always, 10, 0, 1, 5)
         self.nameuse_sp_after_angle_always = QtWidgets.QLabel("use_sp_after_angle_always")
         self.nameuse_sp_after_angle_always.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11139,7 +11139,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt13.addWidget(self.labeluse_options_overriding_for_qt_macros, 12, 0, 1, 5)
         if self.tr("code_use_options_overriding_for_qt_macros")!="code_use_options_overriding_for_qt_macros":
             self.codeuse_options_overriding_for_qt_macros = QtWidgets.QLabel(self.tr("code_use_options_overriding_for_qt_macros"))
-            self.codeuse_options_overriding_for_qt_macros.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeuse_options_overriding_for_qt_macros.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt13.addWidget(self.codeuse_options_overriding_for_qt_macros, 13, 0, 1, 5)
         self.nameuse_options_overriding_for_qt_macros = QtWidgets.QLabel("use_options_overriding_for_qt_macros")
         self.nameuse_options_overriding_for_qt_macros.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11154,7 +11154,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt13.addWidget(self.labeluse_form_feed_no_more_as_whitespace_character, 15, 0, 1, 5)
         if self.tr("code_use_form_feed_no_more_as_whitespace_character")!="code_use_form_feed_no_more_as_whitespace_character":
             self.codeuse_form_feed_no_more_as_whitespace_character = QtWidgets.QLabel(self.tr("code_use_form_feed_no_more_as_whitespace_character"))
-            self.codeuse_form_feed_no_more_as_whitespace_character.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codeuse_form_feed_no_more_as_whitespace_character.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt13.addWidget(self.codeuse_form_feed_no_more_as_whitespace_character, 16, 0, 1, 5)
         self.nameuse_form_feed_no_more_as_whitespace_character = QtWidgets.QLabel("use_form_feed_no_more_as_whitespace_character")
         self.nameuse_form_feed_no_more_as_whitespace_character.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11172,7 +11172,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt14.addWidget(self.labelwarn_level_tabs_found_in_verbatim_string_literals, 0, 0, 1, 5)
         if self.tr("code_warn_level_tabs_found_in_verbatim_string_literals")!="code_warn_level_tabs_found_in_verbatim_string_literals":
             self.codewarn_level_tabs_found_in_verbatim_string_literals = QtWidgets.QLabel(self.tr("code_warn_level_tabs_found_in_verbatim_string_literals"))
-            self.codewarn_level_tabs_found_in_verbatim_string_literals.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codewarn_level_tabs_found_in_verbatim_string_literals.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt14.addWidget(self.codewarn_level_tabs_found_in_verbatim_string_literals, 1, 0, 1, 5)
         self.namewarn_level_tabs_found_in_verbatim_string_literals = QtWidgets.QLabel("warn_level_tabs_found_in_verbatim_string_literals")
         self.namewarn_level_tabs_found_in_verbatim_string_literals.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11188,7 +11188,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt14.addWidget(self.labeldebug_max_number_of_loops, 3, 0, 1, 5)
         if self.tr("code_debug_max_number_of_loops")!="code_debug_max_number_of_loops":
             self.codedebug_max_number_of_loops = QtWidgets.QLabel(self.tr("code_debug_max_number_of_loops"))
-            self.codedebug_max_number_of_loops.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codedebug_max_number_of_loops.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt14.addWidget(self.codedebug_max_number_of_loops, 4, 0, 1, 5)
         self.namedebug_max_number_of_loops = QtWidgets.QLabel("debug_max_number_of_loops")
         self.namedebug_max_number_of_loops.setFont(QtGui.QFont('Arial', 14, 2))
@@ -11204,7 +11204,7 @@ class Widget(QtWidgets.QToolBox):
         self.lt14.addWidget(self.labeldebug_line_number_to_protocol, 6, 0, 1, 5)
         if self.tr("code_debug_line_number_to_protocol")!="code_debug_line_number_to_protocol":
             self.codedebug_line_number_to_protocol = QtWidgets.QLabel(self.tr("code_debug_line_number_to_protocol"))
-            self.codedebug_line_number_to_protocol.setFont(QtGui.QFont('Consolas', 12, 0))
+            self.codedebug_line_number_to_protocol.setFont(QtGui.QFont('monospace', 12, 0))
             self.lt14.addWidget(self.codedebug_line_number_to_protocol, 7, 0, 1, 5)
         self.namedebug_line_number_to_protocol = QtWidgets.QLabel("debug_line_number_to_protocol")
         self.namedebug_line_number_to_protocol.setFont(QtGui.QFont('Arial', 14, 2))

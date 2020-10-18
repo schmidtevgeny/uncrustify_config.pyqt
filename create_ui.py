@@ -1,6 +1,11 @@
+#!/usr/bin/python3
 import os
 import re
 
+FontName = "Arial"
+FontNameSize = 14
+FontCode = "monospace"
+FontCodeSize = 12
 regex = r"\.\s*[A-Z]"
 os.system("uncrustify --show-config > uncrustify.cfg")
 
@@ -90,7 +95,7 @@ init_strings = [
     ]
 get_strings = ['s=[]']
 load_strings = ['pass']
-filter_string=[]
+filter_string = []
 section_id = 0
 rowid = 0
 
@@ -105,19 +110,20 @@ for it in data:
         get_strings.append('s.append(wrap(self.tr(\"\\n{}\\n\")))'.format(it['title']))
     elif it['type'] == "option":
         s = parse_str(it['title'])
-        init_strings.append("self.label{} = QtWidgets.QLabel({})".format(it['name'],s))
+        init_strings.append("self.label{} = QtWidgets.QLabel({})".format(it['name'], s))
         init_strings.append("self.label{}.setWordWrap(True)".format(it['name']))
         init_strings.append("self.label{}.setStyleSheet(\"QLabel{{ border-top: 1px solid red;}}\")".format(it['name']))
-        init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, it['name'],rowid))
+        init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, it['name'], rowid))
         rowid += 1
         init_strings.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
-        init_strings.append("    self.code{} = QtWidgets.QLabel(self.tr(\"code_{}\"))".format(it['name'],it['name']))
-        init_strings.append("    self.code{}.setFont(QtGui.QFont('Consolas', 12, 0))".format(it['name']))
-        init_strings.append("    self.lt{}.addWidget(self.code{}, {}, 0, 1, 5)".format(section_id,it['name'], rowid))
+        init_strings.append("    self.code{} = QtWidgets.QLabel(self.tr(\"code_{}\"))".format(it['name'], it['name']))
+        init_strings.append(
+            "    self.code{}.setFont(QtGui.QFont('{}', {}, 0))".format(it['name'], FontCode, FontCodeSize))
+        init_strings.append("    self.lt{}.addWidget(self.code{}, {}, 0, 1, 5)".format(section_id, it['name'], rowid))
         rowid += 1
-        init_strings.append("self.name{} = QtWidgets.QLabel(\"{}\")".format(it['name'],it['name']))
-        init_strings.append("self.name{}.setFont(QtGui.QFont('Arial', 14, 2))".format(it['name']))
-        init_strings.append("self.lt{}.addWidget(self.name{}, {}, 0)".format(section_id,it['name'], rowid))
+        init_strings.append("self.name{} = QtWidgets.QLabel(\"{}\")".format(it['name'], it['name']))
+        init_strings.append("self.name{}.setFont(QtGui.QFont('{}', {}, 2))".format(it['name'], FontName, FontNameSize))
+        init_strings.append("self.lt{}.addWidget(self.name{}, {}, 0)".format(section_id, it['name'], rowid))
 
         if it['vtype'] == 'number':
             init_strings.append("self.{} = QtWidgets.QSpinBox()".format(it['name']))
@@ -219,16 +225,22 @@ for it in data:
         else:
             print(it['vtype'])
 
-        filter_string.append("self.label{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name']))
+        filter_string.append(
+            "self.label{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'], it['name']))
         filter_string.append("if self.tr(\"code_{}\")!=\"code_{}\":".format(it['name'], it['name']))
-        filter_string.append("    self.code{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name'],it['name']))
-        filter_string.append("self.name{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name']))
-        filter_string.append("self.{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'],it['name']))
+        filter_string.append(
+            "    self.code{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'], it['name'],
+                                                                                     it['name']))
+        filter_string.append(
+            "self.name{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'], it['name']))
+        filter_string.append("self.{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(it['name'], it['name']))
         rowid += 1
         pass
 
-for i in range(1,section_id+1):
-    init_strings.append("self.lt{}.addItem(QtWidgets.QSpacerItem(10, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding), self.lt{}.rowCount(), 0)".format(i,i))
+for i in range(1, section_id + 1):
+    init_strings.append(
+        "self.lt{}.addItem(QtWidgets.QSpacerItem(10, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding), self.lt{}.rowCount(), 0)".format(
+            i, i))
 
 get_strings.append("return '\\n'.join(s)")
 
