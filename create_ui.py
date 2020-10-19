@@ -118,6 +118,10 @@ for it in data:
         init_strings.append("self.addItem(self.widget{}, self.tr(\"{}\"))".format(section_id, it['title']))
         init_strings.append("self.lt{} = QtWidgets.QGridLayout(self.widget{})".format(section_id, section_id))
         rowid = 0
+        init_strings.append("self.label{} = QtWidgets.QLabel(\"{} help\")".format(section_id, it['title']))
+        init_strings.append("self.label{}.setWordWrap(True)".format(section_id))
+        init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, section_id, rowid))
+        rowid += 1
 
         get_strings.append('s.append(wrap(self.tr(\"\\n{}\\n\")))'.format(it['title']))
     elif it['type'] == "option":

@@ -44,18 +44,16 @@ class MainWidget(QtWidgets.QMainWindow):
         self.diff.triggered.connect(self.on_diff)
         self.panel.addAction(self.diff)
 
+        self.reload = QtWidgets.QAction("reload")
+        self.reload.triggered.connect(self.on_reload)
+        self.panel.addAction(self.reload)
+
         self.sppos = QtWidgets.QAction("vertical")
         self.sppos.setCheckable(True)
         self.sppos.toggled.connect(self.on_sppos)
         self.panel.addAction(self.sppos)
+        self.on_reload()
 
-        if os.path.exists('conf.cfg'):
-            self.config.load('conf.py')
-
-        if os.path.exists('in.cpp'):
-            f = open("in.cpp", "r", encoding="utf-8")
-            self.in_text.setPlainText(f.read())
-            f.close()
 
     def on_sppos(self, b):
         if b:
@@ -63,7 +61,14 @@ class MainWidget(QtWidgets.QMainWindow):
         else:
             self.right.setOrientation(QtCore.Qt.Horizontal)
         pass
+    def on_reload(self):
+        if os.path.exists('conf.cfg'):
+            self.config.load('conf.py')
 
+        if os.path.exists('in.cpp'):
+            f = open("in.cpp", "r", encoding="utf-8")
+            self.in_text.setPlainText(f.read())
+            f.close()
     def on_process(self):
         f = open("in.cpp", "w", encoding="utf-8")
         f.write(self.in_text.toPlainText())
