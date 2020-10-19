@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<!DOCTYPE TS><TS version="2.0" language="ru_RU" sourcelanguage="">
 <context>
     <name>@default</name>
     <message>
@@ -63,7 +62,7 @@
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11244"/>
-        <source>Replace tab characters found in string literals with the escape sequence 	 instead.</source>
+        <source>Replace tab characters found in string literals with the escape sequence <byte value="x9"/> instead.</source>
         <translation>Замените символы табуляции, найденные в строковых литералах, на управляющую последовательность \t.</translation>
     </message>
     <message>
@@ -1455,7 +1454,7 @@ template&lt;int i, int·... Indexes, typename IdxHolder, typename·... Elements&
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12711"/>
-        <source>(C#) Warning is given if doing tab-to-	 replacement and we have found one in a C# verbatim string literal.</source>
+        <source>(C#) Warning is given if doing tab-to-<byte value="x9"/> replacement and we have found one in a C# verbatim string literal.</source>
         <translation>(C#) Выдавать предупреждение при замене tab на \t, найденых в строковом литерале на C#.</translation>
     </message>
     <message>
@@ -3610,7 +3609,7 @@ void bar(int someval,             | void bar(int someval,
          struct willy *the_list,  | ····struct willy *the_list,
          int list_len)            | ····int list_len)
 {        ↑                        | {
-	int idx;                      | 	int idx;</translation>
+<byte value="x9"/>int idx;                      | <byte value="x9"/>int idx;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11786"/>
