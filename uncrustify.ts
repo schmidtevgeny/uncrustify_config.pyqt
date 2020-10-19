@@ -9406,5 +9406,75 @@ Warn levels - 1: error, 2: warning (default), 3: note
 Уровень предупреждений - 1: ошибка, 2: предупреждение (по умолчанию), 3: примечания
 </translation>
     </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="18"/>
+        <source>General options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="281"/>
+        <source>Spacing options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="3618"/>
+        <source>Indenting options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="5107"/>
+        <source>Newline adding and removing options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="7785"/>
+        <source>Blank line options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="8551"/>
+        <source>Positioning options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="8722"/>
+        <source>Line splitting options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="8789"/>
+        <source>Code alignment options (not left column spaces/tabs) help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="9828"/>
+        <source>Comment modification options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="10194"/>
+        <source>Code modifying options (non-whitespace) help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="10829"/>
+        <source>Preprocessor options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="11064"/>
+        <source>Sort includes options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="11112"/>
+        <source>Use or Do not Use options help</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="uncrustify_ui.py" line="11208"/>
+        <source>Warn levels - 1: error, 2: warning (default), 3: note help</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
