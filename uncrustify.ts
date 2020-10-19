@@ -5425,12 +5425,18 @@ default:
     <message>
         <location filename="uncrustify_ui.py" line="15540"/>
         <source>code_nl_template_func</source>
-        <translation type="unfinished"></translation>
+        <translation>template &lt;int i&gt;¶ void f();
+template &lt;int i&gt;¶ void g() {
+    f&lt;i-1&gt;();
+    f&lt; i &gt;();
+    f&lt;i+1&gt;();
+    f&lt;bar()&gt;();
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12065"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template function declaration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в объявлении шаблоной функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12069"/>
@@ -5440,12 +5446,18 @@ default:
     <message>
         <location filename="uncrustify_ui.py" line="15545"/>
         <source>code_nl_template_func_decl</source>
-        <translation type="unfinished"></translation>
+        <translation>template &lt;int i&gt;¶void f();
+template &lt;int i&gt; void g() {
+    f&lt;i-1&gt;();
+    f&lt; i &gt;();
+    f&lt;i+1&gt;();
+    f&lt;bar()&gt;();
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12067"/>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized function declaration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в специализированном определении шаблоной функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12067"/>
@@ -5455,22 +5467,28 @@ default:
     <message>
         <location filename="uncrustify_ui.py" line="15550"/>
         <source>code_nl_template_func_decl_special</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12069"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template function definition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в реализации шаблоной функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15555"/>
         <source>code_nl_template_func_def</source>
-        <translation type="unfinished"></translation>
+        <translation>template &lt;int i&gt; void f();
+template &lt;int i&gt;¶ void g() {
+    f&lt;i-1&gt;();
+    f&lt; i &gt;();
+    f&lt;i+1&gt;();
+    f&lt;bar()&gt;();
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12071"/>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized function definition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в специализированной реализации шаблоной функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12071"/>
@@ -5480,47 +5498,49 @@ default:
     <message>
         <location filename="uncrustify_ui.py" line="15560"/>
         <source>code_nl_template_func_def_special</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12073"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template variable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; переменной шаблона.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15565"/>
         <source>code_nl_template_var</source>
-        <translation type="unfinished"></translation>
+        <translation>template&lt;class T&gt;¶ constexpr T pi = T(3.1415926535897932385L);  // variable template
+template&lt;int&gt;¶ constexpr int pi  =3;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12075"/>
         <source>Add or remove newline between &apos;template&lt;...&gt;&apos; and &apos;using&apos; of a templated type alias.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; и using в алиасе типа.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15570"/>
         <source>code_nl_template_using</source>
-        <translation type="unfinished"></translation>
+        <translation>template&lt;class T&gt;¶using Vec      = vector&lt;T, Alloc&lt;T&gt; &gt;;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12077"/>
         <source>Add or remove newline between &apos;class&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;class&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15575"/>
         <source>code_nl_class_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>class AlignFuncProtoTest¶{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12079"/>
         <source>Add or remove newline before or after (depending on pos_class_comma, may not be IGNORE) each&apos;,&apos; in the base class list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавлять или удалять новую строку до или после (в зависимости от pos_class_comma, не может быть IGNORE) каждой запятой в списке базовых классов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15580"/>
         <source>code_nl_class_init_args</source>
-        <translation type="unfinished"></translation>
+        <translation>                          ↓           ↓
+class MyClass : public Foo,private Bar,private Bar2 {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12081"/>
