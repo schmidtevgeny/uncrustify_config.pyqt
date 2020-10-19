@@ -4,3 +4,4 @@
 /test.py
 *.cpp
 conf*.cfg
+uncrustify_ui.py
