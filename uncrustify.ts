@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru_RU" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="ru_RU">
 <context>
     <name>@default</name>
     <message>
@@ -62,7 +63,7 @@
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11244"/>
-        <source>Replace tab characters found in string literals with the escape sequence <byte value="x9"/> instead.</source>
+        <source>Replace tab characters found in string literals with the escape sequence 	 instead.</source>
         <translation>Замените символы табуляции, найденные в строковых литералах, на управляющую последовательность \t.</translation>
     </message>
     <message>
@@ -1454,7 +1455,7 @@ template&lt;int i, int·... Indexes, typename IdxHolder, typename·... Elements&
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12711"/>
-        <source>(C#) Warning is given if doing tab-to-<byte value="x9"/> replacement and we have found one in a C# verbatim string literal.</source>
+        <source>(C#) Warning is given if doing tab-to-	 replacement and we have found one in a C# verbatim string literal.</source>
         <translation>(C#) Выдавать предупреждение при замене tab на \t, найденых в строковом литерале на C#.</translation>
     </message>
     <message>
@@ -4757,7 +4758,7 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15275"/>
         <source>code_nl_assign_square</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_assign_square</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11959"/>
@@ -4873,47 +4874,53 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="11975"/>
         <source>Add or remove newline between &apos;struct and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;struct&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15320"/>
         <source>code_nl_struct_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>struct SomeUnion¶{
+    int a;
+    some_type b{};
+};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11977"/>
         <source>Add or remove newline between &apos;union&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;union&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15325"/>
         <source>code_nl_union_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>union SomeUnion¶{
+    int a;
+    some_type b{};
+};</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11979"/>
         <source>Add or remove newline between &apos;if&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;if&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15330"/>
         <source>code_nl_if_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>if (!(x)) ¶*(volatile int *)0 = 1;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11981"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;else&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;}&apos; и &apos;else&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15335"/>
         <source>code_nl_brace_else</source>
-        <translation type="unfinished"></translation>
+        <translation>if(x){x=1;}else¶{x=2;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11983"/>
         <source>Add or remove newline between &apos;else if&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;else if&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11983"/>
@@ -4923,112 +4930,130 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15340"/>
         <source>code_nl_elseif_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>    if (foo()) { bar(); }
+    else if (baz({ rick, morty })) ¶{ anime(); }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11985"/>
         <source>Add or remove newline between &apos;else&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;else&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15345"/>
         <source>code_nl_else_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>    if (foo()) { bar(); }
+    else ¶{ anime(); }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11987"/>
         <source>Add or remove newline between &apos;else&apos; and &apos;if&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;else&apos; и &apos;if&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15350"/>
         <source>code_nl_else_if</source>
-        <translation type="unfinished"></translation>
+        <translation>    if (foo()) { bar(); }
+    else¶ if (baz({ rick, morty })) { anime(); }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11989"/>
         <source>Add or remove newline before &apos;{&apos; opening brace</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку перед открывающейся фигурной скобкой &apos;{&apos;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15355"/>
         <source>code_nl_before_opening_brace_func_class_def</source>
-        <translation type="unfinished"></translation>
+        <translation>class GLOX_API ClientBase : public Class,public OtherClass,
+    public ThridClass,public ForthClass
+{
+public:
+ClientBase(const ClientBase&amp; f)¶
+{
+    // do something
+}
+};
+
+ClientBase :: ClientBase (const std::string&amp; ns,
+                          const std::string&amp; ns1,
+                          const std::string&amp; ns2)¶
+{
+
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11991"/>
         <source>Add or remove newline before &apos;if&apos;/&apos;else if&apos; closing parenthesis.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку перед закрывающей круглой скобкой &apos;if&apos;/&apos;else if&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15360"/>
         <source>code_nl_before_if_closing_paren</source>
-        <translation type="unfinished"></translation>
+        <translation>if (!(x)¶) *(volatile int*)0 = 1;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11993"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;finally&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;}&apos; и &apos;finally&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15365"/>
         <source>code_nl_brace_finally</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_brace_finally</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11995"/>
         <source>Add or remove newline between &apos;finally&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;finally&apos; и &apos;}&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15370"/>
         <source>code_nl_finally_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_finally_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11997"/>
         <source>Add or remove newline between &apos;try&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;try&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15375"/>
         <source>code_nl_try_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_try_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11999"/>
         <source>Add or remove newline between get/set and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между get/set и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15380"/>
         <source>code_nl_getset_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_getset_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12001"/>
         <source>Add or remove newline between &apos;for&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;for&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15385"/>
         <source>code_nl_for_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>for (;;;)¶{}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12003"/>
         <source>Add or remove newline before the &apos;{&apos; of a &apos;catch&apos; statement, as in &apos;catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавлять или удалять новую строку перед &apos;{&apos; в операторе &apos;catch&apos;, как в операторе &apos;catch (decl) ¶ {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15390"/>
         <source>code_nl_catch_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_catch_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12005"/>
         <source>(OC) Add or remove newline before the &apos;{&apos; of a &apos;@catch&apos; statement, as in &apos;@catch (decl) &lt;here&gt; {&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Добавление или удаление новой строки перед &apos;{&apos; в операторе &apos;@catch&apos;, как в &apos;@catch (decl) &lt;here&gt; {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12005"/>
@@ -5038,22 +5063,22 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15395"/>
         <source>code_nl_oc_catch_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_catch_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12007"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;catch&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;}&apos; и &apos;catch&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15400"/>
         <source>code_nl_brace_catch</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_brace_catch</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12009"/>
         <source>(OC) Add or remove newline between &apos;}&apos; and &apos;@catch&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;}&apos; и &apos;@catch&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12009"/>
@@ -5063,12 +5088,12 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15405"/>
         <source>code_nl_oc_brace_catch</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_oc_brace_catch</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12011"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;]&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;}&apos; и &apos;]&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15410"/>
@@ -5078,22 +5103,33 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="12013"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;)&apos; in a function invocation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки между &apos;}&apos; и &apos;)&apos; при вызове функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15415"/>
         <source>code_nl_brace_fparen</source>
-        <translation type="unfinished"></translation>
+        <translation>BracedInitListBase::BracedInitListBase()
+    : a{int{1}¶},
+    b(int(some_type(1))),
+    c(int{some_type(1)}¶),
+    d{int(some_type(1))},
+    e{some_type{some_type{a}}¶}
+{
+}
+some_type sum(some_type a, some_type b = some_type{1}¶)
+{
+    return a + inc(some_type{b - some_type{1}}¶);
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12015"/>
         <source>Add or remove newline between &apos;while&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;while&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15420"/>
         <source>code_nl_while_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>while (true)¶ { amime2(); }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12017"/>
@@ -5103,7 +5139,7 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15425"/>
         <source>code_nl_scope_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_scope_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12019"/>
@@ -5113,7 +5149,7 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15430"/>
         <source>code_nl_unittest_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_unittest_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12021"/>
@@ -5123,67 +5159,67 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15435"/>
         <source>code_nl_version_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_version_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15440"/>
         <source>code_nl_using_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_using_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12025"/>
         <source>Add or remove newline between two open or close braces.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую линию между двумя открытыми или закрытыми скобками.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12025"/>
         <source>Due to general newline/brace handling, REMOVE may not work.</source>
-        <translation type="unfinished"></translation>
+        <translation>В связи с общим обращением с новой линией/связью УДАЛЕНИЕ может не работать.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15445"/>
         <source>code_nl_brace_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>int j  = ::std::vector&lt;int&gt;{4, some_type{5}¶}[1];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12027"/>
         <source>Add or remove newline between &apos;do&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;do&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15450"/>
         <source>code_nl_do_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>do¶{}while(...)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12029"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;while&apos; of &apos;do&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте или удалите пробел между &apos;}&apos; и &apos;while&apos; в конструкции do.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15455"/>
         <source>code_nl_brace_while</source>
-        <translation type="unfinished"></translation>
+        <translation>do{...}¶while(...);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12031"/>
         <source>Add or remove newline between &apos;switch&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;switch&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15460"/>
         <source>code_nl_switch_brace</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12033"/>
         <source>Add or remove newline between &apos;synchronized&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(D) Добавьте или удалите новую строку между &apos;synchronized&apos; и &apos;{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15465"/>
         <source>code_nl_synchronized_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_synchronized_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12035"/>
@@ -5193,12 +5229,14 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="12035"/>
         <source>Overrides nl_for_brace, nl_if_brace, nl_switch_brace, nl_while_switch and nl_catch_brace.</source>
-        <translation type="unfinished"></translation>
+        <translation>Переопределяет nl_for_brace, nl_if_brace, nl_switch_brace, nl_while_switch и nl_catch_brace.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15470"/>
         <source>code_nl_multi_line_cond</source>
-        <translation type="unfinished"></translation>
+        <translation>if (a &amp;&amp;
+b)¶{}
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12037"/>
@@ -5208,7 +5246,9 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15475"/>
         <source>code_nl_multi_line_sparen_open</source>
-        <translation type="unfinished"></translation>
+        <translation>if (¶a &amp;&amp;
+b){}
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12039"/>
@@ -5218,47 +5258,66 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="12039"/>
         <source>Overrides nl_before_if_closing_paren if both are specified.</source>
-        <translation type="unfinished"></translation>
+        <translation>Переопределяет nl_before_if_closing_paren, если указаны оба.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15480"/>
         <source>code_nl_multi_line_sparen_close</source>
-        <translation type="unfinished"></translation>
+        <translation>if (a &amp;&amp;
+b¶){}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12041"/>
         <source>Force a newline in a define after the macro name for multi-line defines.</source>
-        <translation type="unfinished"></translation>
+        <translation>Принудительное включение новой строки в определение после определения макроса для многострочного определения.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15485"/>
         <source>code_nl_multi_line_define</source>
-        <translation type="unfinished"></translation>
+        <translation>#define CTOR(i, _) ¶: \
+    T(X()), \
+    y() \
+{ }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12043"/>
         <source>Whether to add a newline before &apos;case&apos;, and a blank line before a &apos;case&apos; statement that follows a &apos;;&apos; or &apos;}&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли добавлять новую строку перед &apos;case&apos; и пустую строку перед оператором &apos;case&apos;, который следует за &apos;;&apos; или &apos;}&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15490"/>
         <source>code_nl_before_case</source>
-        <translation type="unfinished"></translation>
+        <translation>switch (foo) {
+case  0:
+case  1:
+    std::cout &lt;&lt; &quot;1&quot; &lt;&lt; std::endl;
+    break;
+¶
+case                 2:
+    std::cout &lt;&lt; &quot;2&quot; &lt;&lt; std::endl;
+    break;
+¶
+default:
+    std::cout &lt;&lt; &quot;Neither 1 nor 2.&quot; &lt;&lt; std::endl;
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12045"/>
         <source>Whether to add a newline after a &apos;case&apos; statement.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пустую строку после оператора &apos;case&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15495"/>
         <source>code_nl_after_case</source>
-        <translation type="unfinished"></translation>
+        <translation>switch (a)
+{
+    case 1:¶ {callFunction(a); break;}
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12047"/>
         <source>Add or remove newline between a case &apos;:&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку в case между &apos;:&apos; и &apos;}&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12047"/>
@@ -5268,42 +5327,45 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15500"/>
         <source>code_nl_case_colon_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>switch (a)
+{
+    case 1:¶ {callFunction(a); break;}
+}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12049"/>
         <source>Add or remove newline between &apos;)&apos; and &apos;throw&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;)&apos; и &apos;throw&apos;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15505"/>
         <source>code_nl_before_throw</source>
-        <translation type="unfinished"></translation>
+        <translation>void *operator new(std::size_t)¶ throw(std::bad_alloc);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12051"/>
         <source>Add or remove newline between &apos;namespace&apos; and &apos;{&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить новую строку между &apos;namespace&apos; и &apos;}&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15510"/>
         <source>code_nl_namespace_brace</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12053"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template class.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в шаблоне класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15515"/>
         <source>code_nl_template_class</source>
-        <translation type="unfinished"></translation>
+        <translation>template &lt;typename T&gt;¶ class to { };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12055"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template class declaration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в объявлении шаблона класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12059"/>
@@ -5313,12 +5375,12 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15520"/>
         <source>code_nl_template_class_decl</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_template_class_decl</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12057"/>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized class declaration.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в объявлении шаблона класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12057"/>
@@ -5328,22 +5390,22 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15525"/>
         <source>code_nl_template_class_decl_special</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_template_class_decl_special</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12059"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template class definition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в определении класса шаблона.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15530"/>
         <source>code_nl_template_class_def</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_template_class_def</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12061"/>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized class definition.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;&gt;&apos; в определении специализированного класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12061"/>
@@ -5353,12 +5415,12 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15535"/>
         <source>code_nl_template_class_def_special</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_template_class_def_special</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12063"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template function.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление новой строки после &apos;template&lt;...&gt;&apos; в шаблоне функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15540"/>
