@@ -17,7 +17,7 @@ if platform.system() == "Windows":
     FontCode = "Consolas"
 else:
     FontCode = "monospace"
-FontCodeSize = 12
+FontCodeSize = 10
 regex = r"\.\s*[A-Z]"
 os.system("uncrustify --show-config > uncrustify.cfg")
 

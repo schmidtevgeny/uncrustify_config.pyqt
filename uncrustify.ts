@@ -2831,21 +2831,21 @@ s = &quot;test\ttab replace&quot;;</translation>
     <message>
         <location filename="uncrustify_ui.py" line="14560"/>
         <source>code_sp_case_label</source>
-        <translation>int main()                                              |    int main()
-{                                                       |    {
-    int foo = 42;                                       |        int foo = 42;
-    switch (foo) {                                      |        switch (foo) {
-    case  1:                                            |        case 1:
-        std::cout &lt;&lt; &quot;1&quot; &lt;&lt; std::endl;                  |            std::cout &lt;&lt; &quot;1&quot; &lt;&lt; std::endl;
-        break;                                          |            break;
-    case                 2:                             |        case 2:
-        std::cout &lt;&lt; &quot;2&quot; &lt;&lt; std::endl;                  |            std::cout &lt;&lt; &quot;2&quot; &lt;&lt; std::endl;
-        break;                                          |            break;
-    default:                                            |        default:
-        std::cout &lt;&lt; &quot;Neither 1 nor 2.&quot; &lt;&lt; std::endl;   |            std::cout &lt;&lt; &quot;Neither 1 nor 2.&quot; &lt;&lt; std::endl;
-    }                                                   |        }
-}                                                       |    }
-                                                        |</translation>
+        <translation>int main()
+{
+    int foo = 42;
+    switch (foo) {
+    case·1:
+        std::cout &lt;&lt; &quot;1&quot; &lt;&lt; std::endl;
+        break;
+    case·←←←←←←←←←←2:
+        std::cout &lt;&lt; &quot;2&quot; &lt;&lt; std::endl;
+        break;
+    default:
+        std::cout &lt;&lt; &quot;Neither 1 nor 2.&quot; &lt;&lt; std::endl;
+    }
+}
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11671"/>
@@ -3076,7 +3076,7 @@ void x(int &amp;d) {
     <message>
         <location filename="uncrustify_ui.py" line="14675"/>
         <source>code_indent_continue</source>
-        <translation>    LOG_FMT(LINDLINE, &quot;%s: %d] col %d on %.*s [%s] =&gt; %d\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
+        <translation>    LOG_FMT(LINDLINE, &quot;%s\n&quot;, __func__, pc-&gt;orig_line, pc-&gt;column,
     ····pc-&gt;len, pc-&gt;str, get_token_name(pc-&gt;type), column);
     if ((cout_col &gt; 0) &amp;&amp;
     ····(chunk_is_semicolon(pc) ||
@@ -3212,8 +3212,8 @@ public:            |      public:</translation>
           pc-&gt;column = pc-&gt;orig_col;
           if (pc-&gt;column &lt; min_col)
                     pc-&gt;column = min_col + 1;
-          LOG_FMT(LINDLINE, &quot;%s: set comment on line %d to col %d (orig %d)\n&quot;,
-                  __func__, pc-&gt;orig_line, pc-&gt;column, pc-&gt;orig_col);
+          LOG_FMT(LINDLINE, &quot;%s:\n&quot;,
+                  __func__, pc-&gt;orig_line);
     ··}</translation>
     </message>
     <message>
@@ -3299,15 +3299,26 @@ for (auto x : y)        |        for (auto x : y)
     <message>
         <location filename="uncrustify_ui.py" line="14745"/>
         <source>code_indent_paren_open_brace</source>
-        <translation>false                                                  |  true
-········                                               |                   ········
-funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {  |  funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {
-        return PairingCmpnt()                          |                           return PairingCmpnt()
-}));                                                   |                   }));
-········                                               |         ········
-match( [ &amp; ]( const ContentProps &amp;props)  {            |  match( [ &amp; ]( const ContentProps &amp;props)  {
-        return PairingCmpnt()                          |                 return PairingCmpnt()
-});                                                    |         });</translation>
+        <translation>false                                                  
+                                               
+funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {  
+········return PairingCmpnt()                          
+}));                                                   
+                                             
+match( [ &amp; ]( const ContentProps &amp;props)  {            
+········return PairingCmpnt()                          
+});                                                    
+
+
+true
+                 
+funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {
+                 ········return PairingCmpnt()
+                 }));
+       
+match( [ &amp; ]( const ContentProps &amp;props)  {
+       ········return PairingCmpnt()
+       });</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14750"/>
@@ -3451,8 +3462,9 @@ class MyClass : myvar(0),
     <message>
         <location filename="uncrustify_ui.py" line="14800"/>
         <source>code_indent_constr_colon</source>
-        <translation>void bar_c(int tttt, int uu, int abc, int defxx)   : tttt(4444)
-                                                    ↑, uu(22), abc(333), defxx(55555)</translation>
+        <translation>void bar_c(int tttt, int uu, 
+    int abc, int defxx)   : tttt(4444)
+                          ↑, uu(22), abc(333), defxx(55555)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11768"/>
@@ -3587,12 +3599,12 @@ char *foo_bar() {
     <message>
         <location filename="uncrustify_ui.py" line="14840"/>
         <source>code_indent_func_call_param</source>
-        <translation> false                   ↓            |  true
-Type tmp = call_function(getObj().x,  |   Type tmp = call_function(getObj().x,
-                         getObj().y,  |   ····getObj().y,
-                         getObj().z,  |   ····getObj().z,
-                         getObj().w); |   ····getObj().w);
-                         ↑</translation>
+        <translation> false       ↓            |  true
+Type tmp = f(getObj().x,  |   Type tmp = f(getObj().x,
+             getObj().y,  |   ····getObj().y,
+             getObj().z,  |   ····getObj().z,
+             getObj().w); |   ····getObj().w);
+             ↑</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11784"/>
@@ -3609,7 +3621,7 @@ void bar(int someval,             | void bar(int someval,
          struct willy *the_list,  | ····struct willy *the_list,
          int list_len)            | ····int list_len)
 {        ↑                        | {
-<byte value="x9"/>int idx;                      | <byte value="x9"/>int idx;</translation>
+    int idx;                      |     int idx;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11786"/>
@@ -3651,21 +3663,21 @@ void bar(int someval,             | void bar(int someval,
     <message>
         <location filename="uncrustify_ui.py" line="14860"/>
         <source>code_indent_func_class_param</source>
-        <translation>false                     ↓                       |     true
-ClientBase :: ClientBase (const std::string&amp; ns,  |     ClientBase :: ClientBase (const std::string&amp; ns,
-                          const std::string&amp; ns1, |     ····const std::string&amp; ns1,
-                          const std::string&amp; ns2) |     ····const std::string&amp; ns2)
-{                                                 |     {
-                                                  |     
-}                                                 |     }
-struct MyClass : public Foo {                     |     struct MyClass : public Foo {
-            ↓                                     |     
-    MyClass(int a,                                |         MyClass(int a,
-            int b,                                |         ····int b,
-            int c)                                |         ····int c)
-        : m_a(a), m_b(b), m_c(c) {                |             : m_a(a), m_b(b), m_c(c) {
-    }                                             |         }
-};                                                |     };
+        <translation>false   ↓                       |     true
+T :: T (const std::string&amp; ns,  |     T :: T (const std::string&amp; ns,
+        const std::string&amp; ns1, |     ····const std::string&amp; ns1,
+        const std::string&amp; ns2) |     ····const std::string&amp; ns2)
+{                               |     {
+                                |     
+}                               |     }
+struct MyClass : public Foo {   |     struct MyClass : public Foo {
+            ↓                   |     
+    MyClass(int a,              |         MyClass(int a,
+            int b,              |         ····int b,
+            int c)              |         ····int c)
+        : m_a(a) {              |             : m_a(a) {
+    }                           |         }
+};                              |     };
 </translation>
     </message>
     <message>
@@ -3856,19 +3868,19 @@ adasd-&gt;
     <message>
         <location filename="uncrustify_ui.py" line="14925"/>
         <source>code_indent_switch_break_with_case</source>
-        <translation>switch (message_p)                                |    switch (message_p)
-{                                                 |    {
-case A:                                           |    case A:
-{                                                 |    {
-    const table* entry2 = findMsg( message_p );   |        const table* entry2 = findMsg( message_p );
-    table* entry3 = findMsg( message_p );         |        table* entry3 = findMsg( message_p );
-}                                                 |    }
-break;                                            |    break;
-                                                  |    ↓
-case B:                                           |    case B:
-    const table* entry2 = findMsg( message_p );   |        const table* entry2 = findMsg( message_p );
-    table* entry3 = findMsg( message_p );         |        table* entry3 = findMsg( message_p );
-····break;                                        |    break;</translation>
+        <translation>switch (message_p)             | switch (message_p)
+{                              | {
+case A:                        | case A:
+{                              | {
+    const tab* ent2 = f( _p ); |     const tab* ent2 = f( _p );
+    tab* ent3 = f( _p );       |     tab* ent3 = f( _p );
+}                              | }
+break;                         | break;
+                               | ↓
+case B:                        | case B:
+    const tab* ent2 = f( _p ); |     const tab* ent2 = f( _p );
+    tab* ent3 = f( _p );       |     tab* ent3 = f( _p );
+····break;                     | break;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11818"/>
@@ -3996,12 +4008,12 @@ void main(int, char**){</translation>
     <message>
         <location filename="uncrustify_ui.py" line="14970"/>
         <source>code_indent_paren_nl</source>
-        <translation>void method51(                              |   void method51(↓
-····int int_param,                          |                 int int_param,
-····SomeLongNamespace long_parameter_name,  |                 SomeLongNamespace long_parameter_name,
-····float float_param,                      |                 float float_param,
-····double double_param,                    |                 double double_param,
-····const string &amp; string_param)            |                 const string &amp; string_param)</translation>
+        <translation>void method51(        | void method51(↓
+····int i,            |               int i,
+····Some l,           |               Some l,
+····float f,          |               float f,
+····double d,         |               double d,
+····const string &amp; s) |               const string &amp; s)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11836"/>
@@ -4033,12 +4045,12 @@ x=f(x,            x=f(x,          x=f(x,
     <message>
         <location filename="uncrustify_ui.py" line="14980"/>
         <source>code_indent_paren_after_func_def</source>
-        <translation>void method51(                              |   void method51(↓
-····int int_param,                          |                 int int_param,
-····SomeLongNamespace long_parameter_name,  |                 SomeLongNamespace long_parameter_name,
-····float float_param,                      |                 float float_param,
-····double double_param,                    |                 double double_param,
-····const string &amp; string_param){           |                 const string &amp; string_param){</translation>
+        <translation>void method51(         |   void method51(↓
+····int i,             |                 int i,
+····Some l,            |                 Some l,
+····float f,           |                 float f,
+····double d,          |                 double d,
+····const string &amp; s){ |                 const string &amp; s){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11840"/>
