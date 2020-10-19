@@ -120,6 +120,7 @@ for it in data:
         rowid = 0
         init_strings.append("self.label{} = QtWidgets.QLabel(self.tr(\"{} help\"))".format(section_id, it['title']))
         init_strings.append("self.label{}.setWordWrap(True)".format(section_id))
+        init_strings.append("self.label{}.setFont(QtGui.QFont('{}', {}, 0))".format(section_id, FontCode, FontCodeSize))
         init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, section_id, rowid))
         rowid += 1
 
