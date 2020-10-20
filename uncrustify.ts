@@ -9447,7 +9447,15 @@ join          a=5+   a=5+6-    a=5+6-
 lead_break    a=5    a=5       a=5
 lead_force    a=5    a=5       a=5
 trail_break   a=5+   a=5+      a=5+
-trail_force   a=5+   a=5+      a=5+</translation>
+trail_force   a=5+   a=5+      a=5+
+
+
+В общем получается примерно так:
+ignore break force переносит по необходимости, знак в конце строки
+lead переносит по необходимости, знак в начале строки
+trail join переносит по необходимости, знак в конце строки
+lead_break lead_force переменные в столбик, знак в начале строки
+trail_break trail_force переменные в столбик, знак в начале строки</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8728"/>
