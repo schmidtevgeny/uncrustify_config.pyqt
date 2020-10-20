@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru_RU" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="ru_RU">
 <context>
     <name>@default</name>
     <message>
@@ -62,7 +63,7 @@
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11300"/>
-        <source>Replace tab characters found in string literals with the escape sequence <byte value="x9"/> instead.</source>
+        <source>Replace tab characters found in string literals with the escape sequence 	 instead.</source>
         <translation>Замените символы табуляции, найденные в строковых литералах, на управляющую последовательность \t.</translation>
     </message>
     <message>
@@ -1454,7 +1455,7 @@ template&lt;int i, int·... Indexes, typename IdxHolder, typename·... Elements&
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12767"/>
-        <source>(C#) Warning is given if doing tab-to-<byte value="x9"/> replacement and we have found one in a C# verbatim string literal.</source>
+        <source>(C#) Warning is given if doing tab-to-	 replacement and we have found one in a C# verbatim string literal.</source>
         <translation>(C#) Выдавать предупреждение при замене tab на \t, найденых в строковом литерале на C#.</translation>
     </message>
     <message>
@@ -7197,17 +7198,17 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="12419"/>
         <source>The position of arithmetic operators in wrapped expressions.</source>
-        <translation>Положение арифметических операторов в выражениях.</translation>
+        <translation>Положение арифметических операторов при свертке выражаний.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16341"/>
         <source>code_pos_arith</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_arith</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12421"/>
         <source>The position of assignment in wrapped expressions.</source>
-        <translation>Положение операторf присваивания в выражениях.</translation>
+        <translation>Положение оператоа присваивания при свертке выражаний.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12421"/>
@@ -7217,47 +7218,47 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16346"/>
         <source>code_pos_assign</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_assign</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12423"/>
         <source>The position of Boolean operators in wrapped expressions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение логических операторов при свертке выражаний.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16351"/>
         <source>code_pos_bool</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_bool</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12425"/>
         <source>The position of comparison operators in wrapped expressions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение операторов сравнения при свертке выражаний.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16356"/>
         <source>code_pos_compare</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_compare</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12427"/>
         <source>The position of conditional operators, as in the &apos;?&apos; and &apos;:&apos; of &apos;expr ? stmt : stmt&apos;, in wrapped expressions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение знака ? тернарного оператора при свертке выражаний.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16361"/>
         <source>code_pos_conditional</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_conditional</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12429"/>
         <source>The position of the comma in wrapped expressions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение запятой при свертке выражаний.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16366"/>
         <source>code_pos_comma</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_comma</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12431"/>
