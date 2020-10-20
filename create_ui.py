@@ -123,8 +123,15 @@ for it in data:
         init_strings.append("self.label{}.setFont(QtGui.QFont('{}', {}, 0))".format(section_id, FontCode, FontCodeSize))
         init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, section_id, rowid))
         rowid += 1
-
         get_strings.append('s.append(wrap(self.tr(\"\\n{}\\n\")))'.format(it['title']))
+
+    elif it['type'] =='info':
+        # print(it['title'])
+        # s = parse_str(it['title'])
+        # init_strings.append("self.widgetif{} = QtWidgets.QLabel({})".format(section_id, s))
+        init_strings.append("self.widgetif{} = QtWidgets.QLabel(self.tr('''{}'''))".format(section_id, it['title']))
+        init_strings.append("self.addItem(self.widgetif{}, self.tr('Info'))".format(section_id))
+
     elif it['type'] == "option":
         s = parse_str(it['title'])
         init_strings.append("self.label{} = QtWidgets.QLabel({})".format(it['name'], s))
