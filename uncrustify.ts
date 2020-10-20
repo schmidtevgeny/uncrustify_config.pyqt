@@ -7358,17 +7358,17 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="12502"/>
         <source>Whether to fully split long function prototypes/calls at commas.</source>
-        <translation type="unfinished"></translation>
+        <translation>Полностью разделить длинные прототипы/вызовы йункции по запятым.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12504"/>
         <source>The option ls_code_width has priority over the option ls_func_split_full.</source>
-        <translation type="unfinished"></translation>
+        <translation>Параметр ls_code_width имеет приоритет над параметром ls_func_split_full.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16462"/>
         <source>code_ls_func_split_full</source>
-        <translation type="unfinished"></translation>
+        <translation>code_ls_func_split_full</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12504"/>
@@ -7378,7 +7378,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16467"/>
         <source>code_ls_code_width</source>
-        <translation type="unfinished"></translation>
+        <translation>code_ls_code_width</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8794"/>
@@ -7388,27 +7388,27 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="12507"/>
         <source>Whether to keep non-indenting tabs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранять тыбуляции, не относящиеся с отступам.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16472"/>
         <source>code_align_keep_tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_keep_tabs</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16477"/>
         <source>code_align_with_tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_with_tabs</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12511"/>
         <source>Whether to bump out to the next tab when aligning.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли при выравнивании переходить на следующую позицию табуляции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16482"/>
         <source>code_align_on_tabstop</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_on_tabstop</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12513"/>
@@ -7418,7 +7418,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16487"/>
         <source>code_align_number_right</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_number_right</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12515"/>
@@ -7428,17 +7428,17 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16492"/>
         <source>code_align_keep_extra_space</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_keep_extra_space</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12517"/>
         <source>Whether to align variable definitions in prototypes and functions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли определения переменных в прототипах и функциях.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16497"/>
         <source>code_align_func_params</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_func_params</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12519"/>
@@ -7448,7 +7448,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16502"/>
         <source>code_align_func_params_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_func_params_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12521"/>
@@ -7463,17 +7463,18 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16507"/>
         <source>code_align_func_params_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_func_params_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12523"/>
         <source>The gap for aligning function parameter definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зазор в выравнивании параметров функций в определении.
+Не особо понятно, но &gt;1 делает дополнительные отступы перед именем</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16512"/>
         <source>code_align_func_params_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_func_params_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12525"/>
@@ -7483,7 +7484,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16517"/>
         <source>code_align_constr_value_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_constr_value_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12527"/>
@@ -7493,32 +7494,32 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16522"/>
         <source>code_align_constr_value_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_constr_value_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12529"/>
         <source>The gap for aligning constructor value.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зазор для выравнивания значений в конструкторе.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16527"/>
         <source>code_align_constr_value_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_constr_value_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12531"/>
         <source>Whether to align parameters in single-line functions that have the same name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли параметры в однострочных функциях, которые имеют одно и то же название.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12531"/>
         <source>The function names must already be aligned with each other.</source>
-        <translation type="unfinished"></translation>
+        <translation>Имена функций уже должны быть выровнены друг с другом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16532"/>
         <source>code_align_same_func_call_params</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_same_func_call_params</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12533"/>
@@ -7528,7 +7529,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16537"/>
         <source>code_align_same_func_call_params_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_same_func_call_params_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12535"/>
@@ -7538,7 +7539,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16542"/>
         <source>code_align_same_func_call_params_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_same_func_call_params_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12537"/>
@@ -7548,37 +7549,37 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16547"/>
         <source>code_align_var_def_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12539"/>
         <source>How to consider (or treat) the &apos;*&apos; in the alignment of variable definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как учитывать (или обращаться) с &apos;*&apos; при выравнивании определений переменных.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12539"/>
         <source>0: Part of the type     &apos;void *   foo;&apos; (default) 1: Part of the variable &apos;void     *foo;&apos; 2: Dangling             &apos;void    *foo;&apos; Dangling: the &apos;*&apos; will not be taken into account when aligning.</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Часть типа &apos;void *·foo;&apos; (по умолчанию) 1: Часть переменной &apos;void·*foo;&apos; 2: Двойственно &apos;void· *·foo;&apos; - при выравнивании &apos;*&apos; не будет учитываться.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16552"/>
         <source>code_align_var_def_star_style</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_star_style</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12541"/>
         <source>How to consider (or treat) the &apos;&amp;&apos; in the alignment of variable definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как учитывать (или обращаться) с &apos;&amp;&apos; при выравнивании определений переменных.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12541"/>
         <source>0: Part of the type     &apos;long &amp;   foo;&apos; (default) 1: Part of the variable &apos;long     &amp;foo;&apos; 2: Dangling             &apos;long    &amp;foo;&apos; Dangling: the &apos;&amp;&apos; will not be taken into account when aligning.</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Часть типа &apos;void &amp;·foo;&apos; (по умолчанию) 1: Часть переменной &apos;void·&amp;foo;&apos; 2: Двойственно &apos;void· &amp;·foo;&apos; - при выравнивании &apos;&amp;&apos; не будет учитываться.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16557"/>
         <source>code_align_var_def_amp_style</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_amp_style</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12543"/>
@@ -7588,57 +7589,61 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16562"/>
         <source>code_align_var_def_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12545"/>
         <source>The gap for aligning variable definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зазор для выравнивания определений переменных.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16567"/>
         <source>code_align_var_def_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12547"/>
         <source>Whether to align the colon in struct bit fields.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли двоеточие битовых полей.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16572"/>
         <source>code_align_var_def_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>struct device {
+unsigned active : 1;
+unsigned ready : 1;
+unsigned xmt_error : 1;
+} dev_code;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12549"/>
         <source>The gap for aligning the colon in struct bit fields.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зазор при выравнивании двоеточия битовых полей.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16577"/>
         <source>code_align_var_def_colon_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_colon_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12551"/>
         <source>Whether to align any attribute after the variable name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли любой атрибут после имени переменной.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16582"/>
         <source>code_align_var_def_attribute</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_attribute</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12553"/>
         <source>Whether to align inline struct/enum/union variable definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли определения встроенных в struct/enum/union определений переменных.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16587"/>
         <source>code_align_var_def_inline</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_def_inline</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12555"/>
@@ -7648,7 +7653,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16592"/>
         <source>code_align_assign_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_assign_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12557"/>
@@ -7658,7 +7663,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16597"/>
         <source>code_align_assign_func_proto_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_assign_func_proto_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12559"/>
@@ -7668,22 +7673,22 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16602"/>
         <source>code_align_assign_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_assign_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12561"/>
         <source>How to apply align_assign_span to function declaration &quot;assignments&quot;, i.e. &apos;virtual void foo() = 0&apos; or &apos;~foo() = {default|delete}&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как применить align_assign_span к объявлению &quot;присваивания&quot; функции, т.е. &apos;virtual void foo() = 0&apos; или &apos;~foo() = {default|delete}&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12561"/>
         <source>0: Align with other assignments (default) 1: Align with each other, ignoring regular assignments 2: Don&apos;t align</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Выравнивание с другими заданиями (по умолчанию) 1: Выравнивание друг с другом, игнорируя обычные задания 2: Не выравнивать</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16607"/>
         <source>code_align_assign_decl_func</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_assign_decl_func</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12563"/>
@@ -7693,7 +7698,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16612"/>
         <source>code_align_enum_equ_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_enum_equ_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12565"/>
@@ -7703,7 +7708,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16617"/>
         <source>code_align_enum_equ_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_enum_equ_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12567"/>
@@ -7713,7 +7718,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16622"/>
         <source>code_align_var_class_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_class_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12569"/>
@@ -7723,17 +7728,17 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16627"/>
         <source>code_align_var_class_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_class_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12571"/>
         <source>The gap for aligning class member definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зазор для выравнивания определений членов класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16632"/>
         <source>code_align_var_class_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_class_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12573"/>
@@ -7743,7 +7748,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16637"/>
         <source>code_align_var_struct_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_struct_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12575"/>
@@ -7753,17 +7758,17 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16642"/>
         <source>code_align_var_struct_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_struct_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12577"/>
         <source>The gap for aligning struct/union member definitions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зазор для выравнивания определения полей структур/объединений.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16647"/>
         <source>code_align_var_struct_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_var_struct_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12579"/>
@@ -7773,7 +7778,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16652"/>
         <source>code_align_struct_init_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_struct_init_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12581"/>
@@ -7783,62 +7788,62 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16657"/>
         <source>code_align_typedef_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_typedef_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12583"/>
         <source>The minimum space between the type and the synonym of a typedef.</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное расстояние между типом и синонимом в typedef.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16662"/>
         <source>code_align_typedef_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_typedef_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12585"/>
         <source>How to align typedef&apos;d functions with other typedefs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как выровнять typedef функции с другими типами.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12585"/>
         <source>0: Don&apos;t mix them at all (default) 1: Align the open parenthesis with the types 2: Align the function type name with the other type names</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Не смешивать их вообще (по умолчанию) 1: Выровнять открытую скобку с типами 2: Выровнять имя типа функции с другими именами типа.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16667"/>
         <source>code_align_typedef_func</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_typedef_func</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12587"/>
         <source>How to consider (or treat) the &apos;*&apos; in the alignment of typedefs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как учитывать (или обращаться) с &apos;*&apos; при выравнивании typedefs.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12587"/>
         <source>0: Part of the typedef type, &apos;typedef int * pint;&apos; (default) 1: Part of type name:        &apos;typedef int   *pint;&apos; 2: Dangling:                 &apos;typedef int  *pint;&apos; Dangling: the &apos;*&apos; will not be taken into account when aligning.</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Часть типа &apos;typedef int *·foo;&apos; (по умолчанию) 1: Часть переменной &apos;typedef int*foo;&apos; 2: Двойственно &apos;typedef int·*·foo;&apos; - при выравнивании &apos;*&apos; не будет учитываться.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16672"/>
         <source>code_align_typedef_star_style</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_typedef_star_style</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12589"/>
         <source>How to consider (or treat) the &apos;&amp;&apos; in the alignment of typedefs.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как учитывать (или обращаться) с &apos;&amp;&apos; при выравнивании typedefs.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12589"/>
         <source>0: Part of the typedef type, &apos;typedef int &amp; intref;&apos; (default) 1: Part of type name:        &apos;typedef int   &amp;intref;&apos; 2: Dangling:                 &apos;typedef int  &amp;intref;&apos; Dangling: the &apos;&amp;&apos; will not be taken into account when aligning.</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Часть типа &apos;typedef int &amp;·foo;&apos; (по умолчанию) 1: Часть переменной &apos;typedef int&amp;foo;&apos; 2: Двойственно &apos;typedef int·&amp;·foo;&apos; - при выравнивании &apos;&amp;&apos; не будет учитываться.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16677"/>
         <source>code_align_typedef_amp_style</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_typedef_amp_style</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12591"/>
@@ -7848,12 +7853,12 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16682"/>
         <source>code_align_right_cmt_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_right_cmt_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12593"/>
         <source>Minimum number of columns between preceding text and a trailing comment in order for the comment to qualify for being aligned.</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное количество колонок между предыдущим текстом и последующим комментарием для того, чтобы комментарий соответствовал критериям выравнивания.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12593"/>
