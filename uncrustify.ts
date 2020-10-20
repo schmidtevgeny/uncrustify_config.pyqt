@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru_RU" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="ru_RU">
 <context>
     <name>@default</name>
     <message>
@@ -62,7 +63,7 @@
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11356"/>
-        <source>Replace tab characters found in string literals with the escape sequence <byte value="x9"/> instead.</source>
+        <source>Replace tab characters found in string literals with the escape sequence 	 instead.</source>
         <translation>Замените символы табуляции, найденные в строковых литералах, на управляющую последовательность \t.</translation>
     </message>
     <message>
@@ -1454,7 +1455,7 @@ template&lt;int i, int·... Indexes, typename IdxHolder, typename·... Elements&
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12823"/>
-        <source>(C#) Warning is given if doing tab-to-<byte value="x9"/> replacement and we have found one in a C# verbatim string literal.</source>
+        <source>(C#) Warning is given if doing tab-to-	 replacement and we have found one in a C# verbatim string literal.</source>
         <translation>(C#) Выдавать предупреждение при замене tab на \t, найденых в строковом литерале на C#.</translation>
     </message>
     <message>
@@ -3479,7 +3480,7 @@ class MyClass : myvar(0),
     <message>
         <location filename="uncrustify_ui.py" line="14917"/>
         <source>code_indent_ctor_init_leading</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_ctor_init_leading</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11882"/>
@@ -3494,7 +3495,7 @@ class MyClass : myvar(0),
     <message>
         <location filename="uncrustify_ui.py" line="14922"/>
         <source>code_indent_ctor_init</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_ctor_init</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11884"/>
@@ -3688,7 +3689,7 @@ struct MyClass : public Foo {   |     struct MyClass : public Foo {
     <message>
         <location filename="uncrustify_ui.py" line="14977"/>
         <source>code_indent_func_ctor_var_param</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_func_ctor_var_param</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11906"/>
@@ -3761,7 +3762,7 @@ false: не добавлять отступ для скобки на той же
     <message>
         <location filename="uncrustify_ui.py" line="15002"/>
         <source>code_indent_macro_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_macro_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11916"/>
@@ -3830,7 +3831,7 @@ adasd-&gt;
     <message>
         <location filename="uncrustify_ui.py" line="15022"/>
         <source>code_indent_sparen_extra</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_sparen_extra</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11924"/>
@@ -3840,7 +3841,7 @@ adasd-&gt;
     <message>
         <location filename="uncrustify_ui.py" line="15027"/>
         <source>code_indent_relative_single_line_comments</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_relative_single_line_comments</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11926"/>
@@ -3954,7 +3955,7 @@ void main(int, char**){</translation>
     <message>
         <location filename="uncrustify_ui.py" line="15062"/>
         <source>code_indent_col1_multi_string_literal</source>
-        <translation type="unfinished"></translation>
+        <translation>code_indent_col1_multi_string_literal</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11940"/>
@@ -4747,7 +4748,7 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15382"/>
         <source>code_nl_assign_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_assign_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12069"/>
@@ -4767,7 +4768,7 @@ int v() const { ¶          int v() const { return x; }
     <message>
         <location filename="uncrustify_ui.py" line="15392"/>
         <source>code_nl_tsquare_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_nl_tsquare_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12073"/>
@@ -7262,17 +7263,17 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="12487"/>
         <source>The position of the comma in enum entries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение запятой в элементах перечисления.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16427"/>
         <source>code_pos_enum_comma</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_enum_comma</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12489"/>
         <source>The position of the comma in the base class list if there is more than one line.</source>
-        <translation type="unfinished"></translation>
+        <translation>Позиция запятой в списке базовых классов, если строк больше одной.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12489"/>
@@ -7282,12 +7283,12 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16432"/>
         <source>code_pos_class_comma</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_class_comma</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12491"/>
         <source>The position of the comma in the constructor initialization list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Позиция запятой в списке конструктора полей.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12491"/>
@@ -7297,12 +7298,12 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16437"/>
         <source>code_pos_constr_comma</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_constr_comma</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12493"/>
         <source>The position of trailing/leading class colon, between class and base class list.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение двоеточия, между классом и списком базовых классов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12493"/>
@@ -7312,12 +7313,12 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16442"/>
         <source>code_pos_class_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_class_colon</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12495"/>
         <source>The position of colons between constructor and member initialization.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение двоеточия, между конструктором и списком инициализаторов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12495"/>
@@ -7327,7 +7328,7 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16447"/>
         <source>code_pos_constr_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>code_pos_constr_colon</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8726"/>
@@ -7342,17 +7343,17 @@ int b;
     <message>
         <location filename="uncrustify_ui.py" line="16452"/>
         <source>code_code_width</source>
-        <translation type="unfinished"></translation>
+        <translation>code_code_width</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12500"/>
         <source>Whether to fully split long &apos;for&apos; statements at semi-colons.</source>
-        <translation type="unfinished"></translation>
+        <translation>Разделять длинные выражения &apos;for&apos; полностью (на три строки)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16457"/>
         <source>code_ls_for_split_full</source>
-        <translation type="unfinished"></translation>
+        <translation>code_ls_for_split_full</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12502"/>
@@ -9500,7 +9501,7 @@ trail_break trail_force переменные в столбик, знак в на
     <message>
         <location filename="uncrustify_ui.py" line="11328"/>
         <source>Info</source>
-        <translation type="unfinished"></translation>
+        <translation>Информация (в том числе другие опции)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11273"/>
@@ -9559,7 +9560,60 @@ the tokenStrings. These quotes are supported: &quot;&apos;`
 option(s) with &apos;not default&apos; value: 0
 
 </source>
-        <translation type="unfinished"></translation>
+        <translation>Значение настроек:
+  Ignore - не делать никаких изменений
+  Add    - убедитесь, что есть 1 или более пробел/скобка/новая линия/ и т.д.
+  Force  - убедитесь, что есть ровно 1 пробел/скобка/новая линия/ и т.д.,
+           в некоторых случаях ведет себя как Add
+  Remove - удаляет пробел/скобка/новая линия/ и т.д.
+
+
+- Токен(ы) можно рассматривать как специфический тип(ы) с помощью опции &apos;set&apos;:
+    `set tokenType tokenString [tokenString...]`.
+
+    Пример:
+      `set BOOL __AND__ __OR__`
+
+    tokenTypes определены в src/token_enum.h, используйте их без префикса &apos;CT_&apos;: &apos;CT_BOOL&apos; =&gt; &apos;BOOL&apos;.
+
+
+- Токен(ы) можно рассматривать как тип(ы) с помощью опции &apos;type&apos;.
+    `type tokenString [tokenString...]`.
+
+    Пример:
+      `set int c_uint_8 Rectangle`.
+
+    Этого также можно добиться с помощью `set TYPE int c_uint_8 Rectangle`.
+
+
+Для встраивания пробельных символов в tokenStrings используйте экранирующий символ &apos;&apos;, или поместите
+tokenString в кавычки. Поддерживаются: &quot;&apos;`
+
+
+- Поддержка автоматического определения языков через расширение файла может быть
+  добавленна с помощью команды &apos;file_ext&apos;.
+    `file_ext langType langString [langString...] ``.
+
+    Пример:
+      `file_ext CPP .ch .cxx .cpp.in`.
+
+    Типы langTypes определены в файле uncrusify_types.h в перечислении lang_flag_e, используйте
+    их без префикса &apos;LANG_&apos;: &apos;LANG_CPP&apos; =&gt; &apos;CPP&apos;.
+
+
+- Пользовательский отступ на основе макросов можно настроить с помощью &apos;macro-open&apos;,
+  &quot;macro-else&quot; и &quot;macro-close&quot;.
+    `(macro-open | macro-else | macro-close) tokenString`.
+
+    Пример:
+      `macro-open BEGIN_TEMPLATE_MESSAGE_MAP`
+      `macro-else BEGIN_MESSAGE_MAP`
+      `macro-close END_MESSAGE_MAP`
+
+
+опция(и) со значением &apos;не по умолчанию&apos;: 0
+
+</translation>
     </message>
 </context>
 </TS>
