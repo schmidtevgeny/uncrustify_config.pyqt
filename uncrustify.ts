@@ -7863,22 +7863,22 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="12593"/>
         <source>Must be non-zero to have an effect.</source>
-        <translation type="unfinished"></translation>
+        <translation>Должно быть, ненулевое, чтобы иметь эффект.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16687"/>
         <source>code_align_right_cmt_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_right_cmt_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12595"/>
         <source>If aligning comments, whether to mix with comments after &apos;}&apos; and #endif with less than three spaces before the comment.</source>
-        <translation type="unfinished"></translation>
+        <translation>При выравнивании комментариев, следует ли смешивать комментарии менее чем с тремя пробелами с комментариями после &apos;}&apos; и #endif.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16692"/>
         <source>code_align_right_cmt_mix</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_right_cmt_mix</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12597"/>
@@ -7888,22 +7888,22 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="16697"/>
         <source>code_align_right_cmt_same_level</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_right_cmt_same_level</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12599"/>
         <source>Minimum column at which to align trailing comments.</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальный столбец, в котором выравниваются концевые комментарии.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12599"/>
         <source>Comments which are aligned beyond this column, but which can be aligned in a lesser column, may be &quot;pulled in&quot;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарии, которые выровнены за пределами этого столбца, но те, которые могут быть выровнены в меньшем столбце, могут быть &quot;втянуты&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16702"/>
         <source>code_align_right_cmt_at_col</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_right_cmt_at_col</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12601"/>
@@ -7913,7 +7913,7 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="16707"/>
         <source>code_align_func_proto_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_func_proto_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12603"/>
@@ -7923,27 +7923,27 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="16712"/>
         <source>code_align_func_proto_thresh</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_func_proto_thresh</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12605"/>
         <source>Minimum gap between the return type and the function name.</source>
-        <translation type="unfinished"></translation>
+        <translation>Минимальный разрыв между типом возврата и именем функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16717"/>
         <source>code_align_func_proto_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_func_proto_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12607"/>
         <source>Whether to align function prototypes on the &apos;operator&apos; keyword instead of what follows.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли прототипы функций по ключевому слову &apos;operator.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16722"/>
         <source>code_align_on_operator</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_on_operator</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12609"/>
@@ -7953,17 +7953,17 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="12609"/>
         <source>If true, align_var_def_XXX options are used instead of align_func_proto_XXX options.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если переменная имеет значение true, вместо переменной align_func_proto_XXX используются опции align_var_def_XXX.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16727"/>
         <source>code_align_mix_var_proto</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_mix_var_proto</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12611"/>
         <source>Whether to align single-line functions with function prototypes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли однострочные функции с прототипами функций.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12613"/>
@@ -7973,12 +7973,12 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="16732"/>
         <source>code_align_single_line_func</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_single_line_func</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12613"/>
         <source>Whether to align the open brace of single-line functions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли открытую скобу однострочных функций.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12613"/>
@@ -7988,32 +7988,32 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="16737"/>
         <source>code_align_single_line_brace</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_single_line_brace</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12615"/>
         <source>Gap for align_single_line_brace.</source>
-        <translation type="unfinished"></translation>
+        <translation>Зазор для align_single_line_brace.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16742"/>
         <source>code_align_single_line_brace_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_single_line_brace_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12617"/>
         <source>(OC) The span for aligning Objective-C message specifications.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Промежуток для выравнивания спецификаций сообщения Объект-С.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16747"/>
         <source>code_align_oc_msg_spec_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_oc_msg_spec_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12619"/>
         <source>Whether to align macros wrapped with a backslash and a newline.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли макросы, обернутые обратным слешем и новой строкой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12619"/>
@@ -8023,62 +8023,62 @@ unsigned xmt_error : 1;
     <message>
         <location filename="uncrustify_ui.py" line="16752"/>
         <source>code_align_nl_cont</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_nl_cont</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12621"/>
         <source>Whether to align macro functions and variables together.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли макрофункции и переменные вместе.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16757"/>
         <source>code_align_pp_define_together</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_pp_define_together</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16762"/>
         <source>code_align_pp_define_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_pp_define_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12625"/>
         <source>The minimum space between label and value of a preprocessor define.</source>
-        <translation type="unfinished"></translation>
+        <translation>Определяется минимальное расстояние между меткой и значением препроцессора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16767"/>
         <source>code_align_pp_define_gap</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_pp_define_gap</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12627"/>
         <source>Whether to align lines that start with &apos;&lt;&lt;&apos; with previous &apos;&lt;&lt;&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли выравнивать строки, начинающиеся с &apos;&lt;&lt;&apos; с предыдущим &apos;&lt;&lt;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16772"/>
         <source>code_align_left_shift</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_left_shift</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12629"/>
         <source>Whether to align text after &apos;asm volatile ()&apos; colons.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли выравнивать текст после двоеточия &quot;asm volatile ()&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16777"/>
         <source>code_align_asm_colon</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_asm_colon</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12631"/>
         <source>(OC) Span for aligning parameters in an Objective-C message call on the &apos;:&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(OC) Число строк для выравнивания параметров в вызове сообщения Objective-C на &quot;:&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="16782"/>
         <source>code_align_oc_msg_colon_span</source>
-        <translation type="unfinished"></translation>
+        <translation>code_align_oc_msg_colon_span</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12633"/>
