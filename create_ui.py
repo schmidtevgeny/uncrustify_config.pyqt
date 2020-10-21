@@ -50,11 +50,14 @@ def parse_str(s):
         items.append(sc)
         sc = None
     items2 = []
+    items3 = []
     for s in items:
         items2.append(
-            "self.tr(\"{}\")".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
+            "self.tr(\"{}\").strip()".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
+        items3.append(
+            "wrap(self.tr(\"{}\"))".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
 
-    return "+' '+".join(items2)
+    return ["+' '+".join(items2), "+' '+".join(items3)]
 
 
 if not os.path.exists("uncrustify.cfg"):
@@ -123,18 +126,16 @@ for it in data:
         init_strings.append("self.label{}.setFont(QtGui.QFont('{}', {}, 0))".format(section_id, FontCode, FontCodeSize))
         init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, section_id, rowid))
         rowid += 1
-        get_strings.append('s.append(wrap(self.tr(\"\\n{}\\n\")))'.format(it['title']))
+        get_strings.append('s.append(wrap("\\n")+wrap(self.tr(\"{}\")+wrap("\\n")))'.format(it['title']))
 
     elif it['type'] =='info':
-        # print(it['title'])
-        # s = parse_str(it['title'])
-        # init_strings.append("self.widgetif{} = QtWidgets.QLabel({})".format(section_id, s))
         init_strings.append("self.widgetif{} = QtWidgets.QLabel(self.tr('''{}'''))".format(section_id, it['title']))
         init_strings.append("self.addItem(self.widgetif{}, self.tr('Info'))".format(section_id))
+        get_strings.append("s.append(wrap(self.tr('''{}''')))".format(it['title']))
 
     elif it['type'] == "option":
         s = parse_str(it['title'])
-        init_strings.append("self.label{} = QtWidgets.QLabel({})".format(it['name'], s))
+        init_strings.append("self.label{} = QtWidgets.QLabel({})".format(it['name'], s[0]))
         init_strings.append("self.label{}.setWordWrap(True)".format(it['name']))
         init_strings.append("self.label{}.setStyleSheet(\"QLabel{{ border-top: 1px solid red;}}\")".format(it['name']))
         init_strings.append("self.lt{}.addWidget(self.label{}, {}, 0, 1, 5)".format(section_id, it['name'], rowid))
@@ -156,7 +157,7 @@ for it in data:
             init_strings.append("self.{}.setValue({})".format(it['name'], it['val']))
             init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append('s.append({})'.format(s[1]))
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
 
@@ -169,7 +170,7 @@ for it in data:
             init_strings.append("self.{}.setValue({})".format(it['name'], it['val']))
             init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append('s.append({})'.format(s[1]))
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it['name'] + '.value()))')
 
@@ -181,7 +182,7 @@ for it in data:
             init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
             init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append('s.append({})'.format(s[1]))
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
                     'name'] + '.currentText()))')
@@ -194,7 +195,7 @@ for it in data:
             init_strings.append("self.{}.setText({})".format(it['name'], it['val']))
             init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append('s.append({})'.format(s[1]))
             get_strings.append(
                 's.append("' + it['name'] + ' = \\"{}\\" # ' + it['vtype'] + '".format(self.' + it[
                     'name'] + '.text()))')
@@ -208,7 +209,7 @@ for it in data:
             init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
             init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append('s.append({})'.format(s[1]))
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
                     'name'] + '.currentText()))')
@@ -224,7 +225,7 @@ for it in data:
             init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
             init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append('s.append({})'.format(s[1]))
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
                     'name'] + '.currentText()))')
@@ -238,7 +239,7 @@ for it in data:
             init_strings.append("self.{}.setCurrentText('{}')".format(it['name'], it['val']))
             init_strings.append("self.lt{}.addWidget(self.{}, {}, 1, 1, 4)".format(section_id, it['name'], rowid))
 
-            get_strings.append('s.append(wrap({}))'.format(s))
+            get_strings.append('s.append({})'.format(s[1]))
             get_strings.append(
                 's.append("' + it['name'] + ' = {} # ' + it['vtype'] + '".format(self.' + it[
                     'name'] + '.currentText()))')
@@ -273,12 +274,14 @@ f.write('''from PyQt5 import QtWidgets, QtGui
 import textwrap
 import re
 def wrap(s):
+    if s=="\\n": return "\\n#"
     my_wrap = textwrap.TextWrapper(width = 80)
-    wrap_list = my_wrap.wrap(text=s)
-    s = ""
-    for line in wrap_list:
-        s += "\\n# "+line
-    return s
+    so = ""
+    for si in s.split("\\n"):        
+        wrap_list = my_wrap.wrap(text=si)        
+        for line in wrap_list:
+            so += "\\n# "+line.strip()
+    return so
 class Widget(QtWidgets.QToolBox):
     def __init__(self, parent=None):
         ''')
