@@ -9375,12 +9375,12 @@ trail_break trail_force переменные в столбик, знак в на
     <message>
         <location filename="uncrustify_ui.py" line="7577"/>
         <source>Code alignment options (not left column spaces/tabs) help</source>
-        <translation>Разные декоративные выравнивания, типа имена переменных в один столбец.</translation>
+        <translation>Разные декоративные выравнивания, типа имена переменных в один столбец</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="8632"/>
         <source>Comment modification options help</source>
-        <translation>Сворачивание комментариев, конвертирование // в /*, расстановка звездочек и пробелов в начале строки.</translation>
+        <translation>Сворачивание комментариев, конвертирование // в /*, расстановка звездочек и пробелов в начале строки</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="9059"/>
@@ -9405,7 +9405,7 @@ trail_break trail_force переменные в столбик, знак в на
     <message>
         <location filename="uncrustify_ui.py" line="10033"/>
         <source>Warn levels - 1: error, 2: warning (default), 3: note help</source>
-        <translation>Уровни предупреждений - 1: ошибка, 2: предупреждение (по умолчанию), 3: справка по примечаниям.</translation>
+        <translation>Уровни предупреждений - 1: ошибка, 2: предупреждение (по умолчанию), 3: справка по примечаниям</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10172"/>
@@ -9543,107 +9543,107 @@ option(s) with &apos;not default&apos; value: 0
     <message>
         <location filename="uncrustify_ui.py" line="320"/>
         <source>Add or remove space after the opening parenthesis and before the closing parenthesis of a argument list of a C++11 lambda, as in &apos;[]( &lt;here&gt; int x &lt;here&gt; ){ ... }&apos;.</source>
-        <translation type="unfinished">Добавьте или уберите пробел после открывающей скобки и перед закрывающей скобкой в списке аргументов лямбды C++11, как в &apos;[]( &lt;here&gt; int x &lt;here&gt; ){ .... }&apos;.</translation>
+        <translation>Добавьте или уберите пробел после открывающей скобки и перед закрывающей скобкой в списке аргументов лямбды C++11, как в &apos;[]( &lt;here&gt; int x &lt;here&gt; ){ .... }&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11571"/>
         <source>code_sp_cpp_lambda_argument_list</source>
-        <translation type="unfinished"></translation>
+        <translation>[]( ... ){...}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="555"/>
         <source>Add or remove space between nested braces, i.e. &apos;{{&apos; vs. &apos;{ {&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте или уберите пробел между вложенными фигурными скобками, т.е. &apos;{{&apos; vs &apos;{·{&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="720"/>
         <source>In cases where total removal of whitespace would be a syntax error, a value of &apos;remove&apos; is treated the same as &apos;force&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>В случаях, когда полное удаление пробельных символов будет синтаксической ошибкой, значение &apos;remove&apos; рассматривается так же, как &apos;force&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="720"/>
         <source>This also affects some other instances of space following a type that are not covered by other options; for example, between the return type and parenthesis of a function type template argument, between the type and parenthesis of an array parameter, or between &apos;decltype(...)&apos; and the following word.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это также влияет на некоторые другие случаи пробела после типа, которые не покрываются другими опциями; например, между возвращаемым типом и скобкой аргумента шаблона типа функции, между типом и скобкой параметра массива, или между &apos;decltype(...)&apos; и следующим словом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="731"/>
         <source>Add or remove space between &apos;decltype(...)&apos; and word, brace or function call.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте или уберите пробел между &apos;decltype(...)&apos; и словом, скобкой или вызовом функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="966"/>
         <source>Overrides sp_before_sparen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Переопределяет sp_before_sparen.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1142"/>
         <source>Add or remove space inside &apos;[]&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте или удалите пробел внутри &apos;[]&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="11941"/>
         <source>code_sp_inside_square_empty</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="1714"/>
         <source>Add or remove space between &apos;)&apos; and &apos;{&apos; of a function call in object initialization.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить пробел между &apos;)&apos; и &apos;{&apos; вызова функции при инициализации объекта.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2539"/>
         <source>Add or remove space after &apos;:&apos; in a Java/C++11 range-based &apos;for&apos;, as in &apos;for (Type var : &lt;here&gt; expr)&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте или удалите пробел после &apos;:&apos; в циклах &apos;for&apos;, основанных на диапазоне Java/C++11, как в &apos;for (Type var :·expr)&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2550"/>
         <source>Add or remove space before &apos;:&apos; in a Java/C++11 range-based &apos;for&apos;, as in &apos;for (Type var &lt;here&gt; : expr)&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавьте или удалите пробел перед &apos;:&apos; в циклах &apos;for&apos;, основанных на диапазоне Java/C++11, как в &apos;for (Type var·: expr)&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2561"/>
         <source>(D) Add or remove space between &apos;extern&apos; and &apos;(&apos; as in &apos;extern &lt;here&gt; (C)&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>(D) Добавьте или удалите пробел между &apos;extern&apos; и &apos;(&apos;, как в &apos;extern (C)&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2572"/>
         <source>Add or remove space after the opening of a C++ comment, as in &apos;// &lt;here&gt; A&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавлять или удалять пробел после открытия комментария C++, т.е. &apos;// A&apos; против &apos;//A&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2583"/>
         <source>Add or remove space in a C++ region marker comment, as in &apos;// &lt;here&gt; BEGIN&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавлять или удалять пробел после открытия комментария C++, т.е. &apos;// BEGIN&apos; против &apos;//BEGIN&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2583"/>
         <source>A region marker is defined as a comment which is not preceded by other text (i.e. the comment is the first non-whitespace on the line), and which starts with either &apos;BEGIN&apos; or &apos;END&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Маркер региона определяется как комментарий, которому не предшествует другой текст (т.е. комментарий является первым не пробельным символом в строке), и который начинается либо с символов &apos;BEGIN&apos; или &apos;END&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="2583"/>
         <source>Overrides sp_cmt_cpp_start.</source>
-        <translation type="unfinished"></translation>
+        <translation>Переопределяет sp_cmt_cpp_start.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12596"/>
         <source>code_sp_cmt_cpp_region</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10223"/>
         <source>If true, space added with sp_cmt_cpp_start will be added after Doxygen sequences like &apos;///&apos;, &apos;///&lt;&apos;, &apos;//!&apos; and &apos;//!&lt;&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если переменная имеет значение true, sp_cmt_cpp_start добавляет пробел после таких последовательностей, как &apos;///&apos;, &apos;///&lt;&apos;, &apos;//!&apos; и &apos;//!&lt;&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10225"/>
         <source>If true, space added with sp_cmt_cpp_start will be added after Qt translator or meta-data comments like &apos;//:&apos;, &apos;//=&apos;, and &apos;//~&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если переменная имеет значение true, sp_cmt_cpp_start добавляет пробел после таких последовательностей, как &apos;//:&apos;, &apos;//=&apos;, и &apos;//~&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10282"/>
         <source>Additional indent before the leading base class colon.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли делать отступы перед ведущим двоеточием базового класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10282"/>
