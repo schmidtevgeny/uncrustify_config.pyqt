@@ -9648,252 +9648,252 @@ option(s) with &apos;not default&apos; value: 0
     <message>
         <location filename="uncrustify_ui.py" line="10282"/>
         <source>Requires a newline break before colon (see pos_class_colon and nl_class_colon)</source>
-        <translation type="unfinished"></translation>
+        <translation>Требуется разрыв новой строки перед двоеточием (см pos_class_colon и nl_class_colon)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="12801"/>
         <source>code_indent_before_class_colon</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10336"/>
         <source>It might wise to choose the same value for the option indent_case_brace.</source>
-        <translation type="unfinished"></translation>
+        <translation>Возможно, имеет смысл выбрать такое же значение для опции indent_case_brace.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10338"/>
         <source>It might wise to choose the same value for the option indent_switch_case.</source>
-        <translation type="unfinished"></translation>
+        <translation>Возможно, имеет смысл выбрать такое же значение для опции indent_switch_case.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10366"/>
         <source>Whether to indent a comma when inside a brace.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступ для запятой внутри скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10366"/>
         <source>If true, aligns under the open brace.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если true, выравнивается по открытой фигурной скобке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13011"/>
         <source>code_indent_comma_brace</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10410"/>
         <source>Whether to add further spaces after regular indent to reach next tabstop when indenting after virtual brace open and newline.</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавлять ли дополнительные пробелы после обычного отступа для достижения следующей позиции табуляции при отступе после открытой виртуальной фигурной скобки и новой строки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10416"/>
         <source>How to indent compound literals that are being returned. true: add both the indent from return &amp; the compound literal open brace       (i.e. 2 indent levels) false: only indent 1 level, don&apos;t add the indent for the open brace, only        add the indent for the return.</source>
-        <translation type="unfinished"></translation>
+        <translation>Как делать отступ для составных литералов, которые возвращаются. true: добавить отступ от возврата и открытой скобки составного литерала (т.е. 2 уровня отступа) false: только 1 уровень отступа, не добавлять отступ для открытой скобки, добавить отступ только для возврата.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10422"/>
         <source>Whether to indent the statements inside ternary operator.</source>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступы для утверждений внутри тернарного оператора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10432"/>
         <source>Don&apos;t indent the close parenthesis of a function definition, if the parenthesis is on its own line.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не делайте отступ от закрывающей скобки определения функции, если скобка находится на отдельной строке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13176"/>
         <source>code_donot_indent_func_def_close_paren</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10435"/>
         <source>If true, overrides nl_inside_empty_func</source>
-        <translation type="unfinished"></translation>
+        <translation>Если true, отменяет действие nl_inside_empty_func</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10455"/>
         <source>Don&apos;t split one-line do statements, as in &apos;do { b++; } while(...);&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не разделяйть однострочные операторы do, как в &apos;do { b++; } while(...);&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13231"/>
         <source>code_nl_do_leave_one_liners</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10541"/>
         <source>Whether to split one-line simple unbraced if statements into three lines by adding newlines, as in &apos;int a[12] = { &lt;here&gt; 0 &lt;here&gt; };&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли разбивать однострочные простые нерасширенные операторы на три строки, добавляя новые строки, как в &apos;int a[12] = { &lt;here&gt; 0 &lt;here&gt; };&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10549"/>
         <source>Don&apos;t add a newline before a cpp-comment in a parameter list of a function call.</source>
-        <translation type="unfinished"></translation>
+        <translation>Не добавляйть новую строку перед cpp-комментарием в списке параметров вызова функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14076"/>
         <source>code_donot_add_nl_before_cpp_comment</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10556"/>
         <source>The number of newlines inside an empty function body.</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество новых строк внутри пустого тела функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10556"/>
         <source>This option overrides eat_blanks_after_open_brace and eat_blanks_before_close_brace, but is ignored when nl_collapse_empty_body=true</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот параметр переопределяет eat_blanks_after_open_brace и eat_blanks_before_close_brace, но игнорируется, если nl_collapse_empty_body=true</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14091"/>
         <source>code_nl_inside_empty_func</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10560"/>
         <source>Where applicable, this option is overridden with eat_blanks_after_open_brace=true</source>
-        <translation type="unfinished"></translation>
+        <translation>Там, где это применимо, этот параметр переопределяется с помощью eat_blanks_after_open_brace=true</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10667"/>
         <source>The position of shift operators in wrapped expressions.</source>
-        <translation type="unfinished"></translation>
+        <translation>Положение операторов сдвига в сернутых выражениях.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14381"/>
         <source>code_pos_shift</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10801"/>
         <source>Whether to align comma-separated statements following &apos;&lt;&lt;&apos; (as used to initialize Eigen matrices).</source>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли выравнивать разделенные запятыми утверждения, следующие за &apos;&lt;&lt;&apos; (как это используется для инициализации  матриц Eigen  https://eigen.tuxfamily.org/).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14711"/>
         <source>code_align_eigen_comma_init</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10816"/>
         <source>0: No reflowing (apart from the line wrapping due to cmt_width) (default) 1: No touching at all 2: Full reflow (enable cmt_indent_multi for indent with line wrapping due to cmt_width)</source>
-        <translation type="unfinished"></translation>
+        <translation>0: Без перекомпоновки (кроме свертки строки из-за cmt_width) (по умолчанию) 1: Не трогать вообще 2: Полная перекомпоновки (включите cmt_indent_multi для отступа со сверткой строки из-за cmt_width)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10818"/>
         <source>Path to a file that contains regular expressions describing patterns for which the end of one line and the beginning of the next will be folded into the same sentence or paragraph during full comment reflow.</source>
-        <translation type="unfinished"></translation>
+        <translation>Путь к файлу, содержащему регулярные выражения, описывающие шаблоны, для которых конец одной строки и начало следующей будут складываться в одно предложение или абзац во время полного заполнения комментария.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10818"/>
         <source>The regular expressions are described using ECMAScript syntax.</source>
-        <translation type="unfinished"></translation>
+        <translation>Регулярные выражения описываются с помощью синтаксиса ECMAScript.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10818"/>
         <source>The syntax for this specification is as follows, where &quot;...&quot; indicates the custom regular expression and &quot;n&quot; indicates the nth end_of_prev_line_regex and beg_of_next_line_regex regular expression pair:</source>
-        <translation type="unfinished"></translation>
+        <translation>Синтаксис этой спецификации следующий, где &quot;...&quot; указывает на пользовательское регулярное выражение, а &quot;n&quot; указывает на n-ую пару регулярных выражений end_of_prev_line_regex и beg_of_next_line_regex:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10818"/>
         <source>end_of_prev_line_regex[1] = &quot;...$&quot; beg_of_next_line_regex[1] = &quot;^...&quot; end_of_prev_line_regex[2] = &quot;...$&quot; beg_of_next_line_regex[2] = &quot;^...&quot;             .             .             . end_of_prev_line_regex[n] = &quot;...$&quot; beg_of_next_line_regex[n] = &quot;^...&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10818"/>
         <source>Note that use of this option overrides the default reflow fold regular expressions, which are internally defined as follows:</source>
-        <translation type="unfinished"></translation>
+        <translation>Обратите внимание, что использование этой опции переопределяет стандартное преобразование регулярных выражений, которые внутренне определяются следующим образом:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10818"/>
         <source>end_of_prev_line_regex[1] = &quot;[w,])]$&quot; beg_of_next_line_regex[1] = &quot;^[w,[(]&quot; end_of_prev_line_regex[2] = &quot;.$&quot; beg_of_next_line_regex[2] = &quot;^[A-Z]&quot;</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14751"/>
         <source>code_cmt_reflow_fold_regex_file</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10820"/>
         <source>Whether to indent wrapped lines to the start of the encompassing paragraph during full comment reflow (cmt_reflow_mode = 2).</source>
-        <translation type="unfinished"></translation>
+        <translation>Нужен ли отступ свернутых строк до начала сворачиваемого абзаца при полном разборе комментария (cmt_reflow_mode = 2).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10820"/>
         <source>Overrides the value specified by cmt_sp_after_star_cont.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отменяет значение, заданное cmt_sp_after_star_cont.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10820"/>
         <source>Note that cmt_align_doxygen_javadoc_tags overrides this option for paragraphs associated with javadoc tags</source>
-        <translation type="unfinished"></translation>
+        <translation>Обратите внимание, что cmt_align_doxygen_javadoc_tags переопределяет этот параметр для абзацев, связанных с тегами javadoc</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14756"/>
         <source>code_cmt_reflow_indent_to_paragraph_start</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10826"/>
         <source>Whether to align doxygen javadoc-style tags (&apos;@param&apos;, &apos;@return&apos;, etc.) and corresponding fields such that groups of consecutive block tags, parameter names, and descriptions align with one another.</source>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли теги в стиле doxygen javadoc (&apos;@param&apos;, &apos;@return&apos; и т.д.) и соответствующие поля таким образом, чтобы группы последовательных блочных тегов, имена параметров и описания выравнивались друг с другом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10828"/>
         <source>Overrides that which is specified by the cmt_sp_after_star_cont.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отменяет значение, заданное параметром cmt_sp_after_star_cont.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10826"/>
         <source>If cmt_width &gt; 0, it may be necessary to enable cmt_indent_multi and set cmt_reflow_mode = 2 in order to achieve the desired alignment for line-wrapping.</source>
-        <translation type="unfinished"></translation>
+        <translation>Если cmt_width &gt; 0, может потребоваться включить cmt_indent_multi и установить cmt_reflow_mode = 2, чтобы добиться желаемого выравнивания для сворачиваемых строк.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14771"/>
         <source>code_cmt_align_doxygen_javadoc_tags</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10828"/>
         <source>The number of spaces to insert after the star and before doxygen javadoc-style tags (@param, @return, etc).</source>
-        <translation type="unfinished"></translation>
+        <translation>Количество пробелов для вставки после звезды и перед тегами в стиле doxygen javadoc (@param, @return и т.д.).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10828"/>
         <source>Requires enabling cmt_align_doxygen_javadoc_tags.</source>
-        <translation type="unfinished"></translation>
+        <translation>Требуется включение cmt_align_doxygen_javadoc_tags.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14776"/>
         <source>code_cmt_sp_before_doxygen_javadoc_tags</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10980"/>
         <source>See https://en.cppreference.com/w/cpp/string/byte/isspace.</source>
-        <translation type="unfinished"></translation>
+        <translation>См https://en.cppreference.com/w/cpp/string/byte/isspace.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10989"/>
         <source>Set the number of second(s) before terminating formatting the current file, 0: no timeout. only for linux</source>
-        <translation type="unfinished"></translation>
+        <translation>Устанавливает количество секунд (секунд) до завершения форматирования текущего файла, 0: таймаут отсутствует. Только для linux</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15221"/>
         <source>code_debug_timeout</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="10991"/>
         <source>Set the number of characters to be printed if the text is too long, 0: do not truncate.</source>
-        <translation type="unfinished"></translation>
+        <translation>Установите количество символов, которое будет напечатано, если текст слишком длинный, 0: не усекать.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="15226"/>
         <source>code_debug_truncate</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 </TS>
