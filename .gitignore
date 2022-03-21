@@ -4,3 +4,4 @@
 *.cpp
 *.cfg
 uncrustify_ui.py
+uncrustify.exe

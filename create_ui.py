@@ -332,3 +332,4 @@ if platform.system() == "Windows":
     os.system("main.py")
 else:
     os.system("./main.py")
+# uncrustify\scripts\release_tool.py
