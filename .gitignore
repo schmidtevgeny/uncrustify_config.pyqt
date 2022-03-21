@@ -1,7 +1,6 @@
 /.idea/
 /*.qm
 /__pycache__*/
-/test.py
 *.cpp
-conf*.cfg
+*.cfg
 uncrustify_ui.py
