@@ -53,9 +53,11 @@ def parse_str(s):
     items3 = []
     for s in items:
         items2.append(
-            "self.tr(\"{}\").strip()".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
+            "self.tr(\"{}\").strip()".format(
+                s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
         items3.append(
-            "wrap(self.tr(\"{}\"))".format(s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
+            "wrap(self.tr(\"{}\"))".format(
+                s.strip(" \t").replace("'", "\'").replace("\"", "\\\"").replace("\n", "\\n")))
 
     return ["+' '+".join(items2), "+' '+".join(items3)]
 
@@ -104,10 +106,12 @@ while i < len(d):
         data.append({'type': 'option', 'title': name, 'name': optname, 'val': optvalue, 'vtype': opttype})
 
     i += 1
+
 init_strings = [
     "super(Widget, self).__init__(parent)",
     "self.setWindowTitle('" + title + "')"
-    ]
+]
+init_strings2 = ['']
 get_strings = ['s=[]']
 load_strings = ['pass']
 filter_string = []
@@ -118,7 +122,9 @@ for it in data:
     if it['type'] == "section":
         section_id += 1
         init_strings.append("self.widget{} = QtWidgets.QWidget()".format(section_id))
-        init_strings.append("self.addItem(self.widget{}, self.tr(\"{}\"))".format(section_id, it['title']))
+        init_strings2.append("self.scroll{} = QtWidgets.QScrollArea()".format(section_id))
+        init_strings2.append("self.scroll{}.setWidget(self.widget{})".format(section_id, section_id))
+        init_strings2.append("self.addTab(self.scroll{}, self.tr(\"{}\"))".format(section_id, it['title']))
         init_strings.append("self.lt{} = QtWidgets.QGridLayout(self.widget{})".format(section_id, section_id))
         rowid = 0
         init_strings.append("self.label{} = QtWidgets.QLabel(self.tr(\"{} help\"))".format(section_id, it['title']))
@@ -128,9 +134,9 @@ for it in data:
         rowid += 1
         get_strings.append('s.append(wrap("\\n")+wrap(self.tr(\"{}\")+wrap("\\n")))'.format(it['title']))
 
-    elif it['type'] =='info':
+    elif it['type'] == 'info':
         init_strings.append("self.widgetif{} = QtWidgets.QLabel(self.tr('''{}'''))".format(section_id, it['title']))
-        init_strings.append("self.addItem(self.widgetif{}, self.tr('Info'))".format(section_id))
+        init_strings.append("self.addTab(self.widgetif{}, self.tr('Info'))".format(section_id))
         get_strings.append("s.append(wrap(self.tr('''{}''')))".format(it['title']))
 
     elif it['type'] == "option":
@@ -282,10 +288,11 @@ def wrap(s):
         for line in wrap_list:
             so += "\\n# "+line.strip()
     return so
-class Widget(QtWidgets.QToolBox):
+class Widget(QtWidgets.QTabWidget):
     def __init__(self, parent=None):
         ''')
 f.write("\n        ".join(init_strings))
+f.write("\n        ".join(init_strings2))
 f.write('''
     def get(self):
         ''')
@@ -319,7 +326,7 @@ f.write("\n        ".join(filter_string))
 
 f.close()
 
-os.system('pylupdate5 uncrustify_ui.py -ts uncrustify.ts')
+os.system('pylupdate5 uncrustify_ui.py main.py -ts uncrustify.ts')
 
 if platform.system() == "Windows":
     os.system("main.py")

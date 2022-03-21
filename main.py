@@ -11,17 +11,19 @@ import uncrustify_ui
 ··········
 ¶¶¶¶¶¶¶¶¶¶
 '''
+
+
 class MainWidget(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWidget, self).__init__()
         self.central = QtWidgets.QSplitter(self)
         self.left = QtWidgets.QWidget(self.central)
         self.leftlt = QtWidgets.QVBoxLayout(self.left)
-        self.filter=QtWidgets.QLineEdit()
+        self.filter = QtWidgets.QLineEdit()
         self.leftlt.addWidget(self.filter)
         self.config = uncrustify_ui.Widget()
         self.leftlt.addWidget(self.config)
-        self.right =  QtWidgets.QSplitter()
+        self.right = QtWidgets.QSplitter()
         self.central.addWidget(self.right)
         self.filter.textChanged.connect(self.config.filter)
 
@@ -34,26 +36,25 @@ class MainWidget(QtWidgets.QMainWindow):
         self.out_text.setWordWrapMode(0)
 
         self.setCentralWidget(self.central)
-        self.panel = self.addToolBar("main")
+        self.panel = self.addToolBar(self.tr("main"))
 
-        self.process = QtWidgets.QAction("process")
+        self.process = QtWidgets.QAction(self.tr("process"))
         self.process.triggered.connect(self.on_process)
         self.panel.addAction(self.process)
 
-        self.diff = QtWidgets.QAction("diff")
+        self.diff = QtWidgets.QAction(self.tr("diff"))
         self.diff.triggered.connect(self.on_diff)
         self.panel.addAction(self.diff)
 
-        self.reload = QtWidgets.QAction("reload")
+        self.reload = QtWidgets.QAction(self.tr("reload"))
         self.reload.triggered.connect(self.on_reload)
         self.panel.addAction(self.reload)
 
-        self.sppos = QtWidgets.QAction("vertical")
+        self.sppos = QtWidgets.QAction(self.tr("vertical"))
         self.sppos.setCheckable(True)
         self.sppos.toggled.connect(self.on_sppos)
         self.panel.addAction(self.sppos)
         self.on_reload()
-
 
     def on_sppos(self, b):
         if b:
@@ -61,6 +62,7 @@ class MainWidget(QtWidgets.QMainWindow):
         else:
             self.right.setOrientation(QtCore.Qt.Horizontal)
         pass
+
     def on_reload(self):
         if os.path.exists('conf.cfg'):
             self.config.load('conf.py')
@@ -69,6 +71,7 @@ class MainWidget(QtWidgets.QMainWindow):
             f = open("in.cpp", "r", encoding="utf-8")
             self.in_text.setPlainText(f.read())
             f.close()
+
     def on_process(self):
         f = open("in.cpp", "w", encoding="utf-8")
         f.write(self.in_text.toPlainText())
@@ -102,11 +105,13 @@ class MainWidget(QtWidgets.QMainWindow):
                 os.system('meld out1.cpp out2.cpp')
         pass
 
+
 if __name__ == "__main__":
     a = QtWidgets.QApplication(sys.argv)
     translator = QtCore.QTranslator()
     translator.load("uncrustify")
     a.installTranslator(translator)
     w = MainWidget()
+
     w.show()
     sys.exit(a.exec_())
