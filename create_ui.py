@@ -123,15 +123,25 @@ classinit = '''
         super(Widget, self).__init__(parent)
         self.setWindowTitle('Uncrustify-0.74.0')    
         font_name = QtGui.QFont('{}', {}, 2)
-        fontcode = QtGui.QFont('{}', {}, 2)
+        font_code = QtGui.QFont('{}', {}, 2)
 '''.format(FontName, FontNameSize, FontCode, FontNameSize)
 
 classget = '''
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
     def get(self):
         s=[]
 '''
 
 classset = '''
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
     def load(self, path):
         regexp = r"^([^#\\s].+)\\s*=\\s*(.*?)\\n"
         f = open(path, encoding = "utf-8")
@@ -154,6 +164,11 @@ classset = '''
 '''
 
 classflt = '''
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
+    ###########################################################################################
     def filter(self, filter):
         pass
 '''
@@ -174,27 +189,58 @@ for gr in groups:
     group = "group_page_{}".format(gr_id)
     grouplt = "group_page_layout_{}".format(gr_id)
 
-    classinit += "\n        #============================================"
+    classinit += "\n        #================== {} ".format(gr.desc)+'='*(80-len(gr.desc))
+    classget +=  "\n        #================== {} ".format(gr.desc)+'='*(80-len(gr.desc))
+    classset +=  "\n        #================== {} ".format(gr.desc)+'='*(80-len(gr.desc))
+    
     classinit += "\n        self.{} = QtWidgets.QWidget()".format(group)
     classinit += "\n        self.{} = QtWidgets.QGridLayout(self.{})".format(grouplt, group)
+    classinit += "\n        self.{}.addWidget(QtWidgets.QLabel(self.tr(\"{} help\")), 0, 0, 1, 5)".format(grouplt, gr.desc)
 
-    row_id=0
+    row_id = 1
     for opt in gr.options:
         if opt.decl == 'Option<line_end_e>':
             # lf/crlf/cr/auto
+            if opt.dval is None:
+                opt.dval = 'False'
+            s = '"<hr>{}"'.format(opt.desc.replace('"', '\\"'))
+            classinit += "\n        #--------------------------------------------"
+            classinit += "\n        self.label_{} = QtWidgets.QLabel({})".format(opt.name, s)
+            classinit += "\n        self.label_{}.setWordWrap(True)".format(opt.name)
+            classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
+            row_id += 1
+            # todo: code
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('{}')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
+            classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
+            classinit += "\n        self.option_{} =  QtWidgets.QComboBox()".format(opt.name)
+            classinit += "\n        self.option_{}.addItems(['lf', 'crlf', 'cr', 'auto'])".format(opt.name)
+            classinit += "\n        self.option_{}.setCurrentText('{}')".format(opt.name, str(opt.dval[3:]).lower())
+            classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
+            row_id += 1
+            classget += "\n        s.append('# {} ')".format(opt.desc)
+            classget += "\n        s.append('# Default: {} ')".format(str(opt.dval[3:]).lower())
+            classget += "\n        s.append('{} = ' + self.option_{}.currentText())".format(opt.name,opt.name)
+            classset += "\n        if \"{}\" in params: self.{}.setCurrentText(params[\"{}\"])".format(opt.name,opt.name,opt.name)
             pass
         elif opt.decl == 'Option<bool>':
             if opt.dval is None:
-                opt.dval = False
-            s = '"{}"'.format(opt.desc.replace('"', '\\"'))
+                opt.dval = 'False'
+            s = '"<hr>{}"'.format(opt.desc.replace('"', '\\"'))
             classinit += "\n        #--------------------------------------------"
             classinit += "\n        self.label_{} = QtWidgets.QLabel({})".format(opt.name, s)
-            classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 5)".format(grouplt, opt.name, row_id)
-            row_id+=1
+            classinit += "\n        self.label_{}.setWordWrap(True)".format(opt.name)
+            classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
+            row_id += 1
             # todo: code
-            # classinit += "\n        self.{}"
-            # classinit += "\n        self.{}"
-            # classinit += "\n        self.{}.addWidget(self.option_{}, {}, 0, 1, 5)".format(grouplt, opt.name, row_id)
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('{}')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
+            classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
+            classinit += "\n        self.option_{} =  QtWidgets.QComboBox()".format(opt.name)
+            classinit += "\n        self.option_{}.addItems(['true','false'])".format(opt.name)
+            classinit += "\n        self.option_{}.setCurrentText('{}')".format(opt.name, str(opt.dval).lower())
+            classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
+            row_id += 1
         elif opt.decl == 'Option<string>':
             if opt.dval is None:
                 opt.dval = ''
