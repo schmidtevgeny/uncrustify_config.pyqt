@@ -112,11 +112,19 @@ def wrap(s):
 class Widget(QtWidgets.QTabWidget):
 '''
 
+FontName = "Arial"
+FontNameSize = 14
+if platform.system() == "Windows":
+    FontCode = "Consolas"
+else:
+    FontCode = "monospace"
 classinit = '''
     def __init__(self, parent=None):
         super(Widget, self).__init__(parent)
         self.setWindowTitle('Uncrustify-0.74.0')    
-'''
+        font_name = QtGui.QFont('{}', {}, 2)
+        fontcode = QtGui.QFont('{}', {}, 2)
+'''.format(FontName, FontNameSize, FontCode, FontNameSize)
 
 classget = '''
     def get(self):
@@ -147,6 +155,7 @@ classset = '''
 
 classflt = '''
     def filter(self, filter):
+        pass
 '''
 
 
@@ -163,16 +172,43 @@ gr_id = 0
 for gr in groups:
     gr_id += 1
     group = "group_page_{}".format(gr_id)
+    grouplt = "group_page_layout_{}".format(gr_id)
 
     classinit += "\n        #============================================"
     classinit += "\n        self.{} = QtWidgets.QWidget()".format(group)
+    classinit += "\n        self.{} = QtWidgets.QGridLayout(self.{})".format(grouplt, group)
 
+    row_id=0
     for opt in gr.options:
         if opt.decl == 'Option<line_end_e>':
+            # lf/crlf/cr/auto
             pass
         elif opt.decl == 'Option<bool>':
             if opt.dval is None:
-                opt.dval=False
+                opt.dval = False
+            s = '"{}"'.format(opt.desc.replace('"', '\\"'))
+            classinit += "\n        #--------------------------------------------"
+            classinit += "\n        self.label_{} = QtWidgets.QLabel({})".format(opt.name, s)
+            classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 5)".format(grouplt, opt.name, row_id)
+            row_id+=1
+            # todo: code
+            # classinit += "\n        self.{}"
+            # classinit += "\n        self.{}"
+            # classinit += "\n        self.{}.addWidget(self.option_{}, {}, 0, 1, 5)".format(grouplt, opt.name, row_id)
+        elif opt.decl == 'Option<string>':
+            if opt.dval is None:
+                opt.dval = ''
+        elif opt.decl == 'Option<signed>':
+            if opt.dval is None:
+                opt.dval = 0
+        elif opt.decl == 'Option<iarf_e>':
+            # ignore / add / remove / force / not_defined
+            if opt.dval is None:
+                opt.dval = 'ignore'
+        elif opt.decl == 'Option<token_pos_e>':
+            # ignore/break/force/lead/trail/join/lead_break/lead_force/trail_break/trail_force
+            if opt.dval is None:
+                opt.dval = 'ignore'
         elif opt.decl.startswith('BoundedOption'):
             s = opt.decl.replace('BoundedOption', '').replace('<', '').replace('>', '').split(',')
             if s[0].strip() in ['unsigned', 'signed']:
@@ -210,7 +246,7 @@ for gr in groups:
     classinit += "\n        self.scroll_{}.setWidget(self.{})".format(group, group)
     classinit += "\n        self.addTab(self.scroll_{}, self.tr(\"{}\"))".format(group, gr.desc)
 
-f = open('options.py', 'w', encoding='utf-8')
+f = open('uncrustify_ui.py', 'w', encoding='utf-8')
 f.write(classdef)
 f.write(classinit)
 f.write(classget)
@@ -540,8 +576,8 @@ f.close()
 #
 # os.system('pylupdate5 uncrustify_ui.py main.py -ts uncrustify.ts')
 
-# if platform.system() == "Windows":
-#     os.system("main.py")
-# else:
-#     os.system("./main.py")
+if platform.system() == "Windows":
+    os.system("main.py")
+else:
+    os.system("./main.py")
 # uncrustify\scripts\release_tool.py
