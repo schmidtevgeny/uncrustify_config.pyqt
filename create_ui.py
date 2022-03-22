@@ -53,7 +53,7 @@ class Option(object):
                 '{!r} (length={:d}) exceeds the maximum length {:d}'.format(
                     name, len(name), max_name_len))
 
-        self.desc = u'\n'.join(desc)
+        self.desc = u'\n'.join(desc).split('\n\n')
         self.decl = decl[7:]
         self.name = name
         self.dval = dval
@@ -195,7 +195,7 @@ for gr in groups:
     
     classinit += "\n        self.{} = QtWidgets.QWidget()".format(group)
     classinit += "\n        self.{} = QtWidgets.QGridLayout(self.{})".format(grouplt, group)
-    classinit += "\n        self.{}.addWidget(QtWidgets.QLabel(self.tr(\"{} help\")), 0, 0, 1, 5)".format(grouplt, gr.desc)
+    classinit += "\n        self.{}.addWidget(QtWidgets.QLabel(self.tr(\"{} help\")), 0, 0, 1, 2)".format(grouplt, gr.desc)
 
     classget += "\n        s.append('\\n\\n'+'#'*80+wrap(\"{}\"))".format(gr.desc)
     classget += "\n        s.append('#'*80)"
@@ -361,10 +361,11 @@ for gr in groups:
             perr(opt)
 
     # end of group loop step
-    classinit += "\n        self.scroll_{} = QtWidgets.QScrollArea()".format(group, group)
+    classinit += "\n        self.scroll_{} = QtWidgets.QScrollArea()".format(group)
     # classinit += "\n        self.scroll_{}.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)".format(group)
     # classinit += "\n        self.scroll_{}.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)".format(group)
     classinit += "\n        self.scroll_{}.setWidget(self.{})".format(group, group)
+    # classinit += "\n        self.{}.setStyleSheet('QWidget{{ border: 1px solid red;}}')".format(group)
     classinit += "\n        self.scroll_{}.setWidgetResizable(True)".format(group)
     classinit += "\n        self.addTab(self.scroll_{}, self.tr(\"{}\"))".format(group, gr.desc)
 
@@ -699,7 +700,7 @@ f.close()
 #
 # f.close()
 #
-# os.system('pylupdate5 uncrustify_ui.py main.py -ts uncrustify.ts')
+os.system('pylupdate5 uncrustify_ui.py main.py -ts uncrustify.ts')
 
 if platform.system() == "Windows":
     os.system("main.py")
