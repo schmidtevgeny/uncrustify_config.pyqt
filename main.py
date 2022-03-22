@@ -65,7 +65,7 @@ class MainWidget(QtWidgets.QMainWindow):
 
     def on_reload(self):
         if os.path.exists('conf.cfg'):
-            self.config.load('conf.py')
+            self.config.load('conf.cfg')
 
         if os.path.exists('in.cpp'):
             f = open("in.cpp", "r", encoding="utf-8")
