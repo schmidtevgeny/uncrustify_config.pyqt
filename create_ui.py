@@ -101,8 +101,7 @@ import re
 import html
 import platform
 
-if platform.system() != "Windows":
-    import iuliia
+import iuliia
 
 # сворачивание вывода в config
 def wrap(s):
@@ -110,12 +109,9 @@ def wrap(s):
     my_wrap = textwrap.TextWrapper(width=80)
     so = ""
     for si in s.split("\\n"):
-        si = si.replace('↑', ' ').replace('↓', ' ').replace('·', '`').replace('¶', '`')
+        si = si.replace('↑', '\\x18').replace('↓', '\\x19').replace('·', '\\x0f').replace('¶', '\\x14').replace('<pre>', '\\n').replace('</pre>','')
 
-        if platform.system() == "Windows":
-            wrap_list = my_wrap.wrap(text=html.unescape(si))
-        else:
-            wrap_list = my_wrap.wrap(text=iuliia.translate(html.unescape(si), iuliia.MOSMETRO))
+        wrap_list = my_wrap.wrap(text=iuliia.translate(html.unescape(si), iuliia.MOSMETRO))
         for line in wrap_list:
             so += "\\n# " + line.strip()
     return so
@@ -156,7 +152,7 @@ classset = '''
     ###########################################################################################
     def load(self, path):
         regexp = r"^([^#\\s].+)\\s*=\\s*([^\\n]*?)\\n"
-        f = open(path, encoding = "utf-8")
+        f = open(path) #, encoding = "utf-8")
         d = f.read()
         f.close()
         matches = re.finditer(regexp, d, re.MULTILINE | re.IGNORECASE)

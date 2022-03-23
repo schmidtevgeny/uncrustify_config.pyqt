@@ -76,7 +76,7 @@ class MainWidget(QtWidgets.QMainWindow):
         f = open("in.cpp", "w", encoding="utf-8")
         f.write(self.in_text.toPlainText())
         f.close()
-        f = open("conf.cfg", "w", encoding="utf-8")
+        f = open("conf.cfg", "w") #, encoding="utf-8")
         # DEBUG
         # for it in self.config.get().split('\n'):
         #     if it.startswith('#'): continue
@@ -98,7 +98,7 @@ class MainWidget(QtWidgets.QMainWindow):
         f = open("in.cpp", "w", encoding="utf-8")
         f.write(self.in_text.toPlainText())
         f.close()
-        f = open("conf1.cfg", "w", encoding="utf-8")
+        f = open("conf1.cfg", "w") #, encoding="utf-8")
         f.write(self.config.get())
         f.close()
         if os.system("uncrustify  -c conf.cfg -f in.cpp -o out1.cpp"):
