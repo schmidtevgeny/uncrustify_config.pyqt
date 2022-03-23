@@ -110,7 +110,7 @@ def wrap(s):
     my_wrap = textwrap.TextWrapper(width=80)
     so = ""
     for si in s.split("\\n"):
-        si = si.replace('↑', ' ').replace('↓', ' ').replace('·', '\\\\s').replace('¶', '\\\\n')
+        si = si.replace('↑', ' ').replace('↓', ' ').replace('·', '`').replace('¶', '`')
 
         if platform.system() == "Windows":
             wrap_list = my_wrap.wrap(text=html.unescape(si))
@@ -219,12 +219,12 @@ for gr in groups:
     for opt in gr.options:
         options += 1
         s = '"<hr>"' + '+"<br>"'.join(
-            ['+self.tr("{}")'.format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n')) for it in
+            ['+self.tr("{}", "{}")'.format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n'), opt.name) for it in
              opt.desc])        
 
         wrap_desc = [it.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '# \\n') for it in opt.desc]
         wrap_desc = '+"\\n#"+'.join(
-            ['wrap(self.tr("{}"))'.format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n')) for it in
+            ['wrap(self.tr("{}", "{}"))'.format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n'), opt.name) for it in
              opt.desc])
         classflt += "\n        self.label_{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(opt.name, opt.name)
         classflt += "\n        self.option_{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(opt.name, opt.name)
