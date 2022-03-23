@@ -77,9 +77,14 @@ class MainWidget(QtWidgets.QMainWindow):
         f.write(self.in_text.toPlainText())
         f.close()
         f = open("conf.cfg", "w", encoding="utf-8")
+        # DEBUG
+        # for it in self.config.get().split('\n'):
+        #     if it.startswith('#'): continue
+        #     f.write(it + "\n")
+        # END DEBUG
         f.write(self.config.get())
         f.close()
-        if os.system("uncrustify  -c conf.cfg -f in.cpp -o out.cpp"):
+        if os.system("uncrustify -c conf.cfg -f in.cpp -o out.cpp"):
             pass
         else:
             if os.path.exists('out.cpp'):

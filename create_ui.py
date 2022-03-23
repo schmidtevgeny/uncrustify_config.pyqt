@@ -95,19 +95,31 @@ def parse_config():
 parse_config()
 
 classdef = '''from PyQt5 import QtWidgets, QtGui, QtCore
+
 import textwrap
 import re
+import html
+import platform
+
+if platform.system() != "Windows":
+    import iuliia
 
 # сворачивание вывода в config
 def wrap(s):
-    if s=="\\n": return "\\n#"
-    my_wrap = textwrap.TextWrapper(width = 80)
+    if s == "\\n": return "\\n#"
+    my_wrap = textwrap.TextWrapper(width=80)
     so = ""
-    for si in s.split("\\n"):        
-        wrap_list = my_wrap.wrap(text=si)        
+    for si in s.split("\\n"):
+        si = si.replace('↑', ' ').replace('↓', ' ').replace('·', '\\\\s').replace('¶', '\\\\n')
+
+        if platform.system() == "Windows":
+            wrap_list = my_wrap.wrap(text=html.unescape(si))
+        else:
+            wrap_list = my_wrap.wrap(text=iuliia.translate(html.unescape(si), iuliia.MOSMETRO))
         for line in wrap_list:
-            so += "\\n# "+line.strip()
+            so += "\\n# " + line.strip()
     return so
+
     
 class Widget(QtWidgets.QTabWidget):
 '''
@@ -211,7 +223,7 @@ for gr in groups:
              opt.desc])        
 
         wrap_desc = [it.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '# \\n') for it in opt.desc]
-        wrap_desc = '+"#\\n"+'.join(
+        wrap_desc = '+"\\n#"+'.join(
             ['wrap(self.tr("{}"))'.format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n')) for it in
              opt.desc])
         classflt += "\n        self.label_{}.setVisible(filter=='' or '{}'.find(filter)!=-1)".format(opt.name, opt.name)
@@ -311,8 +323,8 @@ for gr in groups:
             classget += "\n        s.append({})".format(wrap_desc)
             classget += "\n        s.append('''#\n# Type: signed''')"
             classget += "\n        s.append('''# Default: {} ''')".format(opt.dval)
-            classget += "\n        s.append('{} = ' + self.option_{}.value())".format(opt.name, opt.name)
-            classset += "\n        if \"{}\" in params: self.option_{}.setValue(params[\"{}\"])".format(opt.name,
+            classget += "\n        s.append('{} = ' + str(self.option_{}.value()))".format(opt.name, opt.name)
+            classset += "\n        if \"{}\" in params: self.option_{}.setValue(int(params[\"{}\"]))".format(opt.name,
                                                                                                         opt.name,
                                                                                                         opt.name)
 
@@ -399,8 +411,8 @@ for gr in groups:
                 classget += "\n        s.append({})".format(wrap_desc)
                 classget += "\n        s.append('''#\n# Type: {}''')".format(' '.join(t))
                 classget += "\n        s.append('''# Default: {} ''')".format(opt.dval)
-                classget += "\n        s.append('{} = ' + self.option_{}.value())".format(opt.name, opt.name)
-                classset += "\n        if \"{}\" in params: self.option_{}.setValue(params[\"{}\"])".format(opt.name,
+                classget += "\n        s.append('{} = ' + str(self.option_{}.value()))".format(opt.name, opt.name)
+                classset += "\n        if \"{}\" in params: self.option_{}.setValue(int(params[\"{}\"]))".format(opt.name,
                                                                                                             opt.name,
                                                                                                             opt.name)
 
