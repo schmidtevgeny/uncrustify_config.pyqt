@@ -325,7 +325,9 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space around assignment operator &apos;=&apos; in a prototype.</source>
         <comment>sp_assign_default</comment>
-        <translation type="unfinished">Добавить или убрать пробел вокруг присваивания &apos;=&apos; в прототипе.</translation>
+        <translation>Добавить или убрать пробел вокруг присваивания &apos;=&apos; в прототипе.
+
+`Foo( unsigned int boo·=·999 );`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -337,7 +339,8 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before assignment operator &apos;=&apos;, &apos;+=&apos;, etc.</source>
         <comment>sp_before_assign</comment>
-        <translation type="unfinished">Добавить или убрать пробела перед символами операторов  присваивания (&apos;=&apos;, +/=&apos;, и тому подобное).</translation>
+        <translation>Добавить или убрать пробел перед символами операторов  присваивания (`=`, `+=`, и тому подобное). 
+`x·=5; y·+=7;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -349,7 +352,8 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after assignment operator &apos;=&apos;, &apos;+=&apos;, etc.</source>
         <comment>sp_after_assign</comment>
-        <translation type="unfinished">Добавить или убрать пробела после символов операторов  присваивания (&apos;=&apos;, +/=&apos;, и тому подобное).</translation>
+        <translation>Добавить или убрать пробел после символов операторов  присваивания (`=`, `+=`, и тому подобное).
+`x=·5; y+=·7;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -361,19 +365,31 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space in &apos;NS_ENUM (&apos;.</source>
         <comment>sp_enum_paren</comment>
-        <translation type="unfinished">(ObjC) Добавить или убрать пробел в &apos;NS_ENUM (&apos;.</translation>
+        <translation>(ObjC) Добавить или убрать пробел в &apos;NS_ENUM (&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space around assignment &apos;=&apos; in enum.</source>
         <comment>sp_enum_assign</comment>
-        <translation type="unfinished">Добавить или убрать пробел вокруг присваивания &apos;=&apos; в enum.</translation>
+        <translation>Добавить или убрать пробел вокруг присваивания `=` в enum.
+
+`enum {
+	E11·=·0,
+	E12·=·1,
+	E13·=·2
+};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before assignment &apos;=&apos; in enum.</source>
         <comment>sp_enum_before_assign</comment>
-        <translation type="unfinished">Добавить или убрать пробел перед присваивания &apos;=&apos; в enum.</translation>
+        <translation>Добавить или убрать пробел перед присваивания &apos;=&apos; в enum.
+
+`enum {
+	E11·=0,
+	E12·=1,
+	E13·=2
+};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -385,7 +401,13 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after assignment &apos;=&apos; in enum.</source>
         <comment>sp_enum_after_assign</comment>
-        <translation type="unfinished">Добавить или убрать пробел после присваивания &apos;=&apos; в enum.</translation>
+        <translation>Добавить или убрать пробел после присваивания &apos;=&apos; в enum.
+
+`enum {
+	E11=·0,
+	E12=·1,
+	E13=·2
+};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -397,76 +419,110 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space around assignment &apos;:&apos; in enum.</source>
         <comment>sp_enum_colon</comment>
-        <translation type="unfinished">Добавить или убрать пробел вокруг присваивания &apos;:&apos; в enum.</translation>
+        <translation>Добавить или убрать пробел вокруг присваивания &apos;:&apos; в enum.
+
+`enum class form·:·int{one, two};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space around preprocessor &apos;##&apos; concatenation operator.</source>
         <comment>sp_pp_concat</comment>
-        <translation type="unfinished">Добавить или убрать пробел вокруг препроцессорной комманды конкатенации &apos;##&apos;.</translation>
+        <translation>Добавить или убрать пробел вокруг препроцессорной комманды конкатенации `##`.
+
+`#define inline(i) inline_·##·i`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after preprocessor &apos;#&apos; stringify operator.
 Also affects the &apos;#@&apos; charizing operator.</source>
         <comment>sp_pp_stringify</comment>
-        <translation type="unfinished">Добавить или убрать пробела после оператора строчной обработки препроцессора &apos;#&apos;.
-Также влияет на оператор &apos;#@&apos; charizing.</translation>
+        <translation>Добавить или убрать пробела после оператора строчной обработки препроцессора `#`.
+Также влияет на оператор `#@`.
+
+`#define WARN_IF(EXP) do { if (EXP) fprintf (stderr, &quot;Warning: &quot; #·EXP &quot;\n&quot;); } \`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before preprocessor &apos;#&apos; stringify operator
 as in &apos;#define x(y) L#y&apos;.</source>
         <comment>sp_before_pp_stringify</comment>
-        <translation type="unfinished">Добавить или убрать пробел перед строковым оператором препроцессора &apos;#&apos;, как в &apos;#define x(y) L#y&apos;.</translation>
+        <translation>Добавить или убрать пробел перед строковым оператором препроцессора `#`
+
+`#define WARN_IF(EXP) do { if (EXP) fprintf (stderr, &quot;Warning: &quot;·#EXP &quot;\n&quot;); } \`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space around boolean operators &apos;&amp;&amp;&apos; and &apos;||&apos;.</source>
         <comment>sp_bool</comment>
-        <translation type="unfinished">Добавить или убрать пробел вокруг логических операторов &apos;&amp;&amp;&apos; и &apos;||&apos;.</translation>
+        <translation>Добавить или убрать пробел вокруг логических операторов `&amp;&amp;` и `||`.
+
+`assert(y &lt;0·&amp;&amp;·z&gt; 2);
+inline decltype(auto) Invoke(Fun·&amp;&amp;·f, Args·&amp;&amp;·... args); // !`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space around compare operator &apos;&lt;&apos;, &apos;&gt;&apos;, &apos;==&apos;, etc.</source>
         <comment>sp_compare</comment>
-        <translation type="unfinished">Добавить или убрать пробел вокруг операторов сравнения &apos;&amp;lt;&apos;, &apos;&amp;gt;&apos;, &apos;==&apos;, и т.д.</translation>
+        <translation>Добавить или убрать пробел вокруг операторов сравнения `&lt;`, `&gt;`, `==`, и т.д.
+
+`for (i = 0; i·&lt;·5; i++) bar(i);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside &apos;(&apos; and &apos;)&apos;.</source>
         <comment>sp_inside_paren</comment>
-        <translation type="unfinished">Добавить или убрать пробел внутри скобок &apos;(&apos; и &apos;)&apos;.</translation>
+        <translation>Добавить или убрать пробел внутри скобок &apos;(&apos; и &apos;)&apos;.
+
+`f(const_cast&lt;const Args*&gt;(·&amp;args·)...);`
+
+`const int size = sizeof...(·args·) + 2;`
+
+`typedef void (*func)();`
+
+`typedef void (·__stdcall *func·)();`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between nested parentheses, i.e. &apos;((&apos; vs. &apos;) )&apos;.</source>
         <comment>sp_paren_paren</comment>
-        <translation type="unfinished">Добавить или убрать пробел между вложенными скобками, т.е &apos;(·(&apos;.</translation>
+        <translation>Добавить или убрать пробел между вложенными скобками
+
+`__attribute__(·(visibility (&quot;default&quot;)·)·) int* i;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between back-to-back parentheses, i.e. &apos;)(&apos; vs. &apos;) (&apos;.</source>
         <comment>sp_cparen_oparen</comment>
-        <translation type="unfinished">Добавить или убрать пробел между соседними скобками, т.е. &apos;)·(&apos;.</translation>
+        <translation>Добавить или убрать пробел между соседними скобками
+
+`typedef void (__stdcall *func)·();`
+
+`std::forward&lt;Fun&gt;(f)·(std::forward&lt;Args&gt;(args)...);`
+
+`STDMETHOD(GetValues)·(BSTR bsName, REFDATA** pData);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to balance spaces inside nested parentheses.</source>
         <comment>sp_balance_nested_parens</comment>
-        <translation type="unfinished">Балансировать ли пробелы внутри вложенных скобок.</translation>
+        <translatorcomment>не понятно как это TODO</translatorcomment>
+        <translation>Балансировать ли пробелы внутри вложенных скобок.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;)&apos; and &apos;{&apos;.</source>
         <comment>sp_paren_brace</comment>
-        <translation type="unfinished">Добавить или убрать пробел между &apos;)&apos; и &apos;{&apos;.</translation>
+        <translation>Добавить или убрать пробел между `)` и `{`.
+
+`void f()noexcept()·{}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between nested braces, i.e. &apos;{{&apos; vs. &apos;{ {&apos;.</source>
         <comment>sp_brace_brace</comment>
-        <translation type="unfinished">Добавить или убрать пробел между вложенными фигурными скобками, т.е. &apos;{{&apos; vs &apos;{·{&apos;.</translation>
+        <translation>Добавить или убрать пробел между вложенными фигурными скобками, т.е. &apos;{{&apos; vs &apos;{·{&apos;.
+
+`int d = int{int{}·}; std::vector&lt;some_type&gt; c = {·{}, {}·};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
