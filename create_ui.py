@@ -101,7 +101,7 @@ import re
 import html
 import platform
 
-import iuliia
+import iuliia, markdown
 
 # сворачивание вывода в config
 def wrap(s):
@@ -109,13 +109,15 @@ def wrap(s):
     my_wrap = textwrap.TextWrapper(width=80)
     so = ""
     for si in s.split("\\n"):
-        si = si.replace('↑', '\\x18').replace('↓', '\\x19').replace('·', '\\x0f').replace('¶', '\\x14').replace('<pre>', '\\n').replace('</pre>','')
+        si = si.replace('↑', '\\x18').replace('↓', '\\x19').replace('·', '\\x0f').replace('¶', '\\x14')
 
         wrap_list = my_wrap.wrap(text=iuliia.translate(html.unescape(si), iuliia.MOSMETRO))
         for line in wrap_list:
             so += "\\n# " + line.strip()
     return so
 
+def label(s):
+        return markdown.markdown(s)
     
 class Widget(QtWidgets.QTabWidget):
 '''
@@ -204,7 +206,7 @@ for gr in groups:
 
     classinit += "\n        self.{} = QtWidgets.QWidget()".format(group)
     classinit += "\n        self.{} = QtWidgets.QGridLayout(self.{})".format(grouplt, group)
-    classinit += "\n        self.{}.addWidget(QtWidgets.QLabel(self.tr(\"{} help\")), 0, 0, 1, 2)".format(grouplt,
+    classinit += "\n        self.{}.addWidget(QtWidgets.QLabel(label(self.tr(\"{} help\"))), 0, 0, 1, 2)".format(grouplt,
                                                                                                           gr.desc)
 
     classget += "\n        s.append('\\n\\n'+'#'*80+wrap(\"{}\"))".format(gr.desc)
@@ -214,9 +216,9 @@ for gr in groups:
 
     for opt in gr.options:
         options += 1
-        s = '"<hr>"' + '+"<br>"'.join(
+        s = 'label('+'"<hr>"' + '+"<br>"'.join(
             ['+self.tr("{}", "{}")'.format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n'), opt.name) for it in
-             opt.desc])        
+             opt.desc])+')'
 
         wrap_desc = [it.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '# \\n') for it in opt.desc]
         wrap_desc = '+"\\n#"+'.join(
