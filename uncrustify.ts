@@ -331,7 +331,7 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If set to ignore, use sp_assign.</source>
         <comment>sp_assign_default</comment>
-        <translation type="unfinished">Если установлено ignore, использует sp_assign.</translation>
+        <translation>Если установлено `ignore`, использует `sp_assign`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -343,7 +343,7 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_assign.</source>
         <comment>sp_before_assign</comment>
-        <translation type="unfinished">Переопределяет sp_assign.</translation>
+        <translation>Переопределяет `sp_assign`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -355,7 +355,7 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_assign.</source>
         <comment>sp_after_assign</comment>
-        <translation type="unfinished">Переопределяет sp_assign.</translation>
+        <translation>Переопределяет `sp_assign`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -379,7 +379,7 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_enum_assign.</source>
         <comment>sp_enum_before_assign</comment>
-        <translation type="unfinished">Переопределяет sp_enum_assign.</translation>
+        <translation>Переопределяет `sp_enum_assign`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -391,7 +391,7 @@ immediately invoked lambda, as in &apos;[]( ... ){ ... } &lt;here&gt; ( ... )&ap
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_enum_assign.</source>
         <comment>sp_enum_after_assign</comment>
-        <translation type="unfinished">Переопределяет sp_enum_assign.</translation>
+        <translation>Переопределяет `sp_enum_assign`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -504,7 +504,7 @@ variable name. If set to ignore, sp_before_ptr_star is used instead.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after pointer caret &apos;^&apos;, if followed by a word.</source>
         <comment>sp_after_ptr_block_caret</comment>
-        <translation type="unfinished">(CLI.NET) Добавить или убрать пробел после символа указателя &apos;^&apos;, если за ним следует слово.</translation>
+        <translation>(CLI.NET) Добавить или убрать пробел после символа указателя &apos;^&apos;, если за ним следует слово.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -523,14 +523,14 @@ prototype or function definition.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_after_ptr_star and sp_type_func.</source>
         <comment>sp_after_ptr_star_func</comment>
-        <translation type="unfinished">Переопределяет sp_after_ptr_star и sp_type_func.</translation>
+        <translation>Переопределяет `sp_after_ptr_star` и `sp_type_func`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after a pointer star &apos;*&apos; in the trailing return of a
 function prototype or function definition.</source>
         <comment>sp_after_ptr_star_trailing</comment>
-        <translation type="unfinished">Добавить или убрать пробел после указателя &apos;*&apos; в конце возврата прототипа функции или определения функции.</translation>
+        <translation type="unfinished">Добавить или убрать пробел после указателя `*` в конце возврата прототипа функции или определения функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -584,7 +584,7 @@ variable name. If set to ignore, sp_before_byref is used instead.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_type_func.</source>
         <comment>sp_after_byref</comment>
-        <translation type="unfinished">Переопределяет sp_type_func.</translation>
+        <translation>Переопределяет `sp_type_func`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -820,13 +820,13 @@ that sp_angle_shift cannot remove the space without this option.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove space between &apos;invariant&apos; and &apos;(&apos;.</source>
         <comment>sp_invariant_paren</comment>
-        <translation type="unfinished">(D) Добавить или убрать пробел между &apos;invariant&apos; и &apos;(&apos;.</translation>
+        <translation>(D) Добавить или убрать пробел между &apos;invariant&apos; и &apos;(&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove space after the &apos;)&apos; in &apos;invariant (C) c&apos;.</source>
         <comment>sp_after_invariant_paren</comment>
-        <translation type="unfinished">(D) Добавить или убрать пробел после &apos;)&apos; в &apos;invariant (C) c&apos;.</translation>
+        <translation>(D) Добавить или убрать пробел после &apos;)&apos; в &apos;invariant (C) c&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -927,7 +927,7 @@ statement, as in &apos;for ( ; ; &lt;here&gt; )&apos;.</source>
         <source>(OC) Add or remove space inside a non-empty Objective-C boxed array &apos;@[&apos; and
 &apos;]&apos;. If set to ignore, sp_inside_square is used.</source>
         <comment>sp_inside_square_oc_array</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел внутри непустого боксового массива Objective-C &apos;@[&apos; и &apos;]&apos;. &amp;lt;br&amp;gt;
+        <translation>(OC) Добавить или убрать пробел внутри непустого боксового массива Objective-C &apos;@[&apos; и &apos;]&apos;. &amp;lt;br&amp;gt;
 Если установлено значение ignore, используется sp_inside_square.</translation>
     </message>
     <message>
@@ -947,21 +947,21 @@ statement, as in &apos;for ( ; ; &lt;here&gt; )&apos;.</source>
         <source>(C#) Add or remove space between &apos;,&apos; and &apos;]&apos; in multidimensional array type
 like &apos;int[,,]&apos;.</source>
         <comment>sp_after_mdatype_commas</comment>
-        <translation type="unfinished">(C#) Добавить или убрать пробел между &apos;,&apos; и &apos;]&apos; в многомерных массивах типа &apos;int[,,]&apos;.</translation>
+        <translation>(C#) Добавить или убрать пробел между &apos;,&apos; и &apos;]&apos; в многомерных массивах типа &apos;int[,,]&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) Add or remove space between &apos;[&apos; and &apos;,&apos; in multidimensional array type
 like &apos;int[,,]&apos;.</source>
         <comment>sp_before_mdatype_commas</comment>
-        <translation type="unfinished">Добавить или убрать пробел между &apos;[&apos; и &apos;,&apos; в многомерных массивах типа &apos;int[,,]&apos;.</translation>
+        <translation>Добавить или убрать пробел между &apos;[&apos; и &apos;,&apos; в многомерных массивах типа &apos;int[,,]&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) Add or remove space between &apos;,&apos; in multidimensional array type
 like &apos;int[,,]&apos;.</source>
         <comment>sp_between_mdatype_commas</comment>
-        <translation type="unfinished">(C#) Добавить или убрать пробел между &apos;,&apos; в многомерных массивах типа &apos;int[,,]&apos;.</translation>
+        <translation>(C#) Добавить или убрать пробел между &apos;,&apos; в многомерных массивах типа &apos;int[,,]&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1008,7 +1008,7 @@ The value REMOVE will be overriden with FORCE</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove space between a type and &apos;?&apos;.</source>
         <comment>sp_type_question</comment>
-        <translation type="unfinished">(D) Добавить или убрать пробел между типом и &apos;?&apos;.</translation>
+        <translation>(D) Добавить или убрать пробел между типом и &apos;?&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1082,7 +1082,7 @@ in &apos;operator ++(&apos;.</source>
         <source>Overrides sp_after_operator_sym when the operator has no arguments, as in
 &apos;operator *()&apos;.</source>
         <comment>sp_after_operator_sym_empty</comment>
-        <translation type="unfinished">Отменяет sp_after_operator_sym, когда оператор не имеет аргументов, как в &apos;operator *()&apos;.</translation>
+        <translation>Отменяет `sp_after_operator_sym`, когда оператор не имеет аргументов, как в `operator *()`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1162,7 +1162,7 @@ i.e. &apos;int(exp)&apos; vs. &apos;int (exp)&apos;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space inside Objective-C boxed dictionary &apos;{&apos; and &apos;}&apos;</source>
         <comment>sp_inside_braces_oc_dict</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел в словаре &apos;{&apos; и &apos;}&apos;</translation>
+        <translation>(OC) Добавить или убрать пробел в словаре &apos;{&apos; и &apos;}&apos;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1515,7 +1515,7 @@ in &apos;scope (something) { }&apos;. If set to ignore, sp_before_sparen is used
 and &apos;@catch&apos; are on the same line, as in &apos;@catch (decl) &lt;here&gt; {&apos;.
 If set to ignore, sp_catch_brace is used.</source>
         <comment>sp_oc_catch_brace</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел перед &apos;{&apos; оператора &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в &apos;@catch (decl) &amp;lt;here&amp;gt; {&apos;.&amp;lt;br&amp;gt;
+        <translation>(OC) Добавить или убрать пробел перед &apos;{&apos; оператора &apos;@catch&apos;, если &apos;{&apos; и &apos;@catch&apos; находятся на одной строке, как в &apos;@catch (decl) &amp;lt;here&amp;gt; {&apos;.&amp;lt;br&amp;gt;
 Если установлено значение ignore, используется sp_catch_brace.</translation>
     </message>
     <message>
@@ -1529,7 +1529,7 @@ If set to ignore, sp_catch_brace is used.</source>
         <source>(OC) Add or remove space between &apos;}&apos; and &apos;@catch&apos; if on the same line.
 If set to ignore, sp_brace_catch is used.</source>
         <comment>sp_oc_brace_catch</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел между &apos;}&apos; и &apos;@catch&apos;, если они находятся на одной строке.&amp;lt;br&amp;gt;
+        <translation>(OC) Добавить или убрать пробел между &apos;}&apos; и &apos;@catch&apos;, если они находятся на одной строке.&amp;lt;br&amp;gt;
 Если установлено значение ignore, используется sp_brace_catch.</translation>
     </message>
     <message>
@@ -1585,7 +1585,7 @@ initialization.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove around the D named array initializer &apos;:&apos; operator.</source>
         <comment>sp_d_array_colon</comment>
-        <translation type="unfinished">(D) Добавить или убрать вокруг оператора инициализатора имаенованого массива в D &apos;:&apos;.</translation>
+        <translation>(D) Добавить или убрать вокруг оператора инициализатора имаенованого массива в D &apos;:&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1645,63 +1645,63 @@ applied, as in &apos;(--x)&apos; or &apos;y++;&apos;.</source>
         <source>(OC) Add or remove space after the scope &apos;+&apos; or &apos;-&apos;, as in &apos;-(void) foo;&apos;
 or &apos;+(int) bar;&apos;.</source>
         <comment>sp_after_oc_scope</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел после области видимости &apos;+&apos; или &apos;-&apos;, как в &apos;-(void) foo;&apos; или &apos;+(int) bar;&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел после области видимости &apos;+&apos; или &apos;-&apos;, как в &apos;-(void) foo;&apos; или &apos;+(int) bar;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space after the colon in message specs,
 i.e. &apos;-(int) f:(int) x;&apos; vs. &apos;-(int) f: (int) x;&apos;.</source>
         <comment>sp_after_oc_colon</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел после двоеточия в спецификациях сообщений, т.е. &apos;-(int) f:(int) x;&apos; против &apos;-(int) f:(int) x;&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел после двоеточия в спецификациях сообщений, т.е. &apos;-(int) f:(int) x;&apos; против &apos;-(int) f:(int) x;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space before the colon in message specs,
 i.e. &apos;-(int) f: (int) x;&apos; vs. &apos;-(int) f : (int) x;&apos;.</source>
         <comment>sp_before_oc_colon</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел перед двоеточием в спецификациях сообщений, т.е. &apos;-(int) f: (int) x;&apos; против &apos;-(int) f : (int) x;&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел перед двоеточием в спецификациях сообщений, т.е. &apos;-(int) f: (int) x;&apos; против &apos;-(int) f : (int) x;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space after the colon in immutable dictionary expression
 &apos;NSDictionary *test = @{@&quot;foo&quot; :@&quot;bar&quot;};&apos;.</source>
         <comment>sp_after_oc_dict_colon</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел после двоеточия в неизменяемом словарном выражении &apos;NSDictionary *test = @{@&amp;quot;foo&amp;quot; :@&amp;quot;bar&amp;quot;};&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел после двоеточия в неизменяемом словарном выражении &apos;NSDictionary *test = @{@&amp;quot;foo&amp;quot; :@&amp;quot;bar&amp;quot;};&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space before the colon in immutable dictionary expression
 &apos;NSDictionary *test = @{@&quot;foo&quot; :@&quot;bar&quot;};&apos;.</source>
         <comment>sp_before_oc_dict_colon</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел перед двоеточием в неизменяемом словарном выражении &apos;NSDictionary *test = @{@&amp;quot;foo&amp;quot; :@&amp;quot;bar&amp;quot;};&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел перед двоеточием в неизменяемом словарном выражении &apos;NSDictionary *test = @{@&amp;quot;foo&amp;quot; :@&amp;quot;bar&amp;quot;};&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space after the colon in message specs,
 i.e. &apos;[object setValue:1];&apos; vs. &apos;[object setValue: 1];&apos;.</source>
         <comment>sp_after_send_oc_colon</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел после двоеточия в спецификациях сообщений, т.е. &apos;[object setValue:1];&apos; против &apos;[object setValue: 1];&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел после двоеточия в спецификациях сообщений, т.е. &apos;[object setValue:1];&apos; против &apos;[object setValue: 1];&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space before the colon in message specs,
 i.e. &apos;[object setValue:1];&apos; vs. &apos;[object setValue :1];&apos;.</source>
         <comment>sp_before_send_oc_colon</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел перед двоеточием в спецификациях сообщений, т.е. &apos;[object setValue:1];&apos; против &apos;[object setValue :1];&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел перед двоеточием в спецификациях сообщений, т.е. &apos;[object setValue:1];&apos; против &apos;[object setValue :1];&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space after the (type) in message specs,
 i.e. &apos;-(int)f: (int) x;&apos; vs. &apos;-(int)f: (int)x;&apos;.</source>
         <comment>sp_after_oc_type</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробела после (типа) в спецификациях сообщения, т.е. &apos;-(int)f: (int) x;&apos; против &apos;-(int)f: (int)x;&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробела после (типа) в спецификациях сообщения, т.е. &apos;-(int)f: (int) x;&apos; против &apos;-(int)f: (int)x;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space after the first (type) in message specs,
 i.e. &apos;-(int) f:(int)x;&apos; vs. &apos;-(int)f:(int)x;&apos;.</source>
         <comment>sp_after_oc_return_type</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел после первого (тип) в спецификациях сообщений, т.е. &apos;-(int) f:(int)x;&apos; против &apos;-(int)f:(int)x;&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел после первого (тип) в спецификациях сообщений, т.е. &apos;-(int) f:(int)x;&apos; против &apos;-(int)f:(int)x;&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1709,7 +1709,7 @@ i.e. &apos;-(int) f:(int)x;&apos; vs. &apos;-(int)f:(int)x;&apos;.</source>
 i.e. &apos;@selector(msgName)&apos; vs. &apos;@selector (msgName)&apos;.
 Also applies to &apos;@protocol()&apos; constructs.</source>
         <comment>sp_after_oc_at_sel</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел между &apos;@selector&apos; и &apos;(&apos;, т.е. &apos;@selector(msgName)&apos; против &apos;@selector (msgName)&apos;.&amp;lt;br&amp;gt;
+        <translation>(OC) Добавить или убрать пробел между &apos;@selector&apos; и &apos;(&apos;, т.е. &apos;@selector(msgName)&apos; против &apos;@selector (msgName)&apos;.&amp;lt;br&amp;gt;
 Также относится к конструкциям &apos;@protocol()&apos;.</translation>
     </message>
     <message>
@@ -1717,7 +1717,7 @@ Also applies to &apos;@protocol()&apos; constructs.</source>
         <source>(OC) Add or remove space between &apos;@selector(x)&apos; and the following word,
 i.e. &apos;@selector(foo) a:&apos; vs. &apos;@selector(foo)a:&apos;.</source>
         <comment>sp_after_oc_at_sel_parens</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел между &apos;@selector(x)&apos; и следующим словом, т.е. &apos;@selector(foo) a:&apos; против &apos;@selector(foo)a:&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел между &apos;@selector(x)&apos; и следующим словом, т.е. &apos;@selector(foo) a:&apos; против &apos;@selector(foo)a:&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1725,7 +1725,7 @@ i.e. &apos;@selector(foo) a:&apos; vs. &apos;@selector(foo)a:&apos;.</source>
 i.e. &apos;@selector(foo)&apos; vs. &apos;@selector( foo )&apos;.
 Also applies to &apos;@protocol()&apos; constructs.</source>
         <comment>sp_inside_oc_at_sel_parens</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел внутри скобок &apos;@selector&apos;, т.е. &apos;@selector(foo)&apos; против &apos;@selector( foo )&apos;.&amp;lt;br&amp;gt;
+        <translation>(OC) Добавить или убрать пробел внутри скобок &apos;@selector&apos;, т.е. &apos;@selector(foo)&apos; против &apos;@selector( foo )&apos;.&amp;lt;br&amp;gt;
 Также применяется к конструкциям &apos;@protocol()&apos;.</translation>
     </message>
     <message>
@@ -1733,34 +1733,34 @@ Also applies to &apos;@protocol()&apos; constructs.</source>
         <source>(OC) Add or remove space before a block pointer caret,
 i.e. &apos;^int (int arg){...}&apos; vs. &apos; ^int (int arg){...}&apos;.</source>
         <comment>sp_before_oc_block_caret</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел перед кареткой указателя блока, т.е. &apos;^int (int arg){...}&apos; против &apos; ^int (int arg){...}&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел перед кареткой указателя блока, т.е. &apos;^int (int arg){...}&apos; против &apos; ^int (int arg){...}&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space after a block pointer caret,
 i.e. &apos;^int (int arg){...}&apos; vs. &apos;^ int (int arg){...}&apos;.</source>
         <comment>sp_after_oc_block_caret</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел после каретты указателя блока, т.е. &apos;^int (int arg){...}&apos; против &apos;^ int (int arg){...}&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел после каретты указателя блока, т.е. &apos;^int (int arg){...}&apos; против &apos;^ int (int arg){...}&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space between the receiver and selector in a message,
 as in &apos;[receiver selector ...]&apos;.</source>
         <comment>sp_after_oc_msg_receiver</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел между приемником и селектором в сообщении, как в &apos;[receiver selector ...]&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел между приемником и селектором в сообщении, как в &apos;[receiver selector ...]&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space after &apos;@property&apos;.</source>
         <comment>sp_after_oc_property</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел после &apos;@property&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел после &apos;@property&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove space between &apos;@synchronized&apos; and the open parenthesis,
 i.e. &apos;@synchronized(foo)&apos; vs. &apos;@synchronized (foo)&apos;.</source>
         <comment>sp_after_oc_synchronized</comment>
-        <translation type="unfinished">(OC) Добавить или убрать пробел между &apos;@synchronized&apos; и открытой скобкой, т.е. &apos;@synchronized(foo)&apos; против &apos;@synchronized (foo)&apos;.</translation>
+        <translation>(OC) Добавить или убрать пробел между &apos;@synchronized&apos; и открытой скобкой, т.е. &apos;@synchronized(foo)&apos; против &apos;@synchronized (foo)&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1778,7 +1778,7 @@ i.e. &apos;@synchronized(foo)&apos; vs. &apos;@synchronized (foo)&apos;.</source
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_cond_colon.</source>
         <comment>sp_cond_colon_before</comment>
-        <translation type="unfinished">Переопределяет sp_cond_colon.</translation>
+        <translation>Переопределяет `sp_cond_colon`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1790,7 +1790,7 @@ i.e. &apos;@synchronized(foo)&apos; vs. &apos;@synchronized (foo)&apos;.</source
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_cond_colon.</source>
         <comment>sp_cond_colon_after</comment>
-        <translation type="unfinished">Переопределяет sp_cond_colon.</translation>
+        <translation>Переопределяет `sp_cond_colon`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1867,14 +1867,13 @@ as in &apos;for (Type var &lt;here&gt; : expr)&apos;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove space between &apos;extern&apos; and &apos;(&apos; as in &apos;extern &lt;here&gt; (C)&apos;.</source>
         <comment>sp_extern_paren</comment>
-        <translation type="unfinished">(D) Добавить или убрать пробел между &apos;extern&apos; и &apos;(&apos;, как в &apos;extern·(C)&apos;.</translation>
+        <translation>(D) Добавить или убрать пробел между &apos;extern&apos; и &apos;(&apos;, как в &apos;extern·(C)&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after the opening of a C++ comment, as in &apos;// &lt;here&gt; A&apos;.</source>
         <comment>sp_cmt_cpp_start</comment>
-        <translation type="unfinished">Добавлять или удалять пробел после открытия комментария C++
-&amp;lt;pre&amp;gt;//·A&amp;lt;/pre&amp;gt;</translation>
+        <translation>Добавлять или удалять пробел после открытия комментария C++ `//·AAA`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1883,28 +1882,29 @@ A region marker is defined as a comment which is not preceded by other text
 (i.e. the comment is the first non-whitespace on the line), and which starts
 with either &apos;BEGIN&apos; or &apos;END&apos;.</source>
         <comment>sp_cmt_cpp_region</comment>
-        <translation type="unfinished">Добавить или убрать пробел в комментарии маркера региона C++, как в &apos;// &amp;lt;here&amp;gt; BEGIN&apos;.
-Маркер региона определяется как комментарий, которому не предшествует другой текст (т.е. комментарий является первым не пробелом в строке), и который начинается либо с &apos;BEGIN&apos;, либо с &apos;END&apos;.</translation>
+        <translation>Добавить или убрать пробел в комментарии маркера региона C++, как в `// · BEGIN`.
+
+Маркер региона определяется как комментарий, которому не предшествует другой текст (т.е. комментарий является первым не пробелом в строке), и который начинается либо с `BEGIN`, либо с `END`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_cmt_cpp_start.</source>
         <comment>sp_cmt_cpp_region</comment>
-        <translation type="unfinished">Переопределяет sp_cmt_cpp_start.</translation>
+        <translation>Переопределяет `sp_cmt_cpp_start`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If true, space added with sp_cmt_cpp_start will be added after Doxygen
 sequences like &apos;///&apos;, &apos;///&lt;&apos;, &apos;//!&apos; and &apos;//!&lt;&apos;.</source>
         <comment>sp_cmt_cpp_doxygen</comment>
-        <translation type="unfinished">Если переменная имеет значение true, sp_cmt_cpp_start добавляет пробел после таких последовательностей, как &apos;///&apos;, &apos;///&amp;lt;&apos;, &apos;//!&apos; и &apos;//!&amp;lt;&apos;.</translation>
+        <translation>Если переменная имеет значение true, sp_cmt_cpp_start добавляет пробел после таких последовательностей, как `///`, `///&lt;`, `//!` и `//!&lt;`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If true, space added with sp_cmt_cpp_start will be added after Qt translator
 or meta-data comments like &apos;//:&apos;, &apos;//=&apos;, and &apos;//~&apos;.</source>
         <comment>sp_cmt_cpp_qttr</comment>
-        <translation type="unfinished">Если переменная имеет значение true, sp_cmt_cpp_start добавляет пробел после таких последовательностей, как &apos;//:&apos;, &apos;//=&apos;, и &apos;//~&apos;.</translation>
+        <translation>Если переменная имеет значение true, sp_cmt_cpp_start добавляет пробел после таких последовательностей, как `//:`, `//=`, и `//~`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6206,7 +6206,10 @@ differently if the statement is:
 - a declaration: your case with QString fileName ...
 - an assignment: your case with pSettings = new QSettings( ...</source>
         <comment>use_indent_continue_only_once</comment>
-        <translation type="unfinished"></translation>
+        <translation>Значение отступа для строки продолжения вычисляется по-разному, если утверждение является:
+
+- объявлением: ваш случай с `QString fileName ...`
+- присвоением: ваш случай с `pSettings = new QSettings( ...`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
