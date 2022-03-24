@@ -108,6 +108,8 @@ class MainWidget(QtWidgets.QMainWindow):
         else:
             if os.path.exists('out1.cpp') and os.path.exists('out2.cpp'):
                 os.system('meld out1.cpp out2.cpp')
+                os.system(r'C:\Users\schmi\AppData\Local\Programs\Meld\Meld.exe out1.cpp out2.cpp')
+
         pass
 
 
