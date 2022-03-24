@@ -418,6 +418,9 @@ for gr in groups:
             perr(opt)
 
     # end of group loop step
+    classinit += "\n        self.{}.addItem(" \
+                 "QtWidgets.QSpacerItem(10, 10, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding), " \
+                 "{},0)".format(grouplt,row_id)
     classinit += "\n        self.scroll_{} = QtWidgets.QScrollArea()".format(group)
     # classinit += "\n        self.scroll_{}.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)".format(group)
     # classinit += "\n        self.scroll_{}.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)".format(group)
