@@ -473,13 +473,10 @@ inline decltype(auto) Invoke(Fun·&amp;&amp;·f, Args·&amp;&amp;·... args); //
         <comment>sp_inside_paren</comment>
         <translation>Добавить или убрать пробел внутри скобок &apos;(&apos; и &apos;)&apos;.
 
-`f(const_cast&lt;const Args*&gt;(·&amp;args·)...);`
-
-`const int size = sizeof...(·args·) + 2;`
-
-`typedef void (*func)();`
-
-`typedef void (·__stdcall *func·)();`</translation>
+- `f(const_cast&lt;const Args*&gt;(·&amp;args·)...);`
+- `const int size = sizeof...(·args·) + 2;`
+- `typedef void (*func)();`
+- `typedef void (·__stdcall *func·)();`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -539,7 +536,7 @@ inline decltype(auto) Invoke(Fun·&amp;&amp;·f, Args·&amp;&amp;·... args); //
         <source>Add or remove space before pointer star &apos;*&apos; that isn&apos;t followed by a
 variable name. If set to ignore, sp_before_ptr_star is used instead.</source>
         <comment>sp_before_unnamed_ptr_star</comment>
-        <translation>Добавляет или удаляет пробел перед звездочкой указателя `*`, за которой не следует имя переменной.
+        <translation>Добавляет или удаляет пробел перед символом указателя `*`, за которой не следует имя переменной.
 
 Если установлено значение ignore, вместо него используется `sp_before_ptr_star`.
 
@@ -586,7 +583,7 @@ variable name. If set to ignore, sp_before_ptr_star is used instead.</source>
         <source>Add or remove space after a pointer star &apos;*&apos;, if followed by a function
 prototype or function definition.</source>
         <comment>sp_after_ptr_star_func</comment>
-        <translation>Добавить или убрать пробел после звезды указателя `*`, если за ней следует прототип функции или определение функции.
+        <translation>Добавить или убрать пробел после символа указателя `*`, если за ней следует прототип функции или определение функции.
 
 `int *·X(int *i, int *);`</translation>
     </message>
@@ -601,37 +598,38 @@ prototype or function definition.</source>
         <source>Add or remove space after a pointer star &apos;*&apos; in the trailing return of a
 function prototype or function definition.</source>
         <comment>sp_after_ptr_star_trailing</comment>
-        <translation>Добавить или убрать пробел после указателя `*` в конце возврата прототипа функции или определения функции.
+        <translation>Добавить или убрать пробел после символа указателя `*` в конце возврата прототипа функции или определения функции.
 
-`static auto Func1(Model *model) -&gt; Color*;`
-
-`static auto Func1(Model *model) -&gt; Color*·{ return nullptr;}`</translation>
+- `static auto Func1(Model *model) -&gt; Color*;`
+- `static auto Func1(Model *model) -&gt; Color*·{ return nullptr;}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between the pointer star &apos;*&apos; and the name of the variable
 in a function pointer definition.</source>
         <comment>sp_ptr_star_func_var</comment>
-        <translation type="unfinished">↑↓·¶
-Добавить или убрать пробел между звездочкой указателя `*` и именем переменной в определении указателя функции.
+        <translation>Добавить или убрать пробел между символом указателя `*` и именем переменной в определении указателя функции.
 
-·</translation>
+- `void (*·fun_ptr)(int) = &amp;fun;`
+- `typedef void (*foo)(void);`
+- `void (*·foo)(void);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after a pointer star &apos;*&apos;, if followed by an open
 parenthesis, as in &apos;void* (*)()&apos;.</source>
         <comment>sp_ptr_star_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после звезды указателя &apos;*&apos;, если за ней следует открытая скобка, как в &apos;void* (*)()&apos;.
+        <translation>Добавить или убрать пробел после звезды указателя &apos;*&apos;, если за ней следует открытая скобка
 
-·</translation>
+- `typedef std::vector&lt;string *&gt; *·(*   Finder )(std::string *);`
+- `typedef const char *·(*somefunc_t)(void *barstool);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before a pointer star &apos;*&apos;, if followed by a function
 prototype or function definition.</source>
         <comment>sp_before_ptr_star_func</comment>
-        <translation>Добавить или убрать пробел перед звездой указателя `*`, если за ней следует прототип функции или определение функции.
+        <translation>Добавить или убрать пробел перед символом указателя `*`, если за ней следует прототип функции или определение функции.
 
 `int·*X(int *i, int *);`</translation>
     </message>
@@ -640,10 +638,10 @@ prototype or function definition.</source>
         <source>Add or remove space before a pointer star &apos;*&apos; in the trailing return of a
 function prototype or function definition.</source>
         <comment>sp_before_ptr_star_trailing</comment>
-        <translation>Добавить или убрать пробел перед звездочкой указателя &apos;*&apos; в конце возврата прототипа функции или определения функции.
+        <translation>Добавить или убрать пробел перед символом указателя &apos;*&apos; в конце возврата прототипа функции или определения функции.
 
-`static auto Func1(Model *model) -&gt; Color·*;`
-`static auto Func1(Model *model) -&gt; Color·*{ return nullptr;}`</translation>
+- `static auto Func1(Model *model) -&gt; Color·*;`
+- `static auto Func1(Model *model) -&gt; Color·*{ return nullptr;}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -651,29 +649,30 @@ function prototype or function definition.</source>
         <comment>sp_before_byref</comment>
         <translation>Добавить или убрать пробел перед символом ссылки `&amp;`.
 
-`int MyFunc(std::string·&amp; s, char *);`
-
-`const Foo &amp; Foo::operator ==(Foo·&amp; me);`
-
-`const MyType·&amp; t = getSomewhere();`</translation>
+- `int MyFunc(std::string·&amp; s, char *);`
+- `const Foo &amp; Foo::operator ==(Foo·&amp; me);`
+- `const MyType·&amp; t = getSomewhere();`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before a reference sign &apos;&amp;&apos; that isn&apos;t followed by a
 variable name. If set to ignore, sp_before_byref is used instead.</source>
         <comment>sp_before_unnamed_byref</comment>
-        <translation type="unfinished">↑↓·¶Добавляет или удаляет пробел перед знаком ссылки `&amp;`, за которым не следует имя переменной. 
+        <translation>Добавляет или удаляет пробел перед знаком ссылки `&amp;`, за которым не следует имя переменной. 
 Если установлено значение ignore, вместо него используется `sp_before_byref`.
 
-·</translation>
+- `T MemberFunction(T const·&amp;); `
+- `D2(D2·&amp;&amp;) = delete;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after reference sign &apos;&amp;&apos;, if followed by a word.</source>
         <comment>sp_after_byref</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после символа ссылки &apos;&amp;&apos;, если за ним следует слово.
+        <translation>Добавить или убрать пробел после символа ссылки &apos;&amp;&apos;, если за ним следует слово.
 
-·</translation>
+- `typedef int &amp;·MY_INTR;`
+- `CFoo&amp;·fref;`
+- `TYPE_EXPORT method5(int&amp;·a);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -686,9 +685,10 @@ variable name. If set to ignore, sp_before_byref is used instead.</source>
         <source>Add or remove space after a reference sign &apos;&amp;&apos;, if followed by a function
 prototype or function definition.</source>
         <comment>sp_after_byref_func</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после знака ссылки &apos;&amp;&apos;, если за ним следует прототип функции или определение функции.
+        <translation>Добавить или убрать пробел после знака ссылки &apos;&amp;&apos;, если за ним следует прототип функции или определение функции.
 
-·</translation>
+- `D1&amp;·operator=(const D1 &amp;) = delete;`
+- `std::vector&lt;int&gt; &amp;·bar();`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -701,9 +701,10 @@ prototype or function definition.</source>
         <source>Add or remove space before a reference sign &apos;&amp;&apos;, if followed by a function
 prototype or function definition.</source>
         <comment>sp_before_byref_func</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед ссылочным знаком &apos;&amp;&apos;, если за ним следует прототип функции или определение функции.
+        <translation>Добавить или убрать пробел перед ссылочным знаком &apos;&amp;&apos;, если за ним следует прототип функции или определение функции.
 
-·</translation>
+- `D1·&amp;operator=(const D1 &amp;) = delete;`
+- `std::vector&lt;int&gt;·&amp;bar();`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -711,9 +712,16 @@ prototype or function definition.</source>
 whitespace would be a syntax error, a value of &apos;remove&apos; is treated the same
 as &apos;force&apos;.</source>
         <comment>sp_after_type</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между типом и словом. В случаях, когда полное удаление пробелов будет синтаксической ошибкой, значение `remove` рассматривается так же, как `force`.
+        <translation>Добавить или убрать пробел между типом и словом. В случаях, когда полное удаление пробелов будет синтаксической ошибкой, значение `remove` рассматривается так же, как `force`.
 
-·</translation>
+- `enum class form:int·{one, two};`
+- `struct Tuple·{};`
+- `class X·: public Mixins{}`
+- `using Foo = std::function&lt;void·(const bool)&gt;;`
+- `~D2() override·= default;`
+- `void·(* foo)(void);`
+- `virtual int getA() const·{}`
+- `friend void·::test::swap&lt; &gt;(future&lt; T &gt; &amp;, future&lt; T &gt; &amp;);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -723,18 +731,18 @@ parenthesis of a function type template argument, between the type and
 parenthesis of an array parameter, or between &apos;decltype(...)&apos; and the
 following word.</source>
         <comment>sp_after_type</comment>
-        <translation type="unfinished">↑↓·¶Это также влияет на некоторые другие случаи пробела после типа, которые не покрываются другими опциями; например, между возвращаемым типом и скобкой аргумента шаблона типа функции, между типом и скобкой параметра массива, или между &apos;decltype(...)&apos; и следующим словом.
-
-·</translation>
+        <translation>Это также влияет на некоторые другие случаи пробела после типа, которые не покрываются другими опциями; например, между возвращаемым типом и скобкой аргумента шаблона типа функции, между типом и скобкой параметра массива, или между &apos;decltype(...)&apos; и следующим словом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;decltype(...)&apos; and word,
 brace or function call.</source>
         <comment>sp_after_decltype</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между &apos;decltype(...)&apos; и словом, скобкой или вызовом функции.
+        <translation>Добавить или убрать пробел между &apos;decltype(...)&apos; и словом, скобкой или вызовом функции.
 
-·</translation>
+- `inline decltype(auto)·Invoke(Fun&amp;&amp; f, Args&amp;&amp;... args)`
+- `return decltype(x)·{x} &amp; 2;`
+- `decltype  (x)·z = 5;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -748,50 +756,61 @@ brace or function call.</source>
         <source>Add or remove space between &apos;template&apos; and &apos;&lt;&apos;.
 If set to ignore, sp_before_angle is used.</source>
         <comment>sp_template_angle</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между `template` и `&lt;`.
+        <translation>Добавить или убрать пробел между `template` и `&lt;`.
+
 Если установлено значение `ignore`, используется `sp_before_angle`.
 
-·</translation>
+- `template·&lt;typename ...&gt; struct Tuple {};`
+- `template·&lt;&gt;struct AClass&lt;float&gt;{}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;&lt;&apos;.</source>
         <comment>sp_before_angle</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед `&lt;`.
+        <translation>Добавить или убрать пробел перед `&lt;`.
 
-·</translation>
+- `template·&lt;typename ...&gt; struct Tuple {};`
+- `template·&lt;&gt;struct AClass&lt;float&gt;{}`
+- `Tuple·&lt;&gt; t0; `
+-`x = reinterpret_cast·&lt; ::Symbol*&gt;();`
+- `x=a&lt;b;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside &apos;&lt;&apos; and &apos;&gt;&apos;.</source>
         <comment>sp_inside_angle</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри угловых скобок `&lt;` и `&gt;`.
+        <translation>Добавить или убрать пробел внутри угловых скобок `&lt;` и `&gt;`.
 
-·</translation>
+- `Tuple&lt;·0·&gt; t3;`
+- `const_cast&lt;·const Args*·&gt;(x);`
+- `template&lt;&gt;template&lt;&gt;struct AClass&lt;·float·&gt;::Inner&lt;·int·&gt;{}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside &apos;&lt;&gt;&apos;.</source>
         <comment>sp_inside_angle_empty</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри `&lt;&gt;`.
+        <translation>Добавить или убрать пробел внутри `&lt;&gt;`.
 
-·</translation>
+- `template&lt;·&gt;template&lt;·&gt;struct AClass&lt;float&gt;::Inner&lt;int&gt;{}`
+- `Tuple&lt;·&gt; t0;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;&gt;&apos; and &apos;:&apos;.</source>
         <comment>sp_angle_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между &apos;&gt;&apos; и &apos;:&apos;.
+        <translation>Добавить или убрать пробел между &apos;&gt;&apos; и &apos;:&apos;.
 
-·</translation>
+`template&lt; &gt;struct Bar&lt; false &gt;·: Foo{};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after &apos;&gt;&apos;.</source>
         <comment>sp_after_angle</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после `&gt;`.
+        <translation>Добавить или убрать пробел после `&gt;`.
 
-·</translation>
+- `typedef Tuple&lt;Pair&lt;Args1, Args2&gt;·...&gt; type;`
+- `template&lt; &gt;struct Bar&lt; false &gt;·: Foo`
+- `int bar(foo&lt;int&gt;·);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -824,7 +843,7 @@ If set to ignore, sp_before_angle is used.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;&gt;&apos; and &apos;&gt;&apos; in &apos;&gt;&gt;&apos; (template stuff).</source>
         <comment>sp_angle_shift</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между `&gt;` и `&gt;` в `&gt;&gt;` (вложенные шаблоны).
+        <translation>Добавить или убрать пробел между `&gt;` и `&gt;` в `&gt;&gt;` (вложенные шаблоны).
 
 `foo&lt;bar&lt;int&gt;·&gt;`</translation>
     </message>
@@ -852,10 +871,10 @@ that sp_angle_shift cannot remove the space without this option.</source>
         <source>Add or remove space inside &apos;(&apos; and &apos;)&apos; of control statements other than
 &apos;for&apos;.</source>
         <comment>sp_inside_sparen</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри `(` и `)` управляющих операторов, кроме
-`for`.
+        <translation>Добавить или убрать пробел внутри `(` и `)` управляющих операторов, кроме `for`.
 
-·</translation>
+- `switch (·a·) {}`
+- `if (·x!=2·) {}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -889,17 +908,23 @@ that sp_angle_shift cannot remove the space without this option.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside &apos;(&apos; and &apos;)&apos; of &apos;for&apos; statements.</source>
         <comment>sp_inside_for</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри `(` и `)` в операторах `for`.
+        <translation>Добавить или убрать пробел внутри `(` и `)` в операторах `for`.
 
-·</translation>
+- `for (·i = 0; i&lt;5; i++·) bar(i);`
+- `for (·auto &amp;it : *list·) {}`
+- `Q_FOREACH(·QString partName, lParts·) {}`
+- `for(;;) {i++;}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after &apos;(&apos; of &apos;for&apos; statements.</source>
         <comment>sp_inside_for_open</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после `(` в операторах `for`.
+        <translation>Добавить или убрать пробел после `(` в операторах `for`.
 
-·</translation>
+- `for (·i = 0; i&lt;5; i++) bar(i);`
+- `for (·auto &amp;it : *list) {}`
+- `Q_FOREACH(·QString partName, lParts) {}`
+- `for(;;) {i++;}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -911,9 +936,12 @@ that sp_angle_shift cannot remove the space without this option.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;)&apos; of &apos;for&apos; statements.</source>
         <comment>sp_inside_for_close</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед `)` в операторах `for`.
+        <translation>Добавить или убрать пробел перед `)` в операторах `for`.
 
-·</translation>
+- `for (i = 0; i&lt;5; i++·) bar(i);`
+- `for (auto &amp;it : *list·) {}`
+- `Q_FOREACH(QString partName, lParts·) {}`
+- `for(;;) {i++;}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -925,25 +953,30 @@ that sp_angle_shift cannot remove the space without this option.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;((&apos; or &apos;))&apos; of control statements.</source>
         <comment>sp_sparen_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между `((` или `))` управляющих утверждений.
+        <translation>Добавить или убрать пробел между `((` или `))` управляющих утверждений.
 
-·</translation>
+- `if (!(x)·) *(volatile int *)0 = 1;`
+- `if (·(frm.pse[frm.pse_tos].type == CT_CASE) &amp;&amp;
+        ((pc-&gt;type == CT_BRACE_CLOSE) ||
+         (pc-&gt;type == CT_CASE))·)
+   {indent_pse_pop(frm, pc);}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after &apos;)&apos; of control statements.</source>
         <comment>sp_after_sparen</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед `)` в управляющих конструкциях.
+        <translation>Добавить или убрать пробел после `)` в управляющих конструкциях.
 
-·</translation>
+- `if(x)·[[likely]] {}`
+- `if(x){}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;)&apos; and &apos;{&apos; of control statements.</source>
         <comment>sp_sparen_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между `)` и `{` в управляющих операторах.
+        <translation>Добавить или убрать пробел между `)` и `{` в управляющих операторах.
 
-·</translation>
+`if(x)·{}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -965,9 +998,9 @@ that sp_angle_shift cannot remove the space without this option.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;while&apos; and &apos;(&apos;. Overrides sp_before_sparen.</source>
         <comment>sp_while_paren_open</comment>
-        <translation type="unfinished">↑↓·¶Добавляет или удаляет пробел между `while` и `(`. Переопределяет `sp_before_sparen`.
+        <translation>Добавляет или удаляет пробел между `while` и `(`. Переопределяет `sp_before_sparen`.
 
-·</translation>
+`do { amime3(); } while·(false);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -993,17 +1026,21 @@ that sp_angle_shift cannot remove the space without this option.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;;&apos;.</source>
         <comment>sp_before_semi</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед `;`.
+        <translation>Добавить или убрать пробел перед `;`.
 
-·</translation>
+- `for(;;){i++·;}`
+- `if(x) i++·;`
+- `enum class form:int{one, two}·;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;;&apos; in non-empty &apos;for&apos; statements.</source>
         <comment>sp_before_semi_for</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед `;` в непустом выражении `for`.
+        <translation>Добавить или убрать пробел перед `;` в непустом выражении `for`.
 
-·</translation>
+- `for(;;){i++;}`
+- `for(i=0·;;i++){}`
+- `for(i=0·;i&lt;10·;i++){}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1027,17 +1064,21 @@ statement, as in &apos;for ( ; &lt;here&gt; ; )&apos;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after &apos;;&apos;, except when followed by a comment.</source>
         <comment>sp_after_semi</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после `;`, за исключением случаев, когда после этого следует комментарий.
+        <translation>↑↓·¶Добавить или убрать пробел после `;`, за исключением случаев, когда после этого следует комментарий.
 
-·</translation>
+- `struct foo { int a;·char *b };`
+- `void bar(); // this one should align with the previous line`
+- `if (auto const&amp; r(ric);·r &gt; 0){	}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after &apos;;&apos; in non-empty &apos;for&apos; statements.</source>
         <comment>sp_after_semi_for</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после `;` в непустых заявлениях `for`
+        <translation>Добавить или убрать пробел после `;` в непустых заявлениях `for`
 
-·</translation>
+- `for(;;){i++;}`
+- `for(i=0;·;i++){}`
+- `for(i=0;·i&lt;10;·i++){}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1052,49 +1093,57 @@ statement, as in &apos;for ( ; ; &lt;here&gt; )&apos;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;[&apos; (except &apos;[]&apos;).</source>
         <comment>sp_before_square</comment>
-        <translation>Добавить или убрать пробел перед &apos;[&apos; (кроме &apos;[]&apos;).
+        <translation>Добавить или убрать пробел перед `[` (кроме `[]`).
 
-`a=b·[i];`
-
-`char[] c=new char·[15];`</translation>
+- `a=b·[i];`
+- `x·[i]=b·[i];`
+- `char[] c=new char[15];`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;[&apos; for a variable definition.</source>
         <comment>sp_before_vardef_square</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед &apos;[&apos; в определении переменной.
+        <translation>Добавить или убрать пробел перед `[` в определении переменной.
 
-·</translation>
+- `int res·[size] = {1, args ..., 2};`
+- `x[i]=b[i];`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;[&apos; for asm block.</source>
         <comment>sp_before_square_asm_block</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед &apos;[&apos; для ассемблерного блока.
-
-·</translation>
+        <translatorcomment>WTF</translatorcomment>
+        <translation>Добавить или убрать пробел перед `[` для ассемблерного блока.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;[]&apos;.</source>
         <comment>sp_before_squares</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед &apos;[]&apos;.
+        <translation>Добавить или убрать пробел перед `[]`.
 
-·</translation>
+- `char·[] c=new char[15];`
+- `int main(int argc, char *argv·[]) `
+- `int a0·[]·[] = {{  1  }};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before C++17 structured bindings.</source>
         <comment>sp_cpp_before_struct_binding</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед распаковкой структуры C++17.</translation>
+        <translatorcomment>WTF</translatorcomment>
+        <translation>Добавить или убрать пробел перед распаковкой структуры C++17.
+
+auto const·[iterator, inserted]{ super_type::insert(ioFileReference) }
+buf = new unsigned char·[1024];</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside a non-empty &apos;[&apos; and &apos;]&apos;.</source>
         <comment>sp_inside_square</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри непустого &apos;[&apos; и &apos;]&apos;.
+        <translation>Добавить или убрать пробел внутри непустого `[` и `]`.
 
-·</translation>
+- `a=b[·i·];`
+- `x[·i·]=b[·i·];`
+- `char[] c=new char[·15·];`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1118,17 +1167,19 @@ statement, as in &apos;for ( ; ; &lt;here&gt; )&apos;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after &apos;,&apos;, i.e. &apos;a,b&apos; vs. &apos;a, b&apos;.</source>
         <comment>sp_after_comma</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после запятой, т.е. &apos;a,b&apos; против &apos;a,b&apos;.
+        <translation>Добавить или убрать пробел после запятой, т.е. `a,b` против `a,·b`.
 
-·</translation>
+- `int head,·bar;`
+- `int printy(...,·const char* fmt);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before &apos;,&apos;, i.e. &apos;a,b&apos; vs. &apos;a ,b&apos;.</source>
         <comment>sp_before_comma</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед &apos;,&apos;, т.е. &apos;a,b&apos; против &apos;a ,b&apos;.
+        <translation>Добавить или убрать пробел перед запятой, т.е. `a,b` против `a·,b`.
 
-·</translation>
+- `int head·,bar;`
+- `int printy(...·,const char* fmt);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1156,9 +1207,10 @@ like &apos;int[,,]&apos;.</source>
         <source>Add or remove space between an open parenthesis and comma,
 i.e. &apos;(,&apos; vs. &apos;( ,&apos;.</source>
         <comment>sp_paren_comma</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между открытой скобкой и запятой, т.е. &apos;(,&apos; против &apos;( ,&apos;.
+        <translatorcomment>WTF где это нужно никто не знает</translatorcomment>
+        <translation>Добавить или убрать пробел между открытой скобкой и запятой
 
-·</translation>
+`a(·, 1);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2484,8 +2536,8 @@ If false, &apos;else\nif&apos; is treated as &apos;else if&apos; for indenting p
         <source> &lt;0: Relative
 &gt;=0: Absolute</source>
         <comment>indent_var_def_blk</comment>
-        <translation type="unfinished">↑↓·¶&amp;nbsp;&amp;lt;0: Относительный&amp;lt;br&amp;gt;
-&amp;gt;=0: Абсолютный</translation>
+        <translation> &lt;0: Относительный
+&gt;=0: Абсолютный</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4979,7 +5031,7 @@ The option ls_code_width has priority over the option ls_func_split_full.</sourc
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_func_params_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4992,7 +5044,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No limit (default).</source>
         <comment>align_func_params_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5011,7 +5063,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_constr_value_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5024,7 +5076,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No limit (default).</source>
         <comment>align_constr_value_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5049,7 +5101,7 @@ name. The function names must already be aligned with each other.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_same_func_call_params_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5063,7 +5115,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No limit (default).</source>
         <comment>align_same_func_call_params_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5075,7 +5127,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_var_def_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5124,7 +5176,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No limit (default).</source>
         <comment>align_var_def_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5166,7 +5218,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_assign_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5178,7 +5230,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_assign_func_proto_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5191,7 +5243,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No limit (default).</source>
         <comment>align_assign_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5220,7 +5272,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_enum_equ_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5233,7 +5285,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: no limit (default).</source>
         <comment>align_enum_equ_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5245,7 +5297,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_var_class_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5258,7 +5310,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No limit (default).</source>
         <comment>align_var_class_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5276,7 +5328,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_var_struct_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5289,7 +5341,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No limit (default).</source>
         <comment>align_var_struct_thresh</comment>
-        <translation type="unfinished">↑↓·¶0: без ограничений (по умолчанию).</translation>
+        <translation>0: без ограничений (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5307,7 +5359,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_struct_init_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5319,7 +5371,7 @@ Use a negative number for absolute thresholds.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_typedef_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5389,7 +5441,7 @@ Dangling: the &apos;&amp;&apos; will not be taken into account when aligning.</s
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_right_cmt_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5436,7 +5488,7 @@ may be &quot;pulled in&quot;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: Don&apos;t align (default).</source>
         <comment>align_func_proto_span</comment>
-        <translation type="unfinished">↑↓·¶0: не выравнивать (по умолчанию).</translation>
+        <translation>0: не выравнивать (по умолчанию).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
