@@ -1240,9 +1240,10 @@ The value REMOVE will be overriden with FORCE</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between a type and &apos;...&apos;.</source>
         <comment>sp_type_ellipsis</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между типом и `...`.
+        <translation>Добавить или убрать пробел между типом и `...`.
 
-·</translation>
+- `#define LOG_FMT (sev, args·...)`
+- `template&lt;int i, int·... Indexes, typename IdxHolder, typename·... Elements&gt;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1262,9 +1263,9 @@ The value REMOVE will be overriden with FORCE</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;)&apos; and &apos;...&apos;.</source>
         <comment>sp_paren_ellipsis</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между `)` и `...`
+        <translation>Добавить или убрать пробел между `)` и `...`
 
-·</translation>
+`#define LOG_FMT (sev, args...·)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1278,105 +1279,134 @@ The value REMOVE will be overriden with FORCE</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;)&apos; and a qualifier such as &apos;const&apos;.</source>
         <comment>sp_paren_qualifier</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между `)` и классификатором, таким как `const`.
+        <translation>Добавить или убрать пробел между `)` и классификатором, таким как `const`.
 
-·</translation>
+`float fabs(fload x)·const`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;)&apos; and &apos;noexcept&apos;.</source>
         <comment>sp_paren_noexcept</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между `)` и `noexcept`
+        <translation>Добавить или убрать пробел между `)` и `noexcept`
 
-·</translation>
+`float fabs(fload x)·noexept`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after class &apos;:&apos;.</source>
         <comment>sp_after_class_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять или удалять пробел после двоеточия класса.</translation>
+        <translation>Добавить или убрать пробел после двоеточия класса.
+
+`class my_class:·baseclass1{}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before class &apos;:&apos;.</source>
         <comment>sp_before_class_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять или удалять пробел перед двоеточием класса.</translation>
+        <translation>Добавлять или удалять пробел перед двоеточием класса.
+
+`class my_class·:baseclass1{}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after class constructor &apos;:&apos;.</source>
         <comment>sp_after_constr_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять или удалять пробел после двоеточия конструктора класса.</translation>
+        <translation>Добавлять или удалять пробел после двоеточия конструктора класса.
+
+`my_class::my_class(int b):·x(b){...}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before class constructor &apos;:&apos;.</source>
         <comment>sp_before_constr_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять или удалять пробел перед двоеточием конструктора класса.</translation>
+        <translation>Добавлять или удалять пробел перед двоеточием конструктора класса.
+
+`my_class::my_class(int b)·:x(b){...}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space before case &apos;:&apos;.</source>
         <comment>sp_before_case_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять или удалять пробел перед двоеточием в case.</translation>
+        <translation>Добавлять или удалять пробел перед двоеточием в case.
+
+`case 1·:`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;operator&apos; and operator sign.</source>
         <comment>sp_after_operator</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между &apos;operator&apos; и знаком оператора.</translation>
+        <translation>Добавить или убрать пробел между `operator` и знаком оператора.
+
+`T operator·+(T v)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between the operator symbol and the open parenthesis, as
 in &apos;operator ++(&apos;.</source>
         <comment>sp_after_operator_sym</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между символом оператора и открытой скобкой, как в &apos;operator ++(&apos;.</translation>
+        <translation>Добавить или убрать пробел между символом оператора и открытой скобкой
+
+`operator ++·(`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_after_operator_sym when the operator has no arguments, as in
 &apos;operator *()&apos;.</source>
         <comment>sp_after_operator_sym_empty</comment>
-        <translation>Отменяет `sp_after_operator_sym`, когда оператор не имеет аргументов, как в `operator *()`.</translation>
+        <translation>Отменяет `sp_after_operator_sym`, когда оператор не имеет аргументов
+
+ `operator *()`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space after C/D cast, i.e. &apos;cast(int)a&apos; vs. &apos;cast(int) a&apos; or
 &apos;(int)a&apos; vs. &apos;(int) a&apos;.</source>
         <comment>sp_after_cast</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после C/D каста, т.е. &apos;cast(int)a&apos; против &apos;cast(int) a&apos; или &apos;(int)a&apos; против &apos;(int) a&apos;.</translation>
+        <translation>Добавить или убрать пробел после C/D каста
+
+- `cast(int)·a`
+- `(int)·a`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove spaces inside cast parentheses.</source>
         <comment>sp_inside_paren_cast</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробелов внутри круглых скобок в преобразовнии типов.</translation>
+        <translation>Добавить или убрать пробелов внутри круглых скобок в преобразовнии типов.
+
+`(·int·)a`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between the type and open parenthesis in a C++ cast,
 i.e. &apos;int(exp)&apos; vs. &apos;int (exp)&apos;.</source>
         <comment>sp_cpp_cast_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между типом и открытой круглой скобкой при приведении в C++, например, &apos;int(exp)&apos; против &apos;int (exp)&apos;.</translation>
+        <translation>Добавить или убрать пробел между типом и открытой круглой скобкой при приведении в C++
+
+`int·(exp)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;sizeof&apos; and &apos;(&apos;.</source>
         <comment>sp_sizeof_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между &apos;sizeof&apos; и &apos;(&apos;.</translation>
+        <translation>Добавить или убрать пробел между `sizeof` и `(`.
+
+`a=sizeof·(int)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;sizeof&apos; and &apos;...&apos;.</source>
         <comment>sp_sizeof_ellipsis</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между  &apos;sizeof&apos; и &apos;...&apos;.</translation>
+        <translation>Добавить или убрать пробел между  `sizeof` и `...`
+
+`template &lt;typename... Args&gt; std::size_t GetSize (Args&amp;&amp;... args) { std::size_t Count= sizeof·...(Args);  return Count;}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;sizeof...&apos; and &apos;(&apos;.</source>
         <comment>sp_sizeof_ellipsis_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между  &apos;sizeof...&apos; и &apos;(&apos;.</translation>
+        <translation>Добавить или убрать пробел между  `sizeof...` и `(`.
+
+`template &lt;typename... Args&gt; std::size_t GetSize (Args&amp;&amp;... args) {    std::size_t Count= sizeof...·(Args);    return Count;}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1394,25 +1424,31 @@ i.e. &apos;int(exp)&apos; vs. &apos;int (exp)&apos;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;decltype&apos; and &apos;(&apos;.</source>
         <comment>sp_decltype_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между  &apos;decltype&apos; и &apos;(&apos;.</translation>
+        <translation>Добавить или убрать пробел между  `decltype` и `(`.
+
+`auto a=decltype·(x){10};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(Pawn) Add or remove space after the tag keyword.</source>
         <comment>sp_after_tag</comment>
-        <translation type="unfinished">↑↓·¶(Pawn) Добавить или убрать пробел после ключевого слова tag.</translation>
+        <translation>(Pawn) Добавить или убрать пробел после ключевого слова tag.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside enum &apos;{&apos; and &apos;}&apos;.</source>
         <comment>sp_inside_braces_enum</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри enum &apos;{&apos; и &apos;}&apos;.</translation>
+        <translation>Добавить или убрать пробел внутри enum `{` и `}`.
+
+`enum Status {·Unknown, Success, Error·};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside struct/union &apos;{&apos; and &apos;}&apos;.</source>
         <comment>sp_inside_braces_struct</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри struct/union &apos;{&apos; и &apos;}&apos;.</translation>
+        <translation>Добавить или убрать пробел внутри struct/union `{` и `}`.
+
+`union {·int m_size; int m_any;·};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1427,8 +1463,11 @@ direct-list-initialization
 if statement is a brace_init_lst
 works only if sp_brace_brace is set to ignore.</source>
         <comment>sp_after_type_brace_init_lst_open</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел после открывающей скобки в безымянном временном прямом списке-инициализации, если оператор является инициализатором списком 
-Работает только если sp_brace_brace имеет значение ignore.</translation>
+        <translation>Добавить или убрать пробел после открывающей скобки в безымянном временном прямом списке-инициализации, если оператор является инициализатором списком 
+
+Работает только если `sp_brace_brace` имеет значение `ignore`.
+
+`int a0[][] = {·{·1}};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1437,8 +1476,11 @@ direct-list-initialization
 if statement is a brace_init_lst
 works only if sp_brace_brace is set to ignore.</source>
         <comment>sp_before_type_brace_init_lst_close</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел перед закрывающей скобкой в безымянном временном прямом списке-инициализации, если оператор является инициализатором списком 
-Работает только если sp_brace_brace имеет значение ignore.</translation>
+        <translation>Добавить или убрать пробел перед закрывающей скобкой в безымянном временном прямом списке-инициализации, если оператор является инициализатором списком 
+
+Работает только если `sp_brace_brace` имеет значение `ignore`.
+
+`int a0[][] = {{1·}·};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -1447,127 +1489,174 @@ if statement is a brace_init_lst
 works only if sp_brace_brace is set to ignore
 works only if sp_before_type_brace_init_lst_close is set to ignore.</source>
         <comment>sp_inside_type_brace_init_lst</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри безымянного временного прямого списка-инициализации, если оператор является инициализацией списком
-работает только если sp_brace_brace имеет значение ignore
-работает только если sp_before_type_brace_init_lst_close имеет значение ignore.</translation>
+        <translation>Добавить или убрать пробел внутри безымянного временного прямого списка-инициализации, если оператор является инициализацией списком 
+
+- работает только если `sp_brace_brace` имеет значение `ignore`
+- работает только если `sp_before_type_brace_init_lst_close` имеет значение `ignore`.
+
+`int a0[][] = {·{·1·}·};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside &apos;{&apos; and &apos;}&apos;.</source>
         <comment>sp_inside_braces</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри &apos;{&apos; и &apos;}&apos;.</translation>
+        <translation>Добавить или убрать пробел внутри `{` и `}`.
+
+`while(1){·i++;·}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside &apos;{}&apos;.</source>
         <comment>sp_inside_braces_empty</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри &apos;{}&apos;.</translation>
+        <translation>Добавить или убрать пробел внутри `{}`.
+
+`while(1){·}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space around trailing return operator &apos;-&gt;&apos;.</source>
         <comment>sp_trailing_return</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел вокруг оператора &apos;-&amp;gt;&apos;.</translation>
+        <translation>Добавить или убрать пробел вокруг оператора `-&gt;`.
+
+`auto max(int a, int b)·-&gt;·int;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between return type and function name. A minimum of 1
 is forced except for pointer return types.</source>
         <comment>sp_type_func</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между возвращаемым типом и именем функции. 
-Минимум 1 обязателен, за исключением типов возврата указателей.</translation>
+        <translation>Добавить или убрать пробел между возвращаемым типом и именем функции. 
+
+Минимум 1 обязателен, за исключением типов возврата указателей.
+
+`int ·c(int &amp;);int*·c(int &amp;){}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between type and open brace of an unnamed temporary
 direct-list-initialization.</source>
         <comment>sp_type_brace_init_lst</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между типом и открытой скобкой безымянного временного прямого списка-инициализации.</translation>
+        <translation>Добавить или убрать пробел между типом и открытой скобкой безымянного временного прямого списка-инициализации.
+
+`auto i12 = int·{42};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between function name and &apos;(&apos; on function declaration.</source>
         <comment>sp_func_proto_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между именем функции и &apos;(&apos; в объявлении функции.</translation>
+        <translation>Добавить или убрать пробел между именем функции и &apos;(&apos; в объявлении функции.
+
+`void f·(int i);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between function name and &apos;()&apos; on function declaration
 without parameters.</source>
         <comment>sp_func_proto_paren_empty</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между именем функции и &apos;()&apos; при объявлении функции без параметров.</translation>
+        <translation>Добавить или убрать пробел между именем функции и &apos;()&apos; при объявлении функции без параметров.
+
+`void f·();`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between function name and &apos;(&apos; with a typedef specifier.</source>
         <comment>sp_func_type_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между именем функции и &apos;(&apos; при использовании спецификатора typedef.</translation>
+        <translation>Добавить или убрать пробел между именем функции и `(` при использовании спецификатора `typedef`.
+
+`typedef void timer_cb·(struct timer_node *n);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between alias name and &apos;(&apos; of a non-pointer function type typedef.</source>
         <comment>sp_func_def_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между именем псевдонима и &apos;(&apos; типа не указателя функции typedef.</translation>
+        <translation>Добавить или убрать пробел между именем псевдонима и `(` типа не указателя функции `typedef`.
+
+`int a·(int b) {};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between function name and &apos;()&apos; on function definition
 without parameters.</source>
         <comment>sp_func_def_paren_empty</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между именем функции и &apos;()&apos; в определении функции без параметров.</translation>
+        <translation>Добавить или убрать пробел между именем функции и `()` в определении функции без параметров.
+
+`int a·() {};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside empty function &apos;()&apos;.
 Overrides sp_after_angle unless use_sp_after_angle_always is set to true.</source>
         <comment>sp_inside_fparens</comment>
-        <translation type="unfinished">↑↓·¶Добавляет или удаляет пробел внутри пустой функции &apos;()&apos;.
-Переопределяет sp_after_angle, если для use_sp_after_angle_always не установлено значение true.</translation>
+        <translation>Добавляет или удаляет пробел внутри пустых скобок функции `()`.
+
+Переопределяет `sp_after_angle`, если для `use_sp_after_angle_always` не установлено значение `true`.
+
+`int a (·);`
+`int a (·){}`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside function &apos;(&apos; and &apos;)&apos;.</source>
         <comment>sp_inside_fparen</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри скобок функции.</translation>
+        <translation>Добавить или убрать пробел внутри скобок функции.
+
+- `# void ( int a ) (·int b·);`
+- `int printx(·const char* fmt, ...·); `</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space inside the first parentheses in a function type, as in
 &apos;void (*x)(...)&apos;.</source>
         <comment>sp_inside_tparen</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел внутри первых круглых скобок в типе функции, как в примере &apos;void (*x)(...)&apos;.</translation>
+        <translation>Добавить или убрать пробел внутри первых круглых скобок в типе функции
+
+`void (·*x·)(...)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between the &apos;)&apos; and &apos;(&apos; in a function type, as in
 &apos;void (*x)(...)&apos;.</source>
         <comment>sp_after_tparen_close</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между &apos;)&apos; и &apos;(&apos; в типе функции, как в &apos;void (*x)(...)&apos;.</translation>
+        <translation>Добавить или убрать пробел между &apos;)&apos; и &apos;(&apos; в типе функции
+
+`void (*x)·(...)`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;]&apos; and &apos;(&apos; when part of a function call.</source>
         <comment>sp_square_fparen</comment>
-        <translation type="unfinished">↑↓·¶Добавлять или удалять пробел между &apos;]&apos; и &apos;(&apos; при вызове функции.</translation>
+        <translation>Добавлять или удалять пробел между `]` и `(` при вызове функции.
+
+`function_list[ idx ]·(param);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;)&apos; and &apos;{&apos; of function.</source>
         <comment>sp_fparen_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между &apos;)&apos; и &apos;{&apos; в функции.</translation>
+        <translation>Добавить или убрать пробел между `)` и `{` в функции.
+
+`int a (int b)·{};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove space between &apos;)&apos; and &apos;{&apos; of a function call in object
 initialization.</source>
         <comment>sp_fparen_brace_initializer</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать пробел между &apos;)&apos; и &apos;{&apos; вызова функции при инициализации объекта.</translation>
+        <translation>Добавить или убрать пробел между `)` и `{` вызова функции при инициализации объекта.
+
+`ProcessStartInfo(&quot;smthg&quot;)·{Arguments = string.Format(&quot;-9 --ss -S aa \&quot;{0}\&quot;&quot;, file),WorkingDirectory = Directory.GetCurrentDirectory()};`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Overrides sp_fparen_brace.</source>
         <comment>sp_fparen_brace_initializer</comment>
-        <translation type="unfinished">↑↓·¶Переопределяет sp_fparen_brace.</translation>
+        <translation type="unfinished">Переопределяет sp_fparen_brace.
+
+`member.func(new List()·{{
+   add(&quot;Text&quot;);
+   add(&quot;Text&quot;,
+       &quot;Hello&quot;);
+}});`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>

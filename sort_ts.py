@@ -1,5 +1,5 @@
 from lxml import etree
-with open('uncrustify.ts', 'rb') as fobj:
+with open('uncrustify-old.ts', 'rb') as fobj:
     xml = fobj.read()
 root = etree.fromstring(xml)
 
@@ -16,6 +16,6 @@ for appt in root.getchildren():
             appt.append(ch)
 
 handle = etree.tostring(root, pretty_print = True, encoding = 'utf-8', xml_declaration = True)
-applic = open("uncrustify2.ts", "wb")
+applic = open("uncrustify-old.ts", "wb")
 applic.write(handle)
 applic.close()
