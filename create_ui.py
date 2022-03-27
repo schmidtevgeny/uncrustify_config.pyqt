@@ -109,7 +109,7 @@ def wrap(s):
     my_wrap = textwrap.TextWrapper(width=80)
     so = ""
     for si in s.split("\\n"):
-        si = si.replace('↑', '\\x18').replace('↓', '\\x19').replace('·', '\\x0f').replace('¶', '\\x14')
+        si = si.replace('↑', '\\x18').replace('↓', '\\x19').replace('·', '\\x0f').replace('¶', '\\x14').replace('←','\\x17').replace('⟼', '\\t') 
 
         wrap_list = my_wrap.wrap(text=iuliia.translate(html.unescape(si), iuliia.MOSMETRO))
         for line in wrap_list:
@@ -216,7 +216,7 @@ for gr in groups:
 
     for opt in gr.options:
         options += 1
-        s = 'label('+'"<hr>"' + '+"<br>"'.join(
+        s = 'label('+'"<hr>"' + '+"\\n\\n"'.join(
             ['+self.tr("{}", "{}")'.format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n'), opt.name) for it in
              opt.desc])+')'
 
