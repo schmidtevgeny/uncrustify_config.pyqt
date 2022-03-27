@@ -2691,24 +2691,24 @@ Requires indent_align_string=true.</source>
         <source>Whether to indent based on the size of the brace parent,
 i.e. &apos;if&apos; =&gt; 3 spaces, &apos;for&apos; =&gt; 4 spaces, etc.</source>
         <comment>indent_brace_parent</comment>
-        <translation>Должен ли отступ основываться на размере родительскя скобки, т.е. `if` - 3 пробела, `for` - 4 пробела и т.д.
+        <translation>Отступ должен основываться на размере родительскя скобки, т.е. `if` - 3 пробела, `for` - 4 пробела и т.д.
 
-    if (x = 0) 
-    ···{            
-        x++;  
-        y *= x;
-    ···}             
-    for (auto x : y) 
-    ····{                    
-        print(x);      
-    ····}                    </translation>
+    if (x = 0)              |        if (x = 0)
+    {                       |           {
+        x++;                |           x++;
+        y *= x;             |           y *= x;
+    }                       |           }
+    for (auto x : y)        |        for (auto x : y)
+    {                       |            {
+        print(x);           |            print(x);
+    }                       |            }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent based on the open parenthesis instead of the open brace
 in &apos;({\n&apos;.</source>
         <comment>indent_paren_open_brace</comment>
-        <translation>Нужно ли делать отступ на основе открывающей круглой скобки вместо открывающей фигурной скобки в `({\n`.
+        <translation>Делать отступ на основе открывающей круглой скобки вместо открывающей фигурной скобки в `({\n`.
 
 `false`
 
@@ -2760,7 +2760,7 @@ namespace Constants
         <source>Whether to indent only the first namespace, and not any nested namespaces.
 Requires indent_namespace=true.</source>
         <comment>indent_namespace_single_indent</comment>
-        <translation>Делать ли отступ только для первого пространства имен, а не для всех вложенных пространств имен.
+        <translation>Отступ только для первого пространства имен, а не для всех вложенных пространств имен.
 
 Требуется `indent_namespace=true`
 
@@ -2801,7 +2801,7 @@ indented. Requires indent_namespace=true. 0 means no limit.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether the &apos;extern &quot;C&quot;&apos; body is indented.</source>
         <comment>indent_extern</comment>
-        <translation>Делать ли отступ для тела `extern &quot;C&quot;`.
+        <translation>Отступ для тела `extern &quot;C&quot;`.
 
     extern &quot;C&quot;{
     ····disConnectionH createDisConnection();
@@ -2813,7 +2813,7 @@ indented. Requires indent_namespace=true. 0 means no limit.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether the &apos;class&apos; body is indented.</source>
         <comment>indent_class</comment>
-        <translation>Отступы в теле класса
+        <translation>Отступ в теле класса
 
     class Widget :
             public QWidget
@@ -2853,7 +2853,7 @@ and nl_class_colon)</source>
 colon. Requires indent_class_colon=true.</source>
         <comment>indent_class_on_colon</comment>
         <translatorcomment>WTF</translatorcomment>
-        <translation>Должен ли отступ основываться на двоеточии класса, а не на том, что находится после двоеточия. 
+        <translation>Отступ основываться на двоеточии класса, а не на том, что находится после двоеточия. 
 
 Требуется, чтобы `indent_class_colon=true`.</translation>
     </message>
@@ -2871,20 +2871,23 @@ colon. Requires indent_class_colon=true.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Virtual indent from the &apos;:&apos; for leading member initializers.</source>
         <comment>indent_ctor_init_leading</comment>
-        <translation type="unfinished">↑↓·¶Виртуальный отступ от `:` для ведущих инициализаторов членов.</translation>
+        <translatorcomment>WTF↑↓·¶</translatorcomment>
+        <translation>Виртуальный отступ от `:` для ведущих инициализаторов членов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Virtual indent from the &apos;:&apos; for following member initializers.</source>
         <comment>indent_ctor_init_following</comment>
-        <translation type="unfinished">↑↓·¶Виртуальный отступ от `:` для следующих инициализаторов членов.</translation>
+        <translatorcomment>WTF↑↓·¶</translatorcomment>
+        <translation>Виртуальный отступ от `:` для следующих инициализаторов членов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Additional indent for constructor initializer list.
 Negative values decrease indent down to the first column.</source>
         <comment>indent_ctor_init</comment>
-        <translation type="unfinished">↑↓·¶Дополнительный отступ для списка инициализаторов конструктора.
+        <translatorcomment>WTF↑↓·¶</translatorcomment>
+        <translation>Дополнительный отступ для списка инициализаторов конструктора.
 
 Отрицательные значения уменьшают отступ до первого столбца.</translation>
     </message>
@@ -2893,7 +2896,7 @@ Negative values decrease indent down to the first column.</source>
         <source>Whether to indent &apos;if&apos; following &apos;else&apos; as a new block under the &apos;else&apos;.
 If false, &apos;else\nif&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
         <comment>indent_else_if</comment>
-        <translation>Должен ли отступ `if` после `else` быть новым блоком под `else`.
+        <translation>Отступ `if` после `else` должен быть новым блоком под `else`.
 Если `false`, то `else\nif` рассматривается как `else if`.
 
     if ( true )
@@ -2906,7 +2909,8 @@ If false, &apos;else\nif&apos; is treated as &apos;else if&apos; for indenting p
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Amount to indent variable declarations after a open brace.</source>
         <comment>indent_var_def_blk</comment>
-        <translation type="unfinished">↑↓·¶Сумма отступов объявлений переменных после открывающей скобки.</translation>
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Сумма отступов объявлений переменных после открывающей скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2920,35 +2924,77 @@ If false, &apos;else\nif&apos; is treated as &apos;else if&apos; for indenting p
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent continued variable declarations instead of aligning.</source>
         <comment>indent_var_def_cont</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы от продолжающихся деклараций переменных вместо выравнивания.</translation>
+        <translation>Добавлять отступы от разбитых определений переменных вместо выравнивания.
+
+    false                  | true
+    static uint jhash(K x) | static uint jhash(K x)
+    {                      | {
+        ubyte *k;          |     ubyte *k;
+        uint a,            |     uint a,
+             b,            |         b,
+             c;            |         c;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent continued shift expressions (&apos;&lt;&lt;&apos; and &apos;&gt;&gt;&apos;) instead of
 aligning. Set align_left_shift=false when enabling this.</source>
         <comment>indent_shift</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ для выражений с продолженным сдвигом (&apos;&amp;lt;&amp;lt;&apos; и &apos;&amp;gt;&amp;gt;&apos;) вместо выравнивания. 
-При включении этого параметра установите align_left_shift=false.</translation>
+        <translation>Делать отступ для выражений с разбитым сдвигом (`&lt;&lt;` и `&gt;&gt;`) вместо выравнивания. 
+
+При включении этого параметра установите `align_left_shift=false`.
+
+    False               |        True
+    return log          |        return log
+           &gt;&gt; var       |        &gt;&gt; var
+           &gt;&gt; second    |        &gt;&gt; second
+    ;                   |        ;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to force indentation of function definitions to start in column 1.</source>
         <comment>indent_func_def_force_col1</comment>
-        <translation type="unfinished">↑↓·¶Заставить ли отступы от определений функций начинаться в колонке 1.</translation>
+        <translation>Определение функций начинаться в колонке 1.
+
+    struct foobar {
+    char *foobarz() { //!
+        return &quot;foobar&quot;;
+    }
+    char *foo_bar() { //!
+        return &quot;foo_bar&quot;;
+    }
+
+        int foo;
+    };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent continued function call parameters one indent level,
 rather than aligning parameters under the open parenthesis.</source>
         <comment>indent_func_call_param</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы параметры продолженного вызова функции на один уровень отступа, а не выравнивать параметры под открывающей круглой скобкой.</translation>
+        <translation>Добавлять отступы для разбитых параметров вызова функции на один уровень отступа, а не выравнивать параметры под открывающей круглой скобкой.
+
+     false       ↓            |  true
+    Type tmp = f(getObj().x,  |   Type tmp = f(getObj().x,
+                 getObj().y,  |   ····getObj().y,
+                 getObj().z,  |   ····getObj().z,
+                 getObj().w); |   ····getObj().w);
+                 ↑</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent continued function definition parameters one indent level,
 rather than aligning parameters under the open parenthesis.</source>
         <comment>indent_func_def_param</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы параметры определения продолженной функции на один уровень отступа, а не выравнивать параметры под открывающей круглой скобкой.</translation>
+        <translation>Добавлять отступы для разбитых параметров в определении функции, а не выравнивать параметры под открывающей круглой скобкой.
+
+    false    ↓                        | true
+    void bar(int someval,             | void bar(int someval,
+             void *puser,             | ····void *puser,
+             const char *filename,    | ····const char *filename,
+             struct willy *the_list,  | ····struct willy *the_list,
+             int list_len)            | ····int list_len)
+    {        ↑                        | {
+        int idx;                      |     int idx;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2957,21 +3003,53 @@ Allows to align params when appropriate and indent them when not
 behave as if it was true if paren position is more than this value
 if paren position is more than the option value</source>
         <comment>indent_func_def_param_paren_pos_threshold</comment>
-        <translation type="unfinished">↑↓·¶Для определений функции при indent_func_def_param=false позволяет выравнивать параметры или делать отступы при необходимости. Если скобка расположена на позиции больше данного числа, то делается отступ, иначе выравнивание.</translation>
+        <translation>Для определений функции при `indent_func_def_param=false` позволяет выравнивать параметры или делать отступы при необходимости. Если скобка расположена на позиции больше данного числа, то делается отступ, иначе выравнивание.
+
+                   ↓
+    void f(int x,  ↓
+           int y,  ↓
+           int z)  ↓
+           ↑       ↓
+    void very_long_function(int x,
+    ····int y,
+    ····int z)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent continued function call prototype one indent level,
 rather than aligning parameters under the open parenthesis.</source>
         <comment>indent_func_proto_param</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы от прототипа продолженного вызова функции на один уровень отступа, а не выравнивать параметры под открывающей круглой скобкой.</translation>
+        <translation>Добавлять отступы для разбитых параметров в объявлении функции, а не выравнивать параметры под открывающей круглой скобкой.
+
+    false    ↓                        | true
+    void bar(int someval,             | void bar(int someval,
+             void *puser,             | ····void *puser,
+             const char *filename,    | ····const char *filename,
+             struct willy *the_list,  | ····struct willy *the_list,
+             int list_len);           | ····int list_len);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent continued function call declaration one indent level,
 rather than aligning parameters under the open parenthesis.</source>
         <comment>indent_func_class_param</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы от продолжения объявления вызова функции на один уровень отступа, а не выравнивать параметры под открывающей круглой скобкой.</translation>
+        <translation>Добавлять отступы для разбитых параметров в определении функции класса, а не выравнивать параметры под открывающей круглой скобкой.
+
+    false   ↓                       |     true
+    T :: T (const std::string&amp; ns,  |     T :: T (const std::string&amp; ns,
+            const std::string&amp; ns1, |     ····const std::string&amp; ns1,
+            const std::string&amp; ns2) |     ····const std::string&amp; ns2)
+    {                               |     {
+                                    |
+    }                               |     }
+    struct MyClass : public Foo {   |     struct MyClass : public Foo {
+                ↓                   |
+        MyClass(int a,              |         MyClass(int a,
+                int b,              |         ····int b,
+                int c)              |         ····int c)
+            : m_a(a) {              |             : m_a(a) {
+        }                           |         }
+    };                              |     };</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2985,29 +3063,47 @@ rather than aligning parameters under the open parenthesis.</source>
         <source>Whether to indent continued template parameter list one indent level,
 rather than aligning parameters under the open parenthesis.</source>
         <comment>indent_template_param</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы от продолжения списка параметров шаблона на один уровень отступа, а не выравнивать параметры под открывающей круглой скобкой.</translation>
+        <translation>Добавлять отступы для разбитых параметров шаблона, а не выравнивать параметры под открывающей круглой скобкой.
+
+     ↓
+    template          |  template
+    &lt;typename T,      |  &lt;typename T,
+     typename U&gt;      |  ····typename U&gt;
+    void h(T s, U t)  |  void h(T s, U t)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Double the indent for indent_func_xxx_param options.
 Use both values of the options indent_columns and indent_param.</source>
         <comment>indent_func_param_double</comment>
-        <translation type="unfinished">↑↓·¶Удвоить отступ для опций indent_func_xxx_param.
-Использет оба значения опций indent_columns и indent_param.</translation>
+        <translation>Удвоить отступ для опций `indent_func_xxx_param`.
+Использет оба значения опций `indent_columns` и `indent_param`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Indentation column for standalone &apos;const&apos; qualifier on a function
 prototype.</source>
         <comment>indent_func_const</comment>
-        <translation type="unfinished">↑↓·¶Колонка отступов для отдельного квалификатора &apos;const&apos; в прототипе функции.</translation>
+        <translation>Колонка отступов для отдельного квалификатора &apos;const&apos; в прототипе функции.
+
+    void GetFoo(void)
+    ····const
+    {
+        return (m_Foo);
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Indentation column for standalone &apos;throw&apos; qualifier on a function
 prototype.</source>
         <comment>indent_func_throw</comment>
-        <translation type="unfinished">↑↓·¶Колонка отступов для отдельного квалификатора &apos;throw&apos; в прототипе функции.</translation>
+        <translation>Колонка для отдельного квалификатора &apos;throw&apos; в прототипе функции.
+
+    int GetFoo(void)
+    ····throw (std::bad_alloc)
+    {
+        return (m_Foo);
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -3023,64 +3119,87 @@ This allows reducing the indent in macros that have (for example)
         <source>true:  add an indent for the brace on the same line as the macro
 false: do not add an indent for the brace on the same line as the macro</source>
         <comment>indent_macro_brace</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>- true: добавлять отступ для скобки в той же строке, что и макрос
+- false: не добавлять отступ для скобки в той же строке, что и макрос</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>The number of spaces to indent a continued &apos;-&gt;&apos; or &apos;.&apos;.
 Usually set to 0, 1, or indent_columns.</source>
         <comment>indent_member</comment>
-        <translation type="unfinished">↑↓·¶Количество пробелов для отступа от продолжения &apos;-&amp;gt;&apos; или &apos;.&apos;.
-Обычно устанавливается в 0, 1 или indent_columns.</translation>
+        <translation>Количество пробелов для отступа от продолжения `-&gt;` или `.`.
+
+Обычно устанавливается в 0, 1 или `indent_columns`.
+
+    sass.asdfvas-&gt;asdfasd[asdfasdf].
+    ····asdfasdf = 5;
+    ::asdasda::adasd::
+    ····asdfasdf = 5;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether lines broken at &apos;.&apos; or &apos;-&gt;&apos; should be indented by a single indent.
 The indent_member option will not be effective if this is set to true.</source>
         <comment>indent_member_single</comment>
-        <translation type="unfinished">↑↓·¶Должны ли строки, разорванные на &apos;.&apos; или &apos;-&amp;gt;&apos;, отступать на один отступ.
-Опция indent_member не будет действовать, если установлено значение true.</translation>
+        <translation>Должны ли строки, разорванные на `.` или `-&gt;`, отступать на один отступ.
+
+Опция `indent_member` не будет действовать, если установлено значение `true`.
+
+    sass.asdfvas-&gt;asdfasd[asdfasdf].
+    ····asdfasdf = 5;
+    adasd-&gt;
+    ····asdfasdf = 5;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Spaces to indent single line (&apos;//&apos;) comments on lines before code.</source>
         <comment>indent_single_line_comments_before</comment>
-        <translation type="unfinished">↑↓·¶Пробелы для отступов однострочных (&apos;//&apos;) комментариев.</translation>
+        <translatorcomment>↑↓·¶WFT</translatorcomment>
+        <translation>Пробелы для отступов однострочных (&apos;//&apos;) комментариев.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Spaces to indent single line (&apos;//&apos;) comments on lines after code.</source>
         <comment>indent_single_line_comments_after</comment>
-        <translation type="unfinished">↑↓·¶Пробелы для отступа однострочных (&apos;//&apos;) комментариев на строках после кода.</translation>
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Пробелы для отступа однострочных (&apos;//&apos;) комментариев на строках после кода.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>When opening a paren for a control statement (if, for, while, etc), increase
 the indent level by this value. Negative values decrease the indent level.</source>
         <comment>indent_sparen_extra</comment>
-        <translation type="unfinished">↑↓·¶При открытии круглой скобки для управляющего оператора (if, for, while и т.д.) увеличить уровень отступа на это значение. Отрицательные значения уменьшают уровень отступа.</translation>
+        <translatorcomment>WTF↑↓·¶</translatorcomment>
+        <translation>При открытии круглой скобки для управляющего оператора (if, for, while и т.д.) увеличить уровень отступа на это значение. Отрицательные значения уменьшают уровень отступа.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent trailing single line (&apos;//&apos;) comments relative to the code
 instead of trying to keep the same absolute column.</source>
         <comment>indent_relative_single_line_comments</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ для комментариев в одну строку (&apos;//&apos;) относительно кода вместо того, чтобы пытаться сохранить тот же абсолютный столбец.</translation>
+        <translatorcomment>↑↓·¶WFT</translatorcomment>
+        <translation>Нужно ли делать отступ для комментариев в одну строку (&apos;//&apos;) относительно кода вместо того, чтобы пытаться сохранить тот же абсолютный столбец.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Spaces to indent &apos;case&apos; from &apos;switch&apos;. Usually 0 or indent_columns.
 It might be wise to choose the same value for the option indent_case_brace.</source>
         <comment>indent_switch_case</comment>
-        <translation type="unfinished">↑↓·¶Пробелы для отступа &apos;case&apos; от &apos;switch&apos;. Обычно 0 или indent_columns.
-Возможно, будет разумно выбрать такое же значение для параметра indent_case_brace.</translation>
+        <translation>Размер отступа `case` от `switch`. Обычно 0 или `indent_columns`.
+Возможно, будет разумно выбрать такое же значение для параметра `indent_case_brace`.
+
+    switch(i) {
+    ··case 1: [[fallthrough]];
+          [[likely]] case 2: return 1;
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Spaces to indent the body of a &apos;switch&apos; before any &apos;case&apos;.
 Usually the same as indent_columns or indent_switch_case.</source>
         <comment>indent_switch_body</comment>
-        <translation type="unfinished">↑↓·¶Пробелы для отступа тела `switch` перед любым `case`.
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Пробелы для отступа тела `switch` перед любым `case`.
 Обычно то же самое, что и `indent_columns` или `indent_switch_case`.</translation>
     </message>
     <message>
@@ -3089,117 +3208,176 @@ Usually the same as indent_columns or indent_switch_case.</source>
 the &apos;c&apos; in case. Usually set to 0 or indent_columns. Negative values are OK.
 It might be wise to choose the same value for the option indent_switch_case.</source>
         <comment>indent_case_brace</comment>
-        <translation type="unfinished">↑↓·¶Пробел для отступа &apos;{&apos; от &apos;case&apos;. По умолчанию скобка будет отображаться под буквой &amp;quot;c&amp;quot; в case. 
-Обычно устанавливается равным 0 или indent_columns. 
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Пробел для отступа `{` от `case`. По умолчанию скобка будет отображаться под буквой `c` в `case`. 
+
+Обычно устанавливается равным 0 или `indent_columns`. 
+
 Отрицательные значения допустимы.
-Возможно, имеет смысл выбрать такое же значение для параметра indent_switch_case.</translation>
+
+Возможно, имеет смысл выбрать такое же значение для параметра `indent_switch_case`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>indent &apos;break&apos; with &apos;case&apos; from &apos;switch&apos;.</source>
         <comment>indent_switch_break_with_case</comment>
-        <translation type="unfinished">↑↓·¶Отступ `break` от `switch`</translation>
+        <translation>Отступ `break` от `switch`
+
+    switch (message_p)             | switch (message_p)
+    {                              | {
+    case A:                        | case A:
+    {                              | {
+        const tab* ent2 = f( _p ); |     const tab* ent2 = f( _p );
+        tab* ent3 = f( _p );       |     tab* ent3 = f( _p );
+    }                              | }
+    break;                         | break;
+                                   | ↓
+    case B:                        | case B:
+        const tab* ent2 = f( _p ); |     const tab* ent2 = f( _p );
+        tab* ent3 = f( _p );       |     tab* ent3 = f( _p );
+    ····break;                     | break;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent preprocessor statements inside of switch statements.</source>
         <comment>indent_switch_pp</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы для препроцессорных утверждений внутри утверждений switch.</translation>
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Добавлять отступы для препроцессорных утверждений внутри утверждений switch.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Spaces to shift the &apos;case&apos; line, without affecting any other lines.
 Usually 0.</source>
         <comment>indent_case_shift</comment>
-        <translation type="unfinished">↑↓·¶Пробел для сдвига строки `case`, не затрагивая другие строки.
-Обычно 0.</translation>
+        <translation>Пробел для сдвига строки `case`, не затрагивая другие строки.
+
+Обычно 0.
+
+    switch(i) {
+    ··case 1: [[fallthrough]];
+        [[likely]] case 2: return 1;
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to align comments before &apos;case&apos; with the &apos;case&apos;.</source>
         <comment>indent_case_comment</comment>
-        <translation type="unfinished">↑↓·¶Выравнивать комментарии перед &apos;case&apos; по &apos;case&apos;.</translation>
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Выравнивать комментарии перед &apos;case&apos; по &apos;case&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent comments not found in first column.</source>
         <comment>indent_comment</comment>
-        <translation type="unfinished">↑↓·¶Делать отступ для комментариев, не найденных в первой колонке.</translation>
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Делать отступ для комментариев, не найденных в первой колонке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent comments found in first column.</source>
         <comment>indent_col1_comment</comment>
-        <translation type="unfinished">↑↓·¶Отступы для  комментариев, найденных в первой колонке.</translation>
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Отступы для  комментариев, найденных в первой колонке.
+
+    ··// the main func
+    void main(int, char**){</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent multi string literal in first column.</source>
         <comment>indent_col1_multi_string_literal</comment>
-        <translation type="unfinished">↑↓·¶Отступать ли в первой колонке в многострочном литерале.</translation>
+        <translatorcomment>↑↓·¶WTF</translatorcomment>
+        <translation>Делать отступ в первой колонке в многострочном литерале.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Align comments on adjacent lines that are this many columns apart or less.</source>
         <comment>indent_comment_align_thresh</comment>
-        <translation type="unfinished">↑↓·¶Лимит столбцов для выравнивания комментариев на соседних строках</translation>
+        <translatorcomment>WTF</translatorcomment>
+        <translation>Лимит столбцов для выравнивания комментариев на соседних строках</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to ignore indent for goto labels.</source>
         <comment>indent_ignore_label</comment>
-        <translation type="unfinished">↑↓·¶Игнорировать отступ для меток goto.</translation>
+        <translation>Игнорировать отступ для меток goto.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>How to indent goto labels. Requires indent_ignore_label=false.</source>
         <comment>indent_label</comment>
-        <translation type="unfinished">↑↓·¶Как размещать метки goto.
-Требуется indent_ignore_label=false.</translation>
+        <translation>Как размещать метки goto.
+
+Требуется `indent_ignore_label=false`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source> &gt;0: Absolute column where 1 is the leftmost column
 &lt;=0: Subtract from brace indent</source>
         <comment>indent_label</comment>
-        <translation type="unfinished">↑↓·¶ &amp;gt;0: Абсолютный столбец, где 1 - самый левый столбец&amp;lt;br&amp;gt;
-&amp;lt;=0: Вычитание из отступа скобки</translation>
+        <translation>- =0: Абсолютный столбец, где 1 - самый левый столбец
+- &lt;=0: Вычитание из отступа скобки</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>How to indent access specifiers that are followed by a
 colon.</source>
         <comment>indent_access_spec</comment>
-        <translation type="unfinished">↑↓·¶Отступы для спецификаторов доступа, за которыми следует двоеточие.</translation>
+        <translation>Отступы для спецификаторов доступа, за которыми следует двоеточие.
+
+    class A{
+    ··piblic:</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source> &gt;0: Absolute column where 1 is the leftmost column
 &lt;=0: Subtract from brace indent</source>
         <comment>indent_access_spec</comment>
-        <translation type="unfinished">↑↓·¶ &amp;gt;0: Абсолютный столбец, где 1 - самый левый столбец&amp;lt;br&amp;gt;
-&amp;lt;=0: Вычитание из отступа скобки</translation>
+        <translation>- &gt;0: Абсолютный столбец, где 1 - самый левый столбец
+- &lt;=0: Вычитание из отступа скобки</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the code after an access specifier by one level.
 If true, this option forces &apos;indent_access_spec=0&apos;.</source>
         <comment>indent_access_spec_body</comment>
-        <translation type="unfinished">↑↓·¶Добавить отступ кода после спецификатора доступа на один уровень.
-Если true, эта опция заставляет &apos;indent_access_spec=0&apos;.</translation>
+        <translation>Добавить отступ кода после спецификатора доступа на один уровень.
+
+Если true, эта опция заставляет `indent_access_spec=0`.
+
+    class{
+      int b;
+      public:
+      ··int a;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If an open parenthesis is followed by a newline, whether to indent the next
 line so that it lines up after the open parenthesis (not recommended).</source>
         <comment>indent_paren_nl</comment>
-        <translation type="unfinished">↑↓·¶Если за открывающей круглой скобкой следует новая строка, следует ли добавлять отступ на следующей строке так, чтобы она начиналась после открывающей круглой скобки (не рекомендуется).</translation>
+        <translation>Если за открывающей круглой скобкой следует новая строка, добавлять отступ на следующей строке так, чтобы она начиналась после открывающей круглой скобки (не рекомендуется).
+
+    void method51(        | void method51(↓
+    ····int i,            |               int i,
+    ····Some l,           |               Some l,
+    ····float f,          |               float f,
+    ····double d,         |               double d,
+    ····const string &amp; s) |               const string &amp; s)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>How to indent a close parenthesis after a newline.</source>
         <comment>indent_paren_close</comment>
-        <translation type="unfinished">↑↓·¶Как отступить от ближайшей скобки после новой строки.</translation>
+        <translation>Отступ от ближайшей скобки после новой строки.
+
+0  ↓              1  ↓           2↓
+x=f(x,            x=f(x,          x=f(x,
+      ↓                ↓              ↓
+    y(5,              y(5,            y(5,
+      6                 6               6
+      ),               ),             ),
+    12                12              12
+    )                )            )</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -3207,37 +3385,45 @@ line so that it lines up after the open parenthesis (not recommended).</source>
 1: Align under the open parenthesis
 2: Indent to the brace level</source>
         <comment>indent_paren_close</comment>
-        <translation type="unfinished">↑↓·¶0: Отступ до уровня тела (по умолчанию)&amp;lt;br&amp;gt;
-1: Выравнивание по открывающей скобке&amp;lt;br&amp;gt;
-2: Отступ до уровня скобки</translation>
+        <translation>- 0: Отступ до уровня тела (по умолчанию)
+- 1: Выравнивание по открывающей скобке
+- 2: Отступ до уровня скобки</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the open parenthesis of a function definition,
 if the parenthesis is on its own line.</source>
         <comment>indent_paren_after_func_def</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ от открывающей скобки определения функции, если скобка находится на отдельной строке.</translation>
+        <translation>Делать отступ от открывающей скобки определения функции, если скобка находится на отдельной строке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the open parenthesis of a function declaration,
 if the parenthesis is on its own line.</source>
         <comment>indent_paren_after_func_decl</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ от открывающей скобки объявления функции, если скобка находится на отдельной строке.</translation>
+        <translation>Нужно ли делать отступ от открывающей скобки объявления функции, если скобка находится на отдельной строке.
+
+    void method51(                              |   void method51(↓
+    ····int int_param,                          |                 int int_param,
+    ····SomeLongNamespace long_parameter_name,  |                 SomeLongNamespace     long_parameter_name,
+    ····float float_param,                      |                 float float_param,
+    ····double double_param,                    |                 double double_param,
+    ····const string &amp; string_param);           |                 const string &amp; string_param);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the open parenthesis of a function call,
 if the parenthesis is on its own line.</source>
         <comment>indent_paren_after_func_call</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ от открывающей скобки вызова функции, если скобка находится на отдельной строке.</translation>
+        <translation>Делать отступ от открывающей скобки вызова функции, если скобка находится на отдельной строке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent a comma when inside a brace.
 If true, aligns under the open brace.</source>
         <comment>indent_comma_brace</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ для запятой, когда она находится внутри скобки.
+        <translation>Делать отступ для запятой, когда она находится внутри фигурной скобки.
+
 Если true, то выравнивается по открывающей скобке.</translation>
     </message>
     <message>
@@ -3245,7 +3431,8 @@ If true, aligns under the open brace.</source>
         <source>Whether to indent a comma when inside a parenthesis.
 If true, aligns under the open parenthesis.</source>
         <comment>indent_comma_paren</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ для запятой, когда она находится внутри круглой скобки.
+        <translation>Делать отступ для запятой, когда она находится внутри круглой скобки.
+
 Если true, то выравнивается по открывающей скобке.</translation>
     </message>
     <message>
@@ -3253,7 +3440,8 @@ If true, aligns under the open parenthesis.</source>
         <source>Whether to indent a Boolean operator when inside a parenthesis.
 If true, aligns under the open parenthesis.</source>
         <comment>indent_bool_paren</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ для булева оператора, когда он находится внутри круглой скобки.
+        <translation>Делать отступ для булева оператора, когда он находится внутри круглой скобки.
+
 Если true, то выравнивание производится под открывающей скобкой.</translation>
     </message>
     <message>
@@ -3261,7 +3449,8 @@ If true, aligns under the open parenthesis.</source>
         <source>Whether to indent a semicolon when inside a for parenthesis.
 If true, aligns under the open for parenthesis.</source>
         <comment>indent_semicolon_for_paren</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ для точки с запятой внутри скобки for.
+        <translation>Нужно ли делать отступ для точки с запятой внутри скобки for.
+
 Если true, то выравнивается под открывающей круглой скобкой.</translation>
     </message>
     <message>
@@ -3269,91 +3458,93 @@ If true, aligns under the open for parenthesis.</source>
         <source>Whether to align the first expression to following ones
 if indent_bool_paren=true.</source>
         <comment>indent_first_bool_expr</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли выравнивать первое выражение по отношению к последующим если indent_bool_paren=true.</translation>
+        <translation>Выравнивать первое выражение по отношению к последующим если `indent_bool_paren=true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to align the first expression to following ones
 if indent_semicolon_for_paren=true.</source>
         <comment>indent_first_for_expr</comment>
-        <translation type="unfinished">↑↓·¶Выравнивать ли первое выражение по последующим, если indent_semicolon_for_paren=true.</translation>
+        <translation>Выравнивать первое выражение по последующим, если `indent_semicolon_for_paren=true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If an open square is followed by a newline, whether to indent the next line
 so that it lines up after the open square (not recommended).</source>
         <comment>indent_square_nl</comment>
-        <translation type="unfinished">↑↓·¶Если за открывающей фигурной скобкой следует новая строка, следует ли добавлять отступ на следующей строке так, чтобы она начиналась после открывающей фигурной скобки (не рекомендуется).</translation>
+        <translation>Если за открывающей фигурной скобкой следует новая строка, добавлять отступ на следующей строке так, чтобы она начиналась после открывающей фигурной скобки (не рекомендуется).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(ESQL/C) Whether to preserve the relative indent of &apos;EXEC SQL&apos; bodies.</source>
         <comment>indent_preserve_sql</comment>
-        <translation type="unfinished">↑↓·¶(ESQL/C) Сохранить ли относительный отступ &apos;EXEC SQL&apos;.</translation>
+        <translation>(ESQL/C) Сохранить относительный отступ &apos;EXEC SQL&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to align continued statements at the &apos;=&apos;. If false or if the &apos;=&apos; is
 followed by a newline, the next line is indent one tab.</source>
         <comment>indent_align_assign</comment>
-        <translation type="unfinished">↑↓·¶Выравнивать ли продолженные утверждения по &apos;=&apos;. 
-Если false или если за &apos;=&apos; следует новая строка, следующая строка отступает на одну табуляцию.</translation>
+        <translation>Выравнивать разорванные утверждения по &apos;=&apos;. 
+
+Если false или если за &apos;=&apos; следует новая строка, отступ следующей строки составляет одну табуляцию.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If true, the indentation of the chunks after a &apos;=&apos; sequence will be set at
 LHS token indentation column before &apos;=&apos;.</source>
         <comment>indent_off_after_assign</comment>
-        <translation type="unfinished">↑↓·¶Если переменная имеет значение &apos;=&apos;, то отступ фрагментов после последовательности &apos;=&apos; будет установлен в столбце LHS перед &apos;=&apos;.</translation>
+        <translation>Если true, то отступ фрагментов после последовательности &apos;=&apos; будет устанавливаться по адресу LHS столбца отступа лексемы перед &apos;=&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to align continued statements at the &apos;(&apos;. If false or the &apos;(&apos; is
 followed by a newline, the next line indent is one tab.</source>
         <comment>indent_align_paren</comment>
-        <translation type="unfinished">↑↓·¶Выравнивать ли продолженные утверждения по &apos;(&apos;.
-Если false или за &apos;(&apos; следует новая строка, отступ следующей строки составляет одну табуляцию.</translation>
+        <translation>Выравнивать разорванные утверждения по `(`.
+
+Если false или за `(` следует новая строка, отступ следующей строки составляет одну табуляцию.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Whether to indent Objective-C code inside message selectors.</source>
         <comment>indent_oc_inside_msg_sel</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступы от кода Objective-C внутри селекторов сообщений.</translation>
+        <translation>(OC) Отступы от кода Objective-C внутри селекторов сообщений.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Whether to indent Objective-C blocks at brace level instead of usual
 rules.</source>
         <comment>indent_oc_block</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступы в блоках Objective-C на уровне скобок вместо обычных правил.</translation>
+        <translation>(OC) Отступы в блоках Objective-C на уровне скобок вместо обычных правил.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Indent for Objective-C blocks in a message relative to the parameter
 name.</source>
         <comment>indent_oc_block_msg</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступ для блоков Objective-C в сообщении относительно имени параметра.</translation>
+        <translation>(OC) Отступ для блоков Objective-C в сообщении относительно имени параметра.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>=0: Use indent_oc_block rules
 &gt;0: Use specified number of spaces to indent</source>
         <comment>indent_oc_block_msg</comment>
-        <translation type="unfinished">↑↓·¶=0: Использовать правила indent_oc_block&amp;lt;br&amp;gt;
-&amp;gt;0: Использовать заданное количество пробелов для отступа</translation>
+        <translation>- =0: Использовать правила `indent_oc_block`
+- &gt;0: Использовать заданное количество пробелов для отступа</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Minimum indent for subsequent parameters</source>
         <comment>indent_oc_msg_colon</comment>
-        <translation type="unfinished">↑↓·¶(OC) Минимальный отступ для последующих параметров</translation>
+        <translation>(OC) Минимальный отступ для последующих параметров</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Whether to prioritize aligning with initial colon (and stripping spaces
 from lines, if necessary).</source>
         <comment>indent_oc_msg_prioritize_first_colon</comment>
-        <translation type="unfinished">↑↓·¶(OC) Приоритетно ли выравнивание по начальному двоеточию (и удаление пробелов из строк, если необходимо).</translation>
+        <translation>(OC) Приоритетно ли выравнивание по начальному двоеточию (и удаление пробелов из строк, если необходимо).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -3361,54 +3552,59 @@ from lines, if necessary).</source>
 (from the keyword if the parameter is on its own line; otherwise, from the
 previous indentation level). Requires indent_oc_block_msg=true.</source>
         <comment>indent_oc_block_msg_xcode_style</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступ для блоков так, как это делает Xcode по умолчанию (от ключевого слова, если параметр находится на своей строке; в противном случае - от предыдущего уровня отступа). &amp;lt;br&amp;gt;
-Требуется, чтобы indent_oc_block_msg=true.</translation>
+        <translation>(OC) Отступ для блоков так, как это делает Xcode по умолчанию (от ключевого слова, если параметр находится на своей строке; в противном случае - от предыдущего уровня отступа).
+
+Требуется, чтобы `indent_oc_block_msg=true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Whether to indent blocks from where the brace is, relative to a
 message keyword. Requires indent_oc_block_msg=true.</source>
         <comment>indent_oc_block_msg_from_keyword</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступ блоков от места расположения скобки относительно ключевого слова сообщения. &amp;lt;br&amp;gt;
-Требуется, чтобы indent_oc_block_msg=true.</translation>
+        <translation>(OC) Отступ блоков от места расположения скобки относительно ключевого слова сообщения.
+
+Требуется, чтобы `indent_oc_block_msg=true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Whether to indent blocks from where the brace is, relative to a message
 colon. Requires indent_oc_block_msg=true.</source>
         <comment>indent_oc_block_msg_from_colon</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступ блоков от места скобки относительно двоеточия сообщения. &amp;lt;br&amp;gt;
-Требуется, чтобы indent_oc_block_msg=true.</translation>
+        <translation>(OC) Отступ блоков от места скобки относительно двоеточия сообщения. 
+
+Требуется, чтобы `indent_oc_block_msg=true`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Whether to indent blocks from where the block caret is.
 Requires indent_oc_block_msg=true.</source>
         <comment>indent_oc_block_msg_from_caret</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступ блока от места, где находится обводка блока.&amp;lt;br&amp;gt;
-Требуется, чтобы indent_oc_block_msg=true.</translation>
+        <translation>(OC) Отступ блока от места, где находится обводка блока.
+
+Требуется, чтобы `indent_oc_block_msg=true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Whether to indent blocks from where the brace caret is.
 Requires indent_oc_block_msg=true.</source>
         <comment>indent_oc_block_msg_from_brace</comment>
-        <translation type="unfinished">↑↓·¶(OC) Отступ блока от места, где находится скобка.&amp;lt;br&amp;gt;
-Требуется, чтобы indent_oc_block_msg=true.</translation>
+        <translation>(OC) Отступ блока от места, где находится скобка.
+
+Требуется, чтобы `indent_oc_block_msg=true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>When indenting after virtual brace open and newline add further spaces to
 reach this minimum indent.</source>
         <comment>indent_min_vbrace_open</comment>
-        <translation type="unfinished">↑↓·¶При отступе после открывающей виртуальной скобки и новой строки добавить дополнительные пробелы, чтобы достичь этого минимального отступа.</translation>
+        <translation>При отступе после открывающей виртуальной скобки и новой строки добавить дополнительные пробелы, чтобы достичь этого минимального отступа.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to add further spaces after regular indent to reach next tabstop
 when indenting after virtual brace open and newline.</source>
         <comment>indent_vbrace_open_on_tabstop</comment>
-        <translation type="unfinished">↑↓·¶Добавлять ли дополнительные пробелы после обычного отступа для достижения следующего tabstop при отступе после открывающей виртуальной скобки и новой строки.</translation>
+        <translation>Добавлять дополнительные пробелы после обычного отступа для достижения следующего tabstop при отступе после открывающей виртуальной скобки и новой строки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -3416,15 +3612,16 @@ when indenting after virtual brace open and newline.</source>
 true:  indent all contained lines to match the token
 false: indent all contained lines to match the brace</source>
         <comment>indent_token_after_brace</comment>
-        <translation type="unfinished">↑↓·¶Как сделать отступ после скобки, за которой следует другой маркер (не новая строка). 
-true: отступ от всех содержащихся строк, чтобы соответствовать маркеру 
-false: отступ от всех содержащихся строк, чтобы соответствовать скобке.</translation>
+        <translation>Как сделать отступ после скобки, за которой следует другой маркер (не новая строка). 
+
+- true: отступ от всех содержащихся строк, чтобы соответствовать маркеру 
+- false: отступ от всех содержащихся строк, чтобы соответствовать скобке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the body of a C++11 lambda.</source>
         <comment>indent_cpp_lambda_body</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы в теле лямбды C++11.</translation>
+        <translation>Добавлять отступы в теле лямбды C++11.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -3434,21 +3631,22 @@ true: add both the indent from return &amp; the compound literal open brace
 false: only indent 1 level, don&apos;t add the indent for the open brace, only
        add the indent for the return.</source>
         <comment>indent_compound_literal_return</comment>
-        <translation type="unfinished">↑↓·¶Как делать отступ для составных литералов, которые возвращаются. 
-true: добавить отступ от возврата и открывающей скобки составного литерала (т.е. 2 уровня отступа) 
-false: только 1 уровень отступа, не добавлять отступ для открывающей скобки, добавить отступ только для возврата.</translation>
+        <translation>Как делать отступ для составных литералов, которые возвращаются. 
+
+- true: добавить отступ от возврата и открывающей скобки составного литерала (т.е. 2 уровня отступа) 
+- false: только 1 уровень отступа, не добавлять отступ для открывающей скобки, добавить отступ только для возврата.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) Whether to indent a &apos;using&apos; block if no braces are used.</source>
         <comment>indent_using_block</comment>
-        <translation type="unfinished">↑↓·¶(C#) Добавлять отступы от блока &apos;using&apos;, если не используются скобки.</translation>
+        <translation>(C#) Добавлять отступы блока `using`, если не используются скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>How to indent the continuation of ternary operator.</source>
         <comment>indent_ternary_operator</comment>
-        <translation type="unfinished">↑↓·¶Отступы для разбитого тернарного оператора.</translation>
+        <translation>Отступы для разбитого тернарного оператора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -3456,409 +3654,418 @@ false: только 1 уровень отступа, не добавлять о�
 1: When the `if_false` is a continuation, indent it under `if_false`
 2: When the `:` is a continuation, indent it under `?`</source>
         <comment>indent_ternary_operator</comment>
-        <translation type="unfinished">↑↓·¶0: Выключено (по умолчанию)&amp;lt;br&amp;gt;
-1: Когда `if_false` является продолжением, отступ под `if_false`.&amp;lt;br&amp;gt;
-2: Если `:` является продолжением, отступ под `?`.</translation>
+        <translation>- 0: Выключено (по умолчанию)
+- 1: Когда `if_false` является продолжением, отступ под `if_false`.
+- 2: Если `:` является продолжением, отступ под `?`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the statements inside ternary operator.</source>
         <comment>indent_inside_ternary_operator</comment>
-        <translation type="unfinished">↑↓·¶Делать отступы для утверждений внутри тернарного оператора.</translation>
+        <translation>Отступы для утверждений внутри тернарного оператора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If true, the indentation of the chunks after a `return` sequence will be set at return indentation column.</source>
         <comment>indent_off_after_return</comment>
-        <translation type="unfinished">↑↓·¶Если переменная имеет значение true, то строке после выражения `return` будет установлен отступ как у return.</translation>
+        <translation>Если переменная имеет значение true, то строке после выражения `return` будет установлен отступ как у return.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If true, the indentation of the chunks after a `return new` sequence will be set at return indentation column.</source>
         <comment>indent_off_after_return_new</comment>
-        <translation type="unfinished">↑↓·¶Если переменная имеет значение true, то строке после выражения `return new` будет установлен отступ как у return.</translation>
+        <translation>Если переменная имеет значение true, то строке после выражения `return new` будет установлен отступ как у return.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If true, the tokens after return are indented with regular single indentation. By default (false) the indentation is after the return token.</source>
         <comment>indent_single_after_return</comment>
-        <translation type="unfinished">↑↓·¶Если true, то лексемы после return будут иметь обычный одинарный отступ. 
-По умолчанию (false) отступ делается относительно лексемы return.</translation>
+        <translation>Если `true`, то лексемы после `return` будут иметь обычный одинарный отступ. 
+
+По умолчанию (`false`) отступ делается относительно лексемы `return`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to ignore indent and alignment for &apos;asm&apos; blocks (i.e. assume they
 have their own indentation).</source>
         <comment>indent_ignore_asm_block</comment>
-        <translation type="unfinished">↑↓·¶Игнорировать отступ и выравнивание для блоков &apos;asm&apos; (т.е. считать, что они имеют свой собственный отступ).</translation>
+        <translation>Игнорировать отступ и выравнивание для блоков `asm` (т.е. считать, что они имеют свой собственный отступ).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t indent the close parenthesis of a function definition,
 if the parenthesis is on its own line.</source>
         <comment>donot_indent_func_def_close_paren</comment>
-        <translation type="unfinished">↑↓·¶Не делать отступ от закрывающей скобки определения функции, если скобка находится на отдельной строке.</translation>
+        <translation>Не делать отступ для закрывающей скобки определения функции, если скобка находится на отдельной строке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to collapse empty blocks between &apos;{&apos; and &apos;}&apos;.
 If true, overrides nl_inside_empty_func</source>
         <comment>nl_collapse_empty_body</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли сворачивать пустые блоки между &apos;{&apos; и `}`.
-Если true, то отменяет действие nl_inside_empty_func</translation>
+        <translation>Нужно ли сворачивать пустые блоки между &apos;{&apos; и `}`.
+
+Если `true`, то отменяет действие `nl_inside_empty_func`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line braced assignments, as in &apos;foo_t f = { 1, 2 };&apos;.</source>
         <comment>nl_assign_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные фигурные скобки в присваивании, как в &apos;foo_t f = { 1, 2 };&apos;.</translation>
+        <translation>Не разбивать однострочные фигурные скобки в присваивании, как в `foo_t f = { 1, 2 };`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line braced statements inside a &apos;class xx { }&apos; body.</source>
         <comment>nl_class_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные скобки внутри тела &amp;quot;class xxx{}&amp;quot;.</translation>
+        <translation>Не разбивать однострочные скобки внутри тела `class xxx{}`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line enums, as in &apos;enum foo { BAR = 15 };&apos;</source>
         <comment>nl_enum_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные перечисления, как в &apos;enum foo { BAR = 15 };&apos;</translation>
+        <translation>Не разбивать однострочные перечисления, как в `enum foo { BAR = 15 };`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line get or set functions.</source>
         <comment>nl_getset_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные get/set функции.</translation>
+        <translation>Не разбивать однострочные функции get/set.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) Don&apos;t split one-line property get or set functions.</source>
         <comment>nl_cs_property_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶(C#) Не разбивать однострочный функции свойств get и set.</translation>
+        <translation>(C#) Не разбивать однострочный функции свойств get и set.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line function definitions, as in &apos;int foo() { return 0; }&apos;.
 might modify nl_func_type_name</source>
         <comment>nl_func_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать определения однострочных функций, как в &apos;int foo() { return 0; }&apos;. 
-Может модифицировать  nl_func_type_name</translation>
+        <translation>Не разбивать определения однострочных функций, как в `int foo() { return 0; }`. 
+
+Может модифицировать `nl_func_type_name`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line C++11 lambdas, as in &apos;[]() { return 0; }&apos;.</source>
         <comment>nl_cpp_lambda_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные лямбды C++11, как в &apos;[]() { вернуть 0; }&apos;.</translation>
+        <translation>Не разбивать однострочные лямбды C++11, как в `[]() { return 0; }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line if/else statements, as in &apos;if(...) b++;&apos;.</source>
         <comment>nl_if_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные операторы if/else, как в &apos;if(...) b++;&apos;.</translation>
+        <translation>Не разбивать однострочные операторы `if`/`else`, как в `if(...) b++;`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line while statements, as in &apos;while(...) b++;&apos;.</source>
         <comment>nl_while_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные операторы while, как в &apos;while(...) b++;&apos;.</translation>
+        <translation>Не разбивать однострочные операторы `while`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line do statements, as in &apos;do { b++; } while(...);&apos;.</source>
         <comment>nl_do_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные операторы do, как в &apos;do { b++; } while(...);&apos;.</translation>
+        <translation>Не разбивать однострочные операторы `do`, как в `do { b++; } while(...);`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Don&apos;t split one-line for statements, as in &apos;for(...) b++;&apos;.</source>
         <comment>nl_for_leave_one_liners</comment>
-        <translation type="unfinished">↑↓·¶Не разбивать однострочные операторы for, как в &apos;for(...) b++;&apos;.</translation>
+        <translation>Не разбивать однострочные операторы `for`, как в `for(...) b++;`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Don&apos;t split one-line Objective-C messages.</source>
         <comment>nl_oc_msg_leave_one_liner</comment>
-        <translation type="unfinished">↑↓·¶(OC) Не разбивать однострочные сообщения Objective-C.</translation>
+        <translation>(OC) Не разбивать однострочные сообщения Objective-C.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove newline between method declaration and &apos;{&apos;.</source>
         <comment>nl_oc_mdef_brace</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать новую строку между объявлением метода и `{`.</translation>
+        <translation>(OC) Добавить или убрать новую строку между объявлением метода и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove newline between Objective-C block signature and &apos;{&apos;.</source>
         <comment>nl_oc_block_brace</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать новую строку между сигнатурой блока Objective-C и `{`.</translation>
+        <translation>(OC) Добавить или убрать новую строку между сигнатурой блока Objective-C и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove blank line before &apos;@interface&apos; statement.</source>
         <comment>nl_oc_before_interface</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать пустую строку перед оператором &apos;@interface&apos;.</translation>
+        <translation>(OC) Добавить или убрать пустую строку перед оператором `@interface`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove blank line before &apos;@implementation&apos; statement.</source>
         <comment>nl_oc_before_implementation</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать пустую строку перед оператором &apos;@implementation&apos;.</translation>
+        <translation>(OC) Добавить или убрать пустую строку перед оператором `@implementation`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove blank line before &apos;@end&apos; statement.</source>
         <comment>nl_oc_before_end</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать пустую строку перед оператором &apos;@end&apos;.</translation>
+        <translation>(OC) Добавить или убрать пустую строку перед оператором `@end`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove newline between &apos;@interface&apos; and &apos;{&apos;.</source>
         <comment>nl_oc_interface_brace</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать новую строку между &apos;@interface&apos; и `{`.</translation>
+        <translation>(OC) Добавить или убрать новую строку между `@interface` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove newline between &apos;@implementation&apos; and &apos;{&apos;.</source>
         <comment>nl_oc_implementation_brace</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать новую строку между &apos;@implementation&apos; и `{`.</translation>
+        <translation>(OC) Добавить или убрать новую строку между `@implementation` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newlines at the start of the file.</source>
         <comment>nl_start_of_file</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новых строк в начале файла.</translation>
+        <translation>Добавить или убрать новые строки в начале файла.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>The minimum number of newlines at the start of the file (only used if
 nl_start_of_file is &apos;add&apos; or &apos;force&apos;).</source>
         <comment>nl_start_of_file_min</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Минимальное количество новых строк в начале файла (используется только если `nl_start_of_file` имеет значение `add` или `force`).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline at the end of the file.</source>
         <comment>nl_end_of_file</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки в конце файла.</translation>
+        <translation>Добавить или убрать новые строки в конце файла.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>The minimum number of newlines at the end of the file (only used if
 nl_end_of_file is &apos;add&apos; or &apos;force&apos;).</source>
         <comment>nl_end_of_file_min</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Минимальное количество новых строк в конце файла (используется только если `nl_end_of_file` имеет значение `add` или `force`).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;=&apos; and &apos;{&apos;.</source>
         <comment>nl_assign_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;=&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `=` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove newline between &apos;=&apos; and &apos;[&apos;.</source>
         <comment>nl_assign_square</comment>
-        <translation type="unfinished">↑↓·¶(D) Добавить или убрать новую строку между &apos;=&apos; и &apos;[&apos;.</translation>
+        <translation>(D) Добавить или убрать новую строку между `=` и `[`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;[]&apos; and &apos;{&apos;.</source>
         <comment>nl_tsquare_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;[]&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `[]` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove newline after &apos;= [&apos;. Will also affect the newline before
 the &apos;]&apos;.</source>
         <comment>nl_after_square_assign</comment>
-        <translation type="unfinished">↑↓·¶(D) Добавить или убрать новую строку после &apos;= [&apos;. Это также влияет на новую строку перед &apos;]&apos;.</translation>
+        <translation>(D) Добавить или убрать новую строку после `= [`. Это также влияет на новую строку перед `]`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between a function call&apos;s &apos;)&apos; and &apos;{&apos;, as in
 &apos;list_for_each(item, &amp;list) { }&apos;.</source>
         <comment>nl_fcall_brace</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Добавить или удалить новую строку между `)` и `{` в вызове функции, как в примере `list_for_each(item, &amp;list)¶ { }`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;enum&apos; and &apos;{&apos;.</source>
         <comment>nl_enum_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;enum&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `enum` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;enum&apos; and &apos;class&apos;.</source>
         <comment>nl_enum_class</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;enum&apos; и &apos;class&apos;.</translation>
+        <translation>Добавить или убрать новую строку между `enum` и `class`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;enum class&apos; and the identifier.</source>
         <comment>nl_enum_class_identifier</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;enum class&apos; и идентификатором.</translation>
+        <translation>Добавить или убрать новую строку между `enum class` и идентификатором.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;enum class&apos; type and &apos;:&apos;.</source>
         <comment>nl_enum_identifier_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;enum class&apos; и двоеточием перед типом.</translation>
+        <translation>Добавить или убрать новую строку между `enum class` и двоеточием перед типом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;enum class identifier :&apos; and type.</source>
         <comment>nl_enum_colon_type</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;enum class identifier :&apos; и типом.</translation>
+        <translation>Добавить или убрать новую строку между `enum class identifier :` и типом.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;struct and &apos;{&apos;.</source>
         <comment>nl_struct_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;struct&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `struct` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;union&apos; and &apos;{&apos;.</source>
         <comment>nl_union_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;union&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `union` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;if&apos; and &apos;{&apos;.</source>
         <comment>nl_if_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;if&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `if` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;else&apos;.</source>
         <comment>nl_brace_else</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;}&apos; и &apos;else&apos;.</translation>
+        <translation>Добавить или убрать новую строку между `}` и `else`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;else if&apos; and &apos;{&apos;. If set to ignore,
 nl_if_brace is used instead.</source>
         <comment>nl_elseif_brace</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Добавить или удалить новую строку между `else if` и `{`. 
+
+Если установлено значение `ignore`, вместо него используется `nl_if_brace`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;else&apos; and &apos;{&apos;.</source>
         <comment>nl_else_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;else&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `else` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;else&apos; and &apos;if&apos;.</source>
         <comment>nl_else_if</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;else&apos; и &apos;if&apos;.</translation>
+        <translation>Добавить или убрать новую строку между `else` и `if`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline before &apos;{&apos; opening brace</source>
         <comment>nl_before_opening_brace_func_class_def</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку перед открывающейся фигурной скобкой &apos;{&apos;</translation>
+        <translation>Добавить или убрать новую строку перед открывающейся фигурной скобкой `{`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline before &apos;if&apos;/&apos;else if&apos; closing parenthesis.</source>
         <comment>nl_before_if_closing_paren</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку перед закрывающей круглой скобкой &apos;if&apos;/&apos;else if&apos;.</translation>
+        <translation>Добавить или убрать новую строку перед закрывающей круглой скобкой `if`/`else if`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;finally&apos;.</source>
         <comment>nl_brace_finally</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;}&apos; и &apos;finally&apos;.</translation>
+        <translation>Добавить или убрать новую строку между `}` и `finally`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;finally&apos; and &apos;{&apos;.</source>
         <comment>nl_finally_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;finally&apos; и `}`.</translation>
+        <translation>Добавить или убрать новую строку между `finally` и `}`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;try&apos; and &apos;{&apos;.</source>
         <comment>nl_try_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;try&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `try` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between get/set and &apos;{&apos;.</source>
         <comment>nl_getset_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между get/set и `{`.</translation>
+        <translation>Добавить или убрать новую строку между get/set и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;for&apos; and &apos;{&apos;.</source>
         <comment>nl_for_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;for&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `for` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline before the &apos;{&apos; of a &apos;catch&apos; statement, as in
 &apos;catch (decl) &lt;here&gt; {&apos;.</source>
         <comment>nl_catch_brace</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Добавить или удалить новую строку перед `{` оператора `catch`, как в примере
+&apos;catch (decl) ¶ {&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove newline before the &apos;{&apos; of a &apos;@catch&apos; statement, as in
 &apos;@catch (decl) &lt;here&gt; {&apos;. If set to ignore, nl_catch_brace is used.</source>
         <comment>nl_oc_catch_brace</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать пробел перед &apos;{&apos; в выражении &apos;@catch&apos;, если `{` и &apos;@catch&apos; находятся на одной строке, как в выражении &apos;@catch (decl) · {&apos;.</translation>
+        <translation>(OC) Добавить или удалить новую строку перед `{` оператора `@catch`, как в `@catch (decl) ¶ {`. 
+
+Если установлено значение игнорировать, используется `nl_catch_brace`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;catch&apos;.</source>
         <comment>nl_brace_catch</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;}&apos; и &apos;catch&apos;.</translation>
+        <translation>Добавить или убрать новую строку между `}` и `catch`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(OC) Add or remove newline between &apos;}&apos; and &apos;@catch&apos;. If set to ignore,
 nl_brace_catch is used.</source>
         <comment>nl_oc_brace_catch</comment>
-        <translation type="unfinished">↑↓·¶(OC) Добавить или убрать новую строку между &apos;}&apos; и &apos;@catch&apos;.  &amp;lt;br&amp;gt;
-Если установлено ignore, используется nl_brace_catch.</translation>
+        <translation>(OC) Добавить или убрать новую строку между &apos;}&apos; и &apos;@catch&apos;. 
+
+Если установлено `ignore`, используется `nl_brace_catch`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;]&apos;.</source>
         <comment>nl_brace_square</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;}&apos; и &apos;]&apos;.</translation>
+        <translation>Добавить или убрать новую строку между `}` и `]`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;}&apos; and &apos;)&apos; in a function invocation.</source>
         <comment>nl_brace_fparen</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между &apos;}&apos; и `)` при вызове функции.</translation>
+        <translation>Добавить или убрать новую строку между `}` и `)` при вызове функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;while&apos; and &apos;{&apos;.</source>
         <comment>nl_while_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;while&apos; и `{`.</translation>
+        <translation>Добавить или убрать новую строку между `while` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove newline between &apos;scope (x)&apos; and &apos;{&apos;.</source>
         <comment>nl_scope_brace</comment>
-        <translation type="unfinished">↑↓·¶(D) Добавить или убрать новую строку между &apos;scope (x)&apos; и `{`.</translation>
+        <translation>(D) Добавить или убрать новую строку между `scope (x)` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove newline between &apos;unittest&apos; and &apos;{&apos;.</source>
         <comment>nl_unittest_brace</comment>
-        <translation type="unfinished">↑↓·¶(D) Добавить или убрать новую строку между &apos;unittest&apos; и `{`.</translation>
+        <translation>(D) Добавить или убрать новую строку между `unittest` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(D) Add or remove newline between &apos;version (x)&apos; and &apos;{&apos;.</source>
         <comment>nl_version_brace</comment>
-        <translation type="unfinished">↑↓·¶(D) Добавить или убрать новую строку между &apos;version (x)&apos; и `{`.</translation>
+        <translation>(D) Добавить или убрать новую строку между `version (x)` и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -3982,7 +4189,7 @@ statement that follows a &apos;;&apos; or &apos;}&apos;.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template class.</source>
         <comment>nl_template_class</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в шаблоне класса.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в шаблоне класса.
 &amp;lt;pre&amp;gt;template &amp;lt;class T&amp;gt;¶struct type1;
 template &amp;lt;int&amp;gt;¶struct type2 {&amp;lt;/pre&amp;gt;</translation>
     </message>
@@ -4003,7 +4210,7 @@ template &amp;lt;int&amp;gt;¶struct type2 {&amp;lt;/pre&amp;gt;</translation>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized class declaration.</source>
         <comment>nl_template_class_decl_special</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в объявлении специализации класса.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в объявлении специализации класса.
 &amp;lt;pre&amp;gt;template &amp;lt;int&amp;gt;¶struct type;&amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4016,7 +4223,7 @@ template &amp;lt;int&amp;gt;¶struct type2 {&amp;lt;/pre&amp;gt;</translation>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template class definition.</source>
         <comment>nl_template_class_def</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в определении класса.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в определении класса.
 &amp;lt;pre&amp;gt;template &amp;lt;class T&amp;gt;¶struct type { &amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4029,7 +4236,7 @@ template &amp;lt;int&amp;gt;¶struct type2 {&amp;lt;/pre&amp;gt;</translation>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized class definition.</source>
         <comment>nl_template_class_def_special</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в определении специализации класса.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в определении специализации класса.
 &amp;lt;pre&amp;gt;template &amp;lt;int&amp;gt;¶struct type{&amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4042,7 +4249,7 @@ template &amp;lt;int&amp;gt;¶struct type2 {&amp;lt;/pre&amp;gt;</translation>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template function.</source>
         <comment>nl_template_func</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в шаблоне функции.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в шаблоне функции.
 &amp;lt;pre&amp;gt;template &amp;lt;class T&amp;gt;¶T fun1(T x);
 template &amp;lt;int&amp;gt;¶T fun2(T x){&amp;lt;/pre&amp;gt;</translation>
     </message>
@@ -4051,7 +4258,7 @@ template &amp;lt;int&amp;gt;¶T fun2(T x){&amp;lt;/pre&amp;gt;</translation>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template function
 declaration.</source>
         <comment>nl_template_func_decl</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в объявлении шаблоной функции.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в объявлении шаблоной функции.
 &amp;lt;pre&amp;gt;template &amp;lt;class T&amp;gt;¶T fun(T x);&amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4065,7 +4272,7 @@ declaration.</source>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized function
 declaration.</source>
         <comment>nl_template_func_decl_special</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в специализированном определении шаблоной функции.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в специализированном определении шаблоной функции.
 &amp;lt;pre&amp;gt;template &amp;lt;double&amp;gt;¶double fun(doubel x);&amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4079,7 +4286,7 @@ declaration.</source>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template function
 definition.</source>
         <comment>nl_template_func_def</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в реализации шаблоной функции.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в реализации шаблоной функции.
 &amp;lt;pre&amp;gt;template &amp;lt;class T&amp;gt;¶T fun(T x){&amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4093,7 +4300,7 @@ definition.</source>
         <source>Add or remove newline after &apos;template&lt;&gt;&apos; of a specialized function
 definition.</source>
         <comment>nl_template_func_def_special</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; в специализированной реализации шаблоной функции.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; в специализированной реализации шаблоной функции.
 &amp;lt;pre&amp;gt;template &amp;lt;double&amp;gt;¶double fun(doubel x){&amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4106,7 +4313,7 @@ definition.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after &apos;template&lt;...&gt;&apos; of a template variable.</source>
         <comment>nl_template_var</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; переменной шаблона.
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; переменной шаблона.
 &amp;lt;pre&amp;gt;template &amp;lt;class T&amp;gt;¶pi=T(M_PI);&amp;lt;/pre&amp;gt;</translation>
     </message>
     <message>
@@ -4114,7 +4321,7 @@ definition.</source>
         <source>Add or remove newline between &apos;template&lt;...&gt;&apos; and &apos;using&apos; of a templated
 type alias.</source>
         <comment>nl_template_using</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после &apos;template&amp;lt;...&amp;gt;&apos; и using в алиасе типа.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после &apos;template&amp;lt;...&amp;gt;&apos; и using в алиасе типа.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4179,7 +4386,7 @@ not appear with in-line implementation).</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between return type and function name in a prototype.</source>
         <comment>nl_func_proto_type_name</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между типом возврата и именем функции в прототипе.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между типом возврата и именем функции в прототипе.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4264,19 +4471,19 @@ are in different lines. If false, nl_func_def_start is used instead.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after each &apos;,&apos; in a function declaration.</source>
         <comment>nl_func_decl_args</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после каждой &apos;,&apos; в объявлении функции.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после каждой &apos;,&apos; в объявлении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after each &apos;,&apos; in a function definition.</source>
         <comment>nl_func_def_args</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после каждой &apos;,&apos; в определении функции.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после каждой &apos;,&apos; в определении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline after each &apos;,&apos; in a function call.</source>
         <comment>nl_func_call_args</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки после каждой &apos;,&apos; в вызове функции.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку после каждой &apos;,&apos; в вызове функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4296,13 +4503,13 @@ and &apos;)&apos; are in different lines. If false, nl_func_def_args is used ins
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline before the &apos;)&apos; in a function declaration.</source>
         <comment>nl_func_decl_end</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки перед символом &apos;)&apos; в объявлении функции.</translation>
+        <translation>Добавить или убрать новую строку перед символом `)` в объявлении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline before the &apos;)&apos; in a function definition.</source>
         <comment>nl_func_def_end</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки перед символом &apos;)&apos; в определении функции.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку перед символом &apos;)&apos; в определении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4334,19 +4541,19 @@ are in different lines. If false, nl_func_def_end is used instead.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;()&apos; in a function declaration.</source>
         <comment>nl_func_decl_empty</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между &apos;()&apos; в объявлении функции.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;()&apos; в объявлении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;()&apos; in a function definition.</source>
         <comment>nl_func_def_empty</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между &apos;()&apos; в определении функции.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;()&apos; в определении функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;()&apos; in a function call.</source>
         <comment>nl_func_call_empty</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между &apos;()&apos; при вызове функции.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между &apos;()&apos; при вызове функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4418,7 +4625,7 @@ See nl_oc_msg_leave_one_liner.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between function signature and &apos;{&apos;.</source>
         <comment>nl_fdef_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между сигнатурой функции и `{`.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между сигнатурой функции и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -4431,26 +4638,26 @@ if signature ends with &apos;)&apos;. Overrides nl_fdef_brace.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between C++11 lambda signature and &apos;{&apos;.</source>
         <comment>nl_cpp_ldef_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между лямбда-сигнатурой C++11 и `{`.</translation>
+        <translation type="unfinished">↑↓·¶Добавить или убрать новую строку между лямбда-сигнатурой C++11 и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove newline between &apos;return&apos; and the return expression.</source>
         <comment>nl_return_expr</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать новой строки между &apos;return&apos; и выражением return.</translation>
+        <translation>Добавить или убрать новую строку между `return` и выражением return.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to add a newline after semicolons, except in &apos;for&apos; statements.</source>
         <comment>nl_after_semicolon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять новую строку после точки с запятой, кроме как в утверждении &amp;quot;for&amp;quot;.</translation>
+        <translation>Добавлять новую строку после точки с запятой, кроме как в утверждении `for`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(Java) Add or remove newline between the &apos;)&apos; and &apos;{{&apos; of the double brace
 initializer.</source>
         <comment>nl_paren_dbrace_open</comment>
-        <translation type="unfinished">↑↓·¶(Java) Добавить или убрать новую строку между &apos;)&apos; и &apos;{{&apos; в инициализаторе.</translation>
+        <translation>(Java) Добавить или убрать новую строку между `)` и `{{` в инициализаторе.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5149,31 +5356,31 @@ declaration.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) The number of newlines between the get/set/add/remove handlers.</source>
         <comment>nl_between_get_set</comment>
-        <translation type="unfinished">↑↓·¶(C#) Количество новых строк между обработчиками get/set/add/remove.</translation>
+        <translation>(C#) Количество новых строк между обработчиками get/set/add/remove.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>0: No change (default).</source>
         <comment>nl_between_get_set</comment>
-        <translation type="unfinished">↑↓·¶0: не изменять (по умолчанию). </translation>
+        <translation>0: не изменять (по умолчанию). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) Add or remove newline between property and the &apos;{&apos;.</source>
         <comment>nl_property_brace</comment>
-        <translation type="unfinished">↑↓·¶(C#) Добавить или убрать конец строки между свойством (property) и `{`.</translation>
+        <translation>(C#) Добавить или убрать конец строки между свойством (property) и `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to remove blank lines after &apos;{&apos;.</source>
         <comment>eat_blanks_after_open_brace</comment>
-        <translation type="unfinished">↑↓·¶Удалить ли пустые строки после &apos;{&apos;.</translation>
+        <translation>Удалить пустые строки после `{`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to remove blank lines before &apos;}&apos;.</source>
         <comment>eat_blanks_before_close_brace</comment>
-        <translation type="unfinished">↑↓·¶Удалить ли пустые строки перед &amp;quot;}&apos;&apos;.</translation>
+        <translation>Удалить пустые строки перед `}`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
