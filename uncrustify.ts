@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ru_RU" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="ru_RU">
 <context>
     <name>MainWidget</name>
     <message>
@@ -2586,8 +2587,7 @@ overrides the indent.</source>
 1: Indent with tabs to brace level, align with spaces (default)
 2: Indent and align with tabs, using spaces when not on a tabstop</source>
         <comment>indent_with_tabs</comment>
-        <translation type="unfinished">
-- 0: Только пробелы
+        <translation>- 0: Только пробелы
 - 1: Отступ табуляцией до уровня скобки, выравнивание пробелами (по умолчанию)
 - 2: Отступ и выравнивание с помощью табуляции, использование пробелов, если нет позиции табуляции</translation>
     </message>
@@ -2596,122 +2596,230 @@ overrides the indent.</source>
         <source>Whether to indent comments that are not at a brace level with tabs on a
 tabstop. Requires indent_with_tabs=2. If false, will use spaces.</source>
         <comment>indent_cmt_with_tabs</comment>
-        <translation type="unfinished">↑↓·¶Должен ли отступ комментариев, которые не находятся на уровне скобок, отделяться табуляцией на tabstop. 
-Требуется indent_with_tabs=2. 
-Если false, будут использоваться пробелы.</translation>
+        <translation>Должен ли отступ комментариев, которые не находятся на уровне скобок, отделяться табуляцией на tabstop. 
+
+Требуется `indent_with_tabs=2`. 
+
+Если `false`, будут использоваться пробелы.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent strings broken by &apos;\&apos; so that they line up.</source>
         <comment>indent_align_string</comment>
-        <translation type="unfinished">↑↓·¶Делать отступы для строк, разорванных &apos;\&apos;, чтобы они выстраивались в одну линию.</translation>
+        <translation>Делать отступы для строк, разорванных &apos;\&apos;, чтобы они выстраивались в одну линию.
+
+    char*s=&quot;very long string&quot;
+          ↑&quot;very long string&quot;
+          ↑&quot;very long string&quot;;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>The number of spaces to indent multi-line XML strings.
 Requires indent_align_string=true.</source>
         <comment>indent_xml_string</comment>
-        <translation type="unfinished">↑↓·¶Количество пробелов для отступа многострочных XML-строк.
-Требуется indent_align_string=true.</translation>
+        <translation>Количество пробелов для отступа многострочных XML-строк.
+
+Требуется `indent_align_string=true`.
+
+    void foo(void) {
+        const char *a = &quot;&lt;xml&gt;&quot;
+                        ··&quot;&lt;data Parent=\&quot;%d\&quot; Name=\&quot;%s\&quot;&gt;&quot;
+                        ····&quot;&lt;Child Id=\&quot;%d\&quot;/&gt;&quot;
+                        ··&quot;&lt;/data&gt;&quot;
+                        &quot;&lt;/xml&gt;&quot;;
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Spaces to indent &apos;{&apos; from level.</source>
         <comment>indent_brace</comment>
-        <translation type="unfinished">↑↓·¶Отступ для скобки `{` от уровня блока.</translation>
+        <translation>Отступ для скобки `{` от уровня блока.
+
+    if (chunk_is_comment(pc))
+    ··{</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether braces are indented to the body level.</source>
         <comment>indent_braces</comment>
-        <translation type="unfinished">↑↓·¶Раместить скоюки на уровне блока кода.</translation>
+        <translation>Раместить скобки на уровне блока кода.
+
+    if (chunk_is_comment(pc))
+    ····{
+        pc-&gt;column = pc-&gt;orig_col;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to disable indenting function braces if indent_braces=true.</source>
         <comment>indent_braces_no_func</comment>
-        <translation type="unfinished">↑↓·¶Отключить code_indent_braces для функций (если indent_braces=true).</translation>
+        <translation>Отключить `code_indent_braces` для функций (если `indent_braces=true`).
+
+    void f(double x)
+    {
+        if (x&lt;0)
+          {
+            x=fabs(x);</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to disable indenting class braces if indent_braces=true.</source>
         <comment>indent_braces_no_class</comment>
-        <translation type="unfinished">↑↓·¶Отключить code_indent_braces для классов (если indent_braces=true).</translation>
+        <translation>Отключить `code_indent_braces` для классов (если `indent_braces=true`).
+
+    class myclass
+    {
+        myclass()
+            {
+            if (ok)
+                {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to disable indenting struct braces if indent_braces=true.</source>
         <comment>indent_braces_no_struct</comment>
-        <translation type="unfinished">↑↓·¶Отключить code_indent_braces для структур (если indent_braces=true).</translation>
+        <translation>Отключить `code_indent_braces` для структур (если `indent_braces=true`).
+
+    struct mystruct
+    {
+        mystruct()
+            {
+            if (ok)
+                {</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent based on the size of the brace parent,
 i.e. &apos;if&apos; =&gt; 3 spaces, &apos;for&apos; =&gt; 4 spaces, etc.</source>
         <comment>indent_brace_parent</comment>
-        <translation type="unfinished">↑↓·¶Должен ли отступ основываться на размере родительской скобки, т.е. &apos;if&apos; =&amp;gt; 3 пробела, &apos;for&apos; =&amp;gt; 4 пробела и т.д.</translation>
+        <translation>Должен ли отступ основываться на размере родительскя скобки, т.е. `if` - 3 пробела, `for` - 4 пробела и т.д.
+
+    if (x = 0) 
+    ···{            
+        x++;  
+        y *= x;
+    ···}             
+    for (auto x : y) 
+    ····{                    
+        print(x);      
+    ····}                    </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent based on the open parenthesis instead of the open brace
 in &apos;({\n&apos;.</source>
         <comment>indent_paren_open_brace</comment>
-        <translation type="unfinished">↑↓·¶Нужно ли делать отступ на основе открывающей круглой скобки вместо открывающей фигурной скобки в &apos;({\n&apos;.</translation>
+        <translation>Нужно ли делать отступ на основе открывающей круглой скобки вместо открывающей фигурной скобки в `({\n`.
+
+`false`
+
+    funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {
+    ········return PairingCmpnt()
+    }));
+
+    match( [ &amp; ]( const ContentProps &amp;props)  {
+    ········return PairingCmpnt()
+    });
+
+
+`true`
+
+    funcCall(match ( [ &amp; ]( const ContentProps &amp;props)  {
+                     ········return PairingCmpnt()
+                     }));
+
+    match( [ &amp; ]( const ContentProps &amp;props)  {
+           ········return PairingCmpnt()
+           });</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) Whether to indent the brace of a C# delegate by another level.</source>
         <comment>indent_cs_delegate_brace</comment>
-        <translation type="unfinished">↑↓·¶(C#) Добавлять отступы от скобки блока &apos;delegate&apos; на следующий уровень.</translation>
+        <translation>(C#) Добавлять отступы от скобки блока `delegate` на следующий уровень.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(C#) Whether to indent a C# delegate (to handle delegates with no brace) by
 another level.</source>
         <comment>indent_cs_delegate_body</comment>
-        <translation type="unfinished">↑↓·¶(C#) Добавлять отступы от блока &apos;delegate&apos;, если не используются скобки.</translation>
+        <translation>(C#) Добавлять отступы от блока `delegate`, если не используются скобки.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the body of a &apos;namespace&apos;.</source>
         <comment>indent_namespace</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы в тело &amp;quot;namespace&amp;quot;.</translation>
+        <translation>Добавлять отступы в тело `namespace`.
+
+namespace Constants
+    {
+    ····double PI = 3.14;
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent only the first namespace, and not any nested namespaces.
 Requires indent_namespace=true.</source>
         <comment>indent_namespace_single_indent</comment>
-        <translation type="unfinished">↑↓·¶Делать ли отступ только для первого пространства имен, а не для всех вложенных пространств имен.
-Требуется indent_namespace=true.</translation>
+        <translation>Делать ли отступ только для первого пространства имен, а не для всех вложенных пространств имен.
+
+Требуется `indent_namespace=true`
+
+    namespace std{
+    ····namespace math{
+    ········namespace constatns{
+    ········    const double pi=3.14;
+    ········}
+    ····}
+    }
+                           
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>The number of spaces to indent a namespace block.
 If set to zero, use the value indent_columns</source>
         <comment>indent_namespace_level</comment>
-        <translation type="unfinished">↑↓·¶Количество пробелов для отступа блока пространства имен.
-Если установлено в ноль, используется значение indent_columns</translation>
+        <translation>Количество пробелов для отступа блока пространства имен.
+
+Если установлено в ноль, используется значение `indent_columns`
+
+    namespace Constants{
+    ····double PI </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If the body of the namespace is longer than this number, it won&apos;t be
 indented. Requires indent_namespace=true. 0 means no limit.</source>
         <comment>indent_namespace_limit</comment>
-        <translation type="unfinished">↑↓·¶Если тело пространства имен длиннее этого числа, то отступов не будет.
-Requires indent_namespace=true. 0 means no limit.</translation>
+        <translation>Если тело пространства имен длиннее этого числа строк, то отступов не будет.
+
+Требуется `indent_namespace=true`. 
+
+0 - без ограничений</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether the &apos;extern &quot;C&quot;&apos; body is indented.</source>
         <comment>indent_extern</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Делать ли отступ для тела `extern &quot;C&quot;`.
+
+    extern &quot;C&quot;{
+    ····disConnectionH createDisConnection();
+    ····int open_DisConnect(disConnectionH record);
+    }
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether the &apos;class&apos; body is indented.</source>
         <comment>indent_class</comment>
-        <translation type="unfinished">↑↓·¶Отступы в теле класса</translation>
+        <translation>Отступы в теле класса
+
+    class Widget :
+            public QWidget
+    {
+    ····int a;
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2720,41 +2828,56 @@ Negative values decrease indent down to the first column.
 Requires a newline break before colon (see pos_class_colon
 and nl_class_colon)</source>
         <comment>indent_before_class_colon</comment>
-        <translation type="unfinished">↑↓·¶Дополнительный отступ перед ведущим двоеточием базового класса.
+        <translation>Дополнительный отступ перед ведущим двоеточием базового класса.
+
 Отрицательные значения уменьшают отступ до первого столбца.
-Требуется перенос новой строки перед двоеточием (см. pos_class_colon и nl_class_colon).</translation>
+
+Требуется перенос новой строки перед двоеточием (см. `pos_class_colon` и `nl_class_colon`).
+
+    struct invoke1p
+        ····: invoke&lt;R(*)(Args*...)&gt;
+    {
+    };
+</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the stuff after a leading base class colon.</source>
         <comment>indent_class_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы после ведущего двоеточия базового класса.</translation>
+        <translatorcomment>WTF</translatorcomment>
+        <translation>Добавлять отступы после ведущего двоеточия базового класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent based on a class colon instead of the stuff after the
 colon. Requires indent_class_colon=true.</source>
         <comment>indent_class_on_colon</comment>
-        <translation type="unfinished">↑↓·¶Должен ли отступ основываться на двоеточии класса, а не на том, что находится после двоеточия. 
-Требуется, чтобы indent_class_colon=true.</translation>
+        <translatorcomment>WTF</translatorcomment>
+        <translation>Должен ли отступ основываться на двоеточии класса, а не на том, что находится после двоеточия. 
+
+Требуется, чтобы `indent_class_colon=true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the stuff after a leading class initializer colon.</source>
         <comment>indent_constr_colon</comment>
-        <translation type="unfinished">↑↓·¶Добавлять отступы после двоеточия инициализатора ведущего класса.</translation>
+        <translation>Добавлять отступы после двоеточия инициализатора ведущего класса.
+
+    void bar_c(int tttt, int uu,
+        int abc, int defxx)   : tttt(4444)
+                              ↑, uu(22), abc(333), defxx(55555)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Virtual indent from the &apos;:&apos; for leading member initializers.</source>
         <comment>indent_ctor_init_leading</comment>
-        <translation type="unfinished">↑↓·¶Виртуальный отступ от &apos;:&apos; для ведущих инициализаторов членов.</translation>
+        <translation type="unfinished">↑↓·¶Виртуальный отступ от `:` для ведущих инициализаторов членов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Virtual indent from the &apos;:&apos; for following member initializers.</source>
         <comment>indent_ctor_init_following</comment>
-        <translation type="unfinished">↑↓·¶Виртуальный отступ от &apos;:&apos; для следующих инициализаторов членов.</translation>
+        <translation type="unfinished">↑↓·¶Виртуальный отступ от `:` для следующих инициализаторов членов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2762,6 +2885,7 @@ colon. Requires indent_class_colon=true.</source>
 Negative values decrease indent down to the first column.</source>
         <comment>indent_ctor_init</comment>
         <translation type="unfinished">↑↓·¶Дополнительный отступ для списка инициализаторов конструктора.
+
 Отрицательные значения уменьшают отступ до первого столбца.</translation>
     </message>
     <message>
@@ -2769,8 +2893,14 @@ Negative values decrease indent down to the first column.</source>
         <source>Whether to indent &apos;if&apos; following &apos;else&apos; as a new block under the &apos;else&apos;.
 If false, &apos;else\nif&apos; is treated as &apos;else if&apos; for indenting purposes.</source>
         <comment>indent_else_if</comment>
-        <translation type="unfinished">↑↓·¶Должен ли отступ &apos;if&apos; после &apos;else&apos; быть новым блоком под &apos;else&apos;.
-Если false, то &apos;else\nif&apos; рассматривается как &apos;else if&apos; для целей отступа.</translation>
+        <translation>Должен ли отступ `if` после `else` быть новым блоком под `else`.
+Если `false`, то `else\nif` рассматривается как `else if`.
+
+    if ( true )
+        i = 10;
+    else
+    ····if ( true )
+    ····    i = 10;</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2950,8 +3080,8 @@ It might be wise to choose the same value for the option indent_case_brace.</sou
         <source>Spaces to indent the body of a &apos;switch&apos; before any &apos;case&apos;.
 Usually the same as indent_columns or indent_switch_case.</source>
         <comment>indent_switch_body</comment>
-        <translation type="unfinished">↑↓·¶Пробелы для отступа тела &amp;quot;переключателя&amp;quot; перед любым &amp;quot;регистром&amp;quot;.
-Обычно то же самое, что и indent_columns или indent_switch_case.</translation>
+        <translation type="unfinished">↑↓·¶Пробелы для отступа тела `switch` перед любым `case`.
+Обычно то же самое, что и `indent_columns` или `indent_switch_case`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2968,7 +3098,7 @@ It might be wise to choose the same value for the option indent_switch_case.</so
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>indent &apos;break&apos; with &apos;case&apos; from &apos;switch&apos;.</source>
         <comment>indent_switch_break_with_case</comment>
-        <translation type="unfinished">↑↓·¶Отступ &apos;break&apos; от &apos;switch&apos;</translation>
+        <translation type="unfinished">↑↓·¶Отступ `break` от `switch`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -2981,7 +3111,7 @@ It might be wise to choose the same value for the option indent_switch_case.</so
         <source>Spaces to shift the &apos;case&apos; line, without affecting any other lines.
 Usually 0.</source>
         <comment>indent_case_shift</comment>
-        <translation type="unfinished">↑↓·¶Пробел для сдвига строки &apos;case&apos;, не затрагивая другие строки.
+        <translation type="unfinished">↑↓·¶Пробел для сдвига строки `case`, не затрагивая другие строки.
 Обычно 0.</translation>
     </message>
     <message>
