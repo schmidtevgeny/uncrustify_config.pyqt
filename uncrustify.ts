@@ -7520,67 +7520,67 @@ only for linux</source>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 2: Tokenize Cleanup</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 2: Очистка токенов</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This step changes the type of certain chunks to a simpler type is the more complex type is not needed.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот шаг изменяет тип определенных фрагментов на более простой тип, если более сложный тип не нужен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This step checks the token after the version token and changes the type of the version chunk appropriately.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот шаг проверяет токен после токена версии и соответствующим образом изменяет тип чанка версии.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Another example is the “[“ token followed by “]”.  This gets merged into a single chunk “[]”.</source>
-        <translation type="unfinished"></translation>
+        <translation>Другим примером является токен &quot;[&quot;, за которым следует &quot;]&quot;.  Это объединяется в один кусок &quot;[]&quot;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 3: Brace Cleanup</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 3: Очистка скобок</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This is probably the most complicated step in the entire program.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это, пожалуй, самый сложный шаг во всей программе.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>It figures out the brace level/depth of each token and inserts virtual braces around unbraced statements.</source>
-        <translation type="unfinished"></translation>
+        <translation>Он определяет уровень/глубину скобок для каждой лексемы и вставляет виртуальные скобки вокруг утверждений без скобок.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This step also handles the ugliness of the #ifdef preprocessors in C, C++, and C#.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот шаг также справляется с уродством препроцессоров #ifdef в C, C++ и C#.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>To do this, the concept of a parse frame is introduced. I won&apos;t get into details here, but the idea is that the parse frame can be pushed onto a stack when it hits #if / #else / #endif preprocessors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Для этого вводится понятие рамки разбора. Я не буду вдаваться в подробности, но идея заключается в том, что рамка разбора может быть помещена в стек, когда она попадает в препроцессоры #if / #else / #endif.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>A big unresolved problem is what to do when you have unbalanced #if / #else groups.</source>
-        <translation type="unfinished"></translation>
+        <translation>Большая нерешенная проблема - что делать, если у вас несбалансированные группы #if / #else.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Another big item here is marking expression and statement starts and setting the parent of parenthesis and braces.</source>
-        <translation type="unfinished"></translation>
+        <translation>Другим важным пунктом здесь является маркировка начала выражений и операторов и установка родителя родительских скобок.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 4: Chunk Identification</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 4: Идентификация кусков</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Once the brace stuff is all figured out, we can do some hard-core pattern matching to further identify each chunk.</source>
-        <translation type="unfinished"></translation>
+        <translation>После того, как со скобками разобрались, мы можем провести сложное сопоставление шаблонов для дальнейшей идентификации каждого фрагмента.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
@@ -7591,82 +7591,89 @@ only for linux</source>
     • Operators like *, -, +, --, and ++ are classified
     • Casts are identified
     • The purpose of each colon (label, case, class, ?:, etc) is identified</source>
-        <translation type="unfinished"></translation>
+        <translation>Все остальное отмечается на этом шаге, например:
+
+- Определения переменных
+- Вызовы функций, прототипы, реализации
+- Слова помечаются как типы
+- Классифицируются операторы *, -, +, --, и ++
+- Определяются преобразования
+- Определяется назначение каждого двоеточия (метка, регистр, класс, ?: и т.д.)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>After all that is taken care of, we are ready to do useful work.</source>
-        <translation type="unfinished"></translation>
+        <translation>После того как все улажено, мы готовы заняться полезной работой.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 5: Brace to Virtual Brace conversion</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 5: преобразование скобок в виртуальные скобки</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This step converts virtual braces into real braces or, optionally, converts real braces into virtual braces.  Obviously, this is only done on single-statement statements.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот шаг преобразует виртуальные скобки в реальные или, по желанию, преобразует реальные скобки в виртуальные.  Очевидно, что это делается только для однословных выражений.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Because of the macro abuse that C-like language allow, this can be dangerous and break your code.</source>
-        <translation type="unfinished"></translation>
+        <translation>Из-за злоупотребления макросами, которое допускает С-подобный язык, это может быть опасно и нарушить ваш код.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 6: Inter-chunk Spacing</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 6: Межкусковое расстояние</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This step is really simple. It just goes through the list of chunks and looks at them two at a time.  It determines whether to ignore, add or remove spaces between the chunks.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот шаг очень прост. Он просто просматривает список фрагментов и рассматривает их по два за раз.  Он определяет, нужно ли игнорировать, добавлять или удалять пробелы между фрагментами.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 7: Newlines </source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 7: Новые строки </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This step inserts and/or removes newlines in key areas.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этот шаг вставляет и/или удаляет новые строки в ключевых областях.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>It does things like change brace styles, insert gaps between statements, etc.</source>
-        <translation type="unfinished"></translation>
+        <translation>Он делает такие вещи, как изменение стилей скобок, вставка пробелов между высказываниями и т.д.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 8: Indenting</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 8: Отступы</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This does the obvious indenting stuff.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это делает очевидный отступ.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Indenting is done by changing the output column of the chunk.</source>
-        <translation type="unfinished"></translation>
+        <translation>Отступы выполняются путем изменения выходного столбца куска.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>It is important to note that this ONLY shifts the entire line left or right.</source>
-        <translation type="unfinished"></translation>
+        <translation>Важно отметить, что это ТОЛЬКО сдвигает всю линию влево или вправо.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This step is revisited again near the end.</source>
-        <translation type="unfinished"></translation>
+        <translation>К этому шагу мы еще раз возвращаемся ближе к концу.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 9: Aligning</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 9: Выравнивание</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
@@ -7679,22 +7686,31 @@ only for linux</source>
     • #define values
     • trailing comments
     • etc</source>
-        <translation type="unfinished"></translation>
+        <translation>Это делает все, что нужно для выравнивания.
+
+- перечисления по знакам равенства
+- определения структур (включая битовые поля)
+- регулярные присваивания
+- определения переменных 
+- комбинации обратной косой черты и новой строки
+- значения #define
+- комментарии в конце
+- и т.д.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>Step 10: Rendering</source>
-        <translation type="unfinished"></translation>
+        <translation>Шаг 10: Рендеринг</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>The rendering step outputs the chunks to a stream.</source>
-        <translation type="unfinished"></translation>
+        <translation>Этап рендеринга выводит фрагменты в поток.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
         <source>This is rather simple, as the column of each chunk has already been figured out.</source>
-        <translation type="unfinished"></translation>
+        <translation>Это довольно просто, поскольку столбец каждого куска уже определен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="37"/>
