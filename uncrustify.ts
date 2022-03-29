@@ -2927,8 +2927,8 @@ If false, &apos;else\nif&apos; is treated as &apos;else if&apos; for indenting p
         <source> &lt;0: Relative
 &gt;=0: Absolute</source>
         <comment>indent_var_def_blk</comment>
-        <translation> &lt;0: Относительный
-&gt;=0: Абсолютный</translation>
+        <translation>-  &lt;0: Относительный
+- &gt;=0: Абсолютный</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5201,7 +5201,7 @@ applicable, this option is overridden with eat_blanks_after_open_brace=true</sou
         <source>The number of newlines after a function prototype, if not followed by
 another function prototype.</source>
         <comment>nl_after_func_proto_group</comment>
-        <translation type="unfinished">Количество пустых строк после прототипа функции, если за ним не следует другой прототип функции.</translation>
+        <translation>Количество пустых строк после прототипа функции, если за ним не следует другой прототип функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -5214,8 +5214,7 @@ another function prototype.</source>
         <source>The number of newlines after a class constructor/destructor prototype,
 if not followed by another constructor/destructor prototype.</source>
         <comment>nl_after_func_class_proto_group</comment>
-        <translation type="unfinished">Количество пустых строк после прототипа конструктора/деструктора класса,
-если за ним не следует другой прототип конструктора/деструктора.</translation>
+        <translation>Количество пустых строк после прототипа конструктора/деструктора класса, если за ним не следует другой прототип конструктора/деструктора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6723,7 +6722,9 @@ replaced with, respectively, the name of the function, the javadoc &apos;@param&
 and &apos;@return&apos; stuff, or the name of the class to which the member function
 belongs.</source>
         <comment>cmt_insert_func_header</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Путь к файлу, содержащему текст для вставки перед определением функции, если функция не предваряется комментарием на C/C++. 
+
+Если вставляемый текст содержит `$(function)`, `$(javaparam)` или `$(fclass)`, они будут заменены, соответственно, именем функции, javadoc `@param` и `@return` или именем класса, к которому принадлежит функция-член.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6731,7 +6732,9 @@ belongs.</source>
 isn&apos;t preceded by a C/C++ comment. If the inserted text contains &apos;$(class)&apos;,
 that will be replaced with the class name.</source>
         <comment>cmt_insert_class_header</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Путь к файлу, содержащему текст для вставки перед классом, если классу не предшествует комментарий на языке C/C++. 
+
+Если вставляемый текст содержит `$(class)`, он будет заменен на имя класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6741,14 +6744,17 @@ inserted text contains &apos;$(message)&apos; or &apos;$(javaparam)&apos;, these
 replaced with, respectively, the name of the function, or the javadoc
 &apos;@param&apos; and &apos;@return&apos; stuff.</source>
         <comment>cmt_insert_oc_msg_header</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Путь к файлу, содержащему текст для вставки перед сообщением Objective-C спецификации, если методу не предшествует комментарий на языке C/C++. 
+
+Если вставленный текст содержит `$(message)` или `$(javaparam)`, они будут заменены, соответственно, на имя функции или javadoc `@param` и `@return`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether a comment should be inserted if a preprocessor is encountered when
 stepping backwards from a function name.</source>
         <comment>cmt_insert_before_preproc</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translatorcomment>WTF</translatorcomment>
+        <translation>Вставлять комментарий перед директивой препроцессора, предшествующим функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6762,7 +6768,8 @@ cmt_insert_class_header.</source>
         <source>Whether a comment should be inserted if a function is declared inline to a
 class definition.</source>
         <comment>cmt_insert_before_inlines</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translatorcomment>WTF</translatorcomment>
+        <translation>Вставлять комментарий, если функция объявлена inline в определении класса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6775,7 +6782,7 @@ class definition.</source>
         <source>Whether a comment should be inserted if the function is a class constructor
 or destructor.</source>
         <comment>cmt_insert_before_ctor_dtor</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Вставлять комментарий, если функция является конструктором класса или деструктором.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6787,31 +6794,35 @@ or destructor.</source>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove braces on a single-line &apos;do&apos; statement.</source>
         <comment>mod_full_brace_do</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать фигурные скобки вокруг однострочного блока &apos;do&apos;.
-&amp;lt;pre&amp;gt;do{x[i]=y[i];}while(i++&amp;lt;10); // {}&amp;lt;/pre&amp;gt;</translation>
+        <translation>Добавить или убрать фигурные скобки вокруг однострочного блока `do`.
+
+    do{x[i]=y[i];}while(i++&lt;10); // {}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove braces on a single-line &apos;for&apos; statement.</source>
         <comment>mod_full_brace_for</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать фигурные скобки вокруг однострочного блока &apos;for&apos;.
-&amp;lt;pre&amp;gt;for(int i=0;i&amp;lt;10;i++){x[i]=y[i];} // {}&amp;lt;/pre&amp;gt;</translation>
+        <translation>Добавить или убрать фигурные скобки вокруг однострочного блока `for`.
+
+    for(int i=0;i&lt;10;i++){x[i]=y[i];} // {}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>(Pawn) Add or remove braces on a single-line function definition.</source>
         <comment>mod_full_brace_function</comment>
-        <translation type="unfinished">↑↓·¶(Pawn) Добавить или убрать скобки в определении однострочной функции.</translation>
+        <translation>(Pawn) Добавить или убрать скобки в определении однострочной функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove braces on a single-line &apos;if&apos; statement. Braces will not be
 removed if the braced statement contains an &apos;else&apos;.</source>
         <comment>mod_full_brace_if</comment>
-        <translation type="unfinished">↑↓·¶Добавьте или удалите скобки в однострочном выражении &apos;if&apos;. &amp;lt;br&amp;gt;
-Скобки не будут удаляться, если выражение в скобках содержит &apos;else&apos;.
-&amp;lt;pre&amp;gt;if (x&amp;lt;0) {x=-x;} // {}
-if (x&amp;lt;0) {if (y&amp;gt;0) x=y; else x=-x;} // не удаляется&amp;lt;/pre&amp;gt;</translation>
+        <translation>Добавьте или удалите скобки в однострочном выражении `if`.
+
+Скобки не будут удаляться, если выражение в скобках содержит `else`.
+
+    if (x&lt;0) {x=-x;} // {}
+    if (x&lt;0) {if (y&lt;0) x=y; else x=-x;} // не удаляется</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6820,7 +6831,9 @@ have, or do not have, braces. If true, braces will be added if any block
 needs braces, and will only be removed if they can be removed from all
 blocks.</source>
         <comment>mod_full_brace_if_chain</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Единый стиль скобок для цепочки `if`/`else if`/`else`
+
+Если `true`, скобки будут добавлены, если какой-либо блок нуждается в скобках, и будут удалены, только если они могут быть удалены из всех блоков.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6834,20 +6847,23 @@ blocks.</source>
 If true, mod_full_brace_if_chain will only remove braces from an &apos;if&apos; that
 does not have an &apos;else if&apos; or &apos;else&apos;.</source>
         <comment>mod_full_brace_if_chain_only</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Добавлять скобки во все блоки цепочки `if`/`else if`/`else`.
+
+Если `true`, `mod_full_brace_if_chain` будет удалять скобки только из `if`, которые не имеет `else if` или `else`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove braces on single-line &apos;while&apos; statement.</source>
         <comment>mod_full_brace_while</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать фигурные скобки вокруг однострочного блока &apos;while&apos;.
-&amp;lt;pre&amp;gt;while(i++&amp;lt;10){a[i]=b[i];}&amp;lt;/pre&amp;gt;</translation>
+        <translation>Добавить или убрать фигурные скобки вокруг однострочного блока `while`.
+
+    while(i++&lt;10) {a[i]=b[i];}</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove braces on single-line &apos;using ()&apos; statement.</source>
         <comment>mod_full_brace_using</comment>
-        <translation type="unfinished">↑↓·¶(C#) Добавить или убрать фигурные скобки вокруг однострочного блока &apos;using ()&apos;.</translation>
+        <translation>(C#) Добавить или убрать фигурные скобки вокруг однострочного блока `using ()`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6860,7 +6876,7 @@ does not have an &apos;else if&apos; or &apos;else&apos;.</source>
         <source>Whether to prevent removal of braces from &apos;if&apos;/&apos;for&apos;/&apos;while&apos;/etc. blocks
 which span multiple lines.</source>
         <comment>mod_full_brace_nl_block_rem_mlcond</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Предотвращать удаление скобок из блоков &apos;if&apos;/&apos;for&apos;/&apos;while&apos;/etc., которые охватывают несколько строк.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6907,7 +6923,7 @@ which span multiple lines.</source>
         <source>Whether to fully parenthesize Boolean expressions in &apos;while&apos; and &apos;if&apos;
 statement, as in &apos;if (a &amp;&amp; b &gt; c)&apos; =&gt; &apos;if (a &amp;&amp; (b &gt; c))&apos;.</source>
         <comment>mod_full_paren_if_bool</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Полностью заключать в круглые скобки булевы выражения в &apos;while&apos; и &apos;if&apos; как в `if (a &amp;&amp; b &gt; c)` =&gt; `if (a &amp;&amp; (b &gt; c))`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6919,61 +6935,61 @@ statement, as in &apos;if (a &amp;&amp; b &gt; c)&apos; =&gt; &apos;if (a &amp;&
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to remove duplicate include.</source>
         <comment>mod_remove_duplicate_include</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Удалять дублирующие include.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If a function body exceeds the specified number of newlines and doesn&apos;t have
 a comment after the close brace, a comment will be added.</source>
         <comment>mod_add_long_function_closebrace_comment</comment>
-        <translation type="unfinished">↑↓·¶Если тело функции превышает указанное количество строк и не имеет комментария после закрытой скобки, то комментарий будет добавлен.</translation>
+        <translation>Если тело функции превышает указанное количество строк и не имеет комментария после закрывающей скобки, то комментарий будет добавлен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If a namespace body exceeds the specified number of newlines and doesn&apos;t
 have a comment after the close brace, a comment will be added.</source>
         <comment>mod_add_long_namespace_closebrace_comment</comment>
-        <translation type="unfinished">↑↓·¶Если тело пространства имён превышает указанное количество строк и не имеет комментария после закрытой скобки, комментарий будет добавлен.</translation>
+        <translation>Если тело пространства имён превышает указанное количество строк и не имеет комментария после закрывающей скобки, комментарий будет добавлен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If a class body exceeds the specified number of newlines and doesn&apos;t have a
 comment after the close brace, a comment will be added.</source>
         <comment>mod_add_long_class_closebrace_comment</comment>
-        <translation type="unfinished">↑↓·¶Если тело класса превышает указанное количество строк и не имеет комментария после закрытой скобки, то комментарий будет добавлен.</translation>
+        <translation>Если тело класса превышает указанное количество строк и не имеет комментария после закрывающей скобки, то комментарий будет добавлен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If a switch body exceeds the specified number of newlines and doesn&apos;t have a
 comment after the close brace, a comment will be added.</source>
         <comment>mod_add_long_switch_closebrace_comment</comment>
-        <translation type="unfinished">↑↓·¶Если тело switch превышает указанное количество строк и не имеет комментария после закрытой скобки, то комментарий будет добавлен.</translation>
+        <translation>Если тело switch превышает указанное количество строк и не имеет комментария после закрывающей скобки, то комментарий будет добавлен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If an #ifdef body exceeds the specified number of newlines and doesn&apos;t have
 a comment after the #endif, a comment will be added.</source>
         <comment>mod_add_long_ifdef_endif_comment</comment>
-        <translation type="unfinished">↑↓·¶Если тело #ifdef превышает указанное количество строк и не имеет комментария после #endif, то комментарий будет добавлен.</translation>
+        <translation>Если тело #ifdef превышает указанное количество строк и не имеет комментария после #endif, то комментарий будет добавлен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If an #ifdef or #else body exceeds the specified number of newlines and
 doesn&apos;t have a comment after the #else, a comment will be added.</source>
         <comment>mod_add_long_ifdef_else_comment</comment>
-        <translation type="unfinished">↑↓·¶Если тело #ifdef или #else превышает указанное количество строк и не имеет комментария после #else, то комментарий будет добавлен.</translation>
+        <translation>Если тело #ifdef или #else превышает указанное количество строк и не имеет комментария после #else, то комментарий будет добавлен.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to take care of the case by the mod_sort_xx options.</source>
         <comment>mod_sort_case_sensitive</comment>
-        <translation type="unfinished">↑↓·¶Должен ли случай быть решен с помощью опций mod_sort_xx.</translation>
+        <translation>Учитывать регистр в параметрах `mod_sort_xx`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to sort consecutive single-line &apos;import&apos; statements.</source>
         <comment>mod_sort_import</comment>
-        <translation type="unfinished">↑↓·¶Сортировать последовательные однострочные утверждения &amp;quot;import&amp;quot;.</translation>
+        <translation>Сортировать последовательные однострочные утверждения `import`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -6987,69 +7003,77 @@ doesn&apos;t have a comment after the #else, a comment will be added.</source>
 &apos;#import&apos; statements (Objective-C). Be aware that this has the potential to
 break your code if your includes/imports have ordering dependencies.</source>
         <comment>mod_sort_include</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Сортировать последовательные однострочные утверждения `#include` (C/C++) и `#import&apos; (Objective-C)`. 
+
+Имейте в виду, что это может сломать ваш код, если ваши включения/импорты имеют упорядочивающие зависимости.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to prioritize &apos;#include&apos; and &apos;#import&apos; statements that contain
 filename without extension when sorting is enabled.</source>
         <comment>mod_sort_incl_import_prioritize_filename</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Приоритезировать утверждения `#include` и `#import`, которые содержат имя файла без расширения, при сортировке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to prioritize &apos;#include&apos; and &apos;#import&apos; statements that does not
 contain extensions when sorting is enabled.</source>
         <comment>mod_sort_incl_import_prioritize_extensionless</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Приоритезировать утверждения `#include` и `#import`, которые содержат имя файла с расширением, при сортировке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to prioritize &apos;#include&apos; and &apos;#import&apos; statements that contain
 angle over quotes when sorting is enabled.</source>
         <comment>mod_sort_incl_import_prioritize_angle_over_quotes</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Отдавать приоритет утверждениям &apos;#include&apos; и &apos;#import&apos;, содержащим &lt;&gt; над кавычками, при сортировке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to ignore file extension in &apos;#include&apos; and &apos;#import&apos; statements
 for sorting comparison.</source>
         <comment>mod_sort_incl_import_ignore_extension</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Игнорировать расширение файла в утверждениях `#include` и `#import` при сортировке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to group &apos;#include&apos; and &apos;#import&apos; statements when sorting is enabled.</source>
         <comment>mod_sort_incl_import_grouping_enabled</comment>
-        <translation type="unfinished">↑↓·¶Группировать операторы &apos;#include&apos; и &apos;#import&apos; при включенной сортировке.</translation>
+        <translation>Группировать операторы `#include` и `#import` при включенной сортировке.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to move a &apos;break&apos; that appears after a fully braced &apos;case&apos; before
 the close brace, as in &apos;case X: { ... } break;&apos; =&gt; &apos;case X: { ... break; }&apos;.</source>
         <comment>mod_move_case_break</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Перемещать `break`, который появляется после полностью заключенного в скобки `case`, перед закрывающей скобкой
+
+    case X: { ... } break; 
+    ↓↓↓↓
+    case X: { ... break; }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Add or remove braces around a fully braced case statement. Will only remove
 braces if there are no variable declarations in the block.</source>
         <comment>mod_case_brace</comment>
-        <translation type="unfinished">↑↓·¶Добавить или убрать скобки вокруг полностью заключенного в скобки выражения case.&amp;lt;br&amp;gt;
+        <translation>Добавить или убрать скобки вокруг полностью заключенного в скобки выражения case.
+
 Будет удаляться только в том случае, если в блоке нет объявлений переменных.
-&amp;lt;pre&amp;gt;switch(i){
-case 1: { print(i); break;} // удаляется remove
-case 3:  print(i); break;   // добавляется add
-case 2: {int tmp; break;} // никогда не изменяет
-case 4: int tmp; break;   // никогда не изменяет
-}&amp;lt;/pre&amp;gt;</translation>
+
+    switch(i){
+        case 1: { print(i); break;} // удаляется remove
+        case 3:  print(i); break;   // добавляется add
+        case 2: {int tmp; break;} // никогда не изменяет
+        case 4: int tmp; break;   // никогда не изменяет?
+    }</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to remove a void &apos;return;&apos; that appears as the last statement in a
 function.</source>
         <comment>mod_remove_empty_return</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Удалять ли пустое `return;`, которое появляется в качестве последнего оператора в функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7133,7 +7157,9 @@ at brace level 0 (file-level). If pp_indent_at_level=false, also specifies
 the number of columns to indent preprocessors per level
 at brace level &gt; 0 (function-level).</source>
         <comment>pp_indent_count</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Указывает количество столбцов для отступа препроцессоров на один уровень на уровне скобок 0 (уровень файла). 
+
+Если `pp_indent_at_level=false`, также указывает количество столбцов для отступа препроцессоров на уровень на уровне скобок &gt; 0 (уровень функций).</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7152,20 +7178,21 @@ at brace level &gt; 0 (function-level).</source>
         <source>The indent for &apos;#region&apos; and &apos;#endregion&apos; in C# and &apos;#pragma region&apos; in
 C/C++. Negative values decrease indent down to the first column.</source>
         <comment>pp_indent_region</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Отступ для `#region` и `#endregion` в C# и `#pragma region` в C/C++. Отрицательные значения уменьшают отступ до первого столбца.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Whether to indent the code between #region and #endregion.</source>
         <comment>pp_region_indent_code</comment>
-        <translation type="unfinished">↑↓·¶Добавить отступ кода между #region и #endregion.</translation>
+        <translation>Добавить отступ кода между #region и #endregion.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>If pp_indent_at_level=true, sets the indent for #if, #else and #endif when
 not at file-level. Negative values decrease indent down to the first column.</source>
         <comment>pp_indent_if</comment>
-        <translation type="unfinished">↑↓·¶Если pp_indent_at_level=true, определяет отступ для #if, #else и #endif, когда они не на уровне файла. 
+        <translation>Если `pp_indent_at_level=true`, определяет отступ для #if, #else и #endif, когда они не на уровне файла. 
+
 Отрицательные значения уменьшают отступ до первого столбца.</translation>
     </message>
     <message>
@@ -7222,7 +7249,9 @@ directly inside of.</source>
 Only applies to the indent of the preprocesser that the function definition
 is directly inside of.</source>
         <comment>pp_indent_func_def</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Делать отступ между #if, #else и #endif для целых определений функций.
+
+Применяется только к отступу препроцессора, в котором непосредственно внутри него находится определение функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7230,7 +7259,9 @@ is directly inside of.</source>
 Only applies to the indent of the preprocesser that the extern block is
 directly inside of.</source>
         <comment>pp_indent_extern</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Нужно ли делать отступ для блоков extern C между #if, #else и #endif.
+
+Применяется только к отступу препроцессора, в котором непосредственно внутри него находится блок extern.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7238,7 +7269,9 @@ directly inside of.</source>
 Only applies to the indent of the preprocesser that the braces are directly
 inside of.</source>
         <comment>pp_indent_brace</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Делать отступ скобок блока непосредственно внутри #if, #else и #endif.
+
+Применяется только к отступу препроцессора, в котором блок со скобками находится непосредственно внутри.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7263,7 +7296,8 @@ inside of.</source>
         <source>true:  indent_func_call_param will be used (default)
 false: indent_func_call_param will NOT be used</source>
         <comment>use_indent_func_call_param</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>- true:  использовать `indent_func_call_param` (по умолчанию)
+- false: не использовать `indent_func_call_param`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7283,21 +7317,25 @@ differently if the statement is:
 - at the assignment
 - at the function call (if present)</source>
         <comment>use_indent_continue_only_once</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Во втором случае значение отступа может быть использовано дважды:
+
+- при присваивании
+- при вызове функции (если она присутствует)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>To prevent the double use of the indentation value, use this option with the
 value &apos;true&apos;.</source>
         <comment>use_indent_continue_only_once</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Чтобы предотвратить двойное использование значения отступа, используйте этот параметр со значением значением `true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>true:  indent_continue will be used only once
 false: indent_continue will be used every time (default)</source>
         <comment>use_indent_continue_only_once</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>- true: indent_continue будет использоваться только один раз
+- false: indent_continue будет использоваться каждый раз (по умолчанию)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7305,21 +7343,25 @@ false: indent_continue will be used every time (default)</source>
 - at the assignment
 - at the opening brace</source>
         <comment>indent_cpp_lambda_only_once</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Значение может быть использовано дважды:
+
+- при присваивании
+- в открывающейся скобке</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>To prevent the double use of the indentation value, use this option with the
 value &apos;true&apos;.</source>
         <comment>indent_cpp_lambda_only_once</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Чтобы предотвратить двойное использование значения отступа, используйте этот параметр со значением значением `true`.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>true:  indentation will be used only once
 false: indentation will be used every time (default)</source>
         <comment>indent_cpp_lambda_only_once</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>true: отступы будут использоваться только один раз
+false: отступы будут использоваться каждый раз (по умолчанию)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7327,7 +7369,9 @@ false: indentation will be used every time (default)</source>
 historic behavior, but is probably not the desired behavior, so this is off
 by default.</source>
         <comment>use_sp_after_angle_always</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Имеет ли `sp_after_angle` приоритет над `sp_inside_fparen`. 
+
+Это было историческим поведением, но, вероятно, не является желаемым, поэтому по умолчанию отключено.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7337,7 +7381,9 @@ result of QMetaObject::normalizedSignature), which can slightly improve the
 performance of the QObject::connect call, rather than how they would
 otherwise be formatted.</source>
         <comment>use_options_overriding_for_qt_macros</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Применять специальное форматирование для макросов Qt SIGNAL/SLOT. 
+
+По сути, это пытается отформатировать их так, чтобы они соответствовали нормализованной форме Qt (т.е. результат QMetaObject::normalizedSignature), что может немного улучшить производительность вызова QObject::connect.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7367,7 +7413,11 @@ in a C# verbatim string literal.</source>
 Used by uncrustify.cpp to exit from infinite loop.
 0: no limit.</source>
         <comment>debug_max_number_of_loops</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Ограничить количество циклов.
+
+Используется файлом uncrustify.cpp для выхода из бесконечного цикла.
+
+0: нет ограничения.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7375,7 +7425,11 @@ Used by uncrustify.cpp to exit from infinite loop.
 Used in the function prot_the_line if the 2. parameter is zero.
 0: nothing protocol.</source>
         <comment>debug_line_number_to_protocol</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Устанавливает число строк для протокола;
+
+Используется в функции prot_the_line, если параметр 2 равен нулю.
+
+0: не протоколировать.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
@@ -7383,14 +7437,20 @@ Used in the function prot_the_line if the 2. parameter is zero.
 0: no timeout.
 only for linux</source>
         <comment>debug_timeout</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Устанавливает количество секунд (секунд) до завершения форматирования текущего файла,
+
+0: тайм-аут отсутствует.
+
+только для linux</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="7802"/>
         <source>Set the number of characters to be printed if the text is too long,
 0: do not truncate.</source>
         <comment>debug_truncate</comment>
-        <translation type="unfinished">↑↓·¶</translation>
+        <translation>Установите количество символов, которые будут напечатаны, если текст слишком длинный,
+
+0: не усекать.</translation>
     </message>
 </context>
 </TS>
