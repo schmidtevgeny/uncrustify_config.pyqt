@@ -3,5 +3,4 @@
 /__pycache__*/
 *.cpp
 *.cfg
-uncrustify_ui.py
 uncrustify.exe
