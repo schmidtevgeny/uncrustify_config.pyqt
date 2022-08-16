@@ -543,7 +543,7 @@ f.write(classflt)
 f.close()
 print('options: {}'.format(options))
 
-os.system('pylupdate5 uncrustify_ui.py main.py -ts uncrustify.ts')
+os.system('pylupdate5 *.py -ts uncrustify.ts')
 # os.system('pylupdate5 uncrustify_ui.py main.py -ts uncrustify.ts -noobsolete')
 
 if platform.system() == "Windows":
