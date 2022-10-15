@@ -103,23 +103,27 @@ import platform
 
 import iuliia, markdown
 
-# сворачивание вывода в config
-def wrap(s):
-    if s == "\\n": return "\\n#"
-    my_wrap = textwrap.TextWrapper(width=80)
-    so = ""
-    for si in s.split("\\n"):
-        si = si.replace('↑', '\\x18').replace('↓', '\\x19').replace('·', '\\x0f').replace('¶', '\\x14').replace('←','\\x17').replace('⟼', '\\t') 
-
-        wrap_list = my_wrap.wrap(text=iuliia.translate(html.unescape(si), iuliia.MOSMETRO))
-        for line in wrap_list:
-            so += "\\n# " + line.strip()
-    return so
-
 def label(s):
         return markdown.markdown(s)
     
 class Widget(QtWidgets.QTabWidget):
+    # сворачивание вывода в config
+    def wrap(self, s):
+        if s == "\\n": return "\\n#"
+        my_wrap = textwrap.TextWrapper(width=80)
+        so = ""
+        for si in s.split("\\n"):
+            if self.comment_type==0:
+                si = si.replace('↑', '\\x18').replace('↓', '\\x19').replace('·', '\\x0f').replace('¶', '\\x14').replace('←','\\x17').replace('⟼', '\\t') 
+                
+                wrap_list = my_wrap.wrap(text=iuliia.translate(html.unescape(si), iuliia.MOSMETRO))
+            else:
+                wrap_list = my_wrap.wrap(html.unescape(si))
+            for line in wrap_list:
+                so += "\\n# " + line.strip()
+        return so
+    def no_tr(self, s, s2=''):
+        return s
 '''
 
 FontName = "Arial"
@@ -134,6 +138,7 @@ classinit = '''
         self.setWindowTitle('Uncrustify-0.74.0')    
         font_name = QtGui.QFont('{}', {}, 2)
         font_code = QtGui.QFont('{}', {}, 2)
+        self.comment_type=0        
 '''.format(FontName, FontNameSize, FontCode, FontNameSize)
 
 classget = '''
@@ -144,6 +149,10 @@ classget = '''
     ###########################################################################################
     def get(self, full=True, comment=True):
         s=[]
+        if self.comment_type==1:
+            self.tr=self.no_tr
+        else:
+            self.tr=super(Widget, self).tr
 '''
 
 classset = '''
@@ -154,7 +163,7 @@ classset = '''
     ###########################################################################################
     def load(self, path):
         regexp = r"^([^#\\s].+)\\s*=\\s*([^\\n]*?)\\n"
-        f = open(path) #, encoding = "utf-8")
+        f = open(path, encoding = "utf-8")
         d = f.read()
         f.close()
         matches = re.finditer(regexp, d, re.MULTILINE | re.IGNORECASE)
@@ -304,7 +313,7 @@ for gr in groups:
     classinit += "\n        self.{}.addWidget(QtWidgets.QLabel(label(self.tr(\"{} help\"))), 0, 0, 1, 2)". \
         format(grouplt, gr.desc)
 
-    classget += "\n        if comment: s.append('\\n\\n'+'#'*80+wrap(self.tr(\"{}\"))+'\\n'+'#'*80)".format(gr.desc)
+    classget += "\n        if full or  comment: s.append('\\n\\n'+'#'*80+self.wrap(self.tr(\"{}\"))+'\\n'+'#'*80)".format(gr.desc)
 
     row_id = 1
 
@@ -321,7 +330,7 @@ for gr in groups:
         wrap_desc = [it.replace('\\', '\\\\').replace('"', '\\"').replace('\n', '# \\n') for it in opt.desc]
         wrap_desc = '+"\\n#"+'.join(
             [
-                'wrap(self.tr("{}", "{}"))'.
+                'self.wrap(self.tr("{}", "{}"))'.
                 format(it.replace("\\", "\\\\").replace('"', '\\"').replace('\n', '\\n'), opt.name)
                 for it in opt.desc
             ]
@@ -339,20 +348,20 @@ for gr in groups:
             classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('''{}''')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel(\"{}\")".format(opt.name, opt.name)
             classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
             classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
             classinit += "\n        self.option_{} =  QtWidgets.QComboBox()".format(opt.name)
             classinit += "\n        self.option_{}.addItems(['lf', 'crlf', 'cr', 'auto'])".format(opt.name)
-            classinit += "\n        self.option_{}.setCurrentText('''{}''')".format(opt.name, str(opt.dval[3:]).lower())
+            classinit += "\n        self.option_{}.setCurrentText(\"{}\")".format(opt.name, str(opt.dval[3:]).lower())
             classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classget += "\n        if '{}'!=self.option_{}.currentText():".format(str(opt.dval[3:]).lower(), opt.name)
+            classget += "\n        if full or  '{}'!=self.option_{}.currentText():".format(str(opt.dval[3:]).lower(), opt.name)
             classget += "\n            if comment:"
             classget += "\n                s.append({})".format(wrap_desc)
-            classget += "\n                s.append('''#\n# Type: lf/crlf/cr/auto''')"
-            classget += "\n                s.append('''# Default: {} ''')".format(str(opt.dval[3:]).lower())
+            classget += "\n                s.append(\"#\\n# Type: lf/crlf/cr/auto\")"
+            classget += "\n                s.append(\"# Default: {} \")".format(str(opt.dval[3:]).lower())
             classget += "\n            s.append('{} = ' + self.option_{}.currentText())".format(opt.name, opt.name)
 
             classset += "\n        if \"{}\" in params: ".format(opt.name)
@@ -370,20 +379,20 @@ for gr in groups:
             classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('''{}''')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel(\"{}\")".format(opt.name, opt.name)
             classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
             classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
             classinit += "\n        self.option_{} =  QtWidgets.QComboBox()".format(opt.name)
             classinit += "\n        self.option_{}.addItems(['true','false'])".format(opt.name)
-            classinit += "\n        self.option_{}.setCurrentText('''{}''')".format(opt.name, str(opt.dval).lower())
+            classinit += "\n        self.option_{}.setCurrentText(\"{}\")".format(opt.name, str(opt.dval).lower())
             classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classget += "\n        if '{}'!=self.option_{}.currentText():".format(str(opt.dval).lower(), opt.name)
+            classget += "\n        if full or  '{}'!=self.option_{}.currentText():".format(str(opt.dval).lower(), opt.name)
             classget += "\n            if comment:"
             classget += "\n                s.append({})".format(wrap_desc)
-            classget += "\n                s.append('''#\n# Type: true/false''')"
-            classget += "\n                s.append('''# Default: {} ''')".format(str(opt.dval).lower())
+            classget += "\n                s.append(\"#\\n# Type: true/false\")"
+            classget += "\n                s.append(\"# Default: {} \")".format(str(opt.dval).lower())
             classget += "\n            s.append('{} = ' + self.option_{}.currentText())".format(opt.name, opt.name)
 
             classset += "\n        if \"{}\" in params:".format(opt.name)
@@ -401,18 +410,18 @@ for gr in groups:
             classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('''{}''')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel(\"{}\")".format(opt.name, opt.name)
             classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
             classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
-            classinit += "\n        self.option_{} =  QtWidgets.QLineEdit('''{}''')".format(opt.name, opt.dval)
+            classinit += "\n        self.option_{} =  QtWidgets.QLineEdit(\"{}\")".format(opt.name, opt.dval)
             classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classget += "\n        if '{}'!=self.option_{}.text():".format(opt.dval, opt.name)
+            classget += "\n        if full or  '{}'!=self.option_{}.text():".format(opt.dval, opt.name)
             classget += "\n            if comment:"
             classget += "\n                s.append({})".format(wrap_desc)
-            classget += "\n                s.append('''#\n# Type: string''')"
-            classget += "\n                s.append('''# Default: \"{}\" ''')".format(opt.dval)
+            classget += "\n                s.append(\"#\\n# Type: string\")"
+            classget += "\n                s.append(\"# Default: {} \")".format(opt.dval)
             classget += "\n            s.append('{} = \"' + self.option_{}.text()+'\"\\n')".format(opt.name, opt.name)
 
             classset += "\n        if \"{}\" in params:".format(opt.name)
@@ -431,7 +440,7 @@ for gr in groups:
             classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('''{}''')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel(\"{}\")".format(opt.name, opt.name)
             classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
             classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
             classinit += "\n        self.option_{} =  QtWidgets.QSpinBox()".format(opt.name)
@@ -441,11 +450,11 @@ for gr in groups:
             classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classget += "\n        if {}!=self.option_{}.value():".format(opt.dval, opt.name)
+            classget += "\n        if full or  {}!=self.option_{}.value():".format(opt.dval, opt.name)
             classget += "\n            if comment:"
             classget += "\n                s.append({})".format(wrap_desc)
-            classget += "\n                s.append('''#\n# Type: signed''')"
-            classget += "\n                s.append('''# Default: {} ''')".format(opt.dval)
+            classget += "\n                s.append(\"#\\n# Type: signed\")"
+            classget += "\n                s.append(\"# Default: {} \")".format(opt.dval)
             classget += "\n            s.append('{} = ' + str(self.option_{}.value()))".format(opt.name, opt.name)
 
             classset += "\n        if \"{}\" in params:".format(opt.name)
@@ -471,21 +480,21 @@ for gr in groups:
             classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('''{}''')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel(\"{}\")".format(opt.name, opt.name)
             classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
             classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
             classinit += "\n        self.option_{} =  QtWidgets.QComboBox()".format(opt.name)
             classinit += "\n        self.option_{}.addItems(['ignore','add','remove','force','not_defined'])". \
                 format(opt.name)
-            classinit += "\n        self.option_{}.setCurrentText('''{}''')".format(opt.name, vals[opt.dval])
+            classinit += "\n        self.option_{}.setCurrentText(\"{}\")".format(opt.name, vals[opt.dval])
             classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classget += "\n        if '{}'!=self.option_{}.currentText():".format(vals[opt.dval], opt.name)
+            classget += "\n        if full or  '{}'!=self.option_{}.currentText():".format(vals[opt.dval], opt.name)
             classget += "\n            if comment:"
             classget += "\n                s.append({})".format(wrap_desc)
-            classget += "\n                s.append('''#\n# Type: ignore / add / remove / force / not_defined''')"
-            classget += "\n                s.append('''# Default: {} ''')".format(vals[opt.dval])
+            classget += "\n                s.append(\"#\\n# Type: ignore / add / remove / force / not_defined\")"
+            classget += "\n                s.append(\"# Default: {} \")".format(vals[opt.dval])
             classget += "\n            s.append('{} = ' + self.option_{}.currentText())".format(opt.name, opt.name)
 
             classset += "\n        if \"{}\" in params:".format(opt.name)
@@ -505,21 +514,21 @@ for gr in groups:
             classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classinit += "\n        self.label_option_{} = QtWidgets.QLabel('''{}''')".format(opt.name, opt.name)
+            classinit += "\n        self.label_option_{} = QtWidgets.QLabel(\"{}\")".format(opt.name, opt.name)
             classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
             classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name, row_id)
             classinit += "\n        self.option_{} =  QtWidgets.QComboBox()".format(opt.name)
             classinit += "\n        self.option_{}.addItems(['ignore','break','force','lead','trail','join'," \
                          "'lead_break','lead_force','trail_break','trail_force'])".format(opt.name)
-            classinit += "\n        self.option_{}.setCurrentText('''{}''')".format(opt.name, opt.dval)
+            classinit += "\n        self.option_{}.setCurrentText(\"{}\")".format(opt.name, opt.dval)
             classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classget += "\n        if '{}'!=self.option_{}.currentText():".format(opt.dval, opt.name)
+            classget += "\n        if full or  '{}'!=self.option_{}.currentText():".format(opt.dval, opt.name)
             classget += "\n            if comment:"
             classget += "\n                s.append({})".format(wrap_desc)
-            classget += "\n                s.append('''#\n# Type: ignore/break/force/lead/trail/join/lead_break/lead_force/trail_break/trail_force''')"
-            classget += "\n                s.append('''# Default: {} ''')".format(opt.dval)
+            classget += "\n                s.append(\"#\\n# Type: ignore/break/force/lead/trail/join/lead_break/lead_force/trail_break/trail_force\")"
+            classget += "\n                s.append(\"# Default: {} \")".format(opt.dval)
             classget += "\n            s.append('{} = ' + self.option_{}.currentText())".format(opt.name, opt.name)
 
             classset += "\n        if \"{}\" in params:".format(opt.name)
@@ -544,7 +553,7 @@ for gr in groups:
                 classinit += "\n        self.{}.addWidget(self.label_{}, {}, 0, 1, 2)".format(grouplt, opt.name, row_id)
                 row_id += 1
 
-                classinit += "\n        self.label_option_{} = QtWidgets.QLabel('''{}''')".format(opt.name, opt.name)
+                classinit += "\n        self.label_option_{} = QtWidgets.QLabel(\"{}\")".format(opt.name, opt.name)
                 classinit += "\n        self.label_option_{}.setFont(font_name)".format(opt.name)
                 classinit += "\n        self.{}.addWidget(self.label_option_{}, {}, 0)".format(grouplt, opt.name,
                     row_id)
@@ -555,11 +564,11 @@ for gr in groups:
                 classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
                 row_id += 1
 
-                classget += "\n        if {}!=self.option_{}.value():".format(opt.dval, opt.name)
+                classget += "\n        if full or  {}!=self.option_{}.value():".format(opt.dval, opt.name)
                 classget += "\n            if comment:"
                 classget += "\n                s.append({})".format(wrap_desc)
-                classget += "\n                s.append('''#\n# Type: {}''')".format(' '.join(t))
-                classget += "\n                s.append('''# Default: {} ''')".format(opt.dval)
+                classget += "\n                s.append(\"#\\n# Type: {}\")".format(' '.join(t))
+                classget += "\n                s.append(\"# Default: {} \")".format(opt.dval)
                 classget += "\n            s.append('{} = ' + str(self.option_{}.value()))".format(opt.name, opt.name)
 
                 classset += "\n        if \"{}\" in params:".format(opt.name)

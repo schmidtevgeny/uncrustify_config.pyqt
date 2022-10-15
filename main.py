@@ -65,6 +65,20 @@ class MainWidget(QtWidgets.QMainWindow):
         self.comment = self.config_menu.addAction(self.tr("Show comment"))
         self.comment.setCheckable(True)
 
+        self.comment_format = self.config_menu.addMenu(self.tr("Format comment"))
+        self.c_type = QtWidgets.QActionGroup(self)
+        self.c_type.triggered.connect(self.on_cmtype)
+        self.Translit = self.comment_format.addAction(self.tr("Translit"))
+        self.Translit.setCheckable(True)
+        self.Translit.setChecked(True)
+        self.c_type.addAction(self.Translit)
+        self.English = self.comment_format.addAction(self.tr("English"))
+        self.English.setCheckable(True)
+        self.c_type.addAction(self.English)
+        self.Russian = self.comment_format.addAction(self.tr("Russian"))
+        self.Russian.setCheckable(True)
+        self.c_type.addAction(self.Russian)
+
         self.versions = ['latest']
         for v in glob.iglob('ui_*.py'):
             self.versions.append(os.path.splitext(v)[0])
@@ -117,7 +131,7 @@ class MainWidget(QtWidgets.QMainWindow):
         f = open("in.cpp", "w", encoding="utf-8")
         f.write(self.in_text.toPlainText())
         f.close()
-        f = open("conf.cfg", "w")  # , encoding="utf-8")
+        f = open("conf.cfg", "w", encoding="utf-8")
         # DEBUG
         # for it in self.config.get().split('\n'):
         #     if it.startswith('#'): continue
@@ -135,11 +149,19 @@ class MainWidget(QtWidgets.QMainWindow):
                 self.out_text.setText(d)
         pass
 
+    def on_cmtype(self):
+        if self.Translit.isChecked():
+            self.config.comment_type = 0
+        elif self.English.isChecked():
+            self.config.comment_type = 1
+        else:
+            self.config.comment_type = 2
+
     def on_diff(self):
         f = open("in.cpp", "w", encoding="utf-8")
         f.write(self.in_text.toPlainText())
         f.close()
-        f = open("conf1.cfg", "w")  # , encoding="utf-8")
+        f = open("conf1.cfg", "w", encoding="utf-8")
         f.write(self.config.get(self.filterdef.isChecked(), self.comment.isChecked()))
         f.close()
         if os.system("uncrustify  -c conf.cfg -f in.cpp -o out1.cpp"):
