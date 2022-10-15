@@ -457,8 +457,14 @@ for gr in groups:
 
         elif opt.decl == 'Option<iarf_e>':
             # ignore / add / remove / force / not_defined
+            vals = {
+                'IARF_IGNORE': "ignore",
+                'IARF_ADD': "add",
+                'IARF_REMOVE': "remove",
+                'IARF_FORCE': "force",
+            }
             if opt.dval is None:
-                opt.dval = 'ignore'
+                opt.dval = 'IARF_IGNORE'
             classinit += "\n        #--------------------------------------------"
             classinit += "\n        self.label_{} = QtWidgets.QLabel({})".format(opt.name, s)
             classinit += "\n        self.label_{}.setWordWrap(True)".format(opt.name)
@@ -471,15 +477,15 @@ for gr in groups:
             classinit += "\n        self.option_{} =  QtWidgets.QComboBox()".format(opt.name)
             classinit += "\n        self.option_{}.addItems(['ignore','add','remove','force','not_defined'])". \
                 format(opt.name)
-            classinit += "\n        self.option_{}.setCurrentText('''{}''')".format(opt.name, opt.dval)
+            classinit += "\n        self.option_{}.setCurrentText('''{}''')".format(opt.name, vals[opt.dval])
             classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
             row_id += 1
 
-            classget += "\n        if '{}'!=self.option_{}.currentText():".format(opt.dval, opt.name)
+            classget += "\n        if '{}'!=self.option_{}.currentText():".format(vals[opt.dval], opt.name)
             classget += "\n            if comment:"
             classget += "\n                s.append({})".format(wrap_desc)
             classget += "\n                s.append('''#\n# Type: ignore / add / remove / force / not_defined''')"
-            classget += "\n                s.append('''# Default: {} ''')".format(opt.dval)
+            classget += "\n                s.append('''# Default: {} ''')".format(vals[opt.dval])
             classget += "\n            s.append('{} = ' + self.option_{}.currentText())".format(opt.name, opt.name)
 
             classset += "\n        if \"{}\" in params:".format(opt.name)
@@ -549,7 +555,7 @@ for gr in groups:
                 classinit += "\n        self.{}.addWidget(self.option_{}, {}, 1)".format(grouplt, opt.name, row_id)
                 row_id += 1
 
-                classget += "\n        if '{}'!=self.option_{}.value():".format(opt.dval, opt.name)
+                classget += "\n        if {}!=self.option_{}.value():".format(opt.dval, opt.name)
                 classget += "\n            if comment:"
                 classget += "\n                s.append({})".format(wrap_desc)
                 classget += "\n                s.append('''#\n# Type: {}''')".format(' '.join(t))

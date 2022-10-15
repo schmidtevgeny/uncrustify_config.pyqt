@@ -361,7 +361,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_enum_brace, 26, 0)
         self.option_sp_enum_brace =  QtWidgets.QComboBox()
         self.option_sp_enum_brace.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_enum_brace.setCurrentText('''IARF_ADD''')
+        self.option_sp_enum_brace.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_enum_brace, 26, 1)
         #--------------------------------------------
         self.label_sp_enum_paren = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space in 'NS_ENUM ('.", "sp_enum_paren")))
@@ -427,7 +427,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_pp_concat, 38, 0)
         self.option_sp_pp_concat =  QtWidgets.QComboBox()
         self.option_sp_pp_concat.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_pp_concat.setCurrentText('''IARF_ADD''')
+        self.option_sp_pp_concat.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_pp_concat, 38, 1)
         #--------------------------------------------
         self.label_sp_pp_stringify = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space after preprocessor '#' stringify operator.\nAlso affects the '#@' charizing operator.", "sp_pp_stringify")))
@@ -757,7 +757,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_after_type, 98, 0)
         self.option_sp_after_type =  QtWidgets.QComboBox()
         self.option_sp_after_type.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_after_type.setCurrentText('''IARF_FORCE''')
+        self.option_sp_after_type.setCurrentText('''force''')
         self.group_page_layout_2.addWidget(self.option_sp_after_type, 98, 1)
         #--------------------------------------------
         self.label_sp_after_decltype = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between 'decltype(...)' and word,\nbrace or function call.", "sp_after_decltype")))
@@ -889,7 +889,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_angle_shift, 122, 0)
         self.option_sp_angle_shift =  QtWidgets.QComboBox()
         self.option_sp_angle_shift.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_angle_shift.setCurrentText('''IARF_ADD''')
+        self.option_sp_angle_shift.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_angle_shift, 122, 1)
         #--------------------------------------------
         self.label_sp_permit_cpp11_shift = QtWidgets.QLabel(label("<hr>"+self.tr("(C++11) Permit removal of the space between '>>' in 'foo<bar<int> >'. Note\nthat sp_angle_shift cannot remove the space without this option.", "sp_permit_cpp11_shift")))
@@ -1087,7 +1087,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_before_semi, 158, 0)
         self.option_sp_before_semi =  QtWidgets.QComboBox()
         self.option_sp_before_semi.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_before_semi.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_before_semi.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_before_semi, 158, 1)
         #--------------------------------------------
         self.label_sp_before_semi_for = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space before ';' in non-empty 'for' statements.", "sp_before_semi_for")))
@@ -1131,7 +1131,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_after_semi, 166, 0)
         self.option_sp_after_semi =  QtWidgets.QComboBox()
         self.option_sp_after_semi.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_after_semi.setCurrentText('''IARF_ADD''')
+        self.option_sp_after_semi.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_after_semi, 166, 1)
         #--------------------------------------------
         self.label_sp_after_semi_for = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space after ';' in non-empty 'for' statements.", "sp_after_semi_for")))
@@ -1142,7 +1142,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_after_semi_for, 168, 0)
         self.option_sp_after_semi_for =  QtWidgets.QComboBox()
         self.option_sp_after_semi_for.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_after_semi_for.setCurrentText('''IARF_FORCE''')
+        self.option_sp_after_semi_for.setCurrentText('''force''')
         self.group_page_layout_2.addWidget(self.option_sp_after_semi_for, 168, 1)
         #--------------------------------------------
         self.label_sp_after_semi_for_empty = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space after the final semicolon of an empty part of a for\nstatement, as in 'for ( ; ; <here> )'.", "sp_after_semi_for_empty")))
@@ -1175,7 +1175,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_before_vardef_square, 174, 0)
         self.option_sp_before_vardef_square =  QtWidgets.QComboBox()
         self.option_sp_before_vardef_square.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_before_vardef_square.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_before_vardef_square.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_before_vardef_square, 174, 1)
         #--------------------------------------------
         self.label_sp_before_square_asm_block = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space before '[' for asm block.", "sp_before_square_asm_block")))
@@ -1263,7 +1263,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_before_comma, 190, 0)
         self.option_sp_before_comma =  QtWidgets.QComboBox()
         self.option_sp_before_comma.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_before_comma.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_before_comma.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_before_comma, 190, 1)
         #--------------------------------------------
         self.label_sp_after_mdatype_commas = QtWidgets.QLabel(label("<hr>"+self.tr("(C#) Add or remove space between ',' and ']' in multidimensional array type\nlike 'int[,,]'.", "sp_after_mdatype_commas")))
@@ -1307,7 +1307,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_paren_comma, 198, 0)
         self.option_sp_paren_comma =  QtWidgets.QComboBox()
         self.option_sp_paren_comma.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_paren_comma.setCurrentText('''IARF_FORCE''')
+        self.option_sp_paren_comma.setCurrentText('''force''')
         self.group_page_layout_2.addWidget(self.option_sp_paren_comma, 198, 1)
         #--------------------------------------------
         self.label_sp_type_colon = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between a type and ':'.", "sp_type_colon")))
@@ -1439,7 +1439,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_after_constr_colon, 222, 0)
         self.option_sp_after_constr_colon =  QtWidgets.QComboBox()
         self.option_sp_after_constr_colon.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_after_constr_colon.setCurrentText('''IARF_ADD''')
+        self.option_sp_after_constr_colon.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_after_constr_colon, 222, 1)
         #--------------------------------------------
         self.label_sp_before_constr_colon = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space before class constructor ':'.", "sp_before_constr_colon")))
@@ -1450,7 +1450,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_before_constr_colon, 224, 0)
         self.option_sp_before_constr_colon =  QtWidgets.QComboBox()
         self.option_sp_before_constr_colon.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_before_constr_colon.setCurrentText('''IARF_ADD''')
+        self.option_sp_before_constr_colon.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_before_constr_colon, 224, 1)
         #--------------------------------------------
         self.label_sp_before_case_colon = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space before case ':'.", "sp_before_case_colon")))
@@ -1461,7 +1461,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_before_case_colon, 226, 0)
         self.option_sp_before_case_colon =  QtWidgets.QComboBox()
         self.option_sp_before_case_colon.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_before_case_colon.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_before_case_colon.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_before_case_colon, 226, 1)
         #--------------------------------------------
         self.label_sp_after_operator = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between 'operator' and operator sign.", "sp_after_operator")))
@@ -1956,7 +1956,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_return, 316, 0)
         self.option_sp_return =  QtWidgets.QComboBox()
         self.option_sp_return.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_return.setCurrentText('''IARF_FORCE''')
+        self.option_sp_return.setCurrentText('''force''')
         self.group_page_layout_2.addWidget(self.option_sp_return, 316, 1)
         #--------------------------------------------
         self.label_sp_return_paren = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between 'return' and '('.", "sp_return_paren")))
@@ -2099,7 +2099,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_super_paren, 342, 0)
         self.option_sp_super_paren =  QtWidgets.QComboBox()
         self.option_sp_super_paren.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_super_paren.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_super_paren.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_super_paren, 342, 1)
         #--------------------------------------------
         self.label_sp_this_paren = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between 'this' and '(' in 'this (something)'.", "sp_this_paren")))
@@ -2110,7 +2110,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_this_paren, 344, 0)
         self.option_sp_this_paren =  QtWidgets.QComboBox()
         self.option_sp_this_paren.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_this_paren.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_this_paren.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_this_paren, 344, 1)
         #--------------------------------------------
         self.label_sp_macro = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between a macro name and its definition.", "sp_macro")))
@@ -2275,7 +2275,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_word_brace_ns, 374, 0)
         self.option_sp_word_brace_ns =  QtWidgets.QComboBox()
         self.option_sp_word_brace_ns.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_word_brace_ns.setCurrentText('''IARF_ADD''')
+        self.option_sp_word_brace_ns.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_word_brace_ns, 374, 1)
         #--------------------------------------------
         self.label_sp_before_dc = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space before the '::' operator.", "sp_before_dc")))
@@ -2319,7 +2319,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_not, 382, 0)
         self.option_sp_not =  QtWidgets.QComboBox()
         self.option_sp_not.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_not.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_not.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_not, 382, 1)
         #--------------------------------------------
         self.label_sp_not_not = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between two '!' (not) unary operators.\nIf set to ignore, sp_not will be used.", "sp_not_not")))
@@ -2330,7 +2330,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_not_not, 384, 0)
         self.option_sp_not_not =  QtWidgets.QComboBox()
         self.option_sp_not_not.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_not_not.setCurrentText('''IARF_IGNORE''')
+        self.option_sp_not_not.setCurrentText('''ignore''')
         self.group_page_layout_2.addWidget(self.option_sp_not_not, 384, 1)
         #--------------------------------------------
         self.label_sp_inv = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space after the '~' (invert) unary operator.", "sp_inv")))
@@ -2341,7 +2341,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_inv, 386, 0)
         self.option_sp_inv =  QtWidgets.QComboBox()
         self.option_sp_inv.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_inv.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_inv.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_inv, 386, 1)
         #--------------------------------------------
         self.label_sp_addr = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space after the '&' (address-of) unary operator. This does not\naffect the spacing after a '&' that is part of a type.", "sp_addr")))
@@ -2352,7 +2352,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_addr, 388, 0)
         self.option_sp_addr =  QtWidgets.QComboBox()
         self.option_sp_addr.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_addr.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_addr.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_addr, 388, 1)
         #--------------------------------------------
         self.label_sp_member = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space around the '.' or '->' operators.", "sp_member")))
@@ -2363,7 +2363,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_member, 390, 0)
         self.option_sp_member =  QtWidgets.QComboBox()
         self.option_sp_member.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_member.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_member.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_member, 390, 1)
         #--------------------------------------------
         self.label_sp_deref = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space after the '*' (dereference) unary operator. This does\nnot affect the spacing after a '*' that is part of a type.", "sp_deref")))
@@ -2374,7 +2374,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_deref, 392, 0)
         self.option_sp_deref =  QtWidgets.QComboBox()
         self.option_sp_deref.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_deref.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_deref.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_deref, 392, 1)
         #--------------------------------------------
         self.label_sp_sign = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space after '+' or '-', as in 'x = -5' or 'y = +7'.", "sp_sign")))
@@ -2385,7 +2385,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_sign, 394, 0)
         self.option_sp_sign =  QtWidgets.QComboBox()
         self.option_sp_sign.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_sign.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_sign.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_sign, 394, 1)
         #--------------------------------------------
         self.label_sp_incdec = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space between '++' and '--' the word to which it is being\napplied, as in '(--x)' or 'y++;'.", "sp_incdec")))
@@ -2396,7 +2396,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_incdec, 396, 0)
         self.option_sp_incdec =  QtWidgets.QComboBox()
         self.option_sp_incdec.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_incdec.setCurrentText('''IARF_REMOVE''')
+        self.option_sp_incdec.setCurrentText('''remove''')
         self.group_page_layout_2.addWidget(self.option_sp_incdec, 396, 1)
         #--------------------------------------------
         self.label_sp_before_nl_cont = QtWidgets.QLabel(label("<hr>"+self.tr("Add or remove space before a backslash-newline at the end of a line.", "sp_before_nl_cont")))
@@ -2407,7 +2407,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_before_nl_cont, 398, 0)
         self.option_sp_before_nl_cont =  QtWidgets.QComboBox()
         self.option_sp_before_nl_cont.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_before_nl_cont.setCurrentText('''IARF_ADD''')
+        self.option_sp_before_nl_cont.setCurrentText('''add''')
         self.group_page_layout_2.addWidget(self.option_sp_before_nl_cont, 398, 1)
         #--------------------------------------------
         self.label_sp_after_oc_scope = QtWidgets.QLabel(label("<hr>"+self.tr("(OC) Add or remove space after the scope '+' or '-', as in '-(void) foo;'\nor '+(int) bar;'.", "sp_after_oc_scope")))
@@ -2881,7 +2881,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_before_emb_cmt, 484, 0)
         self.option_sp_before_emb_cmt =  QtWidgets.QComboBox()
         self.option_sp_before_emb_cmt.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_before_emb_cmt.setCurrentText('''IARF_FORCE''')
+        self.option_sp_before_emb_cmt.setCurrentText('''force''')
         self.group_page_layout_2.addWidget(self.option_sp_before_emb_cmt, 484, 1)
         #--------------------------------------------
         self.label_sp_num_before_emb_cmt = QtWidgets.QLabel(label("<hr>"+self.tr("Number of spaces before an embedded comment.", "sp_num_before_emb_cmt")))
@@ -2904,7 +2904,7 @@ class Widget(QtWidgets.QTabWidget):
         self.group_page_layout_2.addWidget(self.label_option_sp_after_emb_cmt, 488, 0)
         self.option_sp_after_emb_cmt =  QtWidgets.QComboBox()
         self.option_sp_after_emb_cmt.addItems(['ignore','add','remove','force','not_defined'])
-        self.option_sp_after_emb_cmt.setCurrentText('''IARF_FORCE''')
+        self.option_sp_after_emb_cmt.setCurrentText('''force''')
         self.group_page_layout_2.addWidget(self.option_sp_after_emb_cmt, 488, 1)
         #--------------------------------------------
         self.label_sp_num_after_emb_cmt = QtWidgets.QLabel(label("<hr>"+self.tr("Number of spaces after an embedded comment.", "sp_num_after_emb_cmt")))
@@ -9218,28 +9218,28 @@ class Widget(QtWidgets.QTabWidget):
 # Type: lf/crlf/cr/auto''')
                 s.append('''# Default: auto ''')
             s.append('newlines = ' + self.option_newlines.currentText())
-        if '8'!=self.option_input_tab_size.value():
+        if 8!=self.option_input_tab_size.value():
             if comment:
                 s.append(wrap(self.tr("The original size of tabs in the input.", "input_tab_size")))
                 s.append('''#
 # Type: unsigned  1  32''')
                 s.append('''# Default: 8 ''')
             s.append('input_tab_size = ' + str(self.option_input_tab_size.value()))
-        if '8'!=self.option_output_tab_size.value():
+        if 8!=self.option_output_tab_size.value():
             if comment:
                 s.append(wrap(self.tr("The size of tabs in the output (only used if align_with_tabs=true).", "output_tab_size")))
                 s.append('''#
 # Type: unsigned  1  32''')
                 s.append('''# Default: 8 ''')
             s.append('output_tab_size = ' + str(self.option_output_tab_size.value()))
-        if '92'!=self.option_string_escape_char.value():
+        if 92!=self.option_string_escape_char.value():
             if comment:
                 s.append(wrap(self.tr("The ASCII value of the string escape char, usually 92 (\\) or (Pawn) 94 (^).", "string_escape_char")))
                 s.append('''#
 # Type: unsigned  0  255''')
                 s.append('''# Default: 92 ''')
             s.append('string_escape_char = ' + str(self.option_string_escape_char.value()))
-        if '0'!=self.option_string_escape_char2.value():
+        if 0!=self.option_string_escape_char2.value():
             if comment:
                 s.append(wrap(self.tr("Alternate string escape char (usually only used for Pawn).\nOnly works right before the quote char.", "string_escape_char2")))
                 s.append('''#
@@ -9402,12 +9402,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_after_assign = ' + self.option_sp_after_assign.currentText())
-        if 'IARF_ADD'!=self.option_sp_enum_brace.currentText():
+        if 'add'!=self.option_sp_enum_brace.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space in 'enum {'.", "sp_enum_brace")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_enum_brace = ' + self.option_sp_enum_brace.currentText())
         if 'ignore'!=self.option_sp_enum_paren.currentText():
             if comment:
@@ -9444,12 +9444,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_enum_colon = ' + self.option_sp_enum_colon.currentText())
-        if 'IARF_ADD'!=self.option_sp_pp_concat.currentText():
+        if 'add'!=self.option_sp_pp_concat.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space around preprocessor '##' concatenation operator.", "sp_pp_concat")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_pp_concat = ' + self.option_sp_pp_concat.currentText())
         if 'ignore'!=self.option_sp_pp_stringify.currentText():
             if comment:
@@ -9654,12 +9654,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_byref_paren = ' + self.option_sp_byref_paren.currentText())
-        if 'IARF_FORCE'!=self.option_sp_after_type.currentText():
+        if 'force'!=self.option_sp_after_type.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between type and word. In cases where total removal of\nwhitespace would be a syntax error, a value of 'remove' is treated the same\nas 'force'.", "sp_after_type"))+"\n#"+wrap(self.tr("This also affects some other instances of space following a type that are\nnot covered by other options; for example, between the return type and\nparenthesis of a function type template argument, between the type and\nparenthesis of an array parameter, or between 'decltype(...)' and the\nfollowing word.", "sp_after_type")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_FORCE ''')
+                s.append('''# Default: force ''')
             s.append('sp_after_type = ' + self.option_sp_after_type.currentText())
         if 'ignore'!=self.option_sp_after_decltype.currentText():
             if comment:
@@ -9738,12 +9738,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_angle_word = ' + self.option_sp_angle_word.currentText())
-        if 'IARF_ADD'!=self.option_sp_angle_shift.currentText():
+        if 'add'!=self.option_sp_angle_shift.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between '>' and '>' in '>>' (template stuff).", "sp_angle_shift")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_angle_shift = ' + self.option_sp_angle_shift.currentText())
         if 'false'!=self.option_sp_permit_cpp11_shift.currentText():
             if comment:
@@ -9864,12 +9864,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_special_semi = ' + self.option_sp_special_semi.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_before_semi.currentText():
+        if 'remove'!=self.option_sp_before_semi.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space before ';'.", "sp_before_semi")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_before_semi = ' + self.option_sp_before_semi.currentText())
         if 'ignore'!=self.option_sp_before_semi_for.currentText():
             if comment:
@@ -9892,19 +9892,19 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_between_semi_for_empty = ' + self.option_sp_between_semi_for_empty.currentText())
-        if 'IARF_ADD'!=self.option_sp_after_semi.currentText():
+        if 'add'!=self.option_sp_after_semi.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after ';', except when followed by a comment.", "sp_after_semi")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_after_semi = ' + self.option_sp_after_semi.currentText())
-        if 'IARF_FORCE'!=self.option_sp_after_semi_for.currentText():
+        if 'force'!=self.option_sp_after_semi_for.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after ';' in non-empty 'for' statements.", "sp_after_semi_for")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_FORCE ''')
+                s.append('''# Default: force ''')
             s.append('sp_after_semi_for = ' + self.option_sp_after_semi_for.currentText())
         if 'ignore'!=self.option_sp_after_semi_for_empty.currentText():
             if comment:
@@ -9920,12 +9920,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_before_square = ' + self.option_sp_before_square.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_before_vardef_square.currentText():
+        if 'remove'!=self.option_sp_before_vardef_square.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space before '[' for a variable definition.", "sp_before_vardef_square")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_before_vardef_square = ' + self.option_sp_before_vardef_square.currentText())
         if 'ignore'!=self.option_sp_before_square_asm_block.currentText():
             if comment:
@@ -9976,12 +9976,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_after_comma = ' + self.option_sp_after_comma.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_before_comma.currentText():
+        if 'remove'!=self.option_sp_before_comma.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space before ',', i.e. 'a,b' vs. 'a ,b'.", "sp_before_comma")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_before_comma = ' + self.option_sp_before_comma.currentText())
         if 'ignore'!=self.option_sp_after_mdatype_commas.currentText():
             if comment:
@@ -10004,12 +10004,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_between_mdatype_commas = ' + self.option_sp_between_mdatype_commas.currentText())
-        if 'IARF_FORCE'!=self.option_sp_paren_comma.currentText():
+        if 'force'!=self.option_sp_paren_comma.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between an open parenthesis and comma,\ni.e. '(,' vs. '( ,'.", "sp_paren_comma")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_FORCE ''')
+                s.append('''# Default: force ''')
             s.append('sp_paren_comma = ' + self.option_sp_paren_comma.currentText())
         if 'ignore'!=self.option_sp_type_colon.currentText():
             if comment:
@@ -10088,26 +10088,26 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_before_class_colon = ' + self.option_sp_before_class_colon.currentText())
-        if 'IARF_ADD'!=self.option_sp_after_constr_colon.currentText():
+        if 'add'!=self.option_sp_after_constr_colon.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after class constructor ':'.", "sp_after_constr_colon")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_after_constr_colon = ' + self.option_sp_after_constr_colon.currentText())
-        if 'IARF_ADD'!=self.option_sp_before_constr_colon.currentText():
+        if 'add'!=self.option_sp_before_constr_colon.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space before class constructor ':'.", "sp_before_constr_colon")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_before_constr_colon = ' + self.option_sp_before_constr_colon.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_before_case_colon.currentText():
+        if 'remove'!=self.option_sp_before_case_colon.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space before case ':'.", "sp_before_case_colon")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_before_case_colon = ' + self.option_sp_before_case_colon.currentText())
         if 'ignore'!=self.option_sp_after_operator.currentText():
             if comment:
@@ -10417,12 +10417,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_func_class_paren_empty = ' + self.option_sp_func_class_paren_empty.currentText())
-        if 'IARF_FORCE'!=self.option_sp_return.currentText():
+        if 'force'!=self.option_sp_return.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after 'return'.", "sp_return")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_FORCE ''')
+                s.append('''# Default: force ''')
             s.append('sp_return = ' + self.option_sp_return.currentText())
         if 'ignore'!=self.option_sp_return_paren.currentText():
             if comment:
@@ -10508,19 +10508,19 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_scope_paren = ' + self.option_sp_scope_paren.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_super_paren.currentText():
+        if 'remove'!=self.option_sp_super_paren.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between 'super' and '(' in 'super (something)'.", "sp_super_paren")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_super_paren = ' + self.option_sp_super_paren.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_this_paren.currentText():
+        if 'remove'!=self.option_sp_this_paren.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between 'this' and '(' in 'this (something)'.", "sp_this_paren")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_this_paren = ' + self.option_sp_this_paren.currentText())
         if 'ignore'!=self.option_sp_macro.currentText():
             if comment:
@@ -10620,12 +10620,12 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_word_brace_init_lst = ' + self.option_sp_word_brace_init_lst.currentText())
-        if 'IARF_ADD'!=self.option_sp_word_brace_ns.currentText():
+        if 'add'!=self.option_sp_word_brace_ns.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between a variable and '{' for a namespace.", "sp_word_brace_ns")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_word_brace_ns = ' + self.option_sp_word_brace_ns.currentText())
         if 'ignore'!=self.option_sp_before_dc.currentText():
             if comment:
@@ -10648,68 +10648,68 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_d_array_colon = ' + self.option_sp_d_array_colon.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_not.currentText():
+        if 'remove'!=self.option_sp_not.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after the '!' (not) unary operator.", "sp_not")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_not = ' + self.option_sp_not.currentText())
-        if 'IARF_IGNORE'!=self.option_sp_not_not.currentText():
+        if 'ignore'!=self.option_sp_not_not.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between two '!' (not) unary operators.\nIf set to ignore, sp_not will be used.", "sp_not_not")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_IGNORE ''')
+                s.append('''# Default: ignore ''')
             s.append('sp_not_not = ' + self.option_sp_not_not.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_inv.currentText():
+        if 'remove'!=self.option_sp_inv.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after the '~' (invert) unary operator.", "sp_inv")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_inv = ' + self.option_sp_inv.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_addr.currentText():
+        if 'remove'!=self.option_sp_addr.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after the '&' (address-of) unary operator. This does not\naffect the spacing after a '&' that is part of a type.", "sp_addr")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_addr = ' + self.option_sp_addr.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_member.currentText():
+        if 'remove'!=self.option_sp_member.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space around the '.' or '->' operators.", "sp_member")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_member = ' + self.option_sp_member.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_deref.currentText():
+        if 'remove'!=self.option_sp_deref.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after the '*' (dereference) unary operator. This does\nnot affect the spacing after a '*' that is part of a type.", "sp_deref")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_deref = ' + self.option_sp_deref.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_sign.currentText():
+        if 'remove'!=self.option_sp_sign.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after '+' or '-', as in 'x = -5' or 'y = +7'.", "sp_sign")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_sign = ' + self.option_sp_sign.currentText())
-        if 'IARF_REMOVE'!=self.option_sp_incdec.currentText():
+        if 'remove'!=self.option_sp_incdec.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space between '++' and '--' the word to which it is being\napplied, as in '(--x)' or 'y++;'.", "sp_incdec")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_REMOVE ''')
+                s.append('''# Default: remove ''')
             s.append('sp_incdec = ' + self.option_sp_incdec.currentText())
-        if 'IARF_ADD'!=self.option_sp_before_nl_cont.currentText():
+        if 'add'!=self.option_sp_before_nl_cont.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space before a backslash-newline at the end of a line.", "sp_before_nl_cont")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_ADD ''')
+                s.append('''# Default: add ''')
             s.append('sp_before_nl_cont = ' + self.option_sp_before_nl_cont.currentText())
         if 'ignore'!=self.option_sp_after_oc_scope.currentText():
             if comment:
@@ -10998,35 +10998,35 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('sp_before_tr_cmt = ' + self.option_sp_before_tr_cmt.currentText())
-        if '0'!=self.option_sp_num_before_tr_cmt.value():
+        if 0!=self.option_sp_num_before_tr_cmt.value():
             if comment:
                 s.append(wrap(self.tr("Number of spaces before a trailing comment.", "sp_num_before_tr_cmt")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('sp_num_before_tr_cmt = ' + str(self.option_sp_num_before_tr_cmt.value()))
-        if 'IARF_FORCE'!=self.option_sp_before_emb_cmt.currentText():
+        if 'force'!=self.option_sp_before_emb_cmt.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space before an embedded comment.", "sp_before_emb_cmt")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_FORCE ''')
+                s.append('''# Default: force ''')
             s.append('sp_before_emb_cmt = ' + self.option_sp_before_emb_cmt.currentText())
-        if '1'!=self.option_sp_num_before_emb_cmt.value():
+        if 1!=self.option_sp_num_before_emb_cmt.value():
             if comment:
                 s.append(wrap(self.tr("Number of spaces before an embedded comment.", "sp_num_before_emb_cmt")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 1 ''')
             s.append('sp_num_before_emb_cmt = ' + str(self.option_sp_num_before_emb_cmt.value()))
-        if 'IARF_FORCE'!=self.option_sp_after_emb_cmt.currentText():
+        if 'force'!=self.option_sp_after_emb_cmt.currentText():
             if comment:
                 s.append(wrap(self.tr("Add or remove space after an embedded comment.", "sp_after_emb_cmt")))
                 s.append('''#
 # Type: ignore / add / remove / force / not_defined''')
-                s.append('''# Default: IARF_FORCE ''')
+                s.append('''# Default: force ''')
             s.append('sp_after_emb_cmt = ' + self.option_sp_after_emb_cmt.currentText())
-        if '1'!=self.option_sp_num_after_emb_cmt.value():
+        if 1!=self.option_sp_num_after_emb_cmt.value():
             if comment:
                 s.append(wrap(self.tr("Number of spaces after an embedded comment.", "sp_num_after_emb_cmt")))
                 s.append('''#
@@ -11070,7 +11070,7 @@ class Widget(QtWidgets.QTabWidget):
             s.append('force_tab_after_define = ' + self.option_force_tab_after_define.currentText())
         #================== Indenting options ===============================================================
         if comment: s.append('\n\n'+'#'*80+wrap(self.tr("Indenting options"))+'\n'+'#'*80)
-        if '8'!=self.option_indent_columns.value():
+        if 8!=self.option_indent_columns.value():
             if comment:
                 s.append(wrap(self.tr("The number of columns to indent per level. Usually 2, 3, 4, or 8.", "indent_columns")))
                 s.append('''#
@@ -11084,14 +11084,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_ignore_first_continue = ' + self.option_indent_ignore_first_continue.currentText())
-        if '0'!=self.option_indent_continue.value():
+        if 0!=self.option_indent_continue.value():
             if comment:
                 s.append(wrap(self.tr("The continuation indent. If non-zero, this overrides the indent of '(', '['\nand '=' continuation indents. Negative values are OK; negative value is\nabsolute and not increased for each '(' or '[' level.", "indent_continue"))+"\n#"+wrap(self.tr("For FreeBSD, this is set to 4.\nRequires indent_ignore_first_continue=false.", "indent_continue")))
                 s.append('''#
 # Type: signed  -16  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_continue = ' + str(self.option_indent_continue.value()))
-        if '0'!=self.option_indent_continue_class_head.value():
+        if 0!=self.option_indent_continue_class_head.value():
             if comment:
                 s.append(wrap(self.tr("The continuation indent, only for class header line(s). If non-zero, this\noverrides the indent of 'class' continuation indents.\nRequires indent_ignore_first_continue=false.", "indent_continue_class_head")))
                 s.append('''#
@@ -11105,14 +11105,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_single_newlines = ' + self.option_indent_single_newlines.currentText())
-        if '0'!=self.option_indent_param.value():
+        if 0!=self.option_indent_param.value():
             if comment:
                 s.append(wrap(self.tr("The continuation indent for func_*_param if they are true. If non-zero, this\noverrides the indent.", "indent_param")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_param = ' + str(self.option_indent_param.value()))
-        if '1'!=self.option_indent_with_tabs.value():
+        if 1!=self.option_indent_with_tabs.value():
             if comment:
                 s.append(wrap(self.tr("How to use tabs when indenting code.", "indent_with_tabs"))+"\n#"+wrap(self.tr("0: Spaces only\n1: Indent with tabs to brace level, align with spaces (default)\n2: Indent and align with tabs, using spaces when not on a tabstop", "indent_with_tabs")))
                 s.append('''#
@@ -11133,14 +11133,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_align_string = ' + self.option_indent_align_string.currentText())
-        if '0'!=self.option_indent_xml_string.value():
+        if 0!=self.option_indent_xml_string.value():
             if comment:
                 s.append(wrap(self.tr("The number of spaces to indent multi-line XML strings.\nRequires indent_align_string=true.", "indent_xml_string")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_xml_string = ' + str(self.option_indent_xml_string.value()))
-        if '0'!=self.option_indent_brace.value():
+        if 0!=self.option_indent_brace.value():
             if comment:
                 s.append(wrap(self.tr("Spaces to indent '{' from level.", "indent_brace")))
                 s.append('''#
@@ -11217,14 +11217,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_namespace_single_indent = ' + self.option_indent_namespace_single_indent.currentText())
-        if '0'!=self.option_indent_namespace_level.value():
+        if 0!=self.option_indent_namespace_level.value():
             if comment:
                 s.append(wrap(self.tr("The number of spaces to indent a namespace block.\nIf set to zero, use the value indent_columns", "indent_namespace_level")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_namespace_level = ' + str(self.option_indent_namespace_level.value()))
-        if '0'!=self.option_indent_namespace_limit.value():
+        if 0!=self.option_indent_namespace_limit.value():
             if comment:
                 s.append(wrap(self.tr("If the body of the namespace is longer than this number, it won't be\nindented. Requires indent_namespace=true. 0 means no limit.", "indent_namespace_limit")))
                 s.append('''#
@@ -11259,7 +11259,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_ignore_before_class_colon = ' + self.option_indent_ignore_before_class_colon.currentText())
-        if '0'!=self.option_indent_before_class_colon.value():
+        if 0!=self.option_indent_before_class_colon.value():
             if comment:
                 s.append(wrap(self.tr("Additional indent before the leading base class colon.\nNegative values decrease indent down to the first column.\nRequires indent_ignore_before_class_colon=false and a newline break before\nthe colon (see pos_class_colon and nl_class_colon)", "indent_before_class_colon")))
                 s.append('''#
@@ -11294,21 +11294,21 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_constr_colon = ' + self.option_indent_constr_colon.currentText())
-        if '2'!=self.option_indent_ctor_init_leading.value():
+        if 2!=self.option_indent_ctor_init_leading.value():
             if comment:
                 s.append(wrap(self.tr("Virtual indent from the ':' for leading member initializers.", "indent_ctor_init_leading")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 2 ''')
             s.append('indent_ctor_init_leading = ' + str(self.option_indent_ctor_init_leading.value()))
-        if '2'!=self.option_indent_ctor_init_following.value():
+        if 2!=self.option_indent_ctor_init_following.value():
             if comment:
                 s.append(wrap(self.tr("Virtual indent from the ':' for following member initializers.", "indent_ctor_init_following")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 2 ''')
             s.append('indent_ctor_init_following = ' + str(self.option_indent_ctor_init_following.value()))
-        if '0'!=self.option_indent_ctor_init.value():
+        if 0!=self.option_indent_ctor_init.value():
             if comment:
                 s.append(wrap(self.tr("Additional indent for constructor initializer list.\nNegative values decrease indent down to the first column.", "indent_ctor_init")))
                 s.append('''#
@@ -11322,7 +11322,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_else_if = ' + self.option_indent_else_if.currentText())
-        if '0'!=self.option_indent_var_def_blk.value():
+        if 0!=self.option_indent_var_def_blk.value():
             if comment:
                 s.append(wrap(self.tr("Amount to indent variable declarations after a open brace.", "indent_var_def_blk"))+"\n#"+wrap(self.tr(" <0: Relative\n>=0: Absolute", "indent_var_def_blk")))
                 s.append('''#
@@ -11336,7 +11336,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_var_def_cont = ' + self.option_indent_var_def_cont.currentText())
-        if '0'!=self.option_indent_shift.value():
+        if 0!=self.option_indent_shift.value():
             if comment:
                 s.append(wrap(self.tr("How to indent continued shift expressions ('<<' and '>>').\nSet align_left_shift=false when using this.\n 0: Align shift operators instead of indenting them (default)\n 1: Indent by one level\n-1: Preserve original indentation", "indent_shift")))
                 s.append('''#
@@ -11364,7 +11364,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_func_def_param = ' + self.option_indent_func_def_param.currentText())
-        if '0'!=self.option_indent_func_def_param_paren_pos_threshold.value():
+        if 0!=self.option_indent_func_def_param_paren_pos_threshold.value():
             if comment:
                 s.append(wrap(self.tr("for function definitions, only if indent_func_def_param is false\nAllows to align params when appropriate and indent them when not\nbehave as if it was true if paren position is more than this value\nif paren position is more than the option value", "indent_func_def_param_paren_pos_threshold")))
                 s.append('''#
@@ -11406,14 +11406,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_func_param_double = ' + self.option_indent_func_param_double.currentText())
-        if '0'!=self.option_indent_func_const.value():
+        if 0!=self.option_indent_func_const.value():
             if comment:
                 s.append(wrap(self.tr("Indentation column for standalone 'const' qualifier on a function\nprototype.", "indent_func_const")))
                 s.append('''#
 # Type: unsigned  0  69''')
                 s.append('''# Default: 0 ''')
             s.append('indent_func_const = ' + str(self.option_indent_func_const.value()))
-        if '0'!=self.option_indent_func_throw.value():
+        if 0!=self.option_indent_func_throw.value():
             if comment:
                 s.append(wrap(self.tr("Indentation column for standalone 'throw' qualifier on a function\nprototype.", "indent_func_throw")))
                 s.append('''#
@@ -11427,7 +11427,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: true ''')
             s.append('indent_macro_brace = ' + self.option_indent_macro_brace.currentText())
-        if '0'!=self.option_indent_member.value():
+        if 0!=self.option_indent_member.value():
             if comment:
                 s.append(wrap(self.tr("The number of spaces to indent a continued '->' or '.'.\nUsually set to 0, 1, or indent_columns.", "indent_member")))
                 s.append('''#
@@ -11441,21 +11441,21 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_member_single = ' + self.option_indent_member_single.currentText())
-        if '0'!=self.option_indent_single_line_comments_before.value():
+        if 0!=self.option_indent_single_line_comments_before.value():
             if comment:
                 s.append(wrap(self.tr("Spaces to indent single line ('//') comments on lines before code.", "indent_single_line_comments_before")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_single_line_comments_before = ' + str(self.option_indent_single_line_comments_before.value()))
-        if '0'!=self.option_indent_single_line_comments_after.value():
+        if 0!=self.option_indent_single_line_comments_after.value():
             if comment:
                 s.append(wrap(self.tr("Spaces to indent single line ('//') comments on lines after code.", "indent_single_line_comments_after")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_single_line_comments_after = ' + str(self.option_indent_single_line_comments_after.value()))
-        if '0'!=self.option_indent_sparen_extra.value():
+        if 0!=self.option_indent_sparen_extra.value():
             if comment:
                 s.append(wrap(self.tr("When opening a paren for a control statement (if, for, while, etc), increase\nthe indent level by this value. Negative values decrease the indent level.", "indent_sparen_extra")))
                 s.append('''#
@@ -11469,14 +11469,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_relative_single_line_comments = ' + self.option_indent_relative_single_line_comments.currentText())
-        if '0'!=self.option_indent_switch_case.value():
+        if 0!=self.option_indent_switch_case.value():
             if comment:
                 s.append(wrap(self.tr("Spaces to indent 'case' from 'switch'. Usually 0 or indent_columns.\nIt might be wise to choose the same value for the option indent_case_brace.", "indent_switch_case")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_switch_case = ' + str(self.option_indent_switch_case.value()))
-        if '0'!=self.option_indent_switch_body.value():
+        if 0!=self.option_indent_switch_body.value():
             if comment:
                 s.append(wrap(self.tr("Spaces to indent the body of a 'switch' before any 'case'.\nUsually the same as indent_columns or indent_switch_case.", "indent_switch_body")))
                 s.append('''#
@@ -11490,7 +11490,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_ignore_case_brace = ' + self.option_indent_ignore_case_brace.currentText())
-        if '0'!=self.option_indent_case_brace.value():
+        if 0!=self.option_indent_case_brace.value():
             if comment:
                 s.append(wrap(self.tr("Spaces to indent '{' from 'case'. By default, the brace will appear under\nthe 'c' in case. Usually set to 0 or indent_columns. Negative values are OK.\nIt might be wise to choose the same value for the option indent_switch_case.", "indent_case_brace")))
                 s.append('''#
@@ -11511,7 +11511,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: true ''')
             s.append('indent_switch_pp = ' + self.option_indent_switch_pp.currentText())
-        if '0'!=self.option_indent_case_shift.value():
+        if 0!=self.option_indent_case_shift.value():
             if comment:
                 s.append(wrap(self.tr("Spaces to shift the 'case' line, without affecting any other lines.\nUsually 0.", "indent_case_shift")))
                 s.append('''#
@@ -11546,7 +11546,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_col1_multi_string_literal = ' + self.option_indent_col1_multi_string_literal.currentText())
-        if '3'!=self.option_indent_comment_align_thresh.value():
+        if 3!=self.option_indent_comment_align_thresh.value():
             if comment:
                 s.append(wrap(self.tr("Align comments on adjacent lines that are this many columns apart or less.", "indent_comment_align_thresh")))
                 s.append('''#
@@ -11560,14 +11560,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_ignore_label = ' + self.option_indent_ignore_label.currentText())
-        if '1'!=self.option_indent_label.value():
+        if 1!=self.option_indent_label.value():
             if comment:
                 s.append(wrap(self.tr("How to indent goto labels. Requires indent_ignore_label=false.", "indent_label"))+"\n#"+wrap(self.tr(" >0: Absolute column where 1 is the leftmost column\n<=0: Subtract from brace indent", "indent_label")))
                 s.append('''#
 # Type: signed  -16  16''')
                 s.append('''# Default: 1 ''')
             s.append('indent_label = ' + str(self.option_indent_label.value()))
-        if '1'!=self.option_indent_access_spec.value():
+        if 1!=self.option_indent_access_spec.value():
             if comment:
                 s.append(wrap(self.tr("How to indent access specifiers that are followed by a\ncolon.", "indent_access_spec"))+"\n#"+wrap(self.tr(" >0: Absolute column where 1 is the leftmost column\n<=0: Subtract from brace indent", "indent_access_spec")))
                 s.append('''#
@@ -11588,7 +11588,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_paren_nl = ' + self.option_indent_paren_nl.currentText())
-        if '0'!=self.option_indent_paren_close.value():
+        if 0!=self.option_indent_paren_close.value():
             if comment:
                 s.append(wrap(self.tr("How to indent a close parenthesis after a newline.", "indent_paren_close"))+"\n#"+wrap(self.tr(" 0: Indent to body level (default)\n 1: Align under the open parenthesis\n 2: Indent to the brace level\n-1: Preserve original indentation", "indent_paren_close")))
                 s.append('''#
@@ -11616,21 +11616,21 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_paren_after_func_call = ' + self.option_indent_paren_after_func_call.currentText())
-        if '0'!=self.option_indent_comma_brace.value():
+        if 0!=self.option_indent_comma_brace.value():
             if comment:
                 s.append(wrap(self.tr("How to indent a comma when inside braces.\n 0: Indent by one level (default)\n 1: Align under the open brace\n-1: Preserve original indentation", "indent_comma_brace")))
                 s.append('''#
 # Type: signed  -1  1''')
                 s.append('''# Default: 0 ''')
             s.append('indent_comma_brace = ' + str(self.option_indent_comma_brace.value()))
-        if '0'!=self.option_indent_comma_paren.value():
+        if 0!=self.option_indent_comma_paren.value():
             if comment:
                 s.append(wrap(self.tr("How to indent a comma when inside parentheses.\n 0: Indent by one level (default)\n 1: Align under the open parenthesis\n-1: Preserve original indentation", "indent_comma_paren")))
                 s.append('''#
 # Type: signed  -1  1''')
                 s.append('''# Default: 0 ''')
             s.append('indent_comma_paren = ' + str(self.option_indent_comma_paren.value()))
-        if '0'!=self.option_indent_bool_paren.value():
+        if 0!=self.option_indent_bool_paren.value():
             if comment:
                 s.append(wrap(self.tr("How to indent a Boolean operator when inside parentheses.\n 0: Indent by one level (default)\n 1: Align under the open parenthesis\n-1: Preserve original indentation", "indent_bool_paren")))
                 s.append('''#
@@ -11735,14 +11735,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_oc_block = ' + self.option_indent_oc_block.currentText())
-        if '0'!=self.option_indent_oc_block_msg.value():
+        if 0!=self.option_indent_oc_block_msg.value():
             if comment:
                 s.append(wrap(self.tr("(OC) Indent for Objective-C blocks in a message relative to the parameter\nname.", "indent_oc_block_msg"))+"\n#"+wrap(self.tr("=0: Use indent_oc_block rules\n>0: Use specified number of spaces to indent", "indent_oc_block_msg")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('indent_oc_block_msg = ' + str(self.option_indent_oc_block_msg.value()))
-        if '0'!=self.option_indent_oc_msg_colon.value():
+        if 0!=self.option_indent_oc_msg_colon.value():
             if comment:
                 s.append(wrap(self.tr("(OC) Minimum indent for subsequent parameters", "indent_oc_msg_colon")))
                 s.append('''#
@@ -11791,7 +11791,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('indent_oc_block_msg_from_brace = ' + self.option_indent_oc_block_msg_from_brace.currentText())
-        if '0'!=self.option_indent_min_vbrace_open.value():
+        if 0!=self.option_indent_min_vbrace_open.value():
             if comment:
                 s.append(wrap(self.tr("When indenting after virtual brace open and newline add further spaces to\nreach this minimum indent.", "indent_min_vbrace_open")))
                 s.append('''#
@@ -11833,7 +11833,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: true ''')
             s.append('indent_using_block = ' + self.option_indent_using_block.currentText())
-        if '0'!=self.option_indent_ternary_operator.value():
+        if 0!=self.option_indent_ternary_operator.value():
             if comment:
                 s.append(wrap(self.tr("How to indent the continuation of ternary operator.", "indent_ternary_operator"))+"\n#"+wrap(self.tr("0: Off (default)\n1: When the `if_false` is a continuation, indent it under `if_false`\n2: When the `:` is a continuation, indent it under `?`", "indent_ternary_operator")))
                 s.append('''#
@@ -12031,7 +12031,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('nl_start_of_file = ' + self.option_nl_start_of_file.currentText())
-        if '0'!=self.option_nl_start_of_file_min.value():
+        if 0!=self.option_nl_start_of_file_min.value():
             if comment:
                 s.append(wrap(self.tr("The minimum number of newlines at the start of the file (only used if\nnl_start_of_file is 'add' or 'force').", "nl_start_of_file_min")))
                 s.append('''#
@@ -12045,7 +12045,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('nl_end_of_file = ' + self.option_nl_end_of_file.currentText())
-        if '0'!=self.option_nl_end_of_file_min.value():
+        if 0!=self.option_nl_end_of_file_min.value():
             if comment:
                 s.append(wrap(self.tr("The minimum number of newlines at the end of the file (only used if\nnl_end_of_file is 'add' or 'force').", "nl_end_of_file_min")))
                 s.append('''#
@@ -13160,77 +13160,77 @@ class Widget(QtWidgets.QTabWidget):
             s.append('donot_add_nl_before_cpp_comment = ' + self.option_donot_add_nl_before_cpp_comment.currentText())
         #================== Blank line options ==============================================================
         if comment: s.append('\n\n'+'#'*80+wrap(self.tr("Blank line options"))+'\n'+'#'*80)
-        if '0'!=self.option_nl_max.value():
+        if 0!=self.option_nl_max.value():
             if comment:
                 s.append(wrap(self.tr("The maximum number of consecutive newlines (3 = 2 blank lines).", "nl_max")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_max = ' + str(self.option_nl_max.value()))
-        if '0'!=self.option_nl_max_blank_in_func.value():
+        if 0!=self.option_nl_max_blank_in_func.value():
             if comment:
                 s.append(wrap(self.tr("The maximum number of consecutive newlines in a function.", "nl_max_blank_in_func")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_max_blank_in_func = ' + str(self.option_nl_max_blank_in_func.value()))
-        if '0'!=self.option_nl_inside_empty_func.value():
+        if 0!=self.option_nl_inside_empty_func.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines inside an empty function body.\nThis option overrides eat_blanks_after_open_brace and\neat_blanks_before_close_brace, but is ignored when\nnl_collapse_empty_body=true", "nl_inside_empty_func")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_inside_empty_func = ' + str(self.option_nl_inside_empty_func.value()))
-        if '0'!=self.option_nl_before_func_body_proto.value():
+        if 0!=self.option_nl_before_func_body_proto.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a function prototype.", "nl_before_func_body_proto")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_func_body_proto = ' + str(self.option_nl_before_func_body_proto.value()))
-        if '0'!=self.option_nl_before_func_body_def.value():
+        if 0!=self.option_nl_before_func_body_def.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a multi-line function definition. Where\napplicable, this option is overridden with eat_blanks_after_open_brace=true", "nl_before_func_body_def")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_func_body_def = ' + str(self.option_nl_before_func_body_def.value()))
-        if '0'!=self.option_nl_before_func_class_proto.value():
+        if 0!=self.option_nl_before_func_class_proto.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a class constructor/destructor prototype.", "nl_before_func_class_proto")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_func_class_proto = ' + str(self.option_nl_before_func_class_proto.value()))
-        if '0'!=self.option_nl_before_func_class_def.value():
+        if 0!=self.option_nl_before_func_class_def.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a class constructor/destructor definition.", "nl_before_func_class_def")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_func_class_def = ' + str(self.option_nl_before_func_class_def.value()))
-        if '0'!=self.option_nl_after_func_proto.value():
+        if 0!=self.option_nl_after_func_proto.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a function prototype.", "nl_after_func_proto")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_func_proto = ' + str(self.option_nl_after_func_proto.value()))
-        if '0'!=self.option_nl_after_func_proto_group.value():
+        if 0!=self.option_nl_after_func_proto_group.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a function prototype, if not followed by\nanother function prototype.", "nl_after_func_proto_group")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_func_proto_group = ' + str(self.option_nl_after_func_proto_group.value()))
-        if '0'!=self.option_nl_after_func_class_proto.value():
+        if 0!=self.option_nl_after_func_class_proto.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a class constructor/destructor prototype.", "nl_after_func_class_proto")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_func_class_proto = ' + str(self.option_nl_after_func_class_proto.value()))
-        if '0'!=self.option_nl_after_func_class_proto_group.value():
+        if 0!=self.option_nl_after_func_class_proto_group.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a class constructor/destructor prototype,\nif not followed by another constructor/destructor prototype.", "nl_after_func_class_proto_group")))
                 s.append('''#
@@ -13244,91 +13244,91 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('nl_class_leave_one_liner_groups = ' + self.option_nl_class_leave_one_liner_groups.currentText())
-        if '0'!=self.option_nl_after_func_body.value():
+        if 0!=self.option_nl_after_func_body.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after '}' of a multi-line function body.", "nl_after_func_body")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_func_body = ' + str(self.option_nl_after_func_body.value()))
-        if '0'!=self.option_nl_after_func_body_class.value():
+        if 0!=self.option_nl_after_func_body_class.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after '}' of a multi-line function body in a class\ndeclaration. Also affects class constructors/destructors.", "nl_after_func_body_class"))+"\n#"+wrap(self.tr("Overrides nl_after_func_body.", "nl_after_func_body_class")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_func_body_class = ' + str(self.option_nl_after_func_body_class.value()))
-        if '0'!=self.option_nl_after_func_body_one_liner.value():
+        if 0!=self.option_nl_after_func_body_one_liner.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after '}' of a single line function body. Also\naffects class constructors/destructors.", "nl_after_func_body_one_liner"))+"\n#"+wrap(self.tr("Overrides nl_after_func_body and nl_after_func_body_class.", "nl_after_func_body_one_liner")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_func_body_one_liner = ' + str(self.option_nl_after_func_body_one_liner.value()))
-        if '0'!=self.option_nl_func_var_def_blk.value():
+        if 0!=self.option_nl_func_var_def_blk.value():
             if comment:
                 s.append(wrap(self.tr("The number of blank lines after a block of variable definitions at the top\nof a function body.", "nl_func_var_def_blk"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_func_var_def_blk")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_func_var_def_blk = ' + str(self.option_nl_func_var_def_blk.value()))
-        if '0'!=self.option_nl_typedef_blk_start.value():
+        if 0!=self.option_nl_typedef_blk_start.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a block of typedefs. If nl_after_access_spec\nis non-zero, that option takes precedence.", "nl_typedef_blk_start"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_typedef_blk_start")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_typedef_blk_start = ' + str(self.option_nl_typedef_blk_start.value()))
-        if '0'!=self.option_nl_typedef_blk_end.value():
+        if 0!=self.option_nl_typedef_blk_end.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a block of typedefs.", "nl_typedef_blk_end"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_typedef_blk_end")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_typedef_blk_end = ' + str(self.option_nl_typedef_blk_end.value()))
-        if '0'!=self.option_nl_typedef_blk_in.value():
+        if 0!=self.option_nl_typedef_blk_in.value():
             if comment:
                 s.append(wrap(self.tr("The maximum number of consecutive newlines within a block of typedefs.", "nl_typedef_blk_in"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_typedef_blk_in")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_typedef_blk_in = ' + str(self.option_nl_typedef_blk_in.value()))
-        if '0'!=self.option_nl_var_def_blk_start.value():
+        if 0!=self.option_nl_var_def_blk_start.value():
             if comment:
                 s.append(wrap(self.tr("The number of empty newlines before a block of variable definitions\nnot at the top of a function body. If nl_after_access_spec is non-zero,\nthat option takes precedence.", "nl_var_def_blk_start"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_var_def_blk_start")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_var_def_blk_start = ' + str(self.option_nl_var_def_blk_start.value()))
-        if '0'!=self.option_nl_var_def_blk_end.value():
+        if 0!=self.option_nl_var_def_blk_end.value():
             if comment:
                 s.append(wrap(self.tr("The number of empty newlines after a block of variable definitions\nnot at the top of a function body.", "nl_var_def_blk_end"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_var_def_blk_end")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_var_def_blk_end = ' + str(self.option_nl_var_def_blk_end.value()))
-        if '0'!=self.option_nl_var_def_blk_in.value():
+        if 0!=self.option_nl_var_def_blk_in.value():
             if comment:
                 s.append(wrap(self.tr("The maximum number of consecutive newlines within a block of variable\ndefinitions.", "nl_var_def_blk_in"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_var_def_blk_in")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_var_def_blk_in = ' + str(self.option_nl_var_def_blk_in.value()))
-        if '0'!=self.option_nl_before_block_comment.value():
+        if 0!=self.option_nl_before_block_comment.value():
             if comment:
                 s.append(wrap(self.tr("The minimum number of newlines before a multi-line comment.\nDoesn't apply if after a brace open or another multi-line comment.", "nl_before_block_comment")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_block_comment = ' + str(self.option_nl_before_block_comment.value()))
-        if '0'!=self.option_nl_before_c_comment.value():
+        if 0!=self.option_nl_before_c_comment.value():
             if comment:
                 s.append(wrap(self.tr("The minimum number of newlines before a single-line C comment.\nDoesn't apply if after a brace open or other single-line C comments.", "nl_before_c_comment")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_c_comment = ' + str(self.option_nl_before_c_comment.value()))
-        if '0'!=self.option_nl_before_cpp_comment.value():
+        if 0!=self.option_nl_before_cpp_comment.value():
             if comment:
                 s.append(wrap(self.tr("The minimum number of newlines before a CPP comment.\nDoesn't apply if after a brace open or other CPP comments.", "nl_before_cpp_comment")))
                 s.append('''#
@@ -13349,91 +13349,91 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('nl_after_label_colon = ' + self.option_nl_after_label_colon.currentText())
-        if '0'!=self.option_nl_before_struct.value():
+        if 0!=self.option_nl_before_struct.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a struct definition.", "nl_before_struct")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_struct = ' + str(self.option_nl_before_struct.value()))
-        if '0'!=self.option_nl_after_struct.value():
+        if 0!=self.option_nl_after_struct.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after '}' or ';' of a struct/enum/union definition.", "nl_after_struct")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_struct = ' + str(self.option_nl_after_struct.value()))
-        if '0'!=self.option_nl_before_class.value():
+        if 0!=self.option_nl_before_class.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a class definition.", "nl_before_class")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_class = ' + str(self.option_nl_before_class.value()))
-        if '0'!=self.option_nl_after_class.value():
+        if 0!=self.option_nl_after_class.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after '}' or ';' of a class definition.", "nl_after_class")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_class = ' + str(self.option_nl_after_class.value()))
-        if '0'!=self.option_nl_before_namespace.value():
+        if 0!=self.option_nl_before_namespace.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a namespace.", "nl_before_namespace")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_namespace = ' + str(self.option_nl_before_namespace.value()))
-        if '0'!=self.option_nl_inside_namespace.value():
+        if 0!=self.option_nl_inside_namespace.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after '{' of a namespace. This also adds newlines\nbefore the matching '}'.", "nl_inside_namespace"))+"\n#"+wrap(self.tr("0: Apply eat_blanks_after_open_brace or eat_blanks_before_close_brace if\n    applicable, otherwise no change.", "nl_inside_namespace"))+"\n#"+wrap(self.tr("Overrides eat_blanks_after_open_brace and eat_blanks_before_close_brace.", "nl_inside_namespace")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_inside_namespace = ' + str(self.option_nl_inside_namespace.value()))
-        if '0'!=self.option_nl_after_namespace.value():
+        if 0!=self.option_nl_after_namespace.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after '}' of a namespace.", "nl_after_namespace")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_namespace = ' + str(self.option_nl_after_namespace.value()))
-        if '0'!=self.option_nl_before_access_spec.value():
+        if 0!=self.option_nl_before_access_spec.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before an access specifier label. This also includes\nthe Qt-specific 'signals:' and 'slots:'. Will not change the newline count\nif after a brace open.", "nl_before_access_spec"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_before_access_spec")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_access_spec = ' + str(self.option_nl_before_access_spec.value()))
-        if '0'!=self.option_nl_after_access_spec.value():
+        if 0!=self.option_nl_after_access_spec.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after an access specifier label. This also includes\nthe Qt-specific 'signals:' and 'slots:'. Will not change the newline count\nif after a brace open.", "nl_after_access_spec"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_after_access_spec"))+"\n#"+wrap(self.tr("Overrides nl_typedef_blk_start and nl_var_def_blk_start.", "nl_after_access_spec")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_access_spec = ' + str(self.option_nl_after_access_spec.value()))
-        if '0'!=self.option_nl_comment_func_def.value():
+        if 0!=self.option_nl_comment_func_def.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines between a function definition and the function\ncomment, as in '// comment\\n <here> void foo() {...}'.", "nl_comment_func_def"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_comment_func_def")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_comment_func_def = ' + str(self.option_nl_comment_func_def.value()))
-        if '0'!=self.option_nl_after_try_catch_finally.value():
+        if 0!=self.option_nl_after_try_catch_finally.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a try-catch-finally block that isn't followed\nby a brace close.", "nl_after_try_catch_finally"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_after_try_catch_finally")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_try_catch_finally = ' + str(self.option_nl_after_try_catch_finally.value()))
-        if '0'!=self.option_nl_around_cs_property.value():
+        if 0!=self.option_nl_around_cs_property.value():
             if comment:
                 s.append(wrap(self.tr("(C#) The number of newlines before and after a property, indexer or event\ndeclaration.", "nl_around_cs_property"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_around_cs_property")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_around_cs_property = ' + str(self.option_nl_around_cs_property.value()))
-        if '0'!=self.option_nl_between_get_set.value():
+        if 0!=self.option_nl_between_get_set.value():
             if comment:
                 s.append(wrap(self.tr("(C#) The number of newlines between the get/set/add/remove handlers.", "nl_between_get_set"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_between_get_set")))
                 s.append('''#
@@ -13461,7 +13461,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('eat_blanks_before_close_brace = ' + self.option_eat_blanks_before_close_brace.currentText())
-        if '0'!=self.option_nl_remove_extra_newlines.value():
+        if 0!=self.option_nl_remove_extra_newlines.value():
             if comment:
                 s.append(wrap(self.tr("How aggressively to remove extra newlines not in preprocessor.", "nl_remove_extra_newlines"))+"\n#"+wrap(self.tr("0: No change (default)\n1: Remove most newlines not handled by other config\n2: Remove all newlines and reformat completely by config", "nl_remove_extra_newlines")))
                 s.append('''#
@@ -13482,28 +13482,28 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('nl_between_annotation = ' + self.option_nl_between_annotation.currentText())
-        if '0'!=self.option_nl_before_whole_file_ifdef.value():
+        if 0!=self.option_nl_before_whole_file_ifdef.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a whole-file #ifdef.", "nl_before_whole_file_ifdef"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_before_whole_file_ifdef")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_whole_file_ifdef = ' + str(self.option_nl_before_whole_file_ifdef.value()))
-        if '0'!=self.option_nl_after_whole_file_ifdef.value():
+        if 0!=self.option_nl_after_whole_file_ifdef.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a whole-file #ifdef.", "nl_after_whole_file_ifdef"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_after_whole_file_ifdef")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_after_whole_file_ifdef = ' + str(self.option_nl_after_whole_file_ifdef.value()))
-        if '0'!=self.option_nl_before_whole_file_endif.value():
+        if 0!=self.option_nl_before_whole_file_endif.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines before a whole-file #endif.", "nl_before_whole_file_endif"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_before_whole_file_endif")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('nl_before_whole_file_endif = ' + str(self.option_nl_before_whole_file_endif.value()))
-        if '0'!=self.option_nl_after_whole_file_endif.value():
+        if 0!=self.option_nl_after_whole_file_endif.value():
             if comment:
                 s.append(wrap(self.tr("The number of newlines after a whole-file #endif.", "nl_after_whole_file_endif"))+"\n#"+wrap(self.tr("0: No change (default).", "nl_after_whole_file_endif")))
                 s.append('''#
@@ -13598,7 +13598,7 @@ class Widget(QtWidgets.QTabWidget):
             s.append('pos_shift = ' + self.option_pos_shift.currentText())
         #================== Line splitting options ==========================================================
         if comment: s.append('\n\n'+'#'*80+wrap(self.tr("Line splitting options"))+'\n'+'#'*80)
-        if '0'!=self.option_code_width.value():
+        if 0!=self.option_code_width.value():
             if comment:
                 s.append(wrap(self.tr("Try to limit code width to N columns.", "code_width")))
                 s.append('''#
@@ -13670,42 +13670,42 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_func_params = ' + self.option_align_func_params.currentText())
-        if '0'!=self.option_align_func_params_span.value():
+        if 0!=self.option_align_func_params_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning parameter definitions in function on parameter name.", "align_func_params_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_func_params_span")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_func_params_span = ' + str(self.option_align_func_params_span.value()))
-        if '0'!=self.option_align_func_params_thresh.value():
+        if 0!=self.option_align_func_params_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning function parameter definitions.\nUse a negative number for absolute thresholds.", "align_func_params_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_func_params_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_func_params_thresh = ' + str(self.option_align_func_params_thresh.value()))
-        if '0'!=self.option_align_func_params_gap.value():
+        if 0!=self.option_align_func_params_gap.value():
             if comment:
                 s.append(wrap(self.tr("The gap for aligning function parameter definitions.", "align_func_params_gap")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_func_params_gap = ' + str(self.option_align_func_params_gap.value()))
-        if '0'!=self.option_align_constr_value_span.value():
+        if 0!=self.option_align_constr_value_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning constructor value.", "align_constr_value_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_constr_value_span")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_constr_value_span = ' + str(self.option_align_constr_value_span.value()))
-        if '0'!=self.option_align_constr_value_thresh.value():
+        if 0!=self.option_align_constr_value_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning constructor value.\nUse a negative number for absolute thresholds.", "align_constr_value_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_constr_value_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_constr_value_thresh = ' + str(self.option_align_constr_value_thresh.value()))
-        if '0'!=self.option_align_constr_value_gap.value():
+        if 0!=self.option_align_constr_value_gap.value():
             if comment:
                 s.append(wrap(self.tr("The gap for aligning constructor value.", "align_constr_value_gap")))
                 s.append('''#
@@ -13719,49 +13719,49 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_same_func_call_params = ' + self.option_align_same_func_call_params.currentText())
-        if '0'!=self.option_align_same_func_call_params_span.value():
+        if 0!=self.option_align_same_func_call_params_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning function-call parameters for single line functions.", "align_same_func_call_params_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_same_func_call_params_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_same_func_call_params_span = ' + str(self.option_align_same_func_call_params_span.value()))
-        if '0'!=self.option_align_same_func_call_params_thresh.value():
+        if 0!=self.option_align_same_func_call_params_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning function-call parameters for single line\nfunctions.\nUse a negative number for absolute thresholds.", "align_same_func_call_params_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_same_func_call_params_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_same_func_call_params_thresh = ' + str(self.option_align_same_func_call_params_thresh.value()))
-        if '0'!=self.option_align_var_def_span.value():
+        if 0!=self.option_align_var_def_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning variable definitions.", "align_var_def_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_var_def_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_def_span = ' + str(self.option_align_var_def_span.value()))
-        if '0'!=self.option_align_var_def_star_style.value():
+        if 0!=self.option_align_var_def_star_style.value():
             if comment:
                 s.append(wrap(self.tr("How to consider (or treat) the '*' in the alignment of variable definitions.", "align_var_def_star_style"))+"\n#"+wrap(self.tr("0: Part of the type     'void *   foo;' (default)\n1: Part of the variable 'void     *foo;'\n2: Dangling             'void    *foo;'\nDangling: the '*' will not be taken into account when aligning.", "align_var_def_star_style")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_def_star_style = ' + str(self.option_align_var_def_star_style.value()))
-        if '0'!=self.option_align_var_def_amp_style.value():
+        if 0!=self.option_align_var_def_amp_style.value():
             if comment:
                 s.append(wrap(self.tr("How to consider (or treat) the '&' in the alignment of variable definitions.", "align_var_def_amp_style"))+"\n#"+wrap(self.tr("0: Part of the type     'long &   foo;' (default)\n1: Part of the variable 'long     &foo;'\n2: Dangling             'long    &foo;'\nDangling: the '&' will not be taken into account when aligning.", "align_var_def_amp_style")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_def_amp_style = ' + str(self.option_align_var_def_amp_style.value()))
-        if '0'!=self.option_align_var_def_thresh.value():
+        if 0!=self.option_align_var_def_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning variable definitions.\nUse a negative number for absolute thresholds.", "align_var_def_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_var_def_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_def_thresh = ' + str(self.option_align_var_def_thresh.value()))
-        if '0'!=self.option_align_var_def_gap.value():
+        if 0!=self.option_align_var_def_gap.value():
             if comment:
                 s.append(wrap(self.tr("The gap for aligning variable definitions.", "align_var_def_gap")))
                 s.append('''#
@@ -13775,7 +13775,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_var_def_colon = ' + self.option_align_var_def_colon.currentText())
-        if '0'!=self.option_align_var_def_colon_gap.value():
+        if 0!=self.option_align_var_def_colon_gap.value():
             if comment:
                 s.append(wrap(self.tr("The gap for aligning the colon in struct bit fields.", "align_var_def_colon_gap")))
                 s.append('''#
@@ -13796,28 +13796,28 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_var_def_inline = ' + self.option_align_var_def_inline.currentText())
-        if '0'!=self.option_align_assign_span.value():
+        if 0!=self.option_align_assign_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning on '=' in assignments.", "align_assign_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_assign_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_assign_span = ' + str(self.option_align_assign_span.value()))
-        if '0'!=self.option_align_braced_init_list_span.value():
+        if 0!=self.option_align_braced_init_list_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning on '{' in braced init list.", "align_braced_init_list_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_braced_init_list_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_braced_init_list_span = ' + str(self.option_align_braced_init_list_span.value()))
-        if '0'!=self.option_align_assign_func_proto_span.value():
+        if 0!=self.option_align_assign_func_proto_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning on '=' in function prototype modifier.", "align_assign_func_proto_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_assign_func_proto_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_assign_func_proto_span = ' + str(self.option_align_assign_func_proto_span.value()))
-        if '0'!=self.option_align_assign_thresh.value():
+        if 0!=self.option_align_assign_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning on '=' in assignments.\nUse a negative number for absolute thresholds.", "align_assign_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_assign_thresh")))
                 s.append('''#
@@ -13831,126 +13831,126 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_assign_on_multi_var_defs = ' + self.option_align_assign_on_multi_var_defs.currentText())
-        if '0'!=self.option_align_braced_init_list_thresh.value():
+        if 0!=self.option_align_braced_init_list_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning on '{' in braced init list.\nUse a negative number for absolute thresholds.", "align_braced_init_list_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_braced_init_list_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_braced_init_list_thresh = ' + str(self.option_align_braced_init_list_thresh.value()))
-        if '0'!=self.option_align_assign_decl_func.value():
+        if 0!=self.option_align_assign_decl_func.value():
             if comment:
                 s.append(wrap(self.tr("How to apply align_assign_span to function declaration \"assignments\", i.e.\n'virtual void foo() = 0' or '~foo() = {default|delete}'.", "align_assign_decl_func"))+"\n#"+wrap(self.tr("0: Align with other assignments (default)\n1: Align with each other, ignoring regular assignments\n2: Don't align", "align_assign_decl_func")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_assign_decl_func = ' + str(self.option_align_assign_decl_func.value()))
-        if '0'!=self.option_align_enum_equ_span.value():
+        if 0!=self.option_align_enum_equ_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning on '=' in enums.", "align_enum_equ_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_enum_equ_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_enum_equ_span = ' + str(self.option_align_enum_equ_span.value()))
-        if '0'!=self.option_align_enum_equ_thresh.value():
+        if 0!=self.option_align_enum_equ_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning on '=' in enums.\nUse a negative number for absolute thresholds.", "align_enum_equ_thresh"))+"\n#"+wrap(self.tr("0: no limit (default).", "align_enum_equ_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_enum_equ_thresh = ' + str(self.option_align_enum_equ_thresh.value()))
-        if '0'!=self.option_align_var_class_span.value():
+        if 0!=self.option_align_var_class_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning class member definitions.", "align_var_class_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_var_class_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_class_span = ' + str(self.option_align_var_class_span.value()))
-        if '0'!=self.option_align_var_class_thresh.value():
+        if 0!=self.option_align_var_class_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning class member definitions.\nUse a negative number for absolute thresholds.", "align_var_class_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_var_class_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_class_thresh = ' + str(self.option_align_var_class_thresh.value()))
-        if '0'!=self.option_align_var_class_gap.value():
+        if 0!=self.option_align_var_class_gap.value():
             if comment:
                 s.append(wrap(self.tr("The gap for aligning class member definitions.", "align_var_class_gap")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_class_gap = ' + str(self.option_align_var_class_gap.value()))
-        if '0'!=self.option_align_var_struct_span.value():
+        if 0!=self.option_align_var_struct_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning struct/union member definitions.", "align_var_struct_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_var_struct_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_struct_span = ' + str(self.option_align_var_struct_span.value()))
-        if '0'!=self.option_align_var_struct_thresh.value():
+        if 0!=self.option_align_var_struct_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning struct/union member definitions.\nUse a negative number for absolute thresholds.", "align_var_struct_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_var_struct_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_struct_thresh = ' + str(self.option_align_var_struct_thresh.value()))
-        if '0'!=self.option_align_var_struct_gap.value():
+        if 0!=self.option_align_var_struct_gap.value():
             if comment:
                 s.append(wrap(self.tr("The gap for aligning struct/union member definitions.", "align_var_struct_gap")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_var_struct_gap = ' + str(self.option_align_var_struct_gap.value()))
-        if '0'!=self.option_align_struct_init_span.value():
+        if 0!=self.option_align_struct_init_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning struct initializer values.", "align_struct_init_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_struct_init_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_struct_init_span = ' + str(self.option_align_struct_init_span.value()))
-        if '0'!=self.option_align_typedef_span.value():
+        if 0!=self.option_align_typedef_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning single-line typedefs.", "align_typedef_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_typedef_span")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_typedef_span = ' + str(self.option_align_typedef_span.value()))
-        if '0'!=self.option_align_typedef_gap.value():
+        if 0!=self.option_align_typedef_gap.value():
             if comment:
                 s.append(wrap(self.tr("The minimum space between the type and the synonym of a typedef.", "align_typedef_gap")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_typedef_gap = ' + str(self.option_align_typedef_gap.value()))
-        if '0'!=self.option_align_typedef_func.value():
+        if 0!=self.option_align_typedef_func.value():
             if comment:
                 s.append(wrap(self.tr("How to align typedef'd functions with other typedefs.", "align_typedef_func"))+"\n#"+wrap(self.tr("0: Don't mix them at all (default)\n1: Align the open parenthesis with the types\n2: Align the function type name with the other type names", "align_typedef_func")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_typedef_func = ' + str(self.option_align_typedef_func.value()))
-        if '0'!=self.option_align_typedef_star_style.value():
+        if 0!=self.option_align_typedef_star_style.value():
             if comment:
                 s.append(wrap(self.tr("How to consider (or treat) the '*' in the alignment of typedefs.", "align_typedef_star_style"))+"\n#"+wrap(self.tr("0: Part of the typedef type, 'typedef int * pint;' (default)\n1: Part of type name:        'typedef int   *pint;'\n2: Dangling:                 'typedef int  *pint;'\nDangling: the '*' will not be taken into account when aligning.", "align_typedef_star_style")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_typedef_star_style = ' + str(self.option_align_typedef_star_style.value()))
-        if '0'!=self.option_align_typedef_amp_style.value():
+        if 0!=self.option_align_typedef_amp_style.value():
             if comment:
                 s.append(wrap(self.tr("How to consider (or treat) the '&' in the alignment of typedefs.", "align_typedef_amp_style"))+"\n#"+wrap(self.tr("0: Part of the typedef type, 'typedef int & intref;' (default)\n1: Part of type name:        'typedef int   &intref;'\n2: Dangling:                 'typedef int  &intref;'\nDangling: the '&' will not be taken into account when aligning.", "align_typedef_amp_style")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_typedef_amp_style = ' + str(self.option_align_typedef_amp_style.value()))
-        if '0'!=self.option_align_right_cmt_span.value():
+        if 0!=self.option_align_right_cmt_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning comments that end lines.", "align_right_cmt_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_right_cmt_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_right_cmt_span = ' + str(self.option_align_right_cmt_span.value()))
-        if '0'!=self.option_align_right_cmt_gap.value():
+        if 0!=self.option_align_right_cmt_gap.value():
             if comment:
                 s.append(wrap(self.tr("Minimum number of columns between preceding text and a trailing comment in\norder for the comment to qualify for being aligned. Must be non-zero to have\nan effect.", "align_right_cmt_gap")))
                 s.append('''#
@@ -13971,42 +13971,42 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_right_cmt_same_level = ' + self.option_align_right_cmt_same_level.currentText())
-        if '0'!=self.option_align_right_cmt_at_col.value():
+        if 0!=self.option_align_right_cmt_at_col.value():
             if comment:
                 s.append(wrap(self.tr("Minimum column at which to align trailing comments. Comments which are\naligned beyond this column, but which can be aligned in a lesser column,\nmay be \"pulled in\".", "align_right_cmt_at_col"))+"\n#"+wrap(self.tr("0: Ignore (default).", "align_right_cmt_at_col")))
                 s.append('''#
 # Type: unsigned  0  200''')
                 s.append('''# Default: 0 ''')
             s.append('align_right_cmt_at_col = ' + str(self.option_align_right_cmt_at_col.value()))
-        if '0'!=self.option_align_func_proto_span.value():
+        if 0!=self.option_align_func_proto_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning function prototypes.", "align_func_proto_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_func_proto_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_func_proto_span = ' + str(self.option_align_func_proto_span.value()))
-        if '0'!=self.option_align_func_proto_star_style.value():
+        if 0!=self.option_align_func_proto_star_style.value():
             if comment:
                 s.append(wrap(self.tr("How to consider (or treat) the '*' in the alignment of function prototypes.", "align_func_proto_star_style"))+"\n#"+wrap(self.tr("0: Part of the type     'void *   foo();' (default)\n1: Part of the function 'void     *foo();'\n2: Dangling             'void    *foo();'\nDangling: the '*' will not be taken into account when aligning.", "align_func_proto_star_style")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_func_proto_star_style = ' + str(self.option_align_func_proto_star_style.value()))
-        if '0'!=self.option_align_func_proto_amp_style.value():
+        if 0!=self.option_align_func_proto_amp_style.value():
             if comment:
                 s.append(wrap(self.tr("How to consider (or treat) the '&' in the alignment of function prototypes.", "align_func_proto_amp_style"))+"\n#"+wrap(self.tr("0: Part of the type     'long &   foo();' (default)\n1: Part of the function 'long     &foo();'\n2: Dangling             'long    &foo();'\nDangling: the '&' will not be taken into account when aligning.", "align_func_proto_amp_style")))
                 s.append('''#
 # Type: unsigned  0  2''')
                 s.append('''# Default: 0 ''')
             s.append('align_func_proto_amp_style = ' + str(self.option_align_func_proto_amp_style.value()))
-        if '0'!=self.option_align_func_proto_thresh.value():
+        if 0!=self.option_align_func_proto_thresh.value():
             if comment:
                 s.append(wrap(self.tr("The threshold for aligning function prototypes.\nUse a negative number for absolute thresholds.", "align_func_proto_thresh"))+"\n#"+wrap(self.tr("0: No limit (default).", "align_func_proto_thresh")))
                 s.append('''#
 # Type: signed  -1000  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_func_proto_thresh = ' + str(self.option_align_func_proto_thresh.value()))
-        if '0'!=self.option_align_func_proto_gap.value():
+        if 0!=self.option_align_func_proto_gap.value():
             if comment:
                 s.append(wrap(self.tr("Minimum gap between the return type and the function name.", "align_func_proto_gap")))
                 s.append('''#
@@ -14041,14 +14041,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_single_line_brace = ' + self.option_align_single_line_brace.currentText())
-        if '0'!=self.option_align_single_line_brace_gap.value():
+        if 0!=self.option_align_single_line_brace_gap.value():
             if comment:
                 s.append(wrap(self.tr("Gap for align_single_line_brace.", "align_single_line_brace_gap")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('align_single_line_brace_gap = ' + str(self.option_align_single_line_brace_gap.value()))
-        if '0'!=self.option_align_oc_msg_spec_span.value():
+        if 0!=self.option_align_oc_msg_spec_span.value():
             if comment:
                 s.append(wrap(self.tr("(OC) The span for aligning Objective-C message specifications.", "align_oc_msg_spec_span"))+"\n#"+wrap(self.tr("0: Don't align (default).", "align_oc_msg_spec_span")))
                 s.append('''#
@@ -14069,14 +14069,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_pp_define_together = ' + self.option_align_pp_define_together.currentText())
-        if '0'!=self.option_align_pp_define_span.value():
+        if 0!=self.option_align_pp_define_span.value():
             if comment:
                 s.append(wrap(self.tr("The span for aligning on '#define' bodies.", "align_pp_define_span"))+"\n#"+wrap(self.tr("=0: Don't align (default)\n>0: Number of lines (including comments) between blocks", "align_pp_define_span")))
                 s.append('''#
 # Type: unsigned  0  5000''')
                 s.append('''# Default: 0 ''')
             s.append('align_pp_define_span = ' + str(self.option_align_pp_define_span.value()))
-        if '0'!=self.option_align_pp_define_gap.value():
+        if 0!=self.option_align_pp_define_gap.value():
             if comment:
                 s.append(wrap(self.tr("The minimum space between label and value of a preprocessor define.", "align_pp_define_gap")))
                 s.append('''#
@@ -14104,7 +14104,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('align_asm_colon = ' + self.option_align_asm_colon.currentText())
-        if '0'!=self.option_align_oc_msg_colon_span.value():
+        if 0!=self.option_align_oc_msg_colon_span.value():
             if comment:
                 s.append(wrap(self.tr("(OC) Span for aligning parameters in an Objective-C message call\non the ':'.", "align_oc_msg_colon_span"))+"\n#"+wrap(self.tr("0: Don't align.", "align_oc_msg_colon_span")))
                 s.append('''#
@@ -14134,14 +14134,14 @@ class Widget(QtWidgets.QTabWidget):
             s.append('align_oc_msg_colon_xcode_like = ' + self.option_align_oc_msg_colon_xcode_like.currentText())
         #================== Comment modification options ====================================================
         if comment: s.append('\n\n'+'#'*80+wrap(self.tr("Comment modification options"))+'\n'+'#'*80)
-        if '0'!=self.option_cmt_width.value():
+        if 0!=self.option_cmt_width.value():
             if comment:
                 s.append(wrap(self.tr("Try to wrap comments at N columns.", "cmt_width")))
                 s.append('''#
 # Type: unsigned  0  256''')
                 s.append('''# Default: 0 ''')
             s.append('cmt_width = ' + str(self.option_cmt_width.value()))
-        if '0'!=self.option_cmt_reflow_mode.value():
+        if 0!=self.option_cmt_reflow_mode.value():
             if comment:
                 s.append(wrap(self.tr("How to reflow comments.", "cmt_reflow_mode"))+"\n#"+wrap(self.tr("0: No reflowing (apart from the line wrapping due to cmt_width) (default)\n1: No touching at all\n2: Full reflow (enable cmt_indent_multi for indent with line wrapping due to cmt_width)", "cmt_reflow_mode")))
                 s.append('''#
@@ -14183,7 +14183,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('cmt_align_doxygen_javadoc_tags = ' + self.option_cmt_align_doxygen_javadoc_tags.currentText())
-        if '1'!=self.option_cmt_sp_before_doxygen_javadoc_tags.value():
+        if 1!=self.option_cmt_sp_before_doxygen_javadoc_tags.value():
             if comment:
                 s.append(wrap(self.tr("The number of spaces to insert after the star and before doxygen\njavadoc-style tags (@param, @return, etc). Requires enabling\ncmt_align_doxygen_javadoc_tags. Overrides that which is specified by the\ncmt_sp_after_star_cont.", "cmt_sp_before_doxygen_javadoc_tags")))
                 s.append('''#
@@ -14253,14 +14253,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('cmt_star_cont = ' + self.option_cmt_star_cont.currentText())
-        if '0'!=self.option_cmt_sp_before_star_cont.value():
+        if 0!=self.option_cmt_sp_before_star_cont.value():
             if comment:
                 s.append(wrap(self.tr("The number of spaces to insert at the start of subsequent comment lines.", "cmt_sp_before_star_cont")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('cmt_sp_before_star_cont = ' + str(self.option_cmt_sp_before_star_cont.value()))
-        if '0'!=self.option_cmt_sp_after_star_cont.value():
+        if 0!=self.option_cmt_sp_after_star_cont.value():
             if comment:
                 s.append(wrap(self.tr("The number of spaces to insert after the star on subsequent comment lines.", "cmt_sp_after_star_cont")))
                 s.append('''#
@@ -14274,7 +14274,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: true ''')
             s.append('cmt_multi_check_last = ' + self.option_cmt_multi_check_last.currentText())
-        if '4'!=self.option_cmt_multi_first_len_minimum.value():
+        if 4!=self.option_cmt_multi_first_len_minimum.value():
             if comment:
                 s.append(wrap(self.tr("For multi-line comments with a '*' lead, remove leading spaces if the first\nand last lines of the comment are the same length AND if the length is\nbigger as the first_len minimum.", "cmt_multi_first_len_minimum")))
                 s.append('''#
@@ -14367,7 +14367,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('mod_full_brace_if = ' + self.option_mod_full_brace_if.currentText())
-        if '0'!=self.option_mod_full_brace_if_chain.value():
+        if 0!=self.option_mod_full_brace_if_chain.value():
             if comment:
                 s.append(wrap(self.tr("Whether to enforce that all blocks of an 'if'/'else if'/'else' chain either\nhave, or do not have, braces. Overrides mod_full_brace_if.", "mod_full_brace_if_chain"))+"\n#"+wrap(self.tr("0: Don't override mod_full_brace_if\n1: Add braces to all blocks if any block needs braces and remove braces if\n   they can be removed from all blocks\n2: Add braces to all blocks if any block already has braces, regardless of\n   whether it needs them\n3: Add braces to all blocks if any block needs braces and remove braces if\n   they can be removed from all blocks, except if all blocks have braces\n   despite none needing them", "mod_full_brace_if_chain")))
                 s.append('''#
@@ -14395,7 +14395,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('mod_full_brace_using = ' + self.option_mod_full_brace_using.currentText())
-        if '0'!=self.option_mod_full_brace_nl.value():
+        if 0!=self.option_mod_full_brace_nl.value():
             if comment:
                 s.append(wrap(self.tr("Don't remove braces around statements that span N newlines", "mod_full_brace_nl")))
                 s.append('''#
@@ -14458,42 +14458,42 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('mod_remove_duplicate_include = ' + self.option_mod_remove_duplicate_include.currentText())
-        if '0'!=self.option_mod_add_long_function_closebrace_comment.value():
+        if 0!=self.option_mod_add_long_function_closebrace_comment.value():
             if comment:
                 s.append(wrap(self.tr("If a function body exceeds the specified number of newlines and doesn't have\na comment after the close brace, a comment will be added.", "mod_add_long_function_closebrace_comment")))
                 s.append('''#
 # Type: unsigned  0  255''')
                 s.append('''# Default: 0 ''')
             s.append('mod_add_long_function_closebrace_comment = ' + str(self.option_mod_add_long_function_closebrace_comment.value()))
-        if '0'!=self.option_mod_add_long_namespace_closebrace_comment.value():
+        if 0!=self.option_mod_add_long_namespace_closebrace_comment.value():
             if comment:
                 s.append(wrap(self.tr("If a namespace body exceeds the specified number of newlines and doesn't\nhave a comment after the close brace, a comment will be added.", "mod_add_long_namespace_closebrace_comment")))
                 s.append('''#
 # Type: unsigned  0  255''')
                 s.append('''# Default: 0 ''')
             s.append('mod_add_long_namespace_closebrace_comment = ' + str(self.option_mod_add_long_namespace_closebrace_comment.value()))
-        if '0'!=self.option_mod_add_long_class_closebrace_comment.value():
+        if 0!=self.option_mod_add_long_class_closebrace_comment.value():
             if comment:
                 s.append(wrap(self.tr("If a class body exceeds the specified number of newlines and doesn't have a\ncomment after the close brace, a comment will be added.", "mod_add_long_class_closebrace_comment")))
                 s.append('''#
 # Type: unsigned  0  255''')
                 s.append('''# Default: 0 ''')
             s.append('mod_add_long_class_closebrace_comment = ' + str(self.option_mod_add_long_class_closebrace_comment.value()))
-        if '0'!=self.option_mod_add_long_switch_closebrace_comment.value():
+        if 0!=self.option_mod_add_long_switch_closebrace_comment.value():
             if comment:
                 s.append(wrap(self.tr("If a switch body exceeds the specified number of newlines and doesn't have a\ncomment after the close brace, a comment will be added.", "mod_add_long_switch_closebrace_comment")))
                 s.append('''#
 # Type: unsigned  0  255''')
                 s.append('''# Default: 0 ''')
             s.append('mod_add_long_switch_closebrace_comment = ' + str(self.option_mod_add_long_switch_closebrace_comment.value()))
-        if '0'!=self.option_mod_add_long_ifdef_endif_comment.value():
+        if 0!=self.option_mod_add_long_ifdef_endif_comment.value():
             if comment:
                 s.append(wrap(self.tr("If an #ifdef body exceeds the specified number of newlines and doesn't have\na comment after the #endif, a comment will be added.", "mod_add_long_ifdef_endif_comment")))
                 s.append('''#
 # Type: unsigned  0  255''')
                 s.append('''# Default: 0 ''')
             s.append('mod_add_long_ifdef_endif_comment = ' + str(self.option_mod_add_long_ifdef_endif_comment.value()))
-        if '0'!=self.option_mod_add_long_ifdef_else_comment.value():
+        if 0!=self.option_mod_add_long_ifdef_else_comment.value():
             if comment:
                 s.append(wrap(self.tr("If an #ifdef or #else body exceeds the specified number of newlines and\ndoesn't have a comment after the #else, a comment will be added.", "mod_add_long_ifdef_else_comment")))
                 s.append('''#
@@ -14677,7 +14677,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('pp_indent_at_level0 = ' + self.option_pp_indent_at_level0.currentText())
-        if '1'!=self.option_pp_indent_count.value():
+        if 1!=self.option_pp_indent_count.value():
             if comment:
                 s.append(wrap(self.tr("Specifies the number of columns to indent preprocessors per level\nat brace level 0 (file-level). If pp_indent_at_level=false, also specifies\nthe number of columns to indent preprocessors per level\nat brace level > 0 (function-level).", "pp_indent_count")))
                 s.append('''#
@@ -14691,14 +14691,14 @@ class Widget(QtWidgets.QTabWidget):
 # Type: ignore / add / remove / force / not_defined''')
                 s.append('''# Default: ignore ''')
             s.append('pp_space = ' + self.option_pp_space.currentText())
-        if '0'!=self.option_pp_space_count.value():
+        if 0!=self.option_pp_space_count.value():
             if comment:
                 s.append(wrap(self.tr("Sets the number of spaces per level added with pp_space.", "pp_space_count")))
                 s.append('''#
 # Type: unsigned  0  16''')
                 s.append('''# Default: 0 ''')
             s.append('pp_space_count = ' + str(self.option_pp_space_count.value()))
-        if '0'!=self.option_pp_indent_region.value():
+        if 0!=self.option_pp_indent_region.value():
             if comment:
                 s.append(wrap(self.tr("The indent for '#region' and '#endregion' in C# and '#pragma region' in\nC/C++. Negative values decrease indent down to the first column.", "pp_indent_region")))
                 s.append('''#
@@ -14712,7 +14712,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: false ''')
             s.append('pp_region_indent_code = ' + self.option_pp_region_indent_code.currentText())
-        if '0'!=self.option_pp_indent_if.value():
+        if 0!=self.option_pp_indent_if.value():
             if comment:
                 s.append(wrap(self.tr("If pp_indent_at_level=true, sets the indent for #if, #else and #endif when\nnot at file-level. Negative values decrease indent down to the first column.", "pp_indent_if"))+"\n#"+wrap(self.tr("=0: Indent preprocessors using output_tab_size\n>0: Column at which all preprocessors will be indented", "pp_indent_if")))
                 s.append('''#
@@ -14775,7 +14775,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: true/false''')
                 s.append('''# Default: true ''')
             s.append('pp_indent_extern = ' + self.option_pp_indent_extern.currentText())
-        if '1'!=self.option_pp_indent_brace.value():
+        if 1!=self.option_pp_indent_brace.value():
             if comment:
                 s.append(wrap(self.tr("How to indent braces directly inside #if, #else, and #endif.\nRequires pp_if_indent_code=true and only applies to the indent of the\npreprocesser that the braces are directly inside of.\n 0: No extra indent\n 1: Indent by one level\n-1: Preserve original indentation", "pp_indent_brace")))
                 s.append('''#
@@ -14858,7 +14858,7 @@ class Widget(QtWidgets.QTabWidget):
             s.append('use_form_feed_no_more_as_whitespace_character = ' + self.option_use_form_feed_no_more_as_whitespace_character.currentText())
         #================== Warn levels - 1: error, 2: warning (default), 3: note ===========================
         if comment: s.append('\n\n'+'#'*80+wrap(self.tr("Warn levels - 1: error, 2: warning (default), 3: note"))+'\n'+'#'*80)
-        if '2'!=self.option_warn_level_tabs_found_in_verbatim_string_literals.value():
+        if 2!=self.option_warn_level_tabs_found_in_verbatim_string_literals.value():
             if comment:
                 s.append(wrap(self.tr("(C#) Warning is given if doing tab-to-\\t replacement and we have found one\nin a C# verbatim string literal.", "warn_level_tabs_found_in_verbatim_string_literals")))
                 s.append('''#
@@ -14886,7 +14886,7 @@ class Widget(QtWidgets.QTabWidget):
 # Type: signed''')
                 s.append('''# Default: 0 ''')
             s.append('debug_timeout = ' + str(self.option_debug_timeout.value()))
-        if '0'!=self.option_debug_truncate.value():
+        if 0!=self.option_debug_truncate.value():
             if comment:
                 s.append(wrap(self.tr("Set the number of characters to be printed if the text is too long,\n0: do not truncate.", "debug_truncate")))
                 s.append('''#
