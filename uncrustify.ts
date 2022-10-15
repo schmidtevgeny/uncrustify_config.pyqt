@@ -24,9 +24,34 @@
         <translation>Обновить</translation>
     </message>
     <message>
-        <location filename="main.py" line="53"/>
+        <location filename="main.py" line="39"/>
+        <source>File</source>
+        <translation>Файл</translation>
+    </message>
+    <message>
+        <location filename="main.py" line="40"/>
+        <source>Config</source>
+        <translation>Настройка</translation>
+    </message>
+    <message>
+        <location filename="main.py" line="41"/>
+        <source>View</source>
+        <translation>Вид</translation>
+    </message>
+    <message>
+        <location filename="main.py" line="58"/>
         <source>vertical</source>
-        <translation>Разбиение</translation>
+        <translation>Расположить по вертикали</translation>
+    </message>
+    <message>
+        <location filename="main.py" line="63"/>
+        <source>Show default</source>
+        <translation>Сохранять значения по-умолчанию</translation>
+    </message>
+    <message>
+        <location filename="main.py" line="65"/>
+        <source>Show comment</source>
+        <translation>Сохранять комментарии</translation>
     </message>
 </context>
 <context>

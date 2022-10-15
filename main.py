@@ -35,25 +35,35 @@ class MainWidget(QtWidgets.QMainWindow):
         self.out_text.setFontFamily('Courier')
         self.out_text.setWordWrapMode(0)
 
+        self.menu = self.menuBar()
+        self.main_menu = self.menu.addMenu(self.tr("File"))
+        self.config_menu = self.menu.addMenu(self.tr("Config"))
+        self.view_menu = self.menu.addMenu(self.tr("View"))
+
         self.setCentralWidget(self.central)
-        self.panel = self.addToolBar(self.tr("main"))
+        # self.panel = self.addToolBar(self.tr("main"))
 
-        self.process = QtWidgets.QAction(self.tr("process"))
+        self.process = self.main_menu.addAction(self.tr("process"))
         self.process.triggered.connect(self.on_process)
-        self.panel.addAction(self.process)
+        # self.panel.addAction(self.process)
 
-        self.diff = QtWidgets.QAction(self.tr("diff"))
+        self.diff = self.main_menu.addAction(self.tr("diff"))
         self.diff.triggered.connect(self.on_diff)
-        self.panel.addAction(self.diff)
+        # self.panel.addAction(self.diff)
 
-        self.reload = QtWidgets.QAction(self.tr("reload"))
+        self.reload = self.view_menu.addAction(self.tr("reload"))
         self.reload.triggered.connect(self.on_reload)
-        self.panel.addAction(self.reload)
+        # self.panel.addAction(self.reload)
 
-        self.sppos = QtWidgets.QAction(self.tr("vertical"))
+        self.sppos = self.view_menu.addAction(self.tr("vertical"))
         self.sppos.setCheckable(True)
         self.sppos.toggled.connect(self.on_sppos)
-        self.panel.addAction(self.sppos)
+        # self.panel.addAction(self.sppos)
+
+        self.filterdef = self.config_menu.addAction(self.tr("Show default"))
+        self.filterdef.setCheckable(True)
+        self.comment = self.config_menu.addAction(self.tr("Show comment"))
+        self.comment.setCheckable(True)
 
         self.versions = ['latest']
         for v in glob.iglob('ui_*.py'):
@@ -62,8 +72,10 @@ class MainWidget(QtWidgets.QMainWindow):
         self.version = QtWidgets.QComboBox()
         self.version.addItems(self.versions)
         self.version.currentTextChanged.connect(self.ch_version)
-        self.panel.addWidget(self.version)
+        # self.panel.addWidget(self.version)
         self.on_reload()
+
+        self.setWindowTitle("Config uncrustify")
 
     def ch_version(self, version):
         self.leftlt.removeWidget(self.config)
@@ -111,7 +123,7 @@ class MainWidget(QtWidgets.QMainWindow):
         #     if it.startswith('#'): continue
         #     f.write(it + "\n")
         # END DEBUG
-        f.write(self.config.get())
+        f.write(self.config.get(self.filterdef.isChecked(), self.comment.isChecked()))
         f.close()
         if os.system("uncrustify -c conf.cfg -f in.cpp -o out.cpp"):
             pass
@@ -128,7 +140,7 @@ class MainWidget(QtWidgets.QMainWindow):
         f.write(self.in_text.toPlainText())
         f.close()
         f = open("conf1.cfg", "w")  # , encoding="utf-8")
-        f.write(self.config.get())
+        f.write(self.config.get(self.filterdef.isChecked(), self.comment.isChecked()))
         f.close()
         if os.system("uncrustify  -c conf.cfg -f in.cpp -o out1.cpp"):
             pass
