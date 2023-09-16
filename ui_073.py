@@ -27,7 +27,7 @@ class Widget(QtWidgets.QTabWidget):
 
     def __init__(self, parent=None):
         super(Widget, self).__init__(parent)
-        self.setWindowTitle('Uncrustify-0.74.0')    
+        self.setWindowTitle('Uncrustify-0.73.0')    
         font_name = QtGui.QFont('Arial', 14, 2)
         font_code = QtGui.QFont('monospace', 14, 2)
 
