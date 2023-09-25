@@ -7976,13 +7976,13 @@ between the opening brace of the function and the variable block, then
 it is considered as not at the top of the function.Newlines are added
 before trailing preprocessor directives, if any exist.</source>
         <comment>nl_var_def_blk_end_func_top</comment>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное количество пустых строк после блока определений переменных в верхней части тела функции. Если между открывающей скобкой функции и блоком переменных появляются какие-либо директивы препроцессора, то считается, что они не находятся в верхней части функции. Новые строки добавляются перед завершающими директивами препроцессора, если таковые имеются.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13116"/>
         <source>0: No change (default).</source>
         <comment>nl_var_def_blk_end_func_top</comment>
-        <translation type="unfinished">0: не изменять (по умолчанию). </translation>
+        <translation>0: не изменять (по умолчанию). </translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13122"/>
@@ -7992,7 +7992,7 @@ that option takes precedence. Newlines are not added at the top of the
 file or just after an opening brace. Newlines are added above any
 preprocessor directives before the block.</source>
         <comment>nl_var_def_blk_start</comment>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное количество пустых новых строк перед блоком определений переменных не в верхней части тела функции. Если nl_after_access_spec ненулевое, то эта опция имеет приоритет. Новые строки не добавляются в начало файла или сразу после открывающей скобки. Новые строки добавляются над любыми директивами препроцессора перед блоком.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13128"/>
@@ -8000,14 +8000,15 @@ preprocessor directives before the block.</source>
 not at the top of a function body. Newlines are not added if the block
 is at the bottom of the file or just before a preprocessor directive.</source>
         <comment>nl_var_def_blk_end</comment>
-        <translation type="unfinished"></translation>
+        <translation>Минимальное количество пустых новых строк после блока определений переменных не в верхней части тела функции. Новые строки не добавляются, если блок находится в нижней части файла или непосредственно перед директивой препроцессора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13776"/>
         <source>Whether and how to align backslashes that split a macro onto multiple lines.
 This will not work right if the macro contains a multi-line comment.</source>
         <comment>align_nl_cont</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли и как выравнивать обратные слэши, разделяющие макрос на несколько строк.
+Это будет работать неправильно, если макрос содержит многострочный комментарий.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13776"/>
@@ -8018,19 +8019,22 @@ This will not work right if the macro contains a multi-line comment.</source>
    the longest line
 3: Align with the backslash that is farthest to the right</source>
         <comment>align_nl_cont</comment>
-        <translation type="unfinished"></translation>
+        <translation>0: Ничего не делать (по умолчанию)
+1: Выравнивание обратных слэшей в столбце по концу самой длинной строки
+2: Выравнивание по самой дальней слева обратной косой черте или, если эта черта находится дальше слева, чем конец самой длинной строки, по концу самой длинной строки
+3: Выравнивание по косой черте, расположенной дальше всего вправо</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14080"/>
         <source>Add or remove unnecessary parentheses on &apos;return&apos; statement.</source>
         <comment>mod_paren_on_return</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или убрать лишние круглые скобки в выражении &apos;return&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14086"/>
         <source>Add or remove unnecessary parentheses on &apos;throw&apos; statement.</source>
         <comment>mod_paren_on_throw</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или убрать лишние круглые скобки в выражении &apos;throw&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14128"/>
@@ -8039,13 +8043,15 @@ depending of the setting of the next option.
 false: Use the c comment (default)
 true : Use the cpp comment</source>
         <comment>mod_add_force_c_closebrace_comment</comment>
-        <translation type="unfinished"></translation>
+        <translation>следующие опции (mod_XX_closebrace_comment) используют различные комментарии, в зависимости от установки следующей опции.
+false: Использовать комментарий c (по умолчанию)
+true : Использовать комментарий cpp</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14254"/>
         <source>Syntax to use for infinite loops.</source>
         <comment>mod_infinite_loop</comment>
-        <translation type="unfinished"></translation>
+        <translation>Синтаксис, используемый для бесконечных циклов.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14254"/>
@@ -8056,7 +8062,12 @@ true : Use the cpp comment</source>
 4: Rewrite as `while(1)`
 5: Rewrite as `do`...`while(1);`</source>
         <comment>mod_infinite_loop</comment>
-        <translation type="unfinished"></translation>
+        <translation>0: Оставить синтаксис без изменений (по умолчанию)
+1: Переписать как `for(;;)`.
+2: Переписать как `while(true)`.
+3: Переписать как `do`...`while(true);`
+4: Переписать как `while(1)`
+5: Переписать как `do`...`while(1);`</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14254"/>
@@ -8064,55 +8075,56 @@ true : Use the cpp comment</source>
 Other options that affect loop formatting will be applied after transforming
 the syntax.</source>
         <comment>mod_infinite_loop</comment>
-        <translation type="unfinished"></translation>
+        <translation>Бесконечные циклы, не соответствующие ни одному из этих синтаксисов, игнорируются.
+Другие опции, влияющие на форматирование циклов, будут применены после преобразования синтаксиса.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14260"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;int short&apos;.</source>
         <comment>mod_int_short</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;int short&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14266"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;short int&apos;.</source>
         <comment>mod_short_int</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;short int&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14272"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;int long&apos;.</source>
         <comment>mod_int_long</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;int long&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14278"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;long int&apos;.</source>
         <comment>mod_long_int</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;long int&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14284"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;int signed&apos;.</source>
         <comment>mod_int_signed</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;int signed&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14290"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;signed int&apos;.</source>
         <comment>mod_signed_int</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;signed int&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14296"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;int unsigned&apos;.</source>
         <comment>mod_int_unsigned</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;int unsigned&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14302"/>
         <source>Add or remove the &apos;int&apos; keyword in &apos;unsigned int&apos;.</source>
         <comment>mod_unsigned_int</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавить или удалить ключевое слово &apos;int&apos; в &apos;unsigned int&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14308"/>
@@ -8120,13 +8132,13 @@ the syntax.</source>
 multiple int keywords, whether to keep the rightmost int (the default) or the
 leftmost int.</source>
         <comment>mod_int_prefer_int_on_left</comment>
-        <translation type="unfinished"></translation>
+        <translation>Если возникает ситуация, когда mod_int_* и mod_*_int приводят к нескольким ключевым словам int, то следует ли оставить самое правое int (по умолчанию) или самое левое int.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14364"/>
         <source>How to use tabs when indenting preprocessor code.</source>
         <comment>pp_indent_with_tabs</comment>
-        <translation type="unfinished"></translation>
+        <translation>Как использовать табуляцию при отступе кода препроцессора.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14364"/>
@@ -8135,19 +8147,22 @@ leftmost int.</source>
  1: Indent with tabs to brace level, align with spaces
  2: Indent and align with tabs, using spaces when not on a tabstop</source>
         <comment>pp_indent_with_tabs</comment>
-        <translation type="unfinished"></translation>
+        <translation>-1: Использовать настройку &apos;indent_with_tabs&apos; (по умолчанию)
+ 0: Только пробелы
+ 1: Отступ с табуляцией до уровня скобки, выравнивание с помощью пробелов
+ 2: Отступ и выравнивание с помощью табуляции, использование пробелов, если нет ограничителя табуляции</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14394"/>
         <source>Add or remove space after # based on pp level of #if blocks.</source>
         <comment>pp_space_after</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавление или удаление пробела после # зависит от уровня блоков #if.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14400"/>
         <source>Sets the number of spaces per level added with pp_space_after.</source>
         <comment>pp_space_count</comment>
-        <translation type="unfinished"></translation>
+        <translation>Устанавливает количество пробелов на уровень, добавляемых с помощью pp_space_after.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14454"/>
@@ -8155,7 +8170,9 @@ leftmost int.</source>
 &apos;body&apos; refers to all the lines of a multiline #define except the first line.
 Requires &apos;pp_ignore_define_body = false&apos;.</source>
         <comment>pp_multiline_define_body_indent</comment>
-        <translation type="unfinished"></translation>
+        <translation>Значение смещения, управляющее отступом тела многострочной #define.
+Под &quot;телом&quot; понимаются все строки многострочного #define, кроме первой.
+Требуется &apos;pp_ignore_define_body = false&apos;.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14454"/>
@@ -8164,7 +8181,10 @@ Requires &apos;pp_ignore_define_body = false&apos;.</source>
 &gt;=0: Relative to the column of the &apos;#&apos; of &apos;#define&apos;
      (ex.  3 ==&gt; the body is indented starting 3 columns at the right of &apos;#&apos;)</source>
         <comment>pp_multiline_define_body_indent</comment>
-        <translation type="unfinished"></translation>
+        <translation> &lt;0: Абсолютный столбец: отступ тела начинается с указанного столбца
+     (например, -3 ==&gt; отступ тела начинается с колонки 3)
+&gt;=0: Относительно столбца &apos;#&apos; из &apos;#define&apos;
+     (например, 3 ==&gt; отступ тела начинается с 3 столбца справа от &apos;#&apos;)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14460"/>
@@ -8172,7 +8192,8 @@ Requires &apos;pp_ignore_define_body = false&apos;.</source>
 Only applies to the indent of the preprocessor that the case statements
 directly inside of.</source>
         <comment>pp_indent_case</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступы для выражений case между #if, #else и #endif.
+Применяется только к отступу препроцессора, внутри которого непосредственно находятся утверждения case.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14466"/>
@@ -8180,7 +8201,8 @@ directly inside of.</source>
 Only applies to the indent of the preprocessor that the function definition
 is directly inside of.</source>
         <comment>pp_indent_func_def</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступы между #if, #else и #endif для определений функций целиком.
+Применяется только к отступу препроцессора, в котором находится определение функции находится непосредственно внутри него.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14472"/>
@@ -8188,7 +8210,8 @@ is directly inside of.</source>
 Only applies to the indent of the preprocessor that the extern block is
 directly inside of.</source>
         <comment>pp_indent_extern</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступы для блоков extern C между #if, #else и #endif.
+Применяется только к отступу препроцессора, внутри которого непосредственно находится блок extern.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14478"/>
@@ -8199,7 +8222,11 @@ preprocessor that the braces are directly inside of.
  1: Indent by one level
 -1: Preserve original indentation</source>
         <comment>pp_indent_brace</comment>
-        <translation type="unfinished"></translation>
+        <translation>Как сделать отступ скобок непосредственно внутри #if, #else и #endif.
+Требует pp_if_indent_code=true и применяется только к отступу препроцессора, внутри которого непосредственно находятся скобки.
+ 0: Без дополнительного отступа
+ 1: Отступ на один уровень
+-1: Сохранять исходный отступ</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14524"/>
@@ -8207,33 +8234,37 @@ preprocessor that the braces are directly inside of.
 - after the assignment, at the &apos;[&apos; character
 - at the beginning of the lambda body</source>
         <comment>indent_cpp_lambda_only_once</comment>
-        <translation type="unfinished"></translation>
+        <translation>Отступ может быть:
+- после присваивания, на символе &apos;[&apos;
+- в начале тела лямбды</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14524"/>
         <source>true:  indentation will be at the beginning of the lambda body
 false: indentation will be after the assignment (default)</source>
         <comment>indent_cpp_lambda_only_once</comment>
-        <translation type="unfinished"></translation>
+        <translation>true: отступы будут располагаться в начале тела лямбды
+false: отступ будет после присваивания (по умолчанию)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14580"/>
         <source>sort (or not) the tracking info.</source>
         <comment>debug_sort_the_tracks</comment>
-        <translation type="unfinished"></translation>
+        <translation>сортировать (или не сортировать) информацию об отслеживании.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14586"/>
         <source>decode (or not) the flags as a new line.
 only if the -p option is set.</source>
         <comment>debug_decode_the_flags</comment>
-        <translation type="unfinished"></translation>
+        <translation>декодировать (или не декодировать) флаги как новую строку.
+только если установлена опция -p.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="14592"/>
         <source>insert the number of the line at the beginning of each line</source>
         <comment>set_numbering_for_html_output</comment>
-        <translation type="unfinished"></translation>
+        <translation>вставлять номер строки в начале каждой строки</translation>
     </message>
 </context>
 </TS>
