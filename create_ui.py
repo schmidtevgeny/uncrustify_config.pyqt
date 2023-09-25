@@ -120,7 +120,7 @@ class Widget(QtWidgets.QTabWidget):
             else:
                 wrap_list = my_wrap.wrap(html.unescape(si))
             for line in wrap_list:
-                so += "\\n# " + line.strip()
+                so += "\\n# " + line
         return so
     def no_tr(self, s, s2=''):
         return s

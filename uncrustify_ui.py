@@ -14,7 +14,7 @@ class Widget(QtWidgets.QTabWidget):
     # сворачивание вывода в config
     def wrap(self, s):
         if s == "\n": return "\n#"
-        my_wrap = textwrap.TextWrapper(width=80)
+        my_wrap = textwrap.TextWrapper(width=80,drop_whitespace=False)
         so = ""
         for si in s.split("\n"):
             if self.comment_type==0:
@@ -24,7 +24,7 @@ class Widget(QtWidgets.QTabWidget):
             else:
                 wrap_list = my_wrap.wrap(html.unescape(si))
             for line in wrap_list:
-                so += "\n# " + line.strip()
+                so += "\n# " + line
         return so
     def no_tr(self, s, s2=''):
         return s
