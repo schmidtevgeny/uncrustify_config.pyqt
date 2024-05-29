@@ -1,6 +1,7 @@
 /.idea/
 /*.qm
 /__pycache__*/
+/*/__pycache__*/
 *.cpp
 *.cfg
 uncrustify.exe
