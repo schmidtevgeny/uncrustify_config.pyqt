@@ -8430,7 +8430,7 @@ and nl_class_colon)</source>
         <source>Whether to indent continued shift expressions (&apos;&lt;&lt;&apos; and &apos;&gt;&gt;&apos;) instead of
 aligning. Set align_left_shift=false when enabling this.</source>
         <comment>indent_shift</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступы для продолженных выражений сдвига (&apos;&lt;&lt;&apos; и &apos;&gt;&gt;&apos;) вместо выравнивания. При включении этого параметра установите align_left_shift=false.</translation>
     </message>
     <message>
         <location filename="ui_073.py" line="7474"/>
@@ -8486,28 +8486,32 @@ It might wise to choose the same value for the option indent_switch_case.</sourc
         <source>Whether to indent a comma when inside a brace.
 If true, aligns under the open brace.</source>
         <comment>indent_comma_brace</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступ для запятой, когда она находится внутри скобки.
+Если true, то выравнивание происходит под открытой скобкой.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
         <source>Whether to indent a comma when inside a parenthesis.
 If true, aligns under the open parenthesis.</source>
         <comment>indent_comma_paren</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступ для запятой, когда она находится внутри круглой скобки.
+Если true, то выравнивание происходит под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
         <source>Whether to indent a Boolean operator when inside a parenthesis.
 If true, aligns under the open parenthesis.</source>
         <comment>indent_bool_paren</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступ для булевого оператора, когда он находится внутри круглой скобки.
+Если true, то выравнивание происходит под открытой круглой скобкой.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
         <source>Whether to align the first expression to following ones
 if indent_bool_paren=true.</source>
         <comment>indent_first_bool_expr</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли выравнивать первое выражение по отношению к последующим
+если indent_bool_paren=true.</translation>
     </message>
     <message>
         <location filename="ui_075.py" line="7995"/>
@@ -8524,7 +8528,8 @@ if indent_bool_paren=true.</source>
         <source>Whether to collapse empty blocks between &apos;{&apos; and &apos;}&apos;.
 If true, overrides nl_inside_empty_func</source>
         <comment>nl_collapse_empty_body</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли сворачивать пустые блоки между &apos;{&apos; и &apos;}&apos;.
+Если true, то переопределяет nl_inside_empty_func.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
@@ -8538,7 +8543,7 @@ direct-list-initialization.</source>
         <source>Whether to add a newline after &apos;{&apos;. This also adds a newline before the
 matching &apos;}&apos;.</source>
         <comment>nl_after_brace_open</comment>
-        <translation type="unfinished"></translation>
+        <translation>Добавлять ли новую строку после &apos;{&apos;. Это также добавляет новую строку перед соответствующим &apos;}&apos;.</translation>
     </message>
     <message>
         <location filename="ui_073.py" line="7474"/>
@@ -8546,7 +8551,7 @@ matching &apos;}&apos;.</source>
 into a single line. If true, prevents other brace newline rules from turning
 such code into four lines.</source>
         <comment>nl_namespace_two_to_one_liner</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли сворачивать двухстрочное пространство имен, например &apos;namespace foo\n{ decl; }&apos; в одну строку. Если значение равно true, это предотвращает превращение другими правилами переноса строк такой код в четыре строки.</translation>
     </message>
     <message>
         <location filename="ui_073.py" line="7474"/>
@@ -8585,7 +8590,7 @@ of a function body.</source>
 of a function body. If nl_after_access_spec is non-zero, that option takes
 precedence.</source>
         <comment>nl_var_def_blk_start</comment>
-        <translation type="unfinished"></translation>
+        <translation>Количество новых строк перед блоком определений переменных, не находящихся в верхней части тела функции. Если nl_after_access_spec ненулевое, то эта опция имеет приоритет приоритет.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
@@ -8599,7 +8604,7 @@ of a function body.</source>
         <source>Whether to align macros wrapped with a backslash and a newline. This will
 not work right if the macro contains a multi-line comment.</source>
         <comment>align_nl_cont</comment>
-        <translation type="unfinished"></translation>
+        <translation>Выравнивать ли макросы c обратной косой чертой и новой строкой. Это будет не сработает, если макрос содержит многострочный комментарий.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
@@ -8616,7 +8621,7 @@ have, or do not have, braces. If true, braces will be added if any block
 needs braces, and will only be removed if they can be removed from all
 blocks.</source>
         <comment>mod_full_brace_if_chain</comment>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли требовать, чтобы все блоки цепочки &apos;if&apos;/&apos;else if&apos;/&apos;else&apos; либо имели, либо не имели скобок. Если true, скобки будут добавлены, если какой-либо блок нуждается в скобках, и будут удалены, только если их можно удалить из всех блоков.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
@@ -8648,7 +8653,8 @@ blocks.</source>
 Only applies to the indent of the preprocesser that the case statements
 directly inside of.</source>
         <comment>pp_indent_case</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступы для выражений case между #if, #else и #endif.
+Применяется только к отступу препроцессора, внутри которого непосредственно находятся утверждения case.</translation>
     </message>
     <message>
         <location filename="ui_075.py" line="7995"/>
@@ -8665,7 +8671,8 @@ is directly inside of.</source>
 Only applies to the indent of the preprocesser that the extern block is
 directly inside of.</source>
         <comment>pp_indent_extern</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступы для блоков extern C между #if, #else и #endif.
+Применяется только к отступу препроцессора, внутри которого непосредственно находится блок extern.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
@@ -8673,7 +8680,8 @@ directly inside of.</source>
 Only applies to the indent of the preprocesser that the braces are directly
 inside of.</source>
         <comment>pp_indent_brace</comment>
-        <translation type="unfinished"></translation>
+        <translation>Нужно ли делать отступ скобок непосредственно внутри #if, #else и #endif.
+Применяется только к отступу препроцессора, в котором скобки находятся непосредственно внутри.</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
@@ -8681,7 +8689,9 @@ inside of.</source>
 - at the assignment
 - at the opening brace</source>
         <comment>indent_cpp_lambda_only_once</comment>
-        <translation type="unfinished"></translation>
+        <translation>Значение может быть использовано дважды:
+- при присваивании
+- в открывающей скобке</translation>
     </message>
     <message>
         <location filename="ui_074.py" line="7813"/>
@@ -8725,14 +8735,14 @@ The value REMOVE will be overriden with FORCE</source>
 not at the top of a function body. If nl_after_access_spec is non-zero,
 that option takes precedence.</source>
         <comment>nl_var_def_blk_start</comment>
-        <translation type="unfinished"></translation>
+        <translation>Количество пустых новых строк перед блоком определений переменных не в верхней части тела функции. Если nl_after_access_spec ненулевое значение, этот параметр имеет приоритет.</translation>
     </message>
     <message>
         <location filename="ui_075.py" line="7995"/>
         <source>The number of empty newlines after a block of variable definitions
 not at the top of a function body.</source>
         <comment>nl_var_def_blk_end</comment>
-        <translation type="unfinished"></translation>
+        <translation>Количество пустых новых строк после блока определений переменных не в начале тела функции.</translation>
     </message>
     <message>
         <location filename="ui_075.py" line="7995"/>
@@ -8764,7 +8774,8 @@ preprocesser that the braces are directly inside of.
         <source>true:  indentation will be after the assignment
 false: indentation will be at the begin of the lambda body (default)</source>
         <comment>indent_cpp_lambda_only_once</comment>
-        <translation type="unfinished"></translation>
+        <translation>true: отступ будет после присваивания
+false: отступ будет в начале тела лямбды (по умолчанию)</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="9824"/>
@@ -8902,7 +8913,7 @@ Takes precedence over nl_min_after_func_body.</source>
         <source>Whether to ignore continuation lines when evaluating the number of
 new lines for the function prototype alignment&apos;s span.</source>
         <comment>align_func_proto_span_ignore_cont_lines</comment>
-        <translation type="unfinished"></translation>
+        <translation>Следует ли игнорировать строки продолжения при оценке количества новых строк для диапазона выравнивания прототипа функции.</translation>
     </message>
     <message>
         <location filename="uncrustify_ui.py" line="13922"/>
